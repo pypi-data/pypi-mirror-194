@@ -1,0 +1,2 @@
+[console_scripts]
+search-data-explorer = search_data_explorer.cli:open
