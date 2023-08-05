@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: factorio
+Version: 0.1.0
+Summary: A fixtures replacement tool
+Home-page: https://github.com/spapanik/factorio
+License: LGPL-3.0+
+Keywords: tests
+Author: Stephanos Kuma
+Author-email: stephanos@kuma.ai
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Faker (>=17.0,<18.0)
+Project-URL: Repository, https://github.com/spapanik/factorio
+Description-Content-Type: text/x-rst
+
+===========================================================
+factorio: A fixtures replacement tool
+===========================================================
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+  :alt: Code style
+  :target: https://github.com/psf/black
+
+
+In a nutshell
+-------------
+
+Installation
+^^^^^^^^^^^^
+
+Installation instructions go here
+
+Usage
+^^^^^
+
+Usage description goes here
+
+Links
+-----
+
+- `Documentation`_
+- `Changelog`_
+
+
+.. _Changelog: https://github.com/spapanik/factorio/blob/main/CHANGELOG.rst
+.. _Documentation: https://factorio.readthedocs.io/en/latest/
+
