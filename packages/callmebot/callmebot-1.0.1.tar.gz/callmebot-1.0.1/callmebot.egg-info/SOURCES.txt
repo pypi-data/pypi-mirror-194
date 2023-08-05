@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+callmebot/__init__.py
+callmebot.egg-info/PKG-INFO
+callmebot.egg-info/SOURCES.txt
+callmebot.egg-info/dependency_links.txt
+callmebot.egg-info/not-zip-safe
+callmebot.egg-info/requires.txt
+callmebot.egg-info/top_level.txt
