@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "PointSystem"
+version = "1.4.0"
+authors = [
+  { name="Totallyahuman15", email="sandfrysyt@gmail.com" },
+]
+description = "A small project for a point system"
+readme = "README.md"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Totallyahuman15/point-system"
+"Bug Tracker" = "https://github.com/Totallyahuman15/point-system/issues"
