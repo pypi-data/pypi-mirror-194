@@ -1,0 +1,14 @@
+aiohttp
+intake
+requests
+
+[dev]
+mypy
+pytest
+tox
+types-requests
+
+[publish]
+build
+twine
+wheel
