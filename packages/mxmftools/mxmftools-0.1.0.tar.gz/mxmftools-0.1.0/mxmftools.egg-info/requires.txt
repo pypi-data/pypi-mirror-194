@@ -1,0 +1,7 @@
+matplotlib
+scipy
+colorcet
+click-bash4.2-completion
+h5py
+lxml
+click>=8.1.0
