@@ -1,0 +1,17 @@
+[project]
+name='com.castsoftware.uc.python.common'
+description="A set of common classes and methods for use with python projects"
+
+version='0.1.9' #prod version
+#version='0.1.8' #test version
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+[project.urls]
+"Homepage" = "https://github.com/CAST-Extend/com.castsoftware.uc.python.common"
+"Bug Tracker" = "https://github.com/CAST-Extend/com.castsoftware.uc.python.common/issues"
