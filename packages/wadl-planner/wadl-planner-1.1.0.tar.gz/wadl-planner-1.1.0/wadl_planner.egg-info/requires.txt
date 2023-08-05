@@ -1,0 +1,12 @@
+numpy
+matplotlib
+scipy
+tqdm
+shapely
+networkx
+utm
+fastkml
+lxml
+z3-solver
+cvxpy
+cvxopt
