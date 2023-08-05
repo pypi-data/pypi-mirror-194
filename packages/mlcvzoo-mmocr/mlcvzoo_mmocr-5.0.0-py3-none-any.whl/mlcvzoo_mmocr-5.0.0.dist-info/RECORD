@@ -1,0 +1,15 @@
+mlcvzoo_mmocr/__init__.py,sha256=LF8jsFa-w8OfxJs0rQ3CdFgaHBF_rim-zx1vShaDxYw,177
+mlcvzoo_mmocr/configuration.py,sha256=Fr3Y41u_UBIx0m9vSjOk_WkBnYHQv2rF2E25KHaf2yA,3449
+mlcvzoo_mmocr/mlcvzoo_mmocr_dataset.py,sha256=r1s7cRclnwdQysCErOco8xtPV6O4qMDQbSjRFfRgAXM,3228
+mlcvzoo_mmocr/model.py,sha256=tLZ-_fheXfTs2UJ4FH6VXqbCcgHV96AdhvpMS48J3aQ,4675
+mlcvzoo_mmocr/py.typed,sha256=8hzvo_jpzs7tuf2I0_TzilG8zWbzxcO75UQ5n7LpIf0,154
+mlcvzoo_mmocr/structs.py,sha256=ZqT7JcL2Z7oo9-vd9F82SKBWhTvht3QpC6QE3RMFXmg,379
+mlcvzoo_mmocr/text_detection_model.py,sha256=89w8SJ7fqKTWc4Pt85LdYxFU37PhO8FC4JorzZLn7MA,4832
+mlcvzoo_mmocr/text_recognition_model.py,sha256=tzuIyre4118hzNTevvLaMZ4KhxoAlH7XXoqx_RnkvCw,3951
+mlcvzoo_mmocr/third_party/LICENSE,sha256=IvsnDs9STQ2VdYHLcwHFEJ4PRQLND90kyWoJcrsTbaQ,11416
+mlcvzoo_mmocr/third_party/README.md,sha256=LD0Ar9xH6GwSQEpjd5NjwPn3fQMBH4tFmL6r4xY3Mes,103
+mlcvzoo_mmocr/third_party/__init__.py,sha256=sN8uv10XYiGuwx2SkKdq30jDAI5mTJfqLlKpSbICTxA,154
+mlcvzoo_mmocr/third_party/mmocr.py,sha256=YfUCfhjJnki16eG4e1itVYiwbyF-tzg0kopHQKgWDIM,1183
+mlcvzoo_mmocr-5.0.0.dist-info/METADATA,sha256=7QD8A6B5jMICRpXi2Ooyr54M3BSIOHbNs2Pt7ivljyc,2103
+mlcvzoo_mmocr-5.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mlcvzoo_mmocr-5.0.0.dist-info/RECORD,,
