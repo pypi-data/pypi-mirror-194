@@ -1,0 +1,17 @@
+numpy>=1.21.1
+matplotlib>=3.4.2
+trimesh
+shapely
+scipy
+pandas
+dagmc_geometry_slice_plotter
+openmc_tally_unit_converter
+setuptools_scm
+
+[tests]
+pytest
+dagmc_h5m_file_inspector
+pytest-cov>=2.12.1
+openmc-dagmc-wrapper
+openmc_plasma_source
+regular_mesh_plotter
