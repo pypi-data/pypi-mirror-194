@@ -1,0 +1,64 @@
+image: python:3.8
+
+definitions:
+  services:
+    broker:
+      image: rabbitmq:3
+      ports:
+        - 5672:5672
+  steps:
+    - step: &lint
+        caches:
+          - pip
+        name: Lint
+        script:
+          - pip install pre-commit
+          - pre-commit install
+          - pre-commit run --all-files
+    - step: &scan
+        caches:
+          - pip
+        name: Scan
+        script:
+          - pip install -e .
+          - pip freeze | grep -v @ > requirements.txt
+          - cat requirements.txt
+          - echo $SNYK_VERSION
+          - curl -L -o snyk https://github.com/snyk/snyk/releases/download/$SNYK_VERSION/snyk-linux
+          - chmod 755 snyk
+          - ./snyk -d auth $SNYK_TOKEN
+          - echo $SNYK_IGNORE
+          - for id in $SNYK_IGNORE; do echo Ignoring $id; ./snyk ignore $id; done
+          - cat .snyk || echo "No .snyk found. Probably because there was nothing to ignore."
+          - echo $SNYK_CLI_COMMAND
+          - $SNYK_CLI_COMMAND
+    - step: &test
+        caches:
+          - pip
+        name: Test
+        script:
+          - pip install .[test]
+          - pytest -m "not development" --cov talus
+        services:
+          - broker
+    - step: &push
+        caches:
+          - pip
+        name: Push
+        script:
+          - python setup.py sdist
+          - pip install twine
+          - twine upload dist/*
+
+pipelines:
+  default:
+    - step: *lint
+    - step: *scan
+    - step: *test
+  tags:
+    'v*':
+      - parallel:
+        - step: *lint
+        - step: *scan
+        - step: *test
+      - step: *push
