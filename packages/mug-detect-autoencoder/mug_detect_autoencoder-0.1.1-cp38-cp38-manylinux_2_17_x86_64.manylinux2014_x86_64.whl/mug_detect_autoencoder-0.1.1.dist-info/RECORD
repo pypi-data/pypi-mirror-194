@@ -1,0 +1,5 @@
+mug_detect_autoencoder-0.1.1.dist-info/METADATA,sha256=6gJ6BdkQ4X1UE1LTJ1EuA4-lVgABbgGf6XoV4_l2dvU,593
+mug_detect_autoencoder-0.1.1.dist-info/WHEEL,sha256=CcV4DUqIQP8QBrcpqzuZZjQ_212MhovyjTB7FqdvXAw,129
+autoencoder/__init__.py,sha256=ONyme4gSsFvenReJNsD5Q3qOVxvI_GGfKIFNG2qPik4,127
+autoencoder/autoencoder.cpython-38-x86_64-linux-gnu.so,sha256=SX3sU7semCsM8tpY1Yp5RnR8dpQPZ-d6cfH-BrBK6Cc,6810712
+mug_detect_autoencoder-0.1.1.dist-info/RECORD,,
