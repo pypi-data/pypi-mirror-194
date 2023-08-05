@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: invest-tools
+Version: 0.1.0
+Summary: Tools to manage portfolio risk analysis
+License: MIT
+Author: leo
+Author-email: leojpedwards@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# invest-tools
+
+[![codecov](https://codecov.io/gh/leo-jp-edwards/invest-tools/branch/main/graph/badge.svg?token=C1W8MZFS80)](https://codecov.io/gh/leo-jp-edwards/invest-tools)
+
+Tools to manage portfolio risk analysis
+
