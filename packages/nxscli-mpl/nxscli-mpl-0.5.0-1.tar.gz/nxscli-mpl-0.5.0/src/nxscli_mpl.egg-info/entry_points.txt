@@ -1,0 +1,3 @@
+[nxscli.extensions]
+commands = nxscli_mpl.ext_commands
+plugins = nxscli_mpl.ext_plugins
