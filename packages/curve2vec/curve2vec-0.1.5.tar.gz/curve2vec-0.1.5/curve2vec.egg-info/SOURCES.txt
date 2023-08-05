@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+curve2vec/__init__.py
+curve2vec.egg-info/PKG-INFO
+curve2vec.egg-info/SOURCES.txt
+curve2vec.egg-info/dependency_links.txt
+curve2vec.egg-info/top_level.txt
+curve2vec/embeddings/__init__.py
+curve2vec/embeddings/fourier.py
+curve2vec/utils/__init__.py
+curve2vec/utils/data.py
+curve2vec/utils/visualization.py
+tests/test_embeddings.py
+tests/test_utils.py
