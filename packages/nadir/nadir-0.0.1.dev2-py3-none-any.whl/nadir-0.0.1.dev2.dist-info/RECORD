@@ -1,0 +1,9 @@
+nadir/BaseOptimiser.py,sha256=AdmCKDCPMPY1KXmOAvZGvg022cmZrXnGScm1IpQzoic,947
+nadir/SGD.py,sha256=Bc_GKszLEHVF8KlcvqnOGEnRQXOWP7cwsYQWu79Q2O8,2889
+nadir/__init__.py,sha256=kZ7Sv8dTF2hSlg3MfKTy1kTd5GT5SlDtrWHS1ulGqTY,859
+nadir/adam.py,sha256=UmSlo6GytdLLAnS4eLhBVchCJLRjnk0etS_t8xOivl4,3175
+nadir-0.0.1.dev2.dist-info/LICENCE,sha256=mfLJfCLeN2c-DnSWgMgvkQUSZWD9jL4J55qdetspS8Q,11344
+nadir-0.0.1.dev2.dist-info/METADATA,sha256=khYxXS4z60eifJrqwtwWxezdPdZCaEQiVH7PfAfPu5c,3070
+nadir-0.0.1.dev2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nadir-0.0.1.dev2.dist-info/top_level.txt,sha256=7yytCQw6jOM83-5OogmlCu-LaZtQu7bH0r5m-i5tBJw,6
+nadir-0.0.1.dev2.dist-info/RECORD,,
