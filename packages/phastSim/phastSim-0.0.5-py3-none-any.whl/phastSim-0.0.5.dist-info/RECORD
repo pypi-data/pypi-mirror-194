@@ -1,0 +1,13 @@
+phastSim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phastSim/parsimony_pb2.py,sha256=H073lzbSEnKGGQHX4CsYyF1dtD3WbO5NLzAMPT0hSAs,10929
+phastSim/phastSim.py,sha256=0BHbqd06paVAaGCbhOhaO9tQywwI1IS12_c-Y82exCM,122397
+phastSim/example/MN908947.3.fasta,sha256=F4JpjjO-nuHvcOABeT_UAWpg9M0IoCEI4moR3-JrKLw,30428
+phastSim/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phastSim/example/exampleTree.tree,sha256=48eIIkvOK2BpLuvVhKmMKgq-RaIeMRu-NBkRHONDAc4,194
+phastSim/example/example_sarscov2_tree.newick,sha256=RlPLGWSFHVsneEgoOyHAHnKfM5pfciqjAHUSlUqPMyk,2883077
+phastSim-0.0.5.data/scripts/phastSim,sha256=ggKuQnDu9KGS956KMejygR7oQ4N9v2d6uXEba2LLPUE,10436
+phastSim-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+phastSim-0.0.5.dist-info/METADATA,sha256=UFodjytoCY2p_SPLPMGLsCVOcpHLd-wMixIW3x1o77g,18001
+phastSim-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+phastSim-0.0.5.dist-info/top_level.txt,sha256=4vp47bkE56ZoyxDdea2GHUL1YRIZSKyuSAToWxV6yLw,9
+phastSim-0.0.5.dist-info/RECORD,,
