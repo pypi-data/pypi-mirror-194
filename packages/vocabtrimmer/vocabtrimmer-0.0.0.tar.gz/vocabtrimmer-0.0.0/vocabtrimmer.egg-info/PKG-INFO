@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: vocabtrimmer
+Version: 0.0.0
+Summary: Trimming vocabulary of pre-trained multilingual language models to language localization.
+Home-page: https://github.com/asahi417/lm-vocab-trmmer
+Author: Asahi Ushio
+Author-email: asahi1992ushio@gmail.com
+License: MIT License
+Download-URL: https://github.com/asahi417/lm-vocab-trmmer/archive/v0.0.0.tar.gz
+Keywords: language model,t5,gpt3,bertnlp,multilingual,efficient-model
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# LM-Vocab-Trimmer: A Simple Model Compression by Trimming Embedding Matrix
+The LM-Vocab-Trimmer a.k.a. `vocabtrimmer` is a model compression tool aiming at reducing the parameter size of multilingual LMs 
+by trimming unused tokens from the embedding matrix.
+This library assumes that you want to use or already fine-tuned a multilingual LM in a few specific languages, 
+and other languages are not needed to be covered by the LM anymore.
+Then, `vocabtrimmer` remove those tokens in the out-of-scope languages from the embedding matrix,
+
+the input and the output embedding matrix .
+
+Multilingual LMs ([mT5](https://arxiv.org/abs/2010.11934), [mBART](https://arxiv.org/abs/2001.08210), [XLM-R](https://arxiv.org/abs/1911.02116), etc) are
+
+ is a pythob
+

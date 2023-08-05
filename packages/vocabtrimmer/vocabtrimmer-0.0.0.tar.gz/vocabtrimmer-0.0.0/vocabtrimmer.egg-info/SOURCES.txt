@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+vocabtrimmer/__init__.py
+vocabtrimmer/base_trimmer.py
+vocabtrimmer/character_detector.py
+vocabtrimmer.egg-info/PKG-INFO
+vocabtrimmer.egg-info/SOURCES.txt
+vocabtrimmer.egg-info/dependency_links.txt
+vocabtrimmer.egg-info/requires.txt
+vocabtrimmer.egg-info/top_level.txt
