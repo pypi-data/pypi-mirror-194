@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+obsidian-support = mkdocs_link_preview_plugin.plugin:LinkPreviewPlugin
