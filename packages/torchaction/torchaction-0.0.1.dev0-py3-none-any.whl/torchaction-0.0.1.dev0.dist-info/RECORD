@@ -1,0 +1,8 @@
+torchaction-0.0.1.dev0.dist-info/METADATA,sha256=31HzHPjV4-SLUknoad6_5QP9siWdgXWqjBLEVYJ6hsk,3833
+torchaction-0.0.1.dev0.dist-info/WHEEL,sha256=uBNpmEGnjtPzf32zT8AFRUhaXgHBQo9CU461wd4QtDU,90
+torchaction-0.0.1.dev0.dist-info/licenses/LICENSE,sha256=0curwwkkxX8IsbCoCk8YyTxHWBOx09rWlzwRM6OCnio,1088
+torchaction/__init__.py,sha256=nxp-E5t9LgW6VOsVjL78HTp6aeSQ0ToW47TkLOfVmbg,347
+torchaction/actions.py,sha256=OKHkbY5b-prbsUpATfPBQIrh4dSpfkvkWmUVrV3EUg4,6488
+torchaction/meanloss.py,sha256=IuoFdPBTVMsuSEtXa7GRvjLJ19sHa9KabVzzypkFhho,513
+torchaction/parse_args.py,sha256=KrePiL-VX9F-oPvGH1y7Zo9wyqujWoip0UYhwWU0ubk,1359
+torchaction-0.0.1.dev0.dist-info/RECORD,,
