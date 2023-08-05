@@ -1,0 +1,29 @@
+.. VRProt documentation master file, created by
+   sphinx-quickstart on Thu Jan 12 20:21:35 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to VRProt's documentation!
+==================================
+**VRProt** A pipeline that processes protein structures in ProteinDataBank (PDB) file format using ChimeraX and enables them to be analyzed on the `VRNetzer <https://github.com/menchelab/VRNetzer>`_ platform. The main purpose of this project is to serve as an easy to use pipeline to facilitate the processing of protein structures for presentation on the `VRNetzer <https://github.com/menchelab/VRNetzer>`_. It is mainly used in a the `ProteinStructureFetch Extension <https://github.com/menchelab/ProteinStructureFetch>`_ for the `VRNetzer <https://github.com/menchelab/VRNetzer>`_. For everyone who wants to analyze their own protein structures, with your desired highlighting and coloring, this project is the right place to start. For easy usage of this project, we provide a one file executable which allows to use the program without further installation of python and any dependencies. Nevertheless, a `ChimeraX <https://www.cgl.ucsf.edu/chimerax/download.html>`_ installation is mandatory to use the full potential of this project.
+Without ChimeraX this software only provides a fetcher with which you can easily fetch pdb files from the `AlphaFold Database <https://alphafold.ebi.ac.uk/>`_ as well as some converter functions.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+Contents
+--------
+
+.. toctree::
+
+   usage

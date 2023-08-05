@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VRProt &mdash; VRProt 0.0.7 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VRProt
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VRProt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot.alphafold_db_parser">vrprot.alphafold_db_parser module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.WD"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.WD</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.alphafold_ver"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.alphafold_ver</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.batch_size"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.batch_size</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.check_dirs"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.check_dirs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.chimerax"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.chimerax</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.chimerax_process"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.chimerax_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.clear_default_dirs"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.clear_default_dirs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.convert_glbs"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.convert_glbs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.db"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.db</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.execute_fetch"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.execute_fetch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.execute_from_bulk"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.execute_from_bulk()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.execute_from_object"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.execute_from_object()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.execute_local"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.execute_local()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.fetch_pdb"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.fetch_pdb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.fetch_pipeline"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.fetch_pipeline()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.filter_already_processed"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.filter_already_processed()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.gen_maps"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.gen_maps()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.get_filename"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.get_filename()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.img_size"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.img_size</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.init_dirs"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.init_dirs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.init_structures_dict"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.init_structures_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.keep_temp"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.keep_temp</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.log"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.log</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.not_fetched"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.not_fetched</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.output_exists"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.output_exists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.overview_file"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.overview_file</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.overwrite"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.overwrite</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.pdb_pipeline"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.pdb_pipeline()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.processing"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.processing</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.proteins_from_dir"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.proteins_from_dir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.proteins_from_list"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.proteins_from_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.sample_pcd"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.sample_pcd()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_alphafold_version"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_alphafold_version()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_batch_size"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_batch_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_chimerax"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_chimerax()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_coloring_mode"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_coloring_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_database"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_database()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_dirs"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_dirs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_img_size"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_img_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_keep_tmp"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_keep_tmp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_version_from_filenames"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.set_version_from_filenames()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.structures"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.structures</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.update_existence"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.update_existence()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.update_output_dir"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.update_output_dir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.write_scale"><code class="docutils literal notranslate"><span class="pre">AlphafoldDBParser.write_scale()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot.argument_parser">vrprot.argument_parser module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.argument_parser.argument_parser"><code class="docutils literal notranslate"><span class="pre">argument_parser()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot.batcher">vrprot.batcher module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.batcher.batch"><code class="docutils literal notranslate"><span class="pre">batch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot.exceptions">vrprot.exceptions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.exceptions.ChimeraXException"><code class="docutils literal notranslate"><span class="pre">ChimeraXException</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.exceptions.StructureNotFoundError"><code class="docutils literal notranslate"><span class="pre">StructureNotFoundError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot.overview_util">vrprot.overview_util module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.overview_util.add_protein_structure_from_scales"><code class="docutils literal notranslate"><span class="pre">add_protein_structure_from_scales()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.overview_util.get_overview"><code class="docutils literal notranslate"><span class="pre">get_overview()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.overview_util.get_scale"><code class="docutils literal notranslate"><span class="pre">get_scale()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.overview_util.init_overview"><code class="docutils literal notranslate"><span class="pre">init_overview()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.overview_util.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.overview_util.read_overview"><code class="docutils literal notranslate"><span class="pre">read_overview()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.overview_util.write_overview"><code class="docutils literal notranslate"><span class="pre">write_overview()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.overview_util.write_scale"><code class="docutils literal notranslate"><span class="pre">write_scale()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot.pointcloud2map_8bit">vrprot.pointcloud2map_8bit module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.pointcloud2map_8bit.gen_filennames"><code class="docutils literal notranslate"><span class="pre">gen_filennames()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.pointcloud2map_8bit.pcd_to_png"><code class="docutils literal notranslate"><span class="pre">pcd_to_png()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.pointcloud2map_8bit.run_batch"><code class="docutils literal notranslate"><span class="pre">run_batch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot.sample_pointcloud">vrprot.sample_pointcloud module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.sample_pointcloud.run_for_batch"><code class="docutils literal notranslate"><span class="pre">run_for_batch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.sample_pointcloud.sample_pcd"><code class="docutils literal notranslate"><span class="pre">sample_pcd()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot.util">vrprot.util module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.batch"><code class="docutils literal notranslate"><span class="pre">batch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.call_ChimeraX_bundle"><code class="docutils literal notranslate"><span class="pre">call_ChimeraX_bundle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.combine_fractions"><code class="docutils literal notranslate"><span class="pre">combine_fractions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.convert_glb_to_ply"><code class="docutils literal notranslate"><span class="pre">convert_glb_to_ply()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.fetch_pdb"><code class="docutils literal notranslate"><span class="pre">fetch_pdb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.fetch_pdb_from_alphafold"><code class="docutils literal notranslate"><span class="pre">fetch_pdb_from_alphafold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.fetch_pdb_from_rcsb"><code class="docutils literal notranslate"><span class="pre">fetch_pdb_from_rcsb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.remove_dirs"><code class="docutils literal notranslate"><span class="pre">remove_dirs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.run_chimerax_coloring_script"><code class="docutils literal notranslate"><span class="pre">run_chimerax_coloring_script()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vrprot.util.search_for_chimerax"><code class="docutils literal notranslate"><span class="pre">search_for_chimerax()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-vrprot">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VRProt</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">VRProt</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/vrprot.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vrprot">
+<h1>VRProt<a class="headerlink" href="#vrprot" title="Permalink to this heading"></a></h1>
+<section id="module-vrprot.alphafold_db_parser">
+<span id="vrprot-alphafold-db-parser-module"></span><h2>vrprot.alphafold_db_parser module<a class="headerlink" href="#module-vrprot.alphafold_db_parser" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vrprot.alphafold_db_parser.</span></span><span class="sig-name descname"><span class="pre">AlphafoldDBParser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">WD:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'/Users/till/Documents/Playground/VRNetzer_Backend/extensions/ProteinStructureFetch/alphafold_to_vrnetzer/pypi_project/docs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chimerax:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'chimerax'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphafold_ver:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'v1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">processing:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'cartoons_ss_coloring'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overview_file:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'/Users/till/Documents/Playground/VRNetzer_Backend/extensions/ProteinStructureFetch/alphafold_to_vrnetzer/pypi_project/docs/static/csv/overview.csv'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structures:</span> <span class="pre">dict[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vrprot.classes.ProteinStructure]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_fetched:</span> <span class="pre">list[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_temp:</span> <span class="pre">dict[vrprot.classes.FileTypes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bool]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log:</span> <span class="pre">~vrprot.classes.Logger</span> <span class="pre">=</span> <span class="pre">&lt;vrprot.classes.Logger</span> <span class="pre">object&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img_size:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'alphafold'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to parse PDB files and convert them to ply.</p>
+<dl>
+<dt>Raises:</dt><dd><p>exceptions.ChimeraXException: If ChimeraX is not installed or cannot be found this Exception is raised.</p>
+</dd>
+<dt>Args:</dt><dd><p>WD (str): Working directory to store processing files and output files. Defaults to “./” .
+chimerax (str): Path to ChimeraX executable. Defaults to “chimerax”
+alphafold_ver (str): Defines the version of the AlphaFoldDB to be used. Options are “v1,v2,v3,v4”.
+batch_size (int): Defines the size of each batch which is to be processed.
+processing (str): Defines the processing mode which is used to color the protein structures in ChimeraX. Defaults to “cartoons_ss_coloring”.
+overview_file (str): Path to where to store the overview file in which the scale of each protein strucure and the color mode is stored. Defaults to “./static/csv/overview.csv”.
+structures (dict[str,ProteinStructure]): Dictionary that maps strings of structures to the ProteinStructure object. Defaults to {}.
+not_fetched set[str]: Set of protein structures which could no be fetched. Deafults to [].
+keep_temp dict[FT, bool]: Configuration to keep or remove processing files like PDB or GLB files after each processing step. Defaults to:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>{</dt><dd><p>FT.pdb_file: False,
+FT.glb_file: False,
+FT.ply_file: False,
+FT.ascii_file: False,</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>log: logging.logger: Log with a specific name. Defaults to Logger(“AlphafoldDBParser”)</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.WD">
+<span class="sig-name descname"><span class="pre">WD</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'/Users/till/Documents/Playground/VRNetzer_Backend/extensions/ProteinStructureFetch/alphafold_to_vrnetzer/pypi_project/docs'</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.WD" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.alphafold_ver">
+<span class="sig-name descname"><span class="pre">alphafold_ver</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'v1'</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.alphafold_ver" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.batch_size">
+<span class="sig-name descname"><span class="pre">batch_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.batch_size" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.check_dirs">
+<span class="sig-name descname"><span class="pre">check_dirs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.check_dirs" title="Permalink to this definition"></a></dt>
+<dd><p>Check wether a source file is in different directory than the default directory. If so set the corresponding directory to the source.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.chimerax">
+<span class="sig-name descname"><span class="pre">chimerax</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'chimerax'</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.chimerax" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.chimerax_process">
+<span class="sig-name descname"><span class="pre">chimerax_process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">processing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.chimerax_process" title="Permalink to this definition"></a></dt>
+<dd><p>Processes the .pdb files using ChimeraX and the bundle chimerax_bundle.py. Default processing mode is ColoringModes.cartoons_sscoloring
+As default, the source pdb file is NOT removed.
+To change this set self.keep_temp[FT.pdb_file] = False.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.clear_default_dirs">
+<span class="sig-name descname"><span class="pre">clear_default_dirs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.clear_default_dirs" title="Permalink to this definition"></a></dt>
+<dd><p>Clears the default directories.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.convert_glbs">
+<span class="sig-name descname"><span class="pre">convert_glbs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.convert_glbs" title="Permalink to this definition"></a></dt>
+<dd><p>Converts the .glb files to .ply files.
+As default, the source glb file is removed afterwards.
+To change this set self.keep_temp[FT.glb_file] = True.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.db">
+<span class="sig-name descname"><span class="pre">db</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'alphafold'</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.db" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.execute_fetch">
+<span class="sig-name descname"><span class="pre">execute_fetch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.execute_fetch" title="Permalink to this definition"></a></dt>
+<dd><p>Uses a list of proteins to fetch the PDB files from the alphafold db. This PDB files will then be used to generated the color maps.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.execute_from_bulk">
+<span class="sig-name descname"><span class="pre">execute_from_bulk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.execute_from_bulk" title="Permalink to this definition"></a></dt>
+<dd><p>Will extract all PDB files from a tar archive downloaded from AlphafoldDB to Process all structures within it with the desired processing mode. Furthermore, multi fraction structures are combined to one large structure. These structures are not handled with the desired processing mode.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.execute_from_object">
+<span class="sig-name descname"><span class="pre">execute_from_object</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.execute_from_object" title="Permalink to this definition"></a></dt>
+<dd><p>Uses a list of proteins which are extracted from a Python object. This assumes that the PDB files of these structures already exist in the PDB directory.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.execute_local">
+<span class="sig-name descname"><span class="pre">execute_local</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.execute_local" title="Permalink to this definition"></a></dt>
+<dd><p>Will extract all Uniprot IDs from a local directory. Assumes that the file names have a the following format:
+AF-&lt;Uniprot ID&gt;-F1-model-&lt;v1/v2&gt;.[pdb/glb/ply/xyzrgb]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.fetch_pdb">
+<span class="sig-name descname"><span class="pre">fetch_pdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.fetch_pdb" title="Permalink to this definition"></a></dt>
+<dd><p>Fetches .pdb File from the AlphaFold Server. This function uses the request module from python standard library to directly download pdb files from the AlphaFold server.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.fetch_pipeline">
+<span class="sig-name descname"><span class="pre">fetch_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.fetch_pipeline" title="Permalink to this definition"></a></dt>
+<dd><p>Fetch of the structure from the alphafold db.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.filter_already_processed">
+<span class="sig-name descname"><span class="pre">filter_already_processed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.filter_already_processed" title="Permalink to this definition"></a></dt>
+<dd><p>Filter out the proteins that have already been processed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.gen_maps">
+<span class="sig-name descname"><span class="pre">gen_maps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.gen_maps" title="Permalink to this definition"></a></dt>
+<dd><p>Generates the maps from the point cloud files.
+If all of the output files already exists, this protein is skipped.
+As default, the source ascii point cloud is removed afterwards.
+To change this set self.keep_temp[FT.ascii_file] = True.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.get_filename">
+<span class="sig-name descname"><span class="pre">get_filename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.get_filename" title="Permalink to this definition"></a></dt>
+<dd><p>Get the filename of the protein.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.img_size">
+<span class="sig-name descname"><span class="pre">img_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">512</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.img_size" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.init_dirs">
+<span class="sig-name descname"><span class="pre">init_dirs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.init_dirs" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the directories.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.init_structures_dict">
+<span class="sig-name descname"><span class="pre">init_structures_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.init_structures_dict" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.keep_temp">
+<span class="sig-name descname"><span class="pre">keep_temp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">vrprot.classes.FileTypes</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.keep_temp" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.log">
+<span class="sig-name descname"><span class="pre">log</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Logger</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;vrprot.classes.Logger</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.log" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.not_fetched">
+<span class="sig-name descname"><span class="pre">not_fetched</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.not_fetched" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.output_exists">
+<span class="sig-name descname"><span class="pre">output_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structures</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ProteinStructure</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.output_exists" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if the output files already exist in the  output directory.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.overview_file">
+<span class="sig-name descname"><span class="pre">overview_file</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'/Users/till/Documents/Playground/VRNetzer_Backend/extensions/ProteinStructureFetch/alphafold_to_vrnetzer/pypi_project/docs/static/csv/overview.csv'</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.overview_file" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.overwrite">
+<span class="sig-name descname"><span class="pre">overwrite</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.overwrite" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.pdb_pipeline">
+<span class="sig-name descname"><span class="pre">pdb_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.pdb_pipeline" title="Permalink to this definition"></a></dt>
+<dd><p>Default pipeline which is used in all program modes.
+For each structure, the PDB file we be processed in chimerax and exported as GLB file. This GLB file will be converted into a PLY file.
+The PLY file is used to sample the point cloud which will be saved as an ASCII point cloud. This ASCII point cloud will then be used to generate the color maps (rgb,xyz_low and xyz_high).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.processing">
+<span class="sig-name descname"><span class="pre">processing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'cartoons_ss_coloring'</span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.processing" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.proteins_from_dir">
+<span class="sig-name descname"><span class="pre">proteins_from_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.proteins_from_dir" title="Permalink to this definition"></a></dt>
+<dd><p>Processes proteins from a directory. In the source directory, the program will search for each of the available file types. Based on this, the class directories are initialized. The program will then start at the corresponding step for each structure.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.proteins_from_list">
+<span class="sig-name descname"><span class="pre">proteins_from_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.proteins_from_list" title="Permalink to this definition"></a></dt>
+<dd><p>Add all uniprot_ids from the list to the set of proteins.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.sample_pcd">
+<span class="sig-name descname"><span class="pre">sample_pcd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.sample_pcd" title="Permalink to this definition"></a></dt>
+<dd><p>Samples the pointcloud form the ply files.
+As default, the source ply file is removed afterwards.
+To change this set self.keep_temp[FT.ply_file] = True.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_alphafold_version">
+<span class="sig-name descname"><span class="pre">set_alphafold_version</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Namespace</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_alphafold_version" title="Permalink to this definition"></a></dt>
+<dd><p>Parsers arguments from the argument parser Namespace and sets the alphafold version to the corresponding value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_batch_size">
+<span class="sig-name descname"><span class="pre">set_batch_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Namespace</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_batch_size" title="Permalink to this definition"></a></dt>
+<dd><p>Parsers arguments from the argument parser Namespace and sets the batch size to the corresponding value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_chimerax">
+<span class="sig-name descname"><span class="pre">set_chimerax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Namespace</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_chimerax" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_coloring_mode">
+<span class="sig-name descname"><span class="pre">set_coloring_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Namespace</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_coloring_mode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_database">
+<span class="sig-name descname"><span class="pre">set_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Namespace</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_database" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_dirs">
+<span class="sig-name descname"><span class="pre">set_dirs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Namespace</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_dirs" title="Permalink to this definition"></a></dt>
+<dd><p>Uses arguments from the argument parser Namespace and sets the directories to the corresponding values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_img_size">
+<span class="sig-name descname"><span class="pre">set_img_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Namespace</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_img_size" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_keep_tmp">
+<span class="sig-name descname"><span class="pre">set_keep_tmp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Namespace</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_keep_tmp" title="Permalink to this definition"></a></dt>
+<dd><p>Uses arguments from the argument parser Namespace and sets the switch to keep or to remove the corresponding file types after a processing step is completed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.set_version_from_filenames">
+<span class="sig-name descname"><span class="pre">set_version_from_filenames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.set_version_from_filenames" title="Permalink to this definition"></a></dt>
+<dd><p>Iterates over all Directories and searches for files, which have Alphafold version number. If one is found, set the Parser to this version. All files are treated with this version.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.structures">
+<span class="sig-name descname"><span class="pre">structures</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">vrprot.classes.ProteinStructure</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.structures" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.update_existence">
+<span class="sig-name descname"><span class="pre">update_existence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.update_existence" title="Permalink to this definition"></a></dt>
+<dd><p>Updates the existence of the files for each protein structure.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.update_output_dir">
+<span class="sig-name descname"><span class="pre">update_output_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.update_output_dir" title="Permalink to this definition"></a></dt>
+<dd><p>Updates the output directory of resulting images.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>output_dir (_type_): _description_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vrprot.alphafold_db_parser.AlphafoldDBParser.write_scale">
+<span class="sig-name descname"><span class="pre">write_scale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.alphafold_db_parser.AlphafoldDBParser.write_scale" title="Permalink to this definition"></a></dt>
+<dd><p>Writes the scale of the protein to the overview file. This file is used to keep track of the scale of each protein structure.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-vrprot.argument_parser">
+<span id="vrprot-argument-parser-module"></span><h2>vrprot.argument_parser module<a class="headerlink" href="#module-vrprot.argument_parser" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.argument_parser.argument_parser">
+<span class="sig-prename descclassname"><span class="pre">vrprot.argument_parser.</span></span><span class="sig-name descname"><span class="pre">argument_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exec_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'main.py'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.argument_parser.argument_parser" title="Permalink to this definition"></a></dt>
+<dd><p>Argument parser function for the main function.</p>
+</dd></dl>
+
+</section>
+<section id="module-vrprot.batcher">
+<span id="vrprot-batcher-module"></span><h2>vrprot.batcher module<a class="headerlink" href="#module-vrprot.batcher" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.batcher.batch">
+<span class="sig-prename descclassname"><span class="pre">vrprot.batcher.</span></span><span class="sig-name descname"><span class="pre">batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteins</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.batcher.batch" title="Permalink to this definition"></a></dt>
+<dd><p>Will execute the function which has been passed in batches of protein structures.</p>
+</dd></dl>
+
+</section>
+<section id="module-vrprot.exceptions">
+<span id="vrprot-exceptions-module"></span><h2>vrprot.exceptions module<a class="headerlink" href="#module-vrprot.exceptions" title="Permalink to this heading"></a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="vrprot.exceptions.ChimeraXException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vrprot.exceptions.</span></span><span class="sig-name descname"><span class="pre">ChimeraXException</span></span><a class="headerlink" href="#vrprot.exceptions.ChimeraXException" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="vrprot.exceptions.StructureNotFoundError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vrprot.exceptions.</span></span><span class="sig-name descname"><span class="pre">StructureNotFoundError</span></span><a class="headerlink" href="#vrprot.exceptions.StructureNotFoundError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-vrprot.overview_util">
+<span id="vrprot-overview-util-module"></span><h2>vrprot.overview_util module<a class="headerlink" href="#module-vrprot.overview_util" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.overview_util.add_protein_structure_from_scales">
+<span class="sig-prename descclassname"><span class="pre">vrprot.overview_util.</span></span><span class="sig-name descname"><span class="pre">add_protein_structure_from_scales</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">overview</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">single_pdb_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">processing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multi_pdb_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'/Users/till/Documents/Playground/VRNetzer_Backend/extensions/ProteinStructureFetch/alphafold_to_vrnetzer/pypi_project/docs/static/csv/overview.csv'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.overview_util.add_protein_structure_from_scales" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.overview_util.get_overview">
+<span class="sig-prename descclassname"><span class="pre">vrprot.overview_util.</span></span><span class="sig-name descname"><span class="pre">get_overview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#vrprot.overview_util.get_overview" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.overview_util.get_scale">
+<span class="sig-prename descclassname"><span class="pre">vrprot.overview_util.</span></span><span class="sig-name descname"><span class="pre">get_scale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uniprot_ids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ColoringModes.cartoons_ss_coloring</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.overview_util.get_scale" title="Permalink to this definition"></a></dt>
+<dd><p>look in overview wether there is a pdb file for the uniprot id and the demanded mode.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.overview_util.init_overview">
+<span class="sig-prename descclassname"><span class="pre">vrprot.overview_util.</span></span><span class="sig-name descname"><span class="pre">init_overview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#vrprot.overview_util.init_overview" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes the overview table.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.overview_util.main">
+<span class="sig-prename descclassname"><span class="pre">vrprot.overview_util.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">vrprot.classes.ProteinStructure</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.overview_util.main" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.overview_util.read_overview">
+<span class="sig-prename descclassname"><span class="pre">vrprot.overview_util.</span></span><span class="sig-name descname"><span class="pre">read_overview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'uniprot_id'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#vrprot.overview_util.read_overview" title="Permalink to this definition"></a></dt>
+<dd><p>Reads the overview table.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.overview_util.write_overview">
+<span class="sig-prename descclassname"><span class="pre">vrprot.overview_util.</span></span><span class="sig-name descname"><span class="pre">write_overview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">overview</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.overview_util.write_overview" title="Permalink to this definition"></a></dt>
+<dd><p>Writes the overview table.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.overview_util.write_scale">
+<span class="sig-prename descclassname"><span class="pre">vrprot.overview_util.</span></span><span class="sig-name descname"><span class="pre">write_scale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uniprotid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdb_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">processing</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overview</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.overview_util.write_scale" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vrprot.pointcloud2map_8bit">
+<span id="vrprot-pointcloud2map-8bit-module"></span><h2>vrprot.pointcloud2map_8bit module<a class="headerlink" href="#module-vrprot.pointcloud2map_8bit" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.pointcloud2map_8bit.gen_filennames">
+<span class="sig-prename descclassname"><span class="pre">vrprot.pointcloud2map_8bit.</span></span><span class="sig-name descname"><span class="pre">gen_filennames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protein</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.pointcloud2map_8bit.gen_filennames" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.pointcloud2map_8bit.pcd_to_png">
+<span class="sig-prename descclassname"><span class="pre">vrprot.pointcloud2map_8bit.</span></span><span class="sig-name descname"><span class="pre">pcd_to_png</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ascii_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rgb_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyz_low_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyz_high_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">512</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.pointcloud2map_8bit.pcd_to_png" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.pointcloud2map_8bit.run_batch">
+<span class="sig-prename descclassname"><span class="pre">vrprot.pointcloud2map_8bit.</span></span><span class="sig-name descname"><span class="pre">run_batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.pointcloud2map_8bit.run_batch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vrprot.sample_pointcloud">
+<span id="vrprot-sample-pointcloud-module"></span><h2>vrprot.sample_pointcloud module<a class="headerlink" href="#module-vrprot.sample_pointcloud" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.sample_pointcloud.run_for_batch">
+<span class="sig-prename descclassname"><span class="pre">vrprot.sample_pointcloud.</span></span><span class="sig-name descname"><span class="pre">run_for_batch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.sample_pointcloud.run_for_batch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.sample_pointcloud.sample_pcd">
+<span class="sig-prename descclassname"><span class="pre">vrprot.sample_pointcloud.</span></span><span class="sig-name descname"><span class="pre">sample_pcd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ply_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SAMPLE_POINTS</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">262144</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cube_no_line</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.sample_pointcloud.sample_pcd" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-vrprot.util">
+<span id="vrprot-util-module"></span><h2>vrprot.util module<a class="headerlink" href="#module-vrprot.util" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.batch">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">funcs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.util.batch" title="Permalink to this definition"></a></dt>
+<dd><p>Will run the functions listed in funcs in a batched process.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.call_ChimeraX_bundle">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">call_ChimeraX_bundle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chimerax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">script</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">working_Directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">script_arg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.util.call_ChimeraX_bundle" title="Permalink to this definition"></a></dt>
+<dd><p>Function to call chimeraX and run chimeraX Python script with the mode applied.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>script (string): chimeraX python script/bundle which should be called
+working_Directory (string): Define the working directory to which chimeraX should direct to (run(session,”cd “+arg[1]))
+file_name (string): target file which will be processed
+mode (string): Tells which pipline is used during chimeraX processing
+(ss = secondary structures, aa = aminoacids, ch = chain). Only ss is implemented at that moment.
+script_arg (list, strings): all arguments needed by the function used in the chimeraX Python script/bundle (size is dynamic). All Arguments are strings.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.combine_fractions">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">combine_fractions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chimerax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.util.combine_fractions" title="Permalink to this definition"></a></dt>
+<dd><p>Combines multi fraction protein structure to a single structure and exports it as glb file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.convert_glb_to_ply">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">convert_glb_to_ply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">glb_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ply_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.util.convert_glb_to_ply" title="Permalink to this definition"></a></dt>
+<dd><p>This function converts a glb file to a ply file.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>glb_file (string): Path to the glb file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.fetch_pdb">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">fetch_pdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uniprot_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#vrprot.util.fetch_pdb" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.fetch_pdb_from_alphafold">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">fetch_pdb_from_alphafold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uniprot_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AlphaFoldVersion</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'v1'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#vrprot.util.fetch_pdb_from_alphafold" title="Permalink to this definition"></a></dt>
+<dd><p>Fetches .pdb File from the AlphaFold Server. This function uses the request module from python standard library to directly download pdb files from the AlphaFold server.</p>
+<p>Requested .pdb files can be found at <a class="reference external" href="https://alphafold.ebi.ac.uk/files/AF">https://alphafold.ebi.ac.uk/files/AF</a>-&lt;UniProtID&gt;-F1-model_&lt;db_version&gt;.pdb.</p>
+<p>The loaded .pdb file is saved in a subfolder called “pdbs” in the current directory.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>uniprot_id (string): UniProtID of the requested protein.
+save_location (string): Path to the directory where the .pdb file should be saved.
+db_version (string): Version of the database.</p>
+</dd>
+<dt>Returns:</dt><dd><p>success (bool) : tells whether the fetching was successful or not.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.fetch_pdb_from_rcsb">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">fetch_pdb_from_rcsb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uniprot_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.util.fetch_pdb_from_rcsb" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.remove_dirs">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">remove_dirs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vrprot.util.remove_dirs" title="Permalink to this definition"></a></dt>
+<dd><p>Removes a directory an all underlying subdirectories. WARNING this can lead to los of data!</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.run_chimerax_coloring_script">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">run_chimerax_coloring_script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chimearx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdb_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">processing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#vrprot.util.run_chimerax_coloring_script" title="Permalink to this definition"></a></dt>
+<dd><p>This will use the give ChimeraX installation to process the .pdb files.It will color the secondary structures in the given colors.
+The offscreen render does only work under linux.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>protein (string): UniProtID of the protein which will be processed
+colors (list, optional): List containing three colors. The first is the color of coil. The second will be the color of the helix. And the last color is the color of the strands. Defaults to [“red”, “green”, “blue”] i.e. coils will be red, helix will be green and stands will be blue.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vrprot.util.search_for_chimerax">
+<span class="sig-prename descclassname"><span class="pre">vrprot.util.</span></span><span class="sig-name descname"><span class="pre">search_for_chimerax</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#vrprot.util.search_for_chimerax" title="Permalink to this definition"></a></dt>
+<dd><p>Will search for the chimerax executeable on the system. Does not work with windows so far.</p>
+</dd></dl>
+
+</section>
+<section id="module-vrprot">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-vrprot" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Till Pascal Oblau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+Usage
+=====
+
+Installation
+------------
+
+To use VRProt in your project, you can install it from PyPI using pip:
+
+Install the package e.g. in a virtual environment:
+
+- create a virtual environment<br>
+  `python3 -m venv name_of_env`
+- activate it<br>
+  `source name_of_env/bin/activate`
+- install requirements packages<br>
+  `python3 -m pip install -r requirements.txt`
+
+- under mac you might have to install the following packages<br>
+  `brew install libomp`
+- install VRProt<br>
+  `pip install VRProt`
+
+.. code-block:: console
+
+   (.venv) $ pip install lumache
