@@ -1,0 +1,13 @@
+fastapi_mail/__init__.py,sha256=lqmEJZ1CLJkv1jqXR2ykridHOIwJlouCh4jt4tVTi-8,385
+fastapi_mail/config.py,sha256=qd71ikmbk1Vz0plum2fwwUkcMrwOSZKmBvjrzSrAd6U,1127
+fastapi_mail/connection.py,sha256=h3RHdLJmcuoeNAIiVBDe-Ag7LxFEj2pwp9ZFWVRMY-k,1848
+fastapi_mail/email_utils/__init__.py,sha256=AxdROtKc8d-5bTQfdLqSoi6WNAjiY26yk4EeXsb8Mic,122
+fastapi_mail/email_utils/email_check.py,sha256=OWd40u_QmefLSvpNiNGKT2RuWTnHPPTTQagLjbiEjB4,16451
+fastapi_mail/errors.py,sha256=gBuE18k-KtJ46wCp86dmu35FuIehsyjG26TXL-9SnsM,530
+fastapi_mail/fastmail.py,sha256=7FJ99tkt11GIfi20xQi5lYAUNMS339_nW5JcF0-0vmo,4004
+fastapi_mail/msg.py,sha256=Qv6p6yueiAp_xSBuvCU1k99P2ldAx-etl16jpGdqAnk,4753
+fastapi_mail/schemas.py,sha256=wlF5QqVvgKXYYieadUCutygoDXmh5D3qupUZ2tJlIJo,3007
+fastapi_mail-1.2.6.dist-info/LICENSE,sha256=NakCDmv8D0hbgS5uC_x3yQeziV0JXi5PGy7fNknP-pY,1072
+fastapi_mail-1.2.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fastapi_mail-1.2.6.dist-info/METADATA,sha256=B6ROrusB_2tty56TQtAPxbr7SRF-qPIhLFBisL-OgvE,4718
+fastapi_mail-1.2.6.dist-info/RECORD,,
