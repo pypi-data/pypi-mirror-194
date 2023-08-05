@@ -1,0 +1,13 @@
+dxd/__about__.py,sha256=InQmF039CkYfDAJKDZO4Adt9vSBieGy8fOEbPs_3ul0,126
+dxd/__init__.py,sha256=kvsG_tzU-vWZcHFBHj9M9QzSO8jWmmdHA-5q1QV6GeE,213
+dxd/column.py,sha256=IYj7DWMEu-gUbGFynq9ge-jd359bPCEoXDFgpsZ1BRs,3705
+dxd/engine.py,sha256=7vehMiHzeKDUj5M0jlXlWB7N5ThW_ipjJqB2lua0VxA,1560
+dxd/expr.py,sha256=h4Z-pB4HVjb8-EF1eEScHicX23h2vJgZVu3HSBwpaRo,3866
+dxd/pattern.py,sha256=fcC92iSe22jCgNWJIPqGpAHmz35q4MOZZ58UZDuGBhI,2954
+dxd/postgres_engine.py,sha256=-FVonHYDqD7fvJJsCX_W0h1DLl3TWs-xYmhq1Fl41uc,2331
+dxd/sqlite_engine.py,sha256=yMW9ijOvsOUBynBRKdkKM-wPV4-VjaL7IrLP1SrFTnk,2466
+dxd/table.py,sha256=1RLUylE05H0x2ME8aS-wD94vhS0o89Hs_GVM335pvqU,11319
+dxd-0.0.1.dist-info/METADATA,sha256=pEJApKwlBnTDvwckiUau-9WwIbjmeZnvyK4iRRSCZMc,1861
+dxd-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+dxd-0.0.1.dist-info/licenses/LICENSE.txt,sha256=uhxlb3Xlj9XMexdLMHSAB3M584eKvv3j5Peef0Fs_oM,1096
+dxd-0.0.1.dist-info/RECORD,,
