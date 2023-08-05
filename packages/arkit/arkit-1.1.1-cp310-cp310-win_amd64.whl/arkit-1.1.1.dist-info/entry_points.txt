@@ -1,0 +1,3 @@
+[console_scripts]
+quarkbuild3.10 = arkit:quarkbuild
+quarkwheel3.10 = arkit:quarkwheel
