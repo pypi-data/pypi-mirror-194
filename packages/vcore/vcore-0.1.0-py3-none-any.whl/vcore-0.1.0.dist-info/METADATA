@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vcore
+Version: 0.1.0
+Summary: Venus internal data crawling
+Author: Aditya Rout
+Requires-Dist: web3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: web3-multicall
+Requires-Dist: retrying
+Requires-Dist: requests
+
