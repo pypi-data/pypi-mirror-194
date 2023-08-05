@@ -1,0 +1,11 @@
+click
+click-config-file
+numpy
+fabric
+pyYAML
+
+[test]
+pytest
+pytest-timeout
+pytest-click
+shepherd-data
