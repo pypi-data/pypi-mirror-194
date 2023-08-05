@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pysink
+Version: 0.0.2
+Summary: PySide6 Helpers for Powerful Async Desktop Apps
+Author: Zack Johnson)
+Author-email: <zackjohnson298@gmail.com>
+Keywords: python,app,gui,async,application,desktop,ui
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# pysink
+
+Under construction! Not ready for use yet! Currently experimenting and planning!
+
+Developed by Zack Johnson
+
+## Examples of How To Use (Buggy Alpha Version)
+
+Setting up a basic Async App
+
+```python
+from pysink import hello_pysink
+
+hello_pysink()
+# Other Code
+
+# When You Are Done
+```
+
+
+[//]: # (Check out: https://www.youtube.com/c/NeuralNine)
