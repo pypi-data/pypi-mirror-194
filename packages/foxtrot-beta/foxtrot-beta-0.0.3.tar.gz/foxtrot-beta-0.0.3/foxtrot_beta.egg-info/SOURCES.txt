@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+foxtrot/__init__.py
+foxtrot/_modidx.py
+foxtrot/core.py
+foxtrot_beta.egg-info/PKG-INFO
+foxtrot_beta.egg-info/SOURCES.txt
+foxtrot_beta.egg-info/dependency_links.txt
+foxtrot_beta.egg-info/entry_points.txt
+foxtrot_beta.egg-info/not-zip-safe
+foxtrot_beta.egg-info/requires.txt
+foxtrot_beta.egg-info/top_level.txt
