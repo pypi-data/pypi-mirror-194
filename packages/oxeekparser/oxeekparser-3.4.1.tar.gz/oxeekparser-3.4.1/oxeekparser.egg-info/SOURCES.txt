@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+oxeekparser/__init__.py
+oxeekparser/cmd_integration.py
+oxeekparser/parser.py
+oxeekparser.egg-info/PKG-INFO
+oxeekparser.egg-info/SOURCES.txt
+oxeekparser.egg-info/dependency_links.txt
+oxeekparser.egg-info/requires.txt
+oxeekparser.egg-info/top_level.txt
