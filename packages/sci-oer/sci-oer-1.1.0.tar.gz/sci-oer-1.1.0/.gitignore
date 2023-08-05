@@ -1,0 +1,13 @@
+.venv
+Pipfile
+Pipfile.lock
+*.egg-info
+build
+dist
+__pycache__
+*.log
+
+
+config.yml
+# version file to be automaticly generated
+__version__.py
