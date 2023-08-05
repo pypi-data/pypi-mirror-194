@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/delete_migration_roosevelt/__init__.py
+src/delete_migration_roosevelt/management.py
+src/delete_migrations.egg-info/PKG-INFO
+src/delete_migrations.egg-info/SOURCES.txt
+src/delete_migrations.egg-info/dependency_links.txt
+src/delete_migrations.egg-info/top_level.txt
