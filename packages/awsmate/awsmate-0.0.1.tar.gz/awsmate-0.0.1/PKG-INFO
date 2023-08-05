@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: awsmate
+Version: 0.0.1
+Summary: A companion for your AWS Python developments.
+Project-URL: Homepage, https://github.com/shlublu/awsmate
+Project-URL: Bug Tracker, https://github.com/shlublu/awsmate/issues
+Author-email: "Vincent Poulain (Shlublu)" <shlublu@yahoo.fr>
+License-File: LICENSE.txt
+Keywords: aws,aws-apigateway,aws-lambda,aws-s3,python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# awsmate
+
+A companion for your AWS Python developments.
+
+## Testing
+
+* Testing tool: `pytest`
+* Command line: `pytest [-v|-vv]`. Should be run from the base directory of the repository.
+* Tests files location:
+
+        awsmate
+            |___tests
+                    |
+                    |___unit
+                    |
+                    |___integration
+
+
+## License
+
+EUROPEAN UNION PUBLIC LICENCE (EUPL) v. 1.2.
+
+Please see `LICENSE.txt` for details.
