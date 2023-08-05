@@ -1,0 +1,3 @@
+Simperium3
+requests
+urwid
