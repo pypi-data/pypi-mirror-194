@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Data-Extract
+Version: 1.8
+Summary: Extract data from files in python
+Author: Cooper ransom
+Author-email: Cooperransom08@outlook.com
+Keywords: python,data,extraction,list
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+
+A python package for extracting data from files, more on github.
+
+          https://github.com/itzCozi/Data-Extraction
