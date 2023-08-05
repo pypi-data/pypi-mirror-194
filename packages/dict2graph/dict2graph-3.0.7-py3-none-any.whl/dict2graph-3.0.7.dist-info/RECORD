@@ -1,0 +1,16 @@
+dict2graph/__init__.py,sha256=NgztZ9SoemhnHA4ogLsOPvQEUEeQK1Z7_jPc--ePVlM,171
+dict2graph/dict2graph.py,sha256=_NMBk_uxuAhqn1P21cc3l1KkqfQthgmWgtTbwYWtjv8,27662
+dict2graph/matcher_transformators_container.py,sha256=MQRRFMCQFFUoCpa48SIOljm90Qlwqr_kUDLJBlUr0aQ,1643
+dict2graph/node.py,sha256=zX2PkWssJMhz_EXRy_cpWQ-UgzfuQO2j-yCsYaYCOJk,7553
+dict2graph/relation.py,sha256=2VgroeO9rtmb7EM52_ahdkeNm-3GoNunHnnyoNAqHHs,3112
+dict2graph/transformers/__init__.py,sha256=GjWvh69bOiQ_tw1Ev_glXiObDK7C4h6VtNV-qPWfGkk,140
+dict2graph/transformers/_base.py,sha256=YexAsEjEb6GJMrZb7tRGkIbp3fGAMNtHhAhqMdJcvXk,6627
+dict2graph/transformers/_types.py,sha256=HVFA6iLxnjYKvf6xLyM_hVhvtZubr0yTWRNo_iQ4hbo,1926
+dict2graph/transformers/generic_transformers.py,sha256=jN_8OESIDaz_kkyhpEt3T5Ljho3ICrzerY3aNyegYyA,6409
+dict2graph/transformers/node_transformers.py,sha256=Th1bddIUiffp0hSq5xFhb2YEKK62eKxtbAckD9nZtpw,38519
+dict2graph/transformers/rel_transformers.py,sha256=p6vYq3RTPO1u4BpDNdD1B2anoniEPui7Q8bDAy3UGkY,1225
+dict2graph-3.0.7.dist-info/LICENSE.md,sha256=D_Vb1a7ssQWnBd9TmRkpg26g9AtdMLWMCzT4y4R246k,1080
+dict2graph-3.0.7.dist-info/METADATA,sha256=p0MlhPCVIEY6N7cz_fQOE5Wrvp8bJygv2h8usQXh7aM,5818
+dict2graph-3.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dict2graph-3.0.7.dist-info/top_level.txt,sha256=cAAVh7hNcB5RIoXUb0Qlk6bejybaY-NRmtEXcc6yHpQ,11
+dict2graph-3.0.7.dist-info/RECORD,,
