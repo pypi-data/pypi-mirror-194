@@ -1,0 +1,8 @@
+preprocessingtweet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preprocessingtweet/preprocessingFullTweets.py,sha256=rm9DG1uLJmz0kU_JhKfNhQqRdumfVzL7OEqL-cmw90I,3645
+preprocessingtweet/preprocessingTweetText.py,sha256=AAI05HepJBsT63D5vPcgAcPAuZaKLLT4f9CrDksaf_c,11019
+preprocessingtweet/preprocessingTweets.py,sha256=rm9DG1uLJmz0kU_JhKfNhQqRdumfVzL7OEqL-cmw90I,3645
+preprocessingtweet-0.1.5.1.dist-info/LICENSE,sha256=y6nJ4ZfnoQtRuum3ANxZ2YOdHjlxHW1CdjoDcZDPk0s,1073
+preprocessingtweet-0.1.5.1.dist-info/METADATA,sha256=nXgm00URauzN-T2d1swF93jXHA_YXErtlx2GSZPzGAc,877
+preprocessingtweet-0.1.5.1.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+preprocessingtweet-0.1.5.1.dist-info/RECORD,,
