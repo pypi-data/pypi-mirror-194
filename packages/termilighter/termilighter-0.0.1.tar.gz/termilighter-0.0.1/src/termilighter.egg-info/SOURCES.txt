@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/termilighter.py
+src/termilighter.egg-info/PKG-INFO
+src/termilighter.egg-info/SOURCES.txt
+src/termilighter.egg-info/dependency_links.txt
+src/termilighter.egg-info/top_level.txt
