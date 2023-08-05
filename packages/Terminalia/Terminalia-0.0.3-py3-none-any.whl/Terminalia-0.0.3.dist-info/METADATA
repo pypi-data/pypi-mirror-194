@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Terminalia
+Version: 0.0.3
+Summary: A Python Library for Command Line Interface (CLI) Development
+Author: ai
+Keywords: python,terminal,console,color,style,design
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: textblob
+Requires-Dist: langdetect
+
