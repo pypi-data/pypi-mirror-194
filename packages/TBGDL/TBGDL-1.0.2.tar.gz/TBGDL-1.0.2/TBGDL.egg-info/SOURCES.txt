@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+TBGDL.egg-info/PKG-INFO
+TBGDL.egg-info/SOURCES.txt
+TBGDL.egg-info/dependency_links.txt
+TBGDL.egg-info/requires.txt
+TBGDL.egg-info/top_level.txt
+tbgdl/__init__.py

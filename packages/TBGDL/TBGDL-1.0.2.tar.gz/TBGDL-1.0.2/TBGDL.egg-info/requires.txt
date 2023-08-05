@@ -1,0 +1,4 @@
+colorama
+simpleaudio
+numpy
+musicalbeeps
