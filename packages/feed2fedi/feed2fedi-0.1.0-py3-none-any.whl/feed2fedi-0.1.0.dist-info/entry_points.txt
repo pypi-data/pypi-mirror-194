@@ -1,0 +1,3 @@
+[console_scripts]
+feed2fedi=feed2fedi.app:start_main
+
