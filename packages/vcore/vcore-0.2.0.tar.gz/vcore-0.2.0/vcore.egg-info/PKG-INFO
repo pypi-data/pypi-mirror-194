@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: vcore
+Version: 0.2.0
+Summary: Venus internal data crawling
+Author: Aditya Rout
+Description-Content-Type: text/markdown
+
+# vcore
+
+An internal venus protocol package useful for data-analytics team.
+This module defines the Vcore class, which is responsible for fetching user and market information from the Venus Protocol.
+
+## Installation
+
+You can install the package using pip:
+`pip install vcore`
+
+## Usage
+
+Initialization
+vcore = Vcore(`bsc_url`)
+The Vcore class is initialized by passing the Binance Smart Chain URL as a parameter. It uses the web3 library to connect to the blockchain.
+
+## Static Methods
+
+load_abi(abi_name)
+Loads the ABI (Application Binary Interface) of a given contract name. It takes the contract name as a parameter and returns its ABI as a JSON object.
+
+## getAllUnderlyingAddress()
+
+Returns a list with all the underlying token addresses on the Venus Protocol.
+
+## getAllMarketAddress()
+
+Returns a list with all the market contract addresses on the Venus Protocol.
+
+## getAllUnderlyingAddress()
+
+Returns a dictionary with all the underlying token addresses and symbol on the Venus Protocol.
+
+## getAllMarketAddress()
+
+Returns a dictionary with all the market contract addresses and symbol on the Venus Protocol.
+
+## getMarketAddressBySymbol(symbol)
+
+Returns the market contract address for a given symbol.
+
+## getUnderlyingAddressBySymbol(symbol)
+
+Returns the underlying token address for a given symbol.
+
+## Methods
+
+get_venus_user_addresses()
+Fetches a list of all users on the Venus Protocol. Returns a Pandas dataframe with user information such as their address, borrowed and supplied token balance, and more.
+
+## get_market_user_information(market_address, user_address, enriched)
+
+Fetches market and user information for a given market and user address. Returns a Pandas dataframe with market and user information such as the user's supplied and borrowed token balance, utilization rate, and more. The enriched parameter, if set to True, will also return additional information such as the reserve factor, kink value, and more.
+
+## load_contract(abi_name, market_address=None, Symbol=None)
+
+This function loads a contract from its ABI and address on the blockchain.
+abi_name: (str) Name of the ABI file located in the abi directory.
+market_address: (str) Address of the contract on the blockchain. If not provided, it can be inferred from Symbol.
+Symbol: (str) Symbol of the market (e.g. "vBNB"). If not provided, market_address must be specified.
+Returns a contract object that can be used to interact with the contract on the blockchain.
