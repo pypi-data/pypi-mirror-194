@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "FiniteDifferenceFormula"
+version = "0.7.1"
+authors = [
+  { name="David Wang", email="fdformula@hotmail.com" },
+]
+maintainers = [
+  {name = "David Wang", email = "fdformula@hotmail.com" }
+]
+description = "A general finite difference formula generator and a tool for teaching the finite difference method"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+#  "fractions.Fraction",
+#  "math"
+]
+
+keywords = ["finite difference", "formula", "coefficients", "generator", "calculator"] 
+
+[project.urls]
+"Homepage" = "https://github.com/fdformula/FiniteDifferenceFormula.py"
