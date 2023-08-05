@@ -1,0 +1,10 @@
+
+[dev]
+black
+build
+click
+fastapi
+isort
+pytest
+redis
+twine

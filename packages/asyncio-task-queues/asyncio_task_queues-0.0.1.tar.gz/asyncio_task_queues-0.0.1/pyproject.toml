@@ -1,0 +1,20 @@
+[project]
+name = "asyncio_task_queues"
+version = "0.0.1"
+authors = [{ name = "Ben Fiola", email = "benfiola@gmail.com" }]
+description = "Python asyncio-compatible distributed task queues"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = []
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["black", "build", "click", "fastapi", "isort", "pytest", "redis", "twine"]
+
+[project.urls]
+Source = "https://github.com/benfiola/asyncio_task_queues.git"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
