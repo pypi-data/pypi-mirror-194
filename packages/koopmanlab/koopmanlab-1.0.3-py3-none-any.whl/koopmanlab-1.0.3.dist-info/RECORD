@@ -1,0 +1,13 @@
+koopmanlab/__init__.py,sha256=W6nKZesK3fljqdFkuKaoraVBg3NJFc--Mb4t_oeCEEE,291
+koopmanlab/data.py,sha256=da_-UQxCYSES6nKUTtHyUtc2MggifdStaWE1hZ1rREk,7625
+koopmanlab/func.py,sha256=Xi6K7SPnrU8eDB3NzPR7oxoIDRGC5dRfYJZaLz2sli0,426
+koopmanlab/model.py,sha256=gmNYomyobqnUWKzA1mubJETtiS8aia3wlteKkmv7ya0,24914
+koopmanlab/utils.py,sha256=AK4SOfJ-Nix0Y_78eXAWJZ0m6QqIafqyVF2xGhoVGpo,6815
+koopmanlab/models/__init__.py,sha256=OcFmtMMROw70zgwZ2dJW2sMcLmZPot6iqRnMLZGbz7k,162
+koopmanlab/models/kno.py,sha256=cEaJDEosOvNX9lek_kprl1rUHEAxmuGB86LzxnDKPxg,7215
+koopmanlab/models/koopmanViT.py,sha256=MnbZwoUeiJnOE94oNFj41K5sows3AwODyfgIJF4W6w8,10808
+koopmanlab-1.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+koopmanlab-1.0.3.dist-info/METADATA,sha256=jnB7xkGND9uiuPBB1StpygyQ2h4KCWTZ4Fm9QFZXPew,9850
+koopmanlab-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+koopmanlab-1.0.3.dist-info/top_level.txt,sha256=T2so6FQ6TBlrU0A-uT3MMZCWTMiR-qhBu1WhCF--8VM,11
+koopmanlab-1.0.3.dist-info/RECORD,,
