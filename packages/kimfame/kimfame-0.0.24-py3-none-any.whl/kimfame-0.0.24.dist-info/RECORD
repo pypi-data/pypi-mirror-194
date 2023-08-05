@@ -1,0 +1,14 @@
+kimfame/__init__.py,sha256=pdaRZIeMEqI9hXAXiRft8kMv6HnwRs8EghAt1ZkKS2s,23
+kimfame/__main__.py,sha256=j_xS_SiW9OhRNpCGT90bFLfrWZDr-lQ_G1MqMEYDIWE,83
+kimfame/__version__.py,sha256=lFXS8un3X0v0RL3USPQuHoyUtm_L6quk-04MLq3mPA4,23
+kimfame/aaa.py,sha256=6U3tbapUfU9dvqCV85B9CnHzZLiDM-IVcKFqG9GKhrA,97
+kimfame/bbb.py,sha256=Ukq7px76BDtTnavtJ8p-7UhcB5ezTtVcCTagQqy6WsE,27
+kimfame/ccc.py,sha256=bi7T_3TGZXySEGSNMZ5wjM7e-LnWiuhFn37MEGF6tBU,27
+kimfame/ddd.py,sha256=tmtujvAiIfW9tkD-RvKg2Z53-Sykrlk8tCVC5QU3T4Y,27
+kimfame/eee.py,sha256=VLDodreRtxtvxHs7Kwd2S7-xgHwl52UuAIKj8r5OQgk,27
+kimfame/kimfame.py,sha256=fkfimkcUStu4yh4fzQMaBIwfbETiyak71u-S_K3UDFc,77
+kimfame-0.0.24.dist-info/LICENSE,sha256=OthadcAoNJXhc6IE8gvLW-6VvgmPPKQJ2AdEnvDvedI,1070
+kimfame-0.0.24.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+kimfame-0.0.24.dist-info/entry_points.txt,sha256=J-r0djV65In-jAyhRN-5HuYTuT0ZNZ2BuTAypRyNfGY,52
+kimfame-0.0.24.dist-info/METADATA,sha256=iwRhlON6TmRJhrDjU4eLRhtNTjIniuhd5Ftbez8HUYs,632
+kimfame-0.0.24.dist-info/RECORD,,
