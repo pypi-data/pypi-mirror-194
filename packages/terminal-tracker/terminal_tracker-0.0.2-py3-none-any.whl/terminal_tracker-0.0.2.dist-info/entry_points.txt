@@ -1,0 +1,2 @@
+[console_scripts]
+tt = terminal_tracker:searching
