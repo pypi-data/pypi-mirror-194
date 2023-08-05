@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+data_scientist_tools/DataScienceTools.py
+data_scientist_tools/HappyDataScientist.py
+data_scientist_tools/__init__.py
+data_scientist_tools.egg-info/PKG-INFO
+data_scientist_tools.egg-info/SOURCES.txt
+data_scientist_tools.egg-info/dependency_links.txt
+data_scientist_tools.egg-info/not-zip-safe
+data_scientist_tools.egg-info/requires.txt
+data_scientist_tools.egg-info/top_level.txt
