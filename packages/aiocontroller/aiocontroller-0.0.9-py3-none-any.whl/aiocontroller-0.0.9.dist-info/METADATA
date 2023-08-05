@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: aiocontroller
+Version: 0.0.9
+Summary: Adapt controller classes to aiohttp server routes.
+Project-URL: Documentation, https://github.com/EvanAranda/aiocontroller#readme
+Project-URL: Issues, https://github.com/EvanAranda/aiocontroller/issues
+Project-URL: Source, https://github.com/EvanAranda/aiocontroller
+Author-email: Evan Aranda <evanaranda35@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# aiocontroller
