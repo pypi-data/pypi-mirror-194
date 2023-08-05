@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: virtualpy
+Version: 0.0.dev1
+Summary: Virtual: The Python virtualisation software that allows you to create custom systems!
+Home-page: https://github.com/opendylan/
+Author: Dylan Rogers
+Author-email: opendylan@proton.me
+License: MIT
+Keywords: vm virtual machine python py app program sub computer operating system os pc linux mac macos windows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Welcome to **Virtual**: the Python project that allows you to run an 'operating system'... in your operating system.
+Virtual allows developers to built apps easily, and makes it easier for users, too.

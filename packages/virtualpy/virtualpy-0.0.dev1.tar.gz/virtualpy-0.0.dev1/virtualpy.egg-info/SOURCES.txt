@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+virtualpy.egg-info/PKG-INFO
+virtualpy.egg-info/SOURCES.txt
+virtualpy.egg-info/dependency_links.txt
+virtualpy.egg-info/entry_points.txt
+virtualpy.egg-info/not-zip-safe
+virtualpy.egg-info/requires.txt
+virtualpy.egg-info/top_level.txt
