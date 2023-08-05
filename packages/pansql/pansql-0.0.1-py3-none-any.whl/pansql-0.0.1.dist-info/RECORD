@@ -1,0 +1,14 @@
+pansql/__init__.py,sha256=k6RoR5Ek9nUdWrd-nRpjodGvtyppfPZZHq_8cSd8950,417
+pansql/sqldf.py,sha256=uSg2Q682_vIVFhwkWg6AN9L1QhuVeOoI5nfALwdOCqQ,5784
+pansql/data/births.csv,sha256=Hrdtbf8Um3cQEy0bp76xcWv30bN8NHYGpWla0IyURCw,1141
+pansql/data/births_by_month.csv,sha256=P---jKcuWe6Nvbag9WNUWjEl1essQZzFNYeL_bKb8mQ,11028
+pansql/data/meat.csv,sha256=HCKDtcCk6D6x8LcNFem2zQTpPYqtch5TY9Ir8q4fJ_Q,62608
+pansql/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pansql/tests/test_pandasql.py,sha256=PBEEz8uJSJQgDP64X9vjVJoQMXSkm7AWSnPFU4A-ul8,7350
+pansql/tests/test_utils.py,sha256=29-6RqaVzb5PjneYf978qZzfDI1mM9jLHdVyJIpd_rM,1178
+pansql-0.0.1.dist-info/AUTHORS.md,sha256=GHQso3QQFf7SW5zS07RNqo_u3TAnxwfRaE4yEJJ-rgA,111
+pansql-0.0.1.dist-info/LICENSE.txt,sha256=ssEFpdOkYKVBgk208kurMZNcZm5ljtP60Oox3xRdyac,1053
+pansql-0.0.1.dist-info/METADATA,sha256=2fgIdClBpOFS0f7IIFuaBaMGyxVFBZalJCV7hFAwhI8,3588
+pansql-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pansql-0.0.1.dist-info/top_level.txt,sha256=TwKB5XVdu3YsjR42KT-l0hordBcKVGsiIP3_jMnb5Fw,7
+pansql-0.0.1.dist-info/RECORD,,
