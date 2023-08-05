@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+raven_aiohttp.py
+setup.cfg
+setup.py
+raven_aiohttp_redux.egg-info/PKG-INFO
+raven_aiohttp_redux.egg-info/SOURCES.txt
+raven_aiohttp_redux.egg-info/dependency_links.txt
+raven_aiohttp_redux.egg-info/not-zip-safe
+raven_aiohttp_redux.egg-info/requires.txt
+raven_aiohttp_redux.egg-info/top_level.txt
