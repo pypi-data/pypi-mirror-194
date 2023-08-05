@@ -1,0 +1,13 @@
+django
+
+# this item
+django_userdefinedtables
+
+# styling
+django-bootstrap-v5
+
+# dev tools
+Pillow
+
+# db
+psycopg2-binary
