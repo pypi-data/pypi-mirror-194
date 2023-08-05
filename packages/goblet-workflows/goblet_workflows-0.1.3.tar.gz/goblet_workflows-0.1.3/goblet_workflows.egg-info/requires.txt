@@ -1,0 +1,5 @@
+click
+google-api-python-client
+ruamel.yaml
+polling2
+goblet_gcp_client
