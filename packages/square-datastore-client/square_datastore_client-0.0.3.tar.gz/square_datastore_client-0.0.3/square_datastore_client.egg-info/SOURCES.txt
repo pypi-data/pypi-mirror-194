@@ -1,0 +1,9 @@
+README.md
+setup.py
+square_datastore_client/__init__.py
+square_datastore_client/datastore_client.py
+square_datastore_client.egg-info/PKG-INFO
+square_datastore_client.egg-info/SOURCES.txt
+square_datastore_client.egg-info/dependency_links.txt
+square_datastore_client.egg-info/requires.txt
+square_datastore_client.egg-info/top_level.txt
