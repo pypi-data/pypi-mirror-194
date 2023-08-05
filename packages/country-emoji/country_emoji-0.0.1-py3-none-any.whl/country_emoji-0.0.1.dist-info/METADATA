@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: country-emoji
+Version: 0.0.1
+Summary: Converts between country names, ISO 3166-1 codes and flag emojis.
+Project-URL: Homepage, https://github.com/Nnonexistent/country-emoji
+Project-URL: Bug Tracker, https://github.com/Nnonexistent/country-emoji/issues
+Author-email: Nik Sergievskii <nnonexistent@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Provides-Extra: dev
+Requires-Dist: blue; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+# country-emoji
+Converts between country names, ISO 3166-1 codes and flag emojis.
+
+Inspired by [JavaScript version](https://www.npmjs.com/package/country-emoji) by [meeDamian](https://github.com/meeDamian)
