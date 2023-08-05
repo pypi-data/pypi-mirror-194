@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: taus3
+Version: 0.0.4
+Summary: It is a package that solves mathematical problem and do some secret works.
+Author: Taus Hasan (Taus Hasan)
+Author-email: <taushasan704@gmail.com>
+Keywords: python,mathematics,fileattack,calculate,create
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+It is a package that solves mathematical problem and do some secret works. It can work with files.
