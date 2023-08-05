@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: tchan
+Version: 0.1.0
+Summary: Scrape Telegram public channels (Python library + CLI)
+Home-page: https://github.com/PythonicCafe/tchan/
+Author: Álvaro Justen
+Author-email: alvarojusten@gmail.com
+License: GNU Lesser General Public License v3 (LGPLv3)
+Keywords: telegram scraping social-media
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: cli
+Provides-Extra: dev
+License-File: LICENSE
+
+# tchan - Telegram Channel scraper
+
+Python library and command-line interface to scrape Telegram public channels.
+Since this scraper uses Telegram Channel Web preview, **it won't work** for:
+
+- Public channels with "Restrict saving content" option enabled
+- Private channels
+- Public Groups
+- Private Groups
+
+It's also not possible to retrieve comments, since they're made on a group.
+
+## Installing
+
+
+```shell
+pip install tchan  # Python library only
+pip install tchan[cli]  # Library + CLI
+```
+
+## Using as a libray
+
+```python
+from tchan import ChannelScraper
+
+scraper = ChannelScraper()
+for message in scraper.messages("tchantest"):
+    print(f"New message ({message.type}) from {message.channel}:")
+    print(f"  id={message.id}")
+    print(f"  created_at={message.created_at.isoformat()}")
+    print(f"  text={message.text}")
+    # TODO: add more parameters
+```
+
+## Using as a command-line tool
+
+Scrape one or many channels and save all messages to `messages.csv`:
+
+```shell
+tchan messages.csv channel1 [channel2 ... channelN]
+```
+
+## Tests
+
+To run all tests, execute:
+
+```shell
+make test  # or just `pytest`
+```
+
+Make sure to install development requirements.
+
+Tests were made on a channel created for this task:
+[tchantest](https://t.me/tchantest).
