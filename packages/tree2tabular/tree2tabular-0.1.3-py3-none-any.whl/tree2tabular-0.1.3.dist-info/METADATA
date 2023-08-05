@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tree2tabular
+Version: 0.1.3
+Summary: Wrapper around treelib to convert tree to tabular format
+Author: "Paul Ogier"
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Requires-Dist: treelib (==1.6.1)
+
+"Wrapper around treelib to convert tree to tabular format"
