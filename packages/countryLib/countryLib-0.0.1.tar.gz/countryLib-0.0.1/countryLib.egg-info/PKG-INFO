@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: countryLib
+Version: 0.0.1
+Summary: Country library
+Author: Abraham
+Author-email: ibrohimjon.ismoilov.007@gmail.com
+Keywords: python,country,information,country information,population,area of countries,country borders,map of countries,continent,world
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that allows to get country information like official name, population and so on... To use "from country.countryLib import Country"
