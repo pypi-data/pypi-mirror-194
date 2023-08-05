@@ -1,0 +1,16 @@
+liteshort/__init__.py,sha256=PYmcr8aDYCCR-TNeQvXp7rGGftg8fzbJjLlvIjB7Y7o,27
+liteshort/config.py,sha256=e4TmQ3AB6kghkhXP6GGw5tAf1TfZCMq99qWAsXvh7AQ,3693
+liteshort/config.template.yml,sha256=R-j0q1186rM0EMMSAgdqEXQbK2Inv5AcCJuymSTypqo,2846
+liteshort/liteshort.py,sha256=oX0xfAgO3GffhobXFP2jk4U_4U0lXrtA4CX0ZDPdKW0,11624
+liteshort/util.py,sha256=sodVIA9sUm2pji2hldgfS-RPNQtRJIUQVjLLoj7vl90,1295
+liteshort/wsgi.py,sha256=9mzT9s_dMSoHepfJByp7mRJkpvY0Lo-GFHo7tL_nDag,64
+liteshort/static/GitHub.svg,sha256=kDaaIAlmHuB0alsuM1zw5160EYKIb3fYSuMNsSfShYQ,1384
+liteshort/static/favicon.ico,sha256=LOi9x0k1mlYkXgy7q3uLJMyNc4nyT128fIsk_7_gFKI,15086
+liteshort/static/styles.css,sha256=yZNntnQpCfD45LNLAifebEPeR3MxYOncxM82CbGVSmQ,1304
+liteshort/templates/main.html,sha256=KbeTpSF5m1TJu3iy63reS2fLSfZ27ohHj0Vj3vCkhqY,2079
+liteshort-1.3.0.dist-info/LICENSE,sha256=J-bKzHGT8CAtOlF7V2v83SD-hCxVlTftPE7YE4MQjO8,1055
+liteshort-1.3.0.dist-info/METADATA,sha256=ggaf_-uxUzBT_EKOTcmbmR4mJbOVQjLG4krBuyeoGFs,1814
+liteshort-1.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+liteshort-1.3.0.dist-info/entry_points.txt,sha256=y0jwMjeOIdbHQgpT2Uz_dGy-izVKuAxkqfWzdYhv_1I,84
+liteshort-1.3.0.dist-info/top_level.txt,sha256=BbhrW1p--v_0rroIxRmEJqsNVmYdOdsfIq5pUKwUvzw,10
+liteshort-1.3.0.dist-info/RECORD,,

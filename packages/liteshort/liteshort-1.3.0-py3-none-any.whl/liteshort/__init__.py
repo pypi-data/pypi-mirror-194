@@ -1,0 +1,1 @@
+from .liteshort import app
