@@ -1,0 +1,5 @@
+browserpilot/agents/compilers/instruction_compiler.py,sha256=wiCk2uCr9ZqZ3rGtgFg7Sn1m1loNeL3EUTkjTbIffzg,14176
+browserpilot/agents/gpt_selenium_agent.py,sha256=iiHJnnkz4teuHreVdplM6WoD_t4JVmWLO-SQzTH1KDo,15361
+browserpilot-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+browserpilot-0.1.4.dist-info/METADATA,sha256=k2Lufbq_pUyv6ATJjqd6l7y3L9AVBF4TQVCEyk_X3Mw,7765
+browserpilot-0.1.4.dist-info/RECORD,,
