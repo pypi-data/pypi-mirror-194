@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cloudhealth-client
+Version: 0.1
+Summary: A REST Client for Cloudhealth
+Home-page: https://github.com/albertonarro/cloudhealth-client
+Author: Alberto Narro
+Author-email: alberto.narro@hotmail.com
+License: LICENSE
+Keywords: CLOUDHEALTH,CLIENT,CLI
+License-File: LICENSE
