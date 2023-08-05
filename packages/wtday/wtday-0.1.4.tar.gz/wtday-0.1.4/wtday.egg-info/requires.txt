@@ -1,0 +1,5 @@
+urllib3
+beautifulsoup4
+keyboard
+colorama
+pywin32
