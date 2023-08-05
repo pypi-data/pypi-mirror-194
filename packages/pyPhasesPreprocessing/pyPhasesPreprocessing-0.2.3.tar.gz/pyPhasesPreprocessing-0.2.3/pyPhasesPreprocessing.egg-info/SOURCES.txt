@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyPhasesPreprocessing/DataAugmentation.py
+pyPhasesPreprocessing/Event.py
+pyPhasesPreprocessing/EventManager.py
+pyPhasesPreprocessing/Plugin.py
+pyPhasesPreprocessing/Preprocessing.py
+pyPhasesPreprocessing/__init__.py
+pyPhasesPreprocessing/config.yaml
+pyPhasesPreprocessing.egg-info/PKG-INFO
+pyPhasesPreprocessing.egg-info/SOURCES.txt
+pyPhasesPreprocessing.egg-info/dependency_links.txt
+pyPhasesPreprocessing.egg-info/requires.txt
+pyPhasesPreprocessing.egg-info/top_level.txt
