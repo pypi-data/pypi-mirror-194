@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flashquiz
+Version: 0.0a1
+Summary: [TEST VERSION] Quiz yourself on your flashcards
+Author: mike-fmh
+Author-email: Michael MH <mikemh@uri.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/mike-fmh/flashquiz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame
+
