@@ -1,0 +1,9 @@
+README.md
+setup.py
+pythree/__init__.py
+pythree/sphere.py
+pythree.egg-info/PKG-INFO
+pythree.egg-info/SOURCES.txt
+pythree.egg-info/dependency_links.txt
+pythree.egg-info/requires.txt
+pythree.egg-info/top_level.txt
