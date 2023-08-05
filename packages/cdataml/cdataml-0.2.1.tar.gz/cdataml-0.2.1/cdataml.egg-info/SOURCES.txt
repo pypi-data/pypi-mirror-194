@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+cdataml/__init__.py
+cdataml.egg-info/PKG-INFO
+cdataml.egg-info/SOURCES.txt
+cdataml.egg-info/dependency_links.txt
+cdataml.egg-info/requires.txt
+cdataml.egg-info/top_level.txt
+cdataml/coordinates/__init__.py
+cdataml/coordinates/__main__.py
+cdataml/fitscores/__init__.py
+cdataml/fitscores/__main__.py
+cdataml/generate/__init__.py
+cdataml/generate/__main__.py
+cdataml/query/__init__.py
+cdataml/query/__main__.py
