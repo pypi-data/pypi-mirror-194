@@ -1,0 +1,7 @@
+[tshistory.subcommands]
+init-db = tshistory_refinery.cli:initdb
+list-series-locks = tshistory_refinery.cli:list_series_locks
+migrate-to-cache = tshistory_refinery.cli:migrate_to_cache
+setup-tasks = tshistory_refinery.cli:setup_tasks
+shell = tshistory_refinery.cli:shell
+webstart = tshistory_refinery.cli:webstart
