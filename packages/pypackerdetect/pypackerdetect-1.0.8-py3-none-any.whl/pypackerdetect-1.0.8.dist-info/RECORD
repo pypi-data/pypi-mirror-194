@@ -1,0 +1,14 @@
+pypackerdetect/VERSION.txt,sha256=Mm3V2GQfOZmQ3kLe9QrCnrTJIiYBwKCj_DyUfdO-xl0,6
+pypackerdetect/__info__.py,sha256=P8QZiypQLk-Dpt4tCAnoqiJBXKqsSicC5OjFK3WcWVM,593
+pypackerdetect/__init__.py,sha256=4Q51o8Nv4ed4W9v7sIgfVmIEXtRWji19FVJZFGHaGJk,6612
+pypackerdetect/__main__.py,sha256=BHYuc2szWKqBbCYVV4ChpFLxaCItLwTiK70z79jARPA,4416
+pypackerdetect/db/packers.json,sha256=O4b7sbj0MWye0U7uKJEOUVxd-aK9EgMueKu--KcaXxY,3868
+pypackerdetect/db/sections.json,sha256=ExK-3ZTiAMcczmYwP4nqlNDRQZ3smOFikpVgngvTNm4,2508
+pypackerdetect/db/sigs_long.txt,sha256=Od_NuPSoj1wcCiLDYIapUdbtBdSuEyz4eoRyDnc2VoQ,1188755
+pypackerdetect/db/sigs_short.txt,sha256=v1bOr0N9qSHnnR-F3vn9t8F3wnChGPl4ltQKzkac0nM,492372
+pypackerdetect-1.0.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pypackerdetect-1.0.8.dist-info/METADATA,sha256=JPTfgiuI3XhrccF56wqLTC2BWd-Qkalqa2BCeiQg7HE,45339
+pypackerdetect-1.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pypackerdetect-1.0.8.dist-info/entry_points.txt,sha256=NsvW3-MRoT6VI9NwETCPU4ylzcNCOsqfrDQyRCcpHSg,64
+pypackerdetect-1.0.8.dist-info/top_level.txt,sha256=AmIILaItRFz5wz9uvkFMjj307q-qWRSxXJJj42DEGcc,15
+pypackerdetect-1.0.8.dist-info/RECORD,,
