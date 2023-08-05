@@ -1,0 +1,18 @@
+[project]
+name = 'v'
+version = '0.6.0'
+authors = [
+{ name = 'Dylan Rogers', email = 'opendylan@proton.me' },
+]
+description = 'v: the ultimate package for everything'
+readme = 'README.md'
+requires-python = '>=2.0'
+classifiers = [
+	'Programming Language :: Python',
+	'License :: OSI Approved :: MIT License',
+	'Operating System :: OS Independent',
+]
+
+[project.urls]
+'Homepage' = 'http://123web.uk/v/py'
+'Bug Tracker' = 'http://123web.uk/v/py/bugs'
