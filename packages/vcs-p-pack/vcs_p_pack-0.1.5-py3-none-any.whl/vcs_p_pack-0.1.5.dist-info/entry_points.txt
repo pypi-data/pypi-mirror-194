@@ -1,0 +1,2 @@
+[console_scripts]
+parse_work = package.vcs_p:parse_work

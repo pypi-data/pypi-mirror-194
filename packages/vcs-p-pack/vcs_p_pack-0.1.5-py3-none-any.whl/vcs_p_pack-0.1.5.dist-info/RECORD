@@ -1,0 +1,11 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/config_args.py,sha256=PoGGIvypONzU0Y8cLpCMT4r__hHpCvweaO1Pt51c0Cw,595
+package/config_func.py,sha256=EmD_4Qjc06TtMUXTFmIrgvvUKJUsTkkXw7pBf8L6QvQ,4229
+package/parse_args.py,sha256=TgPx53E3JF9dUvKggwsh0qxcJP8B9d4IMrw-gMFBEwI,3912
+package/vcs_p.py,sha256=PE5yD1K4ASXP4CPnbs4ILnLodxSL0o3k4ITNRESeGa4,1368
+package/work_functions.py,sha256=_JMBlLrEZyguTfHW_2y8eMMT_sheoXCUScSS34Jf9oo,6926
+vcs_p_pack-0.1.5.dist-info/METADATA,sha256=Trg2J03AgsKINAEFKfDfYIjCzrb4sKxtD54jx21Db90,190
+vcs_p_pack-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vcs_p_pack-0.1.5.dist-info/entry_points.txt,sha256=PPem4vH7wUIhvoGxBzx1oAnY1jaYo-DchgV_QUQw3GU,56
+vcs_p_pack-0.1.5.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+vcs_p_pack-0.1.5.dist-info/RECORD,,
