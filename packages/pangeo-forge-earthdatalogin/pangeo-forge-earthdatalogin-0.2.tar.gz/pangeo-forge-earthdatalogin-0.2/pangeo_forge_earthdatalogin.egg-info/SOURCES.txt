@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pangeo_forge_earthdatalogin/__init__.py
+pangeo_forge_earthdatalogin/_version.py
+pangeo_forge_earthdatalogin.egg-info/PKG-INFO
+pangeo_forge_earthdatalogin.egg-info/SOURCES.txt
+pangeo_forge_earthdatalogin.egg-info/dependency_links.txt
+pangeo_forge_earthdatalogin.egg-info/not-zip-safe
+pangeo_forge_earthdatalogin.egg-info/requires.txt
+pangeo_forge_earthdatalogin.egg-info/top_level.txt
