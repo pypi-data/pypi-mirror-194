@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+aiotubes/__init__.py
+aiotubes/client.py
+aiotubes/constants.py
+aiotubes/extract.py
+aiotubes/helpers.py
+aiotubes/itags.py
+aiotubes/request.py
+aiotubes/streams.py
+aiotubes.egg-info/PKG-INFO
+aiotubes.egg-info/SOURCES.txt
+aiotubes.egg-info/dependency_links.txt
+aiotubes.egg-info/requires.txt
+aiotubes.egg-info/top_level.txt
