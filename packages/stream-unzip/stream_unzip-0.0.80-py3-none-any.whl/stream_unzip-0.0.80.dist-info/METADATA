@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stream-unzip
+Version: 0.0.80
+Summary: Python function to stream unzip all the files in a ZIP archive, without loading the entire ZIP file into memory or any of its uncompressed files
+Author: Department for International Trade
+Author-email: sre@digital.trade.gov.uk
+Project-URL: Documentation, https://stream-unzip.docs.data.trade.gov.uk/
+Project-URL: Source, https://github.com/uktrade/stream-unzip
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Archiving :: Compression
+Requires-Python: >=3.5.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycryptodome (>=3.10.1)
+Requires-Dist: stream-inflate (>=0.0.12)
+
+# stream-unzip
+
+Python function to stream unzip all the files in a ZIP archive, without loading the entire ZIP file into memory or any of its uncompressed files.
+
+Visit the [stream-unzip documentation](https://stream-unzip.docs.data.trade.gov.uk/) for usage instructions.
