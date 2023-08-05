@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: perspectiveapi
+Version: 0.1.0
+Summary: a python wrapper for google's perspective api
+License: MIT
+Author: thrzl.
+Author-email: thrizzle@skiff.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.4,<4.0.0)
+Requires-Dist: orjson (>=3.8.6,<4.0.0)
+Description-Content-Type: text/markdown
+
+# 💖 perspective
+a strongly typed wrapper for google's perspective api
+
+## 🪴 example
+```py
+from perspective import Perspective, Attribute
+from asyncio import get_event_loop
+
+p = Perspective(key="...")
+
+async def main():
+    s = await p.score(
+        "your message here", attributes=(Attribute.flirtation, Attribute.sexually_explicit)
+    )
+    print(s.flirtation) 
+    print(s.sexually_explicit)
+```
