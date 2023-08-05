@@ -1,0 +1,17 @@
+pydantic
+pymongo
+
+[all]
+pytest
+python-dotenv
+black
+mypy
+
+[dev]
+black
+mypy
+pytest
+
+[test]
+pytest
+python-dotenv
