@@ -1,0 +1,8 @@
+setup.py
+sol_stats/__init__.py
+sol_stats/sol_stats.py
+sol_stats.egg-info/PKG-INFO
+sol_stats.egg-info/SOURCES.txt
+sol_stats.egg-info/dependency_links.txt
+sol_stats.egg-info/not-zip-safe
+sol_stats.egg-info/top_level.txt
