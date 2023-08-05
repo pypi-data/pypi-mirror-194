@@ -1,0 +1,16 @@
+requests
+XlsxWriter
+keyring
+aiohttp[speedups]
+
+[dev]
+pytest
+pytest-cov
+pytest-datadir
+flake8
+isort
+black
+bandit
+pre-commit
+mypy
+types-requests

@@ -1,0 +1,2 @@
+[console_scripts]
+psi = pyspeedinsights.app:main

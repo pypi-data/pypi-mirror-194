@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=src/pyspeedinsights"
+testpaths = "tests"
+
+[tool.isort]
+profile = "black"
+known_first_party = "pyspeedinsights"
+known_local_folder = "pyspeedinsights"
+skip_gitignore = true
+
+[tool.black]
+target-version = ['py39']
+line-length = 88
+
+[tool.mypy]
+# warn_return_any = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "xlsxwriter",
+    "xlsxwriter.format"
+]
+ignore_missing_imports = true
+
+[tool.bandit]
+targets = ["src/pyspeedinsights"]
+exclude_dirs = [".venv", "tests"]
