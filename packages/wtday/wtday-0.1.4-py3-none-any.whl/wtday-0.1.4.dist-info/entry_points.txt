@@ -1,0 +1,2 @@
+[console_scripts]
+wtday = wtday.main:main
