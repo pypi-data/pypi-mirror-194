@@ -1,0 +1,10 @@
+aiohttp_spyne/__init__.py,sha256=9wDUe1U_i33nKxgra6o4YKUsSHqvj__zsdsNo8wfIVA,70
+aiohttp_spyne/aio_base.py,sha256=rgkL4dlejQ0QEZjj6U1OCNsMVDdKA607PNH2VXKRIHs,7775
+aiohttp_spyne/aio_method_ctx.py,sha256=49uDdP1qbEu5g4n7C_8pZH1GWdysXGQgCT3gSVfT2zg,489
+aiohttp_spyne/aio_spyne.py,sha256=r46U65N1E7q4iI2S9wX16FGJDoECbqOt-NqZyatJONs,1830
+aiohttp_spyne/aio_transport_ctx.py,sha256=SKD4IRyI35vassKiscQR-9TeLm4wftjMkMpC3h3cuRc,1630
+aiohttp_spyne/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohttp_spyne-1.5.0.dist-info/LICENSE,sha256=AKibDRiqzUEU3s95Ei24e_Nb3a8rxQ44PJyfTCYzkLI,24486
+aiohttp_spyne-1.5.0.dist-info/METADATA,sha256=uIet3neN9YBluiuLAiWHXzfE7be67TQhc2I5_Nmo_yI,3670
+aiohttp_spyne-1.5.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aiohttp_spyne-1.5.0.dist-info/RECORD,,
