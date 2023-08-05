@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/mhz19_async/__init__.py
+src/mhz19_async/__main__.py
+src/mhz19_async/mhz19.py
+src/pymhz19_async.egg-info/PKG-INFO
+src/pymhz19_async.egg-info/SOURCES.txt
+src/pymhz19_async.egg-info/dependency_links.txt
+src/pymhz19_async.egg-info/requires.txt
+src/pymhz19_async.egg-info/top_level.txt
