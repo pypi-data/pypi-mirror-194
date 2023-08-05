@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: jhalog
+Version: 0.1.10
+Summary: Jhalog (JSON HTTP Access Log) Library
+Home-page: https://github.com/JGoutin/jhalog-python
+License: BSD-2-Clause
+Keywords: logging,http,json
+Author: JGoutin
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: System :: Logging
+Classifier: Typing :: Typed
+Provides-Extra: cloudwatch-logs
+Requires-Dist: aioboto3 ; extra == "cloudwatch-logs"
+Requires-Dist: aiohttp (>3.8) ; extra == "cloudwatch-logs"
+Requires-Dist: psutil
+Requires-Dist: webuuid
+Project-URL: Repository, https://github.com/JGoutin/jhalog-python
+Description-Content-Type: text/markdown
+
+![Tests](https://github.com/JGoutin/jhalog-python/workflows/tests/badge.svg)
+[![codecov](https://codecov.io/gh/JGoutin/jhalog-python/branch/main/graph/badge.svg?token=ZZrRtqsGp8)](https://codecov.io/gh/JGoutin/jhalog-python)
+[![PyPI](https://img.shields.io/pypi/v/jhalog.svg)](https://pypi.org/project/jhalog)
+
+# Jhalog (JSON HTTP Access Log) - Python library
+
+Jhalog library for Python.
+
+[Jhalog Specification](https://github.com/JGoutin/jhalog-spec)
+
+WIP
+
