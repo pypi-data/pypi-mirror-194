@@ -1,0 +1,10 @@
+angreal-2.0.5.dist-info/METADATA,sha256=kLXPZZzfD_2ibhtD8QCjzEA2tVBkCLWnTNybLIEJoPM,3736
+angreal-2.0.5.dist-info/WHEEL,sha256=0FEzSv5qlu2fWAAoNq7grlTxuPDV1I6yQ_getOaZVDA,110
+angreal-2.0.5.dist-info/entry_points.txt,sha256=T8LTLvmqddtRYaE-Bsr7lb2zbznrMoIcXv0DrO88s3M,39
+angreal.libs/libgcc_s-d7088d38.so.1,sha256=eruenD4WU9j8z1O_nkRT5IW55VHdj1SnpqEnqwzjVx0,724137
+angreal/__init__.py,sha256=Tv0qM7Rw89nIHN09V0tP_e9_zy30Knkt5JvxX2VaLr4,1215
+angreal/integrations/git.py,sha256=ZGUDdZvGDtyp-uhPBHdbysbIwZnabTD7P1a8AA3Vv1I,2664
+angreal/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+angreal/integrations/venv.py,sha256=eUv-CbyC2GvesyJa-uviAUDQ-jMBrpGCOErvU3PVrh0,4821
+angreal/angreal.cpython-311-aarch64-linux-gnu.so,sha256=nACOmBSjSsJ-dp5poKRUlXZCG0AuoCFX1Nq0NHQ9ihk,17174401
+angreal-2.0.5.dist-info/RECORD,,
