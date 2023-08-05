@@ -1,0 +1,11 @@
+buildver/__init__.py,sha256=cr46ASP5WlQCCe_Yf-s9NQqS4teTGLAeYKjwbMzpR80,5395
+buildver/__main__.py,sha256=1t6iq9EKPNNX6Et18ykRxUqnBt-Pi4bq4Qmkm9Higvw,647
+buildver/cli/__init__.py,sha256=0S2p9m6VyA_szSurqWKcZuLTdGXclEqCP-i7ZqfPxUI,5414
+buildver/error/__init__.py,sha256=uvCKrGPr-CHJmhv7IrtszMD_OvHsiWYXhIY1PgsIBjw,105
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildver-0.0.4.dist-info/LICENSE,sha256=i-WDLgB6J-4mmizSxYOzJn0sEzILY2XF4VSqYETuqk0,1082
+buildver-0.0.4.dist-info/METADATA,sha256=yC_m2QZYte5esqHDWlKTYy18WBChfOxLMqLIg99KNwU,6927
+buildver-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+buildver-0.0.4.dist-info/entry_points.txt,sha256=DUVC5R57CtznFjYIGryJCuNSDwmyMUjYo-nYVoai0Uc,53
+buildver-0.0.4.dist-info/top_level.txt,sha256=Q9z7bh1-UQ8UcXxcr0Qfoem6D2Pz13bhidoBZ98eTvk,15
+buildver-0.0.4.dist-info/RECORD,,
