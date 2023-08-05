@@ -1,0 +1,2 @@
+[console_scripts]
+backfill-cdp-instance = cdp_gh_utils.bin.backfill_cdp_instance:main
