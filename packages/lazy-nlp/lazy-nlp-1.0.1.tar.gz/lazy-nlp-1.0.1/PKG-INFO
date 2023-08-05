@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lazy-nlp
+Version: 1.0.1
+Summary: A simple Python package that allows you to do zeroshot, embeddings and build a classifier. See here for more information: https://github.com/LeonardPuettmann/lazy-nlp
+Home-page: UNKNOWN
+Author: Leonard Püttmann
+Author-email: <leopuettmann@outlook.de>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,zeroshot,nlp,lazy-nlp
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
