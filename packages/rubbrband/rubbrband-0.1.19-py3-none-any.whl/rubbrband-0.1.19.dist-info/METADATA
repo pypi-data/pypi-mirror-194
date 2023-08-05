@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: rubbrband
+Version: 0.1.19
+Requires-Dist: docker (==6.0.1)
+Requires-Dist: yaspin
+Requires-Dist: typer[all]
+
