@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "movienight"
+version = "0.1.0"
+description = ""
+authors = ["dan-kwon <danielkwon02@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sentence-transformers = "^2.2.2"
+numpy = "^1.24.2"
+pandas = "^1.5.3"
+pathlib = "^1.0.1"
+dash = "^2.8.1"
+plotly = "^5.13.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
