@@ -1,0 +1,13 @@
+quickstatements_client/__init__.py,sha256=c6kMOmKdA0ttKbTd_CdVogTauJaMU8iA1PhZqCkwvt0,644
+quickstatements_client/__main__.py,sha256=SgEEmO6dxvSkEwPDElAtBnfUGss8xvcHDV3v8-LlCgU,339
+quickstatements_client/cli.py,sha256=RsWzgVkUIUtnrQ3YwnOvRXvNBfxBAn5j5LexowRtcSA,939
+quickstatements_client/client.py,sha256=lJ4i9uRq31LvszUdoEwRjqVoEArQMPFijLI_80pICno,2878
+quickstatements_client/model.py,sha256=0_idkcCMRcJjN-kNEE7BFlZbF2T9aP63pBQnTkcYM1U,6911
+quickstatements_client/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+quickstatements_client/version.py,sha256=d1c5eINMiYGw9mwMVlqa3lIrAT6d9Dlzzj-2E1U4ljg,1064
+quickstatements_client-0.0.1.dist-info/LICENSE,sha256=V2QvCSXVRoRifz9OL3vFmQVAgqxsi69rFIbEDBp73Do,1076
+quickstatements_client-0.0.1.dist-info/METADATA,sha256=TlMHZoPhwKQ8JXe_wcSV7P8h4l_k03GWdjymn39yLE4,10027
+quickstatements_client-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+quickstatements_client-0.0.1.dist-info/entry_points.txt,sha256=9XANBSnEw7LfiyiU_hhr3L6vdcMkt_F-tiaCu67UMNw,75
+quickstatements_client-0.0.1.dist-info/top_level.txt,sha256=MWbtWzGz0qyNsogWX5ztqdtb6mVKiDrvKxEMNhXRVrU,23
+quickstatements_client-0.0.1.dist-info/RECORD,,
