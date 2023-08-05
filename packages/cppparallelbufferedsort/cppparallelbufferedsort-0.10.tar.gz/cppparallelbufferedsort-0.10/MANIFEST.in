@@ -1,0 +1,6 @@
+include cppparallelbufferedsort/requirements.txt
+include cppparallelbufferedsort/thirdparty.json
+include cppparallelbufferedsort/cppparallelbufferedsort.ini
+include cppparallelbufferedsort/cppparallelbufferedsortmodule.py
+include cppparallelbufferedsort/README.MD
+include cppparallelbufferedsort/cppparallelbufferedsort.dll

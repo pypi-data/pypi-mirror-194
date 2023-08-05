@@ -1,0 +1,17 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cppparallelbufferedsort/README.MD
+cppparallelbufferedsort/__init__.py
+cppparallelbufferedsort/cppparallelbufferedsort.dll
+cppparallelbufferedsort/cppparallelbufferedsort.ini
+cppparallelbufferedsort/cppparallelbufferedsortmodule.py
+cppparallelbufferedsort/requirements.txt
+cppparallelbufferedsort/thirdparty.json
+cppparallelbufferedsort.egg-info/PKG-INFO
+cppparallelbufferedsort.egg-info/SOURCES.txt
+cppparallelbufferedsort.egg-info/dependency_links.txt
+cppparallelbufferedsort.egg-info/requires.txt
+cppparallelbufferedsort.egg-info/top_level.txt
