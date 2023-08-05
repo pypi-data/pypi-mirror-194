@@ -1,0 +1,14 @@
+jax/geneweaver/db/__init__.py,sha256=YDYeC5s_SSbezmpWzU7P9cpPKuGMZlRbFzA8fbJ3vz8,110
+jax/geneweaver/db/annotator.py,sha256=4X1yCtBmvq573gQEMh8Gk91aH8Xds396j-ciFjuv7fY,218
+jax/geneweaver/db/gene.py,sha256=LvgFgI5qtAwZH0Xq1BXz_oo1Aml7mAOq9wW2muf1os0,415
+jax/geneweaver/db/geneset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jax/geneweaver/db/geneset/create.py,sha256=DnNzfUsl2B1U-aGCQWeN2GKe-PhNjdd8p92g1DeaRUQ,3496
+jax/geneweaver/db/publication.py,sha256=gzngQXIoVhgK67EvAKn-nOlwLUj5G98LrS0ykOdEuA4,1170
+jax/geneweaver/db/sql/__init__.py,sha256=MPfoDqYWu_RUAu0dDmEWOFvif4s24JBG44Qfq7LWA-I,67
+jax/geneweaver/db/sql/geneset.py,sha256=c-hVORKVatZpeqwn2apxtydEJN27wuypGqV5ZlVDoWU,1651
+jax/geneweaver/db/sql/publication.py,sha256=Zsv8stovIsNLDE_ju3n9uuz46zWzK0MYtQVB_I_Np-E,1016
+jax/geneweaver/db/sql/user.py,sha256=G06RfY0ICZiXjaMYMirhNc43PUNM-QJUImGfcUVM5cE,674
+jax/geneweaver/db/user.py,sha256=nvShpH3I9URdtWhLNLO7SeWGpHVbeElI7Pf5cE4PIlY,519
+jax_geneweaver_db-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+jax_geneweaver_db-0.0.1.dist-info/METADATA,sha256=3ayFdu3XOsSJ5FB3fpE_hsE5-ZSSoP_tQYtOiq_EodQ,512
+jax_geneweaver_db-0.0.1.dist-info/RECORD,,
