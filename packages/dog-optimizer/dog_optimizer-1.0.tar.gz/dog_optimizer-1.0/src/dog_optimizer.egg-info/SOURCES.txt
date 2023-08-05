@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/dog_optimizer/__init__.py
+src/dog_optimizer/averager.py
+src/dog_optimizer/dog.py
+src/dog_optimizer.egg-info/PKG-INFO
+src/dog_optimizer.egg-info/SOURCES.txt
+src/dog_optimizer.egg-info/dependency_links.txt
+src/dog_optimizer.egg-info/top_level.txt
