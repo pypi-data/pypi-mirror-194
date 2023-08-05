@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "poetry-cdk-plugin"
+version = "0.1.3"
+description = "CDK commands for Poetry"
+authors = ["Olivier Schmitt <ursusossforever@gmail.com>"]
+readme = "README.md"
+packages = [{include = "poetry_cdk_plugin"}]
+license = "GNU GPL v3"
+
+homepage = "https://github.com/olivier-schmitt/poetry-cdk-plugin"
+repository = "https://github.com/olivier-schmitt/poetry-cdk-plugin"
+documentation = "https://github.com/olivier-schmitt/poetry-cdk-plugin"
+
+keywords = ["CDK", "poetry"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+poetry = "^1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+cdk  = "poetry_cdk_plugin.plugin:CDKApplicationPlugin"
+
+[tool.black]
+target-version = ['py39']
+preview = true
