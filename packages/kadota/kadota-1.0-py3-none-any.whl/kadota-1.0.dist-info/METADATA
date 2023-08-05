@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: kadota
+Version: 1.0
+Summary: Tools for working with Figma programmatically
+Author: Isaac Ronald Ward
+Author-email: isaacronaldward@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Kadota
+
+Tools for working with Figma programmatically
+
+# Working with this repository
+
+For creating and regenerating environment file:
+```
+conda env create --file env.yaml
+conda env export --no-builds | grep -v "^prefix: " > env.yaml
+```
+
+For creating requirements file required for pip installability:
+```
+pip freeze > requirements.txt
+```
+
+For building before publishing to pypi:
+```
+python setup.py sdist bdist_wheel
+```
+
+For testing and publishing to pypi:
+```
+twine check dist/*
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+```
