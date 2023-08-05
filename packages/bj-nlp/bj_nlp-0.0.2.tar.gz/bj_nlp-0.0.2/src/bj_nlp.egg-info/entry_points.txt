@@ -1,0 +1,2 @@
+[console_scripts]
+bj_nlp = bj_nlp.__main__:main

@@ -1,0 +1,23 @@
+LICENSE
+README.md
+pyproject.toml
+src/bj_nlp/Preprocessing.py
+src/bj_nlp/Testtext.py
+src/bj_nlp/_PandaziseMixin.py
+src/bj_nlp/_UtilsMixin.py
+src/bj_nlp/__init__.py
+src/bj_nlp/__main__.py
+src/bj_nlp/blpClass.py
+src/bj_nlp/c01_merger.py
+src/bj_nlp/c05_wrede.py
+src/bj_nlp/c10_wortschatz.py
+src/bj_nlp/c11_wortschatz - Original.py
+src/bj_nlp/diff_grammatik ###.ipynb
+src/bj_nlp/diff_grammatik ###.py
+src/bj_nlp/translate_tags.py
+src/bj_nlp.egg-info/PKG-INFO
+src/bj_nlp.egg-info/SOURCES.txt
+src/bj_nlp.egg-info/dependency_links.txt
+src/bj_nlp.egg-info/entry_points.txt
+src/bj_nlp.egg-info/requires.txt
+src/bj_nlp.egg-info/top_level.txt
