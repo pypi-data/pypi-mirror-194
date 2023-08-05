@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+__init__.py
+cars.py
+controller.py
+license.txt
+setup.py
+utils.py
+Anki_Overdrive_Windows.egg-info/PKG-INFO
+Anki_Overdrive_Windows.egg-info/SOURCES.txt
+Anki_Overdrive_Windows.egg-info/dependency_links.txt
+Anki_Overdrive_Windows.egg-info/requires.txt
+Anki_Overdrive_Windows.egg-info/top_level.txt
