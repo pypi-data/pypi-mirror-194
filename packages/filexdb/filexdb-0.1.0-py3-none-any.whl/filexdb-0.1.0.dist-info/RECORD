@@ -1,0 +1,12 @@
+filexdb/__init__.py,sha256=hTW2drN2cMH5dSTbJ3eLTpg_0T7xlD7fjsciYEsr06I,126
+filexdb/collection.py,sha256=dt3VyBKBlDmjOSYtUt-JnX4ToffuhqM6f9URy9_YenM,12723
+filexdb/database.py,sha256=ETGaH7ISM2BikVGCTnhOijjT0ZjS7IntsRQjNCxy7pE,1337
+filexdb/document.py,sha256=Qc8tAbtP1RAJxwH41UMRb0bE15d58O1-z-CXQoSeOWc,911
+filexdb/fileio.py,sha256=_W0vCV81HXET4Uj3JixF3Iq3GkLUma8V9V57PB0S4Gk,5264
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_collection.py,sha256=2mz6J_7_s3F8w5xnFs86ampxo7ZZF1nc13PbANC2hZU,2291
+filexdb-0.1.0.dist-info/LICENSE,sha256=4LN1bQ1r17UZCbEWPdPKy3zHpJ1Xo0Esr9OKPfNqIGY,1085
+filexdb-0.1.0.dist-info/METADATA,sha256=pjbUT_q6AYlKiuvRQZHrYvN_8O-vcy3nqlKxzhkJlWM,4270
+filexdb-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+filexdb-0.1.0.dist-info/top_level.txt,sha256=RRYY_kVEf7e-ejPL7G-znx2Nkh93QBYxZqytT3keVDY,13
+filexdb-0.1.0.dist-info/RECORD,,
