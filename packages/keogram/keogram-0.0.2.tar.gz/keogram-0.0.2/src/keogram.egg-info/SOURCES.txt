@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+readme.md
+setup.cfg
+src/keogram/__init__.py
+src/keogram/keogram.py
+src/keogram.egg-info/PKG-INFO
+src/keogram.egg-info/SOURCES.txt
+src/keogram.egg-info/dependency_links.txt
+src/keogram.egg-info/requires.txt
+src/keogram.egg-info/top_level.txt
+tests/test_keogram.py
