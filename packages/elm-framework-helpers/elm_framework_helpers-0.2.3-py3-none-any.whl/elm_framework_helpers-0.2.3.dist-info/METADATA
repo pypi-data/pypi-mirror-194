@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: elm-framework-helpers
+Version: 0.2.3
+Summary: 
+Home-page: https://github.com/TechSpaceAsia/elm-framework-helpers
+License: MIT
+Author: Mat
+Author-email: mathieu@redapesolutions.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: fastapi (>=0.92.0,<0.93.0)
+Requires-Dist: orjson (>=3.8.6,<4.0.0)
+Requires-Dist: reactivex (>=4.0.4,<5.0.0)
+Requires-Dist: uvicorn (>=0.20.0,<0.21.0)
+Requires-Dist: websocket-client (>=1.5.1,<2.0.0)
+Project-URL: Repository, https://github.com/TechSpaceAsia/elm-framework-helpers
+Description-Content-Type: text/markdown
+
+# Helpers for the ELM framework scripts
+
+## Logging
+
+Prefer dict based config.
+
+## HTTP
+
+The `http` module contains a Uvicorn server which can be run outside of the main thread.
+
+## Json
+
+The `json` module contains an implementation of `dumps` which handles Decimal (turns into string)
+
+## Output
+
+### never_ending_observer
+
+Returns an `OnNext` only observer which logs an error to `logger` if it ever completes or errors.
