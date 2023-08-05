@@ -1,0 +1,11 @@
+LICENCE
+README.md
+logo.png
+pyproject.toml
+requirements.txt
+skreducedmodel/__init__.py
+skreducedmodel/empiricalinterpolation.py
+skreducedmodel/integrals.py
+skreducedmodel/mksurrogate.py
+skreducedmodel/reducedbasis.py
+skreducedmodel/surrogate.py
