@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/data_art/__init__.py
+src/data_art/html_visualizer.py
+src/data_art.egg-info/PKG-INFO
+src/data_art.egg-info/SOURCES.txt
+src/data_art.egg-info/dependency_links.txt
+src/data_art.egg-info/top_level.txt
