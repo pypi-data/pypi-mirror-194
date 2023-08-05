@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+filexdb/__init__.py
+filexdb/collection.py
+filexdb/database.py
+filexdb/document.py
+filexdb/fileio.py
+filexdb.egg-info/PKG-INFO
+filexdb.egg-info/SOURCES.txt
+filexdb.egg-info/dependency_links.txt
+filexdb.egg-info/top_level.txt
+test/__init__.py
+test/test_collection.py
