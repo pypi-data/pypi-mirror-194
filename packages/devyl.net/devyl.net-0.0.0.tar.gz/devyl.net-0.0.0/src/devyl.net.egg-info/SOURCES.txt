@@ -1,0 +1,7 @@
+license
+setup.py
+src/main.py
+src/devyl.net.egg-info/PKG-INFO
+src/devyl.net.egg-info/SOURCES.txt
+src/devyl.net.egg-info/dependency_links.txt
+src/devyl.net.egg-info/top_level.txt
