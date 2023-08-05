@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pipcontrol
+Version: 1.0.8
+Summary: pip module automation
+Home-page: https://github.com/labov/pipcontrol
+Author: Mingoo Lee
+Author-email: labovming@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pipcontrol
+
+This is a python module pip controller package
+This package is developed for automation of pip install
+
+## How to use
+
+```python
+ABS_PATH = os.path.dirname(os.path.abspath(__file__))
+pipcontrol = PipControl(ABS_PATH)
+
+pipcontrol.install(packages=["boto3", "urllib3", "wheel", "twine"])
+pipcontrol.update(packages=["boto3", "urllib3", "wheel", "twine"])
+# pipcontrol.uninstall(packages=["boto3", "urllib3", "wheel", "twine"])
+
+pipcontrol.requirement_freeze()
+# pipcontrol.requirement_install()
+# pipcontrol.requirement_uninstall()
+
+pipcontrol.setup_venv()
+pipcontrol.run("run.py")
+
+```
+
+
