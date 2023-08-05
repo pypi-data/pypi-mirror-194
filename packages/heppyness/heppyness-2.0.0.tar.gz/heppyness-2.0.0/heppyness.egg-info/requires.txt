@@ -1,0 +1,6 @@
+matplotlib
+numpy
+uproot
+uproot-methods
+pandas
+pyyaml
