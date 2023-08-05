@@ -1,0 +1,10 @@
+tail_jsonl/__init__.py,sha256=wa8CJS-1Vn5OQCpTFRQ8E1uBh-WKPZ7LEC5MCjR8B7w,233
+tail_jsonl/_private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tail_jsonl/_private/core.py,sha256=LcHXZpBm_0bknvPLuwVZN2NlP_tlet_JOC0zBONIHek,2600
+tail_jsonl/config.py,sha256=9P-LGH43bY8ybGbuWmI_9lZbsmHpk3NgpXc4YzxBQHc,698
+tail_jsonl/scripts.py,sha256=-LRbndTk3rlUlSlp3lwifoHHuVNHY3ow9-lIT7B_uXM,1406
+tail_jsonl-1.2.1.dist-info/LICENSE,sha256=6BEhl-fpSLPiesxz-36Fh4cpdMLfbgBwMPvDh3Yayuc,1066
+tail_jsonl-1.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tail_jsonl-1.2.1.dist-info/entry_points.txt,sha256=PT1nXl_Q8uHgbOWAsyqL93g2pF5o4qLtaRF0_wOTWME,55
+tail_jsonl-1.2.1.dist-info/METADATA,sha256=4-TfT89fFCzmqyVls0pXwDUf5iydi_O_bAnm3ghzbO4,4384
+tail_jsonl-1.2.1.dist-info/RECORD,,
