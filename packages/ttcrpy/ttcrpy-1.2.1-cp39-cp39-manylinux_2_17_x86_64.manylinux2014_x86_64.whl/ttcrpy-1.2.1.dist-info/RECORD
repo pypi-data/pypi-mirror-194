@@ -1,0 +1,8 @@
+ttcrpy-1.2.1.dist-info/top_level.txt,sha256=rVRT_PtxzkjsbCuy6G2RycwkgIyrzyt3zF3EbRaAvOI,7
+ttcrpy-1.2.1.dist-info/RECORD,,
+ttcrpy-1.2.1.dist-info/WHEEL,sha256=D79CBkaJekx7HMK1NaBe_KU1GVla4HlolbFXT3at6fg,148
+ttcrpy-1.2.1.dist-info/METADATA,sha256=rFzRhTk2F_gn4QdVCTo3jdB7XkBuXZM6EbVQNpYYlG8,9313
+ttcrpy/__init__.py,sha256=O6F96cCKiPR2yUtCnBZpdUSs03HtUmRatgrjilhjFTg,94
+ttcrpy/rgrid.cpython-39-x86_64-linux-gnu.so,sha256=fjumvzAV9GkK4W18rP4xCFNHRHjR1laN6tRVzkgzlAY,29035224
+ttcrpy/tmesh.cpython-39-x86_64-linux-gnu.so,sha256=7KQCEJ-Bo6mD4psSmT6x8Id6A_Ybir-X1Rwfx4e4Djg,114765512
+ttcrpy/_version.py,sha256=osFGs6qmlEth0Xu2MHIHoChfXcj8NUW4hLWDEu-1_K4,160
