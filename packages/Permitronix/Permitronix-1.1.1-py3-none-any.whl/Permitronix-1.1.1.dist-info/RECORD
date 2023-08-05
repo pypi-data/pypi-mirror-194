@@ -1,0 +1,14 @@
+Permitronix/__init__.py,sha256=_QiZh_5ChaZHz3ycCwaRjBkFbJPT15txjxWxxd2wkMg,2536
+Permitronix/permission_level.py,sha256=4tYuuR98R55EoOvKqhYbYz6YNW1B2y16qaD2k6w6mhM,1931
+Permitronix/permission_node.py,sha256=F5CdailDLO5vjkHrhsYLvpB9QL9qUJpbvSd3UEHCm9U,568
+Permitronix/permission_table.py,sha256=MI-dcqbTaTddLNSyUZTZCR3MBVUJsFtA-zCQDlDWw_8,2315
+permitronix/__init__.py,sha256=GWMutbzKH3GEe8mc21PIgHOjAuPjzaPhJWR68x2Yv_A,4560
+permitronix/db.py,sha256=hxKXGREC9xbze4V_9JOOx50MErpMXhRoYwLLW89GO8I,1393
+permitronix/jelly.py,sha256=RJq9-GgweJEGbTChX-DrrH_HxKaAdjXUTS5gby8Z-OQ,978
+permitronix/permission_level.py,sha256=g0Loc5h-436N7PWpitU3zul8iXV_rJLCuKZ18L5GyWY,5776
+permitronix/permission_node.py,sha256=0JhDujsG_lGXS3tr8WsNKb1GKoiwpyIsvmMZuQB2uEM,1635
+permitronix/permission_table.py,sha256=Lt9E1iIj_VXaEqbmSPZL_YgAoAsW5MtbKU-r4ZiX8To,5001
+Permitronix-1.1.1.dist-info/METADATA,sha256=PSG_5jx4FVHvZfQE6g6JY-CYdTTk8-N3WkfQPN7IChg,2621
+Permitronix-1.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Permitronix-1.1.1.dist-info/top_level.txt,sha256=mk-6m-k3By0YwswMB6E6gggklM53bylxux6OwyteSag,12
+Permitronix-1.1.1.dist-info/RECORD,,
