@@ -1,0 +1,8 @@
+README.md
+setup.py
+johnny5/__init__.py
+johnny5.egg-info/PKG-INFO
+johnny5.egg-info/SOURCES.txt
+johnny5.egg-info/dependency_links.txt
+johnny5.egg-info/not-zip-safe
+johnny5.egg-info/top_level.txt
