@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+commonroad_crime.egg-info/PKG-INFO
+commonroad_crime.egg-info/SOURCES.txt
+commonroad_crime.egg-info/dependency_links.txt
+commonroad_crime.egg-info/requires.txt
+commonroad_crime.egg-info/top_level.txt
