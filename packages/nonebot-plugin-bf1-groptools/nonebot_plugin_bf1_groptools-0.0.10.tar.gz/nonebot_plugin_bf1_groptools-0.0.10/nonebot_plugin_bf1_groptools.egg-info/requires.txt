@@ -1,0 +1,3 @@
+requests
+nonebot2
+nonebot
