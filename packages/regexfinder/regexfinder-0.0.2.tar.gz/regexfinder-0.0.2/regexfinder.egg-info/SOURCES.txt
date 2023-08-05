@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+regexfinder/__init__.py
+regexfinder/main.py
+regexfinder.egg-info/PKG-INFO
+regexfinder.egg-info/SOURCES.txt
+regexfinder.egg-info/dependency_links.txt
+regexfinder.egg-info/top_level.txt
