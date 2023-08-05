@@ -1,0 +1,8 @@
+sv388/__init__.py,sha256=9T2K4c5XC3gkjj8-S7hEdVGdRIcMHQFJ3lE8A0LSJrc,108
+sv388/client.py,sha256=qQXDymSpUTt4E3p7jNSuVX2zqmFkQfT_Hj2ybbYg03Y,5723
+sv388/exceptions.py,sha256=ilK5wRFBPCyAakUcmcrMEUDuc1JyiV_I2g99MZx6K4s,99
+sv388/settings.py,sha256=_-Rlyi8RwWVhTmZMR0J5jxU0TqXvkJ2gsziNtYDs2VY,215
+cc_sv388-2.1.2.dist-info/METADATA,sha256=4Kthz2-felK68v_mwiFhjGNEkcCuCoRlziK7qHiB93c,264
+cc_sv388-2.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cc_sv388-2.1.2.dist-info/top_level.txt,sha256=V_9mNcihEeh_IZnKNejJXfiymFr66v7Ug2UXLua061M,6
+cc_sv388-2.1.2.dist-info/RECORD,,

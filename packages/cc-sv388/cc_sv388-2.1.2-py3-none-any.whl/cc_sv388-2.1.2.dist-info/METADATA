@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cc-sv388
+Version: 2.1.2
+Author: 
+Author-email: 
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# cc-sv388
+
+
+
+## Requirement
+
+Python >=3.7
+
+## Installation
+
+```bash
+pip install cc-sv388
+```
+
+## License
+
+MIT
