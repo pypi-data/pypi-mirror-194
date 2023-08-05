@@ -1,0 +1,11 @@
+owl2diagram/__init__.py,sha256=jxlwRY58E8WD2Y95aHlsw7LX_3GqWnWDUm4TszJ3vzg,551
+owl2diagram/__main__.py,sha256=ZtfV5_8z1CRCTGse3aa5_rBPlLWAWM063oQi4_d9cO8,3624
+owl2diagram/_version.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+owl2diagram/query.py,sha256=YQHyLKSvvelk_69m3spFamYt2q2fvBTPoGXeUDjnGOE,728
+owl2diagram/uml.py,sha256=R0iCXKCMBskrz5YaLcz0n54F5Ks_DB0DA2FvezNYDHI,1009
+owl2diagram-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+owl2diagram-0.1.0.dist-info/METADATA,sha256=nysvlH-jgWnJLWr3VY0SPMLxQE65Y6XrCdOBjM91MhE,1273
+owl2diagram-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+owl2diagram-0.1.0.dist-info/entry_points.txt,sha256=RC8xm12YyyC1QpjmT5-27xwQ3B2Hawb6tUQoT12qYSs,57
+owl2diagram-0.1.0.dist-info/top_level.txt,sha256=5LcUqdqc_3iCzQEUXXz03lO86U7ozBlJIpGwrqUIRec,12
+owl2diagram-0.1.0.dist-info/RECORD,,
