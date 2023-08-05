@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fymjosh
+Version: 0.0.6
+Summary: A StreamBot library to online your token with statuses
+Home-page: UNKNOWN
+Author: fymjosh
+Author-email: lone.cord12@gmail.com
+License: MIT
+Keywords: discord
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+fymjosh is a library that allows for your discord account to change statuses to like streaming, watching, listening, playing and helps to customize your discord account
+
