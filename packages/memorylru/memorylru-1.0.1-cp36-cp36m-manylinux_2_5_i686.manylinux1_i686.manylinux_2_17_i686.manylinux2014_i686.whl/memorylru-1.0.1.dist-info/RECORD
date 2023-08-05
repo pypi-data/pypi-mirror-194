@@ -1,0 +1,8 @@
+memorylru-1.0.1.dist-info/top_level.txt,sha256=9DqutiDV_fBQFkBJZW8WD-uFq1IEH77WJLJZOT70hpM,10
+memorylru-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+memorylru-1.0.1.dist-info/RECORD,,
+memorylru-1.0.1.dist-info/WHEEL,sha256=fi4cVfpey3xcdlS41G0BGLav86L8eWRKj9oEclxTRG0,213
+memorylru-1.0.1.dist-info/METADATA,sha256=7YJW6rAL7ZM5JbqMPRBH8xLTodCTpcpNfvZOlOMRI9Y,675
+memorylru/__init__.py,sha256=uvvD-3YbxfilpCm912SiTeMAcizR-j-2EnLwBCS8IvM,41
+memorylru/lru.cpython-36m-i386-linux-gnu.so,sha256=kUiTFv_73Qf6Hflhar5kTbXc7nDNrxTyVSDI0jWu71Q,52052
+memorylru/lru.c,sha256=xe1k1TtNxqP5FOyGEuDlPmvLi8CRHa1rmW6klKikyGI,21805
