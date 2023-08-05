@@ -1,0 +1,14 @@
+pydantic
+
+[dev]
+black
+build
+dapperdata
+glom
+isort
+mypy
+pip-tools
+pytest
+pytest-cov
+pytest-pretty
+ruamel.yaml
