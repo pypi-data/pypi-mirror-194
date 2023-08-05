@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tbot_api
+Version: 1.0
+Summary: The Library For Build Telegram Bots
+Author-email: t-me-api <seryumed@gmail.com>
+Keywords: anyio,api,asyncio,bot,telegram,telegram-api
+Requires-Python: >=3.7
+Requires-Dist: aiofiles~=23.1.0
+Requires-Dist: aiohttp~=3.8.3
+Requires-Dist: anyio~=3.6.2
+Requires-Dist: pydantic~=1.10.4
+Provides-Extra: dev
+Requires-Dist: black~=23.1; extra == 'dev'
+Requires-Dist: isort~=5.11; extra == 'dev'
+Requires-Dist: ruff~=0.0.246; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest-asyncio~=0.20.3; extra == 'test'
+Requires-Dist: pytest-cov~=4.0.0; extra == 'test'
+Requires-Dist: pytest~=7.2.1; extra == 'test'
+Description-Content-Type: text/markdown
+
+# liketapi
