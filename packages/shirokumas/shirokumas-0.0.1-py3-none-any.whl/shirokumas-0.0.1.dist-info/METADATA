@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: shirokumas
+Version: 0.0.1
+Summary: A set of scikit-learn style transformers for Polars
+License: MIT License
+        
+        Copyright (c) 2023 momijiame
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/momijiame/shirokumas
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: polars (>=0.16.5)
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+
+# Shirokumas
+
+A set of scikit-learn style transformers for Polars.
+The transformers have the following property:
+
+- Support for polars DataFrame as an input and output
+- Can explicitly configure which columns will be encoded
+
+## How to install
+
+```sh
+$ pip install git+https://github.com/momijiame/shirokumas.git
+```
+
+## How to use
+
+```python
+import shirokumas as sk
+
+encoder = sk.AggregateEncoder(...)
+encoder = sk.CountEncoder(...)
+encoder = sk.NullEncoder(...)
+encoder = sk.OneHotEncoder(...)
+encoder = sk.OrdinalEncoder(...)
+encoder = sk.TargetEncoder(...)
+
+train_x, train_y, test_x = ...
+
+encoder.fit(train_x, train_y)
+encoded_train_x = encoder.transform(train_x, train_y)
+encoded_test_x = encoder.transform(test_x)
+```
