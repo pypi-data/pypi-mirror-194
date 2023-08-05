@@ -1,0 +1,8 @@
+README.md
+pypiage.py
+setup.py
+pypiage.egg-info/PKG-INFO
+pypiage.egg-info/SOURCES.txt
+pypiage.egg-info/dependency_links.txt
+pypiage.egg-info/entry_points.txt
+pypiage.egg-info/top_level.txt
