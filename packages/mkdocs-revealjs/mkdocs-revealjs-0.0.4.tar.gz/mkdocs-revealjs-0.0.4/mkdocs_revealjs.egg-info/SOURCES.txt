@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+mkdocs_revealjs/__init__.py
+mkdocs_revealjs/htmlColors.py
+mkdocs_revealjs/mkdocs_revealjs.py
+mkdocs_revealjs/tablor.py
+mkdocs_revealjs.egg-info/PKG-INFO
+mkdocs_revealjs.egg-info/SOURCES.txt
+mkdocs_revealjs.egg-info/dependency_links.txt
+mkdocs_revealjs.egg-info/requires.txt
+mkdocs_revealjs.egg-info/top_level.txt
