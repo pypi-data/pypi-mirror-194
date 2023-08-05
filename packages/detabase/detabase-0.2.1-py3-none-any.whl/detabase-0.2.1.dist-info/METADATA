@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: detabase
+Version: 0.2.1
+Summary: 
+Author: Daniel Arantes
+Author-email: arantesdv@me.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: deta[async] (==1.1.0a2)
+Requires-Dist: starlette (>=0.25.0,<0.26.0)
