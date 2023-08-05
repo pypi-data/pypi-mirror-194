@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling", "pyserial", "crc"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ecowatti"
+version = "1.0.0"
+authors = [
+  { name="Jussi Rosenberg", email="jussi.rosenberg@iki.fi" },
+]
+description = "Read values from Jäspi Ecowatti boiler"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["ecowatti", "jäspi"]
+dependencies = [
+    "pyserial>=3.5",
+    "crc>=4.1.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/lemanjo/ecowatti"
