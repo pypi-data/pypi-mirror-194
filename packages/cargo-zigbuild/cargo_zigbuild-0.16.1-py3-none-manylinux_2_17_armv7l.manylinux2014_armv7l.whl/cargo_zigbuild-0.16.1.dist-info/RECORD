@@ -1,0 +1,5 @@
+cargo_zigbuild-0.16.1.dist-info/METADATA,sha256=emu22fwD8C-yUMZP0y9tjLFZK6Lg0Mmrp1H0IZbEiMs,4402
+cargo_zigbuild-0.16.1.dist-info/WHEEL,sha256=G6yTjtG9yfKoE8iA98LAfN9NtyjlcNMsTEVaf3Hl7yQ,128
+cargo_zigbuild-0.16.1.dist-info/license_files/LICENSE,sha256=dMTBzpR3YIJNrzltlyphNFnApOOdHmt8h2il3Bq4YLg,1065
+cargo_zigbuild-0.16.1.data/scripts/cargo-zigbuild,sha256=2vkrU63pIDQAtJdeP-txirPw0QxX2OlO-3D61pNR4uE,2036916
+cargo_zigbuild-0.16.1.dist-info/RECORD,,
