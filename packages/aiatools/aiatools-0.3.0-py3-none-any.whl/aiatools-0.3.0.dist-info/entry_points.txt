@@ -1,0 +1,2 @@
+[console_scripts]
+aia = aiatools:aia_main
