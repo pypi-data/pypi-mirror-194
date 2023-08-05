@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pyflichub_tcpclient.egg-info/PKG-INFO
+pyflichub_tcpclient.egg-info/SOURCES.txt
+pyflichub_tcpclient.egg-info/dependency_links.txt
+pyflichub_tcpclient.egg-info/top_level.txt
