@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+bin/sync-mpv-client
+bin/sync-mpv-server
+sync-mpv/sync_mpv_client.py
+sync-mpv/sync_mpv_server.py
+sync-mpv/sync_mpv.egg-info/PKG-INFO
+sync-mpv/sync_mpv.egg-info/SOURCES.txt
+sync-mpv/sync_mpv.egg-info/dependency_links.txt
+sync-mpv/sync_mpv.egg-info/requires.txt
+sync-mpv/sync_mpv.egg-info/top_level.txt

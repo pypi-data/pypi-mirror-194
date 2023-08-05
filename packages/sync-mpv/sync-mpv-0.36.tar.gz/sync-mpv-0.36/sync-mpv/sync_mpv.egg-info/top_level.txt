@@ -1,0 +1,2 @@
+sync_mpv_client
+sync_mpv_server

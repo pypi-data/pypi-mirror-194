@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+import os
+import sync_mpv_server
+
+sync_mpv_server.main()
+
