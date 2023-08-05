@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eng_syl/BahdanauAttention.py
+eng_syl/Segmenter2.0_bestweights.h5
+eng_syl/__init__.py
+eng_syl/d2i_w2s.pkl
+eng_syl/e2i_w2s.pkl
+eng_syl/syllabify.py
+eng_syl.egg-info/PKG-INFO
+eng_syl.egg-info/SOURCES.txt
+eng_syl.egg-info/dependency_links.txt
+eng_syl.egg-info/not-zip-safe
+eng_syl.egg-info/requires.txt
+eng_syl.egg-info/top_level.txt
