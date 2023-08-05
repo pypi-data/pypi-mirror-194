@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+setup.py
+userify.egg-info/PKG-INFO
+userify.egg-info/SOURCES.txt
+userify.egg-info/dependency_links.txt
+userify.egg-info/requires.txt
+userify.egg-info/top_level.txt
