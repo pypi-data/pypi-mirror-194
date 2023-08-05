@@ -1,0 +1,15 @@
+setup.py
+VirPipe.egg-info/PKG-INFO
+VirPipe.egg-info/SOURCES.txt
+VirPipe.egg-info/dependency_links.txt
+VirPipe.egg-info/entry_points.txt
+VirPipe.egg-info/requires.txt
+VirPipe.egg-info/top_level.txt
+virpipe/__init__.py
+virpipe/__main__.py
+virpipe/arguments/__init__.py
+virpipe/arguments/parser.py
+virpipe/arguments/validation.py
+virpipe/command/__init__.py
+virpipe/command/nextflow.py
+virpipe/command/run_docker.py

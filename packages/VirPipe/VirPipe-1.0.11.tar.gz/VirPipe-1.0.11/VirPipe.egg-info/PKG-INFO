@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: VirPipe
+Version: 1.0.11
+Summary: VirPipe is a easy-to-use computational pipeline to identify virus sequences from high-throughput sequencing reads.
+Home-page: https://github.com/KijinKims/VirPipe
+Author: Kijin Kim
+Author-email: skkujin@gmail.com
+License: MIT
