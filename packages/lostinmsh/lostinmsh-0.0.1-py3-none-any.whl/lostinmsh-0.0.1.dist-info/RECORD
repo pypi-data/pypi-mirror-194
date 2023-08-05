@@ -1,0 +1,17 @@
+lostinmsh/__init__.py,sha256=Cubu-x9YDf4NMZo0FE8EDIc8GbR1bSdcIQov4Eq3amw,639
+lostinmsh/border.py,sha256=aN_G-hD0zmU6xFlW2bDrlww8C1tCC0-Dchyes6WRgc8,3207
+lostinmsh/circular_iterable.py,sha256=VKp7h45veINTHmzQjam965-yAhyz1VRKu1QdUAEng0c,730
+lostinmsh/closest_points.py,sha256=SvvbR5hWsVf7k6tzY5Zd22IKM-OH6YGco9PhHRETnLA,1842
+lostinmsh/geometry.py,sha256=eSrMwhrueKjpTcqbsg9-Rpin3vyyydvWg4gt5PZWKQk,2490
+lostinmsh/gmsh_context_manager.py,sha256=LkpV9qQGS4vNE29jMRNUvLnXrWJwafyW78tZzsGO95I,5925
+lostinmsh/mesh.py,sha256=pBovThJCUp2ItcUOAAPfHfecf4koBkDaHB7SLCAz3u4,1493
+lostinmsh/mesh_border.py,sha256=oLGb976wQvq6nQYruj9deEPUnr2MP6vo7qUDVXf1KBc,2756
+lostinmsh/mesh_lost.py,sha256=Jf1LMQWtCqgmDb4GVfA4StU4WuJjhTVurkczV81ctIo,6694
+lostinmsh/plot.py,sha256=kNAM6osK6BNieuBlQhp9dd_krP_AG9ftEIZNU6d6qrY,4468
+lostinmsh/polygon.py,sha256=9WV2y1vph2w5RRbvix--TZAGVQ48odW-PxsarnHn3Qg,6151
+lostinmsh/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lostinmsh/smallest_boundary.py,sha256=LB2ibxsjT_5RYMz0m_FaJER3nRCnFbOXXocDwS0HQw8,4981
+lostinmsh-0.0.1.dist-info/LICENSE,sha256=r5cfbv6fK5Htc5EpmNY9bNVnGukC6sPO_GjfJgcQ3PU,1070
+lostinmsh-0.0.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+lostinmsh-0.0.1.dist-info/METADATA,sha256=ZbPXgsYeHbRM0zYm6aL8h4WydYv8h2VON0KQLPjER70,2795
+lostinmsh-0.0.1.dist-info/RECORD,,
