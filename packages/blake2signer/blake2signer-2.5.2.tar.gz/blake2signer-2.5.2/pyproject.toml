@@ -1,0 +1,105 @@
+[tool.poetry]
+name = "blake2signer"
+version = "2.5.2"
+description = "A library to use BLAKE in keyed hashing mode to sign and verify signed data"
+authors = ["HacKan <hackan@gmail.com>"]
+license = "MPL-2.0"
+readme = "README.md"
+repository = "https://gitlab.com/hackancuba/blake2signer"
+documentation = "https://blake2signer.hackan.net"
+keywords = [
+    "blake",
+    "cryptography",
+    "crypto",
+    "signer",
+    "signature",
+    "keyed-hashing",
+    "hashing",
+    "mac",
+    "digest",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[tool.poetry.urls]
+"Changelog" = "https://blake2signer.hackan.net/en/latest/changelog"
+"Issues" = "https://gitlab.com/hackancuba/blake2signer/-/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+blake3 = {version = ">0.2.0", optional = true}
+
+[tool.poetry.dev-dependencies]
+flake8 = "^5"
+flake8-2020 = "^1.6.0"
+flake8-quotes = "^3.0.0"
+flake8-bandit = "^4"
+flake8-bugbear = "^23"
+flake8-debugger = "^4.0.0"
+flake8-builtins = "^2"
+flake8-eradicate = "^1.0.0"
+flake8-executable = "^2.0.3"
+flake8-docstrings = "^1.4.0"
+flake8-broken-line = "^0"
+flake8-import-order = "^0"
+flake8-blind-except = "^0"
+flake8-pytest-style = "^1.6.0"
+flake8-string-format = "^0"
+flake8-logging-format = "^0"
+flake8-comprehensions = "^3.1.4"
+flake8-no-implicit-concat = "^0"
+flake8-annotations-complexity = "^0"
+pep8-naming = "^0"
+pydocstyle = "^6"
+darglint = "^1.8.1"
+perflint = "^0"
+pylint = "^2.12.2"
+yapf = "^0"
+add-trailing-comma = "^2.0.1"
+mypy = "^1"
+types-setuptools = "^65"
+dlint = "^0"
+bandit = "^1.6.2"
+safety = "^2"
+pytest = "^7.1.1"
+pytest-watch = "^4.2.0"
+pytest-cov = "^4"
+pytest-custom_exit_code = "^0"
+pytest-xdist = {extras = ["psutil"], version = "^3"}
+pytest-randomly = "^3.8.0"
+junitparser = "^2.8.0"
+coverage = "^7"
+radon = "^5.0.0"
+scriv = "^1"
+invoke = "^2"
+blake3 = ">0.2.0"
+# ToDo: pythonfuzz==1.0.10 requires a psutil version that has a security issue, thus I'm not
+#  adding it here yet
+# pythonfuzz = {version = "^1.0.10", source = "pythonfuzz"}
+
+[tool.poetry.extras]
+blake3 = ["blake3"]
+
+[[tool.poetry.source]]
+name = "pythonfuzz"
+url = "https://gitlab.com/api/v4/projects/19904939/packages/pypi/simple"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
