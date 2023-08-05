@@ -1,0 +1,17 @@
+pandas>=1.2
+deprecated
+
+[docs]
+sphinx>=2.2
+sphinx-py3doc-enhanced-theme
+sphinx-argparse
+
+[lint]
+black
+ruff
+
+[test]
+coverage
+pytest
+pytest-cov
+hypothesis
