@@ -1,0 +1,11 @@
+hsnf/Z_module.py,sha256=4aPfWBmIxysvSEwgNhD7sClxpdMVQ_ct1Gr8s0HGniU,8971
+hsnf/__init__.py,sha256=Zyai4tDa-wmzt_lO-QuuZvzdJuUJUIzCWulSrLzlnfE,391
+hsnf/integer_system.py,sha256=r9R4h4ZFbaxAuPqfaWpQvILfaT7pEf6gBHALUdJxmyw,8144
+hsnf/lattice.py,sha256=TqYx262d-Ono57BtOA-NxgiMnGorSSfmaFNhLQglhh8,4545
+hsnf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hsnf/utils.py,sha256=Nftcu8K88EZrVPtyCjtIZl5UewMdCRLfBzze7fSNqEE,3009
+hsnf-0.3.16.dist-info/LICENSE,sha256=UDqHBO4eRT_XYXLK4je9_yUfrdO-kq2uOn3nVtpUs-M,1072
+hsnf-0.3.16.dist-info/METADATA,sha256=aNDLKZQa4kg_NsGVop-VEv57t6oADjkASy6kEVv0jNo,4599
+hsnf-0.3.16.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hsnf-0.3.16.dist-info/top_level.txt,sha256=OD9tsiBqfSn1EOsVfKWJ5kn_eFv488SyepQcLq7cWzQ,5
+hsnf-0.3.16.dist-info/RECORD,,
