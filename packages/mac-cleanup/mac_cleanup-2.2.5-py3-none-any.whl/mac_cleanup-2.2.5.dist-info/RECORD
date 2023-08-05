@@ -1,0 +1,14 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mac_cleanup/__init__.py,sha256=FJSlgFvJPR1v47nx1Ojy6-3YaFUmffVFsznyJCKKYrs,280
+mac_cleanup/__version__.py,sha256=fITLcQDJzeOCBChKDdMfcTbJZHkrVdBy0-VQZWwo0AI,181
+mac_cleanup/cli.py,sha256=RpQ9HhGaGipH4BQpu97ikcXS8opzWK2TGGxGQ9sAkHA,2950
+mac_cleanup/config.py,sha256=IBr3psAGhj8qEZE5b5jrc4tljeXpsJj2n2dyRs8VJFg,4339
+mac_cleanup/console.py,sha256=vDVbE5OkX-bkjpVRLDOiYYONWKgbW5YA1U_bvjy7GIo,1642
+mac_cleanup/default_modules.py,sha256=y6zgOi_dMq29sg6_ZT-EuUkhmawt7NrRpgYH8K86-eg,12015
+mac_cleanup/modules.py,sha256=-y41_fR0hkFY0NpOxZ71ovio13vuS4wp4i0HDF6jbus,1456
+mac_cleanup/utils.py,sha256=GVXSBPzp2WReYUZCRu9GCeyC-VoYf1TJ4vYALN3mhQI,11244
+mac_cleanup-2.2.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mac_cleanup-2.2.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mac_cleanup-2.2.5.dist-info/entry_points.txt,sha256=BRm9TJlMCZti6tWqs9e9EV8FOUx-gdnE2vLSWdjgrb0,48
+mac_cleanup-2.2.5.dist-info/METADATA,sha256=iQnOrZSRRVOOF4IUZJe3AkZX_HzmiCzKoKOqyrQICrU,4554
+mac_cleanup-2.2.5.dist-info/RECORD,,
