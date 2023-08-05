@@ -1,0 +1,4 @@
+[console_scripts]
+arraylib-deconvolve=pysudoku_package.main:deconvolve
+arraylib-run=pysudoku_package.main:run
+
