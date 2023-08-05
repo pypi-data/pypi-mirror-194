@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tc-grain
+Version: 0.1.1
+Requires-Python: >=3.10
+Requires-Dist: chemcloud
+Requires-Dist: tcpb-trio
+Requires-Dist: trio
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+

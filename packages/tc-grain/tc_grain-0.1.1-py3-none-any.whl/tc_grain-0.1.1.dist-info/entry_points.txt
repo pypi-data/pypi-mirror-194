@@ -1,0 +1,2 @@
+[console_scripts]
+tcpb_grain_spawn = tc_grain.util:tcpb_spawn
