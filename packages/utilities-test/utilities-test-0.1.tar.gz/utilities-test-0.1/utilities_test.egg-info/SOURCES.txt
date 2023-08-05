@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+utilities_test.egg-info/PKG-INFO
+utilities_test.egg-info/SOURCES.txt
+utilities_test.egg-info/dependency_links.txt
+utilities_test.egg-info/top_level.txt
