@@ -1,0 +1,11 @@
+sdfspu/__init__.py,sha256=GSis9yaB9XDt2_M_PYy-XLH89XuA4eA9QVRrKf2TTC4,66
+sdfspu/csv_data.py,sha256=kiihmDbhJxBV8Yx5LgbKHe6bJXhOWPbGlPLK4xZ_ZVA,9641
+sdfspu/ini_config.py,sha256=-GEJ3rPCFq8ugqfm8FUROAtNJhB8GLkhg90uSCuDvHE,1043
+sdfspu/sdf_net.py,sha256=oUgQGVHRDc-kwVcJlhTmTM6e80Jzm-BW00_FEbjrHuA,446
+sdfspu/sdf_text.py,sha256=-K40JJQqMh5hBIykBCfEEneuOVPioQ-ZURIfWw_ZvjM,2861
+sdfspu/sdf_time.py,sha256=duEDwftM8ipefQ8EG9rgAS8Gex-F-tqSIrDlsFTM2H4,408
+sdfspu-0.2.4.dist-info/LICENSE,sha256=VuicfR-fQjeUcdMEGD16rXb2NTQET0Q4_6UDpfqz3Fg,1092
+sdfspu-0.2.4.dist-info/METADATA,sha256=PY5ZZNRF74x-AhK0EkadATtfiW2Vr1YDZxNL0DnQMqo,1095
+sdfspu-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sdfspu-0.2.4.dist-info/top_level.txt,sha256=tb_Hp8EEvWIMN5IxBNpNzuX_3NCd-0p1ed9id5CIQFA,7
+sdfspu-0.2.4.dist-info/RECORD,,
