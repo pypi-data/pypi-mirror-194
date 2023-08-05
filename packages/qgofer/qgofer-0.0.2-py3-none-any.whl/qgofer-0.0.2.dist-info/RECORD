@@ -1,0 +1,12 @@
+qgofer/__init__.py,sha256=oC3XqS_AWceRl4qXQlpbVBIzg6dbrj7SUet6akffubM,226
+qgofer/__main__.py,sha256=VEZKfH3ID1Cw9BF0rMPVskiAkzKRZTd-Wy6uJeF1J4M,218
+qgofer/app.py,sha256=MDyfnQg1Ra__YY2r2z9VH67porBecJ18ayynvn6_-eA,5332
+qgofer/cli.py,sha256=06OT6_lBKcJPy3kr5mVLJu4SVQxNYCO6b18L2MqOtVE,1703
+qgofer/logger.py,sha256=DupTuT3428AC9hlZLEpNeJNJozrtK1NnMvQw5V0i6L8,1348
+qgofer/rake.py,sha256=gRt3C8Ez3fFMTboYI1DLb-R4rc5URSwWZvmrSMGaIWo,5236
+qgofer/utils.py,sha256=aIq9UzF7DxrB8fZpBAF3qtlnMYwAyuozc_YP70oJKPo,8543
+qgofer-0.0.2.dist-info/LICENSE,sha256=PnePH7lAZ-MWFkShJJZJyrsfJwb1yu4sP2bvEC3LJ2c,1070
+qgofer-0.0.2.dist-info/entry_points.txt,sha256=qhyCoHViXFp908IjaqSSP8UOd-YhjxBkD8Qqgc3OeI4,47
+qgofer-0.0.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+qgofer-0.0.2.dist-info/METADATA,sha256=1UufqoGri5Yv4XS3jsfAa5VKLBQ2Ny7VCtUNsOrFvUA,4278
+qgofer-0.0.2.dist-info/RECORD,,
