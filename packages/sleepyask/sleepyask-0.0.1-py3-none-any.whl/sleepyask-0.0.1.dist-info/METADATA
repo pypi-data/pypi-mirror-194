@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sleepyask
+Version: 0.0.1
+Summary: Tool for asking gathering responses from ChatGPT without user attention
+Home-page: https://github.com/hwelsters/sleepyask
+Author: hwelsters
+Author-email: redacted@redacted.redacted
+License: BSD 3-clause
+Project-URL: Bug Tracker, https://github.com/hwelsters/sleepyask/issues
+Project-URL: Repository, https://github.com/hwelsters/sleepyask
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+License-File: LICENSE
+Requires-Dist: schedule (==1.1.0)
+Requires-Dist: revChatGPT (==2.3.6)
+
