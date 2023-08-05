@@ -1,0 +1,2 @@
+numba>=0.54.1
+psutil
