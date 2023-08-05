@@ -1,0 +1,8 @@
+README.md
+setup.py
+flottplot/__init__.py
+flottplot/flottplot-min.js
+flottplot.egg-info/PKG-INFO
+flottplot.egg-info/SOURCES.txt
+flottplot.egg-info/dependency_links.txt
+flottplot.egg-info/top_level.txt
