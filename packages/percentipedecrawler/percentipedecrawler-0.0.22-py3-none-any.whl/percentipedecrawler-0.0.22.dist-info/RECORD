@@ -1,0 +1,14 @@
+percentipedecrawler/.env.example,sha256=4DbGWqtzvc6XOWH0nng4caPv879HzHBSpXmHV8fbRvU,80
+percentipedecrawler/Crawler.py,sha256=1uYVF3_55Y_-OWJaFt6idgHG9F3AS8ATITLWMqmwhu8,3984
+percentipedecrawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+percentipedecrawler/database.py,sha256=Wd3EdDqbICCjyHCO5usTIEnn0ZO7BAwQcu3HMGtmHvA,471
+percentipedecrawler/main.py,sha256=ArERMiycxssOhFf4WY1urcT6S-ZlMMwlYxP6Jc9rUjc,357
+percentipedecrawler/models.py,sha256=v46MkdBWif3tgLkNVEBRCHEO1IalPVPGFAHTgVMT3P0,798
+percentipedecrawler/requirements.txt,sha256=SDGiN9k0p0ldWrpdPu8Z-iEWt1NoJ0jUWE-sCbgOJCs,345
+percentipedecrawler/save.py,sha256=KsUo06rZZSw0Pm__LHDwiD4ZdAoG7hJsQ9BizwgC52c,673
+percentipedecrawler/setup.py,sha256=ApJNsgZ6RakTkgvDo3tnbKNVQ-nrepoGUpqko9h3JAc,138
+percentipedecrawler/utils/dockerFile.txt,sha256=siZBUxWRIH4afiokRcayQtp-_av9EgZw5CfjtZH7eGU,106
+percentipedecrawler-0.0.22.dist-info/METADATA,sha256=mcBggeUPLGF90nyvqG-Qscm4UPv90w54D13aPch7Jco,1934
+percentipedecrawler-0.0.22.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+percentipedecrawler-0.0.22.dist-info/licenses/LICENSE,sha256=CW7Gc6FZFBd94jYZZjdATtmtWbsf7cJ4-FFguecwuZo,1073
+percentipedecrawler-0.0.22.dist-info/RECORD,,
