@@ -1,0 +1,14 @@
+cdataml/__init__.py,sha256=uMF-kPIxP3Pwj4y2olIYI91ZmOpuTRExh3STW6j1Lg4,117
+cdataml/coordinates/__init__.py,sha256=atssVhWTv5CmOlCCuO4bvHKyclKb2hILj3XsgKkwcQo,9695
+cdataml/coordinates/__main__.py,sha256=sIBE_Rt_C3ziWyapWJrf5KfO6TNnWRIVEHoOKBf28-8,976
+cdataml/fitscores/__init__.py,sha256=7Jf88ZxKjc8tBOJ1TczhciXXWCjd_8bg7wsx5xLAh0I,813
+cdataml/fitscores/__main__.py,sha256=Fu9XCUnFoCmd5E7gFX81HfUPjpi6WMA1TBZ3gqzi2Ww,858
+cdataml/generate/__init__.py,sha256=XzZfrtAosBZiplp38WUFYytC4WIuN1KRzLBwI9-cBv4,3648
+cdataml/generate/__main__.py,sha256=FYSGn8Zjivu5yGf5LpFTbLpFW_sCCPcS6JdL3_33-WI,1080
+cdataml/query/__init__.py,sha256=LBTOMUMc-xzghGG-mPOojhgKJuEZutKrLV47NHQHLv0,5753
+cdataml/query/__main__.py,sha256=IEd6b6IdZAlVGvcS7f3Bp4r5WGKz6adP0ZoO9q_jsSo,955
+cdataml-0.2.1.dist-info/LICENSE,sha256=n8s2n9a6KZHzyIrogwYktjuJQT8VmO-OuwYV1m5LUvo,1072
+cdataml-0.2.1.dist-info/METADATA,sha256=rH9LJOzoXdX5nSZ6llIa095ukhrrQicXgHj2wSkSUwc,733
+cdataml-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cdataml-0.2.1.dist-info/top_level.txt,sha256=SUZnYuXso1kWJ_tA8fJeDYzQ3YgHO_lr0zsQ0HoWLd4,8
+cdataml-0.2.1.dist-info/RECORD,,
