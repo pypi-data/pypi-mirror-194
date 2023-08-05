@@ -1,0 +1,3 @@
+[console_scripts]
+llsubtitles=llsubtitles.__main__:main
+
