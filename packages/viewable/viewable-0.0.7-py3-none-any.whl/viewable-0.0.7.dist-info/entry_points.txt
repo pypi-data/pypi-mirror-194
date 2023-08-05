@@ -1,0 +1,3 @@
+[console_scripts]
+viewable = viewable.__main__:main
+
