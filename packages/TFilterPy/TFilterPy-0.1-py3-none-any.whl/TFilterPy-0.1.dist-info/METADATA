@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: TFilterPy
+Version: 0.1
+Summary: A short description of your module
+Home-page: https://github.com/leparalamapara/FilterPY
+Author: Thabang L. Mashinini- Sekgoto Lebogang M. Mashinini-Sekgoto
+Author-email: thabangline@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+## Karman Filter
+In this implementation, we define a class called ParticleFilter which takes in the number of particles, state and observation dimensions, as well as the transition and observation models as arguments.
+
+The initialize method initializes the particles and their weights based on the initial state.
+
+The predict method propagates the particles forward in time using the transition model and adds some noise to the resulting state.
+
+The update method computes the likelihood of the observations given each particle's state, and updates the particle weights accordingly.
+
+The resample method resamples particles based on their weights to ensure that the particle distribution is not degenerate.
+
+The step method performs one iteration of the particle filter, calling predict, update, and resample as necessary. It returns the current estimate of the state.
