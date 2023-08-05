@@ -1,0 +1,138 @@
+# ####################################################################################### #
+# ## Build, pack and dependency management                                             ## #
+# ####################################################################################### #
+[tool.poetry]
+name = "alicia"
+version = "0.2.1"
+description = "A CLI to download, create, modify, train, test, predict and compare an image classifiers."
+license = "MIT"
+authors = [
+  "aemonge <andres@aemonge.com>"
+]
+readme = "docs/README.rst"
+homepage = "https://pypi.org/project/alicia/"
+repository = "https://github.com/aemonge/alicia"
+documentation = "https://pypi.org/project/alicia/docs"
+keywords = [
+  "neural-network",
+  "classifiers",
+  "image",
+  "machine-learning",
+  "performance",
+  "diff",
+  "compare",
+  "ai",
+  "torch",
+  "torchvision"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+packages = [
+  { include = "commands",     from = "src" },
+  { include = "dependencies", from = "src" },
+  { include = "features",     from = "src" },
+  { include = "libs",         from = "src" },
+  { include = "main.py",      from = "src" },
+  { include = "modules",      from = "src" },
+  { include = "models",       from = "src/modules" },
+  { include = "transforms",   from = "src/modules" }
+]
+include = ["./docs/LICENSE.txt", "./docs/CONTRIBUTING.rst", "./docs/CHANGELOG.rst"]
+
+[tool.poetry.dependencies]
+python          =">=3.10,<3.12"
+better-abc      = "^0.0.3"
+click           = "^8.1"
+loading-display = "^0.2"
+matplotlib      = "^3.6"
+numpy           = "^1.24"
+pillow          = "^9.4"
+plotext         = "^5.2"
+termcolor       = "^2.2"
+torch           = "^1.13"
+torchvision     = "^0.14"
+wcmatch         = "^8.4"
+scipy           = "^1.10"
+
+[tool.poetry.group.test.dependencies]
+pytest-cov    = "^3.0"
+pytest-mccabe = "^2.0"
+pytest-lineno = "^0.0"
+pylint        = "^2.15"
+pyright       = "^1.1"
+toml          = "^0.10"
+
+[tool.poetry.scripts]
+alicia = "main:call"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# ####################################################################################### #
+# ## Lints                                                                             ## #
+# ####################################################################################### #
+
+[tool.pylint.master]
+load-plugins="pylint_mccabe"
+
+[tool.pylint.design]
+max-complexity=10
+
+[tool.pylint.format]
+max-line-length=120
+indent-string='  ' # Two spaces, i dislike the 4 spaces convention
+
+[tool.pylint.typecheck]
+generated-members="numpy.*, torch.*, torchvision.*"
+
+# ####################################################################################### #
+# ## Testing and coverage                                                              ## #
+# ####################################################################################### #
+[tool.pytest.ini_options]
+console_output_style = "progress"
+python_files = ['*.py']
+python_functions = ['*_test', 'should_*', 'test_*']
+pythonpath = [ '.', 'src', 'tests' ]
+testpaths = [ "tests/features/**/*py", "tests/libs/*py" ]
+addopts = """ -x --show-lineno
+  --cov=src/features --cov=src/libs
+  --cov-report=html
+"""
+
+[tool.coverage.run]
+branch = true
+partials = false
+omit = [
+  # Pretty and colorized libraries, are pure front-end. Which would be testing with the stdout ouput
+  # and changing constantly, as a personal rule of thumb I don't unit-test screens or pretty libs
+  "src/libs/prett*.py",
+  "src/libs/colorized*.py",
+  "**/__init__.py"
+]
+
+[tool.coverage.report]
+fail_under = 95
+# partial_branches = [
+#   "for .*"
+# ]
+exclude_lines = [
+  # Have to re-enable the standard pragma
+  "pragma: no cover",
+
+  # Don't complain about missing debug-only code:
+  "def __repr__",
+  "if self\\.debug",
+
+  # Don't complain if non-runnable code isn't run:
+  "if 0:",
+  "if __name__ == .__main__.:"
+]
