@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: logit-axis
+Version: 0.1.3
+Summary: A logging library.
+Author: Axis (blankRiot96)
+Keywords: logging
+Requires-Python: >=3.11
+License-File: LICENSE
+
+
+A logging library.

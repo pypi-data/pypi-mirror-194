@@ -1,0 +1,14 @@
+logit/__init__.py,sha256=xVGP0jMzvmdK2-uJRQ4sWBF0qKg1RMp1bHOBlYoWqnY,86
+logit/_common.py,sha256=PIVy1Ux0MFtuitvBbriQZfmSZ_rfGyFQFx1te_8zmfI,541
+logit/_data.py,sha256=ahKKLSvmmiGzeGnn5ixbdpFTDxs1mAoY5DgEg2ZPWWQ,2014
+logit/_enums.py,sha256=Cm0DsaHyyqeHMkZtOvWLVsEoEM8B9hLp4SPTZiby5L0,1387
+logit/_logger.py,sha256=ZM03sGeAS0QyRZBuUNpaq9fpOxWixrcftV_egUk1oO8,5872
+logit/_space.py,sha256=_G8_AeA-SPAO8nFZFzmg8lODXH977KYSp3l0JJTGP9k,1524
+logit/_time.py,sha256=Q3TTi227UWn1MG68BRvLv4nUmoiUExXutpuw8f1nB-k,1727
+logit/output.py,sha256=dyrG1d0ADvYCmc-CIRQw6PvoEYxAKuFVXU8tqXAzQ64,1645
+logit/types_.py,sha256=sDu6vv2gw2Dnr7BHfcSzSLARh1d2iE1FNH-T-IXADkM,191
+logit_axis-0.1.3.dist-info/LICENSE,sha256=HgV29nPgcaPo3GFzgN2-W-XbSXHMOahQAbNkyDoPCGo,1080
+logit_axis-0.1.3.dist-info/METADATA,sha256=hw_FLTwb5oRsSrRgAvN1GP_Zzpi0wBTXvW35SlyqPEo,205
+logit_axis-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+logit_axis-0.1.3.dist-info/top_level.txt,sha256=tEbh1BivQ9B9THX7-l77MYP2qDlbNw6LmmUfgm7ySMg,6
+logit_axis-0.1.3.dist-info/RECORD,,
