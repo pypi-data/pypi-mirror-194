@@ -1,0 +1,2 @@
+[console_scripts]
+aiotaipit = pytaipit.__main__:main
