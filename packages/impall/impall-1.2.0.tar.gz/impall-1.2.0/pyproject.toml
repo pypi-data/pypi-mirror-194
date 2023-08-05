@@ -1,0 +1,29 @@
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+target-version = ['py37']
+
+[tool.doks]
+auto = true
+
+[tool.poetry]
+authors = ["Tom Ritchford <tom@swirly.com>"]
+description = "🛎 Test-import all modules below a given root 🛎"
+homepage = "https://github.com/rec/impall"
+name = "impall"
+readme = "README.md"
+repository = "https://github.com/rec/impall"
+version = "1.2.0"
+
+[tool.poetry.dependencies]
+python = '^3.7'
+
+[tool.poetry.group.dev.dependencies]
+coverage = "*"
+flake8 = "*"
+pyfakefs = "*"
+pytest = "*"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
