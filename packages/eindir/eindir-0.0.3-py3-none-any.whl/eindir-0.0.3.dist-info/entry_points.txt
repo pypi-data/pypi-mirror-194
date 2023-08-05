@@ -1,0 +1,2 @@
+[console_scripts]
+eindir = eindir.cli.main:hello
