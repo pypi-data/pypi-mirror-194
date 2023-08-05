@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: zonis
+Version: 1.2.6
+Summary: Agnostic IPC for Python programs 
+Author: skelmis
+Author-email: ethan@koldfusion.xyz
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: websockets (>=10.4,<11.0)
+Description-Content-Type: text/markdown
+
+Zonis
+---
+
+A coro based callback system for many to one IPC setups.
+
+`pip install zonis`
+
+See the [examples](https://github.com/Skelmis/Zonis/tree/master/exampleshttps://github.com/Skelmis/Zonis/tree/master/examples) for simple use cases.
