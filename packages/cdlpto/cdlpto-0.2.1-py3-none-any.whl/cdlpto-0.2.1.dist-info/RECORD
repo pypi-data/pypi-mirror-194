@@ -1,0 +1,12 @@
+cdlpto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdlpto/_version.py,sha256=EGgkE0P_mNhgdajRtJIZJnyl0yMGRYakJYoPnb92ETI,160
+cdlpto/cli.py,sha256=pGzrUST8e4Sl9LhkQGDLDoxJD-HXwLkOciafKwrdlKA,4018
+cdlpto/config.py,sha256=l-mknmEp-sEfVBnD7JB7n-aSrMoZ0QMPjlEHtB_zCl4,1145
+cdlpto/email.py,sha256=wTvJ9hOiVRX927o9ZploAkH9kmVfSonZhs7ExTbO-Go,1454
+cdlpto/pdf.py,sha256=rQcG9QSCtG1RXHNRxDCLDh6sxV3uAmnY30Ybv_TalrM,3151
+cdlpto/pto.py,sha256=4jfOT_1AxSMP1swLp1Zi2o8qlde4KhYg1JlKBrP6LFU,392
+cdlpto-0.2.1.dist-info/METADATA,sha256=PYH5DApVdUx8_7ItJCl1TNGbXg9wnknUmpP1UPDT5LQ,1659
+cdlpto-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cdlpto-0.2.1.dist-info/entry_points.txt,sha256=4FcFf5atp7XobHG3JKNodqkl0G71A5KLkP71MFLbD_Y,43
+cdlpto-0.2.1.dist-info/top_level.txt,sha256=YDR9IeoNs5S-VDcGzMRjjEue151d1UchBEtpaxD9Trc,7
+cdlpto-0.2.1.dist-info/RECORD,,
