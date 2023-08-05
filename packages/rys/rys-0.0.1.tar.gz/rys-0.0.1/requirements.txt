@@ -1,0 +1,14 @@
+# Rys
+# Test
+pytest ~= 7.2.1
+# Doc
+sphinx ~= 6.1.3
+# Dev
+tox      ~= 4.4.6
+pip      ~= 23.0.1
+flit     ~= 3.8.0
+twine    ~= 4.0.2
+invoke   ~= 2.0.0
+jinja2   ~= 3.1.2
+flake8   ~= 6.0.0
+coverage ~= 7.2.0
