@@ -1,0 +1,12 @@
+kernel_sidecar/__init__.py,sha256=QwWtSx5HKsr-24S7lGsolrudEkw4GjWGhpSYEwSRSbM,80
+kernel_sidecar/actions.py,sha256=xEzXuQLNjPMsUVU85nh1mkbrS_fltEf1l4xrkXIDyIg,3725
+kernel_sidecar/client.py,sha256=r_YtYrH13S6aec0qzX-ZhTSA_gTm3dp4_A8SRtWjzKg,14812
+kernel_sidecar/handlers.py,sha256=mhW6qNdWVqdK_s3cJZRuZQdfNoutKPYJptELzDzjNG4,1528
+kernel_sidecar/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kernel_sidecar/models/messages.py,sha256=lSptNucSlGvYdGvx1anhMO78WQISTEfSFGfzI5a0s0c,12596
+kernel_sidecar/models/notebook.py,sha256=Q7a01vZMO1vuqqAZzc8xwtfYCH2fv1OBR82c_k4O3Rs,2759
+kernel_sidecar/models/requests.py,sha256=a_Vi4LhFU9yd5TcGrLtoj9GI8uJvwanF27HUFr7IQbA,9369
+kernel_sidecar-0.3.0.dist-info/LICENSE,sha256=2EA3SXQiBB9IkCFQSxdvqva_K4qcETjFJuF9zH3hhIc,1069
+kernel_sidecar-0.3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+kernel_sidecar-0.3.0.dist-info/METADATA,sha256=tjUF_mTlwPCDQmhTCUASD3zlx9xqZ4zkiS9Uxnf3yHY,4296
+kernel_sidecar-0.3.0.dist-info/RECORD,,
