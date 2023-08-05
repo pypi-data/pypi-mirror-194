@@ -1,0 +1,5 @@
+pupil-apriltags
+robotpy[cscore]
+pynetworktables
+transforms3d
+opencv-contrib-python
