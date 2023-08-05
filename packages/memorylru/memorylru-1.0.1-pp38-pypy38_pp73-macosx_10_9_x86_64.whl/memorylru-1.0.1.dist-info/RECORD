@@ -1,0 +1,8 @@
+memorylru/__init__.py,sha256=uvvD-3YbxfilpCm912SiTeMAcizR-j-2EnLwBCS8IvM,41
+memorylru/lru.c,sha256=xe1k1TtNxqP5FOyGEuDlPmvLi8CRHa1rmW6klKikyGI,21805
+memorylru/lru.pypy38-pp73-darwin.so,sha256=Ld_5zmIwJiYmxJQj-Zv19f0ZhpcUe1QKKY_FOWvY7k8,35928
+memorylru-1.0.1.dist-info/METADATA,sha256=YtBc5hVhQMJiEsOnxg1YZBDrqRpVhQXuLJnKjSKe1Z4,639
+memorylru-1.0.1.dist-info/WHEEL,sha256=eMXieGdYIPAvPgWZuPjv3Y7MrdPX-HD5sJnupwu3tEk,116
+memorylru-1.0.1.dist-info/top_level.txt,sha256=9DqutiDV_fBQFkBJZW8WD-uFq1IEH77WJLJZOT70hpM,10
+memorylru-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+memorylru-1.0.1.dist-info/RECORD,,
