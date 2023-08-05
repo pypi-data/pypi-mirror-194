@@ -1,0 +1,419 @@
+# cimport C libraries
+cimport cython
+cimport numpy as np
+from libc.stdio cimport fprintf, printf, snprintf, stderr, stdout, fflush
+from libc.stdlib cimport exit, malloc, free, calloc, EXIT_SUCCESS, EXIT_FAILURE
+from libc.stdint cimport int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, int64_t, uint64_t
+from libc.signal cimport SIGINT, SIGUSR1, SIGBUS, SIGSEGV, SIGQUIT, SIGUSR2
+from libc.string cimport memset, memcpy, strerror
+from libc.errno cimport errno, EINTR, EPIPE, EAGAIN
+from posix.signal cimport kill, sigaction, sigaction_t, sigset_t, sigemptyset, sigaddset, sigfillset
+from posix.unistd cimport close, getpid, getppid, pause
+from posix.mman cimport munmap, PROT_READ, PROT_WRITE, MAP_SHARED, mlockall, MCL_CURRENT, MCL_FUTURE, munlockall
+from posix.types cimport pid_t
+from posix.fcntl cimport O_RDWR, open, fcntl, O_CREAT, O_RDONLY, F_SETFL, O_NONBLOCK
+from posix.ioctl cimport ioctl
+from posix.time cimport clock_gettime, CLOCK_MONOTONIC_RAW, timespec
+
+# import Python libraries
+import numpy as np
+{% if is_reader -%}
+import SharedArray as sa
+{%- endif %}
+
+# import LiCoRICE utils
+from module_utils import create_shared_array
+
+# headers for all sources
+cdef extern from "<sys/resource.h>":
+  enum: PRIO_PROCESS
+  int setpriority(int which, int who, int prio)
+
+cdef extern from "<sys/socket.h>":
+  ctypedef uint32_t socklen_t
+
+cdef extern from "semaphore.h" nogil:
+  cdef union sem_union:
+    pass
+  ctypedef sem_union sem_t
+  sem_t *sem_open(const char *name, int oflag)
+  int sem_wait(sem_t *)
+  int sem_post(sem_t *)
+  int sem_close(sem_t *sem)
+  int sem_getvalue(sem_t * sem, int * sval);
+
+cdef extern from "stdatomic.h":
+  enum memory_order:
+    memory_order_relaxed,
+    memory_order_consume,
+    memory_order_acquire,
+    memory_order_release,
+    memory_order_acq_rel,
+    memory_order_seq_cst
+  void atomic_thread_fence(memory_order)
+
+cdef extern from "utilityFunctions.h":
+  void init_utils(void (*pHandleExit)(int exitStatus), sigset_t *pExitMask)
+  void die(char *errorStr)
+  void open_shared_mem(uint8_t **ppmem, const char *pName, int numBytes, int shm_flags, int mmap_flags)
+  void set_sighandler(int signum, void *psh, sigset_t *block_mask)
+  void make_realtime()
+
+cdef extern from "constants.h":
+  enum: MAX_PATH_LEN
+  enum: PAGESIZE
+  const char *SMEM0_PATHNAME
+  enum: NUM_NON_SOURCES
+  enum: NUM_SEM_SIGS
+  enum: NUM_INTERNAL_SIGS
+  size_t ROUND_UP(int X, int Y)
+  enum: BUF_VARS_LEN
+  enum: PRIORITY
+  enum: SHM_SIZE
+  enum: NUM_TICKS_OFFSET
+  enum: BUF_VARS_OFFSET
+  enum: ASYNC_READER_MUTEXES_OFFSET
+  enum: SEM_NAME_LEN
+
+{%- if async %}
+cdef extern from "<sys/types.h>":
+  ctypedef struct pthread_mutex_t:
+    pass
+  ctypedef struct pthread_mutexattr_t:
+    pass
+
+cdef extern from "<pthread.h>" nogil:
+  struct sched_param:
+    int sched_priority
+  int pthread_mutex_init(pthread_mutex_t *, const pthread_mutexattr_t *)
+  int pthread_mutex_lock(pthread_mutex_t *)
+  int pthread_mutex_unlock(pthread_mutex_t *)
+{%- endif %}
+
+{%- if is_reader %}
+{{ driver_code["imports"] }}
+{%- endif %}
+
+# cdef variables
+cdef pid_t pid, ppid
+cdef sigset_t exitMask
+cdef char pathName[MAX_PATH_LEN]
+cdef char *outbuf
+cdef int parse_idx
+cdef int semVal;
+
+cdef size_t shm_size
+cdef uint8_t *pmem
+cdef int64_t *pNumTicks
+{% if is_main_process -%}
+cdef sem_t *pSourceUpSem
+cdef sem_t *pSourceDownSem
+cdef sem_t *pSigSems[NUM_SEM_SIGS]
+cdef char semNameBuf[SEM_NAME_LEN]
+{%- endif %}
+{%- if async %}
+cdef pthread_mutex_t *pAsyncMutex
+{%- endif %}
+cdef uint32_t *pBufVars
+# 0: tick start
+# 1: tick end
+# 2: next data location
+# 3: num samples received this tick
+# 4: buffer end offset (samples)
+# 5: packet size (bytes)
+# 6: max samples per tick (samples)
+# 7: buffer size offset (samples)
+cdef unsigned long packetNum = 0
+cdef unsigned long numDropped = 0
+cdef int i
+{%- for sig, dtype in (sig_types.items()) %} # declare signal BufVars pointers (to point into pBufVars)
+cdef uint32_t *{{sig}}BufVars
+  {%- if is_reader and has_parser %}
+cdef {{dtype}} *{{sig}}StrtPtr
+cdef {{dtype}} *{{sig}}EndPtr
+  {%- endif %}
+{%- endfor %}
+
+{% if is_reader -%}
+cdef uint32_t packetSize = {{in_signal["schema"]["data"]["size"]}} * sizeof({{in_dtype}})
+cdef {{in_dtype}} *inBufStrt
+cdef {{in_dtype}} *inBufEnd
+cdef {{in_dtype}} *inBuf
+{%- endif %}
+
+# python variables
+# declare output signals
+out_sigs = {}
+{%- if not has_parser %} # output packing is handled by parser code
+out_sig = None
+{%- endif %}
+{%- if not is_main_process %}
+shouldExit = False
+{%- endif %}
+
+{% if is_reader -%}
+# driver variables
+{{ driver_code["variables"] }}
+{%- endif %}
+
+# function to close the source
+cdef void handle_exit(int exitStatus):
+  global pmem, shm_size, udpReadThread, exitMutex, exitRoutine, pSourceUpSem, pSourceDownSem, pSigSems
+
+{%- if is_reader %}
+
+  {{ destruct_code }}
+
+  # delete the signal's shared memory array
+  {%- if platform_system == "Linux" %}
+  sa_names = [sig.name for sig in sa.list()]
+    {%- for sig in (out_signals.keys()) %}
+  if b"{{sig}}" in sa_names:
+    sa.delete("shm://{{sig}}")
+  else:
+    printf("Could not delete shared array {{sig}}.\n")
+    {%- endfor %}
+  {%- else %}
+   {%- for sig in (out_signals.keys()) %}
+  sa.delete("shm://{{sig}}")
+    {%- endfor %}
+  {%- endif %}
+
+  {%- if has_parser %}
+  free(inBufStrt)
+  {%- endif %}
+
+{{ driver_code["exit_handler"] }}
+
+{%- endif %}
+
+  munmap(pmem, shm_size)
+  munlockall()
+
+{%- if is_main_process %}
+
+  if (sem_close(pSourceUpSem) == -1):
+    printf("Could not close source up semaphore. \n")
+  if (sem_close(pSourceDownSem) == -1):
+    printf("Could not close source down semaphore. \n")
+  {%- for name, sem_num in sig_sems %}
+  if (sem_close(pSigSems[{{sem_num}}]) == -1):
+    printf("Could not close source signal semaphore. \n")
+  {%- endfor %}
+{%- endif %}
+
+  exit(exitStatus)
+
+
+cdef void int_handler(int signum):
+  pass
+
+cdef void exit_handler(int signum):
+  global shouldExit
+  printf("EXIT HANDLER for {{name}}\n")
+{%- if is_main_process %}
+  handle_exit(0)
+{%- else %}
+  shouldExit = True
+{%- endif %}
+
+cdef void bus_handler(int signum):
+  printf("Bus Error\n")
+  handle_exit(1)
+
+cdef void segv_handler(int signum):
+  printf("Seg Fault\n")
+  handle_exit(1)
+
+cdef void usr2_handler(int signum):
+  pass
+
+# main
+sigfillset(&exitMask)
+init_utils(&handle_exit, &exitMask)
+
+pid = getpid()
+ppid = getppid()
+
+set_sighandler(SIGINT, &int_handler, &exitMask)
+set_sighandler(SIGUSR1, &exit_handler, &exitMask)
+set_sighandler(SIGBUS, &bus_handler, &exitMask)
+set_sighandler(SIGSEGV, &segv_handler, &exitMask)
+set_sighandler(SIGUSR2, &usr2_handler, NULL)
+
+# open and map shared memory
+shm_size = ROUND_UP(SHM_SIZE, PAGESIZE)
+open_shared_mem(&pmem, SMEM0_PATHNAME, shm_size, O_RDWR, PROT_READ | PROT_WRITE)
+pNumTicks = <int64_t *>(pmem + NUM_TICKS_OFFSET)
+pBufVars = <uint32_t *>(pmem + BUF_VARS_OFFSET)
+{% if is_main_process -%}
+pSourceUpSem = sem_open("/source_up_sem_{{source_num}}", 0)
+pSourceDownSem = sem_open("/source_down_sem_{{source_num}}", 0)
+  {%- for sig_sem in sig_sems %}
+snprintf(semNameBuf, SEM_NAME_LEN, "/sig_sem_%d", {{sig_sem[1]}})
+pSigSems[{{sig_sem[1]}}] = sem_open(semNameBuf, 0)
+  {%- endfor %}
+{%- endif %}
+{%- if async %}
+pAsyncMutex = <pthread_mutex_t *>(pmem + ASYNC_READER_MUTEXES_OFFSET + sizeof(pthread_mutex_t) * {{async_reader_num}})
+  {%- if is_main_process %}
+if(pthread_mutex_init(pAsyncMutex, NULL) != 0):
+  die("Mutex could not be initialized.\n")
+  {%- endif %}
+{%- endif %}
+
+{% for sig,args in (out_signals.items()) %}
+{{sig}}BufVars = pBufVars + ({{out_sig_nums[sig] * buf_vars_len}})
+  {%- if is_main_process %}
+{{sig}}BufVars[5] = {{args["packet_size"]}}
+{{sig}}BufVars[6] = {{args["schema"]["max_packets_per_tick"] * args["packet_size"]}}
+{{sig}}BufVars[7] = {{args["buf_tot_numel"]}}
+  {%- endif %}
+{%- endfor %}
+
+{% if is_reader -%}
+
+{%- if platform_system == "Linux" %}
+created_mem = sa.list()
+{%- endif %}
+  {% for sig,args in (out_signals.items()) %}
+  {%- if platform_system == "Linux" %}
+if any([b'{{sig}}' == x[0] for x in created_mem]):
+  sa.delete("shm://{{sig}}")
+  printf("Numpy signal {{sig}} already created. Overwriting\n")
+  {%- endif %}
+
+out_sigs["{{sig}}"] = create_shared_array(
+  "shm://{{sig}}", {{args["sig_shape"]}}, dtype=np.{{args["dtype"]}}
+)
+
+    {%- if has_parser %}
+{{sig}}Raw = out_sigs["{{sig}}"]
+{{sig}} = {{sig}}Raw[{{sig}}BufVars[10]]
+{{sig}}StrtPtr = <{{sig_types[sig]}} *><long>{{sig}}Raw.__array_interface__["data"][0]
+{{sig}}EndPtr = {{sig}}StrtPtr + len(out_sigs["{{sig}}"])
+    {%- else %}
+out_sig = out_sigs["{{sig}}"]
+    {%- endif %}
+
+    {%-  if py_maj_ver == 2 %}
+# TODO determine usage in SharedArray>2.0.4
+sa.mlock(out_sigs["{{sig}}"])
+    {%- endif %}
+  {%- endfor %}
+
+{{ driver_code["setup"] }}
+
+{%- endif %}
+
+{% if is_reader %}
+  {%- if has_parser %}
+inBufStrt = <{{in_dtype}} *>malloc(packetSize)
+inBuf = inBufStrt
+inBufEnd = inBufStrt + packetSize
+  {%- else %}
+inBufStrt = <{{out_signal_type}} *><long>out_sig.__array_interface__["data"][0]
+inBuf = inBufStrt
+inBufEnd = inBufStrt + {{out_signal_name}}BufVars[7]
+# inBufEnd = inBufStrt + packetSize
+  {%- endif %}
+{%- endif %}
+
+{% if default_params -%}
+{{in_sig_name}} = {{default_params}}
+{%- endif %}
+
+{%- if is_reader %}
+
+{{ construct_code }}
+{%- endif %}
+
+{%- if platform_system != "Darwin" %}
+make_realtime()
+{%- endif %}
+fflush(stdout)
+kill(ppid, SIGUSR2) # this source is initialized
+pause()
+
+while(True):
+{%- if is_main_process %}
+  sem_wait(pSourceUpSem)
+{%- endif %}
+
+{%- if is_reader %}
+  {%- if not is_main_process %}
+  if (shouldExit):
+    handle_exit(0)
+  {%- endif %}
+
+  {%- if not has_parser %}
+  inBuf = inBufStrt + {{out_signal_name}}BufVars[2]
+  {%- endif %}
+
+{{ driver_code["read"] }}
+
+  {%- if has_parser %}
+    {%- for sig, args in out_signals.items() %}
+  {{sig}} = {{sig}}Raw[{{sig}}BufVars[10]]
+    {%- endfor %}
+
+  # use user parser
+  {{ parser_code }}
+  {%- endif %}
+
+  # update bufVars
+  {%- for sig,args in (out_signals.items()) %}
+    {%- if async %}
+  pthread_mutex_lock(pAsyncMutex)
+
+  {{sig}}BufVars[6] = max({{sig}}BufVars[6], {{sig}}BufVars[9] - {{sig}}BufVars[8])
+    {%- endif %}
+  {{sig}}BufVars[2] += {{sig}}BufVars[5]
+  # print("2: ", {{sig}}BufVars[2], flush=True)
+  {{sig}}BufVars[10] += 1
+  if ({{sig}}BufVars[7] <= {{sig}}BufVars[2] + {{sig}}BufVars[6]) or ({{sig}}BufVars[2] > {{sig}}BufVars[4]):
+    {{sig}}BufVars[4] = {{sig}}BufVars[2]
+    {{sig}}BufVars[12] = {{sig}}BufVars[10]
+  # Somehow when there is no active streaming data, this number just runs upwards
+  {{sig}}BufVars[3] += {{sig}}BufVars[5]
+  {{sig}}BufVars[11] += 1
+    {%- if async %}
+  # wrap buffer for async readers during setup. wrap is synchonous after setup meaning
+  # that async readers should not read more than `max_packets_per_tick` packets in a tick
+  if (pNumTicks[0] < 0) and ({{sig}}BufVars[7] < ({{sig}}BufVars[2] + {{sig}}BufVars[6])):
+    {{sig}}BufVars[2] = 0
+    {{sig}}BufVars[10] = 0
+
+  pthread_mutex_unlock(pAsyncMutex)
+    {%- endif %}
+  {%- endfor %}
+{%- endif %}
+
+{%- if is_main_process %}
+  {%- if async %}
+  pthread_mutex_lock(pAsyncMutex)
+  {%- endif %}
+  {%- for sig,args in (out_signals.items()) %}
+  {{sig}}BufVars[1] = {{sig}}BufVars[2];
+  {{sig}}BufVars[9] = {{sig}}BufVars[10];
+  {{sig}}BufVars[0] = {{sig}}BufVars[1] - {{sig}}BufVars[3];
+  {{sig}}BufVars[8] = {{sig}}BufVars[9] - {{sig}}BufVars[11];
+  if (({{sig}}BufVars[7] < ({{sig}}BufVars[2]) + {{sig}}BufVars[6])):
+    {{sig}}BufVars[2] = 0;
+    {{sig}}BufVars[10] = 0;
+  {{sig}}BufVars[3] = 0;
+  {{sig}}BufVars[11] = 0;
+  {%- endfor %}
+  {%- if async %}
+  pthread_mutex_unlock(pAsyncMutex)
+  {%- endif %}
+  atomic_thread_fence(memory_order_seq_cst)
+
+{% for dep_name, dep_tuple in out_sig_dependency_info.items() %}
+  {% for i in range(dep_tuple[0]) %}
+  if (pNumTicks[0] >= 0):
+    sem_post(pSigSems[{{dep_tuple[1]}}])
+  {%- endfor %}
+{%- endfor %}
+  sem_post(pSourceDownSem)
+{%- endif %}
