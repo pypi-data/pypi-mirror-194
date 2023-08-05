@@ -1,0 +1,7 @@
+flake8_max_function_length/__init__.py,sha256=sQ2V3buenp5eMqis_csvt0VmL1I9noj5Q6IBwgtFEWo,106
+flake8_max_function_length/plugin.py,sha256=31JZw5WxiNYvHYydcsR_w1kTNcpC3JDYdrOBe4A_xPY,5342
+flake8_max_function_length-0.7.4.dist-info/entry_points.txt,sha256=wd_F69vIRpgE0tSh623opVWFFqEhdS1th_4pUEL6X90,65
+flake8_max_function_length-0.7.4.dist-info/LICENSE,sha256=74fYqqWU52jICueuj-KjhzSwszfQu8hqJy5EaYlxUuY,1101
+flake8_max_function_length-0.7.4.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+flake8_max_function_length-0.7.4.dist-info/METADATA,sha256=XFwmZGSxtfxALaqx9KvtxGtlqnAGaO3gfIind1DrNNA,4042
+flake8_max_function_length-0.7.4.dist-info/RECORD,,
