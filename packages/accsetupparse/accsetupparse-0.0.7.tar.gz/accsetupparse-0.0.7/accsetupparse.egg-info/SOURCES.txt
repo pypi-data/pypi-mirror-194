@@ -1,0 +1,11 @@
+CHANGELOG.md
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+accsetupparse/__init__.py
+accsetupparse/mclaren_720s.py
+accsetupparse.egg-info/PKG-INFO
+accsetupparse.egg-info/SOURCES.txt
+accsetupparse.egg-info/dependency_links.txt
+accsetupparse.egg-info/top_level.txt
