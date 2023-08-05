@@ -1,0 +1,8 @@
+-r common.txt
+
+coverage==7.0.4
+coverage-badge==1.1.0
+flake8==6.0.0
+mock==5.0.0
+parameterized==0.8.1
+freezegun==1.2.2

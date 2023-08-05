@@ -1,0 +1,84 @@
+version: '3.8'
+
+networks:
+  {{cookiecutter.project_name}}:
+    name:  {{cookiecutter.project_name}}
+
+
+services:
+  {{cookiecutter.app_name}}:
+    build:
+      context: ./
+      args:
+        - APP_VERSION
+        - APP_DIR={{cookiecutter.app_name}}
+    image: ${REGISTRY}/{{cookiecutter.app_name}}:${APP_VERSION}
+    container_name: {{cookiecutter.app_name}}_${DOCKER_CONTAINER_SUFFIX}
+    environment:
+      - DEVELOP
+      - APP_VERSION
+      - LOG_LEVEL
+      - MYSQL_USER
+      - MYSQL_PASSWORD
+      - MYSQL_DB
+      - MYSQL_PORT
+      - REDIS_HOST=${REDIS_DOCKER_HOST}
+      - MYSQL_HOST=${MYSQL_DOCKER_HOST}
+    networks:
+      {{cookiecutter.project_name}}:
+        aliases:
+          - rest_api
+    ports:
+      - "8080:80"
+    depends_on:
+      mysqlDB:
+        condition: service_healthy
+      redisDB:
+        condition: service_healthy
+
+  mysqlDB:
+    image: mysql:8.0.31
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DB}
+    volumes:
+      - mysqlDB:/var/lib/mysql
+      - ./init_db:/docker-entrypoint-initdb.d
+    networks:
+      {{cookiecutter.project_name}}:
+        aliases:
+        - ${MYSQL_HOST}
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  redisDB:
+    image: redis:7.0.7
+    container_name: redis
+    command: redis-server --appendonly yes
+    volumes:
+      - redisDB:/data
+    ports:
+      - "6379:6379"
+    networks:
+      {{cookiecutter.project_name}}:
+        aliases:
+        - ${REDIS_HOST}
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  mysqlDB:
+    driver: local
+  redisDB:
+    driver: local

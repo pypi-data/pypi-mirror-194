@@ -1,0 +1,9 @@
+fastapi==0.89.0
+pydantic==1.10.4
+uvicorn==0.20.0
+mrkutil==1.0.6
+PyMySQL[rsa]==1.0.2
+redis==4.4.1
+sqlalchemy==1.4.46
+sqlalchemy-utils==0.39.0
+alembic==1.9.1
