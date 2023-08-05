@@ -1,0 +1,3 @@
+[gui_scripts]
+bleak_scanner_construct = construct_gallery.__main__:bleak_main
+construct-gallery = construct_gallery.__main__:main
