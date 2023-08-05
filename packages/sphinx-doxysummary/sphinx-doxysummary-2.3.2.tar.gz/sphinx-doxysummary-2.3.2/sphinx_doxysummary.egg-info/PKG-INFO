@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sphinx-doxysummary
+Version: 2.3.2
+Summary: Sphinx extension for Doxygen entries.
+Home-page: https://github.com/quocdang1998/doxysummary
+Author: Dinh Quoc Dang Nguyen
+Author-email: quocdang1998@gmail.com
+License: MIT
+Keywords: Sphinx,autosummary,Doxygen
+Platform: Microsoft :: Windows
+Platform: POSIX :: Linux
+Classifier: Framework :: Sphinx :: Extension
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Python: >=3.6
+Provides-Extra: example
+
+Mimic the role of Sphinx's autosummary for reading Doxygen
+XML input files and generate reStructuredText files based on provided templates.
