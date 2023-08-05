@@ -1,0 +1,2 @@
+[mlflow.deployments]
+modal = mlflow_modal
