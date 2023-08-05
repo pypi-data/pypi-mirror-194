@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/cnxfastvector.egg-info/PKG-INFO
+src/cnxfastvector.egg-info/SOURCES.txt
+src/cnxfastvector.egg-info/dependency_links.txt
+src/cnxfastvector.egg-info/requires.txt
+src/cnxfastvector.egg-info/top_level.txt
+src/fastvector/__init__.py
+src/fastvector/vector.py
+src/fastvector/version.py
+tests/test_vector.py

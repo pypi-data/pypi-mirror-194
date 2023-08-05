@@ -1,0 +1,14 @@
+numpy==1.21.5
+
+[testing]
+autopep8
+black
+codecov
+flake8
+isort
+mypy
+pre-commit
+pylint
+pytest
+pytest-cov
+tox

@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=45.0", "setuptools_scm[toml]>=6.3.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cnxfastvector"
+version = "0.2.0"
+description = "short package description"
+readme = "README.md"
+authors = [
+    {name = "author", email = "author@example.com"},
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "numpy==1.21.5",
+]
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
+[project.optional-dependencies]
+testing = [
+    "autopep8",
+    "black",
+    "codecov",
+    "flake8",
+    "isort",
+    "mypy",
+    "pre-commit",
+    "pre-commit",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "tox",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 80
+skip-string-normalization = false
+skip-magic-trailing-comma = false
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+
+[tool.pdm]
+package-dir = "src"
+
