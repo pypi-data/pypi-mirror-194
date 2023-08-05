@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/env_validate.egg-info/PKG-INFO
+src/env_validate.egg-info/SOURCES.txt
+src/env_validate.egg-info/dependency_links.txt
+src/env_validate.egg-info/top_level.txt
