@@ -1,0 +1,9 @@
+bare_estate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bare_estate/cli.py,sha256=yDeDTEFIvyy_-thwDc116QzEovWCf4PfE6CrhwFkylA,1106
+bare_estate/commands.py,sha256=y69AFz3pIjQZw1ldFYXsxgEN6KVm2XsoHg-2Y5EIbJE,2884
+bare_estate/config.py,sha256=BM78I1oL6GNaMWVMbRdNfj13WfAsViKjSrUzf08G4eo,661
+bare_estate-0.1.dist-info/METADATA,sha256=lboUNxtLWiGobkbixr1Uv4W6SiTcNZhHkDmc2DLz15A,3022
+bare_estate-0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+bare_estate-0.1.dist-info/entry_points.txt,sha256=UPNQX-_fjW6MVNwdSZmYIS0ThzheRojUnbgSBxCK0vo,48
+bare_estate-0.1.dist-info/licenses/LICENSE,sha256=5a2T8s-aOqQzKcuRDXE2j5s5Guh1F9jlh24xch18SNw,1074
+bare_estate-0.1.dist-info/RECORD,,
