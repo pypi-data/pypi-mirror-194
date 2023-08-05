@@ -1,0 +1,9 @@
+ab_testing/__init__.py,sha256=WqZhef44qa1xs43nkBAUsLr7zzmL8KY7vz5REi3nTFk,41
+ab_testing/abtesting.py,sha256=uix4heQHqxziabttjYM23zInbUoTgiwhAj0X0apf788,7046
+ab_testing/data/__init__.py,sha256=qrtzCd7XlXUcQFpUxL4Zsua6twIzn59IP2Dc6ma15GA,29
+ab_testing/data/dataset.py,sha256=piM4dWaZHlW2j_G4Q2bS5GMZRYBXLMCFRZENcRtMc8s,2351
+ab_testing_analysis-1.2.8.dist-info/LICENSE,sha256=oQWt_4ddZj1cj4e7LmmsB7JDmBC8Rly0wjDdIuRL2GY,1066
+ab_testing_analysis-1.2.8.dist-info/METADATA,sha256=w5QOTKHafWziVxi52gRo1xmoJK0WhfACUWITWFE5DDs,6953
+ab_testing_analysis-1.2.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ab_testing_analysis-1.2.8.dist-info/top_level.txt,sha256=X53l7Ei05YndTLWCfivgH0lUG202JIZa-iOr2Qu6PaQ,11
+ab_testing_analysis-1.2.8.dist-info/RECORD,,
