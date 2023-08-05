@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: browz
+Version: 1.0.1
+Summary: Python/GTK Web Browser
+Home-page: https://github.com/paigeadelethompson/browz
+Author: Millan Philipose
+License: MIT
+License-File: AUTHORS
+Requires-Dist: autopep8 (==2.0.1)
+Requires-Dist: distutils-extra-python (==2.39.2)
+Requires-Dist: pycodestyle (==2.10.0)
+Requires-Dist: PyGObject (==3.42.2)
+Requires-Dist: pytest (==7.2.1)
+Requires-Dist: pycairo (==1.23.0)
+
+A formerly abandoned Python and GTK web browser written by Millan Philipose

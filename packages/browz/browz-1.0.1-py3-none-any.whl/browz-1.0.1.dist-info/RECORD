@@ -1,0 +1,16 @@
+browz/AboutBrowzDialog.py,sha256=8DzU_JrxLUaWhjiEw67CqRZVHyaFXhlfVfkbCrAnUJU,685
+browz/BrowzWindow.py,sha256=dZGdjRW1SBMWKVQwEFyunnPDbgDYXPhlLvny5o_vH5c,2786
+browz/PreferencesBrowzDialog.py,sha256=9m-_IOpgAw4WvPB1IB28zuXtaE4G7Rec0iRrG2qqA4s,1148
+browz/__init__.py,sha256=WuNZ-TpLJ5nN8ptNXK6DwbeW9k8Ufy7VMLm0y96z5cE,905
+browz_lib/AboutDialog.py,sha256=qw-ZWYA0qEmeb9TQVi4UOYn0jeyyhofIffk39uUztDU,1264
+browz_lib/Builder.py,sha256=OQmHusipKQsCeRUtZCVnGn0e1WP6R3OzHOn7f1n3y1Y,10846
+browz_lib/PreferencesDialog.py,sha256=egAUSHU3aDUGPKq-MYXXa3RLJYGkiQNH1daPIYd7W8A,1703
+browz_lib/Window.py,sha256=B0HrQd_VReg-_4OQ0SohMyHmBpWovaZ7djn8Q8qZ4kg,5331
+browz_lib/__init__.py,sha256=Pm_H81fbLsqmd94y4ra9Cq-dCFlrrT5Pilog2Lq8pj0,333
+browz_lib/browzconfig.py,sha256=FKj2_zGaF_uLHpiIBlyKsa67MoDW4lLHcTDFifBXxvI,1604
+browz_lib/helpers.py,sha256=6wYUBqUgtx-UTx5Itj3M84Ml7FzS0mwA0KrT0WznnvI,3101
+browz-1.0.1.dist-info/AUTHORS,sha256=oq56xWtYDkJT647IBU_5dXoy6bD4frnqh1F6Wheos3A,38
+browz-1.0.1.dist-info/METADATA,sha256=p4T6kvrvlcJ_OpJZIguGh5rGGzZ9QU0TX5xcZS3QKYI,496
+browz-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+browz-1.0.1.dist-info/top_level.txt,sha256=3UXSmFQa6Gb7-xGi1bn6NseCd4B2d7eJXE9PADpKJtY,16
+browz-1.0.1.dist-info/RECORD,,
