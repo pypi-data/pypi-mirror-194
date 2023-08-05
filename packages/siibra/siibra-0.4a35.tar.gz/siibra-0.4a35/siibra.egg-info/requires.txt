@@ -1,0 +1,10 @@
+anytree
+nibabel
+appdirs
+scikit-image
+requests
+neuroglancer-scripts
+nilearn
+
+[:python_version < "3.8"]
+typing-extensions
