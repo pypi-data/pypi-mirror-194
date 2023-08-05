@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+shapelet_space/__init__.py
+shapelet_space/config.py
+shapelet_space/example.py
+shapelet_space/shapelet.py
+shapelet_space.egg-info/PKG-INFO
+shapelet_space.egg-info/SOURCES.txt
+shapelet_space.egg-info/dependency_links.txt
+shapelet_space.egg-info/requires.txt
+shapelet_space.egg-info/top_level.txt

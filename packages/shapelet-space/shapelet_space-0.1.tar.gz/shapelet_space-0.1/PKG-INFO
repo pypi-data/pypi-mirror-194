@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shapelet_space
+Version: 0.1
+Summary: TYPE YOUR DESCRIPTION HERE
+Home-page: https://www.ajitesh-srivastava.com/home
+Author: Ajitesh Srivastava
+Author-email: your.email@domain.com
+License: MIT
+Keywords: SHAPELETS,FORECAST
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+UNKNOWN
+
