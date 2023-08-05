@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: elegantt
+Version: 0.0.2
+Summary: This is a gantt chart drawing library
+Home-page: http://github.com/usop4/elegantt
+Author: Takayuki Uehara
+Author-email: t.uehara@gmail.com
+License: UNKNOWN
+Description: # elegantt
+        
+        ## Overview
+        
+        elegantt is gantt chart drawing library.
+        
+        ## Install 
+        
+        ```pip install elegantt```
+        
+        ## Fonts Install
+        
+        on Ubuntsu
+        ```apt install fonts-noto-cjk```
+        
+        on RedHat/RockyLinux
+        ```yum install google-noto-sans-cjk-ttc-fonts.noarch```
+        
+        ## Usage
+        
+        ad command line
+        
+        ```eleteng sample.csv```
+        
+        
+        as library
+        
+        ```
+        import elegantt
+        chartsize = (720,320)
+        bgcolor = (255,255,255)
+        gchart = elegantt.EleGantt( chartsize, bgcolor, today="2019-10-15")
+        gchart.draw_calendar()
+        gchart.draw_campain("2019-10-15","2019-10-18","こんにちは")
+        gchart.draw_campain("2019-10-20","2019-10-23","こんにちは")
+        gchart.draw_campain("2019-10-24","2019-10-30","こんにちは")
+        gchart.save("test_basic_1.png")
+        ```
+        
+        # Lisence
+        
+        This project is licensed under the MIT License, see the LICENSE.txt file for details
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
