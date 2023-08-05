@@ -1,0 +1,4 @@
+openai==0.25.0
+click==7.1.2
+requests==2.26.0
+aiohttp
