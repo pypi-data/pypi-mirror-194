@@ -1,0 +1,6 @@
+numpy
+pandas
+multiprocess
+tqdm
+IPython
+graphviz
