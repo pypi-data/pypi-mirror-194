@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stopywatch/Classes.py
+stopywatch/__init__.py
+stopywatch.egg-info/PKG-INFO
+stopywatch.egg-info/SOURCES.txt
+stopywatch.egg-info/dependency_links.txt
+stopywatch.egg-info/top_level.txt
