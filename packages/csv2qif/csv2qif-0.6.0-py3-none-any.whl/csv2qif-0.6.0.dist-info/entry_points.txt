@@ -1,0 +1,2 @@
+[console_scripts]
+csv2qif = csv2qif.csv2qif:main
