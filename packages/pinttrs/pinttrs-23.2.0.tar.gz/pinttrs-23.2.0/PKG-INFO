@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pinttrs
+Version: 23.2.0
+Summary: Pint meets attrs.
+Author-email: Vincent Leroy <vincent.leroy@rayference.eu>
+Requires-Python: >=3.8
+Classifier: Development Status :: 6 - Mature
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Project-URL: Changelog, https://github.com/leroyvn/pinttrs/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://pinttrs.readthedocs.io
+Project-URL: Homepage, https://github.com/leroyvn/pinttrs
+Project-URL: Issues, https://github.com/leroyvn/pinttrs/issues
+Project-URL: Repository, https://github.com/leroyvn/pinttrs
+Description-Content-Type: text/markdown
+
+# Pinttrs
+
+*Pint meets attrs*
+
+[![PyPI version](https://img.shields.io/pypi/v/pinttrs?color=blue&style=flat-square)](https://pypi.org/project/pinttrs)
+[![Conda version](https://img.shields.io/conda/v/eradiate/pinttrs?color=blue&style=flat-square)](https://anaconda.org/eradiate/pinttrs)
+
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/leroyvn/pinttrs/ci.yml?branch=main&style=flat-square)](https://github.com/leroyvn/pinttrs/actions/workflows/ci.yml)
+[![Documentation Status](https://img.shields.io/readthedocs/pinttrs?style=flat-square)](https://pinttrs.readthedocs.io)
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-black?style=flat-square)](https://black.readthedocs.io)
+[![Linter: ruff](https://img.shields.io/badge/%E2%9A%A1%EF%B8%8F-ruff-red?style=flat-square)](https://ruff.rs)
+
+## Motivation
+
+The amazing [`attrs`](https://www.attrs.org) library is a game-changer when it
+comes to writing classes. Its initialisation sequence notably allows for
+automated conversion and verification of attribute values. This package is an
+attempt at designing a system to apply units automatically and reliably to
+attributes with [Pint](https://pint.readthedocs.io).
+
+## Features
+
+- Attach automatically units to unitless values passed to initialise an attribute
+- Verify unit compatibility when assigning a value to an attribute
+- Interpret units in dictionaries with a simple syntax
+- Define unit context to vary unitless value interpretation dynamically
+
+Check the [documentation](https://pinttrs.readthedocs.io) for more detail.
+
+## License
+
+Pinttrs is distributed under the terms of the
+[MIT license](https://choosealicense.com/licenses/mit/).
+
+## About
+
+Pinttrs is written and maintained by [Vincent Leroy](https://github.com/leroyvn).
+
+Development is supported by [Rayference](https://www.rayference.eu).
+
+Pinttrs is a component of the
+[Eradiate radiative transfer model](https://www.eradiate.eu).
+
+The Pinttrs logo is based on
+[Agus Nugroho](https://www.iconfinder.com/nugrohoagus)'s glass icon and parts of
+the ``attrs`` logo.
+
