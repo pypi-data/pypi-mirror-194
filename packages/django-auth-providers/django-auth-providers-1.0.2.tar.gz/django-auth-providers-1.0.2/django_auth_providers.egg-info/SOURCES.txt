@@ -1,0 +1,12 @@
+README.md
+setup.py
+django_auth_providers.egg-info/PKG-INFO
+django_auth_providers.egg-info/SOURCES.txt
+django_auth_providers.egg-info/dependency_links.txt
+django_auth_providers.egg-info/top_level.txt
+ext_auth/apps.py
+ext_auth/choices.py
+ext_auth/default_settings.py
+ext_auth/models.py
+ext_auth/urls.py
+ext_auth/views.py
