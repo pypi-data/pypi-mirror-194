@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sciagraph
+Version: 2023.2.2
+Summary: A production-speed performance and memory profiler for data batch processing applications.
+Maintainer: Hyphenated Enterprises LLC
+Maintainer-email: itamar@pythonspeed.com
+License: Proprietary
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: jupyter
+Requires-Dist: ipython-secrets ; extra == 'jupyter'
+Requires-Dist: keyrings.alt ; extra == 'jupyter'
+
