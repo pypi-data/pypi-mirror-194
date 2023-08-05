@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "tasktools"
+version = "1.2.0"
+authors = ["David Pineda <dahalpi@gmail.com>"]
+maintainers = [
+	"David Pineda <dahalpi@gmail.com>"
+]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = 'https://tasktools.readthedocs.io/en/latest/'
+repository = "https://gitlab.com/pineiden/tasktools.git"
+documentation = 'https://tasktools.readthedocs.io/en/latest/'
+keywords = [
+		 "asyncio", 
+		 "loop", 
+		 "futures", 
+		 "tasks",
+		 "scheduler"
+		 ]
+packages = [
+    { include = "tasktools" },
+]
+description = "This module allows you to work with asyncio coroutines and schedule some tasks."
+include = [
+		"CHANGELOG.org",
+		"LICENSE"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
