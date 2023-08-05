@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: funEnsemble
+Version: 0.0.1
+Summary: Ensemble Clustering for Functional Data
+Home-page: https://github.com/Newman251/Thesis-Functional_Data_Ensemble_Clustering_From_FDA
+Author: Luke Newman
+Author-email: newmanlu@tcd.ie
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
