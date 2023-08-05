@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "ipsum"
+version = "0.1.1"
+description = "Library for procedurally-generating text that resembles a particular language."
+readme = "README.md"
+authors = ["Darko Trifunovski <darko@trifunovski.me>"]
+license = "MIT"
+exclude = ["src/ipsum/dev/"]
+
+[tool.poetry.scripts]
+dev = 'ipsum.dev.main:app'
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+typing-extensions = "^4.4.0"
+
+[tool.poetry.group.typing.dependencies]
+mypy = "^1.0.0"
+pytest = "^7.2.0"
+
+[tool.poetry.group.test.dependencies]
+codecov = "^2.1.12"
+coverage = "^7.0.3"
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+tomli = "^2.0.1"
+httpx = "^0.23.3"
+
+[tool.poetry.group.lint.dependencies]
+black = "^22.12.0"
+darglint = "^1.8.1"
+flake8 = "^6.0.0"
+flake8-annotations = "^2.9.1"
+flake8-bandit = "^4.1.1"
+flake8-black = "^0.3.6"
+flake8-bugbear = "^22.12.6"
+flake8-docstrings = "^1.6.0"
+flake8-import-order = "^0.18.2"
+
+[tool.poetry.group.diagnostics.dependencies]
+numpy = "^1.24.2"
+pandas = "^1.5.3"
+seaborn = "^0.12.2"
+matplotlib = "^3.6.3"
+typer = "^0.7.0"
+
+[[tool.mypy.overrides]]
+module = ["pandas", "matplotlib", "seaborn"]
+ignore_missing_imports = true
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["ipsum"]
+omit = ["src/ipsum/dev/*"]
+
+[tool.coverage.report]
+show_missing = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
