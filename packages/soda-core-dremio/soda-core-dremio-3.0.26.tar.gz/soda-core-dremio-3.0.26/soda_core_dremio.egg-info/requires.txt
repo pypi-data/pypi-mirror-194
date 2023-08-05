@@ -1,0 +1,3 @@
+soda-core==3.0.26
+pyodbc
+pyarrow
