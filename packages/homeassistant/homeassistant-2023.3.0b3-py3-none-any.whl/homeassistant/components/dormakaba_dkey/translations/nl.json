@@ -1,0 +1,11 @@
+{
+    "config": {
+        "step": {
+            "associate": {
+                "data": {
+                    "activation_code": "Activatie code"
+                }
+            }
+        }
+    }
+}
