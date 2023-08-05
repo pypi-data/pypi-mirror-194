@@ -1,0 +1,10 @@
+numpy<1.25,>=1.24
+opencv-python<4.8,>=4.7
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
