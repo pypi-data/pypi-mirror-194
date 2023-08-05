@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sprache/__init__.py
+sprache/hello.py
+sprache.egg-info/PKG-INFO
+sprache.egg-info/SOURCES.txt
+sprache.egg-info/dependency_links.txt
+sprache.egg-info/requires.txt
+sprache.egg-info/top_level.txt

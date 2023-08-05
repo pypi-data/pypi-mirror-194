@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sprache
+Version: 0.1
+Summary: NLP for India
+Home-page: https://github.com/ekdnam/sprache
+Author: Aditya Mandke
+Author-email: ekdnam@gmail.com
+License: MIT
+Keywords: example project
+Requires-Python: >=3
+License-File: LICENSE
