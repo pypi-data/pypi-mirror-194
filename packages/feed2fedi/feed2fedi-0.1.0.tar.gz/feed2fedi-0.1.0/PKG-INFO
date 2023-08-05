@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: feed2fedi
+Version: 0.1.0
+Summary: Makes posts to Fediverse from one or more feeds
+Author-email: marvin8 <marvin8@tuta.io>
+Requires-Python: >=3.8
+Requires-Dist: feedparser>=6.0.10
+Requires-Dist: minimal-activitypub>=0.5.4
+Requires-Dist: aiosqlite>=0.18.0
+Requires-Dist: black>=23.1.0 ; extra == "dev"
+Requires-Dist: mypy>=1.0.1 ; extra == "dev"
+Requires-Dist: pytest>=7.2.1 ; extra == "dev"
+Requires-Dist: safety>=2.3.4 ; extra == "dev"
+Requires-Dist: pip-audit>=2.4.14 ; extra == "dev"
+Requires-Dist: ruff>=0.0.252 ; extra == "dev"
+Requires-Dist: interrogate>=1.5.0 ; extra == "dev"
+Requires-Dist: types-aiofiles>=22.1.0.9 ; extra == "dev"
+Project-URL: Changelog, https://codeberg.org/MarvinsMastodonTools/feed2fedi/src/branch/main/CHANGELOG.rst
+Project-URL: Issues, https://codeberg.org/MarvinsMastodonTools/feed2fedi/issues
+Project-URL: Source, https://codeberg.org/MarvinsMastodonTools/feed2fedi
+Provides-Extra: dev
