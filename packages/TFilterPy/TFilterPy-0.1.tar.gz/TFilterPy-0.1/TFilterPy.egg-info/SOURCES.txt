@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TFilterPy/__init__.py
+TFilterPy/module_functions.py
+TFilterPy.egg-info/PKG-INFO
+TFilterPy.egg-info/SOURCES.txt
+TFilterPy.egg-info/dependency_links.txt
+TFilterPy.egg-info/requires.txt
+TFilterPy.egg-info/top_level.txt
