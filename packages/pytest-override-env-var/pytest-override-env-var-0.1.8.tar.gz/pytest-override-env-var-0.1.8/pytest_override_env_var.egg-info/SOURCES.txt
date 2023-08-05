@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pytest_override_env_var.py
+setup.cfg
+setup.py
+pytest_override_env_var.egg-info/PKG-INFO
+pytest_override_env_var.egg-info/SOURCES.txt
+pytest_override_env_var.egg-info/dependency_links.txt
+pytest_override_env_var.egg-info/entry_points.txt
+pytest_override_env_var.egg-info/not-zip-safe
+pytest_override_env_var.egg-info/requires.txt
+pytest_override_env_var.egg-info/top_level.txt

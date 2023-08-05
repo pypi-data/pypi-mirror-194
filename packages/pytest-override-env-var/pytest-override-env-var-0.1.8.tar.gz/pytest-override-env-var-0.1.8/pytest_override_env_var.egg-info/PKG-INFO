@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pytest-override-env-var
+Version: 0.1.8
+Summary: Pytest mark to override a value of an environment variable.
+Home-page: https://github.com/karlosss/pytest-override-env-var
+Author: Karel Jílek
+Author-email: los.karlosss@gmail.com
+License: MIT
+Keywords: py.test pytest env environment variable
+Requires-Python: >=3.7
+License-File: LICENSE

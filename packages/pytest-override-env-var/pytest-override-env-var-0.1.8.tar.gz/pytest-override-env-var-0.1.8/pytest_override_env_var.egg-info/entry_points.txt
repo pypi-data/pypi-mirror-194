@@ -1,0 +1,2 @@
+[pytest11]
+override_env_var = pytest_override_env_var
