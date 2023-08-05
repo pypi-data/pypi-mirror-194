@@ -1,0 +1,12 @@
+ingredient_parser/__init__.py,sha256=T3G7yGxwSV_Cp_Njqo77ORLUDpVh96hR_AmPsklHq4E,305
+ingredient_parser/_constants.py,sha256=uaTEu0pbGJmBphV2ZVwiruGSby1eV98OZGzrva3EaMU,4234
+ingredient_parser/model.crfsuite,sha256=9-YGlskTL_yictM5O_hR-Eeif5RrEZmXXEK9beitGUw,1746068
+ingredient_parser/parsers.py,sha256=iXZJ5Pnm8h5sVShtccHMXir2P9B86dxiTH3klZe-OU0,5740
+ingredient_parser/preprocess.py,sha256=uhnuU0lu7Ed7GZ0FVZeUOd8u2-yQM5trxBPuscgp9n8,18668
+ingredient_parser/regex_parser.py,sha256=lu2oIYm06RBmSbdaMiiuqfM26ov4k7Of42nt62cmW3A,6657
+ingredient_parser/utils.py,sha256=Vc0-mbLTBX90S_hua7RxwNqi3Wm2tbxPtwTSInyNki0,5871
+ingredient_parser_nlp-0.1.0a5.dist-info/LICENSE,sha256=VRllif4XTJ97oF20kqIi0c-O2AXKpXmEkKyOqQPYhM0,1068
+ingredient_parser_nlp-0.1.0a5.dist-info/METADATA,sha256=SXzAOswtL2a3_N5HhuSja3W5GVsyzxd7W31i4iWUAqs,4382
+ingredient_parser_nlp-0.1.0a5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ingredient_parser_nlp-0.1.0a5.dist-info/top_level.txt,sha256=Pf4DPjUlmdeWeJSvbzZsbPNvrktj9wjOOBaNHju-lY8,18
+ingredient_parser_nlp-0.1.0a5.dist-info/RECORD,,
