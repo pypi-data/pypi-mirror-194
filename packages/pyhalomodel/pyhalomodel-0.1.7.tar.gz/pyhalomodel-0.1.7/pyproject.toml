@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pyhalomodel"
+version = "0.1.7"
+description = "Halo model power spectrum calculations"
+authors = ["Alexander Mead <alexander.j.mead@googlemail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/alexander-mead/pyhalomodel"
+repository = "https://github.com/alexander-mead/pyhalomodel"
+keywords = ["cosmology", "halo model", "dark matter", "dark energy", "galaxies"]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+numpy = "^1.24.1"
+scipy = "^1.10.0"
+
+[tool.poetry.group.dev.dependencies]
+camb = "^1.4.0"
+dark-emulator = "^1.0.23"
+ipykernel = "^6.21.1"
+matplotlib = "^3.6.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
