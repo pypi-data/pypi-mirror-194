@@ -1,0 +1,11 @@
+setup.py
+jwpackage/__init__.py
+jwpackage.egg-info/PKG-INFO
+jwpackage.egg-info/SOURCES.txt
+jwpackage.egg-info/dependency_links.txt
+jwpackage.egg-info/requires.txt
+jwpackage.egg-info/top_level.txt
+jwpackage/authentication/JWT_auth.py
+jwpackage/authentication/__init__.py
+jwpackage/authentication/auth.py
+jwpackage/authentication/exceptions.py
