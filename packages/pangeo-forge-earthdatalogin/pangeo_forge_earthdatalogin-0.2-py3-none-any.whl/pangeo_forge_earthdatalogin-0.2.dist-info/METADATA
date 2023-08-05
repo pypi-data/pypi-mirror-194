@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pangeo-forge-earthdatalogin
+Version: 0.2
+Summary: Beam Transforms for doing EarthData Login, for use with pangeo-forge-recipes
+Home-page: https://github.com/yuvipanda/pangeo-forge-earthdatalogin
+Maintainer: Yuvi Panda
+Maintainer-email: yuvipanda@gmail.com
+License: 3-BSD
+Keywords: pangeo,data
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pangeo-forge-recipes
+Requires-Dist: aiohttp
+
+# pangeo-forge-earthdatalogin
+Pangeo Forge transforms for logging in with EarthData login
