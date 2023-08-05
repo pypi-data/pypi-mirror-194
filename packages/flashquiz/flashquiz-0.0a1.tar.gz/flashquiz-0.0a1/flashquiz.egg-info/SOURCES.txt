@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+flashquiz/__init__.py
+flashquiz/quizzer.py
+flashquiz.egg-info/PKG-INFO
+flashquiz.egg-info/SOURCES.txt
+flashquiz.egg-info/dependency_links.txt
+flashquiz.egg-info/requires.txt
+flashquiz.egg-info/top_level.txt
