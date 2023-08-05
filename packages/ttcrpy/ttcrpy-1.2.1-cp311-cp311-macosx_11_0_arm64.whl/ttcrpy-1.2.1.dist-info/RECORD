@@ -1,0 +1,8 @@
+ttcrpy/_version.py,sha256=osFGs6qmlEth0Xu2MHIHoChfXcj8NUW4hLWDEu-1_K4,160
+ttcrpy/__init__.py,sha256=O6F96cCKiPR2yUtCnBZpdUSs03HtUmRatgrjilhjFTg,94
+ttcrpy/rgrid.cpython-311-darwin.so,sha256=mnBguawmaPIb5JOxdq07Qv8KgzNol1kRfOp33EdrDsU,2231864
+ttcrpy/tmesh.cpython-311-darwin.so,sha256=3D3XCwpoocYCbKwz3Dm6PovjniyXVQeIX84v9y5tnV0,2851832
+ttcrpy-1.2.1.dist-info/RECORD,,
+ttcrpy-1.2.1.dist-info/WHEEL,sha256=V4MgOdL8hB0MONNzyEXkjqg6fCQ0i-MT-UIIis4fuKU,110
+ttcrpy-1.2.1.dist-info/top_level.txt,sha256=rVRT_PtxzkjsbCuy6G2RycwkgIyrzyt3zF3EbRaAvOI,7
+ttcrpy-1.2.1.dist-info/METADATA,sha256=rFzRhTk2F_gn4QdVCTo3jdB7XkBuXZM6EbVQNpYYlG8,9313
