@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+kadota/__init__.py
+kadota/figmatools.py
+kadota/utils.py
+kadota.egg-info/PKG-INFO
+kadota.egg-info/SOURCES.txt
+kadota.egg-info/dependency_links.txt
+kadota.egg-info/requires.txt
+kadota.egg-info/top_level.txt

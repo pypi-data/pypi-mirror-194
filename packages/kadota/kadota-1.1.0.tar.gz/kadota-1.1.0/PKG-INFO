@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: kadota
+Version: 1.1.0
+Summary: Tools for working with Figma programmatically
+Author: Isaac Ronald Ward
+Author-email: isaacronaldward@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Kadota
+
+Tools for working with Figma programmatically. 
+
+Package page can be found here: https://pypi.org/project/kadota/.
+
+# Working with this repository
+
+For creating and regenerating environment file:
+```
+conda env create --file env.yaml
+conda env export --no-builds | grep -v "^prefix: " > env.yaml
+```
+
+For creating requirements file required for pip installability (may need to install pipreqs):
+```
+pipreqs . --force
+```
+
+For deleting old builds:
+```
+rm build dist -rf
+```
+
+For building before publishing to pypi:
+```
+python setup.py sdist bdist_wheel
+```
+
+For testing before publishing to pypi:
+```
+twine check dist/*
+```
+
+For publishing to pypi:
+```
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+```
+## Demo
+```
+import kadota.utils
+import kadota.figmatools
+
+if __name__ == "__main__":
+    """
+    Function demonstrating usage of kadota.
+    """
+
+    # Load keys from keys.json and create a FigmaFile object to access a specific file.
+    keys = kadota.utils.load_keys()
+    figma_file = kadota.figmatools.FigmaFile(
+        keys["figma-access-token"], 
+        keys["figma-file-id"]
+    )
+
+    # Retrive all the elements.
+    print(f"Found {len(figma_file.get_elements())} elements in file.")
+
+    # Retrieve a page id.
+    page_name = "templates"
+    page_id = figma_file.get_page_ids_by_name(page_name)[0]
+    print(f"Found page '{page_name}' with id {page_id}.")
+
+    # Retrieve all the elements with a specific name.
+    element_name = "linkedin-square"
+    print(f"Found {len(figma_file.get_elements(element_name=element_name))} element(s) with name {element_name}.")
+```
