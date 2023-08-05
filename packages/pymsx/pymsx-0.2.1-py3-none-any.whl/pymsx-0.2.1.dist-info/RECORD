@@ -1,0 +1,11 @@
+pymsx/__init__.py,sha256=-pQeD20TnlpXZ_gLU4Ik3_-3aEG6zbOVY0ln13ApuJk,35
+pymsx/api/__init__.py,sha256=0GuT_czIdbj6n78PqhMueTC5XB9S7OmMh1DsZxUmhHg,67
+pymsx/api/datasets.py,sha256=hX4fMfrpn-ABkNxmhXpgTG-S3eoQQUJmHyooisr7OFI,6603
+pymsx/client.py,sha256=12zhfaRsNgTxI3uVg84i6NkEkbCam_KWT_3bAeQSg5k,7141
+pymsx/config.py,sha256=pFEkKi2IW15TYpu2PUVkQgVpwccPN64quAkRNQyHdYQ,1126
+pymsx/exceptions.py,sha256=-wtAlK9M5ugfDGBrn6_QShzOHAmy817P-ymD-MtPHlY,706
+pymsx/schemas.py,sha256=7P60YiydlFL1llrbYY8lchvayiZ9wGsjzPQLI5clRA4,733
+pymsx-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pymsx-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pymsx-0.2.1.dist-info/METADATA,sha256=WZPCFAZOESpA1MP1dK0g854iiecM20QWRaxk4q8iv5Q,4275
+pymsx-0.2.1.dist-info/RECORD,,
