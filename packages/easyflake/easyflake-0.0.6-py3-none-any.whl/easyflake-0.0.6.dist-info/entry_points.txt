@@ -1,0 +1,3 @@
+[console_scripts]
+easyflake-cli=easyflake.__main__:cli
+
