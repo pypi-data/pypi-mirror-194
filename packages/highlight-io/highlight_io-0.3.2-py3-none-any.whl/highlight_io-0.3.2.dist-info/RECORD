@@ -1,0 +1,10 @@
+highlight_io/__init__.py,sha256=iXoJdsdfAhJz_R9z98dTtEyJoIp2347L8cfT6ui5ptM,64
+highlight_io/integrations/__init__.py,sha256=JfEryMEGKWbEGQTPyunBFSkfUptQGYvPrM6CWacld1k,155
+highlight_io/integrations/azure.py,sha256=b5rLw8h4Y2ZQT6HKtCPijWC8peF_c1RAR1Zl05CmQx4,926
+highlight_io/integrations/django.py,sha256=rOh9DL_BeXgJRndU-t0nffDqJ5kHSHE5TX-jC1WcWvY,1632
+highlight_io/integrations/fastapi.py,sha256=uMVF99PUZH0Pac2lEPB2VLjqaQ3td1iDqa9VqPlBUK8,722
+highlight_io/integrations/flask.py,sha256=Iyzlrz4zDavuq6ZtqdXOVvmyBYRxP93jiidI7V-P1z0,1519
+highlight_io/sdk.py,sha256=ytZxWY-PhbUvSY2pPbZpGKUK0aub5PDx4BP80JQNFTY,6196
+highlight_io-0.3.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+highlight_io-0.3.2.dist-info/METADATA,sha256=NH0W0LZtjnbS16xG7fTbyMzpLvFYYusEh--CDx2PYFI,2208
+highlight_io-0.3.2.dist-info/RECORD,,
