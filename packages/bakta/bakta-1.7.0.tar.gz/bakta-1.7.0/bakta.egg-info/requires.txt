@@ -1,0 +1,6 @@
+biopython>=1.80
+xopen>=1.1.0
+requests>=2.25.1
+alive-progress>=3.0.1
+PyYAML>=6.0
+pyrodigal>=2.0.2
