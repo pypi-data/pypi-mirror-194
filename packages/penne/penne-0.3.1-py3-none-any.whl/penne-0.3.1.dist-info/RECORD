@@ -1,0 +1,9 @@
+penne/__init__.py,sha256=rLoYkd7j_3Wu7bCbdWWXHYuaeSYhcbEaCcC6HN87uio,606
+penne/client.py,sha256=BNJQIrfoVTlABuBBDx_vxyTtij-YXtZnwKPJAZoDVhs,1815
+penne/core.py,sha256=4C8Y4ORr4bR92hPGgyaWUWlUDGBqryxkQRhc04PwFs0,9422
+penne/delegates.py,sha256=ydeEth3TaOZJiborUXQtSwUeo-Z-gsTPN2LCglJhMr4,24814
+penne/handlers.py,sha256=XxQuHpCcuEc5Qqs2quJFMGLqBZQWW7zXiKiJUBMa7O0,5573
+penne-0.3.1.dist-info/LICENSE,sha256=wbydzE_MPD8huBXJQgbT-xopCoISSvqyOA1beDlbb_E,1101
+penne-0.3.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+penne-0.3.1.dist-info/METADATA,sha256=jBbzeBWw-koUM93O7GcM0lt2jqqdU9eHzDe9JbIygb4,5484
+penne-0.3.1.dist-info/RECORD,,
