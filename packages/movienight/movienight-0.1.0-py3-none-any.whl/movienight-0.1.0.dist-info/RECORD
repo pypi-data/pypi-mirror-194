@@ -1,0 +1,10 @@
+movienight/_MovieFinder.py,sha256=HMSeL05hUIfIJSVr2oFzd3HI6tv2pi8EAF7WWP3rxPQ,1088
+movienight/__init__.py,sha256=U8gClscSHcOiLLd59aEkI7DN3Z3cq85fEEshEOx6n7E,68
+movienight/datasets/__init__.py,sha256=fjYrOH4MNzySurQltzP-Knj9Yp6QK6MJFT9XofKRFl8,57
+movienight/datasets/_base.py,sha256=ZtqpKQpSTTleuUvVBe2kCh-vJerXCqXhb_iYRu1qvTA,521
+movienight/datasets/_config.py,sha256=jWjh_WQ10OfB5qvbbKua5KJBf3n02bffproLTAa7zfo,49
+movienight/datasets/_tmdb.py,sha256=UTYEl3YhXjX-Muw74uyVAyCJTmpaX370j0UOKXVSdjI,1209
+movienight/datasets/data/tmdb.csv,sha256=x--649s06Y71pHc2OvX6LhvpV10-jga1qrV3Ehzuoog,1162074
+movienight-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+movienight-0.1.0.dist-info/METADATA,sha256=VJ4vJTrTtLdO1x-a_BsyNfzzBXkzQwWJXQLfsPOKwio,1873
+movienight-0.1.0.dist-info/RECORD,,
