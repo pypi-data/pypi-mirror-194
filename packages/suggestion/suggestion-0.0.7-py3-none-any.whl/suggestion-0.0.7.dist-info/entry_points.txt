@@ -1,0 +1,3 @@
+[console_scripts]
+suggestion = suggestion.__main__:main
+
