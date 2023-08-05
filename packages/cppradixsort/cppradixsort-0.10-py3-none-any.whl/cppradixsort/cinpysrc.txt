@@ -1,0 +1,77 @@
+from cinpy import CreateCppDllv2
+
+cppco = CreateCppDllv2(
+    modulename="cppradixsort",
+    cheader="""
+#include <execution>
+#include <ppl.h>
+
+
+""",
+    cfooter="",
+    cfunctioname="cpp_parallel_radixsort",
+    var_variations={
+        "!C_DATA_DTYPE1!": (
+            "signed char",
+            "unsigned char",
+            "short",
+            "unsigned short",
+            "int",
+            "unsigned int",
+            "long",
+            "unsigned long",
+            "long long",
+            "unsigned long long",
+
+        ),
+        "!C_DATA_DTYPE11!": ("size_t",),
+        "!C_DATA_DTYPE4!": (
+            "signed char",
+            "unsigned char",
+            "short",
+            "unsigned short",
+            "int",
+            "unsigned int",
+            "long",
+            "unsigned long",
+            "long long",
+            "unsigned long long",
+
+        ),
+        "!C_DATA_DTYPE44!": ("size_t",),
+    },
+    dtypemustbeequal=[("!C_DATA_DTYPE1!","!C_DATA_DTYPE4!")],
+    fu=r"""
+__declspec(dllexport) void variable_for_function_creation(!C_DATA_DTYPE1! *indatav1, !C_DATA_DTYPE11! size1, !C_DATA_DTYPE4! *outdatav, !C_DATA_DTYPE44! size3)
+{
+    std::copy(indatav1, indatav1+size1, outdatav);
+concurrency::parallel_radixsort(outdatav, outdatav+size3);
+
+}
+""",
+
+)
+cppco.compile_cpp_code(
+    vcvarsall_bat=r"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat",
+    cl_exe=r"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\Hostx86\x64\cl.exe",
+    link_exe=r"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\Hostx86\x64\link.exe",
+    compilerflags=("/std:c++20", "/Ferelease", "/EHsc", "/MT", "/O2", "/bigobj"),
+)
+
+r'''
+#include <execution>
+#include <ppl.h>
+
+std::atomic<size_t> value(0);
+int create_id() {
+    return value++;
+    }
+
+void rsot(int *indatav1, std::size_t size1, int *outdatav, std::size_t size3)
+{
+    std::copy(indatav1, indatav1+size1, outdatav);
+concurrency::parallel_radixsort(outdatav, outdatav+size3);
+
+}
+
+'''
