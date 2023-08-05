@@ -1,0 +1,8 @@
+poetry_cdk_plugin/__init__.py,sha256=AnmvvLGcJsq6lLlGqILi47UEaj717rhr0_XkiwwYIsg,702
+poetry_cdk_plugin/command.py,sha256=GKcYyZUyHts6rrBAN5BSAnPg6v7yCkWztRWqLKkQgUs,1483
+poetry_cdk_plugin/plugin.py,sha256=dG4y4vCVwSHzVElM7vH92re3x01j4-FV_fG5IMmlSAY,1045
+poetry_cdk_plugin-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+poetry_cdk_plugin-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+poetry_cdk_plugin-0.1.1.dist-info/entry_points.txt,sha256=doxyjC6mpIvnScM2n0ZTfwNl8VW4DcP6haN_DPmPql4,79
+poetry_cdk_plugin-0.1.1.dist-info/METADATA,sha256=vAFvYBj8FG8sY-5RJV0GWQhnEPLJta2epwiXBuPR90g,795
+poetry_cdk_plugin-0.1.1.dist-info/RECORD,,
