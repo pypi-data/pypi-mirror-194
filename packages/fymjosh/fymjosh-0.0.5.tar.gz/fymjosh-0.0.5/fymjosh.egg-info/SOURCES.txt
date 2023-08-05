@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+fymjosh/__init__.py
+fymjosh.egg-info/PKG-INFO
+fymjosh.egg-info/SOURCES.txt
+fymjosh.egg-info/dependency_links.txt
+fymjosh.egg-info/requires.txt
+fymjosh.egg-info/top_level.txt
