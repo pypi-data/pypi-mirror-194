@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: asyncqiwi
+Version: 0.1.0
+Summary: Qiwi API and QIWI p2p API
+Author: VoXDoX
+Author-email: 1voxdox1@gmail.com
+Project-URL: Документация, https://t.me/AsyncQiwi
+Project-URL: Телега, https://t.me/end_soft
+Keywords: qiwi,p2p qiwi,qiwi-api,aioqiwi
+Requires-Python: >=3.7
+License-File: LICENSE
