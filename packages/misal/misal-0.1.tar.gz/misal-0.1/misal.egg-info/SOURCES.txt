@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+misal/__init__.py
+misal.egg-info/PKG-INFO
+misal.egg-info/SOURCES.txt
+misal.egg-info/dependency_links.txt
+misal.egg-info/requires.txt
+misal.egg-info/top_level.txt

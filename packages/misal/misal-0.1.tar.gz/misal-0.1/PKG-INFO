@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: misal
+Version: 0.1
+Summary: NLP for Bhartiya languages
+Home-page: https://github.com/ekdnam/misal
+Author: Aditya Mandke
+Author-email: ekdnam@gmail.com
+License: MIT
+Keywords: example project
