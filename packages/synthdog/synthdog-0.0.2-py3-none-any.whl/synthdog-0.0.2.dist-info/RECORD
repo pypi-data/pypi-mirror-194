@@ -1,0 +1,15 @@
+elements/__init__.py,sha256=rwH4JejlmUeL1b0HJUfQC2c__SLxsjoF8QC5LasTb-M,384
+elements/background.py,sha256=HEtOlOMfcxG7qpSBoYaucmNPslIvK9hCqFCcRQb4fcQ,609
+elements/content.py,sha256=SCiJRftLJ8jtqA6mH9gLe3_BO17b4Fj10LTkOgftnaI,7671
+elements/document.py,sha256=wLqDErq_Nguq5v_icL3vcZ3J13-KkASi_ghP3o98x70,3705
+elements/paper.py,sha256=SWu3C3yxAk_Cn4THff_KKvsKQaJo_t6GnOcKRKHzym8,1060
+elements/textbox.py,sha256=kHGVQQHVQ4NHX6VeuTKNKuu_hJw4CzqFO7BUEynGi7o,16813
+elements/utils.py,sha256=zrSSqDvhvVNkJDJF1jLGFmjKYWFoSlbbSN2tEgun4ZE,2972
+layouts/__init__.py,sha256=t7XXhtj2x-_JVP4SeSsRFDbIFtOvSBATCGuiuMQNRuM,196
+layouts/grid.py,sha256=nzh6ywJye-2b3PZh2nNHfUGXSPQCy7o0gIYd1O46gng,2329
+layouts/grid_stack.py,sha256=46-pVGJOLqxKx7gIMYXliZCx3nrEJ7uZ1wtIl9ZU7dc,3778
+synthdog-0.0.2.dist-info/LICENSE,sha256=n5C8fWCNKzzLw-hivlLHy5dmFtGxJf6Wgrx-0Zrfz9w,1077
+synthdog-0.0.2.dist-info/METADATA,sha256=o2WwqJQPgkPJpUsnGIiWoQ6OLcSMlfJKCcdwQoWM5mk,2592
+synthdog-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+synthdog-0.0.2.dist-info/top_level.txt,sha256=jzJMrV-FpPIXtZ9aFV90cRNAEbTODYxvOpbJf0_zbSQ,17
+synthdog-0.0.2.dist-info/RECORD,,
