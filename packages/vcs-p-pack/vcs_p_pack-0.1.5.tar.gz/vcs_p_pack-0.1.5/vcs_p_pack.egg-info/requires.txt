@@ -1,0 +1,4 @@
+psutil==5.9.4
+setuptools==56.0.0
+pygit2==1.11.1
+vcstool==0.3.0

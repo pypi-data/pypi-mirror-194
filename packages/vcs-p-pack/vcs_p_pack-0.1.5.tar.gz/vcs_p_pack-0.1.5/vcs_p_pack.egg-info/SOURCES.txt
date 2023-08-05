@@ -1,0 +1,13 @@
+setup.py
+package/__init__.py
+package/config_args.py
+package/config_func.py
+package/parse_args.py
+package/vcs_p.py
+package/work_functions.py
+vcs_p_pack.egg-info/PKG-INFO
+vcs_p_pack.egg-info/SOURCES.txt
+vcs_p_pack.egg-info/dependency_links.txt
+vcs_p_pack.egg-info/entry_points.txt
+vcs_p_pack.egg-info/requires.txt
+vcs_p_pack.egg-info/top_level.txt
