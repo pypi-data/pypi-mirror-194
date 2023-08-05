@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: package-rling
+Version: 0.1.0
+Summary: 
+Author: lingziyu
+Author-email: kobelzy2020@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: sklearn (>=0.0.post1,<0.1)
+Description-Content-Type: text/markdown
+
+
