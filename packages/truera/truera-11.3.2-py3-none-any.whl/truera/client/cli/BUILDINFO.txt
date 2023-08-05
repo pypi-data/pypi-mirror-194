@@ -1,0 +1,6 @@
+HOSTNAME: ricardos-mbp.lan
+Build Time:  Fri Feb 24 10:33:27 PST 2023
+Branch: release/rc-20230201
+Commit Time:  Thu Feb 23 17:54:10 2023 -0800
+Commit Id:  cd413df162a7a7e125c96d15b7d042669a6a316d
+Truera Services Version: 1.32.2
