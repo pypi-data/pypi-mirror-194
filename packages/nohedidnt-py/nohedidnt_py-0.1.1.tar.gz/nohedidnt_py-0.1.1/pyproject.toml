@@ -1,0 +1,193 @@
+[tool.poetry]
+name = "nohedidnt-py"
+version = "0.1.1"
+description = ""
+authors = ["NoHeDidnt <dj@nohedidnt.de>"]
+readme = "README.md"
+classifiers = [
+    "Natural Language :: English",
+    "Operating System :: OS Independent"
+]
+packages = [{include = "nohedidnt_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+codetiming = "^1.4.0"
+devtools = {version = "^0.10.0", extras = ["pygments"]}
+pydantic = {version = "^1.10.4", extras = ["email"]}
+python-box = {version = "^7.0.0", extras = ["all"]}
+python-dotenv = "^0.21.1"
+pytz = "^2022.7.1"
+urllib3 = "^1.26.14"
+chardet = "^5.1.0"
+babel = "^2.11.0"
+charset-normalizer = "^3.0.1"
+typing-extensions = "^4.5.0"
+tzlocal = "^4.2"
+catalogue = "^2.0.8"
+pyyaml = "^6.0"
+suntime = "^1.2.5"
+decorator = "^5.1.1"
+watchdog = "^2.2.1"
+deepdiff6 = "^6.2.0"
+inflect = "^6.0.2"
+pycountry = "^22.3.5"
+pycountry-convert = "^0.7.2"
+colour = "^0.1.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "~=5.0"
+isort = "^5.11.4"
+mypy = "^1.0.0"
+pep8-naming = "^0.13.3"
+pre-commit = "^2.20.0"
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+pytest-mypy = "^0.10.3"
+pytest-randomly = "^3.12.0"
+types-pep8-naming = "^0.13.0.2"
+types-pygments = "^2.14.0.1"
+typeguard = "^2.13.3"
+types-urllib3 = "^1.26.25.5"
+types-requests = "^2.28.11.12"
+types-regex = "^2022.10.31.4"
+types-pytz = "^2022.7.1.0"
+types-setuptools = "^67.2.0.0"
+bandit = "^1.7.4"
+safety = "^2.2"
+darglint = "^1.8.1"
+pytest-flake8-v2 = "^1.2.3"
+pytest-isort = "^3.1.0"
+flake8-bandit = "^4.1.1"
+flake8-black = "^0.3.6"
+flake8-isort = "^6.0.0"
+flake8-pyprojecttoml = "^0.0.2"
+types-tzlocal = "^4.2.2.3"
+types-babel = "^2.11.0.10"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "*"
+mkdocs-material = "^8.0"
+mkdocstrings = {version = "^0.20.0", extras = ["python"]}
+
+
+[tool.black]
+skip-string-normalization = true
+line-length = 160
+
+
+[tool.coverage.run]
+branch = true
+data_file = "tests/.coverage"
+omit = [
+    "*/__pycache__/*",
+    "*/.idea/*",
+    "*/.mypy_cache/*",
+    "*/.pytest_cache/*",
+    "*/tests/*",
+    "*/.venv/*",
+    "*/__init__.py",
+    "*/__main__.py",
+    "*/run.py"
+]
+source = ["nohedidnt_py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:"
+]
+
+[tool.coverage.xml]
+output = "tests/coverage.xml"
+
+
+[tool.flake8]
+exclude = [
+    '.env',
+    '.git',
+    '.idea',
+    '.mypy_cache',
+    '.pytest_cache',
+    '.venv',
+    '__pycache__',
+    'docs/conf.py',
+    'tests'
+]
+extend-ignore = [
+    "F403",
+    "F405"
+]
+max_line_length = 160
+
+
+[tool.isort]
+case_sensitive = true
+combine_as_imports = true
+combine_star = true
+ensure_newline_before_comments = true
+force_alphabetical_sort_within_sections = true
+force_grid_wrap = 0
+group_by_package = true
+lines_after_imports = 2
+lines_between_sections = 2
+lines_between_types = 1
+line_length = 160
+multi_line_output = 2
+py_version = 37
+skip_glob = ["tests/*"]
+src_paths = ["nohedidnt_py"]
+virtual_env = ".venv/"
+
+
+[tool.mypy]
+python_version = "3.7"
+warn_no_return = true
+# warn_return_any = true
+warn_unused_configs = true
+# warn_unused_ignores = true
+exclude = [
+#    '^one\.py$ ',
+#    'two\.pyi$',
+#    '^three\.',
+    '^/tests/'
+]
+plugins = [
+    "pydantic.mypy"
+]
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = [
+    "catalogue",
+    "colour",
+    "deepdiff",
+    "pycountry",
+    "pycountry_convert",
+    "pytz_deprecation_shim",
+    "pytz_deprecation_shim._impl",
+    "watchdog",
+    "watchdog.events",
+    "watchdog.observers",
+]
+
+[tool.pytest.ini_options]
+addopts = "--color=yes --cov=./ --cov-report=xml --cov-report=term --durations=5 -ra    "
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning",
+    "ignore::RuntimeWarning",
+    "ignore::UserWarning",
+]
+minversion = "5.0"
+pythonpath = ["nohedidnt_py"]
+testpaths = ["tests"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
