@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Synhtet/Synhtet.py
+Synhtet/__init__.py
+Synhtet.egg-info/PKG-INFO
+Synhtet.egg-info/SOURCES.txt
+Synhtet.egg-info/dependency_links.txt
+Synhtet.egg-info/requires.txt
+Synhtet.egg-info/top_level.txt
