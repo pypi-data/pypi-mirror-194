@@ -1,0 +1,13 @@
+nxscli_np/__init__.py,sha256=gGvhg1PfMV3qVMQ4QFzHepTiLjGKTeHfVurnWi4bT_E,157
+nxscli_np/ext_commands.py,sha256=Oh_sVKDrQAPX0uXSdohRMyYxw9ZSDjtYqyZ5pD9fsk0,275
+nxscli_np/ext_plugins.py,sha256=w1WHCzwphKUAbLeONIZCnw6kneIjHD3LA5KKcftJ664,317
+nxscli_np/commands/cmd_npmem.py,sha256=nlC6d9rgzGFUbk34YUzBMYpkLXpBiqQe-bPDhpzsk0Y,1555
+nxscli_np/commands/cmd_npsave.py,sha256=lquVCFH0t4ZaCJ_7L6NF1MA1Qn4vOTOoYNhy2In2UU0,1388
+nxscli_np/plugins/npmem.py,sha256=h1VqAa-ojiBCvjSYY4GyRVvbD7UvpHzlXi-Z5YwxJv4,3394
+nxscli_np/plugins/npsave.py,sha256=LYC7SWqDMLBQxooHpP0D28aAIED8mfvt2IC7HTF-5_4,2663
+nxscli_np-0.5.0.dist-info/LICENSE,sha256=ESSdPimY84HxUfrcTgnC1m0CnS38e17NKgwgJ6ytCRM,11354
+nxscli_np-0.5.0.dist-info/METADATA,sha256=XnB1EyoJhYm0CrWRKFTD5hONNi98so0Za0aTDJpMyok,1074
+nxscli_np-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nxscli_np-0.5.0.dist-info/entry_points.txt,sha256=mI7qywMZzDNcMQWVxxibTki4oGkycHDaL1Sh0_9JDCM,86
+nxscli_np-0.5.0.dist-info/top_level.txt,sha256=K7DOaASop32dTKDPC7p1GKXfIvRSjGIqt1czov6rqGE,10
+nxscli_np-0.5.0.dist-info/RECORD,,
