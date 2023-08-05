@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: owl2diagram
+Version: 0.1.0
+Summary: Generate a diagram of a given ontology
+Author-email: Jhon Toledo <ja.toledo@upm.es>
+Project-URL: Source, https://github.com/jatoledo/owl2diagram
+Project-URL: Tracker, https://github.com/jatoledo/owl2diagram/issues
+Project-URL: CI, https://github.com/jatoledo/owl2diagram/actions
+Project-URL: History, https://github.com/jatoledo/owl2diagram/releases
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Owl2diagram
+
+## How to run locally
+```
+python 
+```
+
+## How to use
+
+1. Clone the Owl2diagram repository
+
+   `git clone https://github.com/jatoledo/owl2diagram.git`
+
+2. Run the docker image with docker-compose
+
+   `docker-compose up -d`
+
+3. Starting server at http://127.0.0.1:8000/
+
+## Example
+
+Submit ontology URL.
+
+![](https://raw.githubusercontent.com/jatoledo/owl2diagram/main/images/image1.png)
+
+Result:
+
+![](https://raw.githubusercontent.com/jatoledo/owl2diagram/main/images/image2.png)
+
+## Version
+
+```
+0.1.0
+```
+
+## Authors
+
+- Jhon Toledo.
