@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: denari
+Version: 1.0.4
+Summary: DenariAnalytics open souce Business Tools
+Author: Fadil Karim
+Author-email: insights@denarianalytics.com
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: plotly.graph-objects
+Requires-Dist: dash
+
