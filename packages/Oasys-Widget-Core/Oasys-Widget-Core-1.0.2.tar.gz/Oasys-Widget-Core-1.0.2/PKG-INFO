@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Oasys-Widget-Core
+Version: 1.0.2
+Summary: Core orange widget utilities
+Home-page: http://orange.biolab.si/
+Author: Bioinformatics Laboratory, FRI UL
+Author-email: contact@orange.biolab.si
+License: GPLv3
+License-File: LICENSE.txt
+
+Orange Widget Core
