@@ -1,0 +1,8 @@
+setup.py
+Terminalia/Terminalia.py
+Terminalia/__init__.py
+Terminalia.egg-info/PKG-INFO
+Terminalia.egg-info/SOURCES.txt
+Terminalia.egg-info/dependency_links.txt
+Terminalia.egg-info/requires.txt
+Terminalia.egg-info/top_level.txt
