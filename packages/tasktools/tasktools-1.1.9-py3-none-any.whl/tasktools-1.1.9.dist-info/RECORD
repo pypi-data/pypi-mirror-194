@@ -1,0 +1,13 @@
+CHANGELOG.org,sha256=_L4uwbogqudQwGyyqpnQb8jNs0mfp5seYlf-fB7qRFE,90
+LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tasktools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tasktools/assignator.py,sha256=WsqDywTP2qcnoZGWyFSOQ25NhhOpJt4NaLpdjcSgN34,6090
+tasktools/assignator.py~,sha256=k7v467XbcCRc8_cuZZwCjj0EGvkazkXClBZSgEJ3la4,6198
+tasktools/async_queue.py,sha256=l33YEHcrFtxj1BeIcbZPtVRPoa55m3niDRP7_ZEG8M4,2546
+tasktools/scheduler.py,sha256=YB3VfukEnUrL1a4b-CG8wqh6t__hy_rQR7UtUzpNsDU,15623
+tasktools/taskloop.py,sha256=mj6mt179S1fDWch0LxKIoYwmp0UCKBpjrCERtLsP4vw,11555
+tasktools-1.1.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tasktools-1.1.9.dist-info/METADATA,sha256=9mRsGgvjg6we5D1HD-ndG_z3vOSXcv_RsfWfVm0P42w,1638
+tasktools-1.1.9.dist-info/LICENSE.txt,sha256=5p_9SzYZ4m6ZPWlRA8WBTr0v0Ev5yqoQ4rU_jijPhew,1076
+tasktools-1.1.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tasktools-1.1.9.dist-info/RECORD,,
