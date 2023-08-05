@@ -1,0 +1,3 @@
+[ovos.plugin.phal]
+ovos-PHAL-plugin-pulseaudio=ovos_PHAL_plugin_pulseaudio:PulseAudioVolumeControlPlugin
+

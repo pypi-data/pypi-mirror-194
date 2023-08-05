@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ovos_PHAL_plugin_pulseaudio/__init__.py
+ovos_PHAL_plugin_pulseaudio/version.py
+ovos_PHAL_plugin_pulseaudio.egg-info/PKG-INFO
+ovos_PHAL_plugin_pulseaudio.egg-info/SOURCES.txt
+ovos_PHAL_plugin_pulseaudio.egg-info/dependency_links.txt
+ovos_PHAL_plugin_pulseaudio.egg-info/entry_points.txt
+ovos_PHAL_plugin_pulseaudio.egg-info/requires.txt
+ovos_PHAL_plugin_pulseaudio.egg-info/top_level.txt
+ovos_PHAL_plugin_pulseaudio.egg-info/zip-safe
