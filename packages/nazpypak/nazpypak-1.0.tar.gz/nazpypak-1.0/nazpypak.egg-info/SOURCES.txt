@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+nazpypak/__init__.py
+nazpypak/pdftotext.py
+nazpypak.egg-info/PKG-INFO
+nazpypak.egg-info/SOURCES.txt
+nazpypak.egg-info/dependency_links.txt
+nazpypak.egg-info/top_level.txt
