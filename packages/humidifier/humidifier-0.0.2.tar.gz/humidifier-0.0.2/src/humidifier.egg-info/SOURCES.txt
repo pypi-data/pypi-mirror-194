@@ -1,0 +1,14 @@
+CITATION.cff
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/humidifier/__init__.py
+src/humidifier.egg-info/PKG-INFO
+src/humidifier.egg-info/SOURCES.txt
+src/humidifier.egg-info/dependency_links.txt
+src/humidifier.egg-info/not-zip-safe
+src/humidifier.egg-info/requires.txt
+src/humidifier.egg-info/top_level.txt
