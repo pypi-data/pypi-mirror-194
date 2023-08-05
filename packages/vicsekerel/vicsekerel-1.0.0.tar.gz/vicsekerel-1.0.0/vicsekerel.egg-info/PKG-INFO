@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: vicsekerel
+Version: 1.0.0
+Summary: Implemetation of the Vicsek model in Python. It allows users to edit the parameters of the original model and to generate a video of the resulting simulation.
+Author: Miguel Trigo
+Author-email: migueltrigol@gmail.com
+License-File: LICENSE.txt

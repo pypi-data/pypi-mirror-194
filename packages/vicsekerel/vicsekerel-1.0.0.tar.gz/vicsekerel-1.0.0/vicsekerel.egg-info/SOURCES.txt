@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+vicsekerel/__init__.py
+vicsekerel/animation.py
+vicsekerel/entity.py
+vicsekerel/model.py
+vicsekerel.egg-info/PKG-INFO
+vicsekerel.egg-info/SOURCES.txt
+vicsekerel.egg-info/dependency_links.txt
+vicsekerel.egg-info/not-zip-safe
+vicsekerel.egg-info/requires.txt
+vicsekerel.egg-info/top_level.txt
