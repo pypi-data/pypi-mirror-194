@@ -1,0 +1,9 @@
+README.md
+setup.py
+scrapspyder/__init__.py
+scrapspyder/scraper.py
+scrapspyder.egg-info/PKG-INFO
+scrapspyder.egg-info/SOURCES.txt
+scrapspyder.egg-info/dependency_links.txt
+scrapspyder.egg-info/requires.txt
+scrapspyder.egg-info/top_level.txt
