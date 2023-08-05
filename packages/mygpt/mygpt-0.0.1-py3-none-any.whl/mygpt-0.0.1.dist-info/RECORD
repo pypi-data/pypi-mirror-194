@@ -1,0 +1,10 @@
+mygpt/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+mygpt/_modidx.py,sha256=I7fv-2eUIlI1Sn73fUI6zt9I_zg0VA81zAFCQfxyCAc,728
+mygpt/core.py,sha256=k27SgrWJIRcadZQVVknyRZc7VknZKWPNmNsiywdQZWo,257
+mygpt/data.py,sha256=Cgp30rqvDk150LuL3S3X4-jVtr-aSDgT9riWZJVfmNM,1649
+mygpt-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+mygpt-0.0.1.dist-info/METADATA,sha256=0aQaZZBb57w_fuwNQlA_oc3TLHoSB_TgIZ5UhDZZiUI,1088
+mygpt-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mygpt-0.0.1.dist-info/entry_points.txt,sha256=W_PLN8TekwMJPnxzPown5bH0e1dZiUU2gLIFuWJwwMg,32
+mygpt-0.0.1.dist-info/top_level.txt,sha256=hzK8RKpBcbGHOtRpMB3EeYOKWhT0Z1_UOQhNEl1Dn00,6
+mygpt-0.0.1.dist-info/RECORD,,
