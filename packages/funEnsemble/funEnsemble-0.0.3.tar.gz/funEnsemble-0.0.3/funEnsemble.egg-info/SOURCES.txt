@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.cfg
+funEnsemble.egg-info/PKG-INFO
+funEnsemble.egg-info/SOURCES.txt
+funEnsemble.egg-info/dependency_links.txt
+funEnsemble.egg-info/top_level.txt
