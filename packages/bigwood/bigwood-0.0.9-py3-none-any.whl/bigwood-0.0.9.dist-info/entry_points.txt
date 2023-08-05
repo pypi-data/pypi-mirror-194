@@ -1,0 +1,3 @@
+[console_scripts]
+getmyip=bigwood.bin.getip:main
+
