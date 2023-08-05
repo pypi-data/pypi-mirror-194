@@ -1,0 +1,2 @@
+[console_scripts]
+pypackerdetect = pypackerdetect.__main__:main
