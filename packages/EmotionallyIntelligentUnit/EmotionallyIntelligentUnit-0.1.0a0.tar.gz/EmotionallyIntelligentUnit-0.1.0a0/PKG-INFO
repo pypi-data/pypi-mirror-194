@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: EmotionallyIntelligentUnit
+Version: 0.1.0a0
+Summary: Vedic Astrology based Artificial Emotional Intelligence
+Home-page: https://github.com/mohitlabs/EmotionallyIntelligentUnit
+Author: MohitLabs
+Author-email: mohitsingh5.ms@gmail.com
+License: MIT
+Description: Emotionally Intelligent Unit is a vedic astrology based artificial sentiment synthesis library
+Keywords: EmotionallyIntelligentUnit,EIU,Sentiment Synthesis,Artificial Emotional Intelligence
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Other Environment
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

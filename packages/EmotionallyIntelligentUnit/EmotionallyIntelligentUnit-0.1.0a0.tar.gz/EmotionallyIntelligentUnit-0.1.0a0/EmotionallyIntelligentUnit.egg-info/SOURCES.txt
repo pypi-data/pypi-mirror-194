@@ -1,0 +1,8 @@
+README.md
+setup.py
+EmotionallyIntelligentUnit/__init__.py
+EmotionallyIntelligentUnit.egg-info/PKG-INFO
+EmotionallyIntelligentUnit.egg-info/SOURCES.txt
+EmotionallyIntelligentUnit.egg-info/dependency_links.txt
+EmotionallyIntelligentUnit.egg-info/requires.txt
+EmotionallyIntelligentUnit.egg-info/top_level.txt
