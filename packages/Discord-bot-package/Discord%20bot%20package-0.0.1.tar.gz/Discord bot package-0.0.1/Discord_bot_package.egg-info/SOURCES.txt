@@ -1,0 +1,10 @@
+CHANGELOG.txt
+License.txt
+MANIFEST.in
+setup.py
+Discord_bot_package.egg-info/PKG-INFO
+Discord_bot_package.egg-info/SOURCES.txt
+Discord_bot_package.egg-info/dependency_links.txt
+Discord_bot_package.egg-info/requires.txt
+Discord_bot_package.egg-info/top_level.txt
+discord_bot_package/__init__.py
