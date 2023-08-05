@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: nftsets
+Version: 0.1.0b0
+Summary: nftsets: Verified Sets of NFT Collections
+Home-page: https://github.com/ApeWorX/nftsets
+Author: ApeWorX Ltd.
+Author-email: admin@apeworx.io
+License: Apache-2.0
+Keywords: ethereum
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8,<4
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic (<2,>=1.9.2)
+Requires-Dist: requests (<3.0,>=2.28)
+Provides-Extra: dev
+Requires-Dist: pytest (>=6.0) ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: hypothesis (<7.0,>=6.2.0) ; extra == 'dev'
+Requires-Dist: black (>=22.6.0) ; extra == 'dev'
+Requires-Dist: mypy (>=0.971) ; extra == 'dev'
+Requires-Dist: flake8 (>=4.0.1) ; extra == 'dev'
+Requires-Dist: isort (>=5.10.1) ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: commitizen ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest-watch ; extra == 'dev'
+Requires-Dist: IPython ; extra == 'dev'
+Requires-Dist: ipdb ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black (>=22.6.0) ; extra == 'lint'
+Requires-Dist: mypy (>=0.971) ; extra == 'lint'
+Requires-Dist: flake8 (>=4.0.1) ; extra == 'lint'
+Requires-Dist: isort (>=5.10.1) ; extra == 'lint'
+Provides-Extra: release
+Requires-Dist: setuptools ; extra == 'release'
+Requires-Dist: wheel ; extra == 'release'
+Requires-Dist: twine ; extra == 'release'
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: hypothesis (<7.0,>=6.2.0) ; extra == 'test'
+
+# NFT Sets
+
+Verified Sets of NFT Collections
+
+## Dependencies
+
+* [python3](https://www.python.org/downloads) version 3.7 or greater, python3-dev
+
+## Installation
+
+### via `pip`
+
+You can install the latest release via [`pip`](https://pypi.org/project/pip/):
+
+```bash
+pip install nftsets
+```
+
+### via `setuptools`
+
+You can clone the repository and use [`setuptools`](https://github.com/pypa/setuptools) for the most up-to-date version:
+
+```bash
+git clone https://github.com/ApeWorX/nftsets.git
+cd nftsets
+python3 setup.py install
+```
+
+## Quick Usage
+
+NOTE: **Work in Progress!**
+
+```py
+>>> from nftsets import Manager
+>>> nsm = Manager()
+
+>>> nsm.available()
+[]
+
+>>> nsm.install("nfts.opensea.eth")
+>>> nsm.available()
+["opensea"]
+
+>>> print(*(set.name for set in nsm.get_collections()))
+PUNKS
+BAYC
+...
+```
+
+## Development
+
+This project is in development and should be considered a beta.
+Things might not be in their final state and breaking changes may occur.
+Comments, questions, criticisms and pull requests are welcomed.
+
+## License
+
+This project is licensed under the [Apache 2.0](LICENSE).
+
+
