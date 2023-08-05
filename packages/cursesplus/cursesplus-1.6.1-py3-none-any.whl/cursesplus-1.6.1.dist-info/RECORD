@@ -1,0 +1,11 @@
+__cptest.py,sha256=BR6AT1y_CPVzFB5QsQOXDq_lz9biuJOiXKbX1gHzuGE,1300
+cursesplus/__init__.py,sha256=lsd-81vqn1JZ68RK8am5Gm-34PmVH5TmoYYhMwPSh9U,321
+cursesplus/cp.py,sha256=KEvRG3xhzGuCDH7UMGUK8JPawX6n3K37r-laRxN2m28,11560
+cursesplus/filedialog.py,sha256=Rbv8ip7mZWWMp1shi2izE5D5oFexxxuN7UEAhIG4Cg0,9711
+cursesplus/messagebox.py,sha256=EfeHsd2f-dfx4qkV5NMlJTrU-DJp1jCs3IEOp8WswOg,1553
+cursesplus/progressbars.py,sha256=SaX0fYDpyjnGFNNfmoSDDOD0HrIjlr0GYIBNR87obMw,945
+cursesplus-1.6.1.dist-info/LICENSE,sha256=CbDrth0-grPmkdeCiAaTEwQVhY5WMwRyKHg96lcQY7M,1089
+cursesplus-1.6.1.dist-info/METADATA,sha256=hJcRAoAth4yY-0YSajhh6a2gXV4AWAPqwnx-LD4M2OU,1452
+cursesplus-1.6.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cursesplus-1.6.1.dist-info/top_level.txt,sha256=90lUCv47LxM42npWXFh-BYC5Q13Ym_efGa95TakLGaM,20
+cursesplus-1.6.1.dist-info/RECORD,,
