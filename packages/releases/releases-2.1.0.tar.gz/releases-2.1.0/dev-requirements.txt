@@ -1,0 +1,17 @@
+# Task runner
+invoke>=1.7.3
+invocations>=3
+# Tests (N.B. integration suite also uses Invoke as above)
+pytest-relaxed>=2
+pytest-cov>=2.4
+pytest>=4.6.9
+coverage==4.4.2
+codecov==2.1.11
+# Docs (including self, because dogfood)
+-e .
+sphinx_rtd_theme>=0.1.5,<2.0
+# Formatting
+flake8==5.0.4
+black==22.8.0
+# Miscellany
+icecream==2.1.3
