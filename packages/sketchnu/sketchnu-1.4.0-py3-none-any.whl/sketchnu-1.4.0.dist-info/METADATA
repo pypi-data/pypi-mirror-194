@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sketchnu
+Version: 1.4.0
+Summary: Numba implementations of some sketch algorithms
+Home-page: https://github.com/mhendrey/sketchnu
+Author: Matthew Hendrey
+Author-email: matthew.hendrey@gmail.com
+License: GNU GPLv3
+Project-URL: Source, https://github.com/mhendrey/sketchnu
+Project-URL: Documentation, https://mhendrey.github.io/sketchnu
+Keywords: numba,sketch
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numba (>=0.54.1)
+Requires-Dist: psutil
+
