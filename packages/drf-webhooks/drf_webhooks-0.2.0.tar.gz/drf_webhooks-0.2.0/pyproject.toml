@@ -1,0 +1,83 @@
+[tool.poetry]
+name = "drf-webhooks"
+version = "0.2.0"
+license = "MIT"
+readme = "README.md"
+description = "Setup webhooks using existing DRF Serializers"
+authors = ["Arnar Yngvason <arnar@reon.is>"]
+repository = "https://github.com/demux/drf-webhooks"
+keywords = ["django", "drf", "rest", "djangorestapi", "webhooks"]
+packages = [{include = "drf_webhooks"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1"
+djangorestframework = "^3.14"
+inflection = "^0.5"
+httpx = "^0.23"
+pendulum = "^2.1"
+pytimeparse = "^1.1"
+djangorestframework-xml = "^2.0"
+xmltodict = "^0.13"
+celery = "^5.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.12"
+isort = "^5.11"
+pytest = "^7.2"
+pytest-httpx = "^0.21"
+ipython = "^8.8"
+pytest-django = "^4.5"
+django-environ = "^0.9"
+dj-database-url = "^1.2"
+psycopg2 = "^2.9"
+djangorestframework-camel-case = "^1.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+addopts = "--ds=example.settings"
+filterwarnings = [
+  "ignore::DeprecationWarning",
+  "ignore::PendingDeprecationWarning",
+]
+markers = [
+  "integration",
+]
+
+[tool.isort]
+combine_as_imports = true
+default_section = "THIRDPARTY"
+include_trailing_comma = true
+known_first_party = "webhooks,example"
+line_length = 79
+multi_line_output = 3
+
+[tool.black]
+target_version = ["py310"]
+line-length = 120
+skip-string-normalization = 1
+include = "\\.pyi?$"
+exclude = """
+/(\\.git/
+  |\\.eggs
+  |\\.hg
+  |__pycache__
+  |\\.cache
+  |\\.ipynb_checkpoints
+  |\\.mypy_cache
+  |\\.pytest_cache
+  |\\.tox
+  |\\.venv
+  |_build
+  |buck-out
+  |build
+  |dist
+  |media
+  |templates
+  |locale
+)/
+"""
