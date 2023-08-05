@@ -1,0 +1,11 @@
+paperqa/__init__.py,sha256=_nEEchMOP8GAnWNvsvEFj6M7MDw_rGkbyRNhU7-5Q9U,73
+paperqa/docs.py,sha256=-WVsOkR6_YwMaweYbuslKd7svLtMpEE04z46Uu4nt58,10122
+paperqa/qaprompts.py,sha256=kIpInuJKEuw9Noo1l5byaHPX8YiV_xjFDNLb9c3YR78,2107
+paperqa/readers.py,sha256=_X8eFp_f-NKlz8CFGCwKb1HT9vKJH5q1F5Krq0jvjkA,1983
+paperqa/utils.py,sha256=2jemXlaweyJnmfcc1V0sTx9AlCIryT6V6c1X7QDgeG0,831
+paperqa/version.py,sha256=TqYDUUuntAA9ViXXdLVWd3VcJsSm48TnY4-21208hFk,24
+paper_qa-0.0.12.dist-info/LICENSE,sha256=4YBXgoHsnGeXyohXNRidSEDOaasrt1wMg-uuZ797BxI,1069
+paper_qa-0.0.12.dist-info/METADATA,sha256=b-7bA2ARuAzxIhzUcevrzdYJtFNJhZNnhqOM-ajopHY,7934
+paper_qa-0.0.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+paper_qa-0.0.12.dist-info/top_level.txt,sha256=R5cvunn_PkShDcFsruYPefBTBPjEPnWXh1NU0Ox8-e8,8
+paper_qa-0.0.12.dist-info/RECORD,,
