@@ -1,0 +1,5 @@
+build
+docs
+kilopop
+macronova2py
+tests
