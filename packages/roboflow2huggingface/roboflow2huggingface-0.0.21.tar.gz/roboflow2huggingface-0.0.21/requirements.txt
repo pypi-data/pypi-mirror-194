@@ -1,0 +1,5 @@
+roboflow
+huggingface_hub
+beautifulsoup4
+fire
+pillow
