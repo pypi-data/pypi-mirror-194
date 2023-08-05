@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: postgresdave_package
+Version: 1.2.0
+Summary: A wrapper for simplified Postgres usage using psycopg2.
+Project-URL: Homepage, https://github.com/daveskura/postgresdave
+Project-URL: Author Linkedin, https://www.linkedin.com/in/2166883
+Author-email: Dave Skura <dskura@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# postgresdave
+My database wrapper on psycopg2
+
+# examples
+
+### command line
+py -m postgresdave_package.postgresdave
+
+### sample python program
+from postgresdave_package.postgresdave import db 
+
+print('sample program\n')
+
+mydb = db()
+
+mydb.connect()
+
+print(mydb.dbversion())
+
+print(' - - - - - - - - - - - - - - - - - - - - - - - - - - -  \n')
+
+print('table_count = ' + str(mydb.queryone('SELECT COUNT(*) as table_count FROM INFORMATION_SCHEMA.TABLES')))
+
+print(' - - - - - - - - - - - - - - - - - - - - - - - - - - -  \n')
+
+qry = """
+SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+FROM INFORMATION_SCHEMA.TABLES
+"""
+
+print(mydb.export_query_to_str(qry,'\t'))
+
+mydb.close()		
+
