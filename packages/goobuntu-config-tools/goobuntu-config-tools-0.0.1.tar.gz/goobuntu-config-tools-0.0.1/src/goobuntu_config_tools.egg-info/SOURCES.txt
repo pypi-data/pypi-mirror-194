@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/goobuntu_config_tools.egg-info/PKG-INFO
+src/goobuntu_config_tools.egg-info/SOURCES.txt
+src/goobuntu_config_tools.egg-info/dependency_links.txt
+src/goobuntu_config_tools.egg-info/entry_points.txt
+src/goobuntu_config_tools.egg-info/requires.txt
+src/goobuntu_config_tools.egg-info/top_level.txt
+tests/test_simple.py
