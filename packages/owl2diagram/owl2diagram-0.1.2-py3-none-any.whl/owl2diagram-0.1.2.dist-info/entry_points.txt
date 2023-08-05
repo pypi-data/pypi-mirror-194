@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = owl2diagram.__main__:main
