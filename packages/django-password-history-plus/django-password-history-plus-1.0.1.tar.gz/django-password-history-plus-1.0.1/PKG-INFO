@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: django-password-history-plus
+Version: 1.0.1
+Summary: A Django package that stores password histories and checks new password with the history
+Home-page: https://github.com/adu013/django-password-history-plus
+Author: Arindam Dutta
+Author-email: "aridutta101010@gmail.com"
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+django-custom-accounts-plus
+
+This package stores password histories and checks new password with the history
+
+
+Quick start
+-----------
+1. Add "password_histories" to your INSTALLED_APPS setting like this::
+``
+INSTALLED_APPS = [
+...
+'password_histories',
+]
+``
+
+2. Migrate
+``
+python manage.py migrate
+``
+
+TODO
+----
+
+Changelog
+---------
+1.0.0 - 2023-02-26 Arindam Dutta - First release
+1.0.1 - 2023-02-26 Arindam Dutta - Documentation Update
+
+Copyright(c) 2023 Arindam Dutta
