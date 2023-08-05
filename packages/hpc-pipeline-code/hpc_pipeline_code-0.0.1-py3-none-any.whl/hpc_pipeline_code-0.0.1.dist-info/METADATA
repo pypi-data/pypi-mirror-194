@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hpc-pipeline-code
+Version: 0.0.1
+Summary: Blocker for internal Python package
+Author: Paul Müller
+License: None
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Requires-Python: <4,>=3.10
+
