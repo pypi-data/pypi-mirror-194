@@ -1,0 +1,14 @@
+polars>=0.16.5
+scikit-learn
+scipy
+
+[dev]
+pytest
+flake8
+mypy
+black
+isort
+pylint
+build
+twine
+sphinx-rtd-theme
