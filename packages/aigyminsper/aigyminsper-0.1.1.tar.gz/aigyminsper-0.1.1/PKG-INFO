@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: aigyminsper
+Version: 0.1.1
+Summary: This package implements basic AI algorithms
+Author: Fabricio Barth
+Author-email: fabriciojb@insper.edu.br
+License-File: LICENSE
