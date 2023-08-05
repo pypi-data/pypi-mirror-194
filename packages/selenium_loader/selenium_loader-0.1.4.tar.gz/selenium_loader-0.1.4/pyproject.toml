@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "selenium_loader"
+authors = [{name = "kevocde", email = "kevocde@gmail.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dynamic = ["version", "description"]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+  "selenium>=4.8.0",
+  "typer>=0.7.0",
+  "mergedeep>=1.3.4"
+]
+
+[project.urls]
+Home = "https://kevocde.github.io/selenium-loader"
+Source = "https://github.com/kevocde/selenium-loader.git"
