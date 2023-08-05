@@ -1,0 +1,12 @@
+cppparallelbufferedsort/README.MD,sha256=3Xnid_QIoPnLidAMxUlqOMOf2i1t-DaFG3PdXfGq434,826
+cppparallelbufferedsort/__init__.py,sha256=FZvied-AEh4O9-7dY5UquaWfHnDFVusNNvxhZKTBRHs,245
+cppparallelbufferedsort/cppparallelbufferedsort.dll,sha256=JfisoYh1kOLti7--aE5iuYdrNXxmboofEbuLOUqv-OE,421376
+cppparallelbufferedsort/cppparallelbufferedsort.ini,sha256=pVc3mRLYv2TT8_byhU-ZXfs0vSCet7XO28IJc13uKWc,1727
+cppparallelbufferedsort/cppparallelbufferedsortmodule.py,sha256=3ELYBd3ElPsnWoNgPqM_2Ez9-NYmQKgPJDvN7cvX9uk,13241
+cppparallelbufferedsort/requirements.txt,sha256=xNGxEWR6N838KYIq-YmuagRvF0U2ZqMekouLP9tYcs0,23
+cppparallelbufferedsort/thirdparty.json,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+cppparallelbufferedsort-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+cppparallelbufferedsort-0.10.dist-info/METADATA,sha256=BSEsnvDUUTD75IQRfNnveLtXt2e5ivDpBL-cgypw4ME,1794
+cppparallelbufferedsort-0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cppparallelbufferedsort-0.10.dist-info/top_level.txt,sha256=AJPXMOOf5qAqtQX0EJNpE3PFdcdDpVcjVKDqfzps_S0,24
+cppparallelbufferedsort-0.10.dist-info/RECORD,,
