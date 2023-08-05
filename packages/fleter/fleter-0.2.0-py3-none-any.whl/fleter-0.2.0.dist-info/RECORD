@@ -1,0 +1,13 @@
+fler/__init__.py,sha256=B8PwWP6S3yYUGu0wuFSgytTCoyk_Kc9eNo6BpUiTDNw,31
+fler/test.py,sha256=TidOr4fOvQPDgwYauDxiaXt5NzlHUaRWEM4mEmLCIiQ,256
+fler/window.py,sha256=cWjh3mk6uKYVHVHcAdNCLRHMtChH1iv6crAxArPYMWI,1087
+fleter/__init__.py,sha256=SQqFSsvWKRfiTll6H5kX5ugPPx_AjVX8acB36MrRTRg,74
+fleter/buttons.py,sha256=QaSGRxsgcprvfNvS93SCQvPTUSIVpQ1YImdqY-U_CWg,5697
+fleter/controls.py,sha256=b94gyw8IXgIceBW4dKAHpOi7S7S-gpu1CjtG39Dy60c,17315
+fleter/icons_browser.py,sha256=nMoFVBquLOiXf3VNr0y8pmSPITIKYn8ChSg4tSNX8vo,4935
+fleter_demo/__init__.py,sha256=kWL-zH0BGYTamUPRC37UMzb3mFPRTGiJ6_E43UhRDJ8,779
+fleter-0.2.0.dist-info/METADATA,sha256=-HzR-qxJ3SlDzPKwxf9Y9wG5Fi9vgMEgj43_Q8ZoGDI,7548
+fleter-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fleter-0.2.0.dist-info/entry_points.txt,sha256=Z8GXclrcD9eBhQ2KeW-g8dZaCxzW1yKsKfCFM8gL8Zg,44
+fleter-0.2.0.dist-info/top_level.txt,sha256=AijREAQtIGI701Mywj2WxNnanZJhDPVypCcRsR0MSQ8,24
+fleter-0.2.0.dist-info/RECORD,,
