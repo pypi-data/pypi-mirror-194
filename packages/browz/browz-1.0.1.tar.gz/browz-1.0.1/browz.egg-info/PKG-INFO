@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: browz
+Version: 1.0.1
+Summary: Python/GTK Web Browser
+Home-page: https://github.com/paigeadelethompson/browz
+Author: Millan Philipose
+License: MIT
+License-File: AUTHORS
+
+A formerly abandoned Python and GTK web browser written by Millan Philipose
