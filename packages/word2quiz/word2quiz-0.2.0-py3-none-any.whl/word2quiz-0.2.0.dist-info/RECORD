@@ -1,0 +1,9 @@
+LICENSE,sha256=RJ3-9u2M1ao9FJDQymYOZ27KJLYkWds-fzcwBpxetKc,1079
+word2quiz/__init__.py,sha256=zqnumc9wSPTVmFojeTBLYLbmoYyHOsc8fynPQV54aBc,475
+word2quiz/locales/en/LC_MESSAGES/base.po,sha256=IoP3gGn-8fmFByfgzT8zokaypNXCweUeytjFef-PH3Y,572
+word2quiz/main.py,sha256=pHi2g79IYXm38n9F3hLaEuLx6Q7guC_VX-asJoorAlQ,15668
+word2quiz/word2quiz.log,sha256=lAh-mcUbRq3NeW6BwuL8bfj8cRm67X0aVv7XYChr7fU,736123
+word2quiz-0.2.0.dist-info/LICENSE,sha256=RJ3-9u2M1ao9FJDQymYOZ27KJLYkWds-fzcwBpxetKc,1079
+word2quiz-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+word2quiz-0.2.0.dist-info/METADATA,sha256=CPsagae-C5T0CeRP-0VLQhFr0oHKdrzEzDsIKO7guhQ,1318
+word2quiz-0.2.0.dist-info/RECORD,,
