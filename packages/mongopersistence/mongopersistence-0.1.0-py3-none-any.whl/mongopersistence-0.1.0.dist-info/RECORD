@@ -1,0 +1,7 @@
+mongopersistence/__init__.py,sha256=h--gLvi0Gjdh3rHy_chsx1BwtB_GjnQNEs5Bxpap0uE,112
+mongopersistence/dbhelper.py,sha256=QwX6Yvkaj-16MSbQATUMDJHgQZ3_8IGXoJVSi9MjQKU,1691
+mongopersistence/persistence.py,sha256=TkPJeqbnbJ-Ic1QucR2xPTO3gx-peZY_ENaefa1uguo,8213
+mongopersistence-0.1.0.dist-info/LICENSE,sha256=7qkUyuhNXzDbZQaboD2DkCz9Bnae6WCdtiis8I4Roco,1068
+mongopersistence-0.1.0.dist-info/METADATA,sha256=LrRlnnRPJwBqkJ6Mf2wG9RunMhNerLk5cSlTb1fZ_A0,659
+mongopersistence-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+mongopersistence-0.1.0.dist-info/RECORD,,
