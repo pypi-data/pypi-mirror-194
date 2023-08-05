@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eng_syl/BahdanauAttention.py
+eng_syl/__init__.py
+eng_syl/syllabify.py
+eng_syl.egg-info/PKG-INFO
+eng_syl.egg-info/SOURCES.txt
+eng_syl.egg-info/dependency_links.txt
+eng_syl.egg-info/not-zip-safe
+eng_syl.egg-info/requires.txt
+eng_syl.egg-info/top_level.txt
