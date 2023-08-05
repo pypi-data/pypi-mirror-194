@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: frame-postprocess
+Version: 0.4
+Summary: UNKNOWN
+Home-page: https://github.com/galvisf/frame_postprocess
+Author: Francisco Galvis
+Author-email: galvisf@alumni.stanford.edu
+License: MIT License
+Description: frame_postprocess is an open-source python package that facilitates the postprocessing of seismic nonlinear response history analyses (NLRHA) of 2D OpenSees models of moment frames.
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
