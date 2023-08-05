@@ -1,0 +1,6 @@
+ebbe<2,>=1.11.0
+file-read-backwards<3,>=2.0.0
+
+[http]
+urllib3
+certifi
