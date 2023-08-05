@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: controlnet-hinter
+Version: 0.0.5
+Summary: ControlNet hint embedding utilities
+Home-page: https://github.com/takuma104/controlnet_hinter
+Author: takuma104
+Author-email: takuma104@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: pytest
+Requires-Dist: diffusers
+Requires-Dist: chardet
+Requires-Dist: opencv-contrib-python (>=4.3.0.36)
+Requires-Dist: einops (>=0.3.0)
+Requires-Dist: timm (>=0.6.12)
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: addict (>=2.4.0)
+Requires-Dist: yapf (>=0.32.0)
+Requires-Dist: prettytable
+Requires-Dist: basicsr
+
+# controlnet_hinter: ControlNet hint embedding utilities
+
+ControlNet: https://github.com/lllyasviel/ControlNet
+
+
