@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mercarius/__init__.py
+mercarius/mercari.py
+mercarius.egg-info/PKG-INFO
+mercarius.egg-info/SOURCES.txt
+mercarius.egg-info/dependency_links.txt
+mercarius.egg-info/requires.txt
+mercarius.egg-info/top_level.txt
