@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/fsdof.c
+src/sdof/__init__.py
+src/sdof.egg-info/PKG-INFO
+src/sdof.egg-info/SOURCES.txt
+src/sdof.egg-info/dependency_links.txt
+src/sdof.egg-info/top_level.txt
+tests/test.py
