@@ -1,0 +1,12 @@
+alacorder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alacorder/__main__.py,sha256=HZ369BOCgE3KklJ27TIRgCQ-J_bd3rmdFIkWSAZG-CE,5945
+alacorder/config.py,sha256=UBBocySoPDQjGa_6BNb3VWsJDiVkVhLuM_nEuZn9IGY,5312
+alacorder/get.py,sha256=K95XPDvpkm41IXP52CgdZsyTsmKMypmkB33o1ZTWETA,29009
+alacorder/logs.py,sha256=AOFVVFAJfK1Ib9TENmjf9-QEP3y4jKziJT1F7fJcknw,4546
+alacorder/parse.py,sha256=PPb2qlqOwsWb7dzalIvIQFfykq8PhRwan1qGWKRr2wc,26270
+alacorder/write.py,sha256=82-PkQaCSi1vwHUGtVJl5rf3lCcNnIO5VUmXg6cu-T8,4917
+alacorder-74.6.dist-info/LICENSE,sha256=ANhTokIcqsS_ltXVHn_bpHVIhmUrrG2OTCZX91m9_80,1066
+alacorder-74.6.dist-info/METADATA,sha256=uZ-si2P7LfsbWaPOyL4oCJSmXe9uu3hjaK_y8Ow4JzU,11058
+alacorder-74.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+alacorder-74.6.dist-info/top_level.txt,sha256=SvBoMJWQYC6yFZy9U9jZHYK_TyPPODTNXI4_sMpC0xU,10
+alacorder-74.6.dist-info/RECORD,,
