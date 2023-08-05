@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: wtfutil
+Version: 1.0.8
+Summary: A Python utility.
+Home-page: https://github.com/vicrack
+Author: vicrack
+Author-email: 18179821+ViCrack@users.noreply.github.com
+Platform: any
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymysql
+Requires-Dist: faker
+Requires-Dist: requests
+Requires-Dist: cacheout
+Requires-Dist: requests-cache
+
+
+# wftutil
+
+<a href="https://pypi.python.org/pypi/wtfutil"><img src="https://img.shields.io/pypi/v/wtfutil.svg"></a>
+<a href="https://pypi.python.org/pypi/wtfutil"><img src="https://img.shields.io/pypi/pyversions/wtfutil.svg"></a>
+=================================================================================================================
+
+## ☤ The Basics
+
+A Python utility
+
+## ☤ Installation
+
+Of course, the recommended installation method is `pipenv <http://pipenv.org>`\_::
+
+```bash
+pipenv install wtfutil
+```
+
+or
+
+```bash
+pip install wtfutil
+```
+
+## ☤ Features
+
+```python
+from wtfutil import util
+```
+
+```python
+from wtfutil import sqlutil
+```
+
+## ☤ Thank You
+
+Thanks for checking this library out! I hope you find it useful.
+
+Of course, there's always room for improvement. Feel free to [https://github.com/vicrack](https://github.com/vicrack)
