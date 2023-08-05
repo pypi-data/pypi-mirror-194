@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: glotter2
+Version: 0.3.0
+Summary: An execution library for scripts written in any language. This is a fork of auroq/glotter
+Home-page: https://github.com/rzuckerm/glotter2
+Author: auroq
+Maintainer: rzuckerm
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+License-File: LICENSE.txt
