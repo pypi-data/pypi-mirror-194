@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: syncanysql
+Version: 0.0.1
+Summary: 简单易用的数据同步转换导出框架
+Home-page: https://github.com/snower/syncany-sql
+Author: snower
+Author-email: sujian199@gmail.com
+License: MIT
+Description: # syncany-sql
+        简单易用的数据同步导出框架
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: clickhouse
+Provides-Extra: elasticsearch
+Provides-Extra: influxdb
+Provides-Extra: openpyxl
+Provides-Extra: postgresql
+Provides-Extra: pymongo
+Provides-Extra: pymssql
+Provides-Extra: pymysql
+Provides-Extra: pyyaml
+Provides-Extra: redis
+Provides-Extra: requests
