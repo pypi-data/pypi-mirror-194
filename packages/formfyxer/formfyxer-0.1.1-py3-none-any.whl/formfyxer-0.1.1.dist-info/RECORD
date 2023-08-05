@@ -1,0 +1,16 @@
+formfyxer/__init__.py,sha256=f-TqwkqrrqZ8IW04mmNHxGQLxMo55Tspn_s3WVavJb0,57
+formfyxer/lit_explorer.py,sha256=O9hQNaA1fzLAzlFrfH_DLlTnERuCLDQOfecFsLRSgkk,40302
+formfyxer/pdf_wrangling.py,sha256=d6l9oVJQNCTjlUhvm1e4JsDAruMw5knZI6sREffd6iA,48312
+formfyxer/requirements.txt,sha256=QbHuLQXDXc05Qf0EZvaqdPaqux8W5PElZzZ9bBDvlwc,197
+formfyxer/data/clf_field_names.joblib,sha256=dSxKsCJU8IiufeXxxIAL32vZXTa3uoI-eFe_rjvZ-Dk,1246483
+formfyxer/data/groups.joblib,sha256=XNN4RDH3OKJ6RTFEp9HfDg-kJd7p_V2Yx0DQpFlwzKM,23
+formfyxer/data/included_fields.joblib,sha256=_y6IxUFeyxFcHFkjSS3lzZVrfY0yrcFiSnAI_2fXSnc,354
+formfyxer/data/jurisdictions.joblib,sha256=XNN4RDH3OKJ6RTFEp9HfDg-kJd7p_V2Yx0DQpFlwzKM,23
+formfyxer/keys/openai_key.txt,sha256=q5zQ2xJQuGMO0YgJqJHAZcx2buz7El3cyUEySMIy_pU,30
+formfyxer/keys/openai_org.txt,sha256=VgtIgp2gA_tARjcr8JOQAzqwSvpH5N5XlA6IzJwwHNY,30
+formfyxer/keys/spot_token.txt,sha256=3mEx7wYWC_BtQj93lJT7To9csHvHq8ChTMBbhb6-KqI,30
+formfyxer-0.1.1.dist-info/LICENSE,sha256=kMZ-_AEUinrnUsTB8uJ8i3DOFp1jlHLWFrIeA3Dc-Uc,1092
+formfyxer-0.1.1.dist-info/METADATA,sha256=WUbKQZYiWXG4e1PF-LVBHmYmp7_n1V-ur9pH9_Pbgyo,27468
+formfyxer-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+formfyxer-0.1.1.dist-info/top_level.txt,sha256=H4GeXvqKzI3NKJydFTrmmXAz2li_12F0nPdrBI9OG30,10
+formfyxer-0.1.1.dist-info/RECORD,,
