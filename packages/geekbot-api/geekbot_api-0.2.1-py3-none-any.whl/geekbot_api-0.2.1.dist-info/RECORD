@@ -1,0 +1,13 @@
+geekbot_api/__init__.py,sha256=-6lMVSNP4Se_8sstg1_gs5fr2Lu5eNJ_3FYPmVD47v0,90
+geekbot_api/client.py,sha256=bnO47qDuaKPUo92pLZbcNGk5i1088t5ZW7KOqEYh1CU,1680
+geekbot_api/clients/__init__.py,sha256=xjreuBuut47zi7r_OCPoE9X_Dpoi9Uy2KKmyRuEV78Q,4836
+geekbot_api/clients/reports.py,sha256=csuOA4N8PQawIfy1IeuEJcmTWOYIruf5jUPeEbeO37w,1447
+geekbot_api/clients/standups.py,sha256=PECCfnkxUhhACUORQbv4Ix2uGGAXtYEZJmuVjV2QShM,4163
+geekbot_api/clients/teams.py,sha256=jsyBHTizHsM1yNlo6qUBY1PXuji3ir6ZGvfymEqDJ04,1018
+geekbot_api/config.py,sha256=zqp_nE4knQikRM9koTp9vU3gJiZRd22zeeENFlI5r1Q,320
+geekbot_api/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geekbot_api/schemas.py,sha256=o88cubLDnxXK2wzZVoZCr0zUatxA8oWU7X1xfnMJhIY,1969
+geekbot_api-0.2.1.dist-info/LICENSE,sha256=ydFqvrkXKaeJO0zNAfdoLuguBT2avDp3jLWzOSyU14Y,1073
+geekbot_api-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+geekbot_api-0.2.1.dist-info/METADATA,sha256=9LhoOv7pUA6wdGyweYG-gAXhd-iIhi43MAGblti8UzU,7949
+geekbot_api-0.2.1.dist-info/RECORD,,
