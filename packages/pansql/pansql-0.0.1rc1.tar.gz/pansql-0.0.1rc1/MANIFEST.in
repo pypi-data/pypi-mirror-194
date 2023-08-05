@@ -1,0 +1,3 @@
+recursive-include pansql/data *
+include *.txt
+include *.md
