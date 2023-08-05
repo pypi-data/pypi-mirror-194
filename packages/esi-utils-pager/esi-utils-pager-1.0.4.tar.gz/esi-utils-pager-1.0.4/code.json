@@ -1,0 +1,38 @@
+[
+  {
+    "name": "esi-utils-pager",
+    "organization": "U.S. Geological Survey",
+    "description": "Library for PAGER loss modeling",
+    "version": "main",
+    "status": "Development",
+    "permissions": {
+      "usageType": "openSource",
+      "licenses": [
+        {
+          "name": "Public Domain, CC0-1.0",
+          "URL": "https://code.usgs.gov/ghsc/esi/esi-utils-pager/-/raw/main/LICENSE.md"
+        }
+      ]
+    },
+    "homepageURL": "https://github.com/usgs/mapio",
+    "downloadURL": "https://code.usgs.gov/ghsc/esi/esi-utils-pager/-/archive/main/esi-utils-pager-main.zip",
+    "disclaimerURL": "https://code.usgs.gov/ghsc/esi/esi-utils-pager/-/raw/main/DISCLAIMER.md",
+    "repositoryURL": "https://code.usgs.gov/ghsc/esi/esi-utils-pager.git",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+      "losses",
+      "earthquakes"
+    ],
+    "languages": [
+      "python"
+    ],
+    "contact": {
+      "name": "Mike Hearne",
+      "email": "mhearne@usgs.gov"
+    },
+    "date": {
+      "metadataLastUpdated": "2022-12-16"
+    }
+  }
+]
