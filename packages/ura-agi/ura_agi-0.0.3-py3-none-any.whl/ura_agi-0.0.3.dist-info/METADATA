@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ura-agi
+Version: 0.0.3
+Summary: Lib for scripts AGI (Asterisk Gateway Interface)
+Home-page: UNKNOWN
+Author: Tatianno Alves
+Author-email: tferreiraalves@gmail.com
+License: MIT License
+Keywords: asterisk agi ura query API
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pyst2
+Requires-Dist: wheel
+
+#  UraAgi
+
+## Overview
+
+Lib for scripts AGI (Asterisk Gateway Interface)
+
+
+## Installing UraAgi and Supported Versions
+
+UraAgi is available on PyPI:
+
+`$ python -m pip install ura-agi`
+
+UraAgi officially supports Python 3.8+.
+
+## Cloning the repository
+
+`$ git clone https://github.com/tatianno/ura-agi.git`
+
