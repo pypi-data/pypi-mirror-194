@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: changelogd
+Version: 0.1.8
+Summary: Changelogs without conflicts.
+Home-page: https://github.com/aklajnert/changelogd
+Author: Andrzej Klajnert
+Author-email: python@aklajnert.pl
+License: MIT license
+Keywords: changelogd
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+changelogd
+==========
+
+
+.. image:: https://img.shields.io/pypi/v/changelogd.svg
+        :target: https://pypi.python.org/pypi/changelogd
+
+.. image:: https://dev.azure.com/aklajnert/changelogd/_apis/build/status/aklajnert.changelogd?branchName=master
+
+
+Changelogs without conflicts.
+
+
+* Free software: MIT license
+* Documentation: https://changelogd.readthedocs.io.
+
+
+Overview
+--------
+
+Changelogd allows teams to avoid merge conflicts for the changelog files. 
+The ``changelogd`` content is stored within multiple YAML files - one per each 
+changelog entry. Then, during application release, all input files are combined 
+into one release file. The script uses Jinja2 templates to generate one consistent 
+text file out of all input YAML files. The default output format is Markdown, but 
+by modifying the templates it can be changed into any text format you like. 
+
+Installation
+------------
+
+You can install ``changelogd`` via `pip`_ from `PyPI`_::
+
+    $ pip install changelogd
+
+Quickstart
+----------
+
+First, initialize ``changelogd`` configuration.
+
+.. code-block:: bash
+
+    $ changelogd init
+    Created main configuration file: changelog.d\config.yaml
+    Copied templates to changelog.d\templates
+
+Then, create changelog entries:
+
+.. code-block:: bash
+
+    $ changelogd entry
+            [1]: Features [feature]
+            [2]: Bug fixes [bug]
+            [3]: Documentation changes [doc]
+            [4]: Deprecations [deprecation]
+            [5]: Other changes [other]
+    > Select message type [1]: 2
+    > Issue ID: 100
+    > Changelog message: Changelog message
+    Created changelog entry at changelog.d\bug.a3f13823.entry.yaml
+
+Finally, generate changelog file.
+
+.. code-block:: bash
+
+    $ changelogd release version-number
+    > Release description (hit ENTER to omit): This is the initial release.
+    Saved new release data into changelog.d\releases\0.release-name.yaml
+    Generated changelog file to changelog.md
+
+Output file:
+
+.. code-block:: md
+
+    # Changelog  
+    
+    
+    ## version-number (2020-01-11)  
+    
+    This is the initial release.  
+    
+    ### Bug fixes  
+    * [#100](http://repo/issues/100): Changelog message ([@user](user@example.com))  
+
+Documentation
+-------------
+
+For full documentation, please see https://changelogd.readthedocs.io/en/latest/.
+
+License
+-------
+
+Distributed under the terms of the `MIT`_ license, "changelogd" is free and open source software
+
+Issues
+------
+
+If you encounter any problems, please `file an issue`_ along with a detailed description.
+
+
+
+.. _`MIT`: http://opensource.org/licenses/MIT
+.. _`file an issue`: https://github.com/aklajnert/changelogd/issues
+.. _`pip`: https://pypi.org/project/pip/
+.. _`PyPI`: https://pypi.org/project
+
+History  
+=======
+
+0.1.8 (2023-02-24)  
+------------------
+
+Features  
+~~~~~~~~
+* `#37 <https://github.com/aklajnert/changelogd/pull/37>`_: Allow to set default values for entries.
+* `#36 <https://github.com/aklajnert/changelogd/pull/36>`_: Allow to add entry to the existing release.
+
+0.1.7 (2022-10-10)  
+------------------
+
+Minor improvements  
+~~~~~~~~~~~~~~~~~~
+* `#26 <https://github.com/aklajnert/changelogd/pull/26>`_: Trim whitespace from multi-value fields.
+
+Other changes  
+~~~~~~~~~~~~~
+* `#25 <https://github.com/aklajnert/changelogd/pull/25>`_: Switch to GitHub Actions.
+
+0.1.6 (2022-09-06)  
+------------------
+
+Features  
+~~~~~~~~
+* `#21 <https://github.com/aklajnert/changelogd/pull/21>`_: Add support for computed values.
+
+Minor improvements  
+~~~~~~~~~~~~~~~~~~
+* `#7 <https://github.com/aklajnert/changelogd/pull/7>`_: Add a readme file that will be put into the changelogd config directory.
+
+Other changes  
+~~~~~~~~~~~~~
+* `#19 <https://github.com/aklajnert/changelogd/pull/19>`_: Remove invalid pytest option.
+* `#18 <https://github.com/aklajnert/changelogd/pull/18>`_: Add support for python 3.9 and 3.10, fix tests.
+
+0.1.5 (2020-01-30)  
+------------------
+
+Minor improvements  
+~~~~~~~~~~~~~~~~~~
+* `#6 <https://github.com/aklajnert/changelogd/pull/6>`_: Add __main__.py file to allow invoking via `python -m changelogd`.
+
+0.1.4 (2020-01-24)  
+------------------
+
+Minor improvements  
+~~~~~~~~~~~~~~~~~~
+* `#5 <https://github.com/aklajnert/changelogd/pull/5>`_: Save timestamp with entry YAML, so the order won't be affected by simple file modification.
+* `#4 <https://github.com/aklajnert/changelogd/pull/4>`_: Display entry title with `Select message type` question.
+
+0.1.3 (2020-01-20)  
+------------------
+
+Features  
+~~~~~~~~
+* `#2 <https://github.com/aklajnert/changelogd/pull/2>`_: Allow to control which user data will be saved in entries.
+* `#3 <https://github.com/aklajnert/changelogd/pull/3>`_: Automatically add new entries and releases to git.
+
+Other changes  
+~~~~~~~~~~~~~
+* `#1 <https://github.com/aklajnert/changelogd/pull/1>`_: Switch from ``tox`` to ``nox`` for running tests and tasks.
+
+0.1.2 (2020-01-17)  
+------------------
+
+Bug fixes  
+~~~~~~~~~
+* Fixed missing templates from the ``MANIFEST.in``
+
+0.1.1 (2020-01-16)  
+------------------
+
+Initial release  

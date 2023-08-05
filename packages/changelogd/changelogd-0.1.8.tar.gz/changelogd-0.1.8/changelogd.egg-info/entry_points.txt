@@ -1,0 +1,2 @@
+[console_scripts]
+changelogd = changelogd.cli:main
