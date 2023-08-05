@@ -1,0 +1,14 @@
+financedatabase/Cryptos.py,sha256=0ICmyZaC2DRgWB3Rofun4m8XaXo91uJU4gd5QodyRuo,3346
+financedatabase/Currencies.py,sha256=HuFQcUEox6GfUbyNnEVz1DY_IlQ9v9_WmKewY9Q6o7k,3262
+financedatabase/ETFs.py,sha256=e-nNx5QpIF1jD4cwEwL6C63xjb0H9u43yEvyjuy2eiM,4824
+financedatabase/Equities.py,sha256=o2q2UD-gJCGSHhCtgJWq8h5q6MHdM1OURG1QjhSWnv0,5760
+financedatabase/Funds.py,sha256=26-auVWBWhbL5dXXFR2QwyjgyyhDwTVamhRcO7Hcl6A,5203
+financedatabase/Indices.py,sha256=aiZ9jZqAJ0g7cXbGp_eUickQKETkFeDm0Q4WRNZez00,3529
+financedatabase/Moneymarkets.py,sha256=OTX7vXgNtIHvKbEhG6dzBdV7wuHQSWaxElCDM8FFQ4o,3420
+financedatabase/__init__.py,sha256=nRIVdRZH5SxCXSdJSzW-deq2MXPbju5p-Gr-wfaha84,329
+financedatabase/helpers.py,sha256=ZnLmIwQ92mOHSybyzbTzqc6uoL53Tc68o0udTSVpHXs,5187
+financedatabase-2.0.6.dist-info/LICENSE,sha256=qTv4-uQYkTyYVnb76tAYQUGrYzYvjoDL34OS1emClh4,1069
+financedatabase-2.0.6.dist-info/METADATA,sha256=Z9ovNhXyK2w5oHDWvrhmj2W0DsCH3ckpLGSxRDPnnOg,28264
+financedatabase-2.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+financedatabase-2.0.6.dist-info/top_level.txt,sha256=eDQg1012ir5f9YTBpPgtdiRsBTCnu8jbN3T8SIuDcX4,16
+financedatabase-2.0.6.dist-info/RECORD,,
