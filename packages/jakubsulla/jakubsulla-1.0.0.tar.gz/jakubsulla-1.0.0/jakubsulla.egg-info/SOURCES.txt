@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jakubsulla/__init__.py
+jakubsulla/functions.py
+jakubsulla.egg-info/PKG-INFO
+jakubsulla.egg-info/SOURCES.txt
+jakubsulla.egg-info/dependency_links.txt
+jakubsulla.egg-info/top_level.txt
