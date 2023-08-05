@@ -1,0 +1,14 @@
+tract/__init__.py,sha256=CV-VLl_3sJ2-QDgaCFKz44bJihYqW0Yoz6LVaaOjqCU,513
+tract/bindings.py,sha256=B3usDJY3thfVK4NpflV7CFmCJCIXnqOZZh-oBs462aE,642
+tract/fact.py,sha256=Wyibs-CKCOp5kxNKm16KUuynwCvPkAT6Zj8tvV8v_eU,1269
+tract/inference_model.py,sha256=RExaA9fobPw4-QnlUDyC70Aq3ce5I5UMhPxgTFbZm4w,3541
+tract/model.py,sha256=AUKfWlVajziyHfyhIL8vq2atRXyj83sJtwMOLz4dvrU,4673
+tract/nnef.py,sha256=IUoMLNEWRW7F17ufNW6B48MjrqUZZpY3cNhuJkv3Z2U,2359
+tract/onnx.py,sha256=UuUcCmdeUm9eyxhNNv00Wq3AIHiY1ubWoqkf-JoAbtw,626
+tract/runnable.py,sha256=4SH6M_itoRIpFKF8btG5ZuKryk994MTEFKoRa3xwEpw,1442
+tract/tract.cpython-38-darwin.so,sha256=tED2YkdWFXFaSKT6mV-wsG4W7Ha4Cvc0j_NND1JU0NI,37646699
+tract/value.py,sha256=RScWpib9-aOPdhWndQQQCMCXTeH9UV19m_aygC4rDOw,2439
+tract-0.19.6.dist-info/METADATA,sha256=Cv_AeoVIkYnMkxyVUc-C36QGEodOGaJJZuZxDJjzKjI,12173
+tract-0.19.6.dist-info/WHEEL,sha256=f0DNLMaNsc-95zYGo8YHdJDGIYxIuAJmaOltzIIjqBk,113
+tract-0.19.6.dist-info/top_level.txt,sha256=B1gT75LRzup-gi_p20cdHo12On3unpfZ9Zv83iMnQww,6
+tract-0.19.6.dist-info/RECORD,,
