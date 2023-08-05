@@ -1,0 +1,2 @@
+class SecretNameOrRegionMissingException(Exception):
+    pass
