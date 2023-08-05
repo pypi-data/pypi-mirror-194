@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+funEnsemble/__init__.py
+funEnsemble/fda_results.py
+funEnsemble/functional_ensemble_clustering.py
+funEnsemble.egg-info/PKG-INFO
+funEnsemble.egg-info/SOURCES.txt
+funEnsemble.egg-info/dependency_links.txt
+funEnsemble.egg-info/top_level.txt
