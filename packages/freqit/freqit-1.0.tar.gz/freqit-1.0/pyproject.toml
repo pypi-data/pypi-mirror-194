@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "freqit"
+version = "1.0"
+authors = [
+  { name="Lauren McNamara", email="lauren.mcnamara@gmail.com"},
+]
+dependencies = ["pandas"]
+description = "Better frequency and crosstab tables."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/la-mcnamara/freqit"
+"Bug Tracker" = "https://github.com/la-mcnamara/freqit/issues"

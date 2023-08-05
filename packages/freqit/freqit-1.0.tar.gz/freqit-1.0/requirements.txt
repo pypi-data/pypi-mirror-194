@@ -1,0 +1,6 @@
+# requirements for software
+
+# python 3.8
+
+pandas==1.4.4
+numpy==1.22.4
