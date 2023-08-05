@@ -1,0 +1,7 @@
+deemix~=3.6
+packaging
+requests
+click~=8.0
+setuptools
+PlexAPI~=4.5
+tqdm~=4.61
