@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: micropython-firebase-realtime
+Version: 0.0.1
+Summary: Firebase realtime implementation for Micropython
+Home-page: https://gitlab.com/mayankjohri/micropython-firebase-realtime
+Author: mayankjohri
+Author-email: mayankjohri@gmail.com
+License: UNKNOWN
+Keywords: firebase,GoogleMicrocontroller,Micropython
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# micropython-firebase-realtime
+
+
+
+## Getting started
+
+Firebase auth & realtime database implementation based on REST API, 
+
+
+
+## Installation
+You can use uPip to install library from PyPi
+
+```python
+import upip
+upip.install("micropython-firebase-auth")
+```
+or you can just upload firebase_realtime.py to your microcontroller's `lib` folder, using Tonny IDE.
+
+
+## Commands implemented
+### Auth
+- add_user
+- validate_user
+
+### Realtime Database
+- put
+- patch
+- post
+- get
+- delete
+
+## Examples
+```python
+
+from firebase_realtime import Auth, Realtime
+
+# Please provide appropriate project_id
+# PROJECT_ID = <project_id>
+real_db_url = f"https://{PROJECT_ID}.firebaseio.com/"
+auth = Auth()
+flg, headers = auth.validate_user(email, password, API_KEY)
+print(flg, headers)
+realtime = Realtime(real_db_url, headers)
+print(realtime)
+flg, data = realtime.put("test123", data={"test1": 123})
+print(flg, data)
+flg, data = realtime.patch("test123", data_tag={"test2": 1232})
+print(flg, data)
+flg, data = realtime.patch("test123", data_tag={"test3": 1233})
+print(flg, data)
+flg, data = realtime.get("test123")
+print(flg, data)
+flg, data = realtime.delete("test123")
+print(flg, data)
+```
+
+## License
+For open source projects, say how it is licensed with GNU 3.0 or later
+
+## Project status
+Will keep it update as and when needed.
+
