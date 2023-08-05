@@ -1,0 +1,27 @@
+scipy>=1.4.0
+numpy
+sympy>=1.0
+
+[:python_version <= "3.8"]
+importlib_metadata
+
+[dev]
+matplotlib
+pytest-cov
+check-manifest
+autograd
+sphinx
+sphinx_rtd_theme
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[examples]
+matplotlib
+
+[test]
+pytest-cov
+check-manifest
+matplotlib
+autograd
