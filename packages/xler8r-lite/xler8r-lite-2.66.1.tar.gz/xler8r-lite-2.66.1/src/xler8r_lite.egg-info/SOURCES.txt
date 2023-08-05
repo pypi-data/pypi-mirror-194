@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/xler8r-lite/__init__.py
+src/xler8r-lite/py.typed
+src/xler8r-lite/_jsii/__init__.py
+src/xler8r-lite/_jsii/xler8r-lite@2.66.1.jsii.tgz
+src/xler8r_lite.egg-info/PKG-INFO
+src/xler8r_lite.egg-info/SOURCES.txt
+src/xler8r_lite.egg-info/dependency_links.txt
+src/xler8r_lite.egg-info/requires.txt
+src/xler8r_lite.egg-info/top_level.txt
