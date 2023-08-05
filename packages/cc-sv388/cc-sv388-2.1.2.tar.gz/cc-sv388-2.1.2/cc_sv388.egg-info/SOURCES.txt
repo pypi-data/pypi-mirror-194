@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cc_sv388.egg-info/PKG-INFO
+cc_sv388.egg-info/SOURCES.txt
+cc_sv388.egg-info/dependency_links.txt
+cc_sv388.egg-info/top_level.txt
+sv388/__init__.py
+sv388/client.py
+sv388/exceptions.py
+sv388/settings.py
