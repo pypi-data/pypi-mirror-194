@@ -1,0 +1,14 @@
+scribe_updater/__init__.py,sha256=I5u6uLh7NsbyGkKLvVteW175Afe6HJt5UsjBZ28EGks,23
+scribe_updater/changelog.py,sha256=qzOxSORVmZaHRDG8zM5Y-X-lAgERH-L7XjQDipXwh_0,7382
+scribe_updater/console.py,sha256=-Vv55JW4-ZwlitUAvyuYzO6EawRaj8Fyq1t4mnXHZZg,1839
+scribe_updater/product.py,sha256=Bbl7WohVHf2CKG1LZrpgtYjBR1EQx6EM8G1y8emY--Y,3897
+scribe_updater/updater.py,sha256=Wbzjgj_k22bKqOTacpLV8PGFA5SeW20HCNmfYC03nVg,4784
+scribe_updater/utils.py,sha256=ffrPghpW8lxNMkOzkibUWqQVGumaLK8VFZlCXpBf4Z0,10044
+scribe_updater/version_mapping/3.3_to_3.5.json,sha256=y7g6k6flyVDtwAYLDJD-ZKDotGyS396nhQFFYBAu0og,1152
+scribe_updater/version_mapping/3.3_to_3.6.json,sha256=fayiTGUI9dwxrZ6p3Up3_Yf8mOKbPvERG5QcCHVlJu4,1205
+scribe_updater/version_mapping/3.3_to_3.7.json,sha256=xC2-9PLQLGLn8xZMpk-AklGp9xp_qOEsPpDIUfI1Ef8,1259
+scribe_updater/version_mapping/3.3_to_3.9.json,sha256=YP9RK6SH1mAQBM5wSFAK4cyfJYF8B2Pf8vwzknQM0Cc,1687
+scribe_updater-0.17.2.dist-info/entry_points.txt,sha256=mW24DEZ9ZXAdTDbSFgigyfL63QPISKQ6A8VbpaattF8,55
+scribe_updater-0.17.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+scribe_updater-0.17.2.dist-info/METADATA,sha256=QeaWNOfhQ2VrR5gDztAOX1HqIQ3VRI52R9IQDNYZ-8w,2750
+scribe_updater-0.17.2.dist-info/RECORD,,
