@@ -1,0 +1,3 @@
+[console_scripts]
+dc = dallecli.cli:cli
+
