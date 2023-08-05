@@ -1,0 +1,16 @@
+preservationdatabase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preservationdatabase/cli.py,sha256=m0_jlfLW7pDsh8cC-ZKHPt1IIwYQ3XDYG0b0EpnnsM4,11317
+preservationdatabase/constants.py,sha256=IgEgS8g9eKXhMc1NASIQoEx4tXt2vofPaYl2qx68tK8,496
+preservationdatabase/environment.py,sha256=g3Gw0tXpzRJa2NpSNEt2zG6Y0QyFWVvXUJmV7q4uIWg,1330
+preservationdatabase/example_settings.py,sha256=6zF9alSLyLTPCmuF5T9Oqv8gExEfUsUax-tGmIDyzok,3450
+preservationdatabase/exporter.py,sha256=gMCMY21w8yOrGYGrkJH-mnY-2r9k60xH_COblUtc6e0,7066
+preservationdatabase/models.py,sha256=CdfKZiLnKHI6HtXYtO6POqAwnDNGWR9BS_4WXxrRrLU,32968
+preservationdatabase/urls.py,sha256=nUmiDtLY-_eH_7JrwxAo1Lq8AaKtZCQxZRFKfLo5WMc,767
+preservationdatabase/utils.py,sha256=LMkLwxh3lfN0y1xWS8lM3ThvNcV63eH1Sc8hoSlGuFM,20138
+preservationdatabase/test_data/tests.jsonl,sha256=hgTHVy3sZa1wMzJvzb9542f9GoSoHPnVrKAqyN1q0nA,888
+preservationdatabase/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preservationdatabase/tests/test_archives.py,sha256=w4-dr4pLlrlprhf2K--vWOAZKQNOwklzxNdvkj6oe0w,2072
+preservation_database-0.0.43.dist-info/METADATA,sha256=LrF-_-xyB0obs-6drYZ637xTHXjF2DGenSCsLsfEi6g,4290
+preservation_database-0.0.43.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+preservation_database-0.0.43.dist-info/top_level.txt,sha256=HiII-eq8eD-ug32FAbQaESyhFIi9F5Y4PVY_SiFyQyo,21
+preservation_database-0.0.43.dist-info/RECORD,,
