@@ -1,0 +1,4 @@
+openai==0.25.0
+click==7.1.2
+multidict==6.0.4
+aiohttp
