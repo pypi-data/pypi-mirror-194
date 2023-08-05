@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+virtual/virtual.py
+virtualpy.egg-info/PKG-INFO
+virtualpy.egg-info/SOURCES.txt
+virtualpy.egg-info/dependency_links.txt
+virtualpy.egg-info/top_level.txt

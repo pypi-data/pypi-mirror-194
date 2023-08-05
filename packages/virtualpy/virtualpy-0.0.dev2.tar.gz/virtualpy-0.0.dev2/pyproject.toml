@@ -1,0 +1,21 @@
+[project]
+name = 'virtualpy'
+version = '0.0.dev2'
+authors = [
+{ name = 'Dylan Rogers', email = 'opendylan@proton.me' },
+]
+description = 'Virtual: The Python virtualisation software that allows you to create custom systems!'
+readme = 'README.md'
+requires-python = '>=2.0'
+classifiers = [
+	'Programming Language :: Python',
+	'License :: OSI Approved :: MIT License',
+	'Operating System :: OS Independent',
+]
+
+[project.urls]
+'Homepage' = 'https://github.com/opendylan/virtualpy'
+'Bug Tracker' = 'https://github.com/opendylan/virtualpy/issues'
+
+[tool.poetry.scripts]
+vm = 'virtualpy.virtual:main'
