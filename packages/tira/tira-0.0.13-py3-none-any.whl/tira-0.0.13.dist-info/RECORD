@@ -1,0 +1,12 @@
+tira/__init__.py,sha256=GrR04M5XPdTqRspTa0ixVnP3LTaWQg0m6zaKvtSuDV4,24
+tira/io_utils.py,sha256=9k90WZXEgTr6iCcdkX35C6c06svOIHEKVnuITv7561E,1012
+tira/local_client.py,sha256=5WrbgKXaZkTK5eFKJHPrXSYbdIIE7xLzFVU4yDvSdQs,9182
+tira/local_execution_integration.py,sha256=c2EhY5qIwZFwEPTdeRjtagkHCX0l1DvpIgdr9h0sPvo,3131
+tira/pyterrier_integration.py,sha256=bh6kGSTpduuMwUN_JUR5QcwzqP6GgieSv84DZhVe2Y8,1847
+tira/pyterrier_util.py,sha256=1ZXfZ4cLHieh0KxyDUSYOsIOyH0Z9xYQyvSLo8WizKw,4215
+tira/rest_api_client.py,sha256=lXHi3s1bEN3Il1QnfmZfeujMLhoAJ0gdskLCBRKNgg4,9049
+tira/third_party_integrations.py,sha256=QZ-NEBkQyD8MSacxHUd8ZtX6CXjBr-Ag2tfTt2Earr8,4213
+tira-0.0.13.dist-info/METADATA,sha256=_WWS83atlV-QGTT7IcB4EYtKIxuDfK4buIA_qP1ltzg,1001
+tira-0.0.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tira-0.0.13.dist-info/top_level.txt,sha256=Cmn2jAOjNUnXGPa21lt2J8J076ipDQ9k000fdf_pRs4,5
+tira-0.0.13.dist-info/RECORD,,
