@@ -1,0 +1,6 @@
+from politicsnlp.people.person import *
+from politicsnlp.people.masses import *
+from politicsnlp.people.people import *
+from politicsnlp.people.crowd import *
+from politicsnlp.people.pink_youth import *
+from politicsnlp.people.red_generation import *
