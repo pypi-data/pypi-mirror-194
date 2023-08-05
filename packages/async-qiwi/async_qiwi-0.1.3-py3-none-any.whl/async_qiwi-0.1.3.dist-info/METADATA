@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: async-qiwi
+Version: 0.1.3
+Summary: Qiwi API and QIWI p2p API
+Author: VoXDoX
+Author-email: 1voxdox1@gmail.com
+Project-URL: Документация, https://t.me/AsyncQiwi
+Project-URL: Телега, https://t.me/end_soft
+Keywords: qiwi,p2p qiwi,qiwi-api,aioqiwi
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools (~=65.5.1)
+Requires-Dist: certifi (~=2022.9.24)
+Requires-Dist: aiohttp (~=3.8.3)
+
+# Installation | Установка
+
+## Windows
+```
+pip install async-qiwi
+```
+
+## Linux
+```
+pip3 install async-qiwi
+```
+![изображение](https://imgur.com/kFB0bd4.png)
+
+
+# Information | Информация
+Актуальная версия AsyncQiwi 0.1.0
+
+## Methods | Фyнкции
+```
+Получение актуального баланса по нужной валюте
+Получение номера телефона
+Работа с Qiwi P2P Kassa
+ ```
