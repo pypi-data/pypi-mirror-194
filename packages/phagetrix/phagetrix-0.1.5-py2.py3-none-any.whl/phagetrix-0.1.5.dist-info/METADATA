@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: phagetrix
+Version: 0.1.5
+Summary: Optimizer for degenerate codon use in phage library generation
+Home-page: https://github.com/retospect/phagetrix
+License: GPL-3
+Keywords: example
+Author: Reto Stamm
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: python_codon_tables
+Description-Content-Type: text/markdown
+
+[![check](https://github.com/retospect/phagetrix/actions/workflows/check.yml/badge.svg)](https://github.com/retospect/phageterix/actions/workflows/check.yml)
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/retospect/phagetrix/blob/main/phagetrix.ipynb)
+
+# Phagetrix
+
+A codon optimizer for phage display library generation.
+
+## Try before buy
+
+Try in Google Colab for free right now: 
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/retospect/phagetrix/blob/main/phagetrix.ipynb)
+
