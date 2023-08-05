@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mecord-cli
+Version: 0.0.4
+Summary: mecord tools
+Author: pengjun
+Author-email: mr_lonely@foxmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Mecord Cli
+===============================================
+The Mecord-Cli is a official tool for mecodr, you can use it to **Register** device to mecord server, other person can use **Mecord Application** assign tasks to you for implementation
+
+Installation
+------------
+
+The Mecord-Cli requires [Python](http://www.python.org/download) 3.10.6
+or later.
+
+### Installing
+
+    pip install mecord-cli
+
+### Uninstalling
+
+    pip uninstall mecord-cli
