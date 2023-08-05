@@ -1,0 +1,40 @@
+{% extends live_template_path %}
+
+{% block head_html %}
+{{ super() -}}
+<meta name="title" property="og:title" content="{{ name }}" />
+<meta name="description" property="og:description" content="{{ description }}">
+<meta name="image" property="og:image" content="{{ host_uri }}{{ root_uri }}/favicon.ico" />
+<meta property="og:url" content="{{ host_uri }}{{ root_uri }}{{ uri }}" />
+<meta name="twitter:card" content="summary">
+{% endblock %}
+
+{% block header_html %}
+{% if not for_embed %}
+<a href="{{ root_uri or '/' }}">Root</a> &gt;
+<a href="{{ root_uri }}{{ uri }}">{{ name }}</a>
+{% endif %}
+{% endblock %}
+
+{% block main_html %}
+{% if step_name != 'none' %}
+{{ super() }}
+{% include 'step-main.html' %}
+{% endif %}
+{% if not for_embed %}
+<ul class="_batches">
+{% for batch in batches %}
+<li>
+{{ batch['name'] }}
+<a href="{{ root_uri }}{{ uri }}{{ batch['uri'] }}/i">[input]</a>
+<a href="{{ root_uri }}{{ uri }}{{ batch['uri'] }}/o">[output]</a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
+
+{% block body_js %}
+{% include 'step-body.js' %}
+{{ super() }}
+{% endblock %}

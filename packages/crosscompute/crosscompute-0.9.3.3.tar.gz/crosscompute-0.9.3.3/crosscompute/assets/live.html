@@ -1,0 +1,99 @@
+{% extends base_template_path %}
+
+{% block head_html %}
+{{ super() -}}
+<script>
+const variables = {}, callbacks = {}, isSecure = location.protocol == 'https:', getTime = () => (new Date).getTime(), sleep = t => new Promise(r => setTimeout(r, t));
+function register(xs, k, v) {
+  const ys = xs[k];
+  if (ys === undefined) {
+    xs[k] = [v];
+  } else {
+    ys.push(v);
+  }
+}
+function registerCallback(variableId, f) {
+  register(callbacks, variableId, f);
+}
+</script>
+{%- endblock %}
+
+{% block body_js %}
+{% if step_name != 'input' %}
+async function runEach(xs) {
+  await Promise.all((xs || []).map(_ => _()));
+}
+async function refreshVariable(variableId) {
+  await runEach(functions[variableId]);
+  await runEach(callbacks[variableId]);
+{% if not with_restart %}
+  if (variableId == 'return_code') {
+    isDone = 1;
+  }
+{% endif %}
+}
+{% endif %}
+{{ super() -}}
+{% if with_restart or is_done == 0 %}
+async function processMutations() {
+  const uri = '{{ root_uri }}{{ mutation_uri }}';
+  try {
+    const r = await fetch(`${uri}?t=${mutationTimestamp}`), d = await r.json(), { styles: ss, variables: vs } = d;
+{% if with_restart %}
+    if (
+      d.server_timestamp != {{ server_timestamp }} ||
+      d.configurations.length ||
+      d.templates.length
+    ) {
+      refreshPage();
+    } else if (ss.length) {
+      refreshStyle();
+    }
+{% endif %}
+{% if step_name != 'input' %}
+    await Promise.all(vs.map(_ => refreshVariable(_.id)));
+{% endif %}
+    mutationTimestamp = d.mutation_timestamp;
+    pingInterval = {{ minimum_ping_interval_in_milliseconds }};
+  } catch (e) {
+    if (pingInterval < {{ maximum_ping_interval_in_milliseconds }}) {
+      pingInterval *= 1.1;
+    }
+    console.error(e);
+  }
+  schedulePolling();
+}
+{% if with_restart %}
+async function refreshPage() {
+  const r = await fetch(location.href, { method: 'head' });
+  if (r.ok) {
+    location.reload();
+  } else {
+    location.href = '{{ root_uri or '/' }}';
+  }
+}
+function refreshStyle() {
+  const { origin } = location;
+  for (var l of document.getElementsByTagName('link')) {
+    if (l.rel !== 'stylesheet' || new URL(l.href).origin !== origin) {
+      continue;
+    }
+    l.href += '?' + Date.now();
+  }
+}
+{% endif %}
+function schedulePolling() {
+{% if not with_restart %}
+  if (isDone) {
+    return;
+  }
+{% endif %}
+  setTimeout(processMutations, pingInterval);
+}
+let mutationTimestamp = {{ mutation_timestamp }}, pingInterval = {{ minimum_ping_interval_in_milliseconds }};
+{% if not with_restart %}
+let isDone = 0;
+{% endif %}
+schedulePolling();
+{% endif %}
+{%- endblock %}
