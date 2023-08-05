@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/tea/__init__.py
+src/tea/main.py
+src/tea/request.py
+src/tea/response.py
+src/tea/url.py
+src/tea_web.egg-info/PKG-INFO
+src/tea_web.egg-info/SOURCES.txt
+src/tea_web.egg-info/dependency_links.txt
+src/tea_web.egg-info/top_level.txt
