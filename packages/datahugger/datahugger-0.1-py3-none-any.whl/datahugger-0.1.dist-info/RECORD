@@ -1,0 +1,13 @@
+datahugger/__init__.py,sha256=duSTyltyGXoBlQeld_Ul_x6wFjuSmCrGNzOJb5Vn98U,73
+datahugger/__main__.py,sha256=xHYXvaioFuWRDZZcTL7Eq1hNMeDzuCZuAkIgUYCI5wk,2814
+datahugger/api.py,sha256=y-BEFxfwTDmLYASopLYeW56T2RhWb8PK270lWiYQ7Fc,9761
+datahugger/base.py,sha256=HKUOogXixx6PQH4tt69VlcG64fmtUhXGed__TA-fmpA,10027
+datahugger/exceptions.py,sha256=4pefn-FG2h6nplXtbNpOO4BLgFGn03R1vg_c2JJF5x8,37
+datahugger/services.py,sha256=58DwoLKTF-mG2m5kQSs34aAz67qBH9xWkFabSEWykzg,8553
+datahugger/utils.py,sha256=csL8ww2Ydtb055HfFeyluBS0aBO_lA4nzwzLv004Kf0,3131
+datahugger-0.1.dist-info/LICENSE,sha256=Mhf5MImRYP06a1EPVJCpkpTstOOEfGajN3T_Fz4izMg,1074
+datahugger-0.1.dist-info/METADATA,sha256=K7XN9D3370R9VFHenjKYcufVaeOmLNuya9lbMUKvEzo,5081
+datahugger-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datahugger-0.1.dist-info/entry_points.txt,sha256=6X5Xje2nPd2Dg71SEXmXRKxWvwdBrilB0pAgLKUNB3Q,56
+datahugger-0.1.dist-info/top_level.txt,sha256=Oi_oA9kiw_H06adJAdAX8sn1KZN-uk_dBbRrB7x_9BQ,11
+datahugger-0.1.dist-info/RECORD,,
