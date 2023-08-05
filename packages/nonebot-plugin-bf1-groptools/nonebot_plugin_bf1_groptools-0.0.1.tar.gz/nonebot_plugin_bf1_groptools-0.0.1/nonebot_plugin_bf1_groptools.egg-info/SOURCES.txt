@@ -1,0 +1,6 @@
+__init__.py
+setup.py
+nonebot_plugin_bf1_groptools.egg-info/PKG-INFO
+nonebot_plugin_bf1_groptools.egg-info/SOURCES.txt
+nonebot_plugin_bf1_groptools.egg-info/dependency_links.txt
+nonebot_plugin_bf1_groptools.egg-info/top_level.txt
