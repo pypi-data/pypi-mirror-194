@@ -1,0 +1,3 @@
+[console_scripts]
+deng=nicolasbancel_de_toolkit.main:cli
+
