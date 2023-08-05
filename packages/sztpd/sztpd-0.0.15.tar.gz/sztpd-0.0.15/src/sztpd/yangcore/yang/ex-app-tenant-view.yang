@@ -1,0 +1,36 @@
+module ex-app-tenant-view {
+  yang-version 1.1;
+  namespace "https://watsen.net/tenant-view";
+  prefix tenant;
+
+  import wn-app {
+    prefix wnapp;
+  }
+
+  organization
+    "Watsen Networks (https://watsen.net)";
+
+  description
+    "INTERNAL USE ONLY, NOT SHARED
+
+     This module defines a data model for a single-tenant application.
+     Copyright (c) 2021 Watsen Networks.  All rights reserved.
+
+     INTERNAL USE ONLY, NOT SHARED";
+
+  revision YYYY-MM-DD {
+    description
+      "Initial version";
+  }
+
+
+  /**********************************************************/
+  /* Protocol-Accessible Nodes (only if module implemented) */
+  /**********************************************************/
+
+  uses wnapp:yangcore-tenant-view-grouping;
+  leaf TENANT-ONLY-LEAF {
+    type string;
+  }
+
+}
