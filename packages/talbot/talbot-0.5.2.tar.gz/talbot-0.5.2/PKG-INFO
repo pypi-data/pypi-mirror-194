@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: talbot
+Version: 0.5.2
+Summary: talbot is now commonmeta-py
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# talbot is now commonmeta-py
+
+This package has been renamed. Use `pip install commonmeta-py` instead.
+
+New package: https://pypi.org/project/commonmeta-py/
+
+

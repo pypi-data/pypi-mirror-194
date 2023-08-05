@@ -1,0 +1,7 @@
+README.md
+setup.py
+talbot.egg-info/PKG-INFO
+talbot.egg-info/SOURCES.txt
+talbot.egg-info/dependency_links.txt
+talbot.egg-info/requires.txt
+talbot.egg-info/top_level.txt
