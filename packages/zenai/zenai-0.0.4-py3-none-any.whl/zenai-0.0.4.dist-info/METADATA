@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: zenai
+Version: 0.0.4
+Requires-Dist: google
+Requires-Dist: protobuf
+Requires-Dist: grpcio
+
