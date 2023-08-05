@@ -1,0 +1,10 @@
+.dropboxkey
+.gtoken
+.mdbpass
+.gitpw
+*.pkl
+*.csv
+Translation/
+__pycache__/
+.ipynb_checkpoints/
+dissertation_data.conf
