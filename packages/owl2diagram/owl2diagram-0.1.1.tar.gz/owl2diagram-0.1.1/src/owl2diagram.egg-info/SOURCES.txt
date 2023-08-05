@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/owl2diagram/__init__.py
+src/owl2diagram/__main__.py
+src/owl2diagram/_version.py
+src/owl2diagram/query.py
+src/owl2diagram/uml.py
+src/owl2diagram.egg-info/PKG-INFO
+src/owl2diagram.egg-info/SOURCES.txt
+src/owl2diagram.egg-info/dependency_links.txt
+src/owl2diagram.egg-info/requires.txt
+src/owl2diagram.egg-info/top_level.txt
+tests/test_feed.py
+tests/test_viewer.py
