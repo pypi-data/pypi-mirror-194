@@ -1,0 +1,15 @@
+pyratings/__init__.py,sha256=gyT8F_4JmHGEIPqXyz8umFmsUI3wDc4_LlcCRnXMpuQ,1889
+pyratings/aggregate.py,sha256=K1vvylEm25ctfLgQ-46VhqMta8GTvnq1_Sw-nW5vgVs,2257
+pyratings/clean.py,sha256=ICmKN3WEOApmzF9p6Z9UhMdRVoYamasfAbSUFmkW6zk,4495
+pyratings/consolidate.py,sha256=OAEek6IRVzZn6TuYx6ZHlh9Zil8FvVomRkDzbAojb_k,16205
+pyratings/get_ratings.py,sha256=7SAKLMks5kl1s7_TLUyOxmxnZuS-p3KNtfkRkAIDAak,21168
+pyratings/get_scores.py,sha256=ifiyMNFLZoyQHU8I0iBjeH3L4PyHF6TOZf8Gh_um0Ec,18650
+pyratings/get_warf.py,sha256=iyi2scONNGjgMGngWa7y97fLyTdoeZx5_wkUlbYKC08,8999
+pyratings/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyratings/resources/Ratings.db,sha256=SRRB_NLwLg7HahAwGDV10WCjWdMaFYzA6DsBrlcIyM0,73728
+pyratings/utils.py,sha256=RaQoEpLZxTRN2RyYIkTAwiLaonL-GwOTmFXFboIPh0M,6666
+pyratings/warf.py,sha256=UFFqDXVITkokQNa3C7obLiCTdDyvM4R4XAlKCUEwMIg,3924
+pyratings-0.6.1.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+pyratings-0.6.1.dist-info/METADATA,sha256=c2djBrOzccmAo1nTikEFfI-DI4jZFcCbDfROyuV0yCg,10142
+pyratings-0.6.1.dist-info/licenses/LICENSE,sha256=TEJ1CKTAgYeEzqO7D3E2Qn7clHAVAj5RNru9TEvY57w,11559
+pyratings-0.6.1.dist-info/RECORD,,
