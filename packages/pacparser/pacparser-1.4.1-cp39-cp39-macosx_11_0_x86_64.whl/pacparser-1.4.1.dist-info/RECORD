@@ -1,0 +1,7 @@
+pacparser/__init__.py,sha256=80iKCx6cB58tc84N1YirahZAfq3ulQ6ADVPg8RcxzxQ,3408
+pacparser/_pacparser.cpython-39-darwin.so,sha256=aPROGOzkpRxcLnqREOdLQb8i7DMqFoPTF7APrny2YBQ,1490144
+pacparser/__pycache__/__init__.cpython-39.pyc,sha256=zqAt104uKygvX_mjU8zlJwQ41Q7hNet6k-xoNZqjWn0,3460
+pacparser-1.4.1.dist-info/METADATA,sha256=ElsG48q0LYWFsVDkvKI-q_2gwdNtWrtQYaRFuZjmsxo,268
+pacparser-1.4.1.dist-info/WHEEL,sha256=Tb_t7JGjS9UNO7L5mRtd9E9oLUA9YQccQulkdRossZI,109
+pacparser-1.4.1.dist-info/top_level.txt,sha256=R4ARIU3RhTiQ639-2yMNqVTbtpQA4VwPw5U7LP0HWHw,21
+pacparser-1.4.1.dist-info/RECORD,,
