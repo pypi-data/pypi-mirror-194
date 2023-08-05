@@ -1,0 +1,43 @@
+[[tool.pdm.autoexport]]
+filename = "requirements_prod.txt"
+groups = [
+    "default",
+]
+without-hashes = true
+
+[project]
+name = "torchaction"
+version = "0.0.1-dev"
+description = "Action for training/test using pytorch."
+authors = [
+    { name = "TaoChenyue", email = "3038816978@qq.com" },
+]
+dependencies = [
+    "tqdm>=4.64.1",
+    "torch>=1.13.1",
+    "tensorboardX>=2.6",
+    "pyyaml>=6.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+dev = [
+    "toml>=0.10.2",
+    "pip>=23.0.1",
+    "black>=23.1.0",
+]
+test = [
+    "torchvision>=0.14.1",
+    "torchmetrics>=0.11.1",
+    "torchaudio>=0.13.1",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
