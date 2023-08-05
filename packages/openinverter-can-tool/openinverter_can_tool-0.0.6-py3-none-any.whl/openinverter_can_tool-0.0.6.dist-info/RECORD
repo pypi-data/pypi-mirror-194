@@ -1,0 +1,16 @@
+openinverter_can_tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openinverter_can_tool/__main__.py,sha256=6jsD0ddt--5FkL2ybxXMdH_sc_kR6IQSw0EH-0S-r8E,104
+openinverter_can_tool/cli.py,sha256=pUGvN14va_NJEZwyx7HUT68nm9t6mV9BC3gGZeA_JSI,15026
+openinverter_can_tool/constants.py,sha256=5F3oM0fNh_YAMQ58Cie8kKluTc09kzrVeGdDKiAu_ek,836
+openinverter_can_tool/fpfloat.py,sha256=y_6jCrIqF28jqRksZxpHsI5CiDJWWgMjdkEZcjJMOLQ,392
+openinverter_can_tool/paramdb.py,sha256=neeC0gvIzux1v-OHuetgHJyPxAjkEXkGgETFTHznxQ0,3766
+openinverter_can_tool-0.0.6.data/data/parameter-databases/c2000-sine.5.14.R.C2000-foc.json,sha256=pcsgEMHpkrOjFOTiXmlpj6jWHsIC7skl-Yt5R33fbIc,12912
+openinverter_can_tool-0.0.6.data/data/parameter-databases/c2000-sine.5.24.R.C2000-foc.json,sha256=YbZEHf-con63h3f8fO_R2KZB942xZfj_wmN9-y34gAg,13368
+openinverter_can_tool-0.0.6.data/data/parameter-databases/stm32-sine.5.24.R-foc.json,sha256=yzxiOtSMRFfbNg_Sfw3n0VdsaO4LX6gmh9rsgxV6q1w,13362
+openinverter_can_tool-0.0.6.data/data/parameter-databases/stm32-sine.5.24.R-sine.json,sha256=n4TIUWKVwbkAgPLWYLi8ZSWO2Df2Uc5O_m_LkoTePP8,13596
+openinverter_can_tool-0.0.6.dist-info/LICENSE.txt,sha256=IrYzgtfdC8rYd7q_ugwMZBpxxT_vcCo2r7WVHerqjog,1089
+openinverter_can_tool-0.0.6.dist-info/METADATA,sha256=Fl0y2cA-XS10L0FO4EK04dVjws5ouBxDJ-aPSA0TJII,7324
+openinverter_can_tool-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+openinverter_can_tool-0.0.6.dist-info/entry_points.txt,sha256=cew1o4NBZ2bHOzhQhpLkfnKFforqJ8oEUDPEQjp46eg,59
+openinverter_can_tool-0.0.6.dist-info/top_level.txt,sha256=2HoXLTmxYc4lKPBLyS-JyaWONiknyPYLaTaGs8w4v64,22
+openinverter_can_tool-0.0.6.dist-info/RECORD,,
