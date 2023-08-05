@@ -1,0 +1,3 @@
+[console_scripts]
+tkutil = tkutil.__main__:main
+
