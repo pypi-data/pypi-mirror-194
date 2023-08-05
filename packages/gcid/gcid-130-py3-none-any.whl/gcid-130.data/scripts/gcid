@@ -1,0 +1,106 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from gcid.default import Default
+from gcid.message import Message
+from gcid.objects import update
+from gcid.handler import Handler, command, parse_cli
+from gcid.modules import cmd, flt, irc, log, mdl, req, rss, tdo, thr
+from gcid.storage import Storage
+from gcid.threads import launch
+from gcid.utility import wait
+
+
+Storage.workdir = os.path.expanduser("~/.gcid")
+
+
+class CLI(Handler):
+
+    def announce(self, txt):
+        pass
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+class Console(CLI):
+
+    def handle(self, event):
+        CLI.handle(self, event)
+        event.wait()
+
+    def poll(self):
+        event = Message()
+        event.txt = input("> ")
+        event.orig = repr(self)
+        return event
+
+
+def waiter():
+    got = []
+    for ex in Handler.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Handler.errors.remove(exc)
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        waiter()
+
+
+def main():
+    evt = parse_cli(" ".join(sys.argv[1:]))
+    cli = CLI()
+    cli.scan(cmd)
+    cli.scan(log)
+    cli.scan(mdl)
+    cli.scan(tdo)
+    if evt.txt:
+        cli.scan(irc)
+        cli.scan(rss)
+        return command(cli, evt.otxt)
+    elif "c" in evt.opts:
+        date = time.ctime(time.time()).replace("  ", " ")
+        print(f"GCID started {date}")
+        bot = irc.init()
+        bot.clone(cli) 
+        rss.init()
+        mdl.init()
+        csl = Console()
+        csl.clone(cli)
+        csl.scan(irc)
+        csl.scan(rss)
+        csl.scan(flt)
+        csl.scan(thr)
+        csl.start()
+        wait(waiter)
+
+
+wrap(main)
