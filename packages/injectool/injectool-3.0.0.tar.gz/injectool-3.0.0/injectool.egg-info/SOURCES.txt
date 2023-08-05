@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+injectool/__init__.py
+injectool/core.py
+injectool/injection.py
+injectool/resolvers.py
+injectool.egg-info/PKG-INFO
+injectool.egg-info/SOURCES.txt
+injectool.egg-info/dependency_links.txt
+injectool.egg-info/top_level.txt
