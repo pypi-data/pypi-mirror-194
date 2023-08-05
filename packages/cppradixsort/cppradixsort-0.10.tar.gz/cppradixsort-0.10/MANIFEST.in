@@ -1,0 +1,7 @@
+include cppradixsort/requirements.txt
+include cppradixsort/thirdparty.json
+include cppradixsort/README.MD
+include cppradixsort/cppradixsort.ini
+include cppradixsort/cppradixsortmodule.py
+include cppradixsort/cinpysrc.txt
+include cppradixsort/cppradixsort.dll
