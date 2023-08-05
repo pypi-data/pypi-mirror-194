@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "jojoba-models"
+version = "0.1.0"
+description = ""
+authors = ["Heorhii Torianyk <deadstonepro@gmail.com>"]
+readme = "README.md"
+packages = [{include = "jojoba_models"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sqlalchemy = "^2.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
