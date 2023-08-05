@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tkutil
+Version: 0.0.8
+Summary: Tkinter utilities for Pyrustic
+Home-page: https://github.com/pyrustic/tkutil
+Author: Pyrustic Evangelist
+Author-email: rusticalex@yahoo.com
+Maintainer: Pyrustic Evangelist
+Maintainer-email: rusticalex@yahoo.com
+License: MIT
+Keywords: library,tkinter-utilities,pyrustic
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: shared
+
+# tkutil
+**Utilities for Tkinter**
+
+This project is part of the [Pyrustic Ecosystem](https://pyrustic.github.io).
+
+Use it only if you know what you are doing.
+
+This library contains functions to center or align windows, remember windows coordinates, and more.
+
+
