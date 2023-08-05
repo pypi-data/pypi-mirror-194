@@ -1,0 +1,15 @@
+[tool.black]
+extend_exclude = '/(\.venv.*)/'
+line-length = 88
+
+[tool.docstrfmt]
+extend_exclude = ['./docs/examples/']
+
+[tool.isort]
+profile = 'black'
+skip_glob = '.venv*'
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+filterwarnings = "ignore::DeprecationWarning"
+testpaths = "tests"
