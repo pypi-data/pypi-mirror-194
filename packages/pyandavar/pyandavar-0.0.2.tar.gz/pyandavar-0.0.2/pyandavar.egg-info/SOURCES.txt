@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyandavar.egg-info/PKG-INFO
+pyandavar.egg-info/SOURCES.txt
+pyandavar.egg-info/dependency_links.txt
+pyandavar.egg-info/not-zip-safe
+pyandavar.egg-info/requires.txt
+pyandavar.egg-info/top_level.txt
+src/__init__.py
+src/andavar.py
+tests/test.py
