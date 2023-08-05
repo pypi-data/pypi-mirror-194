@@ -1,0 +1,10 @@
+autoregistry/__init__.py,sha256=YSQjyXXcGPmW7jraUwywd_jChgIYWOFvbL-Z7-gFgGU,534
+autoregistry/config.py,sha256=FcqkgFvejhV6-ls0VufYEb9IXZNwGPMhDWhQyem9rRM,2537
+autoregistry/exceptions.py,sha256=zdSQWjepO0wjIzJcF-73Z87Qjol6s3EKFZ3fzU9YnNg,592
+autoregistry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoregistry/regex.py,sha256=RDdvtylGv-3p4SbRSJTeIWmiZnODatTH9m4T6I4bJqo,693
+autoregistry/registry.py,sha256=pAzdN38ZZcY96kuDUVquHRcaBBBqtJUHxL6vH_PDaaM,12273
+autoregistry-0.9.2.dist-info/LICENSE,sha256=8UsgBIwSOTy5kgBlxH-twDAhCw-cq5hJzgpooGPt7cU,11357
+autoregistry-0.9.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+autoregistry-0.9.2.dist-info/METADATA,sha256=oIjUAB_AbgmZCnoGw-ou7AscyX0CNaPYiO3URBJvCDc,5404
+autoregistry-0.9.2.dist-info/RECORD,,
