@@ -1,0 +1,9 @@
+angreal-2.0.5.dist-info/METADATA,sha256=kLXPZZzfD_2ibhtD8QCjzEA2tVBkCLWnTNybLIEJoPM,3736
+angreal-2.0.5.dist-info/WHEEL,sha256=FPYM7V35nvherqMvMRAoHo7GfsYSplGDNoKVVJb72PY,146
+angreal-2.0.5.dist-info/entry_points.txt,sha256=T8LTLvmqddtRYaE-Bsr7lb2zbznrMoIcXv0DrO88s3M,39
+angreal/__init__.py,sha256=Tv0qM7Rw89nIHN09V0tP_e9_zy30Knkt5JvxX2VaLr4,1215
+angreal/integrations/git.py,sha256=ZGUDdZvGDtyp-uhPBHdbysbIwZnabTD7P1a8AA3Vv1I,2664
+angreal/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+angreal/integrations/venv.py,sha256=eUv-CbyC2GvesyJa-uviAUDQ-jMBrpGCOErvU3PVrh0,4821
+angreal/angreal.cpython-39-darwin.so,sha256=h-wD7Q3FGOjWXD_5FdMXMc8SNnsRJsG3SyFRG_00EkI,20296489
+angreal-2.0.5.dist-info/RECORD,,
