@@ -1,0 +1,12 @@
+Hierarchy:
+    name: category
+    id_generation: wrong-value # This must be one of the following: uuid, name, error
+    childs:
+        - name: subcategory
+          childs:
+              - name: subsubcategory
+                childs:
+                    - name: subsubsubcategory
+        - name: subcategory2
+          childs:
+              - name: subsubcategory2
