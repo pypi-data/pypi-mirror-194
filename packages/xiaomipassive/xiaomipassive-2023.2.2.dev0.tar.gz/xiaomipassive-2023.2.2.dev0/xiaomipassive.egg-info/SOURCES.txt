@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+xiaomipassive/__init__.py
+xiaomipassive/xiaomipassive.py
+xiaomipassive.egg-info/PKG-INFO
+xiaomipassive.egg-info/SOURCES.txt
+xiaomipassive.egg-info/dependency_links.txt
+xiaomipassive.egg-info/requires.txt
+xiaomipassive.egg-info/top_level.txt
