@@ -1,0 +1,38 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "django-finances"
+version = "0.0.8"
+description = "Financial transactions and payments for Django."
+authors = ["Nixy <info@nixy.software>"]
+maintainers = ["Nixy <info@nixy.software>"]
+license = "MIT"
+readme = "README.md"
+
+homepage = "https://github.com/NixyOrg/django-finances"
+repository = "https://github.com/NixyOrg/django-finances"
+
+keywords = ["django", "transaction", "payment", "finance"]
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+django = "^4.0"
+lxml = "^4.9.0"
+python = "^3.10"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.dev-dependencies]
+mollie-api-python = "^3.1.0"
+djangorestframework = "^3.14.0"
