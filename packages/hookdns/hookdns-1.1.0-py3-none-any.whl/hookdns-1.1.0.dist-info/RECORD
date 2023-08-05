@@ -1,0 +1,10 @@
+hookdns/__init__.py,sha256=E9lKUm9zAxOoZTMDQw-FC3vLUqD1EVEQUG5is8RelAo,106
+hookdns/getaddrinfo.py,sha256=gTaEIpiYJbyS-I7d_iMxTXqVcqkecYBpicX_pQQYiLQ,2252
+hookdns/gethostbyname.py,sha256=znoBSYylWiIsEi5gaqgxGL7UpPLk6sjoHVdAXDamVAE,1745
+hookdns/gethostbyname_ex.py,sha256=KpXXwsslRAVcXaqyskTSorIxxIC0an1q2r3kgvmwcg8,2017
+hookdns/hosts.py,sha256=sL0QRCAu2DwCd_db1bqUoJT6Su5-xRDK2hRlc1C8wLY,995
+hookdns-1.1.0.dist-info/LICENSE,sha256=rBM1ShLwSZ2-3JV8luRBUSWVbTxCJ1qjCeC_yD5y9Rc,11353
+hookdns-1.1.0.dist-info/METADATA,sha256=vsWo_So0sXQW2l0jGHeTehfGMpeP4CYfYs2kaLg5MNI,2877
+hookdns-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hookdns-1.1.0.dist-info/top_level.txt,sha256=mVEXUu-3_hcWqAycIQDYcZqspAc8_5paxO7nJiojYX0,8
+hookdns-1.1.0.dist-info/RECORD,,
