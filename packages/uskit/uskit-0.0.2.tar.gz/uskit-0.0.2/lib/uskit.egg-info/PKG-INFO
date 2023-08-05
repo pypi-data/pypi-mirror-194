@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: uskit
+Version: 0.0.2
+Summary: A microservices kit
+Home-page: https://github.com/markuskimius/uskit
+Author: Mark Kim
+Author-email: markuskimius+py@gmail.com
+License: Apache 2.0
+Keywords: microservice,framework
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# uskit
+
+A microservices kit.
+
+
+## Installation
+
+```bash
+pip3 install uskit
+```
+
+
+## Documentation
+
+https://uskit.readthedocs.io/en/latest/
+
+
+## License
+
+[Apache 2.0]
+
+
+[Apache 2.0]: <https://github.com/markuskimius/uskit/blob/main/LICENSE>
+
+
+
