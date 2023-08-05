@@ -1,0 +1,160 @@
+{%- if api == "organizations" %}
+# Organizations
+{%-     for org in data_to_template %}
+## ID: {{ org.id }}
+### Name: {{ org.name }}
+### Enabled: {{ org.api.enabled }}
+### Cloud Region Name: {{ org.cloud.region.name }}
+### Licensing Model: {{ org.licensing.model }}
+### Management Details: {{ org.management.details }}
+### [URL]({{ org.url }})
+{%-     endfor %}
+{%- elif api == "networks" %}
+# Organization Networks
+{%-     for hit in data_to_template %}
+{%-         if hit %}
+{%-             for network in hit %}
+## Organization ID: {{ network.organizationId }}
+### Name: {{ network.name }}
+### Enrollment String: {{ network.enrollmentString }}
+### ID: {{ network.id }}
+### Is Bound to Config Template: {{ network.isBoundToConfigTemplate }}
+### Notes: {{ network.notes }}
+### Tags: {{ network.tags }}
+### Timezone: {{ network.timeZone }}
+### [URL]({{ network.url }})
+### Products
+{%-                 for product_type in network.productTypes %}
+#### {{ product_type }}
+{%-                 endfor %}
+{%-             endfor %}
+{%-         endif %}
+{%-    endfor %}
+{%- elif api == "devices" %}
+# Organization Devices
+{%-     for hit in data_to_template %}
+{%-         if hit %}
+{%-             for network in hit %}
+## Name: {{ network.name }}
+### Location
+#### Address: {{ network.address }}
+#### Latitude: {{ network.lat }}
+#### Longitude: {{ network.lng }}
+### Configuration Updated At: {{ network.configurationUpdatedAt }}
+### Firmware: {{ network.firmware }}
+### LAN IP: {{ network.lanIp }}
+### MAC: {{ network.mac }}
+### Model: {{ network.model }}
+### Network ID: {{ network.networkId }}
+### Notes: {{ network.notes }}
+### Product Type: {{ network.productType }}
+### Serial: {{ network.serial }}
+### Tags: {{ network.tags }}
+### [URL]({{ network.url }})
+{%-             endfor %}
+{%-         endif %}
+{%-    endfor %}
+{%- elif api == "clients" %}
+# Network Clients
+{%-     for hit in data_to_template %}
+{%-         if hit %}
+{%-             for client in hit %}
+## ID: {{ client.id }}
+### Adaptive Policy Group: {{ client.adaptivePolicyGroup }}
+### Description: {{ client.description }}
+### Device Type Prediction: {{ client.deviceTypePrediction }}
+### Timestamps
+#### First Seen: {{ client.firstSeen }}
+#### Last Seen: {{ client.lastSeen }}
+### Group Policy 802.1x: {{ client.groupPolicy8021x }}
+### IP
+#### v4: {{ client.ip }}
+#### v6: {{ client.ip6 }}
+#### v6 Local: {{ client.ip6Local }}
+### MAC: {{ client.mac }}
+### Manufacturer: {{ client.manufacturer }}
+### Notes: {{ client.notes }}
+### OS: {{ client.os }}
+### Recent Device
+#### Connection: {{ client.recentDeviceConnection }}
+#### MAC: {{ client.recentDeviceMac }}
+#### Name: {{ client.recentDeviceName }}
+#### Serial: {{ client.recentDeviceSerial }}
+### SM Installed: {{ client.smInstalled }}
+### SSID: {{ client.ssid }}
+### Status: {{ client.status }}
+### Switchport: {{ client.switchport }}
+### Usage:
+#### Received: {{ client.usage.recv }}
+#### Sent: {{ client.usage.sent }}
+#### Total: {{ client.usage.total }}
+### User: {{ client.user }}
+### VLAN: {{ client.vlan }}
+{%-             endfor %}
+{%-         endif %}
+{%-    endfor %}
+{%- elif api == "management_interfaces" %}
+# Management Interfaces
+{%-     for interface in data_to_template %}
+{%-         if interface %}
+## Device Name: {{ interface.name }}
+### Serial Number: {{ interface.device_serial }}
+{%- if interface.ddnsHostnames %}
+### DDNS Hostnames
+#### Active: {{ interface.ddnsHostnames.activeDdnsHostname }}
+#### WAN1: {{ interface.ddnsHostnames.ddnsHostnameWan1 }}
+#### WAN2: {{ interface.ddnsHostnames.ddnsHostnameWan2 }}
+{%- endif %}
+{%- if interface.wlan1 %}
+### WLAN 01
+#### Using Static IP: {{ interface.wlan1.usingStaticIp }}
+#### Static
+##### DNS: {{ interface.wan1.staticDns | default("N/A") }}
+##### Gateway IP: {{ interface.wan1.staticGatewayIp | default ("N/A") }}
+##### IP: {{ interface.wan1.staticIp | default ("N/A") }}
+##### Subnet Mask: {{ interface.wan1.staticSubnetMask | default ("N/A") }}
+#### VLAN: {{ interface.wan1.vlan }}
+#### WAN Enabled {{ interface.wan1.wanEnabled }}
+{%- endif %}
+{%- if interface.wlan2 %}
+### WLAN 02
+#### Using Static IP: {{ interface.wlan2.usingStaticIp | default("N/A") }}
+#### Static
+##### DNS: {{ interface.wlan2.staticDns | default("N/A") }}
+##### Gateway IP: {{ interface.wlan2.staticGatewayIp | default("N/A") }}
+##### IP: {{ interface.wlan2.staticIp | default("N/A") }}
+##### Subnet Mask: {{ interface.wlan2.staticSubnetMask | default("N/A") }}
+#### VLAN: {{ interface.wlan2.vlan }}
+#### WAN Enabled: {{ interface.wlan2.wanEnable }}
+{%- endif %}
+{%-         endif %}
+{%-    endfor %}
+{%- elif api == "alert_settings" %}
+# Alert Settings
+{%-     for alert_setting in data_to_template %}
+{%-         if alert_setting %}
+{%-             for alert in alert_setting['alerts'] %}
+## Network ID: {{ alert_setting.network_id }}
+### Enabled: {{ alert.enabled }}
+### Destinations
+#### Default
+##### All Admins: {{ alert_setting.defaultDestinations.allAdmins }}
+##### Email: {{ alert_setting.defaultDestinations.emails }}
+##### HTTP Server IDs: {{ alert_setting.defaultDestinations.httpServerIds }}
+##### SNMP: {{ alert_setting.defaultDestinations.snmp }}
+#### Alert
+##### All Admins: {{ alert.alertDestinations.allAdmins }}
+#### Emails: {{ alert.alertDestinations.emails }}
+#### HTTP Server IDs: {{ alert.alertDestinations.httpServerIds }}
+#### SNMP: {{ alert.alertDestinations.snmp }}
+### Filters
+#### Timeout: {{ alert.filters.timeout | default("N/A") }}
+#### Period: {{ alert.filters.period | default("N/A") }}
+#### Threshold: {{ alert.filters.threshold | default("N/A") }}
+#### Clients: {{ alert.filters.clients | default("N/A") }}
+#### Selector: {{ alert.filters.selector | default("N/A") }}
+### Type: {{ alert.type }}
+{%-             endfor %}    
+{%-         endif %}
+{%-    endfor %}
+{%- endif %}

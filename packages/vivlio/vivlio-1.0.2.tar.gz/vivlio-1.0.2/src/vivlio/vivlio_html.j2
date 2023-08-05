@@ -1,0 +1,321 @@
+{%- include 'datatable_header.j2' %}
+{%- if api == "organizations" %}
+<h1>Organizations</h1>
+<table id = "datatable">
+<thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>API Enabled</th>
+    <th>Cloud Region Name</th>
+    <th>Licensing Model</th>
+    <th>Management Details</th>
+    <th>URL</th>
+  </tr>
+</thead>  
+<tbody>
+{%-     for org in data_to_template %}
+    <tr>
+        <td>{{ org.id }}</td>
+        <td>{{ org.name }}</td>
+        <td>{{ org.api.enabled }}</td>
+        <td>{{ org.cloud.region.name }}</td>
+        <td>{{ org.licensing.model }}</td>
+        <td>{{ org.management.details }}</td>
+        <td><a href="{{ org.url }}">URL</td>
+    </tr>
+{%-     endfor %}
+</tbody>
+</table>
+{%- elif api == "networks" %}
+<h1>Organization Networks</h1>
+<table id = "datatable">
+<thead>
+  <tr>
+    <th>Organization ID</th>
+    <th>Name</th>
+    <th>Product Types</th>
+    <th>Enrollment String</th>
+    <th>ID</th>
+    <th>Is Bound To Config Template</th>
+    <th>Notes</th>
+    <th>Tags</th>
+    <th>Time Zone</th>
+    <th>URL</th>
+  </tr>
+</thead>  
+<tbody>
+{%-     for hit in data_to_template %}
+{%-         if hit %}
+{%-             for network in hit %}
+{%-                 for product_type in network.productTypes %}
+  <tr>
+    <td>{{ network.organizationId }}</td>
+    <td>{{ network.name }}</td>
+    <td>{{ product_type }}</td>
+    <td>{{ network.enrollmentString }}</td>
+    <td>{{ network.id }}</td>
+    <td>{{ network.isBoundToConfigTemplate }}</td>
+    <td>{{ network.notes }}</td>
+    <td>{{ network.tags }}</td>
+    <td>{{ network.timeZone }}</td>
+    <td><a href="{{ network.url }}">URL</a></td>
+  </tr>
+{%-                 endfor %}
+{%-             endfor %}
+{%-         endif %}
+{%-    endfor %}
+</tbody>
+</table>
+{%- elif api == "devices" %}
+<h1>Organization Devices</h1>
+<table id = "datatable">
+<thead>
+  <tr>
+    <th>Network ID</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Configuration Updated At</th>
+    <th>Firmware</th>
+    <th>LAN IP</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>MAC</th>
+    <th>Model</th>
+    <th>Notes</th>
+    <th>Product Type</th>
+    <th>Serial</th>
+    <th>Tags</th>
+    <th>URL</th>
+  </tr>
+</thead>  
+<tbody>
+{%-     for hit in data_to_template %}
+{%-         if hit %}
+{%-             for network in hit %}
+  <tr>
+    <td>{{ network.networkId }}</td>
+    <td>{{ network.name }}</td>
+    <td>{{ network.address }}</td>
+    <td>{{ network.configurationUpdatedAt }}</td>
+    <td>{{ network.firmware }}</td>
+    <td>{{ network.lanIp }}</td>
+    <td>{{ network.lat }}</td>
+    <td>{{ network.lng }}</td>
+    <td>{{ network.mac }}</td>
+    <td>{{ network.model }}</td>
+    <td>{{ network.notes }}</td>
+    <td>{{ network.productType }}</td>
+    <td>{{ network.serial }}</td>
+    <td>{{ network.tags }}</td>
+    <td><a href="{{ network.url }}">URL</a></td>
+  </tr>
+{%-             endfor %}
+{%-         endif %}
+{%-    endfor %}
+</tbody>
+</table>
+{%- elif api == "clients" %}
+<h1>Network Clients</h1>
+<table id = "datatable">
+<thead>
+  <tr>
+    <th>ID</th>
+    <th>Adaptive Policy Group</th>
+    <th>Description</th>
+    <th>Device Type Prediction</th>
+    <th>First Seen</th>
+    <th>Group Policy 802.1x</th>
+    <th>IPv4</th>
+    <th>IPv6</th>
+    <th>IPv6 Local</th>
+    <th>Last Seen</th>
+    <th>MAC</th>
+    <th>Manufacturer</th>
+    <th>Notes</th>
+    <th>OS</th>
+    <th>Recent Device Connection</th>
+    <th>Recent Device MAC</th>
+    <th>Recent Device Name</th>
+    <th>Recent Device Serial</th>
+    <th>SM Installed</th>
+    <th>SSID</th>
+    <th>Status</th>
+    <th>Switchport</th>
+    <th>Usage Received</th>
+    <th>Usage Sent</th>
+    <th>Usage Total</th>
+    <th>User</th>
+    <th>VLAN</th>
+  </tr>
+</thead>  
+<tbody>
+{%-     for hit in data_to_template %}
+{%-         if hit %}
+{%-             for client in hit %}
+  <tr>
+    <td>{{ client.id }}</td>
+    <td>{{ client.adaptivePolicyGroup }}</td>
+    <td>{{ client.description }}</td>
+    <td>{{ client.deviceTypePrediction }}</td>
+    <td>{{ client.firstSeen }}</td>
+    <td>{{ client.groupPolicy8021x }}</td>
+    <td>{{ client.ip }}</td>
+    <td>{{ client.ip6 }}</td>
+    <td>{{ client.ip6Local }}</td>
+    <td>{{ client.lastSeen }}</td>
+    <td>{{ client.mac }}</td>
+    <td>{{ client.manufacturer }}</td>
+    <td>{{ client.notes }}</td>
+    <td>{{ client.os }}</td>
+    <td>{{ client.recentDeviceConnection }}</td>
+    <td>{{ client.recentDeviceMac }}</td>
+    <td>{{ client.recentDeviceName }}</td>
+    <td>{{ client.recentDeviceSerial }}</td>
+    <td>{{ client.smInstalled }}</td>
+    <td>{{ client.ssid }}</td>
+    <td>{{ client.status }}</td>
+    <td>{{ client.switchport }}</td>
+    <td>{{ client.usage.recv }}</td>
+    <td>{{ client.usage.sent }}</td>
+    <td>{{ client.usage.total }}</td>
+    <td>{{ client.user }}</td>
+    <td>{{ client.vlan }}</td>
+  </tr>
+{%-             endfor %}
+{%-         endif %}
+{%-    endfor %}
+</tbody>
+</table>
+{%- elif api == "management_interfaces" %}
+<h1>Management Interfaces</h1>
+<table id = "datatable">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Device Serial</th>
+    <th>Active DDNS Hostname</th>
+    <th>DDNS Hostname WAN 1</th>
+    <th>DDNS Hostname WAN 2</th>
+    <th>WAN 1 Using Static IP</th>
+    <th>Static DNS</th>
+    <th>Static Gateway IP</th>
+    <th>Static IP</th>
+    <th>Static Subnet Mask</th>
+    <th>VLAN</th>
+    <th>WAN Enabled</th>
+    <th>WAN 2 Using Static IP</th>
+    <th>Static DNS</th>
+    <th>Static Gateway IP</th>
+    <th>Static IP</th>
+    <th>Static Subnet Mask</th>
+    <th>VLAN</th>
+    <th>WAN Enabled</th>
+  </tr>
+</thead>  
+<tbody>
+{%-     for interface in data_to_template %}
+{%-         if interface %}
+  <tr>
+    <td>{{ interface.name }}</td>
+    <td>{{ interface.device_serial }}</td>
+{%- if interface.ddnsHostnames %}
+    <td>{{ interface.ddnsHostnames.activeDdnsHostname }}</td>
+    <td>{{ interface.ddnsHostnames.ddnsHostnameWan1 }}</td>
+    <td>{{ interface.ddnsHostnames.ddnsHostnameWan2 }}</td>
+{%- else %}
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+{%- endif %}
+{%- if interface.wlan1 %}
+    <td>{{ interface.wlan1.usingStaticIp }}</td>
+    <td>{{ interface.wan1.staticDns | default("N/A") }}</td>
+    <td>{{ interface.wan1.staticGatewayIp | default ("N/A") }}</td>
+    <td>{{ interface.wan1.staticIp | default ("N/A") }}</td>
+    <td>{{ interface.wan1.staticSubnetMask | default ("N/A") }}</td>
+    <td>{{ interface.wan1.vlan }}</td>
+    <td>{{ interface.wan1.wanEnabled }}</td>
+{%- else %}
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+{%- endif %}
+{%- if interface.wlan2 %}
+    <td>{{ interface.wlan2.usingStaticIp | default("N/A") }}</td>
+    <td>{{ interface.wlan2.staticDns | default("N/A") }}</td>
+    <td>{{ interface.wlan2.staticGatewayIp | default("N/A") }}</td>
+    <td>{{ interface.wlan2.staticIp | default("N/A") }}</td>
+    <td>{{ interface.wlan2.staticSubnetMask | default("N/A") }}</td>
+    <td>{{ interface.wlan2.vlan }}</td>
+    <td>{{ interface.wlan2.wanEnabled }}</td>
+{%- else %}
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+{%- endif %}
+  </tr>
+{%-         endif %}
+{%-    endfor %}
+</tbody>
+</table>
+{%- elif api == "alert_settings" %}
+<h1>Alert Settings</h1>
+<table id = "datatable">
+<thead>
+  <tr>
+    <th>Network ID</th>
+    <th>Default Destinations All Admins</th>
+    <th>Default Destinations Emails</th>
+    <th>Default Destinations HTTP Server IDs</th>
+    <th>Default Destinations SNMP</th>
+    <th>Enabled</th>
+    <th>Filters Timeout</th>
+    <th>Filters Period</th>
+    <th>Filters Threshold</th>
+    <th>Filters Clients</th>
+    <th>Filters Selector</th>
+    <th>Type</th>
+    <th>Alert Destinations All Admins</th>
+    <th>Alert Destinations Emails</th>
+    <th>Alert Destinations HTTP Server IDs</th>
+    <th>Alert Destinations SNMP</th>
+  </tr>
+</thead>  
+<tbody>
+{%-     for alert_setting in data_to_template %}
+{%-         if alert_setting %}
+{%-             for alert in alert_setting['alerts'] %}
+  <tr>
+    <td>{{ alert_setting.network_id }}</td>
+    <td>{{ alert_setting.defaultDestinations.allAdmins }}</td>
+    <td>{{ alert_setting.defaultDestinations.emails }}</td>
+    <td>{{ alert_setting.defaultDestinations.httpServerIds }}</td>
+    <td>{{ alert_setting.defaultDestinations.snmp }}</td>
+    <td>{{ alert.enabled }}</td>
+    <td>{{ alert.filters.timeout | default("N/A") }}</td>
+    <td>{{ alert.filters.period | default("N/A") }}</td>
+    <td>{{ alert.filters.threshold | default("N/A") }}</td>
+    <td>{{ alert.filters.clients | default("N/A") }}</td>
+    <td>{{ alert.filters.selector | default("N/A") }}</td>
+    <td>{{ alert.type }}</td>
+    <td>{{ alert.alertDestinations.allAdmins }}</td>
+    <td>{{ alert.alertDestinations.emails }}</td>
+    <td>{{ alert.alertDestinations.httpServerIds }}</td>
+    <td>{{ alert.alertDestinations.snmp }}</td>
+  </tr>
+{%-             endfor %}    
+{%-         endif %}
+{%-    endfor %}
+</tbody>
+</table>
+{%- endif %}
+{%- include 'datatable_footer.j2' %}
