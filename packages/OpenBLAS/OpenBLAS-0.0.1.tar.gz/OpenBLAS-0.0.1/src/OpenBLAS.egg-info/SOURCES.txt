@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/OpenBLAS.egg-info/PKG-INFO
+src/OpenBLAS.egg-info/SOURCES.txt
+src/OpenBLAS.egg-info/dependency_links.txt
+src/OpenBLAS.egg-info/entry_points.txt
+src/OpenBLAS.egg-info/requires.txt
+src/OpenBLAS.egg-info/top_level.txt
+tests/test_simple.py
