@@ -1,0 +1,3 @@
+[console_scripts]
+vivlio=vivlio.script:run
+
