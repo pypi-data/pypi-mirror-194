@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PySink/__init__.py
+PySink/hello.py
+PySink.egg-info/PKG-INFO
+PySink.egg-info/SOURCES.txt
+PySink.egg-info/dependency_links.txt
+PySink.egg-info/top_level.txt
