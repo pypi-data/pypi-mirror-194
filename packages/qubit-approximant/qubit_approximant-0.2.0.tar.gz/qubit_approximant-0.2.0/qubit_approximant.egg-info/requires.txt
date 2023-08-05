@@ -1,0 +1,17 @@
+build==0.10.0
+packaging==23.0
+pyproject_hooks==1.0.0
+tomli==2.0.1
+
+[testing]
+pytest
+codecov
+pytest-cov
+pre-commit
+tox
+pylint
+flake8
+mypy
+isort
+black
+autopep8
