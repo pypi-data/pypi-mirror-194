@@ -1,0 +1,13 @@
+arithmetica.cpython-310-x86_64-linux-gnu.so,sha256=8OSB9xedptB8IgPeRkvhOJ6xkUP_KLFUc0Aj4tXsQMQ,86016
+arithmetica_py-1.0.133.dist-info/top_level.txt,sha256=izrQOku72EsRDOPr5vEMkgLEmKn2mtDWOW54wnlRm84,30
+arithmetica_py-1.0.133.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+arithmetica_py-1.0.133.dist-info/RECORD,,
+arithmetica_py-1.0.133.dist-info/WHEEL,sha256=nKSwEH5fkxvG0Vdj1Hx7vbuU-SGQ9Nxl4yFFsCilvhs,152
+arithmetica_py-1.0.133.dist-info/METADATA,sha256=CA9BSnbD9leRytGqskFEqxAF_R_ic6dF0gl_xFZJC2s,209
+src/python-module/version.txt,sha256=XP8FiWI1QtFfxa-cvX1kX1FBoVUzX3W71sZeyyO25bA,7
+src/python-module/libbasic_math_operations.a,sha256=iLKiuvSfH1gfYp3CkhrKeWNYYRL1LzUOjsPiP9jaFgM,67262
+src/python-module/libarithmetica.a,sha256=Lw3-D6uXhxR2F8QpRDvloyieLzF3ZZZ_ntRSffst1pY,198832
+src/python-module/module.c,sha256=-vlv7_VpPozwyv6YBWD7TCHqLFsHDABZ0lPGUlbipqA,9536
+arithmetica_py-1.0.133.data/data/src/python-module/version.txt,sha256=XP8FiWI1QtFfxa-cvX1kX1FBoVUzX3W71sZeyyO25bA,7
+arithmetica_py-1.0.133.data/data/src/python-module/libbasic_math_operations.a,sha256=iLKiuvSfH1gfYp3CkhrKeWNYYRL1LzUOjsPiP9jaFgM,67262
+arithmetica_py-1.0.133.data/data/src/python-module/libarithmetica.a,sha256=Lw3-D6uXhxR2F8QpRDvloyieLzF3ZZZ_ntRSffst1pY,198832
