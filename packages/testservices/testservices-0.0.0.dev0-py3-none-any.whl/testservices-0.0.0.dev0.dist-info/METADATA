@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: testservices
+Version: 0.0.0.dev0
+Summary: Orchestrating services for testing and development.
+Home-page: https://github.com/simplistix/testservices
+Author: Chris Withers
+Author-email: chris@withers.org
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.rst
+Provides-Extra: build
+Requires-Dist: furo ; extra == 'build'
+Requires-Dist: sphinx ; extra == 'build'
+Requires-Dist: setuptools-git ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: sybil ; extra == 'test'
+Requires-Dist: testfixtures ; extra == 'test'
+
+
+testservices
+============
+
+|CircleCI|_  |Docs|_
+
+.. |CircleCI| image:: https://circleci.com/gh/simplistix/testservices/tree/master.svg?style=shield
+.. _CircleCI: https://circleci.com/gh/simplistix/testservices/tree/master
+
+.. |Docs| image:: https://readthedocs.org/projects/testservices/badge/?version=latest
+.. _Docs: http://testservices.readthedocs.org/en/latest/
+
+ Orchestrating services for testing and development.
+
+

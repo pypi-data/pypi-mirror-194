@@ -1,0 +1,10 @@
+testservices/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testservices/collection.py,sha256=X-E3DGtvs1BobqeMAyEux3TW5BWDB67vv-Jj8NjPGSE,114
+testservices/provider.py,sha256=DkkzuJVtQ_rhL6j7Er3Fbh4_eWch5o4L9x-Lj8i9MpU,86
+testservices/service.py,sha256=JRn7gjm88h9Q30dtOS-iH9CaffVNjLo2KjD-K1aTMwA,178
+testservices/supplier.py,sha256=cJnwZssqBjvt5YiCUjWBhZGeNacqPAVdlONp39Vd_8w,25
+testservices-0.0.0.dev0.dist-info/LICENSE.rst,sha256=y0MRuuHltQC7cXzOncZpGm1xdnXsvOdlD5u5fXtM05c,1072
+testservices-0.0.0.dev0.dist-info/METADATA,sha256=rn0ONH75SpjU0F_NvIVP8OdOJARZCqoxeIdJgtjyCiA,1332
+testservices-0.0.0.dev0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+testservices-0.0.0.dev0.dist-info/top_level.txt,sha256=Zqpj9apkSfw79eShNkF9pMcSvmyahfRHFH4ZEBtpK-c,13
+testservices-0.0.0.dev0.dist-info/RECORD,,
