@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+attrdict/__init__.py
+attrdict/default.py
+attrdict/dictionary.py
+attrdict/mapping.py
+attrdict/merge.py
+attrdict/mixins.py
+pytive/__init__.py
+pytive.egg-info/PKG-INFO
+pytive.egg-info/SOURCES.txt
+pytive.egg-info/dependency_links.txt
+pytive.egg-info/top_level.txt

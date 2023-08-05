@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytive
+Version: 0.0.1
+Summary: Mirrativ PythonApi
+Home-page: https://github.com/koaf/pytive
+Author: koaf
+Author-email: koafff@aol.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+このプロジェクトはRabies様のフォークでございます。気が向いた時に更新をします。
+ 現在使える機能
+配信情報の取得
+コメント読み込み/送信
+フォロー/フォロー解除
+配信リクエスト
