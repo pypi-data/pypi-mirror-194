@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/math_evaluator/__init__.py
+src/math_evaluator/explicit.py
+src/math_evaluator/implicit.py
+src/math_evaluator.egg-info/PKG-INFO
+src/math_evaluator.egg-info/SOURCES.txt
+src/math_evaluator.egg-info/dependency_links.txt
+src/math_evaluator.egg-info/top_level.txt
+tests/test_parser.py

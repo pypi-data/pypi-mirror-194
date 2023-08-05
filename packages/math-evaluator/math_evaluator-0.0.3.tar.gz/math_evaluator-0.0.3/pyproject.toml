@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "math_evaluator"
+version = "0.0.3"
+authors = [
+  { name="Rashid Harvey", email="rashid.harvey@fu-berlin.de" },
+]
+description = "A package that evaluates a mathematical expression given as a string."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/theRealProHacker/MathEvaluator"
+"Bug Tracker" = "https://github.com/theRealProHacker/MathEvaluator/issues"
