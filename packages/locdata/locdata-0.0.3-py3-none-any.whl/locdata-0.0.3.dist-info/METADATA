@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: locdata
+Version: 0.0.3
+Summary: A small python package
+Home-page: https://github.com/SachinMishra-ux/locdata
+Author: SachinMishra-ux
+Author-email: sachin19566@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/SachinMishra-ux/locdata/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: ensure (==1.0.2)
+Requires-Dist: py-youtube (==1.1.7)
+Provides-Extra: testing
+Requires-Dist: pytest (>=7.1.3) ; extra == 'testing'
+Requires-Dist: mypy (>=0.971) ; extra == 'testing'
+Requires-Dist: flake8 (>=5.0.4) ; extra == 'testing'
+Requires-Dist: tox (>=3.25.1) ; extra == 'testing'
+Requires-Dist: black (>=22.8.0) ; extra == 'testing'
+
+# Time Trcaker Python Package on any platform.
+## First use my template repo to create this repo.
+- template repo = https://github.com/SachinMishra-ux/pypi_template
+- Peacefully do the changes with respect to your package name in all the files.
+
+```
+python template.py
+```
+
+```
+bash init_setup.sh
+```
+```
+1) conda activate ./env
+2) pip list
+```
+```
+mypy src/  - for checking any issues in your python code.
+```
+- o/p of above command - Success: no issues found in 3 source files
+```
+pytest -v   - for any unit test
+```
+```
+tox - for final running
+```
+- then commit everything on github
+- then add new workflow for python package
+- ![](./Assets/img1.png)
+- ![](./Assets/img2.png)
+
+- Now add secrets to your github and change the ```python publish.yml``` file according to your needs. To acchieve this get API from python-pypi site
+
+- then after each & everything ready then do this steps:
+- - ![](./Assets/img3.png)
+
+
+
+Tracking the desktop applications in real time and time spent on each application and saving the data in json format.
+
+Dependencies:
+
+- selenium
+
+
+Windows Depencies
+
+- pywin32
+- python-dateutil
+- uiautomation 
