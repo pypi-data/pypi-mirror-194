@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: data-scientist-tools
+Version: 1.3
+Summary: Good-to-have tools for general Data Science tasks
+Home-page: UNKNOWN
+Author-email: davidliu1007@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: pyautogui
+Requires-Dist: keyboard
+
+Good-to-have tools for general Data Science tasks
+
