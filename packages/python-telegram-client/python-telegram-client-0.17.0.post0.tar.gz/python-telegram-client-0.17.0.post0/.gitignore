@@ -1,0 +1,11 @@
+dist
+build
+python_telegram_client.egg-info
+.tdlib_files
+.tdlib_files*
+.tox
+.mypy_cache
+MANIFEST
+*.pyc
+.DS_Store
+.vscode
