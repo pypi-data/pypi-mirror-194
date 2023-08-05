@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ale-project-x
+Version: 1.2.1
+Summary: Project x
+Author-email: ale <info@ale.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.2
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.24.2)
+Requires-Dist: openpyxl (>=3.1.1)
+Requires-Dist: pandas (>=1.5.3)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+python -m build
+twine check dist/*
+twine upload -r testpypi dist/*
+twine upload dist/*
