@@ -1,0 +1,18 @@
+{% block subject %}
+Download extended-template PDF
+{% endblock %}
+
+{% block plain_content %}
+This email is in plain text.
+
+Download the PDF here:
+{% url 'pdf_view' %}
+{% endblock %}
+
+{% block html_content %}
+<h1>Hello</h1>
+<p>
+You should get this email in HTML format.
+Download the <a href="{% url 'pdf_view' %}">PDF</a>.
+</p>
+{% endblock %}
