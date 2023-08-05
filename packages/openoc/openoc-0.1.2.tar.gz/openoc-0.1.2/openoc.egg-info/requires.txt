@@ -1,0 +1,6 @@
+numpy
+scipy
+sympy
+numba
+cyipopt
+python-xxhash
