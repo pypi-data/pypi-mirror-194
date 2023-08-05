@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kaydee
+Version: 0.1.2
+Summary: Bounded kernel density estimation.
+Home-page: https://github.com/mdmould/kaydee
+Author: Matthew Mould
+Author-email: mattdmould@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# kaydee
+
+Kernel density estimation with a wrapper of `scipy.stats.gaussian_kde`.
+
+Includes bounded domains using reflected samples.
+
+Includes multiprocess density evaluations using [tqdm-pathos](https://github.com/mdmould/tqdm_pathos).

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kaydee/__init__.py
+kaydee.egg-info/PKG-INFO
+kaydee.egg-info/SOURCES.txt
+kaydee.egg-info/dependency_links.txt
+kaydee.egg-info/requires.txt
+kaydee.egg-info/top_level.txt
