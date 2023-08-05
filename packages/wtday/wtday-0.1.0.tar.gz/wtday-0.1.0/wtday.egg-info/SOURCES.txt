@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wtday.egg-info/PKG-INFO
+wtday.egg-info/SOURCES.txt
+wtday.egg-info/dependency_links.txt
+wtday.egg-info/requires.txt
+wtday.egg-info/top_level.txt
