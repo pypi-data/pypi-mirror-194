@@ -1,0 +1,8 @@
+lxml
+python-dateutil>=1.5
+pytz
+pyyaml
+requests>=1.0
+
+[:python_version < "3.7"]
+dataclasses
