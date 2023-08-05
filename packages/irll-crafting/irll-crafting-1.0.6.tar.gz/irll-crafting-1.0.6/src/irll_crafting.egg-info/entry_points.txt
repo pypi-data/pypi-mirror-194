@@ -1,0 +1,2 @@
+[console_scripts]
+crafting = crafting.__main__:main
