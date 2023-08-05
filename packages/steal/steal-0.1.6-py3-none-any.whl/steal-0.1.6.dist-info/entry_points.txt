@@ -1,0 +1,2 @@
+[console_scripts]
+steal = steal.cli:main
