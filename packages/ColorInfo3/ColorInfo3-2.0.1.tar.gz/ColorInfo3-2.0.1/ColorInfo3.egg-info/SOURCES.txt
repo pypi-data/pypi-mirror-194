@@ -1,0 +1,9 @@
+README.md
+setup.py
+ColorInfo/ColorInfo.py
+ColorInfo/__init__.py
+ColorInfo/color.py
+ColorInfo3.egg-info/PKG-INFO
+ColorInfo3.egg-info/SOURCES.txt
+ColorInfo3.egg-info/dependency_links.txt
+ColorInfo3.egg-info/top_level.txt
