@@ -1,0 +1,5 @@
+calypso_anemometer
+dist
+doc
+examples
+testing
