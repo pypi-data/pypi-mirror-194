@@ -1,0 +1,2 @@
+[console_scripts]
+executable-name = tchan:main
