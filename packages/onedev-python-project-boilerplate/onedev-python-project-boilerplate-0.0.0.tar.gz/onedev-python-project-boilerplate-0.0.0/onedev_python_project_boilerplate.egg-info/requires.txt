@@ -1,0 +1,9 @@
+flask
+waitress
+markdown
+beautifulsoup4
+pygments
+
+[test]
+pytest
+ruff
