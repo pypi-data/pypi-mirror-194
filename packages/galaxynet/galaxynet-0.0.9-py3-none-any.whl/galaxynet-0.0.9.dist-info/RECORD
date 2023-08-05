@@ -1,0 +1,9 @@
+galaxynet/__init__.py,sha256=4tBHmuqAHXMPqHdG4iVt5LD1jDukuUdieUIuVwvF7Ko,45
+galaxynet/eqx_scorenet32.eqx,sha256=fILKZOtWmN5rg6qJKit3AaW458dtZ4mcHjp6XJVZtp0,2430092
+galaxynet/eqx_scorenet64.eqx,sha256=upoKOSiQM_oYRaD8NnbF8ChWN3GyiGxaE2jYBuxJtJw,6463628
+galaxynet/models_eqx.py,sha256=Hfq0YJ8AW-Fj0sEhWGn2bCP73RuHy8XjEA-R_5uv6X0,2955
+galaxynet/scorenet.py,sha256=bwZ1F0LiU_D1Pcc0CODECgADSm07t6WL2ifN7w0FeN8,1177
+galaxynet-0.0.9.dist-info/METADATA,sha256=lFotWGnd7C6iOzkE3KuA_W0z4zrMUCei1NjcooaogQ4,624
+galaxynet-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+galaxynet-0.0.9.dist-info/top_level.txt,sha256=HqHnhDz9sVHjbEQYHaKMZ7GC2bRZnZQf-9GzeZBeGJc,10
+galaxynet-0.0.9.dist-info/RECORD,,
