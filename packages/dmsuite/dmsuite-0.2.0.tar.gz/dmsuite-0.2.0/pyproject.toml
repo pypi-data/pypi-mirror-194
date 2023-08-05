@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61", "setuptools_scm>=7.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dmsuite"
+dynamic = ["version"]
+description = "Differenciation matrices"
+readme = "README.rst"
+authors = [
+    {name = "Adrien Morison", email = "adrien.morison@gmail.com"},
+    {name = "Stéphane Labrosse"},
+]
+maintainers = [
+    {name = "Adrien Morison", email = "adrien.morison@gmail.com"},
+    {name = "Stéphane Labrosse"},
+]
+license = {file = "LICENSE"}
+urls = {homepage = "https://github.com/labrosse/dmsuite"}
+classifiers=[
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.6",
+]
+
+[tool.setuptools.packages.find]
+include = ["dmsuite"]
+namespaces = false
+
+[tool.setuptools.package-data]
+dmsuite = ["py.typed"]
+
+[tool.setuptools_scm]
+write_to = "dmsuite/_version.py"
+
+[tool.mypy]
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "scipy.*",
+]
+ignore_missing_imports = true
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
