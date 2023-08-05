@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mkdocs-link-preview-plugin
+Version: 0.1.3
+Summary: A MkDocs plugin that supports external link preview
+Home-page: https://github.com/ndy2/mkdocs-link-preview-plugin
+Author: ndy2
+Author-email: emrdbs12@gmail.com
+License: MIT
+Keywords: mkdocs
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mkdocs-obsidian-support-plugin
+---
+Plugin for [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) provide external link preview.
+
+[![PyPI](https://img.shields.io/pypi/v/mkdocs-link-preview-plugin)](https://pypi.org/project/mkdocs-link-preview-plugin/)
+[![GitHub](https://img.shields.io/github/license/ndy2/mkdocs-link-preview-plugin)](https://github.com/ndy2/mkdocs-link-preview-plugin/blob/main/LICENSE.md)
+
+```text
+pip install mkdocs-link-preview-plugin
+```
+
+## Usage
+Activate the plugin in mkdocs.yml 
+```yaml
+plugins:
+  - link-preview
+```
+
+## Feature
+It converts below codeblock syntax to preview-html based on [The Open Graph Protocol](https://ogp.me/).
+
+````
+```preview
+https://github.com/ndy2/mkdocs-link-preview-plugin
+```
+````
+
+
+
