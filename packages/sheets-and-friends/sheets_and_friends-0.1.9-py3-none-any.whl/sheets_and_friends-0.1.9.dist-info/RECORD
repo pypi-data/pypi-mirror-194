@@ -1,0 +1,9 @@
+sheets_and_friends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sheets_and_friends/converters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sheets_and_friends/converters/sheet2linkml.py,sha256=XuIpLdZ6fT-AJrBpQRN-DzGtI_cryzSd2Cf-uUKfyTs,10703
+sheets_and_friends/modifications_and_validation.py,sha256=-fKKXm4-DVI1sxLdr3VR8o0flMbY8rxrAOsEdeBsy8U,10904
+sheets_and_friends/shuttle.py,sha256=eutAVqzGuaw-kzUpyPyNpkFHOt7I568kmNkHwm1bdjk,9524
+sheets_and_friends-0.1.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sheets_and_friends-0.1.9.dist-info/entry_points.txt,sha256=F4-nNMdTXddux-Lv8IhyAQAVXeNEZo0NveNNu1Q_krs,174
+sheets_and_friends-0.1.9.dist-info/METADATA,sha256=kTCVsHKDJ4uOYWGRDEStIKUik7MQsgtKQRgyYVFFI_g,822
+sheets_and_friends-0.1.9.dist-info/RECORD,,
