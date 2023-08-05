@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pydungeoncrawl
+Version: 0.1.8
+Summary: A package to create and play a python-based fantasy combat game.
+Home-page: https://github.com/MaraudingAvenger/pydungeoncrawl
+Author-email: Luke Chambers <marauding.avenger@gmail.com>, Shaun Eames <Nythious@gmail.com>
+Project-URL: Homepage, https://github.com/MaraudingAvenger/pydungeoncrawl
+Project-URL: Bug Tracker, https://github.com/MaraudingAvenger/pydungeoncrawl/issues
+Keywords: dungeoncrawl,battlecode,rpg,game
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Topic :: Games/Entertainment :: Turn Based Strategy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: notebook
+Requires-Dist: jupyter ; extra == 'notebook'
+Requires-Dist: IPython ; extra == 'notebook'
+
+# pydungeoncrawl
+
+A python package to run a dungeon crawl with appropriate classes and structure.
+
+This package is meant to be used in an interactive session, and works best when used in conjuction with a Jupyter Notebook. It is also useable in Google Colab (with slight modifications to the colab runtime -- for example code see the [API reference](https://dungeon.pynight.com/api)).
+
+## API Reference
+See the [API reference](https://dungeon.pynight.com/api) for explanations and usage examples.
