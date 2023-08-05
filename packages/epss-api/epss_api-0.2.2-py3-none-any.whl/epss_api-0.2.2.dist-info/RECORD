@@ -1,0 +1,8 @@
+sbom.xml,sha256=LfnuIhLEmrgyNaTxZHAkBq_-2mh3eRwNbdYCfIvlRkE,52890
+epss_api/__init__.py,sha256=xArYrbh8pPKxL4JSb7lhhDhI93I3pBQcqWyiJWDUS-0,54
+epss_api/epss.py,sha256=r9vdW7GDgbu8Rzl7QK8fro7Z7a7-QgUfvWFNDZ-2te0,2348
+epss_api-0.2.2.dist-info/entry_points.txt,sha256=SKmOto1tJIPy_90XBywMJ7LGyG447LOs0PL-Y9NMSR4,113
+epss_api-0.2.2.dist-info/LICENSE,sha256=rzWXqSQprKAaJHHcL8Bd6l3Xx0vvfx-0bbk1Z5pBzX4,1064
+epss_api-0.2.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+epss_api-0.2.2.dist-info/METADATA,sha256=jyxU1s8WvK6T1R7g8C6sD47-ov0a3YKiF0E9O-N3aPQ,3363
+epss_api-0.2.2.dist-info/RECORD,,
