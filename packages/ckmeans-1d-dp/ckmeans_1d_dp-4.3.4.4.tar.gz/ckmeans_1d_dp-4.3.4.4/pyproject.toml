@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "pybind11>=2.10.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ckmeans_1d_dp"
+version = "4.3.4.4"
+authors = [
+    {name = "Alden Bradford"},
+]
+description = "A python interface for the Ckmeans.1d.dp R package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+homepage = "https://github.com/AldenMB/Ckmeans.1d.dp"
