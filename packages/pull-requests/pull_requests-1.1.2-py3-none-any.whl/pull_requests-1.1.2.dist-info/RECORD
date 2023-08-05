@@ -1,0 +1,13 @@
+pull_request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pull_request/__main__.py,sha256=GEJbmrgQGnTLe985KqoW42_KFIMdL9icpogW6Jq1bYk,108
+pull_request/command_line_argument_parser.py,sha256=KbNgDpkEWIoT-c0H-kCyrkad_EhzeERSbYrUsNWLxuQ,914
+pull_request/credential_manager.py,sha256=7D5_9faDH4qu7nKPnCGGN45epb-sNxrBAxQQSIuJS74,1354
+pull_request/exceptions.py,sha256=kF1w8v5mZwhkAGFZx1AB82K3M59iXx4QZkCuxN9NMcw,114
+pull_request/main.py,sha256=K-ahH9zgEwC6RgQswpgtYC9sJMZxdU6UEAyV6gqpvIY,992
+pull_request/pullrequest.py,sha256=yUgIwOL2a05SFvTAWKXFJhswCb783z7TSHlO3qQuJLs,2208
+pull_requests-1.1.2.dist-info/LICENSE,sha256=vWz2VDPWfUCMJg8u9ZJtTm4LLoSCwwDLCO30yR7dWOs,1062
+pull_requests-1.1.2.dist-info/METADATA,sha256=bGUv3uJbpUeIGFvYXz8nOhcPnxrYvnBURhOns9AEkIM,1139
+pull_requests-1.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pull_requests-1.1.2.dist-info/entry_points.txt,sha256=Hhq2-FAF3l6HuhuWaIvv7qissfBX6KjEuG6K4GNmtzU,57
+pull_requests-1.1.2.dist-info/top_level.txt,sha256=Otxg7GZEG_72nIrYe7gxEbUVU5WOSknLKjyu69eBos0,13
+pull_requests-1.1.2.dist-info/RECORD,,
