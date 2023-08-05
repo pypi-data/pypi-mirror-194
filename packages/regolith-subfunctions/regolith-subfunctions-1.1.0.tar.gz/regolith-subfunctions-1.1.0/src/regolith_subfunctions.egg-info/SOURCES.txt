@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/regolith_subfunctions/__init__.py
+src/regolith_subfunctions.egg-info/PKG-INFO
+src/regolith_subfunctions.egg-info/SOURCES.txt
+src/regolith_subfunctions.egg-info/dependency_links.txt
+src/regolith_subfunctions.egg-info/top_level.txt
