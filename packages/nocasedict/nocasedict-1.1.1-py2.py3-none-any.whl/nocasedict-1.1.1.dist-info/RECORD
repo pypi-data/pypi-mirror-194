@@ -1,0 +1,12 @@
+nocasedict/__init__.py,sha256=vabKc4N8U_mLuxlyIjtFFS63xP2JyYBaqp1DK3YIAbQ,294
+nocasedict/_hashable.py,sha256=_m3QGx7qoFyvj1OlV6MNsba5IdrcXuJ470a-UTtWmyc,2080
+nocasedict/_keyableby.py,sha256=M51bCJViPRFNIVihVWQQ6rfJr5NrPWtiiMpzl3eLobI,1432
+nocasedict/_nocasedict.py,sha256=ikPDCqXxRMhyJ7T1WJenBDdr5jICggbDkaj9kdNk-dg,31357
+nocasedict/_utils.py,sha256=9cv185amf5zy6RAmmd800K7pvUSKiSgAKuYWjkZOKl0,1083
+nocasedict/_version.py,sha256=zKPBc330NofGBIPXHt4ambZozuPh8xjgWXuiWFTkg48,321
+nocasedict-1.1.1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+nocasedict-1.1.1.dist-info/METADATA,sha256=Xqkmh_REdvDVZ7MBZFV2KglhKAjX9ztkN1Qx83x135U,6783
+nocasedict-1.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+nocasedict-1.1.1.dist-info/top_level.txt,sha256=vbO9f-UVytkzk5ZR4hjxsPRAVPyFR5xpL6ROUsn3AHs,11
+nocasedict-1.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+nocasedict-1.1.1.dist-info/RECORD,,
