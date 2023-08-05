@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Ngoto
+Version: 0.0.34
+Summary: Ngoto module
+Author: Harry Ludemann
+Author-email: 
+Keywords: python,harryludemann,osint,pentester,ngoto
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
