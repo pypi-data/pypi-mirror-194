@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+hopperlib/__init__.py
+hopperlib.egg-info/PKG-INFO
+hopperlib.egg-info/SOURCES.txt
+hopperlib.egg-info/dependency_links.txt
+hopperlib.egg-info/requires.txt
+hopperlib.egg-info/top_level.txt
