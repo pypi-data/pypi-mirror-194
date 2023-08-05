@@ -1,0 +1,2 @@
+[console_scripts]
+schema_transpose = schema_transpose.cli:app
