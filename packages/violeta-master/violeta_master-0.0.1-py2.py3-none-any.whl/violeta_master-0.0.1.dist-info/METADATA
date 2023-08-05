@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: violeta-master
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/pypa/violeta-master
+Author: Example Author
+Author-email: author@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bizdays (==0.3.0)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: jsonschema (<=3.2.0,>=3.0.1)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: scipy (==1.5.4)
+Requires-Dist: simplejson (==3.17.2)
+Requires-Dist: suds-py3 (==1.4.4.1)
+Requires-Dist: xmltodict (==0.12.0)
+
+# violeta-master
