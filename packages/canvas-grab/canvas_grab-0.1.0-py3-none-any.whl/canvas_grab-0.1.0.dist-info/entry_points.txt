@@ -1,0 +1,3 @@
+[console_scripts]
+canvas_grab=canvas_grab.scripts.__main__:main
+
