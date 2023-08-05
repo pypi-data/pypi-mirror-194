@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nxscli_np
+Version: 0.5.0
+Summary: Nxscli Numpy extension
+Author-email: raiden00 <raiden00@railab.me>
+License: Apache-2.0
+Project-URL: Changelog, https://github.com/railab/nxscli-np/blob/master/CHANGES.md
+Project-URL: Homepage, https://github.com/railab/nxscli-np
+Keywords: nuttx,nxscli
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Nxscli-np
+![master workflow](https://github.com/railab/nxscli-np/actions/workflows/master.yml/badge.svg)
+
+Numpy extension to Nxscli.
+
+## Features
+
+* Save data to NumPy files (`.npy`)
+* NumPy `numpy.memmap()` support
+

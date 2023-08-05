@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools >= 61.2"]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "nxscli_np"
+version = "0.5.0"
+authors = [{name = "raiden00", email = "raiden00@railab.me"}]
+description = "Nxscli Numpy extension"
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+         "nxscli>=0.5.0",
+         "numpy>=1.24.2",
+         "click>=8.1"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Embedded Systems",
+  "Operating System :: OS Independent",
+]
+keywords = [
+  "nuttx",
+  "nxscli",
+]
+
+[project.urls]
+Changelog = "https://github.com/railab/nxscli-np/blob/master/CHANGES.md"
+Homepage = "https://github.com/railab/nxscli-np"
+
+[project.entry-points."nxscli.extensions"]
+plugins = "nxscli_np.ext_plugins"
+commands = "nxscli_np.ext_commands"
+
+[tool.black]
+line-length = 79
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 79
