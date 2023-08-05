@@ -1,0 +1,265 @@
+Metadata-Version: 2.1
+Name: bb-ipythontools
+Version: 0.0.2
+Summary: 
+Author: Erik Beebe
+Author-email: beebeapps_debugging@tuta.io
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# BB-iPythonTools
+
+> Custom ipython_config that adds basic imports and offers a per project config file with tools to edit said file within the shell. This project is INCOMPLETE and missing functionality.
+
+## Usage:
+
+```python
+
+from bb_ipythontools import main
+
+# call function help message
+main( 'help' )
+
+# if custom ipython_config.py is installed...
+#  - pass 'help' as an argument to any function to
+#    print the help message
+
+# print .ipython_startup.py exec lines
+getProjectStartupLines( *args )
+
+# add line to .ipython_startup.py
+addProjectStartupLine( *args, line = None )
+
+# remove line from .ipython_startup.py
+rmProjectStartupLine( *args, line = None )
+
+# get path to .ipython_startup.py
+getProjectStartupFile( *args )
+
+# write .ipython_startup.py file
+writeProjectStartupFile( *args, _dir = None )
+
+# write custom ipython_config.py to provided profile
+#  - profile directory must exist
+ipythonInstallConfigurationFile( cls, *args, profile = None, link = None )
+
+```
+
+### .ipython_startup.py
+
+```
+# Project configuration file
+#
+#    Lines in this file will be added to ipython's configuration
+#  module 'InteractiveShellApp.exec_lines' to be loaded at startup
+
+```
+
+### __init__.main()
+
+```python
+def main(arg = None, *, config_path = None):
+    """
+    main( *, func, config_path = None )
+      - simple way of getting ProjectConfiguration methods
+
+        *args       = method(s) to return
+                        - takes precedence over config_path
+        config_path = path to .ipython_startup.py
+
+        func options:
+            - 'addline'
+            - 'class'
+            - 'class-help'
+            - 'emptystart'
+            - 'findlock'
+            - 'getfile'
+            - 'getlines'
+            - 'help'
+            - 'initconfig'
+            - 'rmline'
+            - 'writefile'
+
+        Returns path to .ipython_startup.py if existing, else None, if
+      no argument is given.
+
+    """
+```
+
+## Main Class
+
+```python
+class ProjectConfiguration:
+    """
+    ProjectConfiguration
+      - Configure .ipython_startup.py located in project directory
+
+        The .iPython_startup.py file is read when loading iPython from
+      anywhere in a projects folder heirarchy if BB-iPythonTools are
+      installed and setup. BB_iPythonTools will automatically add the
+      project config file to the root of the project by looking for a
+      lock file. This file can be added anywhere manually with the class
+      function ProjectConfiguration.writeProjectStartupFile() and can be
+      returned with ProjectConfiguration.getProjectStartupFile().
+
+        These class methods are retrieved through an outside function,
+      main(), which python_config.py uses to set longer aliases for each
+      class so as to not pollute the namespace of iPython. The __doc__
+      strings are titled using these aliases.
+
+        cls.addLine()       << - addProjectStartupLine()
+        cls.rmLine()        << - rmProjectStartupLine()
+        cls.getLines()      << - getProjectStartupLines()
+        cls.getFile()       << - getProjectStartupFile()
+        cls.writeFile()     << - writeProjectStartupFile()
+        cls.ipythonConfig() << - ipythonInstallConfigurationFile()
+
+        The argument 'help' can be passed to any of these methods to print
+      all the doc strings in this class.
+
+    """
+```
+
+### Class Methods
+
+```python
+@classmethod
+def findLockDir(cls, *args):
+    """
+    findLockDir()
+      - Attempt to find lockfile to determine project's root directory
+
+        Returns ( lockfile_dir, .ipython_startup.py )
+
+      *args:
+        'help' = print( cls.help )
+
+    """
+```
+
+```python
+@classmethod
+def addLine(cls, line = None, *args):
+    """
+    addProjectStartupLine( line = None )
+      - Add a line to .ipython_startup.py
+
+        line = Exec line to add to project's startup file for iPython
+            - user will be prompted before any changes
+            - if None, user will be prompted to enter text
+
+      *args:
+        'help' = print( cls.help )
+
+    """
+```
+
+```python
+@classmethod
+def rmLine(cls, *args, line = None ):
+    """
+    rmProjectStartupLine( line = None )
+      - Remove line from .ipython_startup.py
+
+        line = Line or part of line to be removed
+            - user will be prompted before any changes
+            - if None, user will be prompted to enter text
+
+      *args:
+        'help' = print( cls.help )
+
+    """
+```
+
+```python
+@classmethod
+def emptyStartup(cls, *args):
+    """
+    emptyStartup():
+      - Return an empty startup file as a string
+
+        .ipython_startup.py template
+
+      *args:
+        'help' = print( cls.help )
+
+    """
+```
+
+```python
+@classmethod
+def getLines(cls, *args):
+    """
+    getProjectStartupLines()
+      - View executed lines in .ipython_startup.py
+
+      *args:
+        'help' = print( cls.help )
+
+    """
+```
+
+```python
+@classmethod
+def getFile(cls, *args):
+    """
+    getProjectStartupFile()
+      - Returns .ipython_startup.py path
+
+      *args:
+        'help' = print( cls.help )
+
+    """
+```
+
+```python
+@classmethod
+def writeFile(cls, *args, _dir = None):
+    """
+    writeProjectStartupFile()
+      - Writes file to disk
+
+        _dir = directory to write file in
+            - defaults to None
+            - when None, attempts to find project root
+
+      *args:
+        'help' = print( cls.help )
+
+        If file exists, and _dir is given, then the existing file will
+      be moved to .ipython_startup.old. Returns True if successfully
+      written and False otherwise.
+
+    """
+```
+
+```python
+@classmethod
+def ipythonInstallConfigurationFile(cls, *args, profile = None, link = None):
+    """
+    ipythonInitConfig( profile )
+      - Write/replace ipython_config.py found in $HOME/.ipython
+
+      *args:
+        profile = name or absolute path of user's iPython profile
+        'help'  = print( cls.help )
+
+      **kwargs:
+
+    """
+```
+
+#### Changelog
+
+- 0.0.1
+    - initial release
+
+- 0.0.2
+    - added README
+    - labeled aliases
+    - changed functionality of __init__.main
+    - minor updates to code
+

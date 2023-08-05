@@ -1,0 +1,7 @@
+bb_ipythontools/__init__.py,sha256=Qx8APgMOa-zttg6_d-3T9dcYHYa6fwKM25OMHNvqZ9c,2736
+bb_ipythontools/datafiles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bb_ipythontools/datafiles/ipython_config.py,sha256=Gl0E62fmlsqw_Lq1dhTCuAw1kS2n0by2xRd0ailDKlo,10433
+bb_ipythontools/ipythonprojectfunctions.py,sha256=yRphImleRL2Cvziv3uGHaQaz4bPC2hC0tPmeLSA22JA,16519
+bb_ipythontools-0.0.2.dist-info/METADATA,sha256=-ZOIgSgrSKUbginkqZfF5KTMq1utC--ueSuG70pJzmA,6374
+bb_ipythontools-0.0.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+bb_ipythontools-0.0.2.dist-info/RECORD,,
