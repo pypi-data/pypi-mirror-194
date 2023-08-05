@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/txt/OStxt.py
+src/txt/__init__.py
+src/txt/txt.py
+src/txt/version.py
+src/txt/numtxt/__init__.py
+src/txt/numtxt/numtxt.py
+src/txt/plot/__init__.py
+src/txt/plot/plot.py
+src/txt_sky.egg-info/PKG-INFO
+src/txt_sky.egg-info/SOURCES.txt
+src/txt_sky.egg-info/dependency_links.txt
+src/txt_sky.egg-info/top_level.txt
