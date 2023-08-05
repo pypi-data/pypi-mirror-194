@@ -1,0 +1,16 @@
+nonebot_plugin_datastore/__init__.py,sha256=VD8o7ANkJTJrfl_fcJRdiRpbMp80x_Oh7VkEQ4VgnWM,192
+nonebot_plugin_datastore/config.py,sha256=a92QWxS6usJ_qPNbrimq5YU9gPcJynstEpfommdHyoI,1718
+nonebot_plugin_datastore/db.py,sha256=Ro_nZMZVs7dJ8QusmsCnLDIRg6fcjiFuuwFdCC4ADUA,2989
+nonebot_plugin_datastore/plugin.py,sha256=QSZSXRM1qFOTn8V6M83A15E7qkWc9KE6POb52Ez_vJY,10829
+nonebot_plugin_datastore/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonebot_plugin_datastore/script/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonebot_plugin_datastore/script/cli.py,sha256=79pdTfFDw0kJw5uuDUeRqigmKuxRT3GvOTPCes7DIsA,6755
+nonebot_plugin_datastore/script/command.py,sha256=3B84OlEFahmEIUOyGsJglDkxn2yPAAb5FiHdeHCRTFE,12170
+nonebot_plugin_datastore/script/migration/script.py.mako,sha256=oMXw9LC3zRbinWWPPDgeZ4z9FJrV2zhRWiYdS5YgNbI,526
+nonebot_plugin_datastore/script/utils.py,sha256=zAa3cvEqHwsjWbQiPoh0PsSxH2Nsx4oD2eVWjlX_o9I,3860
+nonebot_plugin_datastore/utils.py,sha256=soBDtyV-JDt5lGyE2bTEDLswCBv36BoeFRZ0gxLLAl8,1303
+nonebot_plugin_datastore-0.5.9.dist-info/LICENSE,sha256=MMbeK3nb7M0veV3gAVRNkl164LjuRY2Y1LPzgTU-be0,1067
+nonebot_plugin_datastore-0.5.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+nonebot_plugin_datastore-0.5.9.dist-info/METADATA,sha256=I_-4nD3GCisEvjGw-eY6nsihwUHEPOgzYKxLdI_kLSg,6581
+nonebot_plugin_datastore-0.5.9.dist-info/entry_points.txt,sha256=MKZXtB9yVTYtdKBQoNOFk5lFXL2Ua6FNZ0vyhIHQ9MQ,65
+nonebot_plugin_datastore-0.5.9.dist-info/RECORD,,
