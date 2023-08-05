@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: v
+Version: 2.4.0
+Summary: v: the ultimate package for everything
+Author-email: Dylan Rogers <opendylan@proton.me>
+Project-URL: Homepage, http://123web.uk/v/py
+Project-URL: Bug Tracker, http://123web.uk/v/py/bugs
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# v
+
+Welcome to v - essential tools for programming in Python!
+
+## Installation
+
+Linux / macOS (python3):
+
+``` zsh
+python3 -m pip install v
+```
+
+Linux  / macOS (python2):
+
+``` zsh
+python -m pip install v
+```
+
+Windows:
+
+``` zsh
+py -m pip install v
+```
+
+## Docs
+
+[v documentation](http://123web.uk/v/py/docs)
+
+---
+
+``` python
+v.file.ls(path) #List all files in a folder
+v.file.create(file) # Create the specified folder
+v.file.write(file, content) # Write some data to a file
+v.file.read(file) # Get the contents of a file
+v.file.rm(path) # Delete a file
+v.file.rmdir(path) # Delete a folder
+v.file.mkdir(folder) # Create a folder
+v.file.copy(origin, destination) # Copy the origin file to the destination
+v.file.append(file, content) # Append the content to the file
+v.file.move(origin, destination) # Change the filepath of origin to destination
+v.file.rename(origin, destination) # Rename the old_name file to new_name, same as move()
+```
