@@ -1,0 +1,4 @@
+[console_scripts]
+tvbextxircuits = tvbextxircuits.start_xircuits:main
+tvbextxircuits-components = tvbextxircuits.start_xircuits:download_component_library
+tvbextxircuits-examples = tvbextxircuits.start_xircuits:download_examples
