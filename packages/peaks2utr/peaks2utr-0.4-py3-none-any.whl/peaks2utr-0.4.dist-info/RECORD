@@ -1,0 +1,15 @@
+peaks2utr/__init__.py,sha256=5afDr_vX1va5h-J7FNGBJE6vgui_d8bhIUMOPp_rTiU,6690
+peaks2utr/__main__.py,sha256=wD12TzzRG4TXXPwHlIpfKwxNyq_ColZou_GjVaynBsc,89
+peaks2utr/annotations.py,sha256=BulDA3v-vikE0n1r6nL9PchhJHiG4mlAupdjc6E8Oyw,5636
+peaks2utr/constants.py,sha256=e8fSz79M94rE0-P7BoRz_yDbYtQaY7Jbe-DUe9Rf_3M,405
+peaks2utr/criteria.py,sha256=Oz4cVb4p8ZzAsZarVf7PQSRUUkFaBRHqY6Qrvn5zBB0,3613
+peaks2utr/exceptions.py,sha256=ilKDJvXyX2birVylddRbQlq-miaboV450GgtaGHwo9E,273
+peaks2utr/models.py,sha256=9fMlT6S6dx_lK_8tVbjqEMN3jmJdcoRFlJmn7G4Qzf8,3632
+peaks2utr/postprocess.py,sha256=zmCZ45K2XJYr_pZJxd_b9EBpmi6XE6YZ7pE9BVtzA64,3171
+peaks2utr/preprocess.py,sha256=ohAZ0ECBTf7B2mJ0oqRfsxM_tpS2H9aSkeLp77hMVt8,7858
+peaks2utr/utils.py,sha256=sAk8hC7uU8uXNCHuzB_RTQcZzZVozlVXliA8_PRxjqI,3675
+peaks2utr-0.4.dist-info/METADATA,sha256=AeEZgNWvGnjNJpbiV83HPMqTTrmHzzRurtceGchVbWI,3150
+peaks2utr-0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+peaks2utr-0.4.dist-info/entry_points.txt,sha256=x2w58kK5zvSu7tuYd7xscnXYt_xSVA_VZ8dpOwJM0_4,45
+peaks2utr-0.4.dist-info/top_level.txt,sha256=3Te7Kmcp6T9CdcarxXYBeczBg41MRb5xdsa2WDFiX7o,10
+peaks2utr-0.4.dist-info/RECORD,,
