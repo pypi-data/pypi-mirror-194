@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tchan.py
+tchan.egg-info/PKG-INFO
+tchan.egg-info/SOURCES.txt
+tchan.egg-info/dependency_links.txt
+tchan.egg-info/entry_points.txt
+tchan.egg-info/requires.txt
+tchan.egg-info/top_level.txt
