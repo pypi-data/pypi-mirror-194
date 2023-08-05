@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pytest-pyspec
+Version: 0.2.0
+Summary: A python test spec based on pytest
+License: GPL-3.0-only
+Author: Felipe Curty
+Author-email: felipecrp@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest (>=7.2.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+
