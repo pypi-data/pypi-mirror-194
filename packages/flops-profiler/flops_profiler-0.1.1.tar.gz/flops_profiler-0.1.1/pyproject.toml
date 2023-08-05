@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "flops-profiler"
+version = "0.1.1"
+description = "Measures the parameters, latency, and floating-point operations of PyTorch model."
+authors = ["Cheng Li <pistasable@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+importlib-metadata = "^6.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.1"
+flake8-docstrings = "^1.7.0"
+darglint = "^1.8.1"
+Sphinx = "^6.1.3"
+sphinx-autodoc-typehints = "^1.23.4"
+coverage = {version = "^7.1.0"}
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.paths]
+source = ["flops_profiler", "*/site-packages"]
+[tool.coverage.run]
+branch = true
+source = ["flops_profiler"]
+[tool.coverage.report]
+show_missing = true
