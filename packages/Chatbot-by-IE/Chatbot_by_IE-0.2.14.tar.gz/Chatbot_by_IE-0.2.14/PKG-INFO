@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: Chatbot_by_IE
+Version: 0.2.14
+Summary: Chatbot: Addressbook, NoteBook, Sort file, Games
+Home-page: https://github.com/Sanyavas/chatbot-team-project.git
+Author: Oleksandr Vasylyna, Oleh Vakulchyk, Nataleia Orlovska, Anton Sokhnenko, Polina Dyka
+Author-email: vasilinaoleksanrd@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# CHATBOT
+___
+Chatbot С–s a personal assistant.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install Chatbot-by-IE
+```
+
+## Description
+
+* AddressBook
+* NoteBook
+* Sort files
+* Games
+
+
+## Command to start from Terminal
+
+### /> chatbot
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
