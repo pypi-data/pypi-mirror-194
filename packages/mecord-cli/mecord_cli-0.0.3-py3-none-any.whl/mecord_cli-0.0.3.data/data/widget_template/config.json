@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "icon": "SD 1.5",
+  "name": "SD 1.5",
+  "cmd": "E:\\mecord_sd\\main.py",
+  "max_task_number": 5000,
+  "data": {
+    "fn_name": [
+      "txt2image",
+      "img2img"
+    ]
+  },
+  "age": 18,
+  "group_id": 1,
+  "widget_id": "001"
+}
