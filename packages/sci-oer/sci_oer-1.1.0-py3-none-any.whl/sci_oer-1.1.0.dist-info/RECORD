@@ -1,0 +1,14 @@
+scioer/__init__.py,sha256=-q2BbeOYXrYyNRTZLPMPHwRWlAaRByQ3l0h0rqxARwI,86
+scioer/__version__.py,sha256=eN4XHm6SxF8r-Rq1FxYi3sUjU-hsaVzCjqjRUmosPC8,160
+scioer/cli.py,sha256=RAjreFb4FCY8VEpFgHeTpKM1V5AVsfwGTuDvZAvZM_E,12844
+scioer/docker.py,sha256=Fv_WEEz1IbzdfImKr_mLKY6N242djcnyK6nJUg-EuJc,6885
+scioer/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scioer/config/load.py,sha256=QyGZ35ijlpQTksFd8Zn8nxEQYGDzZGKOP5pq4kKd7UQ,2956
+scioer/config/parse.py,sha256=yQG7tZA-MJeEeUQ7bYZgiE2u5sTkEJ-1ntYwj995zUw,583
+tests/test_cli.py,sha256=a1bbXuE3kH5sDI25tv_HEUqLAiiFmfftrJTDflAa7VE,284
+sci_oer-1.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+sci_oer-1.1.0.dist-info/METADATA,sha256=dRdTAS6noL9rZRkSh5XX5eq-RjCmWJyn2YdAT1z4CRk,9614
+sci_oer-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sci_oer-1.1.0.dist-info/entry_points.txt,sha256=q4Impb7gGC-b1Rtpi7aD1cUwE15EjzK6reqitS93wss,42
+sci_oer-1.1.0.dist-info/top_level.txt,sha256=YzaTiCU0zxNIGeEYaovuv9hyTuH8YDur-G6OM2ZFTs4,18
+sci_oer-1.1.0.dist-info/RECORD,,
