@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: eindir
+Version: 0.0.3
+Summary: A set of "particles" or components mainly focused on working with functions in ND.
+Author-email: Rohit Goswami <rgoswami@ieee.org>, Ruhila S <ruhila@ieee.org>, Amrita Goswami <amrita@hi.is>, Sonaly Goswami <sonaly@iitk.ac.in>, Debabrata Goswami <dgoswami@iitk.ac.in>
+Maintainer-email: Rohit Goswami <rgoswami@ieee.org>, Ruhila S <ruhila@ieee.org>, Amrita Goswami <amrita@hi.is>
+License: MIT
+Project-URL: Homepage, https://github.com/HaoZeke/eindir
+Project-URL: Bug Tracker, https://github.com/HaoZeke/eindir/issues
+Keywords: library,tools,structures
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# eindir
+
+A set of "particles" or components mainly focused on working with functions in ND.
