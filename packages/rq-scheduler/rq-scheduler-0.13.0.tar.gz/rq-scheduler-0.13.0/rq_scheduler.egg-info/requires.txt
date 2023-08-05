@@ -1,0 +1,4 @@
+crontab>=0.23.0
+rq>=0.13
+python-dateutil
+freezegun
