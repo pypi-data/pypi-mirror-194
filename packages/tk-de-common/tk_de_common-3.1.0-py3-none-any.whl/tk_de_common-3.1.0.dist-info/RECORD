@@ -1,0 +1,8 @@
+tk_de_common/__init__.py,sha256=NL11dbIuEH10WZaleVRd5car0iKqDq4ZRPUPhuFbq4U,45
+tk_de_common/hasher.py,sha256=EeYW8bGH1_CL7g88ZKkZc3OCh8C-FznKymsjDvGNSeA,2120
+tk_de_common/s3_util.py,sha256=iH7TwZWZpyOAFRy4915u2xG-Xk0gArYtxPHYHxjSSQs,1216
+tk_de_common-3.1.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+tk_de_common-3.1.0.dist-info/METADATA,sha256=MdmiQEsw-KqG2hndLx5zRdB5y6Z81wEeQQ5ViFUkc0Q,824
+tk_de_common-3.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tk_de_common-3.1.0.dist-info/top_level.txt,sha256=vuZysfVzVGAWhRreOtQqHYdv6te6rl4FxAuUzE3TpyQ,13
+tk_de_common-3.1.0.dist-info/RECORD,,
