@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pysdcxx
+Version: 0.1.0
+Summary: Sørensen–Dice coefficient on string bigram multi-sets (in C++)
+Home-page: https://github.com/vencik/libsdcxx
+Author: Václav Krpec
+Author-email: vencik@razdva.cz
+License: BSD-3-Clause license
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
