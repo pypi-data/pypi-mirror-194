@@ -1,0 +1,8 @@
+gpflow
+pandas
+numpy
+scipy
+pybaselines
+
+[:python_version >= "3.7"]
+importlib-metadata
