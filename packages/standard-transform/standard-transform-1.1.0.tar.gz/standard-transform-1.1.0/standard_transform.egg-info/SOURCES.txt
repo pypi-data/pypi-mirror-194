@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+standard_transform/__init__.py
+standard_transform/base.py
+standard_transform/datasets.py
+standard_transform/utils.py
+standard_transform.egg-info/PKG-INFO
+standard_transform.egg-info/SOURCES.txt
+standard_transform.egg-info/dependency_links.txt
+standard_transform.egg-info/requires.txt
+standard_transform.egg-info/top_level.txt
+test/test_tform.py
