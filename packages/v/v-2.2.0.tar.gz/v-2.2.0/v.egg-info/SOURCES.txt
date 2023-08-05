@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+v/__init__.py
+v/colour.py
+v/file.py
+v/maths.py
+v.egg-info/PKG-INFO
+v.egg-info/SOURCES.txt
+v.egg-info/dependency_links.txt
+v.egg-info/top_level.txt
