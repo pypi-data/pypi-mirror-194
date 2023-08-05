@@ -1,0 +1,14 @@
+jojoba_proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jojoba_proto/auth_pb2.py,sha256=Axr6bI6U7BzWJ-MtnbsmnHt-k7nMtKeHUPGfM7fbJac,2761
+jojoba_proto/auth_pb2.pyi,sha256=1Wq0gZZMVWKySu2tuouu_AUF9qZK_r9GsYI0iIcTMo0,2438
+jojoba_proto/auth_pb2_grpc.py,sha256=nNMRHJod_8GtiyB3xB8GANyEpRgjwDcGdJLE15Gxggo,7401
+jojoba_proto/matcher_pb2.py,sha256=WspHJqUp_iC3Aa-kwCL0cQUNe33HqGtPFL451OsqkVk,3629
+jojoba_proto/matcher_pb2.pyi,sha256=ZXCTlfjz_4RUINszPXPZK--AvYgLsKLrF4MJklwYLn4,4149
+jojoba_proto/matcher_pb2_grpc.py,sha256=NVQOUbPhCXb_J9G0pHxlpdFh1ooLIR8PycCFVY_NWBY,10485
+jojoba_proto/profile_pb2.py,sha256=_uZvOxNiZiIHKX_nlmCvKIc2MxYNX2q4yWuLFf_Tpys,3901
+jojoba_proto/profile_pb2.pyi,sha256=e4lUP0CYjkfTISIrMXct51MlEIN0I-I43gF-LQgdpwU,3583
+jojoba_proto/profile_pb2_grpc.py,sha256=qNSY_zQ1m2dHw9HIlozAERUkk-amw4m4JSjzBvX8eJo,17633
+jojoba_proto/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jojoba_proto-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+jojoba_proto-0.2.0.dist-info/METADATA,sha256=oKwIN2jAtGORTIp42yEgZgzgD7XIj9tJdBIcNRuEZVA,494
+jojoba_proto-0.2.0.dist-info/RECORD,,
