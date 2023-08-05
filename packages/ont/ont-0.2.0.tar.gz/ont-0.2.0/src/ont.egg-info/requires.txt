@@ -1,0 +1,9 @@
+numpy
+dask[array]
+imageio
+
+[dev]
+check-manifest
+
+[test]
+coverage

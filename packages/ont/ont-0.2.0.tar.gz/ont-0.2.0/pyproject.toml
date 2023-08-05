@@ -1,0 +1,53 @@
+[project]
+name = "ont"  # Required
+version = "0.2.0"  # Required
+description = "Collection of random functions that @jni finds useful"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+# keywords = ["sample", "setuptools", "development"]  # Optional
+authors = [
+  {name = "Juan Nunez-Iglesias", email = "jni@fastmail.com" } # Optional
+]
+maintainers = [
+  {name = "Juan Nunez-Iglesias", email = "jni@fastmail.com" } # Optional
+]
+
+classifiers = [  # Optional
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [ # Optional
+  "numpy",
+  "dask[array]",
+  "imageio",
+]
+
+[project.optional-dependencies] # Optional
+dev = ["check-manifest"]
+test = ["coverage"]
+
+[project.urls]  # Optional
+"Homepage" = "https://github.com/jni/ont"
+"Bug Reports" = "https://github.com/jni/ont/issues"
+# "Funding" = "https://donate.pypi.org"
+# "Say Thanks!" = "http://saythanks.io/to/example"
+"Source" = "https://github.com/jni/ont"
+
+# [project.scripts]  # Optional
+# sample = "sample:main"
+
+# [tool.setuptools]
+# package-data = {"sample" = ["*.dat"]}
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
