@@ -1,0 +1,15 @@
+numpy
+pandas
+scipy
+pathlib
+lazy_dataset
+einops
+sed_eval
+
+[dev]
+check-manifest
+
+[test]
+coverage
+jupyter
+matplotlib
