@@ -1,0 +1,17 @@
+odoo/addons/shopfloor_dangerous_goods/README.rst,sha256=T_tSrRJsrHyq3Ltw87rm6n5nwtSEywxLLwomylGrD9g,3159
+odoo/addons/shopfloor_dangerous_goods/__init__.py,sha256=mn764gINN667tYoJfnsM6HjAAhCsO_kZ6E-fUwdLY50,22
+odoo/addons/shopfloor_dangerous_goods/__manifest__.py,sha256=qnUk-0FwP73wV7-Xi4Y9043qNFIbND5UGgDM6d7ICpc,632
+odoo/addons/shopfloor_dangerous_goods/actions/__init__.py,sha256=zDMQFXQQvbf4_TqEtGmerHdJOTCu7w7A79O9f8DdZLo,40
+odoo/addons/shopfloor_dangerous_goods/actions/data.py,sha256=zYS4yNcQLeIDhDdG4hkxIz_ZgtOACH7Gxw4mGqgYW-Y,501
+odoo/addons/shopfloor_dangerous_goods/actions/schema.py,sha256=mgLUo-qgmpKccILwipKyaDgSzJKjmeEIYLO1s1awsM4,828
+odoo/addons/shopfloor_dangerous_goods/i18n/shopfloor_dangerous_goods.pot,sha256=AyzPzY6fvZoAIdVCppv0SiPLoR_D-HBQlYffHd1jWNE,341
+odoo/addons/shopfloor_dangerous_goods/readme/CONTRIBUTORS.rst,sha256=kHrpulo4pulRuabz9hVs2xC4nyC9WECwLhgbe2RmEcs,58
+odoo/addons/shopfloor_dangerous_goods/readme/DESCRIPTION.rst,sha256=PZr2UecyniI6vlPVnpx6Pe-ENLwbVT5Z2dpSCAxOrgY,68
+odoo/addons/shopfloor_dangerous_goods/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/shopfloor_dangerous_goods/static/description/index.html,sha256=pmEBVd-9aaVZV-If19_pV23yzWoj7kLCDB_VNMqp37s,12449
+odoo/addons/shopfloor_dangerous_goods/tests/__init__.py,sha256=M94nWMGhbMC6JCklmjeeBy1RzxI7TluXvvE0MiIknPc,32
+odoo/addons/shopfloor_dangerous_goods/tests/test_actions_data.py,sha256=2cRs0UOBfkGMwgQ3Yz2PPidn7Xjoi-fLfOLq3LV4e20,2949
+odoo14_addon_shopfloor_dangerous_goods-14.0.1.0.1.dev5.dist-info/METADATA,sha256=-9DFwqewnuL5nqjP1FRe3Lh7pg2DfQnQh6eC-GGYRY4,3866
+odoo14_addon_shopfloor_dangerous_goods-14.0.1.0.1.dev5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo14_addon_shopfloor_dangerous_goods-14.0.1.0.1.dev5.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_shopfloor_dangerous_goods-14.0.1.0.1.dev5.dist-info/RECORD,,
