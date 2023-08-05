@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Colorum
+Version: 0.5
+Summary: Colorum is a python package for changing the color of the console.
+Author: Cooper ransom
+Author-email: Cooperransom08@outlook.com
+Keywords: python,data,extraction,list
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+
+A python package for coloring outputs in the console, more on github.
+https://github.com/itzCozi/Colorum
