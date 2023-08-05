@@ -1,0 +1,11 @@
+summarizedexperiment>=0.2.0
+singlecellexperiment>=0.2.1
+mudata
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
