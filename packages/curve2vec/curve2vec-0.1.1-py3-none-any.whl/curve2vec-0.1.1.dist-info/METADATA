@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: curve2vec
+Version: 0.1.1
+Summary: A Python package for generating vector embeddings of curves
+Home-page: https://github.com/danielcieslinski/curve2vec
+Author: Daniel Cieśliński
+Author-email: daniel98c@gmail.com
+Keywords: curve embedding representation vector
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy (>=1.21.1)
+Requires-Dist: scipy (>=1.7.1)
+Requires-Dist: scikit-learn (>=0.24.2)
+Requires-Dist: pyefd
+Requires-Dist: matplotlib
+
