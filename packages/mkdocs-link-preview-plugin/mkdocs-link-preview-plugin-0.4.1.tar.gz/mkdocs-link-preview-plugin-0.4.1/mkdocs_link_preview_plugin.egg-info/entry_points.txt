@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+link-preview = mkdocs_link_preview_plugin.plugin:LinkPreviewPlugin
