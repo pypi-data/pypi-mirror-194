@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+    <record id="view_reward_form" model="ir.ui.view">
+      <field name="name">sm_rewards_emc.reward.form.inherit</field>
+      <field name="model">sm_rewards.sm_reward</field>
+      <field name="inherit_id" ref="sm_rewards.view_reward_form"/>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='cs_registration_request_ids']"  position="after">
+          <field name="related_subscription_ids" />
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

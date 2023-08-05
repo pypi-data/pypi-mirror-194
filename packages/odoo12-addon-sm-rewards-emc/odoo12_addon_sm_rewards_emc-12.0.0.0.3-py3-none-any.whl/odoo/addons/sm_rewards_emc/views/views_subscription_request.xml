@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="subscription_request_form" model="ir.ui.view">
+    <field name="name">subscription.request.form</field>
+    <field name="model">subscription.request</field>
+    <field name="inherit_id" ref="easy_my_coop.subscription_request_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//notebook" position="inside">
+        <page string="SM Reward">
+          <field name="related_reward_id"/>
+        </page>
+      </xpath>
+    </field>
+  </record>
+</odoo>

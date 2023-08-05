@@ -1,0 +1,11 @@
+odoo/addons/sm_rewards_emc/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo/addons/sm_rewards_emc/__manifest__.py,sha256=Ji-zbLm-N_lLYPTscLbsK8wC-f5w46LKg1LIQHZhsVk,545
+odoo/addons/sm_rewards_emc/models/__init__.py,sha256=juNWOtHN4peLDwsuzeVH2CScBi7TW5MSxTLxvFOMk3s,97
+odoo/addons/sm_rewards_emc/models/models_sm_reward.py,sha256=2PjqA7ECC4GlaauBhPUGeHJUCUkgHa9gdDQeYTc35AU,2893
+odoo/addons/sm_rewards_emc/models/models_subscription_request.py,sha256=_WWSvTdEZkjTxEOK-PUab6epP9ZGz-H5MYPlHJn0SvM,313
+odoo/addons/sm_rewards_emc/views/views_reward.xml,sha256=duqLIUJFVSsH8rtSuRpTtUBbyF-jfkro1CmWv-nw1Ug,537
+odoo/addons/sm_rewards_emc/views/views_subscription_request.xml,sha256=hedlgInnMijecQmBmRKGj8AaTwUJEEWcDFx4W0P_F-o,521
+odoo12_addon_sm_rewards_emc-12.0.0.0.3.dist-info/METADATA,sha256=jZKFFgfVWYBvS1DBClRr4GmUP24YhXipIPkjqZv8vj0,416
+odoo12_addon_sm_rewards_emc-12.0.0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo12_addon_sm_rewards_emc-12.0.0.0.3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_sm_rewards_emc-12.0.0.0.3.dist-info/RECORD,,
