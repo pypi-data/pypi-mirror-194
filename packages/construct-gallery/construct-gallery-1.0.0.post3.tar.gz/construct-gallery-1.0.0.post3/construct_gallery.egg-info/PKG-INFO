@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: construct-gallery
+Version: 1.0.0.post3
+Summary: construct-gallery GUI (based on wxPython) and development modules
+Home-page: https://github.com/Ircama/construct-gallery
+Author: Ircama
+License: CC-BY-NC-SA-4.0
+Keywords: construct-gallery,construct-editor,module,gui,wx,wxpython,widget,binary,editorconstruct,bleak,BLE,bluetooth,plugin
+Classifier: License :: Other/Proprietary License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Typing :: Typed
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# construct-gallery
+
+__wxPython Widgets extending functionalities of *construct-editor*__
+
+The following Python modules are included:
+
+- `construct_gallery.py`, providing the `ConstructGallery()` class.
+
+  This module implements a GUI editor to parse and build an editable and ordered list of binary data via a gallery of predefined [construct](https://construct.readthedocs.io/en/latest/) data structures.
+  
+  *construct* is a powerful, declarative, symmetrical parser and builder for binary data.
+  
+  `construct_gallery.py` is based on [wxPython](https://www.wxpython.org/) and [construct-editor](https://github.com/timrid/construct-editor): it relies on the excellent editing widgets provided by the *construct-editor* module and offers a superset of features compared with its standard [GUI](https://github.com/timrid/construct-editor/blob/main/construct_editor/main.py).
+  
+  This module can be directly used in GUI programs, or can be further extended with `bleak_scanner_construct.py`.
+
+- `bleak_scanner_construct.py`, providing the `BleakScannerConstruct()` class.
+
+  The component implements a [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) (BLE) GUI client to log, browse, test and edit [BLE advertisements](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy#Advertising_and_discovery).
+  
+  This module extends `construct_gallery.py`, offering a skeleton of BLE Advertiser scanner.
+  
+  [bleak](https://bleak.readthedocs.io/en/latest/) is needed (`pip3 install bleak`)
+
+*construct-gallery* also includes a number of *construct-editor* plugins, which are used by `ConstructGallery()` and `BleakScannerConstruct()`, but they can be separately reused on projects based on *construct-editor*.
+
+- plugins offering additional options for the context menu of the *construct-editor* HexEditorGrid (invoked with the right click of the mouse):
+  - `allow_python_expr_plugin.py`
+  - `decimal_convert_plugin.py`
+  - `string_convert_plugin.py`
+
+- PyShell plugin `pyshell_plugin.py`, adding a button to activate a PyShell frame (PyShell is a GUI-based python shell).
+
+- `wx_logging_plugin.py`, providing a debug GUI panel in background.
+- `pyshell_plugin.py`, activating a Python shell button that allows opening an inspector shell, which also includes a special *Help* with related submenu (that can be invoked also via F9). 
+
+## Main functionalities
+
+- Cross-platform GUI
+- The GUI includes a BLE control (implemented with buttons) which allows starting and stopping the BLE advertising receiver. Advertisements are logged in their reception sequence, automatically labbelled with the MAC address.
+- A filter button can be used to enter a specific MAC address to restrict logging, a portion of it or a sequence of addresses, as well as BLE local names.
+- Logged data can be saved to file in [pickle format](https://docs.python.org/3/library/pickle.html). Archives can be subsequently reloaded and appended to the current log. They can also be inspected with `python -mpickle archive-file-name.pickle`.
+- Advertisement data are logged in the left panel, shown as hex bytes in the central panel and then parsed to browsable *construct* structures in the right panel.
+- The Python error management is wrapped into a GUI panel.
+- A Python shell button allows opening an inspector shell, which also provides a special *Help* with related submenu (or by pressing F9).
+- All panels allow a context menu (invoked with the right click of the mouse) with a number of special functions.
+  - The left log menu panel allows renaming labels and changing MAC address. Also, by double clicking an unused area of the log panel, new frames can be added and then labelled; subsequently, a specific MAC address can be associated. Log elements can be repositioned, or deleted.
+  - The hex editor (central panel) allows any kind of copy/paste. Sequences of bytes can be pasted [in a number of different formats](https://github.com/timrid/construct-editor/pull/17#issuecomment-1367582581). Also a special checkbox enables pasting Python expressions. Two debugging tools are also provided (invoked with the right click of the mouse after selecting a sequence of bytes), to convert bytes into a wide set of numeric forms as well as strings; these debug panels can be used to quickly check the most appropriate conversion method for a sequence of bytes.
+- When starting the BLE reception, a debug window is opened in background, with the possibility to control the debug level and clear the produced data.
+
+
+Full information, installation notes, API reference and usage details at the [construct-gallery GitHub repository](https://github.com/Ircama/construct-gallery).
