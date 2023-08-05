@@ -1,0 +1,3 @@
+[console_scripts]
+hi=auto_everything.terminal:_hi
+
