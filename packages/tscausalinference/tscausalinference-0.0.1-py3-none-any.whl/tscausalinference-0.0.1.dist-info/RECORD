@@ -1,0 +1,11 @@
+tscausalinference/__init__.py,sha256=nKctG6dZdqweBog7aYCv2h6Dzv2d7PkjLF8ROOUODzU,678
+tscausalinference/__version__.py,sha256=LrStYFQZgBrwsyH_LbaqYSjFzhhwChPcaYIQL4s80WI,593
+tscausalinference/bootstrap.py,sha256=zySRgHl34FkTdpgDwHre67d0L0zPUUGBEfLkfARWdpY,4583
+tscausalinference/evaluators.py,sha256=FlbOs913ENRA0UZ_OpMg5dIjQELXA86Hywx-7mlCL9k,166
+tscausalinference/main.py,sha256=3k09upDjS_dCYHPr8zLuRbLhjcKhXoHbMeKktbEr0W0,10339
+tscausalinference/synth_regression.py,sha256=42Jvi-R5Scei6LZ6OCnKpvvVX8D8xs3Q6b9zXax_-o8,8611
+tscausalinference-0.0.1.dist-info/LICENSE,sha256=Oo4MkM7S9lYr-HmG5n1ltcLSDSJ6Q2SPwU7nEhwxRgA,1072
+tscausalinference-0.0.1.dist-info/METADATA,sha256=J2H22GUlYEZ4nLnGvmCpy5v27k3dpEEq7qamxVv1WH4,4620
+tscausalinference-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tscausalinference-0.0.1.dist-info/top_level.txt,sha256=Kw9E46k3CyX7QbbK-UJUSoRremr9kJ-JqEzQDkKz55A,18
+tscausalinference-0.0.1.dist-info/RECORD,,
