@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: asyncio-task-queues
+Version: 0.0.1
+Summary: Python asyncio-compatible distributed task queues
+Author-email: Ben Fiola <benfiola@gmail.com>
+Project-URL: Source, https://github.com/benfiola/asyncio_task_queues.git
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: click ; extra == 'dev'
+Requires-Dist: fastapi ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: redis ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# asyncio-task-queues
+
+_asyncio-task-queues_ is an asyncio-compatible simple distributed task queue system written in python.
