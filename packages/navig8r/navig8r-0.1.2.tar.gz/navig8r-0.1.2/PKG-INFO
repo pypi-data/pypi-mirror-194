@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: navig8r
+Version: 0.1.2
+Summary: A discord bot for students that supplies them with resources and grade reports on demand.
+Author: Aidan Neeson, Jeff Normile, Gregory Kapfhammer
+Requires-Python: >=3.9.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: discord.py (>=2.1.0,<3.0.0)
+Requires-Dist: gspread (>=5.7.1,<6.0.0)
