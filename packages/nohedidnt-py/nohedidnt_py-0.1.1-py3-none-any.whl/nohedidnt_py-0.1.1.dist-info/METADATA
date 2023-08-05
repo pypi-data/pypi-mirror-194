@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: nohedidnt-py
+Version: 0.1.1
+Summary: 
+Author: NoHeDidnt
+Author-email: dj@nohedidnt.de
+Requires-Python: >=3.7,<4.0
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: babel (>=2.11.0,<3.0.0)
+Requires-Dist: catalogue (>=2.0.8,<3.0.0)
+Requires-Dist: chardet (>=5.1.0,<6.0.0)
+Requires-Dist: charset-normalizer (>=3.0.1,<4.0.0)
+Requires-Dist: codetiming (>=1.4.0,<2.0.0)
+Requires-Dist: colour (>=0.1.5,<0.2.0)
+Requires-Dist: decorator (>=5.1.1,<6.0.0)
+Requires-Dist: deepdiff6 (>=6.2.0,<7.0.0)
+Requires-Dist: devtools[pygments] (>=0.10.0,<0.11.0)
+Requires-Dist: inflect (>=6.0.2,<7.0.0)
+Requires-Dist: pycountry (>=22.3.5,<23.0.0)
+Requires-Dist: pycountry-convert (>=0.7.2,<0.8.0)
+Requires-Dist: pydantic[email] (>=1.10.4,<2.0.0)
+Requires-Dist: python-box[all] (>=7.0.0,<8.0.0)
+Requires-Dist: python-dotenv (>=0.21.1,<0.22.0)
+Requires-Dist: pytz (>=2022.7.1,<2023.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: suntime (>=1.2.5,<2.0.0)
+Requires-Dist: typing-extensions (>=4.5.0,<5.0.0)
+Requires-Dist: tzlocal (>=4.2,<5.0)
+Requires-Dist: urllib3 (>=1.26.14,<2.0.0)
+Requires-Dist: watchdog (>=2.2.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# nohedidnt_py - NoHeDidn't Python-Library
+
+[![PyPI](https://img.shields.io/pypi/v/nohedidnt_py)](https://pypi.org/project/nohedidnt-py/)
+[![codecov](https://codecov.io/gh/NoHeDidnt/nohedidnt_py/branch/main/graph/badge.svg?token=U0OQI580BA)](https://codecov.io/gh/NoHeDidnt/nohedidnt_py)
+[![Documentation Status](https://readthedocs.org/projects/nohedidnt-py/badge/?version=latest)](https://nohedidnt-py.readthedocs.io/en/latest/?badge=latest)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/nohedidnt_py)](https://pypi.org/project/nohedidnt-py/)
+[![GitHub](https://img.shields.io/github/license/NoHeDidnt/nohedidnt_py)](./LICENSE)
+
+This repo mainly serves two purposes: As an example for trying out some things on GitHub & as my collection of code I 
+think I can use again in other projects.
+
+## Links
+
+### [Documentation](https://nohedidnt-py.readthedocs.io/en/latest/)
+
