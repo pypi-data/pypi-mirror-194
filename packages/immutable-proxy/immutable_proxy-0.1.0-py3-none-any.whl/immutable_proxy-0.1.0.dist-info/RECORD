@@ -1,0 +1,14 @@
+immutable/__init__.py,sha256=2D3QaEx_sPLaTTXxv5coKVOPASX0cYCjTpRvJiI2L1w,1192
+immutable/checktype.py,sha256=pfUtTZQgQ1gKQDwFNqiG4pOKBN-Qlj7wxlQdmQgMRuQ,725
+immutable/decorator.py,sha256=8HEUdhY8NvM8XKdUwBzIdsG-pQJYQ1OC7S3wUzO0WyM,485
+immutable/deep.py,sha256=GShyGdmmtRQAy9FePwIMTPJj3UfNdKjeW3A10zYwvQ4,843
+immutable/exceptions.py,sha256=NZoVAfglqP5KLJdZ2z7flFqdEQSLV4HzQ1xHpyMBm30,1113
+immutable/extraproxies.py,sha256=bIXnUabvc5sdgVNQgEK0CbblgenO_j2psEEee2-4GXY,2300
+immutable/immutable.py,sha256=NWeAOzDtxrPK6HPjwqtf81zkRTaKnmhAtZU1oA8tSgg,2220
+immutable/proxy.py,sha256=LVlo1b5ARh3SloOgsicZAQP5OqisoKJo1ZpdaGQRD4M,6434
+immutable/superpatch.py,sha256=Th_E4a2azroDqaCmciOzVuESvyIeRUk7udI7rAn6KgM,3543
+immutable_proxy-0.1.0.dist-info/LICENSE,sha256=CEIfjlnGEol18qkPLTgL3l8GghcnqW8oM0broROeupc,1110
+immutable_proxy-0.1.0.dist-info/METADATA,sha256=vuuz7rEIpfOuAXcCewvFI-iiuYooTKgt6HzffzOMVPI,12899
+immutable_proxy-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+immutable_proxy-0.1.0.dist-info/top_level.txt,sha256=9x42pdrJ19HMxeqBa1MxIs0495q24DWWiuSV-KicENA,10
+immutable_proxy-0.1.0.dist-info/RECORD,,
