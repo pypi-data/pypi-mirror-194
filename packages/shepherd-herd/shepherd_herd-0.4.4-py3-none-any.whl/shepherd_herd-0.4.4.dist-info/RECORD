@@ -1,0 +1,16 @@
+shepherd_herd/__init__.py,sha256=_Wsh_xOC9BEfrzvRX6w2OQM2bcvTQdotk1cV-hLXhqE,569
+shepherd_herd/cli.py,sha256=BR3MQY8ysr3NjUbXGPrFvTZ9eUlxUAJrr2jO9ryyVrA,17553
+shepherd_herd/herd.py,sha256=yJojb6xSDNfUNUMG7l0SvxXX3sVHYuRvdX9OizYSrPU,14279
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=GATqlyTY-P9F0hOYWYwFPmZGNlL7h3uC7fT01M4UrHM,2454
+tests/test_cli_basic.py,sha256=OgboE9vIblSkMD0KGXl6djvHtbxWOTH7tHuVQaregBs,6542
+tests/test_cli_emu.py,sha256=sxHV1XvNRPwM9-4X-p6bjOa8D32JyjhK6CHm26-Itq4,3989
+tests/test_cli_hrv.py,sha256=Rl3SCwhUnHvZ4FP_xyu0hRm6-IIr-CVEUh4PWDMe3xE,2788
+tests/test_cli_prog.py,sha256=EkQUVo-Fqxxm9grmMJaoooQdFEVwwYYfV1E61ErBZjU,112
+tests/test_herd_class.py,sha256=Ov_aYAy9w9lD05fiD5b-463dVuEOf_3sNs33Hp-rDC0,26
+shepherd_herd-0.4.4.dist-info/METADATA,sha256=-FQPiFR05qnjh_1X5DDE3lzKKwti8IDRcQj2kYib2QM,8015
+shepherd_herd-0.4.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shepherd_herd-0.4.4.dist-info/entry_points.txt,sha256=tgvQMNuULXoyNhevW36nRDXRsv-BOosKEsmIsZ62G-M,56
+shepherd_herd-0.4.4.dist-info/top_level.txt,sha256=llOtLNXcgeR6TYA9pO8bNM9SN5OLJ7DWpHkvh_pg9FQ,20
+shepherd_herd-0.4.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+shepherd_herd-0.4.4.dist-info/RECORD,,
