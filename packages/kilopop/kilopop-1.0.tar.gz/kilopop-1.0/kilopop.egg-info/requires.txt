@@ -1,0 +1,16 @@
+numpy==1.23.3
+pandas
+george
+scipy
+astropy
+tqdm
+sncosmo
+
+[docs]
+sphinx
+sphinx_rtd_theme
+nbsphinx
+pandoc
+
+[tests]
+coverage
