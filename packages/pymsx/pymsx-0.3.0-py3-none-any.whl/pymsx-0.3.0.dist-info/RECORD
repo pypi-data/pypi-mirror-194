@@ -1,0 +1,13 @@
+pymsx/__init__.py,sha256=-pQeD20TnlpXZ_gLU4Ik3_-3aEG6zbOVY0ln13ApuJk,35
+pymsx/api/__init__.py,sha256=0GuT_czIdbj6n78PqhMueTC5XB9S7OmMh1DsZxUmhHg,67
+pymsx/api/commands.py,sha256=9zXNBdTPWvh3ghFOoNzP8_S2ww-SHlYmT-9hVEWyfpM,2258
+pymsx/api/datasets.py,sha256=vy223dxqzgOIAfHOiiUATYdBghGiNm8LCM9FEHrtUP8,6690
+pymsx/client.py,sha256=J-3G2rOs37DmvxlhdCwI77lxtPOzRqA785bBpV5i3u8,6698
+pymsx/config.py,sha256=pFEkKi2IW15TYpu2PUVkQgVpwccPN64quAkRNQyHdYQ,1126
+pymsx/exceptions.py,sha256=-wtAlK9M5ugfDGBrn6_QShzOHAmy817P-ymD-MtPHlY,706
+pymsx/handlers.py,sha256=aHBkGVfr_rXuxoxfpVVekDPIvn5RPHXqpqpSiGPKKCg,1079
+pymsx/schemas.py,sha256=fEiUijatbaF4aqlxa-cYDg0Hgxp2E7hYLyYrADV_36g,848
+pymsx-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pymsx-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pymsx-0.3.0.dist-info/METADATA,sha256=VvEM071CphAz9X06RJ4pkIjaDZOa3sEq0k-FPMfJJJA,4275
+pymsx-0.3.0.dist-info/RECORD,,
