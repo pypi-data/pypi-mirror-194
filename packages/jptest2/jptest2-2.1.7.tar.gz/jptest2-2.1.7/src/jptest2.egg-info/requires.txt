@@ -1,0 +1,12 @@
+jupyter
+aiofiles
+
+[demo]
+watchfiles
+
+[duckdb]
+duckdb
+pandas
+
+[sqlite]
+aiosqlite
