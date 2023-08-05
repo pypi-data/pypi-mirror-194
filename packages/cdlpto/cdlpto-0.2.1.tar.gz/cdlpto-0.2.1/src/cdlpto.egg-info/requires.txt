@@ -1,0 +1,6 @@
+appdirs
+python-dateutil
+click
+PyPDF2<3
+reportlab
+tomli
