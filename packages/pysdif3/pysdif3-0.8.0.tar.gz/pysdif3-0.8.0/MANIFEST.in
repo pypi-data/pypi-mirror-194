@@ -1,0 +1,6 @@
+include data *
+recursive-include SDIF *
+prune SDIF/build 
+prune SDIF/test
+prune SDIF/doc
+recursive-exclude SDIF *.cache 
