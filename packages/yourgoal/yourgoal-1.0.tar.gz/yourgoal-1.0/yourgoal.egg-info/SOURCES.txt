@@ -1,0 +1,6 @@
+setup.py
+yourgoal/__init__.py
+yourgoal.egg-info/PKG-INFO
+yourgoal.egg-info/SOURCES.txt
+yourgoal.egg-info/dependency_links.txt
+yourgoal.egg-info/top_level.txt
