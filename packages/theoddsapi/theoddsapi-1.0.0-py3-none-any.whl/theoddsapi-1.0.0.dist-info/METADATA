@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: theoddsapi
+Version: 1.0.0
+Summary: A Python wrapper around The Odds-Api V4
+Project-URL: Homepage, https://github.com/MidpriceDog/the-odds-api-client
+Project-URL: Bug Tracker, https://github.com/MidpriceDog/the-odds-api-client/issues
+Author: MidpriceDog
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# the-odds-api-client
+Python wrapper for The Odds API V4
+
+## Getting Started
+
+Run
+
+```
+pip install -r requirements.txt
+```
+
+## Testing
+
+A test of this package can be done by running the following command
+
+```
+python tests/test.py
+```
+
+<b>Note:</b> As a wrapper for The Odds API which requires the use of an API key,
+testing this package requires using part of your the request quota associated
+with the API key supplied. The usage quota for running the various tests suites
+in `tests.py` can be found in the schedule below. 
