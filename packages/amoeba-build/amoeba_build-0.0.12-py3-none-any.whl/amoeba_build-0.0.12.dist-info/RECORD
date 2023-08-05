@@ -1,0 +1,11 @@
+amoeba/__init__.py,sha256=qqjR3mfKeg4-2v9UDLTu6URWvj2KjrwTmJhqJ1ribrM,1267
+amoeba/build_ext_option.py,sha256=JxuCxmH_JmSVb4fwIJ3iSIWutco5rWfU1_rrg3jJcNg,1535
+amoeba/build_extension.py,sha256=RorfMhMVJCB-O6zuLg4rrz7vwhLGl9cFosDUip4PtiI,11309
+amoeba/commands.py,sha256=ZaDHP9_9AtVTNvauKEINAYcUYySg6GFOqyrz6TfxgvE,2271
+amoeba/extension.py,sha256=W33sFiFNPuDBoIhtodEthn1WIZZkSjmncnBejNPtFOE,2565
+amoeba/sdist_command.py,sha256=nDPPf5joE-jwEMeIM-j3taLJCsc5o1CVnpgqR_N08zE,5585
+amoeba_build-0.0.12.dist-info/LICENSE,sha256=Lsa61p696ERPbHgvg9jU-1tY3-BEqcDuK8L9R1a53fc,1069
+amoeba_build-0.0.12.dist-info/METADATA,sha256=bi4ymM_ih8wDIrNMAWLX0HpIwcVqMXdOoFJGKVsFbmY,11308
+amoeba_build-0.0.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+amoeba_build-0.0.12.dist-info/top_level.txt,sha256=Yklqp43ZU0169D9u7-DiLIaqtBeTsaWtphZtfSpThSA,7
+amoeba_build-0.0.12.dist-info/RECORD,,
