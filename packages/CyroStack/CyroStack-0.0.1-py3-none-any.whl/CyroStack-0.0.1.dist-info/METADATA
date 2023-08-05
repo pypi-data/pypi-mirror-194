@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: CyroStack
+Version: 0.0.1
+Summary: CyroStack Is A Performant, Easy To Use Web Server Based On Python With HTTPS & Plugins Support.
+Home-page: https://github.com/CyroCoders/CyroStack
+Author: CyroCoders
+Author-email: pypi@cyrocoders.ml
+Project-URL: Bug Tracker, https://github.com/CyroCoders/CyroStack/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2 (==2.11.2)
+Requires-Dist: Brotli (==1.0.9)
+Requires-Dist: parse (==1.19.0)
+Requires-Dist: pyCLI (==2.0.3)
+Requires-Dist: MarkupSafe (==2.1.1)
+
+# CyroStack
