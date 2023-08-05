@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+denari.egg-info/PKG-INFO
+denari.egg-info/SOURCES.txt
+denari.egg-info/dependency_links.txt
+denari.egg-info/requires.txt
+denari.egg-info/top_level.txt
