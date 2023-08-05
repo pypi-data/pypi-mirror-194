@@ -1,0 +1,13 @@
+dmsuite/__init__.py,sha256=WeG9-PXGplZtVJ04KWpFtScZ5UzJXNaFcPVD5keQ-Gs,1286
+dmsuite/_version.py,sha256=dQUHa1PGpJsNE2x_SQFxtOX-jousEqplwH1bdsk6mnE,160
+dmsuite/cheb_bc.py,sha256=ZAfkikxwmnyaUmjolNbFM-R6Fouwe4y-TMzOE7BEyuo,11087
+dmsuite/examples.py,sha256=GFvkMEXHrLJ6q1JJYo2c2qvzKNDvMf16j4NguD0FxSU,1141
+dmsuite/interp.py,sha256=2zXy574v1XfIyZSqwfB70-UPOhmjpO4UUD1Q9w1n3EI,1694
+dmsuite/non_poly_diff.py,sha256=kDtaJfvUnEZ6wmbExgFr8HhKTHOTYGm0tKgyYBLjTZ8,4901
+dmsuite/poly_diff.py,sha256=gcoeelmtRHQ6LF1khFfGKEzPO27NQWxyITVkAvPPg7s,10371
+dmsuite/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dmsuite-0.2.0.dist-info/LICENSE,sha256=wDzqAntLQORAL6vQhVdzZyfsPVvFStZKtkct5DIZjK0,18047
+dmsuite-0.2.0.dist-info/METADATA,sha256=8h0akgNXrGpRntARFpkcaX0f7Ha3Ji6aFQkpONG8Pkg,22414
+dmsuite-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dmsuite-0.2.0.dist-info/top_level.txt,sha256=6V9CxMij4xyKdUHG8hsc8AftPzauIgnvas_WGmkBQ_c,8
+dmsuite-0.2.0.dist-info/RECORD,,
