@@ -1,0 +1,5 @@
+soda/data_sources/vertica_data_source.py,sha256=GlijcWGoEMyKPlEjw2BdkRFilDVmtoTJNSH6zT-IPpg,7699
+soda_core_vertica-3.0.26.dist-info/METADATA,sha256=a51pmzhGBjTYx-LsRbNN7HOAeBWEEhNUhz_xv_cUiZE,144
+soda_core_vertica-3.0.26.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+soda_core_vertica-3.0.26.dist-info/top_level.txt,sha256=nh9kmM9ZWOtIXfwHLUKLl7m6xAFti83JVa2Rcxm6Zck,5
+soda_core_vertica-3.0.26.dist-info/RECORD,,
