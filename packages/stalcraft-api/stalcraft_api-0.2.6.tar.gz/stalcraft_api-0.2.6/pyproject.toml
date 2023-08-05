@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stalcraft-api"
+version = "0.2.6"
+description = "stalcraft api unofficial python library"
+authors = ["onejeuu <bloodtrail@beber1k.ru>"]
+readme = "README.md"
+packages = [
+    {include = "stalcraft"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.25.1"
+pytz = "^2021.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
