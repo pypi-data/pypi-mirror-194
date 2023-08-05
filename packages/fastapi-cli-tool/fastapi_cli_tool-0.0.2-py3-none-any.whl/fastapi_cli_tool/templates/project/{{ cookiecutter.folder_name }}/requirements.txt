@@ -1,0 +1,12 @@
+fastapi=={{ cookiecutter.fastapi }}
+uvicorn=={{ cookiecutter.uvicorn }}
+tzdata=={{ cookiecutter.tzdata }}
+pytz=={{ cookiecutter.pytz }}
+fastapi-mail=={{ cookiecutter.fastapi_mail }}
+passlib=={{ cookiecutter.passlib }}
+asgiref=={{ cookiecutter.asgiref }}
+uvicorn=={{ cookiecutter.uvicorn }}
+python-jose=={{ cookiecutter.python_jose }}
+bcrypt
+{% if cookiecutter.database_orm == "TortoiseORM" %}tortoise-orm=={{ cookiecutter.orm_version }}
+{% if cookiecutter.database == "MySQL" %}asyncmy{% endif %}{% if cookiecutter.database == "Postgres" %}asyncpg{% endif %}{% endif %}
