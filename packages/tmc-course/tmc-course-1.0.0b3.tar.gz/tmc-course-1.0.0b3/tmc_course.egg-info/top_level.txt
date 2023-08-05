@@ -1,0 +1,3 @@
+dist
+tmc_course
+venv

@@ -1,0 +1,2 @@
+[console_scripts]
+tmc-course = tmc_course.tmc_course:main
