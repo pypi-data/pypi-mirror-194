@@ -1,0 +1,97 @@
+loader:
+  mros:
+    dataBase: mros
+    dataBaseVersion: 1.0.0 # needs to be raised every time new data is added
+
+    filePath: ./datasets/mros
+    copyRawDataToLocal: True
+
+    dataset:
+      loaderName: RecordLoaderMrOS
+      fromFiles: True # if the records are read from files or sql-database
+      downloader:
+        type: nsrr
+        listFilter: null
+        canReadRemote: False
+        basePath: shhs\polysomnography\edfs\visit1
+        extensions: [.edf, -nsrr.xml, .edf, -nsrr.xml]
+        basePathExtensionwise:
+          [
+            polysomnography\edfs\visit1,
+            polysomnography\annotations-events-nsrr\visit1,
+            polysomnography\edfs\visit2,
+            polysomnography\annotations-events-nsrr\visit2,
+          ]
+        force: False
+        idPattern: .*/(.*).edf
+      filePattern: "*.edf"
+
+    # the channels that should be extracted from the edf files
+    sourceChannels:
+      - name: C3
+        type: eeg
+      - name: C4
+        type: eeg
+      - name: A1
+        type: eeg
+      - name: A2
+        type: eeg
+      - name: Position
+        type: body
+      - name: Leg L
+        type: emg
+      - name: Leg R
+        type: emg
+      - name: ROC
+        type: eog
+      - name: LOC
+        type: eog
+      - name: ECG L
+        type: ecg
+      - name: ECG R
+        type: ecg
+      - name: L Chin
+        type: emg
+      - name: R Chin
+        type: emg
+      - name: Airflow
+        type: flow
+      - name: Thoracic
+        type: effort
+      - name: Abdominal
+        type: effort
+      - name: SaO2
+        type: sao2
+      - name: HR
+        type: hr
+      - name: Cannula Flow
+        type: flow
+      - name: C4:A1
+        generated: True
+        type: eeg
+      - name: C3:A2
+        generated: True
+        type: eeg
+      # - name: DHR
+      #   type: ?
+      # - name: SUM
+      #   type: ?
+
+    combineChannels:
+      # - name: FLOW
+      #   combineType: select
+      #   type: flow
+      #   channel:
+      #     [NEW AIR, NEWAIR, new A/F, New Air, New A/F, AUX, airflow, AIRFLOW]
+      # - name: EEG Ch2
+      #   combineType: select
+      #   type: eeg
+      #   channel: [EEG(sec), EEG2, EEG 2, EEG(SEC), EEG sec]
+      - name: C4:A1
+        combineType: derived
+        type: eeg
+        channel: [C4, A1]
+      - name: C3:A2
+        combineType: derived
+        type: eeg
+        channel: [C3, A2]

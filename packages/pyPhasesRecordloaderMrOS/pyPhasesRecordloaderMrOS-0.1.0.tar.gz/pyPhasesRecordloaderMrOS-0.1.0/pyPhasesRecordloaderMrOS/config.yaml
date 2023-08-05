@@ -1,0 +1,7 @@
+# this file contains all relevant configuration taht are used by pyPhasesRecordLoader
+
+importAfter:
+  - configs/mros.yaml
+
+useLoader: mros
+mros-path: datasets/mros
