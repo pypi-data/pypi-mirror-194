@@ -1,0 +1,3 @@
+[console_scripts]
+bin2csv = utils.bin2csv:main
+
