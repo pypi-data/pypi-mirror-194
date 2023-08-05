@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+writefile.json
+toolsvanwinkel.egg-info/PKG-INFO
+toolsvanwinkel.egg-info/SOURCES.txt
+toolsvanwinkel.egg-info/dependency_links.txt
+toolsvanwinkel.egg-info/not-zip-safe
+toolsvanwinkel.egg-info/requires.txt
+toolsvanwinkel.egg-info/top_level.txt
+writefile/__init__.py
+writefile/static/main.js
+writefile/static/writefile.yaml

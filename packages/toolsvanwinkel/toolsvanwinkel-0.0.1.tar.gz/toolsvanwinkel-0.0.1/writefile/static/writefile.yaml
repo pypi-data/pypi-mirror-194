@@ -1,0 +1,6 @@
+Type: IPython Notebook
+ExtensionName: writefile
+Link: README.md
+Description: Write all cells beginning with #INCLUDE to a file
+Main: main.js
+

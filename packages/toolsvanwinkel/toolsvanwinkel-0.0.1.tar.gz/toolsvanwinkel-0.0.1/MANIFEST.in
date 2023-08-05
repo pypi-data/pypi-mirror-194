@@ -1,0 +1,2 @@
+recursive-include jupyter-config writefile.json
+recursive-include writefile/static *.js
