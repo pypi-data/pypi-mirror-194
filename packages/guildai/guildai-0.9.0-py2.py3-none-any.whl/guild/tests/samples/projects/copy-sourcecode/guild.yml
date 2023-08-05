@@ -1,0 +1,37 @@
+default:
+  main: guild.pass
+
+no-sourcecode:
+  main: guild.pass
+  sourcecode: no
+
+explicit-sourcecode:
+  main: hello
+  sourcecode:
+    - exclude: '*'
+    - hello.py
+
+explicit-sourcecode-2:
+  main: guild.pass
+  sourcecode:
+    - exclude: '*.py'
+    - exclude: '*.yml'
+
+upstream:
+  main: guild.pass
+  requires:
+    - file: config.yml
+
+downstream-conflict:
+  main: guild.pass
+  requires:
+    - operation: upstream
+      select: config.yml
+
+downstream-fixed:
+  main: guild.pass
+  sourcecode:
+    - exclude: config.yml
+  requires:
+    - operation: upstream
+      select: config.yml

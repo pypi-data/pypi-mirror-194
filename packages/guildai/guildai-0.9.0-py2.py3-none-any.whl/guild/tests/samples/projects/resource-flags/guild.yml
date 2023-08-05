@@ -1,0 +1,194 @@
+flag:
+  description: Defines a flag and no resources
+  main: guild.pass
+  flags-dest: args
+  flags:
+    foo: 123
+
+file-source:
+  description: Single unnamed file source
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - file: foo.txt
+
+file-source-with-name:
+  description: Single named file source
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - file: foo.txt
+      name: infile
+
+file-source-with-name-2:
+  description: Single named file source under a named resource
+  main: guild.pass
+  flags-dest: args
+  requires:
+    name: dependencies
+    sources:
+      - file: foo.txt
+        name: infile
+
+file-source-with-flag-name:
+  description: Single file source with a flag name
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - file: foo.txt
+      flag-name: infile
+
+file-source-with-name-and-flag-name:
+  description: Single named file source also with a flag name
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - file: foo.txt
+      name: file
+      flag-name: input-file
+
+file-source-with-flag:
+  description: Single file source associated with a flag def
+  main: guild.pass
+  flags-dest: args
+  flags:
+    infile:
+      description: Path to infile
+  requires:
+    - file: foo.txt
+      flag-name: infile
+
+file-source-with-flag-2:
+  description: Alternate version of `file-source-with-flag`
+  main: guild.pass
+  flags-dest: args
+  flags:
+    infile:
+      description: Path to infile
+      arg-skip: no  # Override default implied by `file:foo.txt` dep
+      arg-name: infile-path
+      type: path  # Allowed value - should trigger no warning
+  requires:
+    - file: foo.txt
+      flag-name: infile
+
+upstream:
+  description: Used in op dependencies
+  main: guild.pass
+
+op-source:
+  description: Single unnamed operation source
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - operation: upstream
+      warn-if-empty: false
+
+op-source-with-name:
+  description: Single named operation source
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - operation: upstream
+      name: the-upstream-run
+      warn-if-empty: false
+
+op-source-with-flag-name:
+  description: Single unnamed operation with a flag name
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - operation: upstream
+      flag-name: upstream-run
+      warn-if-empty: false
+
+op-source-with-name-and-flag-name:
+  description: Single operation with both name and flag name
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - operation: upstream
+      name: upstream-name
+      flag-name: upstream-flag-name
+      warn-if-empty: false
+
+op-source-with-flag:
+  description: Single operation associated with a flag def
+  main: guild.pass
+  flags-dest: args
+  flags:
+    operation:upstream:
+      description: Run ID for upstream run (defaults to latest non-error run)
+  requires:
+    - operation: upstream
+      warn-if-empty: false
+
+op-source-with-flag-2:
+  description: Single operation associated with a flag def via source name
+  main: guild.pass
+  flags-dest: args
+  flags:
+    upstream:
+      description: Run ID for upstream run (defaults to latest non-error run)
+      alias: an-upstream-run
+      arg-skip: no
+  requires:
+    - operation: upstream
+      name: upstream
+      warn-if-empty: false
+
+op-source-with-flag-3:
+  description: Single operation associated with a flag def via source flag name
+  main: guild.pass
+  flags-dest: args
+  flags:
+    upstream:
+      description: Run ID for upstream run (defaults to latest non-error run)
+  requires:
+    - operation: upstream
+      flag-name: upstream
+      name: upstream-dep
+      warn-if-empty: false
+
+op-source-no-flag:
+  description: Single operation with flag explicitly disabled
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - operation: upstream
+      flag-name: no
+      warn-if-empty: false
+
+multi-source:
+  description: Multiple unnamed sources
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - file: foo.txt
+    - operation: upstream
+      warn-if-empty: false
+
+multi-source-with-names:
+  description: Multiple named sources
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - file: foo.txt
+      flag-name: infile
+    - operation: upstream
+      name: upstream-run
+      warn-if-empty: false
+
+multi-resource:
+  description: Defines multiple resources.
+  main: guild.pass
+  flags-dest: args
+  requires:
+    - name: requires-files
+      sources:
+        - file: foo.txt
+        - file: bar.txt
+    - name: runs
+      sources:
+        - operation: upstream
+          warn-if-empty: no

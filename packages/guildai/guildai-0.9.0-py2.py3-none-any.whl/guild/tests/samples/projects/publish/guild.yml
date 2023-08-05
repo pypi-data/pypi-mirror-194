@@ -1,0 +1,37 @@
+op:
+  flags-import: yes
+  sourcecode: op.py
+
+op2:
+  main: guild.pass
+  sourcecode: []
+  publish:
+    template: t2
+
+op3:
+  flags-import: yes
+  sourcecode: '*.py'
+  requires:
+    - file: src.txt
+      rename: src link
+      target-type: link
+  publish:
+    files:
+      - exclude: '*-2.txt'
+  env:
+    PYTHONDONTWRITEBYTECODE: 1
+
+legacy-sourcecode:
+  main: op
+  sourcecode:
+    dest: .guild/sourcecode
+    select:
+      - '*.py'
+      - src.txt
+  requires:
+    - file: just-files/README.md
+      rename: README.md dep.md
+  publish:
+    files:
+      - '*.md'
+      - generated-1.txt
