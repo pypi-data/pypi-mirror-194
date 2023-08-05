@@ -1,0 +1,6 @@
+numpy
+pillow
+nonebot2>=2.0.0a16
+nonebot-adapter-onebot>=2.0.0b1
+nonebot-plugin-apscheduler>=0.2.0
+async-mcrcon>=0.1.0
