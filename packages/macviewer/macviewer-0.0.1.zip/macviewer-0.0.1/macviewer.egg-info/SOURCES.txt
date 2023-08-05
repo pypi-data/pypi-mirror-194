@@ -1,0 +1,8 @@
+LICENSE
+README.md
+macviewer.py
+setup.py
+macviewer.egg-info/PKG-INFO
+macviewer.egg-info/SOURCES.txt
+macviewer.egg-info/dependency_links.txt
+macviewer.egg-info/top_level.txt
