@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: StreamJSME
+Version: 0.0.0a1
+Summary: StreamJSME is a Streamlit component that use JSME to draw 2D molecules and use them on your Streamlit app
+Home-page: https://github.com/ale94mleon/StreamJSME
+Author: Alejandro Martínez León
+Author-email: ale94mleon@gmail.com
+License: Apache License 2.0
+Project-URL: Discussions, https://github.com/ale94mleon/StreamJSME/discussions
+Project-URL: Documentation, https://StreamJSME.readthedocs.io/en/latest/
+Project-URL: Issues, https://github.com/ale94mleon/StreamJSME/issues
+Keywords: science,chemistry,biology,drug-design
+Platform: linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+StreamJSME
+==========
+
+This package is intend to be used as Molecule Draw component on `Streamlit <https://streamlit.io/>`_ applications. It use `jsme-react <https://github.com/DouglasConnect/jsme-react>`_.
+It was inspired on `chemstreamlit_js <https://github.com/iwatobipen/chem_streamlit/tree/main/chemstreamlit_js>`_; so, the credits all to them.
+
+For now it works locally
+
+.. code-block:: bash
+
+    cd frontend
+    npm install
+    npm start
+
+On a second terminal:
+
+.. code-block:: bash
+
+    cd StreamJSME
+    streamlit run __init__.py
