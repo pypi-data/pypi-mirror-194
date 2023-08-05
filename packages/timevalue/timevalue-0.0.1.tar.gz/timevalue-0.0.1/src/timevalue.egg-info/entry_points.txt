@@ -1,0 +1,5 @@
+[console_scripts]
+annuity = timevalue.annuity:main
+future = timevalue.future:main
+present = timevalue.present:main
+timevalue = timevalue.__main__:main
