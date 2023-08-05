@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/tracex/__init__.py
+src/tracex/engine.py
+src/tracex/graph.py
+src/tracex.egg-info/PKG-INFO
+src/tracex.egg-info/SOURCES.txt
+src/tracex.egg-info/dependency_links.txt
+src/tracex.egg-info/requires.txt
+src/tracex.egg-info/top_level.txt
