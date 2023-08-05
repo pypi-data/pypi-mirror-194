@@ -1,0 +1,2 @@
+[console_scripts]
+translatesubs = translatesubs.main:main
