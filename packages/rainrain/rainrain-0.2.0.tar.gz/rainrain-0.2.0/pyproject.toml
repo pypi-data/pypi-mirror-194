@@ -1,0 +1,15 @@
+[project]
+name = "rainrain"
+version = "0.2.0"
+authors = [
+  { name="prajil", email="prajiltpriyan@gmail.com" },
+]
+description = "weather app"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
