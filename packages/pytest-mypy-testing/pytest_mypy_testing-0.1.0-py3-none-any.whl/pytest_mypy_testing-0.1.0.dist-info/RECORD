@@ -1,0 +1,14 @@
+pytest_mypy_testing/__init__.py,sha256=QjyG8qC7kAH62pys1zn_7F3cwCCRtL9tPMsMVzLD3a4,157
+pytest_mypy_testing/message.py,sha256=E0F3vPrjomVf2qHVqnC3Fb83nTp3hLovtT5nsstyy2E,7679
+pytest_mypy_testing/output_processing.py,sha256=6BdS9dJ5lFhEwU9Myi3eUFitusaQfDzAaU2f6qy99dg,5081
+pytest_mypy_testing/parser.py,sha256=Dp6CF3oVW2JYeLxm2mA9bs0ViA2iHrNzXvzC7idPp48,6252
+pytest_mypy_testing/plugin.py,sha256=VvW_8sydsBolGCYytfDH_4802pkmJJ8nyL1XLL-fezY,8483
+pytest_mypy_testing/py.typed,sha256=u_vo7wBtCPCv6xoAqoFD9LlHSi6FQmBK2xVsEVQq3qw,77
+pytest_mypy_testing/strutil.py,sha256=c9N-KE4HdGfR5uSl5r_eMufqWrOD-C3PtE44HKSut20,414
+pytest_mypy_testing-0.1.0.dist-info/entry_points.txt,sha256=PjOQUCr3T5rZI23u4nNzpJkAwdkvp7fVPsyRqn_0WMY,52
+pytest_mypy_testing-0.1.0.dist-info/LICENSES/Apache-2.0.txt,sha256=RLClboC0GhsKa9EpJRXoBlOf2XswvlTCcZ5sdjGQq1c,10343
+pytest_mypy_testing-0.1.0.dist-info/LICENSES/CC0-1.0.txt,sha256=alc_svkIJmKXjPIfsVMJbfChmB3q6n28EKEQRv4AXZ8,6916
+pytest_mypy_testing-0.1.0.dist-info/LICENSES/MIT.txt,sha256=jyUBhInW_g3sNKNSMUw43BRiR7feZXNXkPQ5ipKvqEs,1108
+pytest_mypy_testing-0.1.0.dist-info/WHEEL,sha256=KU4olamscZ0e2yRNzDYFvACtg6ewSxdqW3f7cM6CGOA,83
+pytest_mypy_testing-0.1.0.dist-info/METADATA,sha256=vV5yOUGBQIgEagQRt43_c1mCDYKtkhvUpR8MEa1Jz1M,8612
+pytest_mypy_testing-0.1.0.dist-info/RECORD,,
