@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bb-ipythontools"
+version = "0.0.2"
+description = ""
+authors = ["Erik Beebe <beebeapps_debugging@tuta.io>"]
+readme = "README.md"
+packages = [{include = "bb_ipythontools"}]
+
+[tool.setuptools.packages.find]
+where = ["bb_ipythontools/datafiles"]
+
+[tool.setuptools.package-data]
+"*" = ["*.py", "*.md"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
