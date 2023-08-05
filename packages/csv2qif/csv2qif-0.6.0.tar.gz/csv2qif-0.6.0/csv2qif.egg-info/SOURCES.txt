@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+csv2qif/__init__.py
+csv2qif/csv2qif.py
+csv2qif/transaction_writer.py
+csv2qif.egg-info/PKG-INFO
+csv2qif.egg-info/SOURCES.txt
+csv2qif.egg-info/dependency_links.txt
+csv2qif.egg-info/entry_points.txt
+csv2qif.egg-info/requires.txt
+csv2qif.egg-info/top_level.txt
