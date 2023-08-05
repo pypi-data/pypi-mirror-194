@@ -1,0 +1,4 @@
+SQLAlchemy<3.0,>=1.4
+
+[asyncio]
+SQLAlchemy[asyncio]
