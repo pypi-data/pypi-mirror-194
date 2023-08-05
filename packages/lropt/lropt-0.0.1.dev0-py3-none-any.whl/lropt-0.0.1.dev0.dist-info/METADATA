@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lropt
+Version: 0.0.1.dev0
+Summary: A package for decision-making under uncertainty, using data.
+Author-email: Irina Wang <iywang@princeton.edu>, Cole Becker <colebecker@princeton.edu>, Bart Van Parys <vanparys@mit.edu>, Bartolomeo Stellato <bstellato@princeton.edu>
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cvxpy (>=1.3.0)
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+Requires-Dist: cvxpylayers
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: python-lsp-server[all] ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: pandas ; extra == 'dev'
+
+# Learning for Optimization under Uncertainty
+
+A package for decision-making under uncertainty, using data.
