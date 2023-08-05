@@ -1,0 +1,9 @@
+pyc3/__init__.py,sha256=ka8afWVg2C-pMWEDxVPwXYYLlXCwGuGg8REwTr36C4k,24
+pyc3/c3.py,sha256=8_n7TSTryb2J1iMfWjeZUD5Ii8ZVZ0kH-Vf5tapUaRw,8337
+pyc3/data/most_salient_colors.txt,sha256=2tRUGSHQWcinW3UOSgZBN7I2SHYpqVDTJ26dmkrphec,1513
+pyc3/data/xkcd/c3_data.json,sha256=0a2HT-f1dkG6Ls_TFMZ32L_2FxA8NnI_WixbSJTgr5g,1661155
+pyc3/data/xkcd/cosine_distances_square.npy,sha256=63UlpFc2gJNxLnejnbn4o7QhnAFXQmwAETqnPixFsS4,69297428
+pyc3/pyc3.py,sha256=h4gS5U8bki_FQDT4p1_WW6wPyjPD_wHRv_zg3zMxZ9Q,902
+pyc3-0.3.9.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pyc3-0.3.9.dist-info/METADATA,sha256=kfdhh_8QMPPDiRzH7xO4ldlFA-8tHmBDpNFtMy9F6EE,1128
+pyc3-0.3.9.dist-info/RECORD,,
