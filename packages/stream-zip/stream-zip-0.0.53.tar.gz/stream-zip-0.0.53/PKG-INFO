@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: stream-zip
+Version: 0.0.53
+Summary: Python function to construct a ZIP archive with stream processing - without having to store the entire ZIP in memory or disk
+Home-page: https://stream-zip.docs.data.trade.gov.uk/
+Author: Department for International Trade
+Author-email: sre@digital.trade.gov.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Archiving :: Compression
+Requires-Python: >=3.7.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stream-zip
+
+Python function to construct a ZIP archive on the fly - without having to store the entire ZIP in memory or disk.
+
+Visit the [stream-zip documentation](https://stream-zip.docs.data.trade.gov.uk/) for usage instructions.
