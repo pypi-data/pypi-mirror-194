@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: aiotubes
+Version: 1
+Summary: Asynchronous Youtube API
+Home-page: https://github.com/sheldygg/aiotube
+Author: sheldy
+License: MIT
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
