@@ -1,0 +1,3 @@
+[console_scripts]
+elk=elkplot.cli:cli
+
