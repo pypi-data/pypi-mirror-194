@@ -1,0 +1,20 @@
+name: PyTest
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: pip3 install -r requirements.txt
+
+      - name: Install pg-stage
+        run: python3 setup.py install --user
+
+      - name: Run tests
+        run: pytest
