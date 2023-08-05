@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: metal_sdk
+Version: 0.0.6
+Summary: SDK for getmetal.io
+Project-URL: Github, https://github.com/getmetal/metal-python
+Author-email: Metal Technologies Inc <james@getmetal.io>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# metal-python
+
+Python SDK for Metal.
+
+## Build Flow
+
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
