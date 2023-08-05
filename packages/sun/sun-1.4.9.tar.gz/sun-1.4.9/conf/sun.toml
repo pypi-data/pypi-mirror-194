@@ -1,0 +1,69 @@
+# Configuration file for sun.
+
+# sun.toml file is part of sun.
+
+# https://gitlab.com/dslackw/sun
+
+# sun is free software: you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+# Any change here you should restart the daemon:
+# $ sun restart
+
+[time]
+  # The interval between checks for updates (in minutes), default is 12 hours.
+  INTERVAL = 720
+  # Standby time icon notifier, default is 5 minutes.
+  STANDBY = 5
+
+[daemon]
+  # The default tool that controls the sun_daemon is the daemon tool.
+  START = "daemon -rB --pidfiles=~/.run --name=sun_daemon sun_daemon"
+  STOP = "daemon --pidfiles=~/.run --name=sun_daemon --stop"
+  RESTART = "daemon --pidfiles=~/.run --name=sun_daemon --restart"
+  # --running option returns 0 code if the daemon running and 1 if not running.
+  RUNNING = "daemon --pidfiles=~/.run --name=sun_daemon sun_daemon --running"
+
+[[repository]]
+  # Default repository.
+  NAME = "Slackware"  # Accepted names: Slackware, slackware, Slack, slack.
+  HTTP_MIRROR = "https://mirrors.slackware.com/slackware/slackware64-15.0/"
+  LOG_PATH = "/var/lib/slackpkg/"
+  LOG_FILE = "ChangeLog.txt"
+  PATTERN = "Upgraded[.]|Rebuilt[.]|Added[.]|Removed[.]"
+  COMPARE = "^\\w[Mon|Tue|Wed|Thu|Fri|Sat|Sun]"
+
+# Copy and paste this template for every new repository.
+[[repository]]
+  # The name of the repository.
+  NAME = ""
+  # Http mirror here.
+  HTTP_MIRROR = ""
+  # Path of the log file.
+  LOG_PATH = ""
+  # The name of the log file.
+  LOG_FILE = ""
+  # The regex pattern to grab the packages.
+  PATTERN = ""
+  # When this pattern is found in the log files,
+  # the sun stops counting the packages.
+  # Example the date like: "Fri Feb 17 00:36:26 UTC 2023"
+  COMPARE = ""
+
+# This is an example to support slackbuilds repository if you use slpkg package manager
+# if you do not use slpkg just change the LOG_PATH.
+# [[repository]]
+#   NAME = "SBo"
+#   HTTP_MIRROR = "https://slackbuilds.org/slackbuilds/15.0/"
+#   LOG_PATH = "/var/lib/slpkg/repository/"
+#   LOG_FILE = "ChangeLog.txt"
+#   PATTERN = "Updated|Added|Removed"
+#   COMPARE = "^\\w[Mon|Tue|Wed|Thu|Fri|Sat|Sun]"
