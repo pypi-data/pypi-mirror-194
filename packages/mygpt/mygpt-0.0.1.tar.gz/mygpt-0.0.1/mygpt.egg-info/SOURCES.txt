@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+mygpt/__init__.py
+mygpt/_modidx.py
+mygpt/core.py
+mygpt/data.py
+mygpt.egg-info/PKG-INFO
+mygpt.egg-info/SOURCES.txt
+mygpt.egg-info/dependency_links.txt
+mygpt.egg-info/entry_points.txt
+mygpt.egg-info/not-zip-safe
+mygpt.egg-info/requires.txt
+mygpt.egg-info/top_level.txt

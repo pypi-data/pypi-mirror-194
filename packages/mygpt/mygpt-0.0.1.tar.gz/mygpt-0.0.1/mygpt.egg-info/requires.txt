@@ -1,0 +1,10 @@
+pandas
+transformers
+datasets
+rouge-score
+nltk
+tensorboard
+py7zr
+evaluate
+
+[dev]
