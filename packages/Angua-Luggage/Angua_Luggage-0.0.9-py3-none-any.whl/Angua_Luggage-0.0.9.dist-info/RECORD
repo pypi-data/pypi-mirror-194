@@ -1,0 +1,15 @@
+Angua_Luggage/AnguaUtils.py,sha256=pUbiAW-02lIF9r9aVGFjvU6Jis3uRxMi7Li2cqbEenE,4126
+Angua_Luggage/FastaKit.py,sha256=Riy1DrG54VBeDmru0r1gVb0sD8MDx9mBmqpy9dD0VT8,32930
+Angua_Luggage/ICTVEntrez.py,sha256=0MvqT8iT01sVuTxoz_J1X31zo_XNknj5O0F3JYy1_ZM,5134
+Angua_Luggage/TextSearch.py,sha256=408zcLkHlNllLA2s-8nfWLIxbo8yF8CXbcDToiREePo,2715
+Angua_Luggage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Angua_Luggage/fetchSRA.py,sha256=c4V6RyMdmlUejs3M871Xm0bHj893H6sB45ILir84naM,698
+Angua_Luggage/getORFs.py,sha256=FYIn0KNCWK8MP14d0K70IhKRenIWOK8pXgUNR4AqLcM,247
+Angua_Luggage/rma.py,sha256=zl_JYyCMI5O6XnUi-QcKPPfCKJcD7v4Z5sTzuOXloi4,555
+Angua_Luggage/utils.py,sha256=uZda1lyl2cdu10SwRpzH975fTNJ6LKXebuUq-0mRcXg,1680
+Angua_Luggage/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Angua_Luggage-0.0.9.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Angua_Luggage-0.0.9.dist-info/METADATA,sha256=D0_ift_OzYKOABLL4dBAhw-02Wf71pEqQDsVaiKP19Q,461
+Angua_Luggage-0.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Angua_Luggage-0.0.9.dist-info/top_level.txt,sha256=HH8KwI-MRJ1sS2zXwuhvKg5hmQJEV6sApBeMdci0bB8,14
+Angua_Luggage-0.0.9.dist-info/RECORD,,
