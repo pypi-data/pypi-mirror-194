@@ -1,0 +1,16 @@
+lxml
+requests
+
+[cli]
+loguru
+tqdm
+
+[dev]
+autoflake
+black
+flake8
+ipython
+isort
+pytest
+twine
+wheel
