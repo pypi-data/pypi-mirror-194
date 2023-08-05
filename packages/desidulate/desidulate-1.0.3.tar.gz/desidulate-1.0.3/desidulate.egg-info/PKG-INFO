@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: desidulate
+Version: 1.0.3
+Summary: C64/SID tune decompiler
+Home-page: https://github.com/anarkiwi/desidulate
+Author: Josh Bailey
+Author-email: josh@vandervecken.com
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Unix
+License-File: LICENSE
+
+C64/SID tune decompiler

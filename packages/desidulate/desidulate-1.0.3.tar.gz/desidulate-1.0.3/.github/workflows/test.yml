@@ -1,0 +1,19 @@
+name: test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: test
+      run: |
+        sudo apt-get update && sudo apt-get install python3-dev && \
+        sudo pip3 install -U -r test-requirements.txt -r requirements.txt && \
+        PYFILES=$(find . -type f -name \*py|sort) && \
+        PYTHONPATH=. pylint -E ${PYFILES} && pytype -P. -k . && \
+        sudo pip3 install . && \
+        coverage run --source=desidulate -m unittest discover tests && \
+        coverage report -m &&
+        ./tests/e2e.sh http://www.hvsc.c64.org/download/C64Music/MUSICIANS/H/Hubbard_Rob/Commando.sid test1 test2 && \
+        chmod a-w test2 && \
+        rsync -ic test1/* test2/
