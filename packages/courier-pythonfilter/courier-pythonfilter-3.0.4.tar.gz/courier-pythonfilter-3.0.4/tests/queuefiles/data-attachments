@@ -1,0 +1,39 @@
+Delivered-To: gordon@dragonsdawn.net
+Return-Path: <gordon@dragonsdawn.net>
+Received: from vagabond.private.dragonsdawn.net (application-2018121601.private.dragonsdawn.net [::ffff:10.1.10.163])
+  (AUTH: PLAIN gordon, TLS: TLS1.2,128bits,ECDHE_RSA_AES_128_GCM_SHA256)
+  by application-2018121601.private.dragonsdawn.net with ESMTPSA
+  id 0000000000020396.000000005DF84FAF.000063EE; Mon, 16 Dec 2019 19:46:55 -0800
+To: Gordon Messmer <gordon@dragonsdawn.net>
+From: Gordon Messmer <gordon@dragonsdawn.net>
+Subject: Batch file
+Message-ID: <d930a2f8-7cc5-b84a-33e4-05a524e55f89@dragonsdawn.net>
+Date: Mon, 16 Dec 2019 19:46:54 -0800
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101
+ Thunderbird/68.2.2
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_application-2018121601.private-25582-1576554415-0001-2"
+Content-Language: en-US
+
+This is a MIME-formatted message.  If you see this text it means that your
+E-mail software does not support MIME-formatted messages.
+
+--=_application-2018121601.private-25582-1576554415-0001-2
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Attached
+
+
+
+--=_application-2018121601.private-25582-1576554415-0001-2
+Content-Type: application/zip; name="test.zip"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename="test.zip"
+
+UEsDBAoAAAAAAMKdkE8AAAAAAAAAAAAAAAAIABwAdGVzdC5iYXRVVAkAA3xP+F18T/hddXgL
+AAEExQotIQTFCi0hUEsBAh4DCgAAAAAAwp2QTwAAAAAAAAAAAAAAAAgAGAAAAAAAAAAAALSB
+AAAAAHRlc3QuYmF0VVQFAAN8T/hddXgLAAEExQotIQTFCi0hUEsFBgAAAAABAAEATgAAAEIA
+AAAAAA==
+--=_application-2018121601.private-25582-1576554415-0001-2--
