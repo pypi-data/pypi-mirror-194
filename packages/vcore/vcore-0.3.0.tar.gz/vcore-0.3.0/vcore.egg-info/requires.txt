@@ -1,0 +1,7 @@
+web3
+numpy
+pandas
+tqdm
+web3_multicall
+retrying
+requests

@@ -1,0 +1,15 @@
+# vcore
+
+An internal venus protocol package useful for data-analytics team.
+This module defines the Vcore class, which is responsible for fetching user and market information from the Venus Protocol.
+
+## Installation
+
+You can install the package using pip:
+`pip install vcore`
+
+## Usage
+
+Initialization
+vcore = Vcore(`bsc_url`)
+The Vcore class is initialized by passing the Binance Smart Chain URL as a parameter. It uses the web3 library to connect to the blockchain.
