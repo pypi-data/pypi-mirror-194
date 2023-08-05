@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from enum import Enum, unique
+else:
+    from aenum import Enum, extend_enum, unique
+
+from aenum import extend_enum
+
+__all__ = ["H5StoreTypes", "add_enum_item"]
+
+
+@unique
+class H5StoreTypes(Enum):
+    Sequence = 1
+    Dictionary = 2
+    ClassConstructor = 3
+    PythonClass = 4
+    HDF5Dataset = 5
+    HDF5Group = 6
+    FunctionCache = 7
+    Null = 8
+    Enumerator = 9
+
+
+def add_enum_item(name: str):
+    extend_enum(H5StoreTypes, name, len(H5StoreTypes) + 1)
