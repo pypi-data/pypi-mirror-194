@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+IOS_SHOGUN.egg-info/PKG-INFO
+IOS_SHOGUN.egg-info/SOURCES.txt
+IOS_SHOGUN.egg-info/dependency_links.txt
+IOS_SHOGUN.egg-info/top_level.txt
+tests/__init__.py
