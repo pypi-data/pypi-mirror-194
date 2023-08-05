@@ -1,0 +1,9 @@
+pyxfoil/__init__.py,sha256=9mpe39z-lzbl2FFgqlrFTBLNrbitSa1q7y68ejdtNuQ,935
+pyxfoil/xfoil.py,sha256=og3ciYb3seMwTSMeQNYD1DYR1GyK3nNjT_BqWJnQdeU,4734
+pyxfoil/xfoilpolar.py,sha256=Skx7SlOpvdj4ogcvGPf1rR2KPH8MMu2W2lCHEbXuY4s,6461
+pyxfoil/xfoilresult.py,sha256=nqFC1waPslTaJDL3wK0jZ46FsED136haO5HaTx1nIoI,6488
+pyxfoil-0.0.1.dist-info/LICENSE,sha256=UNbyrtkEmdCFP0XpnSKlmsmoycuUdlbQSMrL2CmKTPA,1084
+pyxfoil-0.0.1.dist-info/METADATA,sha256=FU4t4cvR8zX-wGK33Yr9d2eYgA9MIHlpwhKFtyB9O-w,2856
+pyxfoil-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyxfoil-0.0.1.dist-info/top_level.txt,sha256=JKaFOE9VwLGafWhVcdBpP63GwxHBP23f80W26vsbjJw,8
+pyxfoil-0.0.1.dist-info/RECORD,,
