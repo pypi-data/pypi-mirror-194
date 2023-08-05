@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: util-1c-rac
+Version: 0.2.0
+Summary: Utils for 1C:Enterprise Remote Administration Client
+Author-email: Cujoko <cujoko@gmail.com>, George Kvelidze <georgiykvelidze@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+Utils for 1C:Enterprise Remote Administration Client
+===
