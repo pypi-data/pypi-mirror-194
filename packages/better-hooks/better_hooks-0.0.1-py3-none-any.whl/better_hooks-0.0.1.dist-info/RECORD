@@ -1,0 +1,16 @@
+better_hooks/__init__.py,sha256=yI_UIjCpV6tdU8YWLLepm3Sj2JpLJMDRbRIm3vFkZEA,260
+better_hooks/groups.py,sha256=UMXRHBAmr925qFpTprklGy7_FF00dH-_UsKrydUmB4s,1991
+better_hooks/hooks.py,sha256=ZSKD8fvU40LJZv2a2tEheVkTzbhp9-dunhflKwnaF28,1451
+better_hooks/mixins.py,sha256=miu_7lZ81drXO0kKn46uJXeldL_G54zgm0bESolD14w,2269
+better_hooks/scope.py,sha256=IyefOcV6QpdQITFm7qXSqIQJAjkh2yf9QmkmlUJ2YBc,2388
+better_hooks/stack.py,sha256=IbyQReZKfBitHNzIj6GYW2xkLssDDwCQCdMiOD-sKfw,1110
+better_hooks/types.py,sha256=kbYtW71GxaCxaYktMkK8DxQiIWklgmhKz1KZEk8Gv1U,180
+better_hooks/utils.py,sha256=47Tkql-xDAEERR4L_b8cY7Ne8PjDXXOFl0BlyO2T2xk,324
+better_hooks/context/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+better_hooks/context/manager.py,sha256=6VOrwenQmjnE9xASnsh5uu0S8I8RtDbf3fuVwbnH8ts,2504
+better_hooks/context/mixins.py,sha256=gJf-ie3vSVbEWDXPf-yGXMG04JmImj5DlhInYlosdLA,1078
+better_hooks/context/types.py,sha256=pH5jQCOE3R-fs81uQ9tOfZCShoHsZS2N55epFObKiDM,614
+better_hooks-0.0.1.dist-info/METADATA,sha256=a8xqflG5ylKRnX0ivFtODP1aYfluOobvK3nfdKwSscU,779
+better_hooks-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+better_hooks-0.0.1.dist-info/top_level.txt,sha256=9o0DMZ_OTPGcyif5T4l3u8YFYIw5zVP61arbW6hvg0U,13
+better_hooks-0.0.1.dist-info/RECORD,,
