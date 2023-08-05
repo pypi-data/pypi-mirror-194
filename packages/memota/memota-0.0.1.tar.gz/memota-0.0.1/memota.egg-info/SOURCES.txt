@@ -1,0 +1,7 @@
+setup.py
+memota/__init__.py
+memota/memota.py
+memota.egg-info/PKG-INFO
+memota.egg-info/SOURCES.txt
+memota.egg-info/dependency_links.txt
+memota.egg-info/top_level.txt
