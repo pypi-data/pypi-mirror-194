@@ -1,0 +1,127 @@
+stages:
+  - test
+  - package
+  - deploy
+
+.py-test:
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:$CI_JOB_NAME
+  script:
+    - python --version
+    - pip install --index-url https://lhcb-repository.web.cern.ch/repository/pypi/simple -e .
+    - python setup.py test
+    - mkdir -p cover_report && if [ -e cover ] ; then mv -f cover cover_report/$CI_JOB_NAME ; fi
+  artifacts:
+    paths:
+      - cover_report
+    when: always
+    expire_in: 1 week
+
+centos7:
+  extends: .py-test
+
+python-2.7:
+  extends: .py-test
+
+.python-3.5:
+  extends: .py-test
+
+.python-3.6:
+  extends: .py-test
+
+.python-3.7:
+  extends: .py-test
+
+
+# Packaging step
+.py-pack:
+  stage: package
+  # only: [tags]
+  dependencies: []
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-3.7
+  script:
+    - python setup.py bdist_wheel --dist-dir public/
+  artifacts:
+    paths:
+      - public
+    when: always
+    expire_in: 1 week
+
+.pack-py3:
+  extends: .py-pack
+
+pack-pysrc:
+  extends: .py-pack
+  script:
+    - python setup.py sdist --dist-dir public/
+
+pack-py2:
+  extends: .py-pack
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-2.7
+
+deploy-packages:
+  stage: deploy
+  only:
+    - tags
+  dependencies:
+#    - pack-py3
+    - pack-py2
+    - pack-pysrc
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-3.7
+  script:
+    - if [ -z "$TWINE_PASSWORD" ] ; then echo "Set TWINE_PASSWORD in CI variables" ; exit 1 ; fi
+    - twine upload -u __token__ public/*
+  before_script: []
+  after_script: []
+
+pack-rpm:
+  stage: package
+  #only: [tags]
+  dependencies: []
+  image: gitlab-registry.cern.ch/lhcb-core/lbdocker/centos7-build
+  variables:
+    NO_LBLOGIN: "1"
+    NO_CVMFS: "1"
+  script:
+    - if [ -n "${CI_COMMIT_TAG}" ] ; then
+    -   version=${CI_COMMIT_TAG}
+    -   release=$(curl --silent ${RPM_REPO_URL} | grep ${CI_PROJECT_NAME}-${version} |
+          sed 's/<[^>]*>//g;s/\.noarch\.rpm.*//' |
+          awk -F- '{if (rev < $NF) rev = $NF}END{print rev + 1}' || true)
+    - else
+    -   version=$(git describe --tags)
+    -   release=${version#*-}
+    -   version=${version%%-*}
+    -   if [ "${release}" = "${version}" ] ; then release=1 ; fi
+    - fi
+    - release=${release//-/.}
+    - mkdir -p /userhome/rpmbuild/SOURCES
+    - sudo yum-builddep -y rpm/${CI_PROJECT_NAME}.spec
+    - rpmbuild -bb --define "pkg_version ${version}" --define "pkg_release ${release}" --define "pkg_repository $PWD" rpm/${CI_PROJECT_NAME}.spec
+    - mkdir -p public
+    - mv /userhome/rpmbuild/RPMS/noarch/${CI_PROJECT_NAME}-${version}-${release}.noarch.rpm public
+  artifacts:
+    paths:
+      - public
+    when: always
+    expire_in: 1 week
+
+# see https://gitlab.cern.ch/gitlabci-examples/deploy_eos for the details
+# of the configuration
+deploy-rpm:
+  stage: deploy
+  only:
+    - tags
+  dependencies:
+    - pack-rpm
+  image: gitlab-registry.cern.ch/ci-tools/ci-web-deployer:latest
+  variables:
+    EOS_PATH: /eos/project/l/lhcbwebsites/www/lhcb-rpm/incubator
+  script:
+    - test -z "$EOS_ACCOUNT_USERNAME" -o -z "$EOS_ACCOUNT_PASSWORD" && exit 0 || true
+    # Script that performs the deploy to EOS. Makes use of the variables defined in the project
+    # It will copy the generated content to the folder in EOS
+    - find public -type f -ls
+    - deploy-eos
+  # do not run any globally defined before_script or after_script for this step
+  before_script: []
+  after_script: []
