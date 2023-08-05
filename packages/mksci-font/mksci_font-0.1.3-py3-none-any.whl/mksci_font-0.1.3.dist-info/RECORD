@@ -1,0 +1,10 @@
+mksci_font/__init__.py,sha256=3ibTN37HGL3l8jI4_ebp2Wx9rrind6UsPFC6ocmjqdc,332
+mksci_font/data/SimSun.ttf,sha256=yk2ggs2XDwyKuqefIT3cvEdfe1r6vLgbOFmY-ev7tT8,10499104
+mksci_font/data/SunTimes.ttf,sha256=aJThnXdLiymozXlj5sZERPr0uPmTNMk50FInEuLSn8w,7694132
+mksci_font/data/Times.ttf,sha256=87T__3HCoMcifTdJdoOySY-y0KTovq4m8CLjzPyqv6M,824920
+mksci_font/data/merge_fonts.ff,sha256=eFrOrb77IorS46dw1QFruyDAq7YeZzqcYZytrJ9v1Cc,285
+mksci_font/font_wrapper.py,sha256=1u6nBYgmxmJ6mooDla5DJ36zpB54ySravzwZopXREzY,12622
+mksci_font-0.1.3.dist-info/LICENSE,sha256=_enC3dIl01t1tzhB_0_Ln-c0RVByBa59A-D5cBwkFUg,1068
+mksci_font-0.1.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mksci_font-0.1.3.dist-info/METADATA,sha256=oQgaE_qbcRYWjUd2AMJeUiRqHMkb__t-KbfkdELk6L0,3168
+mksci_font-0.1.3.dist-info/RECORD,,
