@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: olympict
+Version: 0.1.1
+Summary: A powerful parallel pipelining tool for image processing
+Home-page: https://gitlab.com/gabraken/olympict
+License: MIT
+Keywords: image,parallel,multiprocessing,pipeline
+Author: GKasser
+Author-email: gabriel.kasser@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: olympipe (>=1.0.3)
+Requires-Dist: opencv-python (>=4.6.0.66,<5.0.0.0)
+Project-URL: Repository, https://gitlab.com/gabraken/olympict
+Description-Content-Type: text/markdown
+
+# Olympict
+
+![coverage](https://gitlab.com/superjambon/olympict/badges/master/coverage.svg?job=tests)![status](https://gitlab.com/superjambon/olympict/badges/master/pipeline.svg)
+
+![Olympict](https://gitlab.com/superjambon/olympict/-/raw/master/Olympict.png)
+
+
+This project will make image processing pipelines 
+easy to use using the basic multiprocessing module. This module uses type checking to ensure your data process validity from the start.
+
+
