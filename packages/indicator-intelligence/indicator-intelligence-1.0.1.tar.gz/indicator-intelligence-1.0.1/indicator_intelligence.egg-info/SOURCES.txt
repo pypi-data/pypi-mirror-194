@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+indicator/__init__.py
+indicator/indicator.py
+indicator/searchSourceCode.py
+indicator_intelligence.egg-info/PKG-INFO
+indicator_intelligence.egg-info/SOURCES.txt
+indicator_intelligence.egg-info/dependency_links.txt
+indicator_intelligence.egg-info/requires.txt
+indicator_intelligence.egg-info/top_level.txt
