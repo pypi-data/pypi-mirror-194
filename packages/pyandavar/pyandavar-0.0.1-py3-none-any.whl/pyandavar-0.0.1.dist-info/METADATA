@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyandavar
+Version: 0.0.1
+Summary: description of your package
+Home-page: https://github.com/ndrohith09/simple_todo_django
+Author: rohith
+Author-email: ndrohith09@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+long description of your package
