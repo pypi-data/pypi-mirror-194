@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: keogram
+Version: 0.0.1
+Summary: Generate a Keogram from a directory of images
+Home-page: https://www.github.com/night-works/keogram
+Author: Joseph McCarthy
+Author-email: joseph@joemccarthy.co.uk
+Project-URL: Bug Tracker, https://www.github.com/night-works/keogram/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: docutils
+Requires-Dist: Pillow (==9.4.0)
+
+<div align="center">
+
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/night-works/keogram/build.yml?style=for-the-badge)
+![Codecov](https://img.shields.io/codecov/c/gh/night-works/keogram?style=for-the-badge)
+![Sonar Quality Gate](https://img.shields.io/sonar/quality_gate/night-works_keogram?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/night-works/keogram?color=g&style=for-the-badge)
+
+</div>
+
+# Keogram
