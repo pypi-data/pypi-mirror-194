@@ -1,0 +1,3 @@
+[console_scripts]
+odc-client=odc_client:main
+
