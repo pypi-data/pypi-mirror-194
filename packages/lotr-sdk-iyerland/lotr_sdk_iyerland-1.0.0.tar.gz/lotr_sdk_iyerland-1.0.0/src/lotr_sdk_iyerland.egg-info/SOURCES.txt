@@ -1,0 +1,15 @@
+DESIGN.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/lotr_sdk_iyerland/__init__.py
+src/lotr_sdk_iyerland/one_api_sdk.py
+src/lotr_sdk_iyerland.egg-info/PKG-INFO
+src/lotr_sdk_iyerland.egg-info/SOURCES.txt
+src/lotr_sdk_iyerland.egg-info/dependency_links.txt
+src/lotr_sdk_iyerland.egg-info/requires.txt
+src/lotr_sdk_iyerland.egg-info/top_level.txt
+tests/test_one_api_sdk.py

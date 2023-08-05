@@ -1,0 +1,4 @@
+include DESIGN.md
+include LICENSE
+include requirements.txt
+recursive-include lotr_sdk_iyerland *.py

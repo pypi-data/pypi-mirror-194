@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=57.4"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lotr_sdk_iyerland"
+version = "1.0.0"
+authors = [
+  { name="Narayan Iyer", email="narayan@iyers.biz" },
+]
+license = { file = "LICENSE" }
+description = "A Python SDK for The Lord Of the Rings API"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.bumpver]
+current_version = "0.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message  = "bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
+
+    [tool.bumpver.file_patterns]
+    "pyproject.toml" = [
+        'current_version = "{version}"',
+        'version = "{version}"',
+    ]
+    "src/lotr_sdk_iyerland/__init__.py" = ["{version}"]
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/iyerland/narayan-sdk"
+"Bug Tracker" = "https://github.com/pypa/narayan-sdk/issues"
