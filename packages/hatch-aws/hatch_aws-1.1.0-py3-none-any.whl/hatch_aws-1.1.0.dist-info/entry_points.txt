@@ -1,0 +1,2 @@
+[hatch]
+aws = hatch_aws.hooks
