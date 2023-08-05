@@ -1,0 +1,8 @@
+pydantic
+openai
+faiss-cpu
+numpy
+python-configuration[yaml]
+requests
+tokenizers
+tqdm

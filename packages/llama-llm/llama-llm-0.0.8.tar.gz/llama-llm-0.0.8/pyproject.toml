@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llama-llm"
+version = "0.0.8"
+authors = [
+  { name="PowerML", email="info@powerml.co" },
+]
+description = "Build on large language models faster"
+readme = "README.md"
+requires-python = ">=3.7,<3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pydantic",
+    "openai",
+    "faiss-cpu",
+    "numpy",
+    "python-configuration[yaml]",
+    "requests",
+    "tokenizers",
+    "tqdm",
+]
+
+[tool.setuptools]
+packages = ["llama", "llama.engine", "llama.metrics", "llama.program", "llama.types", "llama.program.operations", "llama.program.util"]
+
+[tool.autopep8]
+max_line_length = 127
+in-place = true
+recursive = true
+aggressive = 3
