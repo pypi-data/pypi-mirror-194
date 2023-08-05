@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metal_sdk"
+version = "0.0.4"
+authors = [
+  { name="Metal Technologies Inc", email="james@getmetal.io" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests",
+    "pydantic",
+    "python-dateutil",
+    "typing-extensions",
+    "dataclasses",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[project.urls]
+"Github" = "https://github.com/getmetal/metal-python"
