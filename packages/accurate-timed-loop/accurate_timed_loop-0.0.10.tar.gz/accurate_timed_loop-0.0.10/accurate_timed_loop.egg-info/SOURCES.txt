@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+accurate_timed_loop/__init__.py
+accurate_timed_loop.egg-info/PKG-INFO
+accurate_timed_loop.egg-info/SOURCES.txt
+accurate_timed_loop.egg-info/dependency_links.txt
+accurate_timed_loop.egg-info/requires.txt
+accurate_timed_loop.egg-info/top_level.txt
+accurate_timed_loop/lib/main.py
+accurate_timed_loop/lib/version.json

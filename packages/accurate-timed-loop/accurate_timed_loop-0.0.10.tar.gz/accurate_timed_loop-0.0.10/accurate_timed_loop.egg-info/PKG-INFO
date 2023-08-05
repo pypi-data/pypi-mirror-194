@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: accurate-timed-loop
+Version: 0.0.10
+Summary: Accurate timed loop
+Home-page: https://bitbucket.org/arrizza-public/accurate_timed_loop
+Download-URL: https://bitbucket.org/arrizza-public/accurate_timed_loop/get/master.zip
+Author: JA
+Author-email: cppgent0@gmail.com
+License: MIT
+Keywords: accurate loop,utility
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# README #
+
+This is a python module that provide a way to have an acccurate timed loop.
+
+For example if you need to do an activity every 250ms +/-3ms, this loop will do that.
+
+### Sample code ###
+
+see sample.py for a full example
+
+```python
+import accurate_timed_loop
+
+loop_delay = 0.250  # seconds
+total_wait = 25.0  # seconds
+for elapsed, start_time in accurate_timed_loop.accurate_wait(total_wait, loop_delay):
+  # ... do task every 250 mS
+  pass
+```
+
+### Accuracy and Limitations ###
+
+The sample.py does testing and shows that on Windows MSYS2 the average error is roughly 8mS in a 250mS loop
+
+```text
+      expected    elapsed  diff1(ms)  actual(s)  diff2(ms)
+  1   0.000000   0.000000      0.000   0.000000      0.000
+  2   0.250000   0.250575      0.575   0.250575      0.575
+<snip>
+100  24.750000  24.755561      5.561  24.755561      5.561
+101  25.000000  25.006459      6.459  25.006459      6.459
+avg error:    8.291mS
+```
+
+This value is specific to Windows and to the PC that it is running on.
+
+To make it more accurate for your PC and OS use the fixed_adjustment parameter. Set it to the
+average error (in seconds).
+
+```python
+import accurate_timed_loop
+
+loop_delay = 0.250  # seconds
+total_wait = 25.0  # seconds
+adj = 0.008500  # win mys2
+for elapsed, start_time in accurate_timed_loop.accurate_wait(total_wait, loop_delay, fixed_adjustment=adj):
+  # ... do task every 250 mS
+  pass
+```
+
+Re-run this several times, tweak the fixed adjustment until:
+
+* it is not negative
+* it is consistent results in a low average error
+
+```text
+$ ./doit
+=== OSTYPE     : msys
+=== pwd        : /c/projects/accurate-timed-loop
+
+      expected    elapsed  diff1(ms)  actual(s)  diff2(ms)
+  1   0.000000   0.000000      0.000   0.000000      0.000
+  2   0.250000   0.245003     -4.997   0.245003     -4.997
+<snip>
+ 98  24.250000  24.249740     -0.260  24.249740     -0.260
+ 99  24.500000  24.515648     15.648  24.515648     15.648
+100  24.750000  24.749573     -0.427  24.749573     -0.427
+101  25.000000  24.999601     -0.399  24.999601     -0.399
+102  25.250000  25.244330     -5.670  25.244428     -5.572
+avg error:    0.553mS
+```
+
+Limitations:
+
+* there is NO guarantee that the average error will always be that low or that consistent
+
+```text
+# === first run:
+      expected    elapsed  diff1(ms)  actual(s)  diff2(ms)
+102  25.250000  25.244330     -5.670  25.244428     -5.572
+avg error:    0.553mS
+
+# === second run:
+102  25.250000  25.254488      4.488  25.254488      4.488
+avg error:    0.826mS
+
+# === third run:
+102  25.250000  25.244122     -5.878  25.244122     -5.878
+avg error:    0.685mS
+
+# === fourth run:
+102  25.250000  25.249511     -0.489  25.249511     -0.489
+avg error:    0.278mS
+
+# === fifth run:
+102  25.250000  25.257821      7.821  25.257821      7.821
+avg error:   -1.083mS
+```
+
+* the incoming "elapsed" parameter will not be after your expected delay.
+  For example these two came in at 24.749 seconds instead of 24.750 and
+  at 24.999 seconds instead of 25.000 seconds
+
+```text
+      expected    elapsed  diff1(ms)  actual(s)  diff2(ms)
+100  24.750000  24.749573     -0.427  24.749573     -0.427
+101  25.000000  24.999601     -0.399  24.999601     -0.399
+```
