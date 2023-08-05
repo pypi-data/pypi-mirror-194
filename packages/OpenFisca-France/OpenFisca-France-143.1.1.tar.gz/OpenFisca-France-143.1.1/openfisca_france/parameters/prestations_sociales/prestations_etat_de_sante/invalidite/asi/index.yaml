@@ -1,0 +1,10 @@
+description: Allocation supplémentaire d'invalidité (ASI)
+metadata:
+  short_label: ASI
+  label_en: Supplementary disability allowance (ASI)
+  order:
+  - taux_minimum_d_invalidite
+  - montant_seul
+  - montant_couple
+  - plafond_ressource_seul
+  - plafond_ressource_couple
