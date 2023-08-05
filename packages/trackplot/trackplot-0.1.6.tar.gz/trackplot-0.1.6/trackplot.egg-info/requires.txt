@@ -1,0 +1,16 @@
+adjusttext
+cairocffi
+click
+click-option-group
+filetype
+hicmatrix
+loguru
+matplotlib
+numpy
+pandas
+pybigwig
+pysam
+requests
+scipy
+seaborn
+xmltodict
