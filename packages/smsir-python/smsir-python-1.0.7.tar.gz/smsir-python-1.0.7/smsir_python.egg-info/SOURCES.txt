@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+sms_ir/__init__.py
+sms_ir/mixins.py
+sms_ir/services.py
+smsir_python.egg-info/PKG-INFO
+smsir_python.egg-info/SOURCES.txt
+smsir_python.egg-info/dependency_links.txt
+smsir_python.egg-info/top_level.txt
