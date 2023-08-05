@@ -1,0 +1,201 @@
+$def with (resource)
+$ path = tx.request.uri.path
+$ owner = tx.host.owner
+
+<html lang=en-us class=dark>
+<head>
+<meta charset=utf-8>
+<meta name=viewport
+    content=initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width>
+<meta name=apple-mobile-web-app-capable content=yes>
+<meta name=apple-mobile-web-app-status-bar-style content=black-translucent>
+<link rel=icon href=/static/photo.png>
+$if not tx.request.uri.path:
+    <link rel=manifest href=/manifest.json>
+<link rel=stylesheet href=/static/screen.css media=screen>
+<title>\
+$if "title" in resource:
+    $:Document(resource.title).doc.text_content()&thinsp;&mdash;&thinsp;\
+$owner["name"][0]</title>
+
+$if not isinstance(resource, str) and "head" in resource:
+    $:resource.head()
+
+<script type=module>
+import { cookies } from '/static/web.js'
+window.addEventListener('load', () => {
+  if (cookies.get('rhythm') == 'on') {
+    document.querySelector('body').style.backgroundImage = 'url(/static/measure.png)'
+  }
+  document.addEventListener('keypress', (e) => {
+    if (e.key == '.') {
+      if (cookies.get('rhythm') == 'on') {
+        document.querySelector('body').style.backgroundImage = 'none'
+        cookies.set('rhythm', 'off')
+      } else {
+        document.querySelector('body').style.backgroundImage = 'url(/static/measure.png)'
+        cookies.set('rhythm', 'on')
+      }
+    }
+  })
+})
+</script>
+
+<style>
+$if tx.user.is_owner:
+    .h-card img {
+        border: .15em solid #007ba7; }
+</style>
+
+</head>
+<body
+$if "body_classes" in resource:
+     class="$' '.join(resource.body_classes)"\
+>
+
+<nav>
+<div class=h-card>
+<div>
+<!--img class=u-photo src=/static/photo.png-->
+<p style=margin-top:.5em><a href=/ rel=me class="p-name u-url u-uid"
+    style="color:#444;text-shadow:.03em .03em 0 #aaa;font-size:3.75em;left:.25em;line-height:.9em;margin:0 0 0 -.25em;position:relative;text-indent:0em"><strong>$owner["name"][0]</strong></a></p>
+<p style=font-size:.8em;left:5.35em;position:relative;bottom:.25em><a href=/about>About</a>&ensp;&mdash;&ensp;<a href=/now>Now</a></p>
+$ email = get_first(owner, "email")
+$if "note" in owner:
+    <p class=p-note style="font-size:.7em;margin:0 0 .2em 0;">$owner["note"][0]</p>
+<p><small>
+<a rel=me class=u-email href=mailto:$email>$email</a>
+</small></p>
+<p><small>
+$ onion = get_first(owner, "onion")
+$if onion:
+    <a rel=me href=http://$onion><code>$onion</code></a>
+$ key = get_first(owner, "key")
+$if key:
+    <a href=/owner/key
+        rel=me><code>$:"&ndash;".join(key.split()[:2])</code></a></small></p>
+</div>
+</div>
+
+<form action=/search style="margin:1em 0">
+<input name=q style=width:65%><br>
+<button style=width:28%>Search</button>
+</form>
+
+<ul style="margin:.5em 0">
+$for app_prefix, app_name in [("code", "Code"), ("media", "Media")]:
+    <li>\
+    $if path.startswith(app_prefix):
+        <strong style=display:block;padding:.5em>$app_name</strong>\
+    $else:
+        <a href=/$app_prefix style=display:block;padding:.5em>$app_name</a>\
+    </li>
+</ul>
+
+<ul class=dates>
+$for year, months in get_months().items():
+    <li><small><a href=/$year>$year</a></small>\
+    <div style=columns:6>
+    $for month in range(1, 13):
+        $ MM = f"{month:02}"
+        $if months[month]:
+            <a href=/$year/$MM>\
+        $MM\
+        $if months[month]:
+            </a>\
+        &thinsp;\
+    </div>
+    </li>
+</ul>
+
+<p>\
+$for category in get_categories():
+    $category
+</p>
+
+<p style="text-shadow:.01em .01em .01em #2aa198;font-family:fleurondingbats;font-size:5em;line-height:.5;margin:.2em 0 .35em 0;text-align:center"><a class=colophontext href=/colophon style=color:#d33682;display:block;text-decoration:none title=Colophon><span style=display:none>Colophon</span></a></p>
+
+$if tx.user.is_owner:
+    <ul class=admin style=font-size:.75em;text-align:center>
+    <li><a href=/editor>Editor</a></li>
+    <li><a href=/auth>Auth</a></li>
+    <li><a href=/owner>Owner</a></li>
+    <li><a href=/data>Data</a></li>
+    <li><a href=/jobs>Jobs</a></li>
+    <li><a href=/system>System</a></li>
+    </ul>
+
+</nav>
+
+
+$def render_breadcrumbs(breadcrumbs, separator="&#x25b8;", padding="&ensp;"):
+    $ """
+    $ Render a `separator` delimited list of linkified `breadcrumbs`.
+    $
+    $ `breadcrumbs` should be a single tuple that will be read two items at a time:
+    $
+    $     ("path", "Name", "subpath", "Subname", ...)
+    $
+    $ """
+    $ remaining = int(len(breadcrumbs) / 2)
+    $ path = ""
+    $for crumb_path, crumb_title in zip(*(breadcrumbs[i::2] for i in (0, 1))):
+        $ crumb_path = str(crumb_path)
+        $ crumb_icon, crumb_classes = None, None
+        $if isinstance(crumb_title, tuple):
+            $ crumb_icon, crumb_classes, crumb_title = crumb_title
+        $ path = path + "/" + crumb_path
+        $ ups = " ".join(["up"] * remaining)
+        $ remaining = remaining - 1
+        <span>\
+        $if crumb_icon:
+            <span class="crumb-icon-$crumb_icon"></span>&thinsp;\
+        <a href=$path \
+        $if crumb_classes:
+            class="$' '.join(crumb_classes)"
+        rel="$ups">$:crumb_title</a>\
+        $:padding<span class=crumb-sep>$:separator</span></span>\
+
+<article id=content\
+$if "classes" in resource:
+     class="$' '.join(resource.classes)"\
+>
+$if path:
+    $ breadcrumbs = []
+    $ parts = path.split("/")
+    $ app = parts[0]
+    $if len(parts) > 1:
+        $ breadcrumbs += [app, app.capitalize()]
+    $if "breadcrumbs" in resource:
+        $ breadcrumbs += list(resource["breadcrumbs"])
+    $if breadcrumbs:
+        <nav class=breadcrumbs>$:render_breadcrumbs(breadcrumbs)</nav>
+$if "title" in resource:
+    $if getattr(resource, "show_title", True):
+        <header>
+        <h1
+        $if "title_classes" in resource:
+             class="$' '.join(resource.title_classes)"\
+        >$:resource.title</h1>
+        </header>
+$:resource
+$if "aside" in resource:
+    <aside>
+    $:resource.aside()
+    </aside>
+</article>
+
+
+$if "hide_footer" not in resource:
+    <footer>
+    <p><small><small>Site content licensed <a
+    href=//creativecommons.org/licenses/by-nc-sa/4.0/ rel=license><abbr
+    title="Creative Commons Attribution-NonCommercial-ShareAlike">CC
+    BY-NC-SA</abbr></a> unless otherwise noted.</small></small></p>
+    <a href=//indieweb.rocks/$tx.host.name rel=me><img alt="IndieMark score"
+    src=//indieweb.rocks/sites/$tx.host.name/scoreboard.svg style=height:4em></a>
+    </footer>
+
+
+</body>
+</html>
