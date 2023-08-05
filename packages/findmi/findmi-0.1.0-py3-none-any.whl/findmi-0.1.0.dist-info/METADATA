@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: findmi
+Version: 0.1.0
+Summary: 
+Author: thewh1teagle
+Author-email: 61390950+thewh1teagle@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: micloud (>=0.6,<0.7)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+
