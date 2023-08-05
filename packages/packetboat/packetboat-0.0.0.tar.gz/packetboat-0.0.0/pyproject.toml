@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "packetboat"
+version = "0.0.0"
+description = ""
+authors = ["big-o <big-o@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
