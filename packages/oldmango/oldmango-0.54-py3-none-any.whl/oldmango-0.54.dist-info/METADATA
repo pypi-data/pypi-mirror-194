@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: oldmango
+Version: 0.54
+Summary: Linux commands AI
+Requires-Dist: openai (==0.25.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: aiohttp
+
