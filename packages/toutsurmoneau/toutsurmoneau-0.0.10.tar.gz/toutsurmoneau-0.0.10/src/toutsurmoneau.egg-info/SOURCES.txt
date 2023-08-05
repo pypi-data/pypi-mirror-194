@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/toutsurmoneau/__init__.py
+src/toutsurmoneau/__main__.py
+src/toutsurmoneau/toutsurmoneau.py
+src/toutsurmoneau.egg-info/PKG-INFO
+src/toutsurmoneau.egg-info/SOURCES.txt
+src/toutsurmoneau.egg-info/dependency_links.txt
+src/toutsurmoneau.egg-info/entry_points.txt
+src/toutsurmoneau.egg-info/requires.txt
+src/toutsurmoneau.egg-info/top_level.txt
