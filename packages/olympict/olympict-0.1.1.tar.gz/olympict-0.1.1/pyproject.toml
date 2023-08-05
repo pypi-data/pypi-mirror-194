@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "olympict"
+version = "0.1.1"
+description = "A powerful parallel pipelining tool for image processing"
+authors = ["GKasser <gabriel.kasser@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://gitlab.com/gabraken/olympict"
+repository = "https://gitlab.com/gabraken/olympict"
+keywords = ["image", "parallel", "multiprocessing", "pipeline"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+olympipe = ">=1.0.3"
+opencv-python = "^4.6.0.66"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+mypy = "^1.0.0"
+pylint = "^2.16.1"
+pytest = "^7.2.1"
+coverage = "^7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
