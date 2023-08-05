@@ -1,0 +1,5 @@
+roboflow<=0.2.29
+huggingface_hub
+beautifulsoup4
+fire
+pillow
