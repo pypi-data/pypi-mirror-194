@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: homewizard-kitchen
+Version: 0.1.9
+Summary: Manage your Homewizard Kitchen Kettle using Python
+Author-email: Lesley De Keyser <me@lesley.co>
+Project-URL: Homepage, https://github.com/lesleyxyz/python-homewizard-kitchen
+Project-URL: Bug Tracker, https://github.com/lesleyxyz/python-homewizard-kitchen/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: websockets (==10.4)
+
+# python-homewizard-kitchen
+This package connects to the HomeWizard Kitchen's websocket to get & update a device status.
+This project currently only implements the Kettle device.
+Tested on a HomeWizard Kettle 1.4,HWK-KTL 1.07
+
+## Installation
+```
+pip install homewizard-kitchen
+```
+
+## Usage
+See [example.py](https://github.com/lesleyxyz/python-homewizard-kitchen/blob/main/example.py)
+
+Afterwards you can use the Kettle model to update & retrieve data.
