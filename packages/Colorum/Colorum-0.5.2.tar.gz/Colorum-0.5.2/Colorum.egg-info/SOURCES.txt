@@ -1,0 +1,8 @@
+setup.py
+Colorum.egg-info/PKG-INFO
+Colorum.egg-info/SOURCES.txt
+Colorum.egg-info/dependency_links.txt
+Colorum.egg-info/top_level.txt
+colorum/__init__.py
+colorum/colorum.py
+colorum/hashbrowns.py
