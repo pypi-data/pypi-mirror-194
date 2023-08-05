@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: oxeekparser
+Version: 3.4.1
+Summary: Universal parser with using regex
+Home-page: https://github.com/oxeekezy/universal-parser
+Author: oxeek
+Author-email: workkukin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium (~=4.5.0)
+
+# Подготовка модуля к интеграции парсера
+
+## Установка необходимых зависимостей
+
+Выполните установку oxeekparser
+
+``pip install oxeekparser``
+
+## Импорт библиотеки в модуль
+
+Импортируйте библиотеку, установленную в предыдущем шаге
+
+``from oxeekparser import Parser``
+
+
+## Настройка среды
+
+1. Установите последнюю стабильную версию браузера Chrome
+    https://www.google.com/intl/ru/chrome/browser-tools/
+
+
+2. Загрузите последнюю стабильную версию ChromeDriver 
+    https://chromedriver.chromium.org
+
+
+3. Создайте папку с профилем Chrome или укажите папку профиля вашего собственного браузера
+
+## Использование в модуле 
+
+Создайте экземпляр класса Parser и перейдайте в качестве параметров:
+
+    1. Путь до ChromeDriver
+    2. Путь к профилю Chrome
+    3. Время ожидания парсера
+
+
+
+
+
+
