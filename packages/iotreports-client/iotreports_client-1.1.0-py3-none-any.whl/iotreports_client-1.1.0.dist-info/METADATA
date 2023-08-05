@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: iotreports-client
+Version: 1.1.0
+Summary: IoT Reports API
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: joe.savage@silabs.com
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,IoT Reports API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+
+    IoT Reports API  # noqa: E501
+    
+
