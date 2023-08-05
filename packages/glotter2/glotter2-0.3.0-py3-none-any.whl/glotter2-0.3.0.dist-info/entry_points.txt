@@ -1,0 +1,2 @@
+[console_scripts]
+glotter = glotter.__main__:main
