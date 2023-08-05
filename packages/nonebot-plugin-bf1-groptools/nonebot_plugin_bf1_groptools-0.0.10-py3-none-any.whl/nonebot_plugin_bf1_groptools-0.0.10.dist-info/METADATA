@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-bf1-groptools
+Version: 0.0.10
+Summary: Nonebot plugin that verifies BF1 accounts and automatically approves group applications and changes business cards.
+Author: qienoob
+Author-email: 196859929@qq.com
+License: apache 3.0
+Requires: requests
+Requires: re
+Requires: nonebot2
+Requires-Dist: requests
+Requires-Dist: nonebot2
+Requires-Dist: nonebot
+
