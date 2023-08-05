@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: bandplot
+Version: 0.1.0
+Summary: bandplot: band structure plot from vaspkit result.
+Home-page: https://github.com/lkccrr/bandplot
+Author: kan
+Author-email: luokan@hrbeu.edu.cn
+License: MIT
+Description: UNKNOWN
+Keywords: band structure plot
+Platform: Unix
+Platform: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
