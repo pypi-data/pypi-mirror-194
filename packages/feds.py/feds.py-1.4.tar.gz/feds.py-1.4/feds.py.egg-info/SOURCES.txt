@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+feds/__init__.py
+feds/client.py
+feds/exceptions.py
+feds/fetch.py
+feds.py.egg-info/PKG-INFO
+feds.py.egg-info/SOURCES.txt
+feds.py.egg-info/dependency_links.txt
+feds.py.egg-info/requires.txt
+feds.py.egg-info/top_level.txt
