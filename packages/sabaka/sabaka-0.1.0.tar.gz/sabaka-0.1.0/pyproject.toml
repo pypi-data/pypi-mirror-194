@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sabaka"
+version = "0.1.0"
+description = "flexible python error messaging"
+authors = ["Corey Rayburn Yung <coreyrayburnyung@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/WithPrecedent/sabaka"
+repository = "https://github.com/WithPrecedent/sabaka"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
