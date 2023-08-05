@@ -1,0 +1,17 @@
+CHANGELOG.txt
+LICENCE.txt
+LinearRegression.py
+LogisticRegression.py
+MANIFEST.in
+__init__.py
+balance_sheet_model.py
+error.py
+ipo_details.py
+setup.py
+corporate-finance/README.txt
+corporate-finance/version.py
+corporate_finance.egg-info/PKG-INFO
+corporate_finance.egg-info/SOURCES.txt
+corporate_finance.egg-info/dependency_links.txt
+corporate_finance.egg-info/requires.txt
+corporate_finance.egg-info/top_level.txt
