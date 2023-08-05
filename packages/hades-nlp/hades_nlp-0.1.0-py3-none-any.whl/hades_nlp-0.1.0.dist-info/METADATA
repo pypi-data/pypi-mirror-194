@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: hades-nlp
+Version: 0.1.0
+Summary: Homologous Automated Document Exploration and Summarization - A powerful tool for comparing similarly structured documents
+Keywords: nlp,documents,topic modeling,summarization,machine learning,natural language processing,text analysis,text mining,text summarization
+Author: Artur Żółkowski
+Author-email: artur.zolkowski@wp.pl
+Requires-Python: >=3.9, !=2.7.*, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*, !=3.7.*, !=3.8.*, !=3.10.*, !=3.11.*
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyPDF2 (>=2.6.0,<3.0.0)
+Requires-Dist: bert-extractive-summarizer (>=0.10.1,<0.11.0)
+Requires-Dist: black (>=22.6.0,<23.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: contextualized-topic-models (>=2.4.2,<3.0.0)
+Requires-Dist: en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.3.0/en_core_web_lg-3.3.0-py3-none-any.whl
+Requires-Dist: en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.3.0/en_core_web_sm-3.3.0-py3-none-any.whl
+Requires-Dist: gensim (>=4.2.0,<5.0.0)
+Requires-Dist: hdbscan (>=0.8.28,<0.9.0)
+Requires-Dist: llvmlite (==0.39.1)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: numpy (>=1.23.1,<2.0.0)
+Requires-Dist: openai (>=0.23.0,<0.24.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: plotly (>=5.9.0,<6.0.0)
+Requires-Dist: pyLDAvis (>=3.3.1,<4.0.0)
+Requires-Dist: pycountry (>=22.3.5,<23.0.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Requires-Dist: spacy (>=3.3.1,<4.0.0)
+Requires-Dist: st-annotated-text (>=3.0.0,<4.0.0)
+Requires-Dist: statsmodels (>=0.13.2,<0.14.0)
+Requires-Dist: streamlit (==1.16.0)
+Requires-Dist: swifter (>=1.2.0,<2.0.0)
+Requires-Dist: umap-learn (>=0.5.3,<0.6.0)
+Description-Content-Type: text/markdown
+
+# HADES: Homologous Automated Document Exploration and Summarization
+A powerful tool for comparing similarly structured documents
+
+[![PyPI version](https://badge.fury.io/py/hades-nlp.svg)](https://pypi.org/project/hades-nlp/)
+[![Downloads](https://static.pepy.tech/badge/hades-nlp)](https://pepy.tech/project/hades-nlp)
+
+## Overview
+`HADES` is a **Python** package for comparing similarly structured documents. HADES is designed to streamline the work of professionals dealing with large volumes of documents, such as policy documents, legal acts, and scientific papers. The tool employs a multi-step pipeline that begins with processing PDF documents using topic modeling, summarization, and analysis of the most important words for each topic. The process concludes with an interactive web app with visualizations that facilitate the comparison of the documents. HADES has the potential to significantly improve the productivity of professionals dealing with high volumes of documents, reducing the time and effort required to complete tasks related to comparative document analysis.
+
+## Installation
+Latest released version of the `HADES` package is available on [Python Package Index (PyPI)](https://pypi.org/project/hades-nlp/):
+
+```
+pip install -U hades-nlp
+```
+The source code and development version is currently hosted on [GitHub](https://github.com/MI2DataLab/HADES).
+## Usage
+The `HADES` package is designed to be used in a Python environment. The package can be imported as follows:
+
+```python
+from hades.data_loading import load_processed_data
+from hades.topic_modeling import ModelOptimizer, save_data_for_app, set_openai_key
+from my_documents_data import PARAGRAPHS, COMMON_WORDS, STOPWORDS
+```
+The `load_processed_data` function loads the documents to be processed. The `ModelOptimizer` class is used to optimize the topic modeling process. The `save_data_for_app` function saves the data for the interactive web app. The `set_openai_key` function sets the OpenAI API key.
+`my_documents_data` contains the informations about the documents to be processed. The `PARAGRAPHS` variable is a list of strings that represent the paragraphs of the documents. The `COMMON_WORDS` variable is a list of strings that represent the most common words in the documents. The `STOPWORDS` variable is a list of strings that represent the most common words in the documents that should be excluded from the analysis.
+
+First, the documents are loaded and processed:
+```python
+set_openai_key("my openai key")
+data_path = "my/data/path"
+processed_df = load_processed_data(
+    data_path=data_path,
+    stop_words=STOPWORDS,
+    id_column='country',
+    flattened_by_col='my_column',
+)
+```
+After the documents are loaded, the topic modeling process is optimized for each paragraph:
+```python
+model_optimizers = []
+for paragraph in PARAGRAPHS:
+    filter_dict = {'paragraph': paragraph}
+    model_optimizer = ModelOptimizer(
+        processed_df,
+        'country',
+        'section',
+        filter_dict,
+        "lda",
+        COMMON_WORDS[paragraph],
+        (3,6),
+        alpha=100
+    )
+    model_optimizer.name_topics_automatically_gpt3()
+    model_optimizers.append(model_optimizer)
+
+```
+For each paragraph, the `ModelOptimizer` class is used to optimize the topic modeling process. The `name_topics_automatically_gpt3` function automatically names the topics using the OpenAI GPT-3 API. User can also use the `name_topics_manually` function to manually name the topics.
+
+Finally, the data is saved for the interactive web app:
+```python
+save_data_for_app(model_optimizers, path='path/to/results', do_summaries=True)
+```
+The `save_data_for_app` function saves the data for the interactive web app. The `do_summaries` parameter is set to `True` to generate summaries for each topic.
+
+When the data is saved, the interactive web app can be launched:
+```sh
+hades run-app --config path/to/results/config.json
+```
+
+***
+
+

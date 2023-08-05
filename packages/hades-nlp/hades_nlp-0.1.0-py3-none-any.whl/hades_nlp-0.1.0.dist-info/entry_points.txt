@@ -1,0 +1,3 @@
+[console_scripts]
+hades=hades_app.run_app:cli
+
