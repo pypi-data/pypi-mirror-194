@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+.github/workflows/tests.yml
+aex/__init__.py
+aex/prior.py
+aex.egg-info/PKG-INFO
+aex.egg-info/SOURCES.txt
+aex.egg-info/dependency_links.txt
+aex.egg-info/requires.txt
+aex.egg-info/top_level.txt
+tests/test_prior.py
+tests/__pycache__/test_prior.cpython-310-pytest-7.2.0.pyc
+tests/__pycache__/test_prior.cpython-39-pytest-7.2.1.pyc

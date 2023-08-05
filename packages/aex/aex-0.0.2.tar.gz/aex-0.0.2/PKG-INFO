@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: aex
+Version: 0.0.2
+Summary: Sampling with Blackjax on Aesara
+Author-email: Remi Louf <remi@thetypicalset.com>
+Project-URL: homepage, https://github.com/rlouf/aex
+Project-URL: repository, https://github.com/rlouf/aex
+Keywords: probability,machine learning,statistics,mcmc,sampling
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# AeX
+
+The following currently works:
+
+``` python
+import aesara.tensor as at
+import aex
+
+srng = at.random.RandomStream(0)
+
+sigma_rv = srng.normal(1.)
+mu_rv = srng.normal(0, 1)
+Y_rv = srng.normal(mu_rv, sigma_rv)
+
+sampler = aex.prior_sampler(Y_rv, mu_rv)
+sampler(rng_key, 1_000_000)
+```
+
+## Coming
+
+Sampling from the posterior distribution using Blackjax's NUTS sampler:
+
+``` python
+sampler = aex.mcmc({Y_rv: 1.}, aex.NUTS())
+samples, info = sampler(rng_key, 1000, 1000)
+```
+
+Sampling from the posterior by arbitrarily combining Blackjax step functions:
+
+``` python
+sampler = aex.mcmc({Y_rv: 1.}, {[mu_rv, sigma_rv]: aex.NUTS(), Y_rv: aex.RMH()})
+samples, info = sampler(rng_key, 1000)
+```
+
+Sampling from the posterior predictive distribution:
+
+``` python
+sampler = aex.posterior_predictive(trace, Y_rv)
+sampler(rng_key, 1000)
+```
