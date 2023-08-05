@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pangeo_forge_cmr/__init__.py
+pangeo_forge_cmr/_version.py
+pangeo_forge_cmr.egg-info/PKG-INFO
+pangeo_forge_cmr.egg-info/SOURCES.txt
+pangeo_forge_cmr.egg-info/dependency_links.txt
+pangeo_forge_cmr.egg-info/not-zip-safe
+pangeo_forge_cmr.egg-info/requires.txt
+pangeo_forge_cmr.egg-info/top_level.txt
