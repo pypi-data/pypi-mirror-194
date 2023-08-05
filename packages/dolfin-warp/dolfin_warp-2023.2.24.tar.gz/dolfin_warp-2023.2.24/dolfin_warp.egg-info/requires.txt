@@ -1,0 +1,7 @@
+numpy
+scipy
+vtk
+myPythonLibrary
+myVTKPythonLibrary
+vtkpython_cbl
+dolfin_mech
