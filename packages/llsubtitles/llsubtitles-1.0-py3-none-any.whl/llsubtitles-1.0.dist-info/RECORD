@@ -1,0 +1,10 @@
+llsubtitles/__main__.py,sha256=9DBkuH205TFqbAtWaOaWZsy8Vs7RFsf4vJarB9Bcq_A,1592
+llsubtitles/ankideck.py,sha256=IPNng6vZgiMdRqvt6OGYkAVAdYh7Yr3i7PVTrTWbH2o,2696
+llsubtitles/dictionaries/chinese.py,sha256=k62jkRz_VanwENflYNDeucUGVsxzhtNf25wtbNDbTak,2684
+llsubtitles/dictionaries/data/chinese-english.json,sha256=McCJTDNpG6l3vx-skAdCMHY0TJ7Ol9bJiuc9yBxL12s,22887914
+llsubtitles/templates/pinyin-english.json,sha256=P8qovcR_Zsjdv7HRZ5ioAzrAuh0i2PhdCO1FdC2X1rg,408
+llsubtitles/transcribe.py,sha256=it1o9BJ9bOQSsy-fLyZ3BlN2ZUgkMqsfTnPtKqqZkJo,7412
+llsubtitles-1.0.dist-info/METADATA,sha256=skC98J1GASPer5hKFe-3xCy7oFfcx7LuLngeWqOA16U,2264
+llsubtitles-1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+llsubtitles-1.0.dist-info/LICENSE,sha256=UGHqBTgKBQ42FZKU2csDBzcFbU0TjdeMKwlhTRJzJyg,1087
+llsubtitles-1.0.dist-info/RECORD,,
