@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Discord-Bot-Command
+Version: 0.0.1
+Summary: This library helps you code a discord bo with few lines.
+Home-page: 
+Author: Basha coder
+Author-email: adam.webtools@gmail.com
+License: MIT
+Keywords: discord bot
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: License.txt
+
+This library helps you code a discord bot with few lines.
+
+Functions:
+    1. run_discord_bot
+
+Change Log
+=============
+0.0.1(24/2/2023)
+-------------------
+-Second Release
