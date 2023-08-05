@@ -1,0 +1,2 @@
+[console_scripts]
+ljpeg = ljpeg.ljpeg:run
