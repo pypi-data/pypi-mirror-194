@@ -1,0 +1,7 @@
+NOTICE
+README.md
+setup.py
+synthdog.egg-info/PKG-INFO
+synthdog.egg-info/SOURCES.txt
+synthdog.egg-info/dependency_links.txt
+synthdog.egg-info/top_level.txt
