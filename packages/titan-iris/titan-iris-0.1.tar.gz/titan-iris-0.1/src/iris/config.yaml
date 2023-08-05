@@ -1,0 +1,12 @@
+base: "http://localhost:8000"
+runner_path: "/backend/"
+keyfile_name: .tytn_key
+
+auth0_domain: dev-uimfznexwbagfrgm.us.auth0.com
+auth0_client_id: OWaLYLc9EUnJqK7WmVALAeNQjTuALK1Z
+auth0_algorithm: ['RS256']
+auth0_audience: "https://seshat/"
+
+authenticate: true
+
+base_image: "tytn/hephaestus:develop-latest"
