@@ -1,0 +1,10 @@
+README.md
+setup.py
+adjsoned/__init__.py
+adjsoned/_text_processing.py
+adjsoned/file_json_properties.py
+adjsoned/json_properties.py
+adjsoned.egg-info/PKG-INFO
+adjsoned.egg-info/SOURCES.txt
+adjsoned.egg-info/dependency_links.txt
+adjsoned.egg-info/top_level.txt
