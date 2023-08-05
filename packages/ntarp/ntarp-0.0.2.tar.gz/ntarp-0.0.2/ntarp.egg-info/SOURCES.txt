@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+ntarp/NTarp.py
+ntarp/__init__.py
+ntarp/separability.py
+ntarp.egg-info/PKG-INFO
+ntarp.egg-info/SOURCES.txt
+ntarp.egg-info/dependency_links.txt
+ntarp.egg-info/top_level.txt
