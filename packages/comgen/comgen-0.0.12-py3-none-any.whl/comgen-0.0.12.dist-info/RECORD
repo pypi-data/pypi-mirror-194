@@ -1,0 +1,14 @@
+comgen/__init__.py,sha256=5yrjNO_BrorhE6_KwKPXQkCFm9Xu0rVNEPjBx2nClPM,158
+comgen/species.py,sha256=F5SYUxwoM8GKCTqyfgh4f9zU2iiZOnl8BEP8VtWqd4g,5212
+comgen/util.py,sha256=SEx3HCG3bpxuU4a52ZlsRf5LJKJmExTKwladm-7buDk,1355
+comgen/constraintsystems/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comgen/constraintsystems/base.py,sha256=FFd-R3SwIVBSTgTvva7YcLCPCzrqjUxCyuW-QMPYeuY,1673
+comgen/constraintsystems/ionic.py,sha256=WMzQD7CsC91dtBOpb-4cAm-MbnSX7qZbnLzzMniJVzs,21853
+comgen/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comgen/data/common_poly_ions.txt,sha256=9-7baAy05X_x3nxoyZeRUwf1HBBdJJzJin6VHfcnAGE,522
+comgen/data/data.py,sha256=37-PY_XMgWmgXzWbCuSjYcR5Ubx48TnCOrU3bCHzGyQ,2121
+comgen/data/periodic_table.json,sha256=t6IcFRYoPDdfDjS1O8ufG5MKx-ARq_KPntTrqvDpjnU,241638
+comgen-0.0.12.dist-info/METADATA,sha256=3OeSRBXqHqV-ZRiF-Lsz8H_lqy_Q9x2Xp7cvZE1ZHlg,169
+comgen-0.0.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+comgen-0.0.12.dist-info/top_level.txt,sha256=mJIuYGYcA0BymZYLiwhgfqFrN2P9ypMSbjnfjiWr1Kk,7
+comgen-0.0.12.dist-info/RECORD,,

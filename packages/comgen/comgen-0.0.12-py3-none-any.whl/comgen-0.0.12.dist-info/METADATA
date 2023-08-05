@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: comgen
+Version: 0.0.12
+Summary: explore ionic composition space
+Requires-Dist: pymatgen (>=2022.5.26)
+Requires-Dist: z3-solver (>=4.8.17.0)
+
