@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+cyzpdf.egg-info/PKG-INFO
+cyzpdf.egg-info/SOURCES.txt
+cyzpdf.egg-info/dependency_links.txt
+cyzpdf.egg-info/top_level.txt
