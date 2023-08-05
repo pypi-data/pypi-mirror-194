@@ -1,0 +1,7 @@
+README.md
+setup.py
+manilightning/__init__.py
+manilightning.egg-info/PKG-INFO
+manilightning.egg-info/SOURCES.txt
+manilightning.egg-info/dependency_links.txt
+manilightning.egg-info/top_level.txt
