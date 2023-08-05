@@ -1,0 +1,8 @@
+flops_profiler/__init__.py,sha256=VFEb1lU6HKM7-dHg-Odm9QYqNsBT2d7yc5E9zLjJUoY,362
+flops_profiler/__version__.py,sha256=nxldX3kw5FIpOsbE90Kw6sU2hK-NNO1sMYpijVXz_xI,98
+flops_profiler/profiler.py,sha256=3kU_9kna90bzhVzQ0fCUfxVV6dmAWHGNOnNXCI4ObCk,55237
+flops_profiler/requirements.txt,sha256=csq784PTsDPfDrN74Au3B59RsNCNeT8KydfuxHCd_7s,12
+flops_profiler-0.1.1.dist-info/LICENSE,sha256=lfqwdf09rssQ7ZAiVbpEEAKLgY3Vvfsxlh1dRnWyZ1w,1065
+flops_profiler-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+flops_profiler-0.1.1.dist-info/METADATA,sha256=QydaYfvsb9kig1tvoYHj0mH5OYTLG9UQVVTCyANnp9Y,32913
+flops_profiler-0.1.1.dist-info/RECORD,,
