@@ -1,0 +1,14 @@
+cvxpy>=1.3.0
+torch
+scikit-learn
+cvxpylayers
+
+[dev]
+pytest
+pre-commit
+python-lsp-server[all]
+sphinx
+furo
+nbsphinx
+ipython
+pandas

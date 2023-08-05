@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lropt
+Version: 0.0.1.dev0
+Summary: A package for decision-making under uncertainty, using data.
+Author-email: Irina Wang <iywang@princeton.edu>, Cole Becker <colebecker@princeton.edu>, Bart Van Parys <vanparys@mit.edu>, Bartolomeo Stellato <bstellato@princeton.edu>
+License: Apache 2.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Learning for Optimization under Uncertainty
+
+A package for decision-making under uncertainty, using data.
