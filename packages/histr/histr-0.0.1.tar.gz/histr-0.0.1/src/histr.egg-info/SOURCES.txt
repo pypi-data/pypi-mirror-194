@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/histr.py
+src/histr.egg-info/PKG-INFO
+src/histr.egg-info/SOURCES.txt
+src/histr.egg-info/dependency_links.txt
+src/histr.egg-info/top_level.txt
+tests/test_hi_str.py
