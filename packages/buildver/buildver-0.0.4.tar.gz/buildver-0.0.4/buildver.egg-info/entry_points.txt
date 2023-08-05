@@ -1,0 +1,3 @@
+[console_scripts]
+buildver = buildver.__main__:main
+
