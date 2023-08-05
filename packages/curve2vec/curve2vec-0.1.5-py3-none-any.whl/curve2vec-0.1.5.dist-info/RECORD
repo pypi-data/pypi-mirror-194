@@ -1,0 +1,11 @@
+curve2vec/__init__.py,sha256=Vypj8_aGDajQKfg7AuM389C_F0aGSJirMr39mqAsSgw,73
+curve2vec/embeddings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curve2vec/embeddings/fourier.py,sha256=ABl_U8g0bdXX4sKr86RdaQT5jn12xhG74RfDE17-QdM,978
+curve2vec/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curve2vec/utils/data.py,sha256=om21urS0pb82ZtG39iZtljq6SKsXBWMjQ6fr5yv_6GE,1906
+curve2vec/utils/visualization.py,sha256=Rj83tlrQ2QjArJ91d-nM2GtfYJL7LWv_Z2CMaMFGapI,1511
+curve2vec-0.1.5.dist-info/LICENSE,sha256=NG20VhBKbNtjxpJA6hd4a5irbdBL1Tmzs9eaxzBGhuA,1075
+curve2vec-0.1.5.dist-info/METADATA,sha256=IQWj7_wqdVA7frS0h0Rp77S80AqtPGV0fvimNKcnHAw,792
+curve2vec-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+curve2vec-0.1.5.dist-info/top_level.txt,sha256=mbtNVcVToP_63vzAAwkekw4Lsg3nXAJC33_8vi_yxK0,10
+curve2vec-0.1.5.dist-info/RECORD,,
