@@ -1,0 +1,221 @@
+# py-yettagam
+
+Python client for Yettagam - Metarium's storage layer
+
+# Usage
+
+## 1. Virtual environment
+
+### 1.1. Install virtual environment
+
+```
+pip3 install virtualenv
+```
+
+### 1.2. Create virtual environment for metarium
+
+```
+python3 -m venv virtualenv ~/venv-yettagam
+```
+
+### 1.3. Activate metarium virtual environment
+
+```
+source ~/venv-yettagam/bin/activate
+```
+
+## 2. Dependencies
+
+### 2.1. Install Yettagam
+
+```
+pip install py-yettagam==0.0.1.43
+```
+
+### 2.2. Install third-party libraries
+
+```
+pip install python-dotenv==0.21.0
+```
+
+### 2.3. Modify `ipfshttpclient` version
+
+Modify `Ln:19` in `client/__init__.py`
+
+```
+nano ~/venv-yettagam/lib/python3.10/site-packages/ipfshttpclient/client/__init__.py
+
+VERSION_MAXIMUM   = "0.19.0"
+```
+
+## 3. Example usage - Create a simple Yettagam Storage Sync
+
+### 3.1. Environment file to store configuration
+
+Create a `.env` file to store your secrets
+
+```
+NODE_URL=ws://127.0.0.1:9944
+COMMITTER_MNEMONIC=your topic committer mnemonic here ...
+LISTENER_MNEMONIC=your topic listener mnemonic here ...
+```
+
+### 3.2. Arikuri Uploader script for `Topic Committer`
+
+Create an arikuri-uploader script called `arikuri-uploader.py` with the following code block
+
+```
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicCommitter,
+)
+
+def test_yettagam():
+    config = dotenv_values(".env")
+
+    committer_1 = Scribe(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("COMMITTER_MNEMONIC", None)
+    )
+    # start auto upload
+    committer_1.start(topic_id=1)
+
+
+if __name__ == "__main__":
+    test_yettagam()
+```
+
+Run the arikuri-uploader script
+
+```
+python arikuri-uploader.py
+```
+
+### 3.3. Topic Listener script for `Topic Committer`
+
+Create a topic-listener script called `topic-listener.py` with the following code block
+
+```
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicCommitter,
+)
+
+def test_yettagam():
+    config = dotenv_values(".env")
+
+    committer_1 = TopicCommitter(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("COMMITTER_MNEMONIC", None)
+    )
+    # listen to topic updates
+    committer_1.listen_to_topic_updates(topic_id=1)
+
+
+if __name__ == "__main__":
+    test_yettagam()
+```
+
+Run the topic-listener script
+
+```
+python topic-listener.py
+```
+
+### 3.4. Arikuri Listener script for `Topic Listener`
+
+Create a arikuri-listener script called `arikuri-listener.py` with the following code block
+
+```
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicListener,
+)
+
+def test_yettagam():
+    config = dotenv_values(".env")
+
+    listener_1 = TopicListener(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("LISTENER_MNEMONIC", None)
+    )
+
+    # sync with topic
+    listener_1.sync_with_topic(topic_id=1)
+
+
+if __name__ == "__main__":
+    test_yettagam()
+```
+
+Run the arikuri-listener script
+
+```
+python arikuri-listener.py
+```
+
+### 3.5. Status Publisher script for `Topic Listener`
+
+Create a status-publisher script called `status-publisher.py` with the following code block
+
+```
+import asyncio
+
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    TopicListener,
+)
+
+async def test_yettagam():
+    config = dotenv_values(".env")
+
+    listener_1 = TopicListener(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("LISTENER_MNEMONIC", None)
+    )
+
+    # publish status every 1 min
+    await listener_1.periodic_publish_status(topic_id=1, interval=60)
+
+
+if __name__ == "__main__":
+    asyncio.run(test_yettagam())
+```
+
+Run the status-publisher script
+
+```
+python status-publisher.py
+```
+
+### 3.6. Expectations
+
+- The scribe uploads a arikuri by dropping a file into the `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/` folder
+- After upload, the scribe saves the file's arikuri in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/mappings.json`
+- Upon listening to the arikuri, the service
+  - stores the file's arikuri in
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/data/sync/<COMMITTER_ADDRESS>/kuris.json`
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/data/sync/status.txt`
+    - `<LISTENER_ADDRESS>/<CHAIN_NAME>/data/sync/rff.txt`
+  - subscribes to the arikuri via IPFS pubsub
+- The service publishes it's status and rff to Metarium
+- Upon listening to the status, the scribe
+  - Saves the status in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/sync/<LISTENER_ADDRESS>/status.txt`
+  - Saves the rff in `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/sync/<LISTENER_ADDRESS>/rff.txt`
+  - via IPFS pubsub, publishes IPFS_CID and FILE_NAME for all it's kuris mentioned in the rff
+- Upon listening to the published IPFS_CID and FILE_NAME for a subscribed arikuri, the service
+  - downloads the file from the IPFS_CID into `<COMMITTER_ADDRESS>/<CHAIN_NAME>/data/<FILENAME>`
+  - removes the subscribed arikuri from the rff
+  - Unsubscribes from the arikuri
+
+## 4. Teardown
+
+Please remember to deactivate the virtual environment after usage
+
+```
+deactivate
+```
