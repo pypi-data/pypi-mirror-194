@@ -1,0 +1,9 @@
+LICENCE.txt
+README.md
+setup.py
+src/dacota.py
+src/dacota.egg-info/PKG-INFO
+src/dacota.egg-info/SOURCES.txt
+src/dacota.egg-info/dependency_links.txt
+src/dacota.egg-info/requires.txt
+src/dacota.egg-info/top_level.txt
