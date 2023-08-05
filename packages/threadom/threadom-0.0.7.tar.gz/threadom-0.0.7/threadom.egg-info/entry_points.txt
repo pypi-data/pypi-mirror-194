@@ -1,0 +1,3 @@
+[console_scripts]
+threadom = threadom.__main__:main
+
