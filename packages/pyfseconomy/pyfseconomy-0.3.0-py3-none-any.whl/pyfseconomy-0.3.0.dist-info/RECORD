@@ -1,0 +1,11 @@
+pyfseconomy/__init__.py,sha256=QelsRTWv5GXBLWx9q5SKSehofy-HLeIslRSS2fhbarE,224
+pyfseconomy/aircraft.py,sha256=EvMcbQzuPyDp0aTWUK03YxxL3baZFTjP97W92qEtg_s,5623
+pyfseconomy/airports.py,sha256=dmY2tjfA_c0xxhZJQ-Nc8_Za14mXvkGvttf4MykofqQ,4088
+pyfseconomy/client.py,sha256=4IpBXQeWM_6gKx2LYSpfk6zeFp-3XQ7bqXzDC760-Pk,7465
+pyfseconomy/icaodata.csv,sha256=OVkApd0yK5P3iWlVEP-C6y81vYRXCg_bx68bQpAQ7VE,1724533
+pyfseconomy/utils.py,sha256=alyEzKn2AjaSiY0CxT9zoK_dTPQI0gi5jRe_YCDXjuk,7162
+pyfseconomy-0.3.0.dist-info/LICENSE,sha256=MGhbjwjyu2WzfBvs-uPx38SvHF1737DaUnmCOO0u1UE,1068
+pyfseconomy-0.3.0.dist-info/METADATA,sha256=FRm0bUEVmtziVeYJqvD99FB23-AERxULUswCe5NqLgo,1623
+pyfseconomy-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyfseconomy-0.3.0.dist-info/top_level.txt,sha256=Vtk5kepGYwvwceE2wcTWeXRZCJi0laep7iNu8lrYJ98,12
+pyfseconomy-0.3.0.dist-info/RECORD,,
