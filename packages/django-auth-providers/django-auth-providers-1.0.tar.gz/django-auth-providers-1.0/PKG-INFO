@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: django-auth-providers
+Version: 1.0
+Summary: django-auth-providers is a django app that lets you authenticate to external authentication providers
+Home-page: https://github.com/pettermoe95/django-ext-auth/tree/main
+Author: Petter Elenius Moe
+Author-email: pettermoe9530@gmail.com
