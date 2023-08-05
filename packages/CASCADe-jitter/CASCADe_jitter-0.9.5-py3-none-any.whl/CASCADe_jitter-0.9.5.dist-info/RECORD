@@ -1,0 +1,17 @@
+CASCADe_jitter-0.9.5.data/data/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CASCADe_jitter-0.9.5.data/data/README.md,sha256=OaPe--aD9ala42ngrw3bYD8XjiRhw8CQz3MoNYGez6g,7073
+CASCADe_jitter-0.9.5.data/scripts/setup_cascade-jitter.py,sha256=D8eo8HUZWw08QvqvuJUfXzEgkbUmZ3sZOzBK9lukVWo,1949
+cascade_jitter/__init__.py,sha256=jiPa0iCzdr0DzxuaSFsln2IET-YO4dNso4a2IutwvU0,308
+cascade_jitter/initialize.py,sha256=_C4q8tQ8BhoDcVnnHqHO2XV4DlJcYmAZ2MtyHbIyLO0,6106
+cascade_jitter/jitter.py,sha256=gsrrTYNxt3qDmzeX3QZdp7KZso5TxrN18rxpTdOLJtc,27796
+cascade_jitter/jitter_utilities.py,sha256=H_oG_QyyemQfi27GZCMm-DW94ZajNe2-96qrF1j6I_Q,12541
+cascade_jitter/least_squares.py,sha256=WguqjZy00Hy42_wn7sHxzfBTZAm687TSYOObWQgRYnI,12626
+cascade_jitter/utilities.py,sha256=ov9-SVNcXzEoimo-pN-nTe9YUWGeushegtYgc8firDI,3422
+configuration_files/edge_filter.conf,sha256=1oaLvXni_7jm5uLaCPGxM0gJHDq8Srd7GtZuEqT843A,288
+configuration_files/jitter_detector.conf,sha256=Z1pksFGpIMaHgD7TREVyxgMutQKwamVmllq6ZOPxutw,222
+configuration_files/tracer.conf,sha256=J8DN9NTygwI7vPoDWUwvY_TRYV_mYwwz2Go-dU38QiU,69
+CASCADe_jitter-0.9.5.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CASCADe_jitter-0.9.5.dist-info/METADATA,sha256=Mw5dRxoyVNFerF9oNJL8-rL8P951bbjbr7K57VmPh4U,8339
+CASCADe_jitter-0.9.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+CASCADe_jitter-0.9.5.dist-info/top_level.txt,sha256=1oq5qsYvZ0LGdfEegu-XveT8snMV-HRS_eOUidyePHM,15
+CASCADe_jitter-0.9.5.dist-info/RECORD,,
