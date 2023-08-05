@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_auth_providers.egg-info/PKG-INFO
+django_auth_providers.egg-info/SOURCES.txt
+django_auth_providers.egg-info/dependency_links.txt
+django_auth_providers.egg-info/top_level.txt
+tests/__init__.py
+tests/test_aad_backend.py
+tests/test_ext_auth_backend.py
