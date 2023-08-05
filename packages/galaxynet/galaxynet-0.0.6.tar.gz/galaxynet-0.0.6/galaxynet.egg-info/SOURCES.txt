@@ -1,0 +1,9 @@
+README.md
+setup.py
+galaxynet/__init__.py
+galaxynet/models_eqx.py
+galaxynet/scorenet.py
+galaxynet.egg-info/PKG-INFO
+galaxynet.egg-info/SOURCES.txt
+galaxynet.egg-info/dependency_links.txt
+galaxynet.egg-info/top_level.txt
