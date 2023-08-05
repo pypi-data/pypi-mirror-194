@@ -1,0 +1,14 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ivtff-py
+message: 'Feel free to cite or not cite this repository, as you wish'
+type: software
+authors:
+  - given-names: Jeremie
+    family-names: Bornais
+repository-code: 'https://github.com/jere-mie/ivtff-py'
+license: MIT
+version: '0.1'
+date-released: '2023-02-25'
