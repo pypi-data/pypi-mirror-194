@@ -1,0 +1,13 @@
+torch
+pydicom
+matplotlib
+seaborn
+tqdm
+imageio
+
+[dev]
+nbdev
+black
+flake8
+ipykernel
+ipywidgets
