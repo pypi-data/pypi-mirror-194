@@ -1,0 +1,17 @@
+miniscutil/__about__.py,sha256=InQmF039CkYfDAJKDZO4Adt9vSBieGy8fOEbPs_3ul0,126
+miniscutil/__init__.py,sha256=4AbmjRGpTV_7IW2_tD3C9gZ4Oho8TkevEyTrSULkeJ8,469
+miniscutil/adapt.py,sha256=gbOCkqtAS8ZjU09hzK3almFNlUyb3lgX8Hc9ExNUlu4,3036
+miniscutil/asyncio_helpers.py,sha256=6_p5hvu4OVS-Ae_ioHR--7Qn7fjzW2U_EiTPKV_DK0Y,5780
+miniscutil/current.py,sha256=gVcD4Uape-baOEZufkCTO3m3vUYJe76YsFNPbRlbtpk,1696
+miniscutil/deep.py,sha256=FspZrIpIwhdalNDrw_tJSvue4zJlxRRAa8G8posMh44,11903
+miniscutil/deepeq.py,sha256=-bQLH54jqQRRaa9sk9UGmNSH1cA8nNPNHspySeq__aM,2154
+miniscutil/dictdiff.py,sha256=vNSuwxVbgDyUOIMJ7xzoDi1i_ptqu4D7kv1Yh-y-u2g,36
+miniscutil/dispatch.py,sha256=5hQ_LxnttaPqTvEbkSerMtA1e2X5j268xlNR6NHuR2A,3469
+miniscutil/misc.py,sha256=jhgMEPZWjjx0Qv3uihlmU5nlVH0-KAfBQP0K_5GvYJc,2543
+miniscutil/ofdict.py,sha256=Xx4i3m-Scrkt9-ePXsMSoLiAgw8zlIZcZ-75x02XyBk,9452
+miniscutil/sum.py,sha256=gzmn9wEywVYK272_Xr6jn279mKepguCLJrh1QB0wuc8,2860
+miniscutil/type_util.py,sha256=cjlCCOlPXYO81JC5mpY1JmdSKCMaPr6hAhmrIgLGesw,1172
+miniscutil-0.0.1.dist-info/METADATA,sha256=0ls0vDgmc8ijOO95rADognNseieLDbHOsSkfCgYbEFw,2364
+miniscutil-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+miniscutil-0.0.1.dist-info/licenses/LICENSE.txt,sha256=uhxlb3Xlj9XMexdLMHSAB3M584eKvv3j5Peef0Fs_oM,1096
+miniscutil-0.0.1.dist-info/RECORD,,
