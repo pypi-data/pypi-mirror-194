@@ -1,0 +1,9 @@
+numpy
+open3d
+PyOpenGL
+PyOpenGL-accelerate
+PyQt5
+
+[tests]
+pytest
+pytest-qt
