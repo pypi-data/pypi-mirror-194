@@ -1,0 +1,14 @@
+cocotbext/spi/__init__.py,sha256=5icxeMd45y-ZFBoVL8ykt-CzULyFALZAlg2zgUFkSH4,1409
+cocotbext/spi/_version.py,sha256=NpX2iZJQYVxuIsKBfyjQghJWMvGYxwOlfWJ3M_xOU7s,160
+cocotbext/spi/about.py,sha256=8y-L-V3EAveCRYrhFD44D-ZZ3mko9pYBi9T_HHhsXkU,420
+cocotbext/spi/spi.py,sha256=E82OtcOsNJm97-ilMWiQQP80TOoFBdo8payWCWGE6GU,15952
+cocotbext/spi/devices/generic.py,sha256=EH2SZMjAD3d3osmu0iHE9UFcOxBWG2ofMhxNi4-q_WM,2852
+cocotbext/spi/devices/TI/ADS8028.py,sha256=ZjINXNhSYL_gKMJxJg_PeP-qXZCzS2f9bLxXIechHsE,4494
+cocotbext/spi/devices/TI/DRV8304.py,sha256=HA0FCGGZkjbxvS1Wr1gZmUO_-hSP3v29_T7WvWv24aU,3219
+cocotbext/spi/devices/TI/__init__.py,sha256=1mmTK4zrkHFUyztyFrm5upSJtZmD8FfGaI_Zjj2oxpI,1726
+cocotbext/spi/devices/Trinamic/TMC4671.py,sha256=pqbKIRyLd6TVp4O4zgAKv0qGKKmq2RIeVu78VKugqoY,5569
+cocotbext/spi/devices/Trinamic/__init__.py,sha256=1mmTK4zrkHFUyztyFrm5upSJtZmD8FfGaI_Zjj2oxpI,1726
+cocotbext_spi-0.3.1.dist-info/METADATA,sha256=YjSDHZTHV0pAkJRbtnqU7eQz37iI3Hx90NtMA9DTbqI,7547
+cocotbext_spi-0.3.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cocotbext_spi-0.3.1.dist-info/top_level.txt,sha256=CEzgDDbvABi5X1TOqXPbyRc2Bsf41BTwKc5T8riPRPM,10
+cocotbext_spi-0.3.1.dist-info/RECORD,,
