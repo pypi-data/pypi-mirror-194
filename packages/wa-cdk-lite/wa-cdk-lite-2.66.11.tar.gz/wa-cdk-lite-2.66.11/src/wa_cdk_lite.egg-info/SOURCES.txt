@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/wa_cdk_lite/__init__.py
+src/wa_cdk_lite/py.typed
+src/wa_cdk_lite.egg-info/PKG-INFO
+src/wa_cdk_lite.egg-info/SOURCES.txt
+src/wa_cdk_lite.egg-info/dependency_links.txt
+src/wa_cdk_lite.egg-info/requires.txt
+src/wa_cdk_lite.egg-info/top_level.txt
+src/wa_cdk_lite/_jsii/__init__.py
+src/wa_cdk_lite/_jsii/wa-cdk-lite@2.66.11.jsii.tgz
