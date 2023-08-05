@@ -1,0 +1,3 @@
+[console_scripts]
+லஸ்ஸி=லஸ்ஸி.லஸ்ஸி_console.console:run
+
