@@ -1,0 +1,49 @@
+# this file contains all relevant configuration taht are used by pyPhasesPreprocessing
+
+preprocessing:
+  targetFrequency: 50
+  forceGapBetweenEvents: False
+  stepsPerType: {}
+    # eeg: [resampleFIR, scale, fftConvolution]
+    # eog: [resampleFIR, scale, fftConvolution]
+    # emg: [resampleFIR, scale, fftConvolution]
+    # body: [positionAlice, resampleSimple]
+    # mic: [resampleFIR, scale]
+    # effort: [resample, scale, fftConvolution]
+    # sao2: [resampleSimple, normalizePercentage, scale]
+    # flow: [resample, fftConvolution]
+    # ecg: [resampleFIR, scale]
+    # rr: [rr2hr, resampleSimple, scale]
+  targetChannels: []
+  # - [EEG F3-A2, F3-M2, EEG, "F3:M2"]
+  # - [EEG F4-A1, F4-M1, EEG Ch2, "F4:M1"]
+  # - [EEG C3-A2, C3-M2, "C3:M2"]
+  # - [EEG C4-A1, C4-M1, "C4:M1"]
+  # - [EEG O1-A2, O1-M2, "O1:M2"]
+  # - [EEG O2-A1, O2-M1, "O2:M1"]
+  # - [EEG A1-A2]
+  # - [EOG LOC-A2, E1-M2, EOG(L), "E1:M2"]
+  # - [EOG ROC-A1, EOG(R), "E2:M1"]
+  # - [EMG Chin, Chin1-Chin2, EMG, Chin]
+  # - [Leg]
+  # - [Body]
+  # - [Snore, Schnarch.]
+  # - [Effort THO, CHEST, RIP Thora]
+  # - [Effort ABD, ABD, RIP Abdom]
+  # - [SpO2, SaO2]
+  # - [FlowSelect, FLOW]
+
+segmentAugmentation: []
+  # - name: fixedSize
+  #   position: center
+  #   size: 2097152
+  # - name: znorm
+  # - name: MagScale
+  #   low: 0.8
+  #   high: 1.25
+  # - name: channelShuffle # eeg shuffle
+  #   channelSlice: [0, 6]
+  #   trainingOnly: True
+  # - name: channelShuffle # emg shuffle
+  #   channelSlice: [13, 14]
+  #   trainingOnly: True
