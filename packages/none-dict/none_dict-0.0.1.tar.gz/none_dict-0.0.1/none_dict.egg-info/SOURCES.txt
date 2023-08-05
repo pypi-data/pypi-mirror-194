@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+none_dict/__init__.py
+none_dict.egg-info/PKG-INFO
+none_dict.egg-info/SOURCES.txt
+none_dict.egg-info/dependency_links.txt
+none_dict.egg-info/top_level.txt
