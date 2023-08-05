@@ -1,0 +1,6 @@
+msgpack==1.0.4
+python-daemon
+tornado==6.1
+
+[:sys_platform == "win32"]
+pywin32
