@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+curve2vec.egg-info/PKG-INFO
+curve2vec.egg-info/SOURCES.txt
+curve2vec.egg-info/dependency_links.txt
+curve2vec.egg-info/requires.txt
+curve2vec.egg-info/top_level.txt
