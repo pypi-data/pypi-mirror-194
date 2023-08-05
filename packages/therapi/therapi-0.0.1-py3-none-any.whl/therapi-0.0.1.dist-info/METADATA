@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: therapi
+Version: 0.0.1
+Summary: Therapy to ease the pain of writing boilerplate code to consume JSON APIs.
+License: MIT
+Author: Helmut Irle
+Author-email: me@helmut.dev
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# python-therapi
+Therapy to ease the pain of writing boilerplate code to consume JSON APIs.
+
+---
+
+JSON dominates the API space these days. Consuming such APIs can become a bit of a schlep.
+
+Python makes it quite easy, but you still have to deal with it on a low level by constructing each and every request. Can't we make it easier by abstracting some of that low-level boilerplate code? Let's look at an example.
+
+## 
+
