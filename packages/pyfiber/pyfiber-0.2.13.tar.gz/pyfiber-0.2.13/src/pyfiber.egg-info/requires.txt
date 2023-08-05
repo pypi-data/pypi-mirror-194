@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+pyyaml
+datetime
+seaborn
+matplotlib
+portion
+h5py
