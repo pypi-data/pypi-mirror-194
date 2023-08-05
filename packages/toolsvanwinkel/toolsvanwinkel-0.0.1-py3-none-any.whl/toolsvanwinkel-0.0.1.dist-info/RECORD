@@ -1,0 +1,10 @@
+toolsvanwinkel-0.0.1.data/data/etc/jupyter/nbconfig/notebook.d/writefile.json,sha256=gs00_-vqzrcqYH7ZTe-UpDnQWG_3QuRLP_YDoNMlRQQ,61
+toolsvanwinkel-0.0.1.data/data/share/jupyter/nbextensions/writefile/main.js,sha256=jIjm4ZXIUWa4pCYhoiSfAlzw6fIDzDINgUiGLm4iKCI,2593
+toolsvanwinkel-0.0.1.data/data/share/jupyter/nbextensions/writefile/writefile.yaml,sha256=U5bcsc_fNpDzpPdZKmi_ntalkQ4iR97Dp_tW-9xU7sM,142
+writefile/__init__.py,sha256=EWvV1E4W5WM5FaDqRpMGHigPBfhWbUFiRTrE9zwPqCM,385
+writefile/static/main.js,sha256=jIjm4ZXIUWa4pCYhoiSfAlzw6fIDzDINgUiGLm4iKCI,2593
+writefile/static/writefile.yaml,sha256=U5bcsc_fNpDzpPdZKmi_ntalkQ4iR97Dp_tW-9xU7sM,142
+toolsvanwinkel-0.0.1.dist-info/METADATA,sha256=PkA7_5yfGF2GQswwhMB4Wy2QUrFt04VhrGXGWYnsGPQ,364
+toolsvanwinkel-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+toolsvanwinkel-0.0.1.dist-info/top_level.txt,sha256=5G6oSAhsIplIuL_FihXpFtSu7-DggxPZrpuBXoeaJ5A,10
+toolsvanwinkel-0.0.1.dist-info/RECORD,,
