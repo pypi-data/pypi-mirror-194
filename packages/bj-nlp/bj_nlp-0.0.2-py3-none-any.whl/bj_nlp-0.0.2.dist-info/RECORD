@@ -1,0 +1,20 @@
+bj_nlp/Preprocessing.py,sha256=rGB_6jrXugELy-D8SRB-27Bn_bi9TltGLdYAu3mq3ac,7445
+bj_nlp/Testtext.py,sha256=UdIAC_yFXfHFC4VICvqmUwp5XnwT8iUGBp-JOxBw-_s,1010
+bj_nlp/_PandaziseMixin.py,sha256=tPDYag04wjyYRiGkN8r_U0ATsk_rmOmO5oiGBDSGetc,14998
+bj_nlp/_UtilsMixin.py,sha256=g9si_xFvtYLBbTnZNxk1mT6dFBouV83NMrwbnGCD4HU,4973
+bj_nlp/__init__.py,sha256=KoAFg3JKO6IRbzt8oju86PNV8bKYc_rfE987yNIQjdY,676
+bj_nlp/__main__.py,sha256=38mbUWwZDvO-pDUtiA3qUa2xWpaM2sFXbqqOlui6oBM,199
+bj_nlp/blpClass.py,sha256=F4Ine8i5cxXQEmYlJEiyL1OcSPR47EEbe4PnXb9CG9E,6034
+bj_nlp/c01_merger.py,sha256=3G5XQbfZISTJ3teEth8dwXRo-6ZKh0BOtus73T7pm_k,11786
+bj_nlp/c05_wrede.py,sha256=tHjTs4YfbPI9SwlpAo8y-ikN4XsKC8nswfUbNfqTu78,6104
+bj_nlp/c10_wortschatz.py,sha256=dcmz8zDTzWFiekksUTom_bt6LZZJygA56ciYfuSR6LU,15860
+bj_nlp/c11_wortschatz - Original.py,sha256=P0ryKhws8YLxAxIrlbmtbIq-lTThV0fZY6crsbA7jXg,20767
+bj_nlp/diff_grammatik ###.ipynb,sha256=cYfytfsFUg7YoHJF5cyr9dE-Sspg9lxUbcEMd0KOzWw,3878
+bj_nlp/diff_grammatik ###.py,sha256=P73KIjmE-eUdUN5X6QNfkCMoB0XPlkVEIQ3dFAthOjE,1311
+bj_nlp/translate_tags.py,sha256=d0v-lCwmP9CW12iszNG-bwf_frTKZc6dODrFDjy4y1M,9875
+bj_nlp-0.0.2.dist-info/LICENSE,sha256=yRV_jnrEqjOE2zSEixa7i7holk7tDYFgT5ACLSA_HU0,1063
+bj_nlp-0.0.2.dist-info/METADATA,sha256=vMWsYTPlTcDgT8VovF9Emp7mUvvP1wK13ch0Tpd1ymQ,584
+bj_nlp-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bj_nlp-0.0.2.dist-info/entry_points.txt,sha256=5vyWln0QRL1cFgHyfV3zV8jrRmGPqmD1oBCd9m9pR7E,48
+bj_nlp-0.0.2.dist-info/top_level.txt,sha256=tcLUGPmoEIja02yQydTqVxKKrE5_p2QEeiIgY7saWZw,7
+bj_nlp-0.0.2.dist-info/RECORD,,
