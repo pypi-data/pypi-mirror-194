@@ -1,0 +1,2 @@
+[console_scripts]
+autonomi = autonomi.client.cli.cli:app_cli
