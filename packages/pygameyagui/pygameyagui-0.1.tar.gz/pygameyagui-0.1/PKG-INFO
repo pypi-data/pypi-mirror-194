@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pygameyagui
+Version: 0.1
+Summary: Pygame-YaGUI is Yet another GUI for Pygame.
+Author-email: Alexandre Maciel <acmaciel@ufpi.edu.br>
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: myst-parser ; extra == "doc"
+Requires-Dist: sphinx-copybutton ; extra == "doc"
+Provides-Extra: doc
