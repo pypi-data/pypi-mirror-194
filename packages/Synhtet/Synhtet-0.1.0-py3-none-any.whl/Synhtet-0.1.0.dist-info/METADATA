@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: Synhtet
+Version: 0.1.0
+Summary: A templates module for business analytics peers
+Home-page: UNKNOWN
+Author: Htet Aung Kyaw
+Author-email: <hank.lo.kyaw@gmail.com>
+License: UNKNOWN
+Keywords: python,business analysis,templates,MBAN,syntax,example scripts
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: sklearn
+Requires-Dist: numpy
+
+
+Synhtet
+
+
+
+Under construction! Not ready for use yet! Currently experimenting and planning!
+
+# Synhtet
+
+
+
+Developed by Htet Aung Kyaw (c) 2022
+
+
+
+How to use the package
+
+from Synhtet import MBAN # import MBAN modlue
+
+
+
+template = MBAN()
+
+
+
+template required for CART model analysis
+
+
+
+template.import_CART_ensemble() # to see the template
+
+
+
+Other templates The package contains most of the code provided for the Business Analytics student.
+
+
+
+Check out: https://github.com/hanklokyaw/Synhtet.git
+
