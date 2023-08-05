@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kachery/__init__.py
+kachery.egg-info/PKG-INFO
+kachery.egg-info/SOURCES.txt
+kachery.egg-info/dependency_links.txt
+kachery.egg-info/top_level.txt
