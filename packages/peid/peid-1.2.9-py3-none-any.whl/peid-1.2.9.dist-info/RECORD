@@ -1,0 +1,11 @@
+peid/VERSION.txt,sha256=yNg8JnLF45fOFqLuJ1rEWRcAK5s2dl932Z8xvfge6Cg,6
+peid/__info__.py,sha256=ZHnbIPFg9mOnuJLMKkFwK1CTobmrcmq1o8vOzZ-B8Lw,537
+peid/__init__.py,sha256=bkvkeBYzE1rL-M_Jxk4fIXW5Dxi-nPcElrqFcvCUvFY,7609
+peid/__main__.py,sha256=CDVQ7xtCJhm9LCbo0FHLKnjkAt1pf0PkVQoutTYXoxs,6644
+peid/userdb.txt,sha256=-6otPIv4bF17263qwiLhZoPsv7NqBorIoY7likyXYQ0,1536541
+peid-1.2.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+peid-1.2.9.dist-info/METADATA,sha256=v1PSJkm9GSj6Fz699MoZy4K9FIJstGLjTC6RsHYy8fk,45525
+peid-1.2.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+peid-1.2.9.dist-info/entry_points.txt,sha256=zDa541qOcvkNVyGxYb32JLz5TDnNL8Aigsz2w0Pm4BE,77
+peid-1.2.9.dist-info/top_level.txt,sha256=cA3pNbmHLxn_L7_EE4iV6fZtmPk2wxBCe35SGixji7E,5
+peid-1.2.9.dist-info/RECORD,,
