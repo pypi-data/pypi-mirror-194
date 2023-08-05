@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mjzy
+Version: 0.3.9
+Summary: risk management
+Home-page: https://github.com/meijinghou/meijing-hou-545
+Author: Meijing Hou
+Author-email: houmeijing15@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+fintech545 assignment4
