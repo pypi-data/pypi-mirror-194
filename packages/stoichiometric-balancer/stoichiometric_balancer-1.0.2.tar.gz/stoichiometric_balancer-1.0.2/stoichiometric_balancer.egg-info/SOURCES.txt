@@ -1,0 +1,7 @@
+README.md
+setup.py
+stoichiometric_balancer.egg-info/PKG-INFO
+stoichiometric_balancer.egg-info/SOURCES.txt
+stoichiometric_balancer.egg-info/dependency_links.txt
+stoichiometric_balancer.egg-info/requires.txt
+stoichiometric_balancer.egg-info/top_level.txt
