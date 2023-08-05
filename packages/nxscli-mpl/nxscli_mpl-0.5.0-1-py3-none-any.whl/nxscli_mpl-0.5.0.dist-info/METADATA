@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: nxscli-mpl
+Version: 0.5.0
+Summary: Nxscli Matplotlib extension
+Author-email: raiden00 <raiden00@railab.me>
+License: Apache-2.0
+Project-URL: Changelog, https://github.com/railab/nxscli-mpl/blob/master/CHANGES.md
+Project-URL: Homepage, https://github.com/railab/nxscli-mpl
+Keywords: nuttx,nxscli
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nxscli (>=0.5.0)
+Requires-Dist: matplotlib (>=3.6)
+Requires-Dist: click (>=8.1)
+
+# Nxscli-mpl
+![master workflow](https://github.com/railab/nxscli-mpl/actions/workflows/master.yml/badge.svg)
+
+Matplotlib extension to Nxscli.
+
+## Features
+
+* Plotting with [Matplotlib](https://github.com/matplotlib/matplotlib),
+  * Capture data on a static plot
+  * Real-time animation plot (can be written as `gif` or `mp4` file)
+
+## Features Planned
+
+* Stream metadata as X-axis
