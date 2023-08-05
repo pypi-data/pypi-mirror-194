@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pybinlog
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/tayyabkhalil-313/pybinlog
+Author: Tayyab Khalil
+Author-email: tayyabkhalilpm@gmail.com
+License: MIT License
+Download-URL: https://github.com/tayyabkhalil-313/pybinlog
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pymavlink
+
+UNKNOWN
+
