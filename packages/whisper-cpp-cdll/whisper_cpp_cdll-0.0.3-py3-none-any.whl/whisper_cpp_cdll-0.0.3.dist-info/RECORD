@@ -1,0 +1,8 @@
+LICENSE,sha256=a9ju3NiZDz4MUCB5eV5urNOkLbuPQqHHQVU8tDbK3RY,1067
+whisper_cpp_cdll/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+whisper_cpp_cdll/core.py,sha256=XAi-2itlkRYqJfQD_S22Q7CfETTmB4hyV1ECIusPxl0,3971
+whisper_cpp_cdll/types.py,sha256=7BAXOJrEj1Y3rzRp5TkjIAxuJ4CasRo7aXRbBCtnksY,2214
+whisper_cpp_cdll-0.0.3.dist-info/LICENSE,sha256=a9ju3NiZDz4MUCB5eV5urNOkLbuPQqHHQVU8tDbK3RY,1067
+whisper_cpp_cdll-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+whisper_cpp_cdll-0.0.3.dist-info/METADATA,sha256=TqJng0Amp8EwMJrLcy3uLgxoDhVSmUOJiYOB0IqBUo8,711
+whisper_cpp_cdll-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: whisper-cpp-cdll
+Version: 0.0.3
+Summary: toolkit for whisper.cpp
+Home-page: https://github.com/limdongjin/whisper.cpp.py
+License: MIT
+Keywords: whisper,whisper.cpp,speech-recognition,ASR
+Author: limdongjin
+Author-email: geniuslim27@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: scipy (==1.9.3)
+Project-URL: Repository, https://github.com/limdongjin/whisper.cpp.py
+Description-Content-Type: text/markdown
+
+# whisper.cpp.cdll
+
