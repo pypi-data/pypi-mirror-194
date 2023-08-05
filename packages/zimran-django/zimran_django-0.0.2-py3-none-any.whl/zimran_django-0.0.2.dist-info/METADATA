@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zimran-django
+Version: 0.0.2
+Summary: Extensions for Django services
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: django
+
+## Installation
+```bash
+pip install zimran-django
+```
+
+## Usage
+```python
+# settings.py
+
+MIDDLEWARE = [
+    'zimran.django.middleware.HttpHostRenameMiddleware',
+    ...
+]
+```
