@@ -1,0 +1,2 @@
+[console_scripts]
+openmc_plot = openmc_plot.launch:main
