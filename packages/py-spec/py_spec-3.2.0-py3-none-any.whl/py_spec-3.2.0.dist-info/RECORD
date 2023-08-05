@@ -1,0 +1,15 @@
+py_spec/__init__.py,sha256=eTC3PE6jeFnfMJhRxuXgJKlnKAi48_z9qnGNOsTs6Ec,168
+py_spec/input/__init__.py,sha256=GvRUpWgO9qL6uOE-n5qvJVpe_H7HAIMdgL8BglPI83Y,39
+py_spec/input/spec_namelist.py,sha256=YLFc2Mz0ugjU4Z_fe_bIZsDcOPqCJzqhrJuc7Esg7bU,39615
+py_spec/output/__init__.py,sha256=fOL3FA3WNpoBEjASvkb_sIZdYO2YJYZRXdQVDW_ZbEE,25
+py_spec/output/_plot_iota.py,sha256=x2wIVdTeBXIAxC6bXrAqKmUjyCM2A-Vfmc7d3c5HFjQ,1634
+py_spec/output/_plot_kam_surface.py,sha256=zpxRCPMQe1EsZ00kAkScb0c-7xoBcMbXtSsJIrl7BKg,2660
+py_spec/output/_plot_modB.py,sha256=l8mNQ2Ml7Zn-12AkRsmTy6rAwon4o6M99e3UfQqoKIs,2708
+py_spec/output/_plot_poincare.py,sha256=X70nd71CzIldCbixZQPhDF66cEcO2XM9F3OP13F2VXg,2829
+py_spec/output/_plot_pressure.py,sha256=Mlhj7eZjJPtdQwrrWNpGLoviEzuTMKoA5lUlWyEkBQI,1524
+py_spec/output/_processing.py,sha256=MDdb-S9UObkQ1PV7WRsFGq6pqBAFpBLZPit_3jpMMsY,25739
+py_spec/output/spec.py,sha256=gKWwpPmowaaTDaVydzLLo-UqKA04tv2xmztPYiCeVhE,7967
+py_spec-3.2.0.dist-info/METADATA,sha256=ig7_GByaJimf0jtu5FlRtev_NKJqjrmIYpQ_80G428E,1650
+py_spec-3.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py_spec-3.2.0.dist-info/top_level.txt,sha256=HR_ZcIzlbdtPWVpNEjjzr0Sdo-JfJnZCTrOLjS9pVxo,8
+py_spec-3.2.0.dist-info/RECORD,,
