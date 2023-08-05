@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Andavar.egg-info/PKG-INFO
+Andavar.egg-info/SOURCES.txt
+Andavar.egg-info/dependency_links.txt
+Andavar.egg-info/requires.txt
+Andavar.egg-info/top_level.txt
