@@ -1,0 +1,8 @@
+notice.mp3
+setup.py
+AfadLastQuakes/__init__.py
+KandilliLastQuakes/__init__.py
+TurkeyLastQuakeAlert.egg-info/PKG-INFO
+TurkeyLastQuakeAlert.egg-info/SOURCES.txt
+TurkeyLastQuakeAlert.egg-info/dependency_links.txt
+TurkeyLastQuakeAlert.egg-info/top_level.txt
