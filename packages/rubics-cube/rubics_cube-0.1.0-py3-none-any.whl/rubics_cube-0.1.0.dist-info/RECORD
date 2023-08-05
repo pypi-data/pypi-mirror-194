@@ -1,0 +1,9 @@
+rubics_cube/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+rubics_cube/__init__.py,sha256=XQIg0EJ3yjbkepUEYPRhjsEMmUsbQaRFWNA_1eKh1lI,298
+rubics_cube/cube.py,sha256=xjl45kYb8wais6F_Odp4HahCK5-j1ywM3s8r-esEJvc,23774
+rubics_cube/heuristics.py,sha256=cSLxMDsRGznCrC7Q9XZjPVQQ-eErc-aQJ_NIgXiD4uU,3551
+rubics_cube-0.1.0.dist-info/LICENSE,sha256=VQuyqZqWI1sI9nXN44o1_VZYgb_VLAexPiHWqF-RZHQ,1071
+rubics_cube-0.1.0.dist-info/METADATA,sha256=rRmuZBG-YBxnVF1y5Ek-DQ7fRR5sDEXH9hzGkjdebWU,1952
+rubics_cube-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rubics_cube-0.1.0.dist-info/top_level.txt,sha256=ddQlb2S_twVBVHn7FNlkK3y2Ajesn-oZWDnX43hVZCE,12
+rubics_cube-0.1.0.dist-info/RECORD,,
