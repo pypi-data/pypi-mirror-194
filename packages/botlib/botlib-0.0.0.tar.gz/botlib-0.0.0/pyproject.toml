@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "botlib"
+version = "0.0.0"
+description = ""
+authors = ["Nikita Konodyuk <konodyuk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
