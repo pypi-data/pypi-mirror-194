@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+uron/VERSION
+uron/__init__.py
+uron.egg-info/PKG-INFO
+uron.egg-info/SOURCES.txt
+uron.egg-info/dependency_links.txt
+uron.egg-info/requires.txt
+uron.egg-info/top_level.txt
