@@ -1,0 +1,16 @@
+pyyaml
+xgboost
+numpy
+scipy
+pyarrow
+pandas
+joblib
+matplotlib
+seaborn
+scikit-learn
+imblearn
+tqdm
+PyPDF2
+matplotlib_venn
+networkx
+powerlaw
