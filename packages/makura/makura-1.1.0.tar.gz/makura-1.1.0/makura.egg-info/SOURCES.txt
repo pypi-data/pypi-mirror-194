@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+makura/__init__.py
+makura/api.py
+makura/assembly.py
+makura/taxonparse.py
+makura.egg-info/PKG-INFO
+makura.egg-info/SOURCES.txt
+makura.egg-info/dependency_links.txt
+makura.egg-info/entry_points.txt
+makura.egg-info/requires.txt
+makura.egg-info/top_level.txt
