@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.rst
+jpterm.py
+setup.py
+bin/jpterm
+jmespath_community_terminal.egg-info/PKG-INFO
+jmespath_community_terminal.egg-info/SOURCES.txt
+jmespath_community_terminal.egg-info/dependency_links.txt
+jmespath_community_terminal.egg-info/requires.txt
+jmespath_community_terminal.egg-info/top_level.txt
