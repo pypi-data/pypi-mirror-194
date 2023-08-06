@@ -1,0 +1,3 @@
+spotipy~=2.22.0
+tidal-unofficial~=0.1.0
+ytmusicapi~=0.25.0
