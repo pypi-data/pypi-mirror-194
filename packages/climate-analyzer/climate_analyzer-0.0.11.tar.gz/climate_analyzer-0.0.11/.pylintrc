@@ -1,0 +1,66 @@
+##############################
+# pylint Configuration
+#
+# W – warning
+# E – error
+# C – convention/style
+# R – refactor code
+# F – fatal, linting stopped
+##############################
+
+[MAIN]
+
+
+[BASIC]
+
+
+[CLASSES]
+
+
+[DESIGN]
+max-locals=30
+
+[EXCEPTIONS]
+
+
+
+[FORMAT]
+
+indent-string='    '
+max-line-length=120          # Maximum line length.
+max-module-lines=1000        # Maximum number of lines in a module.
+single-line-class-stmt=no    # Allow single line class definition
+
+
+[IMPORTS]
+
+
+[LOGGING]
+
+[MESSAGES CONTROL]
+disable=C0103
+max-statements=75
+
+[METHOD_ARGS]
+
+
+[MISCELLANEOUS]
+
+
+[REFACTORING]
+
+
+[REPORTS]
+
+
+[SIMILARITIES]
+
+
+[SPELLING]
+
+[STRING]
+
+
+[TYPECHECK]
+
+[VARIABLES]
