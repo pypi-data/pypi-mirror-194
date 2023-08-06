@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: glaciersat
+Version: 0.0.1a0
+Summary: glaciersat - monitoring glaciers from space
+Home-page: https://github.com/jlandmann/glaciersat
+Author: Johannes Marian Landmann
+Author-email: landmann@vaw.baug.ethz.ch
+License: MIT
+Keywords: geosciences,glaciers,remote sensing,gis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib (>=3.0.0)
+Requires-Dist: shapely
+Requires-Dist: configobj
+Requires-Dist: netcdf4
+Requires-Dist: xarray (>=0.16)
+Requires-Dist: sentinelsat
+Requires-Dist: salem
+
+
+**Glaciersat is a modular, open-source package for glacier remote sensing**
+
+Glaciersat provides tools to monitor important glacier variables like snow 
+distribution on the glaciers, broadband albedo and melt area from different 
+platform and sensors. It put a special focus on quantifying uncertainties in 
+both input and derived variables.
+Links
+-----
+- HTML documentation: https://glaciersat.readthedocs.org
+- Source code: http://github.com/jlandmann/glaciersat
