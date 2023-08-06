@@ -1,0 +1,12 @@
+i3a/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+i3a/_version.py,sha256=tJsce6-xHh2nqYN1Q0aCPsret-V9n5m1Eq5KaDImtDw,142
+i3a/master_stack.py,sha256=Z2ayQ7DRxprF_HNAKOptLxlav28702RqEIMA7BpB_BY,8511
+i3a/move_to_empty.py,sha256=eJELEctQwyy9hy4vkeAH5sTIVBaCAiZWOrC8CFX7XDw,943
+i3a/swallow.py,sha256=TUs1pN6HwDce7tUxNFfPNIyqq6CQWFXMdHXuht2RNKM,7036
+i3a/swap.py,sha256=p_I_ku-KtTcxrt60Tnip0TgtQSTABsRU9_8_24nMPLo,686
+i3a-2.0.2.dist-info/LICENSE,sha256=jHWpIx24kGhl4pcG7WOq0Y_ZGMksFdvvuxPCX-QoULQ,32473
+i3a-2.0.2.dist-info/METADATA,sha256=rQ3KSsLhRfB6W42wi6QYwF1MZOPqEsoVNwHpuXNG28I,2121
+i3a-2.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+i3a-2.0.2.dist-info/entry_points.txt,sha256=bVi5aZClpbo5ublDUHGUOlMxmnJo45-uI8cIqyqD2oE,159
+i3a-2.0.2.dist-info/top_level.txt,sha256=Favp-e7BiObgX8SZQVDcWsuHBWYY_V_TvyciTcIdb0w,4
+i3a-2.0.2.dist-info/RECORD,,
