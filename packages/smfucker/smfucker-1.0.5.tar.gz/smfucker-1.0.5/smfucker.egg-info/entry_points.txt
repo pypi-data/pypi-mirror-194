@@ -1,0 +1,3 @@
+[console_scripts]
+smfucker = smfucker.smfucker:exe_main
+

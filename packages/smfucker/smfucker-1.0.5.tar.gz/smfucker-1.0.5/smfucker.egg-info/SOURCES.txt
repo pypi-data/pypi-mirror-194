@@ -1,0 +1,11 @@
+README.md
+setup.py
+smfucker/__init__.py
+smfucker/smfucker.py
+smfucker/smms.py
+smfucker.egg-info/PKG-INFO
+smfucker.egg-info/SOURCES.txt
+smfucker.egg-info/dependency_links.txt
+smfucker.egg-info/entry_points.txt
+smfucker.egg-info/requires.txt
+smfucker.egg-info/top_level.txt
