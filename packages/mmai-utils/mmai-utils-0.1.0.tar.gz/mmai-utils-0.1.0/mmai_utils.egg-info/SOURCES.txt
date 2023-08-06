@@ -1,0 +1,9 @@
+README.md
+setup.py
+mmai/__init__.py
+mmai/utils.py
+mmai_utils.egg-info/PKG-INFO
+mmai_utils.egg-info/SOURCES.txt
+mmai_utils.egg-info/dependency_links.txt
+mmai_utils.egg-info/requires.txt
+mmai_utils.egg-info/top_level.txt
