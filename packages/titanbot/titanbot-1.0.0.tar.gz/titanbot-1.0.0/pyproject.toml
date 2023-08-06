@@ -1,0 +1,5 @@
+[project]
+name = "titanbot"
+version = "1.0.0"
+description = "Small modern colored logging library"
+readme = "README.md"

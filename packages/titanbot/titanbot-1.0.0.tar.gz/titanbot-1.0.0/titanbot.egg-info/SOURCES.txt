@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+titanbot.egg-info/PKG-INFO
+titanbot.egg-info/SOURCES.txt
+titanbot.egg-info/dependency_links.txt
+titanbot.egg-info/top_level.txt
