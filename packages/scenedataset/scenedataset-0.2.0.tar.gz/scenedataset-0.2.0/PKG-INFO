@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: scenedataset
+Version: 0.2.0
+Summary: PyTorch dataset which uses PySceneDetect to split videos into scenes
+License: BSD 3-Clause
+Author: Farid Abdalla
+Requires-Python: >=3.8,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3)
+Requires-Dist: decord (>=0.6.0)
+Requires-Dist: ffmpeg (>=1.4)
+Requires-Dist: ffmpeg-python (>=0.2.0)
+Requires-Dist: ipywidgets (==7.7.2)
+Requires-Dist: joblib (>=1.2.0,<2.0.0)
+Requires-Dist: loguru (>=0.6.0)
+Requires-Dist: matplotlib (>=3.6.3)
+Requires-Dist: opencv-python (>=4.7.0.68)
+Requires-Dist: scenedetect (>=0.6.1)
+Requires-Dist: scipy (>=1.10.0)
+Requires-Dist: torch (>=1.13.1)
+Requires-Dist: torch-fidelity (>=0.3.0)
+Requires-Dist: torchmetrics[image] (>=0.11.1)
+Description-Content-Type: text/markdown
+
+# scenedataset
+
+PyTorch dataset which uses PySceneDetect to split videos into scenes
+
+## Installation
+
+```bash
+$ pip install scenedataset
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`scenedataset` was created by Farid Abdalla. It is licensed under the terms of the BSD 3-Clause license.
+
+## Credits
+
+`scenedataset` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
