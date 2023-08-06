@@ -1,0 +1,2 @@
+dvg-debug-functions~=2.2
+numpy~=1.15
