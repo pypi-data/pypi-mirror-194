@@ -1,0 +1,2 @@
+[console_scripts]
+qsense = qsense.command_line:main
