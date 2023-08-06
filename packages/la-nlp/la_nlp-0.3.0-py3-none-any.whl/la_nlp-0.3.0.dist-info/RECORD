@@ -1,0 +1,15 @@
+la_nlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+la_nlp/components.py,sha256=hWFCAr25UkmrPX90UdxQhd-okb-xrbcmA4sWxn8xeGU,13149
+la_nlp/scratch.py,sha256=rT7iSnEffUR0qcWZ5gbKKjjssJugclq6QJDELJhF_8A,610
+la_nlp/scratch2.py,sha256=cP0K95DMBidF8TNg08X9GvszGJ-crKI42ywsQUJR8uU,137
+la_nlp/utils.py,sha256=POi8-W7Ieo9i2ve52gEJdaVYXLajlZ-Lc8JtWjt_Z2E,1348
+la_nlp/data/aspects.toml,sha256=8j69l4QaFb1ZhX-3fPXPcLUKQW-wvjhrhpF6sJQu6X8,433
+la_nlp/pipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+la_nlp/pipes/aspect_sentiment.py,sha256=4h0Xn5FgOxKslcwx1Q-hcqNeXSALpCDN8-CA9d5d8iI,3873
+tests/test_aspect_sentiment.py,sha256=-um4Bc-NSDM5-RrlkB5akEZk4n4TLQPDoinOI5lF0Bc,7364
+tests/test_components.py,sha256=uzTx6mPUK-NaBmTUGaGABdb7iNr7bVRZdno9gZ8JIys,3158
+tests/test_utils.py,sha256=IHllo_ZAVJ8bqMT00HuvrkhTB8SdDsq-1jPqH9FusKM,1797
+la_nlp-0.3.0.dist-info/METADATA,sha256=JkqTrQs01C5mIidBCBF35xKpr-nRF1XZ5eC8bOHcRiE,372
+la_nlp-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+la_nlp-0.3.0.dist-info/top_level.txt,sha256=SLpxRIbrYhWlnwp-KP7EdG2K0Q5_6uhLa_55uK3pZrU,13
+la_nlp-0.3.0.dist-info/RECORD,,
