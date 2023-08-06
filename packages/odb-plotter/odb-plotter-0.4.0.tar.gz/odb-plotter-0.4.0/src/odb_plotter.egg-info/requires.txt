@@ -1,0 +1,11 @@
+platformdirs
+h5py
+numpy
+tomli_w
+pandas
+matplotlib
+vtk==9.2.2
+pyvista
+
+[:python_version < "3.11"]
+tomli>=1.1.0
