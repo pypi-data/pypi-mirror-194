@@ -1,0 +1,10 @@
+gtFrame/__init__.py,sha256=vU6SN-g2hi9wr5KfG-4da0NK9u-HPxYaxYALCfkVy_8,134
+gtFrame/basic.py,sha256=gjl_yxTHmIkmwt4fuKZfls3-peBD0tBup5Doz3KRaig,21879
+gtFrame/direction.py,sha256=GX-wLSalunzirU0U1aUzsBUfHoaeHOGVMo_rHNwSZtw,5320
+gtFrame/position.py,sha256=5TkIZWnEjuT7fKQNwvwDSOHbcIU1jGEGipFMKgIFSAo,8487
+gtFrame/rotation.py,sha256=N1ysj6MrV55tWqYVktAXP73Y75kup-_ODGhiw1SZHic,3514
+gtFrame-1.2.0.dist-info/LICENSE,sha256=Pwl7ZCSEssBDI9n3uAIXrm7fOqKyzHCxUPZh6x9flXA,1088
+gtFrame-1.2.0.dist-info/METADATA,sha256=JqZhtAu42CAH-lfX75NXy110btQoofpcn3ga0l-ay2o,2076
+gtFrame-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gtFrame-1.2.0.dist-info/top_level.txt,sha256=w08UqEwpP2OlJIA-6Hmcul1JErH-ijsMiH8WXlNKVEg,8
+gtFrame-1.2.0.dist-info/RECORD,,
