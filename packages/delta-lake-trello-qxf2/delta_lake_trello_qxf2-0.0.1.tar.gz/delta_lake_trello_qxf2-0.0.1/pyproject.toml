@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "delta-lake-trello-qxf2"
+version = "0.0.1"
+authors = [
+  { name="Sravanti Tatiraju", email="sravanti.tatiraju@qxf2.com" },
+]
+description = "Delta Lake implementation for Trello, Qxf2"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/qxf2/delta-lake-trello"
