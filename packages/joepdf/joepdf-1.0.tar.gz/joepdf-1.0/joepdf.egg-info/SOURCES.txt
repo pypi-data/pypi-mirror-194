@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+joepdf/__init__.py
+joepdf/pdf2imagine.py
+joepdf/pdf2text.py
+joepdf.egg-info/PKG-INFO
+joepdf.egg-info/SOURCES.txt
+joepdf.egg-info/dependency_links.txt
+joepdf.egg-info/top_level.txt
