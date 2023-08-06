@@ -1,0 +1,17 @@
+batch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+batch/file.py,sha256=YFWJTqnkqVpEzubYn1DuczWydJB-qOCATaiyD6tytBc,877
+microservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+microservice/flask_app.py,sha256=iab0fpOMFHMMvGG6U5qMyff38NlBE4cdQjfpW3-9tJA,884
+microservice/templates/sentiment_form.html,sha256=3SdCVpr47oLjQ7K6DHMIwBpBt1YDbw9hyXjCclIRT1g,409
+mlops_models/__init__.py,sha256=xS5L0zYeMIxj4yq11k3Qrb_ujI1mPvCnAKLVhp9qJF4,23
+mlops_models/constant.py,sha256=JIelZ2Jmk9F8RjHHnfECzD8f68uwtIITwuJr93SNSAs,131
+mlops_models/sentiment.py,sha256=4AjYan2X3SdFt7Rdx6XSmlHJ26km-6uIvBBGC9mUKzM,2063
+mlops_models/resources/models/sentiment-negative-en.txt,sha256=6r-TOto62vywVt3W8xWQ8zAtEB0gvtJZdt8P0lqbShk,44758
+mlops_models/resources/models/sentiment-positive-en.txt,sha256=n-dPqLmQYJUnHJVh7-WJTmVQZwC4N0UMFSJJbunXnGg,19096
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_models.py,sha256=zaFKy5gI3zDJQB0q6AFlWwcbVqHJqCUDwRw0UIE_pYk,744
+tests/test_sentiment.py,sha256=hlCoOugM2-kTLkYbToHdVRnQflsJAXfuTwHVyQzunQE,543
+mlops_models-1.0.1.dist-info/METADATA,sha256=m0PGyXNZrJxekdlPM2UVGGK7ysM4Q2VY3NYneAE0rf0,2143
+mlops_models-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mlops_models-1.0.1.dist-info/top_level.txt,sha256=TAvqu11XgdJm6XhLVkEDPinr3n_h5pl2wBE5ChyhaO8,38
+mlops_models-1.0.1.dist-info/RECORD,,
