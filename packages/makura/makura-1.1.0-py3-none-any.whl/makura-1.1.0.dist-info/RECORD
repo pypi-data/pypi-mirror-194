@@ -1,0 +1,10 @@
+makura/__init__.py,sha256=t959WjRu_9Ccr6XzlwTsApPMN4qEoDkiWKiw0jDUYEk,196
+makura/api.py,sha256=DC5qF37Wb5qo0loLsVKmEWTngnyXz73T9rWQap9-JHg,500
+makura/assembly.py,sha256=2wzgqEJbszTklVb7ElstvIaslJ46MoWK7Qi8r388Jno,26654
+makura/taxonparse.py,sha256=TbW62mZQSpt39MG9a2EvHY3U-mNmay84xE-WC2JHAS8,540
+makura-1.1.0.dist-info/LICENSE,sha256=BR8sS7bldha36mVOZFRdrjvmIDmUQbc00xlDK_WzK4c,35063
+makura-1.1.0.dist-info/METADATA,sha256=aA4-jxo7HfhjsfQKnNJ63uq_QeW306567y0qfravUyo,2646
+makura-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+makura-1.1.0.dist-info/entry_points.txt,sha256=14kVEvOD_uUjNTtpDQGxx5J-r1HeckiuhLQLmOn6EvI,49
+makura-1.1.0.dist-info/top_level.txt,sha256=b3-aq_CQ_UymiOCv4HZhsCf2yTQmdwgEgR4sgVvc8-U,7
+makura-1.1.0.dist-info/RECORD,,
