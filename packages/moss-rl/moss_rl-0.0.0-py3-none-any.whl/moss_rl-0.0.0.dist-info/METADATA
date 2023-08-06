@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: moss-rl
+Version: 0.0.0
+Summary: A Python library for Reinforcement Learning.
+Home-page: https://github.com/hilanzy/moss
+Author: lanzhiyi
+Author-email: lanzhiy.mail@qq.com
+License: MIT
+Keywords: reinforcement-learning python machine learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: absl-py
+Requires-Dist: dm-env
+Requires-Dist: dm-tree
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: tqdm
+Requires-Dist: typing-extensions
+Requires-Dist: jax
+Requires-Dist: chex
+Requires-Dist: dm-haiku
+Requires-Dist: flax
+Requires-Dist: optax
+Requires-Dist: rlax
+Requires-Dist: tensorflow (==2.8.0)
+Requires-Dist: tensorflow-probability (==0.15.0)
+Requires-Dist: tensorflow-datasets (==4.6.0)
+Requires-Dist: dm-reverb (==0.7.2)
+Requires-Dist: dm-launchpad (==0.5.2)
+Provides-Extra: dev
+Requires-Dist: sphinx (<4) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: jinja2 (<3.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: yapf ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: doc8 ; extra == 'dev'
+Requires-Dist: pyenchant ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+# Moss
+
+<img src="docs/_static/images/moss.jpg" width="40%">
+
+Moss is a Python library for Reinforcement Learning.
