@@ -1,0 +1,4 @@
+[console_scripts]
+simba_ml_prediction_pipeline = simba_ml.start_prediction:main
+simba_ml_problem_viewer = simba_ml.simulation.problem_viewer.run_problem_viewer:main
+
