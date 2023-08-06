@@ -1,0 +1,79 @@
+# Build system backend to create package to upload on pypi
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=42",
+    "setuptools_scm[toml]>=6.2"
+]
+
+# configuration of setuptools_scm to use tag version autoincrementation
+[tool.setuptools_scm]
+write_to = "ikiss/_version.py"
+version_scheme = "release-branch-semver"
+tag_regex = "^(\\d.\\d.\\d)-*\\w*\\d*$"       # allow value like 0.0.1-rc0
+local_scheme = "no-local-version"
+
+# define Project settings
+[project]
+name = "ikiss"
+version = "1.3.0"
+description = "iKISS is a pipeline to detect kmers under selection."
+authors = [
+    { name = "Julie Orjuela (DIADE-IRD)", email = "julie.orjuela@ird.fr" },
+]
+dependencies = ['PyYAML', 'pandas', 'matplotlib', 'tabulate', 'ipython', 'biopython', 'numpy',  'argparse', 'snakemake', 'tqdm', 'click>=8.0.3', 'cookiecutter', 'snakecdysis']
+requires-python = ">=3.8"
+readme = "README.rst"
+license = { file = "LICENCE" }
+keywords = ["snakemake", "kmers", "selection","diversity" ]
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Intended Audience :: End Users/Desktop',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: R',
+    'Natural Language :: English',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Bio-Informatics'
+]
+
+[project.urls]
+Homepage = "https://forge.ird.fr/diade/iKISS.git"
+Documentation = "https://forge.ird.fr/diade/iKISS/-/blob/master/README.rst"
+repository = "https://forge.ird.fr/diade/iKISS.git"
+Downloads = "https://forge.ird.fr/diade/iKISS/-/releases/"
+"Bug Tracker" = "https://forge.ird.fr/diade/iKISS/-/issues"
+"Source Code" = "https://forge.ird.fr/diade/iKISS.git"
+
+[project.optional-dependencies]
+docs = [
+    "sphinx",
+    "sphinx_click",
+    "sphinx_copybutton",
+    "sphinx_rtd_theme",
+    "tox",
+]
+
+# setup scripts links
+[project.scripts]
+ikiss = "ikiss.main:main"
+
+# setup library entry-points
+# entry_points={
+#            "ikiss": ["ikiss = __init__"],
+#             'console_scripts': [f'ikiss = ikiss.main:main']},
+[project.entry-points.ikiss]
+ikiss = "__init__"
+
+# Try to link sphinx to file
+[tool.sphinx]
+source-dir = "docs/source"
+build-dir = "docs/build"
+config-dir = "docs/source"
+
+
