@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pdf_renderer.py
+setup.cfg
+setup.py
+pdf_renderer.egg-info/PKG-INFO
+pdf_renderer.egg-info/SOURCES.txt
+pdf_renderer.egg-info/dependency_links.txt
+pdf_renderer.egg-info/requires.txt
+pdf_renderer.egg-info/top_level.txt
