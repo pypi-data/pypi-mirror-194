@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: mightstone
+Version: 0.4.0
+Summary: A library manage all things Magic The Gathering related in python
+Home-page: https://github.com/guibod/mightstone
+License: MIT
+Author: Guillaume Boddaert
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: aiofiles (>=22.1.0,<23.0.0)
+Requires-Dist: aiosqlite (>=0.18.0,<0.19.0)
+Requires-Dist: aiostream (>=0.4.5,<0.5.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: asyncstdlib (>=3.10.5,<4.0.0)
+Requires-Dist: beanie (>=1.17.0,<2.0.0)
+Requires-Dist: cairosvg (>=2.6.0,<3.0.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: dependency-injector (>=4.41.0,<5.0.0)
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Requires-Dist: httpx-cache (>=0.7.0,<0.8.0)
+Requires-Dist: ijson (>=3.2.0.post0,<4.0.0)
+Requires-Dist: logging (>=0.4.9.6,<0.5.0.0)
+Requires-Dist: nest-asyncio (>=1.5.6,<2.0.0)
+Requires-Dist: ordered-set (>=4.1.0,<5.0.0)
+Requires-Dist: pillow (>=9.4.0,<10.0.0)
+Requires-Dist: pytest (>=7.2.1,<8.0.0)
+Requires-Dist: python-slugify (>=8.0.0,<9.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/guibod/mightstone/issues
+Project-URL: Documentation, https://github.com/guibod/mightstone/blob/master/README.md
+Project-URL: Repository, https://github.com/guibod/mightstone
+Description-Content-Type: text/markdown
+
+# mightstone
+
+
+[![PyPi](https://img.shields.io/pypi/v/mightstone.svg)](https://pypi.python.org/pypi/mightstone)
+[![Documentation](https://readthedocs.org/projects/mightstone/badge/?version=latest)](https://mightstone.readthedocs.io/en/latest/?badge=latest)
+[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+[![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/7037/badge)](https://bestpractices.coreinfrastructure.org/projects/7037)
+
+A library manage all things Magic The Gathering related in python
+
+
+## Developing
+
+Run `make` for help
+
+    make install             # Run `poetry install`
+    make showdeps            # run poetry to show deps
+    make lint                # Runs bandit and black in check mode
+    make format              # Formats you code with Black
+    make test                # run pytest with coverage
+    make build               # run `poetry build` to build source distribution and wheel
+    make pyinstaller         # Create a binary executable using pyinstaller
+
+
+## System dependencies
+
+Mightstone use [Ijson](https://github.com/ICRAR/ijson) that relies on [YAJL](https://lloyd.github.io/yajl/). IJson will
+use its python backend on the run if YAJL is not installed, but you cold benefit from installing YAJL locally.
+
+
+
