@@ -1,0 +1,10 @@
+_EngineRemastered.cpython-39-darwin.so,sha256=Yz4QhDLH1-dTOgmyJu6aSscqWvSKuJTK4Pbwz48IEf8,478768
+EngineRemastered-0.5.1.dist-info/RECORD,,
+EngineRemastered-0.5.1.dist-info/LICENSE,sha256=0D6z3yr4dyYLfs8TQlipoBe-RsKoRmZjWrepnsLu-ME,1068
+EngineRemastered-0.5.1.dist-info/WHEEL,sha256=az3tD7H14vkTSJgWE72ixEqXb97G6qRWWTaonq58a0s,109
+EngineRemastered-0.5.1.dist-info/top_level.txt,sha256=-ZhfKIig-Kc5983SFyWkD6mhk9TyyIYEu45R8e2V7Lg,35
+EngineRemastered-0.5.1.dist-info/METADATA,sha256=ioFL9kCwD1S7QUZO3QqCZJwDqOAH2dkKH86hk3sUI1E,217
+EngineRemastered.dylibs/libvulkan.1.3.231.dylib,sha256=gRI65yKftMmduzNWmF2MAQJQvT-J55qb_FMnFjj-CPQ,1515424
+EngineRemastered.dylibs/libglfw.3.3.dylib,sha256=jxM4doDujhw36fEUj2jWuHBpdns02fMY7qkYMi0Nh1E,235424
+EngineRemastered/API/__init__.py,sha256=-WSHk6kpz6hnsiPssmab0fOTxDTj6Ih928RF1GzVdgs,110
+EngineRemastered/API/main.py,sha256=jPpVwasNVo5W9LZbZjjcgmTuZMNBtvuHOc3PFJ-aprM,1385
