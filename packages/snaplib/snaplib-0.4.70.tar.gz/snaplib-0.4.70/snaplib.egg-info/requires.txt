@@ -1,0 +1,8 @@
+wheel>=0.3.0
+twine>=1.13.0
+pandas==1.5.3
+numpy==1.24.0
+matplotlib==3.7.0
+lightgbm==3.3.5
+sklearn==1.2.1
+seaborn==0.12.2
