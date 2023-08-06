@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: koopa-viz
+Version: 0.0.4
+Summary: Vizualization plugin for koopa image analysis
+Home-page: https://github.com/bbquercus/koopa
+Author: Bastian Eichenberger
+Author-email: bastian@eichenbergers.ch
+License: MIT
+Project-URL: Bug Tracker, https://github.com/bbquercus/koopa/issues
+Project-URL: Documentation, https://github.com/bbquercus/koopa#README.md
+Project-URL: Source Code, https://github.com/bbquercus/koopa
+Project-URL: User Support, https://github.com/bbquercus/koopa/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: napari
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+
+[![License MIT](https://img.shields.io/pypi/l/koopa-viz.svg?color=green)](https://github.com/bbquercus/koopa/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/koopa-viz.svg?color=green)](https://pypi.org/project/koopa-viz)
+[![Python Version](https://img.shields.io/pypi/pyversions/koopa-viz.svg?color=green)](https://python.org)
+[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/koopa-viz)](https://napari-hub.org/plugins/koopa-viz)
+
+# koopa-viz
+
+Vizualization plugin for koopa image analysis
+
+This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
+
+More information can be found on the official [GitHub repo].
+
+## Issues
+
+If you encounter any problems, please [file an issue] along with a detailed description.
+
+[GitHub repo]: https://github.com/bbquercus/koopa
+[napari]: https://github.com/napari/napari
+[Cookiecutter]: https://github.com/audreyr/cookiecutter
+[@napari]: https://github.com/napari
+[file an issue]: https://github.com/bbquercus/koopa/issues

@@ -1,0 +1,15 @@
+numpy
+pandas
+pyarrow
+qtpy
+scikit-image
+tifffile
+trackpy
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5

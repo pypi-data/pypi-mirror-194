@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/koopa_viz/__init__.py
+src/koopa_viz/_widget.py
+src/koopa_viz/napari.yaml
+src/koopa_viz.egg-info/PKG-INFO
+src/koopa_viz.egg-info/SOURCES.txt
+src/koopa_viz.egg-info/dependency_links.txt
+src/koopa_viz.egg-info/entry_points.txt
+src/koopa_viz.egg-info/requires.txt
+src/koopa_viz.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[napari.manifest]
+koopa-viz = koopa_viz:napari.yaml
