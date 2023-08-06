@@ -1,0 +1,104 @@
+/**********************
+        Loader
+ **********************/
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.loader-text {
+  margin-left: 16px;
+}
+
+/**********************
+        Tags
+ **********************/
+
+.tag {
+  font-size: 12px;
+  background-color: #404040;
+  color: #e0e0e0;
+  display: block;
+  padding: 2px 14px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.tag.clickable {
+  cursor: pointer;
+}
+
+/**********************
+        Inputs
+ **********************/
+
+.input {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 7px 20px;
+  border: 0;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #404040;
+  transition: background-color 0.5s ease;
+}
+
+.input::placeholder {
+  color: #828282;
+}
+
+.input:hover {
+  color: #222222;
+  background-color: #aaaaaa;
+}
+
+.input:hover::placeholder {
+  color: #222222;
+}
+
+.input:active,
+.input:focus {
+  color: #222222;
+  background-color: #ffffff;
+}
+
+.input:active::placeholder,
+.input:focus::placeholder {
+  color: #828282;
+}
+
+/**********************
+        Button
+ **********************/
+/* Hide the remove text button */
+jp-search::part(clear-button) {
+  display: none;
+}
+
+jp-search::part(control) {
+  padding-inline-start: calc(var(--design-unit) * 2px + 7px);
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+}
+.quetz-search-box jp-search::part(root) {
+  border-radius: 100px;
+}
+.quetz-search-box jp-button {
+  margin: 0 4px;
+  margin-left: -35px;
+  z-index: 100;
+  min-height: 0;
+  min-width: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+}

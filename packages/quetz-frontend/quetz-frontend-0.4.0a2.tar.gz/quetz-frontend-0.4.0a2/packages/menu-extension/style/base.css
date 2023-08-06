@@ -1,0 +1,75 @@
+.topbar {
+  justify-content: space-between;
+}
+
+.topbar-spacer {
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+}
+
+.topbar-search-wrapper {
+  max-width: 400px;
+  margin: auto 10px;
+  overflow: visible;
+}
+
+.topbar-search-wrapper jp-search {
+  width: 100%;
+}
+
+.topbar-item {
+  height: 100%;
+  /* margin: auto; */
+  /* margin-right: 10px; */
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  /* padding: 0 20px; */
+}
+
+.quetz-main-menu {
+  margin: 3px 0px;
+}
+
+.quetz-main-menu > span:first-child {
+  padding-left: 21px;
+  padding-right: 18px;
+}
+
+.quetz-main-menu > .lm-Menu-content {
+  width: 100%;
+}
+
+.hamburger-menu-button {
+  border-radius: 100px;
+}
+
+.anonymous-icon > svg {
+  transform: translate(-3px, 2px);
+}
+
+#login-menu jp-avatar {
+  transform: translate(-3px, 0px);
+}
+
+.hamburger-icon {
+  display: block;
+  border-left: 1px solid #888;
+  height: 22px;
+  padding-left: 5px;
+  margin-left: 5px;
+  color: #aaa;
+  align-items: center;
+}
+
+.hamburger-menu-text {
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.hamburger-icon > svg {
+  height: 22px;
+  width: 22px;
+}

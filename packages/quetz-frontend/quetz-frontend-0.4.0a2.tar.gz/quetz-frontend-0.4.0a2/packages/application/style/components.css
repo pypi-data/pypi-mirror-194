@@ -1,0 +1,131 @@
+/**********************
+     Common styles
+ **********************/
+* {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.table-small {
+  font-size: 14px;
+  border-collapse: collapse;
+}
+
+.flex {
+  display: flex;
+}
+
+.link {
+  color: var(--jp-brand-color1);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+
+/**********************
+     Layout styles
+ **********************/
+.padding-top {
+  padding-top: 20px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.padding-side {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.page-contents-width-limit {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/**********************
+      Text styles
+ **********************/
+/* TODO: Letter spacing for text */
+.heading2 {
+  font-size: var(--jp-content-font-size4);
+  line-height: 50px;
+  margin-top: 0;
+  font-family: var(--jp-content-font-family);
+}
+
+.heading3 {
+  font-size: var(--jp-content-font-size3);
+  line-height: 36px;
+  margin-top: 0;
+  font-family: var(--jp-content-font-family);
+}
+
+.paragraph {
+  font-size: var(--jp-content-font-size1);
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: var(--jp-content-font-family);
+}
+
+.text {
+  font-size: var(--jp-content-font-size1);
+  line-height: 22px;
+  margin: 0;
+  font-family: var(--jp-content-font-family);
+}
+
+.minor-paragraph {
+  font-size: var(--jp-content-font-size0);
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--jp-ui-font-color2);
+  font-family: var(--jp-content-font-family);
+}
+
+.caption-inline {
+  font-size: var(--jp-content-font-size0);
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: bold;
+  font-family: var(--jp-content-font-family);
+}
+
+.section-heading {
+  font-size: var(--jp-content-font-size2);
+  line-height: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-family: var(--jp-content-font-family);
+}
+
+.profile-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}

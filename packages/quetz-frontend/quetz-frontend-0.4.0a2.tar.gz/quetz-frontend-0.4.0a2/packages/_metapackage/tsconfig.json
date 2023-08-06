@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfigbase",
+  "compilerOptions": {
+    "outDir": "lib",
+    "rootDir": "src"
+  },
+  "include": ["src/**/*"],
+  "references": [
+    { "path": "../application" },
+    { "path": "../application-extension" },
+    { "path": "../apputils" },
+    { "path": "../channels-extension" },
+    { "path": "../home-extension" },
+    { "path": "../jobs-extension" },
+    { "path": "../login-extension" },
+    { "path": "../menu" },
+    { "path": "../menu-extension" },
+    { "path": "../search-extension" },
+    { "path": "../table" },
+    { "path": "../user-extension" }
+  ]
+}

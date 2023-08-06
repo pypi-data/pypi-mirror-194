@@ -1,0 +1,8 @@
+typer>=0.4.1
+quetz-server~=0.4
+pydantic
+
+[dev]
+black
+isort
+tbump

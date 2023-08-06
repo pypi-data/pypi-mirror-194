@@ -1,0 +1,67 @@
+:root {
+  --jp-private-topbar-height: 68px;
+  --jp-private-bottombar-height: 68px;
+  --jp-quetz-primary-color: #ffff00;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--jp-ui-font-family);
+  font-size: var(--jp-ui-font-size1);
+  color: var(--jp-ui-font-color1);
+}
+
+/* Logo dark style */
+body[data-jp-theme-light='false'] path#quetz-logo-text,
+body[data-jp-theme-light='false'] path#quetz-logo-swirl {
+  fill: var(--jp-quetz-primary-color);
+}
+
+body[data-jp-theme-light='false'] path#quetz-logo-swirl-highlight {
+  fill: #111;
+  stroke: #111;
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#main #main-panel {
+  overflow: auto;
+  background: var(--jp-layout-color1);
+  color: var(--jp-ui-font-color0);
+  max-height: calc(
+    100vh - var(--jp-private-topbar-height) - var(--jp-private-bottombar-height)
+  );
+  height: calc(
+    100vh - var(--jp-private-topbar-height) - var(--jp-private-bottombar-height)
+  );
+  overflow-y: auto;
+}
+
+#top-panel {
+  background: var(--jp-layout-color1);
+  padding: 10px;
+  display: flex;
+  min-height: var(--jp-private-topbar-height);
+  justify-content: space-between;
+}
+
+#bottom-panel {
+  background: var(--jp-layout-color1);
+  padding: 10px;
+  display: flex;
+  min-height: var(--jp-private-bottombar-height);
+  justify-content: space-evenly;
+}
+
+jp-breadcrumb-item a {
+  color: var(--jp-brand-color1);
+}
+
+@import url('./components.css');
