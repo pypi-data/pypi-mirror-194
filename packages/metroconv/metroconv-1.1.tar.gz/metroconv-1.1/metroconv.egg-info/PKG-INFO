@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: metroconv
+Version: 1.1
+Summary: Metro Bank CSV  to FreeAgent CSV converter
+Home-page: https://github.com/kozmaz87/metroconv
+Author: Zoltan Kozma
+Author-email: zoltan@miracode.co.uk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
