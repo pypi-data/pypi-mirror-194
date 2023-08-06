@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+import json
+import pathlib
+
+import gradescope_auto_py as gap
+
+# config & setup
+grader_config = gap.GraderConfig.from_json('source/config.json')
+
+# grade
+grader = grader_config.grade()
+
+# output json
+file_json_out = pathlib.Path('results/results.json')
+file_json_out.parent.mkdir(exist_ok=True)
+with open(file_json_out, 'w') as f:
+    json_dict = grader.get_json()
+    json.dump(json_dict, f, sort_keys=True, indent=4)
+
+# print
+print(f'created: {file_json_out}')
+
+print(f'student output:' + '-' * 80)
+print('\n'.join(grader.s_output_list))
+
+print(f'json output:' + '-' * 80)
+print(json.dumps(json_dict, sort_keys=True, indent=4))
