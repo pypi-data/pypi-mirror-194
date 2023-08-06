@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+financemodule/__init__.py
+financemodule/admin.py
+financemodule/apps.py
+financemodule/models.py
+financemodule/tests.py
+financemodule/views.py
+financemodule.egg-info/PKG-INFO
+financemodule.egg-info/SOURCES.txt
+financemodule.egg-info/dependency_links.txt
+financemodule.egg-info/top_level.txt
+financemodule/migrations/__init__.py
