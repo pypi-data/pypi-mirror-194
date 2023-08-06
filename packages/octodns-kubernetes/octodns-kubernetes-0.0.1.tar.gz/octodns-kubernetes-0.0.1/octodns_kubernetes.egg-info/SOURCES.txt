@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+octodns_kubernetes/__init__.py
+octodns_kubernetes.egg-info/PKG-INFO
+octodns_kubernetes.egg-info/SOURCES.txt
+octodns_kubernetes.egg-info/dependency_links.txt
+octodns_kubernetes.egg-info/requires.txt
+octodns_kubernetes.egg-info/top_level.txt
+tests/test_provider_octodns_kubernetes.py
