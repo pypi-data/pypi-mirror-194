@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+prose_datainsights.egg-info/PKG-INFO
+prose_datainsights.egg-info/SOURCES.txt
+prose_datainsights.egg-info/dependency_links.txt
+prose_datainsights.egg-info/top_level.txt
