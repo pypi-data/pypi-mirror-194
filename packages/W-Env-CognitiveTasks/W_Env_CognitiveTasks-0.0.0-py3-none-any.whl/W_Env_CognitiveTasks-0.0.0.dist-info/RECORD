@@ -1,0 +1,11 @@
+W_Env/W_Env.py,sha256=IGmu8ojAPPiznz8Ob7lgIBiYhWL-pXwnyDP0onqbrY8,2142
+W_Env/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+W_Env/task_Goal_Action.py,sha256=ptK9B8FvGePfv6a0mmHzbSc2hyZD_uAum8bE85qwRYQ,5906
+W_Env/task_Horizon.py,sha256=9Lo6UoKjQF3PsXNnP0PSNQaMrosLdx3cwcCCWNRqEwg,4838
+W_Env/task_Temporal_Discounting.py,sha256=_UmGKT4-GeosrE5Xsmmoqh1HZVUD99Xd5DdPOlnUQ2Y,4261
+W_Env/task_TwoStep.py,sha256=ZDRwqRagEtiQ2KzvYAIC4JoN8k5O9gdJ2bZJ4RaqolE,3476
+W_Env/task_TwoStep_Confidence.py,sha256=Vd8arMW-chnR_R3bP4V9Zp09E9uZUXRh2_uufgYnkr8,5597
+W_Env_CognitiveTasks-0.0.0.dist-info/METADATA,sha256=V-2L2z_qtMCelK6tAGtQ2uWYkxd2_LEo4BPK3TlPBhE,145
+W_Env_CognitiveTasks-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+W_Env_CognitiveTasks-0.0.0.dist-info/top_level.txt,sha256=q7urSvIfXv3vsp1rCC43RZrq0vhJ4o2iIYM5l7kK13A,6
+W_Env_CognitiveTasks-0.0.0.dist-info/RECORD,,
