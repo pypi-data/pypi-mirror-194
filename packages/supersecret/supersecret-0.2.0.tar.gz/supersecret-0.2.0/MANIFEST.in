@@ -1,0 +1,2 @@
+include *.toml
+src/supersecret/VERSION.txt
