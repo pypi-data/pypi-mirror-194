@@ -1,0 +1,3 @@
+[console_scripts]
+awx_info = awx:_info
+awx_to_nc = awx:_convert_to_nc
