@@ -1,0 +1,11 @@
+micrograd2023/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+micrograd2023/_modidx.py,sha256=f1hDbYdJ6y0dlOjf5MpVYAsct3OIKEmv6bFrJiGq6Cs,5193
+micrograd2023/engine.py,sha256=oKHpCZHOPqIrn4h8lRqHE6dfgZvoyYjjftd6eophK4A,3851
+micrograd2023/nn.py,sha256=_-EyrHjcAwfUUCYJZXAhSKhqpp4lrXomdifdoFaFTSg,2017
+micrograd2023/utils.py,sha256=Fxw4UqVN1lzWk3wTUZ0x9cwyXaKzP_XiiINQUwI93WM,1198
+micrograd2023-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+micrograd2023-0.0.1.dist-info/METADATA,sha256=DHEWhCKWBn6weeZc6YRxUf1wRD8Z5Dn-r02WphFxhAc,2361
+micrograd2023-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+micrograd2023-0.0.1.dist-info/entry_points.txt,sha256=NZ5Q5EMA2opYHUmVxGJ2IJqZNlN3BIJJOlOdm7c-OCo,107
+micrograd2023-0.0.1.dist-info/top_level.txt,sha256=kR89nBKL9c9nQOwED6jxXaUFU-JU0ecY5X_SL5yUiFY,14
+micrograd2023-0.0.1.dist-info/RECORD,,
