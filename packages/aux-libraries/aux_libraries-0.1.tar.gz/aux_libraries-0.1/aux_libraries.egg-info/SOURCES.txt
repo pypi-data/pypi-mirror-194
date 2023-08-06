@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+aux/__init__.py
+aux/paramsAnalizer.py
+aux_libraries.egg-info/PKG-INFO
+aux_libraries.egg-info/SOURCES.txt
+aux_libraries.egg-info/dependency_links.txt
+aux_libraries.egg-info/not-zip-safe
+aux_libraries.egg-info/top_level.txt
