@@ -1,0 +1,6 @@
+boto3~=1.21
+click~=8.0
+icepack~=1.1
+pyyaml~=6.0
+retry2~=0.9
+webdav4~=0.9
