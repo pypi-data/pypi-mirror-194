@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: margincropper
+Version: 1.0.1
+Summary: Crops margins from PIL images
+License: MIT
+Author: megahomyak
+Author-email: g.megahomyak@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=9.4.0,<10.0.0)
