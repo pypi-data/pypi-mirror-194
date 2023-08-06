@@ -1,0 +1,421 @@
+```
+ ______     ______   ______     ______     __
+/\  ___\   /\__  _\ /\  ___\   /\  __ \   /\ \
+\ \___  \  \/_/\ \/ \ \  __\   \ \  __ \  \ \ \____
+ \/\_____\    \ \_\  \ \_____\  \ \_\ \_\  \ \_____\
+  \/_____/     \/_/   \/_____/   \/_/\/_/   \/_____/
+
+                 (teal makes sense)
+```
+
+## Write meaningful teal in s-expressions!
+
+STEAL is a minimlistic language with its powerful cross-compiler designed to simplify the process of writing Algorand TEAL programs using s-expressions. With STEAL, developers can write TEAL programs in a more readable and efficient way, making it accessible to both beginners and experienced developers alike. STEAL is built to take advantage of the easy-to-read nature of s-expressions, which makes it even easier to write and read TEAL programs. This tool is perfect for anyone looking to develop on the Algorand blockchain and write smart contracts in an efficient and streamlined way.
+
+STEAL does not add any additional layers of abstraction to the TEAL language. By building upon the existing foundations of TEAL and leveraging the readability and simplicity of s-expressions, STEAL provides a unique and innovative way of writing TEAL programs that is accessible to developers of all levels of experience. STEAL is designed to preserve the core functionality and "opcodes" of TEAL, while making it easier to read, write, and deploy programs on the Algorand blockchain. With STEAL, developers can benefit from a more streamlined and efficient workflow, without sacrificing the power and flexibility of TEAL. If you're looking for a tool that makes writing TEAL programs more accessible and easier than ever before, then STEAL is the perfect choice.
+
+See a minimal example below to experience how STEAL enhances the readability and ease-of-use of TEAL:
+
+```python
+#pragma.version.8
+
+`
+ This is a multi line comment
+ demonstrating how to use
+`
+
+(bnz.on_create (== txn.ApplicationID 0))
+
+($foo "Hello")
+($bar "world")
+($foobar (concat `inline comment` $foo (concat " " $bar)))
+
+(return (== $foobar txna.ApplicationArgs.0))
+
+(on_create: (return 1))
+```
+
+Simply compile your steal code to convert it to a valid TEAL language.
+
+```bash
+% steal compile demo.steal > demo.teal
+```
+
+Our `steal` code will be compiled into a perfectly valid, well organized `teal` file.
+
+```teal
+#pragma version 8
+
+//
+// This is a multi line comment
+// demonstrating how to use
+//
+
+txn ApplicationID
+int 0
+==
+bnz on_create
+
+byte "Hello"
+store 0 // foo
+
+byte "world"
+store 1 // bar
+
+//inline comment
+load 0 // foo
+byte " "
+load 1 // bar
+concat
+concat
+store 2 // foobar
+
+load 2 // foobar
+txna ApplicationArgs 0
+==
+return
+
+on_create:
+int 1
+return
+```
+
+You're now perfectly ready to deploy and test out your newly created smart contract.
+
+```bash
+% sandbox copyTo demo.teal
+>>> Now copying demo.teal to Algod container
+
+% sandbox goal app create [...] --approval-prog demo.teal
+>>> Created app with app index 1
+
+% sandbox goal app call [...] --app-id 1 --app-arg 'str:Hello world'
+>>> Transaction committed!
+```
+
+## Installation
+
+To get started with STEAL, simply follow the installation instructions below and once installed, you can start writing TEAL programs in s-expressions and use STEAL to convert them into TEAL bytecode that can be deployed to the Algorand blockchain.
+
+```bash
+% pip install steal
+```
+
+## Usage
+
+Cli tool can be accessed simply typing `steal` in your commmand prompt where you can find basic usage info prompted.
+
+```bash
+% steal
+>>> usage: steal [-h] [-v] {compile} ...
+>>>
+>>> positional arguments:
+>>>   {compile}
+>>>
+>>> optional arguments:
+>>>   -h, --help     show this help message and exit
+>>>   -v, --version  show program's version number and exit
+```
+
+## Documenation
+
+No dedicated detailed documentation available yet, see the examples below for more details.
+
+## Examples
+
+### Box
+
+```python
+#pragma.version.8
+
+(box_put "BoxA" "this is a test of a very very very very long string")
+
+(assert (== 51 (box_len "BoxA")))
+```
+
+Output:
+
+```
+#pragma version 8
+
+byte "BoxA"
+byte "this is a test of a very very very very long string"
+box_put
+
+int 51
+byte "BoxA"
+box_len
+==
+assert
+```
+
+### Loops
+
+```python
+#pragma.version.4
+
+0
+(loop:
+  (bnz.loop
+    (<= (dup (+ 1)) 10))
+)
+```
+
+Output:
+
+```teal
+#pragma version 4
+
+int 0
+
+loop:
+int 1
++
+dup
+int 10
+<=
+bnz loop
+```
+
+### Subroutines
+
+```python
+#pragma.version.8
+
+b.main
+
+(my_subroutine: (retsub +))
+
+(main: (return (callsub.my_subroutine 1 5)))
+```
+
+Output:
+
+```teal
+#pragma version 8
+
+b main
+
+my_subroutine:
++
+retsub
+
+main:
+int 1
+int 5
+callsub my_subroutine
+return
+```
+
+# Inner Transactions
+
+```python
+#pragma.version.8
+
+(itxn_submit
+    itxn_begin
+    (itxn_field.AssetAmount 1000)
+    (itxn_field.XferAsset txn.Assets.0)
+    (itxn_field.AssetReceiver txn.Sender)
+    (itxn_field.TypeEnum int.axfer)
+)
+```
+
+Output:
+
+```teal
+#pragma version 8
+itxn_begin
+int 1000
+itxn_field AssetAmount
+txn Assets 0
+itxn_field XferAsset
+txn Sender
+itxn_field AssetReceiver
+int axfer
+itxn_field TypeEnum
+itxn_submit
+
+```
+
+### Sample Program 1
+
+```python
+#pragma.version.8
+
+(&&
+  (&&
+    (== txn.RekeyTo global.ZeroAddress)
+    (< txn.Fee 1000000)
+  )
+  (||
+    (&&
+      (> 67240 txn.FirstValid)
+      (&&
+        (== txn.Receiver addr.RFGEHKTFSLPIEGZYNVYALM6J4LJX4RPWERDWYS2PFKNVDWW3NG7MECQTJY)
+        (== txn.CloseRemainderTo addr.RFGEHKTFSLPIEGZYNVYALM6J4LJX4RPWERDWYS2PFKNVDWW3NG7MECQTJY)
+      )
+    )
+    (&&
+      (== byte.base64.QzYhq9JlYbn2QdOMrhyxVlNtNjeyvyJc/I8d8VAGfGc= (sha256 arg.0))
+      (&&
+        (== 46 (len arg.0))
+        (&&
+          (== txn.Receiver addr.SOEI4UA72A7ZL5P25GNISSVWW724YABSGZ7GHW5ERV4QKK2XSXLXGXPG5Y)
+          (== txn.CloseRemainderTo addr.SOEI4UA72A7ZL5P25GNISSVWW724YABSGZ7GHW5ERV4QKK2XSXLXGXPG5Y)
+        )
+      )
+    )
+  )
+)
+```
+
+Output:
+
+```teal
+#pragma version 8
+
+txn RekeyTo
+global ZeroAddress
+==
+txn Fee
+int 1000000
+<
+&&
+int 67240
+txn FirstValid
+>
+txn Receiver
+addr RFGEHKTFSLPIEGZYNVYALM6J4LJX4RPWERDWYS2PFKNVDWW3NG7MECQTJY
+==
+txn CloseRemainderTo
+addr RFGEHKTFSLPIEGZYNVYALM6J4LJX4RPWERDWYS2PFKNVDWW3NG7MECQTJY
+==
+&&
+&&
+byte base64 QzYhq9JlYbn2QdOMrhyxVlNtNjeyvyJc/I8d8VAGfGc=
+arg 0
+sha256
+==
+int 46
+arg 0
+len
+==
+txn Receiver
+addr SOEI4UA72A7ZL5P25GNISSVWW724YABSGZ7GHW5ERV4QKK2XSXLXGXPG5Y
+==
+txn CloseRemainderTo
+addr SOEI4UA72A7ZL5P25GNISSVWW724YABSGZ7GHW5ERV4QKK2XSXLXGXPG5Y
+==
+&&
+&&
+&&
+||
+&&
+```
+
+### Boilerplate
+
+```python
+#pragma.version.2
+
+(bnz.create_app (== txn.ApplicationID 0))
+
+(bnz.handle_noop (== txn.OnCompletion int.NoOp))
+(bnz.handle_optin (== txn.OnCompletion int.OptIn))
+(bnz.handle_closeout (== txn.OnCompletion int.CloseOut))
+(bnz.handle_updateapp (== txn.OnCompletion int.UpdateApplication))
+(bnz.handle_deleteapp (== txn.OnCompletion int.DeleteApplication))
+err
+
+(create_app: (return 1))
+(handle_noop: (return 1))
+(handle_optin: (return 1))
+(handle_closeout: (return 1))
+(handle_updateapp: (return 1))
+(handle_deleteapp: (return 1))
+err
+```
+
+Output
+
+```teal
+#pragma version 2
+
+txn ApplicationID
+int 0
+==
+bnz create_app
+
+txn OnCompletion
+int NoOp
+==
+bnz handle_noop
+
+txn OnCompletion
+int OptIn
+==
+bnz handle_optin
+
+txn OnCompletion
+int CloseOut
+==
+bnz handle_closeout
+
+txn OnCompletion
+int UpdateApplication
+==
+bnz handle_updateapp
+
+txn OnCompletion
+int DeleteApplication
+==
+bnz handle_deleteapp
+
+err
+
+create_app:
+int 1
+return
+
+handle_noop:
+int 1
+return
+
+handle_optin:
+int 1
+return
+
+handle_closeout:
+int 1
+return
+
+handle_updateapp:
+int 1
+return
+
+handle_deleteapp:
+int 1
+return
+
+err
+```
+
+## Disclaimer
+
+Please note that STEAL is currently in the early stages of development and while not tested it thoroughly, it may still contain bugs or errors. As such, use STEAL with caution, and always test your programs thoroughly before deploying them to the Algorand blockchain.
+
+This software cannot be held responsible for any errors or issues that may arise from the use of it.
+
+If you encounter any problems or have any questions about STEAL, please don't hesitate to reach out or raise an issue.
+Your support and feedback is very much appreciated.
+
+## Licence
+
+Copyright (c) 2023 Kadir Pekel.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
