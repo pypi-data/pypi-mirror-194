@@ -1,0 +1,9 @@
+sphinx_changelog/__init__.py,sha256=rpU1HguLI68loh1I9ox1zIkLweViWRrYnQyPqrArXNw,98
+sphinx_changelog/directive.py,sha256=07TU-9UQyNGrEj6QBnqZN2JyJ392g64UWFp0Zy7NbwA,2895
+sphinx_changelog/towncrier.py,sha256=iE5kBi2KLmsEAuJIDQiDvISjgo5gNJfAPgW1CEHeMNE,3833
+sphinx_changelog/version.py,sha256=R6Br7a0SwicQzmnf3s46Abf-PTEkA-PnSV7EJ-cx6RU,345
+sphinx_changelog-1.3.0.dist-info/LICENSE.rst,sha256=mvItEoyMSg-xT0zm7DF51XjiejuJ6aGnCarD7Ew6Hr4,1506
+sphinx_changelog-1.3.0.dist-info/METADATA,sha256=3lcSY6ns-1fFGIDWuPkM8Z4N0s_QEwh_23coueaqJBw,3154
+sphinx_changelog-1.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sphinx_changelog-1.3.0.dist-info/top_level.txt,sha256=UKu7K8TAIHR-lToMe47jUcmf8bAiDaUmQHjPxTzhGgs,17
+sphinx_changelog-1.3.0.dist-info/RECORD,,
