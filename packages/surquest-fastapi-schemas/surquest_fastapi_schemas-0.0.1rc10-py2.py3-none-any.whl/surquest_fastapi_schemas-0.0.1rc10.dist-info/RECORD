@@ -1,0 +1,12 @@
+surquest/fastapi/schemas/args.py,sha256=PMVY_E4xspc3L1Ryr3zmfjGpSx8Pq-YwVx-vG85vJ9o,2225
+surquest/fastapi/schemas/responses/__init__.py,sha256=2EjlQdfrxt9pb5yUkw4E1G8A0dDT_y_3C3rNZuudVjE,154
+surquest/fastapi/schemas/responses/base.py,sha256=Fx1dgPum-DuH8iPbR4iduOnXAnJEUj-HkUjqzyv8SiA,333
+surquest/fastapi/schemas/responses/info.py,sha256=KuGygq1FmQoTrkO0aBMg4Ue3VnbNzvMg8tSuXJnOJ_8,531
+surquest/fastapi/schemas/responses/message.py,sha256=5ZiHS9A15hQbALTTSBtY91V2K7wN0xdMKeoyhH8_IqQ,266
+surquest/fastapi/schemas/responses/metadata.py,sha256=jXUMBYP9-1rke-jT2c9gily2GooWN83rAAyLv4Wrqfw,843
+surquest/fastapi/schemas/responses/responses.py,sha256=AxwxwsHyZtclR908Rkftm6Z47xhRlpPe23nQU30PJeY,2910
+surquest/fastapi/schemas/responses/status.py,sha256=4M5N5yhvvwiwn7-pZKBUzTwrxlaBOKl6r25SnRcJmVM,126
+surquest_fastapi_schemas-0.0.1rc10.dist-info/METADATA,sha256=BshA5iBlh3JwumhCEKI18Aw-9Bny1Q25QrNALGBKYY4,2224
+surquest_fastapi_schemas-0.0.1rc10.dist-info/WHEEL,sha256=nYNlZuHZ28ui1K118WE5qpb9yEZSMQ3u8pC2H4PftME,105
+surquest_fastapi_schemas-0.0.1rc10.dist-info/licenses/LICENSE,sha256=LuEVxGCuvhvtEXSwrka43cvWkBrjhUBIRqKXY8cDLAM,1086
+surquest_fastapi_schemas-0.0.1rc10.dist-info/RECORD,,
