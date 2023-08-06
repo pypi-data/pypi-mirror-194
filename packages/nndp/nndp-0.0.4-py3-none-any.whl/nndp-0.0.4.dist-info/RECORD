@@ -1,0 +1,10 @@
+helloworld.py,sha256=GijVBxfn-FyRGsFkvaUeN_I-a7YFOLZFsG6YT83nkew,19
+nndp/__init__.py,sha256=3o6QK_1YVZYY-DjbbqEBOzWfr6tL2ltWxhAsAjxkzRA,23
+nndp/core.py,sha256=Ppanvr4Et9r1YFPGFQ1CON1Fr6uHneWTTSor15YNOHk,7486
+nndp/policy_function.py,sha256=47NgdMesyBNugk8wHpmUg1FV6RXqX6C1aePNkNKwJds,5082
+nndp/utils.py,sha256=PiUtQayHQJ5N1fmQ6rFmWhlRHsK9WaWPpId0ZTTnj00,7484
+nndp-0.0.4.dist-info/LICENSE,sha256=ZRf5-OowiOeGM9doz_izpuHpdzZdIqWFT4qt1S1vK7Q,1098
+nndp-0.0.4.dist-info/METADATA,sha256=7iUw_hGpZPtd6zuRIoR9dBJ2bdkgv17i4FrD-J2QSbE,3052
+nndp-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nndp-0.0.4.dist-info/top_level.txt,sha256=RO1L5L0vugOLFlLlJfUg84TE5IE-WbdAT8x52RULO5A,5
+nndp-0.0.4.dist-info/RECORD,,
