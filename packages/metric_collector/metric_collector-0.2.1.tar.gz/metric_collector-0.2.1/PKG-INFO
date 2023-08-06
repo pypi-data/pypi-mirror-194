@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: metric_collector
+Version: 0.2.1
+Summary: Tekton pipeline's data collector
+Author-email: Max Leow <maxengiu@outlook.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: atlassian-python-api
+Requires-Dist: boto3
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Project-URL: Home, https://github.com/maxleow/metric-collector.git
+
+# metric-collector
