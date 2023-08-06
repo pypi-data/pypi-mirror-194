@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ptmodels
+Version: 0.0.3
+Summary: Pre-trained models image classifier
+Home-page: https://github.com/rafsunsheikh/ptmodels
+Download-URL: https://github.com/rafsunsheikh/ptmodels/archive/refs/tags/0.0.3.tar.gz
+Author: MD Rafsun sheikh
+Author-email: 201614123@student.mist.ac.bd
+License: MIT
+Keywords: Image,Classification,Pre-trained Model
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tensorflow
+Requires-Dist: sklearn
+Requires-Dist: keras
+
