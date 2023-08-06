@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+brookie/__init__.py
+brookie/brookie.py
+brookie.egg-info/PKG-INFO
+brookie.egg-info/SOURCES.txt
+brookie.egg-info/dependency_links.txt
+brookie.egg-info/not-zip-safe
+brookie.egg-info/top_level.txt
