@@ -1,0 +1,4 @@
+h5py==2.10
+tensorflow==1.15.0
+protobuf==3.20.3
+Keras==2.2.5
