@@ -1,0 +1,8 @@
+README.md
+setup.py
+test_pb2.py
+test_pb2_grpc.py
+donotgiveup.egg-info/PKG-INFO
+donotgiveup.egg-info/SOURCES.txt
+donotgiveup.egg-info/dependency_links.txt
+donotgiveup.egg-info/top_level.txt

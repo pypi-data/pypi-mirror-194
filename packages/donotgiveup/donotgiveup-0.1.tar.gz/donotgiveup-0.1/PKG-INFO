@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: donotgiveup
+Version: 0.1
+Summary: Let us try this another time
+Home-page: UNKNOWN
+Author: Amir Kidwai
+Author-email: findamirkidwai@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
