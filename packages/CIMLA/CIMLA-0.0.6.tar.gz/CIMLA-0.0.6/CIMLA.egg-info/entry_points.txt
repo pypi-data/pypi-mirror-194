@@ -1,0 +1,2 @@
+[console_scripts]
+cimla = CIMLA.main:main
