@@ -1,0 +1,3 @@
+[console_scripts]
+whisperer_ml=whisperer_ml.main:app
+
