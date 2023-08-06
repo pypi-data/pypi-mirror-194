@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+starrocks = starrocks.sqlalchemy.dialect:StarRocksDialect
