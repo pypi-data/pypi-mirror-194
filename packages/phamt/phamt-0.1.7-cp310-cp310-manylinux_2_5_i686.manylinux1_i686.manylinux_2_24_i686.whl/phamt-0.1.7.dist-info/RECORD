@@ -1,0 +1,12 @@
+phamt/phamt.c,sha256=URO_fcZoIIPZczSIPQqbB0U4RT8b0oKrwB6bwxt_CKA,28862
+phamt/__init__.py,sha256=i1ZTPetiwi6U4k4qEeR3n8SSMNGrX11Pg98g86fziFY,407
+phamt/c_core.cpython-310-i386-linux-gnu.so,sha256=rdGWKLkBLLu6UtqUmAl8uEFDoxQMWZqsI8BLywsPBzU,188908
+phamt/phamt.h,sha256=DKJRRK2nnJ25Xz4L91LKuhwo24l9Sid6LRBMCDTkOlA,77165
+phamt/py_core.py,sha256=b3DMczIprP5I66ZEemHuY0qYMl0XnIozRGcmET5Me7o,20027
+phamt/test/phamt.py,sha256=yitYQfx3MrOiRiVolx2fODU8dtbX1J0NfimJZTVhIZs,12497
+phamt/test/__init__.py,sha256=bXOHmLX_r5RmWc5ZyRdpQi0b4Bp4ZQa-7F6HoAG6Mbs,245
+phamt-0.1.7.dist-info/top_level.txt,sha256=30AiRBP_e0__jm44xqIFo6xEg3FVlrUzQax1yKUmc0c,6
+phamt-0.1.7.dist-info/LICENSE,sha256=txh5kek_HdkpjZptSwqg2g2tmTShCD1cN1dLYtxreSE,1071
+phamt-0.1.7.dist-info/RECORD,,
+phamt-0.1.7.dist-info/WHEEL,sha256=szmjS_C7pbxsZTXVxXrPDZ2H2DkzHnXah8Nr-uHU47c,181
+phamt-0.1.7.dist-info/METADATA,sha256=2cgfs7moP-K08cN4Bzg1o55MTCDqfDp0FZI7MBbxYRM,1281
