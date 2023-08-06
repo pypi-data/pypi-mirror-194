@@ -1,0 +1,6 @@
+include *.md *.txt *.yaml *.yml LICENSE
+recursive-include docs *
+prune docs/build
+recursive-include examples *
+recursive-include src *.py
+recursive-include tests *.cif *.npz *.pkl *.py
