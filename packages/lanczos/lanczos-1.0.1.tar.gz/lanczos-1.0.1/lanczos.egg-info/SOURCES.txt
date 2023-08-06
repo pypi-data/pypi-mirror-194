@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+lanczos/__init__.py
+lanczos/lanczos.py
+lanczos/lanczos3.i
+lanczos/resample.py
+lanczos/resample_example.py
+lanczos.egg-info/PKG-INFO
+lanczos.egg-info/SOURCES.txt
+lanczos.egg-info/dependency_links.txt
+lanczos.egg-info/top_level.txt
