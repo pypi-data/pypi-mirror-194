@@ -1,0 +1,12 @@
+dataset_interfaces/__init__.py,sha256=ZDM3TQOGVppzyNciZB3mi8ZCj1yBkzx40ACv0MDH978,107
+dataset_interfaces/generate.py,sha256=gVeJdW6zIOLNd1sGKdAQShE3PtYU3bIs8jHP6i1T7JI,2618
+dataset_interfaces/imagenet_utils.py,sha256=S5rV7oPt7GNROnGjtRnw8-QKm9rFZQQIIgapumaru9A,79249
+dataset_interfaces/inference_utils.py,sha256=Gttj2GVfXjKlTShxdUKDmit8L6B-cYQz_H3jT36sdJk,10216
+dataset_interfaces/templates.py,sha256=Wd_fuuUK-oF9K4BJLVKSMiWn1NZ5RgYJp_lMtIZ7dYM,5931
+dataset_interfaces/textual_inversion.py,sha256=BNsSlmkcwfnQ8bSVQ6_jBhVTmpL0nGVE_IZBXue0aBM,14894
+dataset_interfaces/utils.py,sha256=BpWmW16KXXp4vUBU-JyUrhPvB8DnWZAySVXwLP5NUhI,4948
+dataset_interfaces-0.1.0.dist-info/LICENSE,sha256=fUQNvk83vtjm37sD9nXc6njErlw_L1ruu_CyD5n4cps,1066
+dataset_interfaces-0.1.0.dist-info/METADATA,sha256=16nQ_geZpfUkNFcrSzydmXmxObXHWSQrAgzn9EgpBDA,6268
+dataset_interfaces-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dataset_interfaces-0.1.0.dist-info/top_level.txt,sha256=dfvWHjTfhKnp772dkfDXHdOV_dVwUYFOHUEAp4AxeQA,19
+dataset_interfaces-0.1.0.dist-info/RECORD,,
