@@ -1,0 +1,28 @@
+CREATE TABLE header (
+  DATE integer, 
+  TIME integer,
+  AVGompomp_AVGompomp real,
+  AVGomp real,
+  RANGE real,
+  VCOORD real,
+  Number_obs integer,
+  Number_obs_min integer,
+  ID_STN varchar(50), 
+  NOMINAL_PPI_ELEVATION real
+  );
+CREATE TABLE statistics (
+  STDOMP real,
+  AVGomp real,
+  RANGE real,
+  VCOORD real,
+  Number_obs integer,
+  Number_obs_min integer,
+  ID_STN varchar(50), 
+  NOMINAL_PPI_ELEVATION real
+  );
+CREATE TABLE info (
+  name varchar(50)
+  );
+
+CREATE INDEX radar on header (ID_STN);     
+CREATE INDEX reles on header (NOMINAL_PPI_ELEVATION);
