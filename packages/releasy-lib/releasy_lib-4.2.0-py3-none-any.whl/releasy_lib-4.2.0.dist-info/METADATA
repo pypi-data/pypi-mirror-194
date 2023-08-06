@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: releasy-lib
+Version: 4.2.0
+Summary: A library to mine release data
+Home-page: https://github.com/gems-uff/releasy
+License: MIT
+Author: Felipe Curty
+Author-email: felipecrp@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pygit2 (>=1.11.1,<2.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Project-URL: Repository, https://github.com/gems-uff/releasy
+Description-Content-Type: text/markdown
+
+Releasy
+=======
+
+[![Build Status](https://github.com/gems-uff/releasy/actions/workflows/pytest.yml/badge.svg)](https://github.com/gems-uff/releasy/actions/workflows/pytest.yml)
+
+Releasy is a tool that collects provenance data from releases 
+by parsing the software version control and issue tracking
+systems.
+
+Papers
+======
+
+[Curty, F., Kohwalter, T., Braganholo, V., Murta, L., 2018. An Infrastructure for Software Release Analysis through Provenance Graphs. Presented at the VI Workshop on Software Visualization, Evolution and Maintenance.](https://goo.gl/9u8rzc)
+
+
