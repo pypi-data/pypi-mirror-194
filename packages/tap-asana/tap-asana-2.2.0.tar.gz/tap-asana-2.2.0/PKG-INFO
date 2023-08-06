@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tap-asana
+Version: 2.2.0
+Summary: Singer.io tap for extracting Asana data
+Home-page: http://github.com/singer-io/tap-asana
+Author: Stitch
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE

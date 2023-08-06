@@ -1,0 +1,2 @@
+[console_scripts]
+tap-asana = tap_asana:main
