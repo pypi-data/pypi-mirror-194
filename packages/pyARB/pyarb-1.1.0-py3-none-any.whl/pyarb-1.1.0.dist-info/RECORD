@@ -1,0 +1,13 @@
+pyARB/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyARB/__main__.py,sha256=FM6MXaSihwhAtuLdWILsk4bKvP6zauSTXwqr5BUoglI,2783
+pyARB/exceptions.py,sha256=kV6GzfDhcs94fM-2KYJTeNj0sVzrXQR5xP2M4MwW-Wc,353
+pyARB/localization_generator.py,sha256=pkbyyXXzNl6zvk22w675QNrFRQCdkyH7x9btr9t1k7E,8395
+pyARB/localize.py,sha256=LTTP1rnlFXyGowN-W2lHgR48sdGN0mco4Uto7F35Au8,11238
+pyARB/localization/generated_components.py,sha256=8vHJqKr-Db7itJwaNqIJNxMB__4gDT2m4komZzDdJU8,8321
+pyARB/localization/arbs/en_US.arb,sha256=DNgcwPtX0kM7UPXh-_6-EOXilevwpHZ4UHDZjYtpZN8,2209
+pyARB/localization/arbs/es_ES.arb,sha256=uikNWLg_wquh4jvhAoZ1FPVWXFeKdTnuctUknKBz4qo,1464
+pyarb-1.1.0.dist-info/METADATA,sha256=A767JQHZKfFKvtUDgN7wXKeFavZZjv4Hry-Ti65KAB0,2962
+pyarb-1.1.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+pyarb-1.1.0.dist-info/entry_points.txt,sha256=vu-bsVeblNKgTh-q_fabZIw4SNh2iQ5SqC4BX203Yq8,46
+pyarb-1.1.0.dist-info/licenses/LICENSE,sha256=sEiCUUnHf-B_Tu8L2eUViUNRYgiDfn9Vs6_vFCYVIE4,1082
+pyarb-1.1.0.dist-info/RECORD,,
