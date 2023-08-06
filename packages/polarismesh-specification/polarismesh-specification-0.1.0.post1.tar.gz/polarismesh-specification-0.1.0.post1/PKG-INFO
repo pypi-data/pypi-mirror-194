@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: polarismesh-specification
+Version: 0.1.0.post1
+Summary: Specification for PolarisMesh
+Home-page: https://github.com/polarismesh/specification
+Requires-Python: >=3.7
+License-File: LICENSE
