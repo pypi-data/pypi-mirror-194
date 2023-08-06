@@ -1,0 +1,2 @@
+pytorch-lightning==2.0.0.rc0
+horovod<=0.27.0,>0.24.0

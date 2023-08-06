@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/lightning_Horovod.egg-info/PKG-INFO
+src/lightning_Horovod.egg-info/SOURCES.txt
+src/lightning_Horovod.egg-info/dependency_links.txt
+src/lightning_Horovod.egg-info/not-zip-safe
+src/lightning_Horovod.egg-info/requires.txt
+src/lightning_Horovod.egg-info/top_level.txt
+src/lightning_horovod/__about__.py
+src/lightning_horovod/__init__.py
+src/lightning_horovod/strategy.py
