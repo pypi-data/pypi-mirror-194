@@ -1,0 +1,2 @@
+[console_scripts]
+ih-plan = infrahouse_toolkit.cli.ih_plan:ih_plan
