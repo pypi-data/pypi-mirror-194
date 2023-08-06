@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: miniserial
+Version: 0.1.2
+Summary: Simple, fast, and space-efficient (de)serialization for simple Python classes
+Project-URL: Homepage, https://github.com/SinclaM/miniserial
+Author-email: Matthew Sinclair <sinclam.dev@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Matthew Sinclair
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: serialization,serialize
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: typing-inspect==0.8.0
+Description-Content-Type: text/markdown
+
+# Miniserial
+
+Miniserial is a Python package for dead-simple, space-efficient serialization and deserialization of simple dataclasses.
+There are many great packages for general purpose serialization in the standard library and on PyPI (e.g. `json`, `marshal`,
+`pickle`, `ujson`, `bson`, etc.), but most use serialization formats that can come with significant byte overhead. Sometimes,
+project constraints—like the 256-byte-max-packet radio devices that inspired this package—encourage the use of a much more
+compact format, something akin to protobuf or the layout of C structs. But libraries in this space typically come with the
+overhead of implementing manual serializers, modifying class fields with various wrappers, or using non python data
+specifications (e.g. `.proto` files).
+
+Miniserial makes compact serialization easy. Simply have your dataclass inherit from the `Serialization` mixin, and
+`serialize` and `deserialize` methods will be automatically generated for the class. For example:
+
+```python3
+from dataclasses import dataclass
+from miniserial import Serializable
+
+@dataclass
+class Person(Serializable):
+    name   : str
+    age    : int
+    titles : list[str]
+    balance: float
+    
+p = Person("Bob", 34, ["Mr.", "Dr.", "Professor"], 239847.25)
+assert Person.deserialize(p.serialize()) == p
+```
+
+Classes that inherit the `Serializable` mixin must be dataclasses composed of fields annotated with simple types.
+
+Documentation of supported types and the serialization format is on the way. For now, `bool`, `int`, `float`, `str`,
+and `list` are supported. `int` and `float` are taken to be 32 bit values. Support for more types, including
+`int64`, `float64`, etc. from `numpy` are on the horizon.
