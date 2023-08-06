@@ -1,0 +1,291 @@
+{
+  "language": "pl",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<turn_off> wentylator <area>",
+            "<turn_off> <area> wentylator"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fan_area"
+        },
+        {
+          "sentences": [
+            "<turn_off> [<all>] wentylatory <area>",
+            "<turn_off> <area> [<all>] wentylatory"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "(<turn_off> | <turn_off_light>) <name>"
+          ],
+          "response": "default"
+        },
+        {
+          "sentences": [
+            "<close> <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<close> <name> <area>"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "(<turn_off> | <turn_off_light>) [<all>] [światła | światło] <area>",
+            "(<turn_off> | <turn_off_light>) <area> [<all>] [światła | światło]"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "lights_area"
+        },
+        {
+          "sentences": [
+            "<close> garaż",
+            "<close> (drzwi | bramę) (garażowe | garażową | od garażu)",
+            "(Drzwi | Bramę) (garażowe | garażową | od garażu) <close>"
+          ],
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          },
+          "response": "garage"
+        },
+        {
+          "sentences": [
+            "Rolety <area> (<close> | <close_blind>)",
+            "(<close> | <close_blind>) [wszystkie] rolety <area>",
+            "(<close> | <close_blind>) <area> [wszystkie] rolety"
+          ],
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          },
+          "response": "cover_area"
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "(<turn_on> | <turn_on_light>) [<all>] [światła | światło] <area>",
+            "(<turn_on> | <turn_on_light>) <area> [<all>] [światła | światło]"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "lights_area"
+        },
+        {
+          "sentences": [
+            "<open> garaż",
+            "<open> (drzwi | bramę) (garażowe | garażową | od garażu)",
+            "(Drzwi | Bramę) (garażowe | garażową | od garażu) <open>"
+          ],
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          },
+          "response": "garage"
+        },
+        {
+          "sentences": [
+            "Rolety <area> (<open> | <open_blind>)",
+            "(<open> | <open_blind>) [wszystkie] rolety <area>",
+            "(<open> | <open_blind>) <area> [wszystkie] rolety"
+          ],
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          },
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<turn_on> wentylator <area>",
+            "<turn_on> <area> wentylator"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fan_area"
+        },
+        {
+          "sentences": [
+            "<turn_on> [<all>] wentylatory <area>",
+            "<turn_on> <area> [<all>] wentylatory"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "(<turn_on> | <turn_on_light>) <name>"
+          ],
+          "response": "default"
+        },
+        {
+          "sentences": [
+            "<open> <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<open> <name> <area>"
+          ],
+          "response": "cover_area"
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Wybacz, niestety nie mogę tego zrozumieć",
+      "no_area": "Brak obszaru nazwanego {{ area }}",
+      "no_domain": "W obszarze {{ area }} nie ma {{ domain }}",
+      "no_device_class": "Obszar {{ area }} nie zawiera {{ device_class }}",
+      "no_entity": "Brak urządzenia lub encji nazwanej {{ entity }}",
+      "handle_error": "Podczas przetwarzania zapytania wystąpił nieoczekiwany błąd"
+    },
+    "intents": {
+      "HassGetState": {},
+      "HassTurnOff": {
+        "default": "Wyłączono {{ slots.name }}",
+        "lights_area": "Wyłączono światło w {{ slots.area }}",
+        "fan_area": "Wyłączono wentylator w {{ slots.area }}",
+        "fans_area": "Wyłączono wentylatory w {{ slots.area }}",
+        "cover": "Zamknięto {{ slots.name }}",
+        "garage": "Zamknięto garaż",
+        "cover_area": "Zamknięto rolety w {{ slots.area }}"
+      },
+      "HassTurnOn": {
+        "default": "Włączono {{ slots.name }}",
+        "lights_area": "Włączono światło w {{ slots.area }}",
+        "fan_area": "Włączono wentylator w {{ slots.area }}",
+        "fans_area": "Włączono wentylatory w {{ slots.area }}",
+        "cover": "Otwarto {{ slots.name }}",
+        "garage": "Otwarto garaż",
+        "cover_area": "Otwarto rolety w {{ slots.area }}"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "biel | biał(y|o|e)",
+          "out": "white"
+        },
+        {
+          "in": "czerń | czarn(y|o|e)",
+          "out": "black"
+        },
+        {
+          "in": "czerwień | czerwon(y|o|e)",
+          "out": "red"
+        },
+        {
+          "in": "pomarańcz | pomarańczow(y|o|e)",
+          "out": "orange"
+        },
+        {
+          "in": "żółt(y|o|e)",
+          "out": "yellow"
+        },
+        {
+          "in": "zieleń | zielon(y|o|e)",
+          "out": "green"
+        },
+        {
+          "in": "niebiesk(i|o|ie)",
+          "out": "blue"
+        },
+        {
+          "in": "fiolet | fioletow(y|o|e)",
+          "out": "purple"
+        },
+        {
+          "in": "brąz | brązow(y|o|e)",
+          "out": "brown"
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        {
+          "in": "c | celsjusza",
+          "out": "celsius"
+        },
+        {
+          "in": "f | fahrenheita",
+          "out": "fahrenheit"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "name": "{name}",
+    "set": "(ustaw | zmień | przestaw | nastaw)",
+    "area": "[w|na] {area}",
+    "what_is": "Jak[a|i] jest",
+    "all": "(wszystkie | każde)",
+    "how_many_is": "Ile jest",
+    "turn_on": "(włącz | uruchom)",
+    "turn_off": "(wyłącz | zatrzymaj)",
+    "turn_on_light": "(zapal | oświeć | zaświeć)",
+    "turn_off_light": "zgaś",
+    "open": "otwórz",
+    "open_blind": "(odsłoń | podnieś)",
+    "close": "(zamknij | przymknij)",
+    "close_blind": "(zasłoń | opuść)",
+    "brightness": "{brightness}[%| procent]",
+    "temp": "temperatur(a|ę|y) | stopni | zimno | gorąco",
+    "temperature": "{temperature}[°| stopni] [{temperature_unit}]"
+  },
+  "skip_words": [
+    "Proszę",
+    "Poproszę"
+  ]
+}

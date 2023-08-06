@@ -1,0 +1,1498 @@
+{
+  "language": "nl",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "[<doe>|<zou>] [alle] <ventilator> [<naar>] uit [willen|kunnen] [<doe>] in <area>",
+            "[<doe>|<zou>] [alle] <ventilator> [in|van|op] <area> [<naar>] uit [willen|kunnen] [<doe>]",
+            "[<doe>|<zou>] [(alle|in)] <area> <ventilator> [<naar>] uit [willen|kunnen] [<doe>]",
+            "[<zou>] [(alle|in)] [<area>[ ]]<ventilator> [[in|van|op] <area>] [willen|kunnen] (uit[ ]zetten|uitschakelen)"
+          ],
+          "response": "fans_area",
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "[<doe>|<zou>] ((overal|alle) <ventilator>|<ventilator> overal) uit [willen|kunnen] [<doe>]"
+          ],
+          "response": "fan_all",
+          "slots": {
+            "domain": "fan",
+            "area": "all",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "[<doe>|<zou>] <name>[ ][<type>] [<naar>] uit [willen|kunnen] [<doe>]",
+            "[<zou>] <name>[ ][<type>] [willen|kunnen] (uit[ ]zetten|uitschakelen)"
+          ],
+          "excludes_context": {
+            "domain": [
+              "cover",
+              "script"
+            ]
+          }
+        },
+        {
+          "sentences": [
+            "[<doe>|<zou>] [alle] <lamp> [<naar>] uit [willen|kunnen] [<doe>] in <area>",
+            "[<doe>|<zou>] [alle] <lamp> [in|van|op] <area> [<naar>] uit [willen|kunnen] [<doe>]",
+            "[<doe>|<zou>] [(alle|in)] <area>[ ]<lamp> [<naar>] uit [willen|kunnen] [<doe>]",
+            "[<zou>] [(alle|in)] [<area>[ ]]<lamp> [[in|van|op] <area>] [willen|kunnen] (uit[ ]zetten|uitschakelen)"
+          ],
+          "response": "lights_area",
+          "slots": {
+            "domain": "light",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "[<doe>|<zou>] ((overal|alle) <lamp>|<lamp> overal) uit [willen|kunnen] [<doe>]"
+          ],
+          "response": "light_all",
+          "slots": {
+            "domain": "light",
+            "area": "all",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "sluit <name>",
+            "[<doe>|<zou>] <name> <dicht> [willen|kunnen] [<doe>]"
+          ],
+          "response": "cover",
+          "slots": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "sluit [de] garage[ ][deur]",
+            "[<doe>|<zou>] [de] garage[ ][deur] dicht [willen|kunnen] [<doe>]"
+          ],
+          "response": "cover_device_class",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "sluit <name> [in|van|op] <area>",
+            "[<doe>|<zou>] <name> (<dicht> [in|van|op] <area>|[in|van|op] <area> <dicht>) [willen|kunnen] [<doe>]",
+            "<zou> <name> [in|van|op] <area> (willen|kunnen) [<dicht>]"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter",
+              "shade"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "sluit [de|het] <curtain> [in|van|op] <area>",
+            "[<doe>|<zou>] [de|het] <curtain> (<dicht> [in|van|op] <area>|[in|van|op] <area> <dicht>) [willen|kunnen] [<doe>]",
+            "<zou> [de|het] <curtain> [in|van|op] <area> [willen|kunnen] <dicht>"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "curtain",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "sluit [de|het] (<blind>|<shutter>|<shade>) [in|van|op] <area>",
+            "[<doe>|<zou>] [de|het] (<blind>|<shutter>|<shade>) (<dicht> [in|van|op] <area>|[in|van|op] <area> <dicht>) [willen|kunnen] [<doe>]",
+            "<zou> [de|het] (<blind>|<shutter>|<shade>) [in|van|op] <area> [willen|kunnen] <dicht>"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": [
+              "blind",
+              "shutter",
+              "shade"
+            ],
+            "domain": "cover"
+          }
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "(activeer|start|schakel) [scene|scène] <name>[ ][scene|scène] [<naar>] [in]",
+            "[<doe>|<zou>] [scene|scène] <name>[ ][scene|scène] [<naar>] (aan|in) [willen|kunnen] [<doe>]",
+            "[<zou>] <name>[ ][scene|scène] [willen|kunnen] (aan[ ]zetten|inschakelen|starten|activeren)"
+          ],
+          "requires_context": {
+            "domain": "scene"
+          },
+          "slots": {
+            "domain": "scene"
+          },
+          "response": "scene"
+        },
+        {
+          "sentences": [
+            "[<doe>|<zou>] [alle] <lamp> [<naar>] aan [willen|kunnen] [<doe>] (in|op) <area>",
+            "Schakel [alle] <lamp> [<naar>] in (in|op) <area>",
+            "[<doe>|<zou>] [alle] <lamp> [in|van|op] <area> [<naar>] aan [willen|kunnen] [<doe>]",
+            "Schakel [alle] <lamp> [in|van|op] <area> in",
+            "[<doe>|<zou>] [(alle|in)] <area>[ ]<lamp> aan [willen|kunnen] [<doe>]",
+            "Schakel [(alle|in)] <area>[ ]<lamp> in",
+            "[<zou>] [(alle|in)] [<area>[ ]]<lamp> [[in|van|op] <area>] [willen|kunnen] (aan[ ]zetten|inschakelen)"
+          ],
+          "response": "lights_area",
+          "slots": {
+            "domain": "light",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "open <name>",
+            "[<doe>|<zou>] <name> <open> [willen|kunnen] [<doe>]"
+          ],
+          "response": "cover",
+          "slots": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "open [de] garage[ ][deur]",
+            "[<doe>|<zou>] [de] garage[ ][deur] [<open>] [willen|kunnen] [<doe>]"
+          ],
+          "response": "cover_device_class",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "open <name> [in|van|op] <area>",
+            "[<doe> |<zou> ]<name> (<open> [in|van|op] <area>|[in|van|op] <area> <open>) [willen|kunnen] [<doe>]",
+            "<zou> <name> [in|van|op] <area> (willen|kunnen) <open>"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter",
+              "shade"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "open [de|het] <curtain> [in|van|op] <area>",
+            "[<doe>|<zou>] [de|het] <curtain> (<open> [in|van|op] <area>|[in|van|op] <area> <open>) [willen|kunnen] [<doe>]",
+            "<zou> [de|het] <curtain> [in|van|op] <area> [willen|kunnen] <open>"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "curtain",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "open [de|het] (<blind>|<shutter>|<shade>) [in|van|op] <area>",
+            "[<doe>|<zou>] [de|het] (<blind>|<shutter>|<shade>) (<open> [in|van|op] <area>|[in|van|op] <area> <open>) [willen|kunnen] [<doe>]",
+            "<zou> [de|het] (<blind>|<shutter>|<shade>) [in|van|op] <area> [willen|kunnen] <open>"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": [
+              "blind",
+              "shutter",
+              "shade"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "[<doe>|<zou>] [alle] <ventilator> [<naar>] aan [willen|kunnen] [<doe>] in <area>",
+            "Schakel [alle] <ventilator> [<naar>] in in <area>",
+            "[<doe>|<zou>] [alle] <ventilator> [in|van|op] <area> [<naar>] aan [willen|kunnen] [<doe>]",
+            "Schakel [alle] <ventilator> [in|van|op] <area> [<naar>] in",
+            "[<doe>|<zou>] [(alle|in)] <area> <ventilator> [<naar>] aan [willen|kunnen] [<doe>]",
+            "Schakel [(alle|in)] <area>[ ]<ventilator> [<naar>] in",
+            "[<zou>] [(alle|in)] [<area>[ ]]<ventilator> [[in|van|op] <area>] [willen|kunnen] (aan[ ]zetten|inschakelen)"
+          ],
+          "response": "fans_area",
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "(activeer|start|schakel) [script] <name>[ ][script] [<naar>] [in]",
+            "[<doe>|<zou>] [script] <name>[ ][script] [<naar>] (aan|in) [willen|kunnen] [<doe>]",
+            "[<zou>] <name>[ ][script] [willen|kunnen] (aan[ ]zetten|inschakelen|starten|activeren)"
+          ],
+          "requires_context": {
+            "domain": "script"
+          },
+          "slots": {
+            "domain": "script"
+          },
+          "response": "script"
+        },
+        {
+          "sentences": [
+            "[<doe>|<zou>] <name>[ ][<type>] [<naar>] (aan|in) [willen|kunnen] [<doe>]",
+            "schakel <name>[ ][<type>] [<naar>] in",
+            "[<zou>] <name>[ ][<type>] [willen|kunnen] (aan[ ]zetten|inschakelen)"
+          ],
+          "excludes_context": {
+            "domain": [
+              "cover",
+              "scene",
+              "script"
+            ]
+          }
+        }
+      ]
+    },
+    "HassGetState": {
+      "data": [
+        {
+          "sentences": [
+            "(is|zijn) [de] [batterij[status]] [van] [[in|op] <area>][ ]<name>[ ][batterij] [[in|op|van] <area>] {bs_battery_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "battery"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "battery"
+          }
+        },
+        {
+          "sentences": [
+            "(is|wordt|zit) [[de] batterij [van]] [[in|op] <area>][ ]<name>[ ][batterij] [[in|op|van] <area>] {bs_battery_charging_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "battery_charging"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "battery_charging"
+          }
+        },
+        {
+          "sentences": [
+            "(detecteert|registreert) [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_carbon_monoxide_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_carbon_monoxide_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_carbon_monoxide_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_carbon_monoxide_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_carbon_monoxide_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "carbon_monoxide"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "carbon_monoxide"
+          }
+        },
+        {
+          "sentences": [
+            "(is|detecteert|registreert) [er] [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_cold_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_cold_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_cold_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_cold_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_cold_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "cold"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "cold"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn) [de] [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_connectivity_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "connectivity"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "connectivity"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn|staat|staan) [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_door_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "door"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "door"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn|staat|staan) [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_garage_door_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "garage_door"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "garage_door"
+          }
+        },
+        {
+          "sentences": [
+            "(detecteert|registreert) [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_gas_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_gas_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_gas_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_gas_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_gas_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "gas"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "gas"
+          }
+        },
+        {
+          "sentences": [
+            "(is|detecteert|registreert) [er] [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_heat_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_heat_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_heat_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_heat_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_heat_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "heat"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "heat"
+          }
+        },
+        {
+          "sentences": [
+            "(is|detecteert|registreert) [er] [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_light_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_light_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_light_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_light_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij|door|met] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_light_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "light"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "light"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn|staat|staan|zit|zitten) [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_lock_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "lock"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "lock"
+          }
+        },
+        {
+          "sentences": [
+            "(is|detecteert|registreert) [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_moisture_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_moisture_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_moisture_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_moisture_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_moisture_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "moisture"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "moisture"
+          }
+        },
+        {
+          "sentences": [
+            "(detecteert|registreert) [er] [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_motion_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_motion_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_motion_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_motion_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_motion_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "motion"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "motion"
+          }
+        },
+        {
+          "sentences": [
+            "(detecteert|registreert) [er] [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_occupancy_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_occupancy_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|zijn|word[t|en]) [er] [[in|op|van] <area>] {bs_occupancy_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|zijn|wordt[t|en]) [er] [[in|op|van] <area>] {bs_occupancy_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|zijn|wordt[t|en]) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_occupancy_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "occupancy"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "occupancy"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn|staat|staan|zit|zitten) [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_opening_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "opening"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "opening"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zit) [[de] (kabel|lader) van] [<area>][ ]<name> [[in|op|van] <area>] {bs_plug_states:state} [[in|op|van] <area>]",
+            "(is|zit) [[in|op|van] <area>] [[de] (kabel|lader) van] <name>[[ ](lader|kabel)]  [[in|op|van] <area>] {bs_plug_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "plug"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "plug"
+          }
+        },
+        {
+          "sentences": [
+            "(is|detecteert|registreert) [er] [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_power_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_power_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_power_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_power_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_power_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "power"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "power"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn|staat|staan|zit|zitten) [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_presence_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "presence"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "presence"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn) er [[in|op] <area>] [een] proble[e]m[en] met [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "heeft [[in|op] <area>][ ]<name> [[in|op|van] <area>] [een] proble[e]m[en] [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "problem"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "problem",
+            "state": "on"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn) [[in|op|van] <area>][ ]<name> [[in|op|van] <area>] {bs_running_states:state} [[in|op|van] <area>]",
+            "{bs_running_states:state} [[in|op|van] <area>][ ]<name> [[in|op|van] <area>] [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "running"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "running"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn|staat|staan) [[in|op] <area>][ ]<name> [[in|op|van] [<area>]] {bs_safety_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "safety"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "safety"
+          }
+        },
+        {
+          "sentences": [
+            "(is|detecteert|registreert) [er] [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_smoke_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op|van] <area>][ ]<name> [[in|op|van] <area>] {bs_smoke_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_smoke_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_smoke_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_smoke_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "smoke"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "smoke"
+          }
+        },
+        {
+          "sentences": [
+            "(is|detecteert|registreert) [er] [in|op|van|bij|door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_sound_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_sound_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_sound_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_sound_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_sound_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "sound"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "sound"
+          }
+        },
+        {
+          "sentences": [
+            "(is|wordt|detecteert|registreert) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_tamper_states:state} [[in|op|van] <area>]",
+            "neemt [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_tamper_states:state} (waar [[in|op|van] <area>]|[[in|op|van] <area>] waar)",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_tamper_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) (bij|door) [[in|op] <area>][ ]<name> [[in|op|van] <area>]",
+            "(is|wordt) [er] [[in|op|van] <area>] {bs_tamper_states:state} (bij|door) [[in|op] <area>][ ]<name> (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]",
+            "(is|wordt) [er] [in|op|van|bij] [<area>][ |door |met |bij ]<name> [[in|op|van] <area>] {bs_tamper_states:state} (gedetecteerd|geregistreerd|waar[ ]genomen) [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "tamper"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "tamper"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn) [[in|op] <area>][ ]<name> [[in|op|van] [<area>]] {bs_update_states:state} [[in|op|van] <area>]",
+            "(is|zijn|staat|staan) [er] [[in|op] <area>] [een] {bs_update_states:state} [klaar] voor [[in|op] <area>][ ]<name> [[in|op] <area>]",
+            "(is|zijn|staat|staan) [er] voor [[in|op] <area>][ ]<name> [[in|op] <area>] [een] {bs_update_states:state} [klaar] [[in|op] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "update"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "update"
+          }
+        },
+        {
+          "sentences": [
+            "{bs_vibration_states:state} [<in> <area>][ ]<name> [<in> <area>]",
+            "(is|<detecteer>) [er] <in> [door|met] [<area>][ ]<name> [[in|op|van] <area>] {bs_vibration_states:state} [<in> <area>]",
+            "neemt [<area>][ ]<name> [<in> <area>] {bs_vibration_states:state} (waar [<in> <area>]|[<in> <area>] waar)",
+            "<is> [er] [<in> <area>] {bs_vibration_states:state} <detecteer> (bij|door) [<in> <area>][ ]<name> [<in> <area>]",
+            "<is> [er] [<in> <area>] {bs_vibration_states:state} (bij|door) [<in> <area>][ ]<name> <detecteer> [<in> <area>]",
+            "<is> [er] [<in> <area>][ ][door|met|bij][ ]<name> [<in> <area>] {bs_vibration_states:state} <detecteer> [<in> <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "vibration"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "vibration"
+          }
+        },
+        {
+          "sentences": [
+            "<is> [er] [ergens] [<in> <area>] (iets|een <sensor>) [<in> <area>] {bs_vibration_states:state} [<in> <area>]",
+            "<is> [er] [<in> <area>] [ergens] [<in> <area>] {bs_vibration_states:state} <detecteer> [<in> <area>]"
+          ],
+          "response": "any",
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "vibration"
+          }
+        },
+        {
+          "sentences": [
+            "<is> [in <area>] <alle> <sensor> [<in> <area>] {bs_vibration_states:state} [<in> <area>]",
+            "<detecteer> <alle>  [<in> <area>][ ]<sensor> [<in> <area>] {bs_vibration_states:state} [<in> <area>]",
+            "<is> door <alle> [<in> <area>][ ]<sensor> {bs_vibration_states:state} [<in> <area>] <detecteer> [<in> <area>]"
+          ],
+          "response": "all",
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "vibration"
+          }
+        },
+        {
+          "sentences": [
+            "Welk[e] [<area>]<sensor> [[in|op|van] <area>] [is|zijn] {bs_vibration_states:state}",
+            "Welk[e] [<area>]<sensor> [[in|op|van] <area>] (nemen|neemt) {bs_vibration_states:state} waar [[in|op|van] <area>]",
+            "Welk[e] [<area>]<sensor> [[in|op|van] <area>] <detecteer> {bs_vibration_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "which",
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "vibration"
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn|staat|staan) [[in|op] <area>][ ]<name> [[in|op|van] <area>] {bs_window_states:state} [[in|op|van] <area>]"
+          ],
+          "response": "bs_yesno",
+          "requires_context": {
+            "domain": "binary_sensor",
+            "device_class": "window"
+          },
+          "slots": {
+            "domain": "binary_sensor",
+            "device_class": "window"
+          }
+        },
+        {
+          "sentences": [
+            "Wat is [in <area>] de [huidige] [(status|staat|stand) van] <name>[ ][<type>] [in <area>]"
+          ],
+          "response": "one"
+        },
+        {
+          "sentences": [
+            "(Is|Staat) [in <area>] [de [huidige] [(status|staat|stand) van]] <name>[ ][<type>] [in <area>] [op] {on_off_states:state} [in <area>]"
+          ],
+          "response": "one_yesno",
+          "excludes_context": {
+            "domain": [
+              "cover"
+            ]
+          }
+        },
+        {
+          "sentences": [
+            "(is|zijn|staat|staan) er [in <area>] {on_off_domains:domain} [in <area>] {on_off_states:state} [in <area>]"
+          ],
+          "response": "any"
+        },
+        {
+          "sentences": [
+            "(Zijn|Is|Staan|Staat) [in <area>] [alle] {on_off_domains:domain} [in <area>] {on_off_states:state} [in <area>]"
+          ],
+          "response": "all"
+        },
+        {
+          "sentences": [
+            "Welk[e] {on_off_domains:domain} [in <area>] (zijn|is|staan|staat) [in <area>] {on_off_states:state} [in <area>]"
+          ],
+          "response": "which"
+        },
+        {
+          "sentences": [
+            "Hoe[ ]veel {on_off_domains:domain} (zijn|is|staan|staat) [er] [in <area>] {on_off_states:state} [in <area>]"
+          ],
+          "response": "how_many"
+        },
+        {
+          "sentences": [
+            "(Is|Staat) [in <area>] <name> [in <area>] {cover_states:state} [in <area>]"
+          ],
+          "response": "one_yesno",
+          "requires_context": {
+            "domain": "cover"
+          },
+          "slots": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "(Is|Zijn|Staan|Staat) [er] [in <area>|ergens|nog] [een] {cover_classes:device_class} [in <area>] {cover_states:state} [in <area>]"
+          ],
+          "response": "any",
+          "slots": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "Zijn [in <area>] [alle|de] {cover_classes:device_class} [in <area>] {cover_states:state} [in <area>]"
+          ],
+          "response": "all",
+          "slots": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "Welk[e] {cover_classes:device_class} [in <area>] (is|zijn) {cover_states:state} [in <area>]"
+          ],
+          "response": "which",
+          "slots": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "Hoe[ ]veel {cover_classes:device_class} [in <area>] (is|zijn) [er] [in <area>] {cover_states:state} [in <area>]"
+          ],
+          "response": "how_many",
+          "slots": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "(Is|Staat|Zit) [in <area>] [de [huidige] [(status|staat|stand) van]] <name> [in <area>] {lock_states:state} [in <area>]"
+          ],
+          "response": "one_yesno",
+          "requires_context": {
+            "domain": "lock"
+          },
+          "slots": {
+            "domain": "lock"
+          }
+        },
+        {
+          "sentences": [
+            "(Zijn|Is|Staan|Staat|Zit|Zitten) er [in <area>] <slot> [in <area>] {lock_states:state} [in <area>]"
+          ],
+          "response": "any",
+          "slots": {
+            "domain": "lock"
+          }
+        },
+        {
+          "sentences": [
+            "(Zijn|Is|Staan|Staat|Zit|Zitten) [in <area>] [overal|alle] <slot> [in <area>] {lock_states:state} [in <area>]",
+            "(Zijn|Is|Staan|Staat|Zit|Zitten) [in <area>] [overal|alle] [de] deur[en] [in <area>] {door_lock_states:state} [in <area>]"
+          ],
+          "response": "all",
+          "slots": {
+            "domain": "lock"
+          }
+        },
+        {
+          "sentences": [
+            "Welk[e] <slot> [in <area>] (zijn|is|staan|staat) [in <area>] {lock_states:state} [in <area>]",
+            "Welk[e] deur[en] [in <area>] (zijn|is|staan|staat) [in <area>] {door_lock_states:state} [in <area>]"
+          ],
+          "response": "which",
+          "slots": {
+            "domain": "lock"
+          }
+        },
+        {
+          "sentences": [
+            "Hoe[ ]veel <slot> (zijn|is|staan|staat) [er] [in <area>] {lock_states:state} [in <area>]",
+            "Hoe[ ]veel deur[en] (zijn|is|staan|staat) [er] [in <area>] {door_lock_states:state} [in <area>]"
+          ],
+          "response": "how_many",
+          "slots": {
+            "domain": "lock"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Sorry, ik snap het niet",
+      "no_area": "Kan geen {{ area }} vinden",
+      "no_domain": "{{ area }} heeft geen {{ domain }}",
+      "no_device_class": "{{ area }} heeft geen {{ device_class }}",
+      "no_entity": "Kan {{ entity }} niet vinden",
+      "handle_error": "Er is iets misgegaan"
+    },
+    "intents": {
+      "HassGetState": {
+        "one": "{{ slots.name | capitalize }} is {{ state.state_with_unit }}\n",
+        "one_yesno": "{% if query.matched %}\n  Ja\n{% else %}\n  Nee, die is {{ state.state_with_unit }}\n{% endif %}\n",
+        "bs_yesno": "{% if query.matched %}\n  Ja\n{% else %}\n  Nee\n{% endif %}\n",
+        "any": "{% if query.matched %}\n  {% set match = query.matched | map(attribute=\"name\") | sort | list %}\n  {% if match | length > 4 %}\n    Ja, {{ match[:3] | join(\", \") }} en nog {{ (match | length - 3) }}\n  {%- else -%}\n    Ja,\n    {% for name in match -%}\n      {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} en {% endif -%}\n      {{ name }}\n    {%- endfor -%}\n  {% endif %}\n{% else %}\n  Nee\n{% endif %}\n",
+        "all": "{% if not query.unmatched: %}\n  Ja\n{% else %}\n  {% set no_match = query.unmatched | map(attribute=\"name\") | sort | list %}\n  {% if no_match | length > 4 %}\n    Nee, {{ no_match[:3] | join(\", \") }} en nog {{ (no_match | length - 3) }} niet\n  {%- else -%}\n    Nee,\n    {% for name in no_match -%}\n      {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} en {% endif -%}\n      {{ name }}\n    {%- endfor %} niet\n  {% endif %}\n{% endif %}\n",
+        "which": "{% if not query.matched %}\n  Geen\n{% else %}\n  {% set match = query.matched | map(attribute=\"name\") | sort | list %}\n  {% if match | length > 4 %}\n    {{ match[:3] | join(\", \") }} en nog {{ (match | length - 3) }}\n  {% else %}\n    {%- for name in match -%}\n      {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} en {% endif -%}\n      {{ name }}\n    {%- endfor -%}\n  {% endif %}\n{% endif %}\n",
+        "how_many": "{{ query.matched | length }}\n"
+      },
+      "HassTurnOff": {
+        "default": "Uitgezet",
+        "lights_area": "Verlichting uitgezet",
+        "fans_area": "Ventilatoren uitgezet",
+        "cover": "Gesloten",
+        "light_all": "Alle lampen uitgezet",
+        "fan_all": "Alle ventilatoren uitgezet",
+        "cover_device_class": "{{ slots.device_class | capitalize }} gesloten"
+      },
+      "HassTurnOn": {
+        "default": "Aangezet",
+        "lights_area": "Verlichting aangezet",
+        "fans_area": "Ventilatoren aangezet",
+        "cover": "Geopend",
+        "light_all": "Alle lampen aangezet",
+        "fan_all": "Alle ventilatoren aangezet",
+        "cover_device_class": "{{ slots.device_class | capitalize }} geopend",
+        "scene": "Geactiveerd",
+        "script": "Gestart"
+      }
+    }
+  },
+  "lists": {
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "brightness_level": {
+      "values": [
+        {
+          "in": "(max|maximum|maximaal|maximale|[z'n|zijn] hoogst[e])",
+          "out": 100
+        },
+        {
+          "in": "(min|minimum|minimaal|minimale|[z'n|zijn] laagst[e])",
+          "out": 1
+        }
+      ]
+    },
+    "color": {
+      "values": [
+        {
+          "in": "wit",
+          "out": "white"
+        },
+        {
+          "in": "zwart",
+          "out": "black"
+        },
+        {
+          "in": "rood",
+          "out": "red"
+        },
+        {
+          "in": "oranje",
+          "out": "orange"
+        },
+        {
+          "in": "geel",
+          "out": "yellow"
+        },
+        {
+          "in": "groen",
+          "out": "green"
+        },
+        {
+          "in": "blauw",
+          "out": "blue"
+        },
+        {
+          "in": "paars",
+          "out": "purple"
+        },
+        {
+          "in": "bruin",
+          "out": "brown"
+        },
+        {
+          "in": "roze",
+          "out": "pink"
+        }
+      ]
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        "celsius",
+        {
+          "in": "c",
+          "out": "celsius"
+        },
+        "fahrenheit",
+        {
+          "in": "f",
+          "out": "fahrenheit"
+        }
+      ]
+    },
+    "on_off_states": {
+      "values": [
+        {
+          "in": "aan",
+          "out": "on"
+        },
+        {
+          "in": "uit",
+          "out": "off"
+        }
+      ]
+    },
+    "on_off_domains": {
+      "values": [
+        {
+          "in": "<lamp>",
+          "out": "light"
+        },
+        {
+          "in": "<ventilator>",
+          "out": "fan"
+        },
+        {
+          "in": "<schakelaar>",
+          "out": "switch"
+        }
+      ]
+    },
+    "cover_states": {
+      "values": [
+        {
+          "in": "(open|geopend)",
+          "out": "open"
+        },
+        {
+          "in": "(dicht|gesloten)",
+          "out": "closed"
+        },
+        {
+          "in": "(open aan het gaan|aan het (openen|open gaan))",
+          "out": "opening"
+        },
+        {
+          "in": "(dicht aan het gaan|aan het (dicht gaan|sluiten))",
+          "out": "closing"
+        }
+      ]
+    },
+    "cover_classes": {
+      "values": [
+        {
+          "in": "<awning>",
+          "out": "awning"
+        },
+        {
+          "in": "<blind>",
+          "out": "blind"
+        },
+        {
+          "in": "<curtain>",
+          "out": "curtain"
+        },
+        {
+          "in": "<door>",
+          "out": "door"
+        },
+        {
+          "in": "<garage>",
+          "out": "garage"
+        },
+        {
+          "in": "<gate>",
+          "out": "gate"
+        },
+        {
+          "in": "<shade>",
+          "out": "shade"
+        },
+        {
+          "in": "<shutter>",
+          "out": "shutter"
+        },
+        {
+          "in": "<window>",
+          "out": "window"
+        }
+      ]
+    },
+    "lock_states": {
+      "values": [
+        {
+          "in": "(dicht|[op] gesloten|op slot)",
+          "out": "locked"
+        },
+        {
+          "in": "(open|geopend|niet (dicht|[op] gesloten|op slot))",
+          "out": "unlocked"
+        }
+      ]
+    },
+    "door_lock_states": {
+      "values": [
+        {
+          "in": "op slot",
+          "out": "locked"
+        },
+        {
+          "in": "niet op slot",
+          "out": "unlocked"
+        }
+      ]
+    },
+    "bs_battery_states": {
+      "values": [
+        {
+          "in": "(laag|[bijna] leeg)",
+          "out": "on"
+        },
+        {
+          "in": "(normaal|niet (laag|[bijna] leeg))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_battery_charging_states": {
+      "values": [
+        {
+          "in": "(aan (het laden|de lader)|opgeladen)",
+          "out": "on"
+        },
+        {
+          "in": "niet aan (het laden|de lader)",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_carbon_monoxide_states": {
+      "values": [
+        {
+          "in": "(CO|koolstof[ ]monoxide)",
+          "out": "on"
+        },
+        {
+          "in": "geen (CO|koolstof[ ]monoxide)",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_cold_states": {
+      "values": [
+        {
+          "in": "(koud[e]|koel[te])",
+          "out": "on"
+        },
+        {
+          "in": "(normaal|niet (koud|koel)|geen (koude|koelte))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_connectivity_states": {
+      "values": [
+        {
+          "in": "verbonden",
+          "out": "on"
+        },
+        {
+          "in": "niet verbonden",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_door_states": {
+      "values": [
+        {
+          "in": "open",
+          "out": "on"
+        },
+        {
+          "in": "(dicht|gesloten)",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_garage_door_states": {
+      "values": [
+        {
+          "in": "open",
+          "out": "on"
+        },
+        {
+          "in": "(dicht|gesloten)",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_gas_states": {
+      "values": [
+        {
+          "in": "gas",
+          "out": "on"
+        },
+        {
+          "in": "geen gas",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_heat_states": {
+      "values": [
+        {
+          "in": "(warm[te]|heet|hitte)",
+          "out": "on"
+        },
+        {
+          "in": "(normaal|niet(warm|heet)|geen (warmte|hitte))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_light_states": {
+      "values": [
+        {
+          "in": "[veel] licht",
+          "out": "on"
+        },
+        {
+          "in": "(geen|weinig) licht",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_lock_states": {
+      "values": [
+        {
+          "in": "open",
+          "out": "on"
+        },
+        {
+          "in": "op slot",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_moisture_states": {
+      "values": [
+        {
+          "in": "(nat[tigheid]|water|vocht[ig[heid]])",
+          "out": "on"
+        },
+        {
+          "in": "(droog|niet (nat|vochtig)|geen (nattigheid|water|vocht[igheid]))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_motion_states": {
+      "values": [
+        {
+          "in": "beweging",
+          "out": "on"
+        },
+        {
+          "in": "geen beweging",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_occupancy_states": {
+      "values": [
+        {
+          "in": "(aanwezigheid|[een] (persoon|personen|mensen))",
+          "out": "on"
+        },
+        {
+          "in": "(geen (aanwezigheid|personen))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_opening_states": {
+      "values": [
+        {
+          "in": "open",
+          "out": "on"
+        },
+        {
+          "in": "gesloten",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_plug_states": {
+      "values": [
+        {
+          "in": "(ingeplugd|ingestoken)",
+          "out": "on"
+        },
+        {
+          "in": "niet (ingeplugd|ingestoken)",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_power_states": {
+      "values": [
+        {
+          "in": "(stroom|power|vermogen)",
+          "out": "on"
+        },
+        {
+          "in": "geen (stroom|power|vermogen)",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_presence_states": {
+      "values": [
+        {
+          "in": "(thuis|aanwezig)",
+          "out": "on"
+        },
+        {
+          "in": "(weg|niet (thuis|aanwezig))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_problem_states": {
+      "values": [
+        {
+          "in": "gedetecteerd",
+          "out": "on"
+        },
+        {
+          "in": "(ok|niet gedetecteerd)",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_running_states": {
+      "values": [
+        {
+          "in": "(actief|bezig|draait|werkt|aan het (draaien|werk[en]))",
+          "out": "on"
+        },
+        {
+          "in": "niet (actief|bezig|aan het (draaien|werk[en]))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_safety_states": {
+      "values": [
+        {
+          "in": "(onveilig|niet veilig)",
+          "out": "on"
+        },
+        {
+          "in": "veilig",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_smoke_states": {
+      "values": [
+        {
+          "in": "rook",
+          "out": "on"
+        },
+        {
+          "in": "geen geluid",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_sound_states": {
+      "values": [
+        {
+          "in": "(geluid[en]|lawaai|herrie)",
+          "out": "on"
+        },
+        {
+          "in": "geen (geluid[en]|lawaai|herrie)",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_tamper_states": {
+      "values": [
+        {
+          "in": "(geknoei[d]|gerommel[d]|sabotage|gesaboteerd)",
+          "out": "on"
+        },
+        {
+          "in": "(niet (geknoeid|gerommeld|gesaboteerd)| geen (geknoei|gerommel|sabotage))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_update_states": {
+      "values": [
+        {
+          "in": "(niet (actueel|up to date|up-to-date|ge(u|ü)pdate[t])|geen update[s])",
+          "out": "on"
+        },
+        {
+          "in": "(actueel|up to date|up-to-date|ge(u|ü)pdate[t]|update[s])",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_vibration_states": {
+      "values": [
+        {
+          "in": "(trilt|vibreert|[aan het|te] (trillen|vibreren)|trilling[en]|vibratie[s])",
+          "out": "on"
+        },
+        {
+          "in": "(niet aan het (trillen|vibreren)|(trilt|vibreert|trillen|vibreren) niet|geen (trilling[en]|vibratie[s]))",
+          "out": "off"
+        }
+      ]
+    },
+    "bs_window_states": {
+      "values": [
+        {
+          "in": "open",
+          "out": "on"
+        },
+        {
+          "in": "(gesloten|dicht)",
+          "out": "closed"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "name": "[de|het] {name}",
+    "area": "[de|het] {area}",
+    "doe": "(zet[ten]|mag|mogen|doe[n]|verander[en]|maak|maken|schakel[en])",
+    "zou": "(kan|kun[t]|zal|zou) [je|jij|u]",
+    "naar": "(naar|op)",
+    "detecteer": "(detecteert|registreert|detecteren|registereren|gedetecteerd|geregistreerd|waar[ ]genomen)",
+    "sensor": "(apparaat|apparaten|sensor[s|en])",
+    "is": "(zijn|is|staa(n|t)|zit[ten]|word[t|en]|lig(t|gen))",
+    "in": "[in|op|van|bij]",
+    "alle": "(alle|elk[e]|ieder[e])",
+    "awning": "(luifel[s]|[zonne]scherm[en])",
+    "blind": "(jaloezie[ën]|luxaflex)",
+    "curtain": "(gordijn[en]|vitrage[s])",
+    "door": "deur[en]",
+    "garage": "garage[ ]deur[en]",
+    "gate": "(hek[ken]|poort[en])",
+    "shade": "(screen[s]|rolgordijn[en])",
+    "shutter": "(rolluik[en]|shutter[s])",
+    "window": "(raam|ramen)",
+    "lamp": "[de|het|een] (lamp[en]|licht[en]|verlichting)",
+    "ventilator": "[de|een] (ventilator[s|en]|fan[s])",
+    "schakelaar": "[de|een] (schakelaar[s]|switch[es]|plug[gen])",
+    "afdekking": "[de|het] (<awning>|<blind>|<curtain>|<door>|<garage>|<gate>|<shade>|<shutter>|<window>)",
+    "slot": "[de|het|een] ([deur]slot[en])",
+    "type": "(<lamp>|<ventilator>|<afdekking>|<schakelaar>)",
+    "helderheid": "[de] (helderheid|felheid|intensiteit|lichtsterkte)",
+    "brightness": "{brightness}[%|procent]",
+    "temperature": "{temperature}[°|graden] [{temperature_unit}]",
+    "warm": "(warm|heet|koud|koel)",
+    "open": "(open[en]|omhoog|naar boven|opwaarts)",
+    "dicht": "(dicht|omlaag|naar beneden|sluiten|neerwaarts)"
+  },
+  "skip_words": [
+    "alstublieft",
+    "alsjeblieft",
+    "aub",
+    "ajb",
+    "graag"
+  ]
+}
