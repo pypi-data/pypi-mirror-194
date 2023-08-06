@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: psic
+Version: 0.0.8.9
+Summary: Packing spheres in cube
+Home-page: https://github.com/sunwhale/psic
+Author: Jingyu Sun
+Author-email: sun.jingyu@outlook.com
+Project-URL: Bug Tracker, https://github.com/sunwhale/psic/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# psic
+Packing spheres in cube
+ 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/28b130e6ef7c40638b77f806620de9f9)](https://www.codacy.com/gh/sunwhale/psic/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sunwhale/psic&amp;utm_campaign=Badge_Grade) ![PyPI](https://img.shields.io/pypi/v/psic) ![GitHub](https://img.shields.io/github/license/sunwhale/psic)
