@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my_retry
+Version: 0.2.0
+Summary: Retry module, You can choose to raise error or return the specified parameters
+Home-page: https://gitee.com/yternal/my-retry
+Author: yrq
+Author-email: 1307272972@qq.com
+License: MIT
+License-File: license.txt
