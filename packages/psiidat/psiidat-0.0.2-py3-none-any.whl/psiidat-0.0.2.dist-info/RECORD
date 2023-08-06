@@ -1,0 +1,12 @@
+psiidat/__init__.py,sha256=K0kNy26Vm6A-1V5lST3ily6yVsNLUbiqk6AZDFm2nJI,20
+psiidat/__main__.py,sha256=pbrZK6zE8mohLGEMsakvUwmpSuSQYcIssHOcv9dHguo,188
+psiidat/__version__.py,sha256=wMpOKI8HLYrmuXG6FICo7RpbyAakQIVJLkj7O-Nm_jg,352
+psiidat/core.py,sha256=Ad4VfrMyVEhE2Qn2Lxmjn9gj_qD9zOQm-eMyG_qpqB8,26
+psiidat/hello_world.py,sha256=pbrZK6zE8mohLGEMsakvUwmpSuSQYcIssHOcv9dHguo,188
+psiidat/two_step_backtrace.py,sha256=c1bhW3qQLUI1GM9lDs3tH-71ifo41-yGE_v6Zqe6nVw,10487
+psiidat/two_step_traceback.py,sha256=oGe8rLsOPKYAdp5bsFdEayblgTXyCBa0lCCB3iEjKnQ,10487
+psiidat-0.0.2.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+psiidat-0.0.2.dist-info/METADATA,sha256=oNB3DFwlnaWjKNGLUxOHlOUqR4Veb6-CzZ07Glt61Xc,714
+psiidat-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+psiidat-0.0.2.dist-info/top_level.txt,sha256=-nQSii_JKMTsrFptMNstxOw-JM4fnkvY380DUQ8QOZU,8
+psiidat-0.0.2.dist-info/RECORD,,
