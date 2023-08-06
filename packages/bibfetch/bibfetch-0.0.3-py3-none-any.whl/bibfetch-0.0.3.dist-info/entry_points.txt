@@ -1,0 +1,2 @@
+[console_scripts]
+bibfetch = bibfetch.__main__:main

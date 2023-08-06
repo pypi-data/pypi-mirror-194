@@ -1,0 +1,11 @@
+bibfetch/__init__.py,sha256=GQ5x4tKP91rN5snSEk_e07hkNFU3FnsJO6wrLo4Doqo,357
+bibfetch/__main__.py,sha256=mJyM9obW0JiPziVab9_FAERpe0DapyW8c2ErxsiKAZE,858
+bibfetch/dblp_fetcher.py,sha256=5cwZEJLZMtmY76ueqpnxxjURcqyoo6Np4ot_zdbhhv0,1506
+bibfetch/paper.py,sha256=kssXJ2-obnKxHUCGCt3-C9b1GUg3mtHzVL7rXAXNo5E,657
+bibfetch/semanticscholar_fetcher.py,sha256=S54IgCFuVjkb2s8QeV7QIgQaIpuR-CLznJB8atKoax4,2517
+bibfetch/utils.py,sha256=zxmXqj0YpWXkpo_W86F_jc0I7GKj3LYDXx3tBthLwqU,476
+bibfetch-0.0.3.dist-info/METADATA,sha256=tHTXGfrc-gNylvfrtlXJ-YCDptx2Cy-TJZdW1WhxPRo,229
+bibfetch-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bibfetch-0.0.3.dist-info/entry_points.txt,sha256=e-fXOtAdQXZsXnEKcJ2i12rlBJFut7SUV0_MbEcwsMM,52
+bibfetch-0.0.3.dist-info/top_level.txt,sha256=5o_pwap_SyJ37CQhPMeGqHEKKmOZ9c1cqLka7mvYYvw,9
+bibfetch-0.0.3.dist-info/RECORD,,
