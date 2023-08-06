@@ -1,0 +1,4 @@
+demo
+xaisuite
+xaisuitecli
+xaisuitegui
