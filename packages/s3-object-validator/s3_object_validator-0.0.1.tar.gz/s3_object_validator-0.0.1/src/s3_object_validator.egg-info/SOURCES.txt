@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/s3_object_validator/__init__.py
+src/s3_object_validator/validator.py
+src/s3_object_validator.egg-info/PKG-INFO
+src/s3_object_validator.egg-info/SOURCES.txt
+src/s3_object_validator.egg-info/dependency_links.txt
+src/s3_object_validator.egg-info/top_level.txt
+tests/test_s3_object_validator.py
