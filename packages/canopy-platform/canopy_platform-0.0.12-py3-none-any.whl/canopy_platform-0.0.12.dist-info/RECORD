@@ -1,0 +1,16 @@
+canopy/__init__.py,sha256=XpD4VqmY6numomi2QFptsHhTT1ycmIkkrm4MdkPfE2Y,267
+canopy/static/MPlusCodeLatin.ttf,sha256=1U3hzdOBI1eM43_1TYJkKJ37zWZ7yZnEGEoFfRoivRQ,75568
+canopy/static/PrincessSofia.ttf,sha256=_ILZfYdKKf0ICV8IYG1-0ei9SxqILt67gMR2qSiZx3Q,270648
+canopy/static/Sacramento-Regular.ttf,sha256=pbneZ75FSoJrRthYUS4y7sjDAxK-tMT4ZK7iOQQU6cU,64808
+canopy/static/fleurondingbats.woff,sha256=nS2Laa8nuT0QQLt6UO2M_mc77lIFL_M8gpn6-Z-KonQ,99288
+canopy/static/fleurondingbats.woff2,sha256=SApHBBWdMsBG4wpz2ptyMi2YeSvFbULbFQ524BRNVcA,88580
+canopy/static/github.ico,sha256=LuQyN9GWEAIQ8Xhue3O1fNFA9gE8Byxw29_9npvGlfg,6518
+canopy/static/pypi.ico,sha256=4axP0wMRCmACJ2lHuDNZLLnTkMMkjNh9m8uf4nW0pYA,4022
+canopy/static/screen.css,sha256=W8M-U6eZcYsH4gdeWSXdVM2ay9xTCpAZ6eOj4H5l2zM,4451
+canopy/templates/__init__.py,sha256=MIQJ-zEI6fM25NvXvWbEvo67HJ5Sy5eV-Ih4fvj3VZM,1032
+canopy/templates/index.html,sha256=hwf5pMUfp9DxuxaNAV3S1znd0YTQSCMWIworCtj7I7o,3652
+canopy/templates/template.html,sha256=3QAApIasmqLeRed_G5nUe7WlYqgNOl6n56MNcff7x3A,6312
+canopy_platform-0.0.12.dist-info/METADATA,sha256=d81oHhArNmumzSpc-vodSh-lLsgzY3VeD6_ekIYTK44,1249
+canopy_platform-0.0.12.dist-info/entry_points.txt,sha256=G7cA1d9r1aBwZoO8lJSdB_QNxvu_gXthOF7st8IAPqo,30
+canopy_platform-0.0.12.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+canopy_platform-0.0.12.dist-info/RECORD,,
