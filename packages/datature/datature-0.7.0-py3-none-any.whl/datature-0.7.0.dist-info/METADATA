@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: datature
+Version: 0.7.0
+Summary: Python bindings for the Datature API
+Author: Raighne Weng
+Author-email: raighne@datature.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: google-crc32c
+Requires-Dist: pyhumps
+Requires-Dist: pyyaml
+Requires-Dist: inquirer
+Requires-Dist: tqdm
+Requires-Dist: halo
+Requires-Dist: filetype
+Requires-Dist: opencv-python
+
+# Datatue Python SDK
+
+## Get started
+
+- [Documentation](#documentation)
+- [Installation](#installation)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Unit Test](#unit-test)
+
+## Documentation
+
+See the [API docs](https://developers.datature.io/).
+
+## Installation
+
+```sh
+pip install --upgrade datature
+```
+
+### Requirements
+
+- Python 3.7+
+
+## Usage
+
+The library needs to be configured with your project's secret key which is available in your Project Dashboard `Advanced/API Management`
+
+```python
+import datature
+datature.project_secret = "6874c3c9b..."
+
+# retrieve project
+project = datature.Project.retrieve()
+
+# print project information
+print(project)
+
+# retrieve project insight
+insight = datature.Project.insight()
+
+# print insight details
+print(insight)
+
+# list all assets
+assets = datature.Asset.list()
+
+# print the assets
+print(assets)
+```
+
+## Unit Test
+
+To run the tests, run command:
+
+```sh
+python -m coverage run -m unittest
+```
