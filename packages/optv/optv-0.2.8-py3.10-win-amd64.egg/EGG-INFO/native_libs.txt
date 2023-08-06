@@ -1,0 +1,11 @@
+optv/calibration.cp310-win_amd64.pyd
+optv/correspondences.cp310-win_amd64.pyd
+optv/epipolar.cp310-win_amd64.pyd
+optv/image_processing.cp310-win_amd64.pyd
+optv/imgcoord.cp310-win_amd64.pyd
+optv/orientation.cp310-win_amd64.pyd
+optv/parameters.cp310-win_amd64.pyd
+optv/segmentation.cp310-win_amd64.pyd
+optv/tracker.cp310-win_amd64.pyd
+optv/tracking_framebuf.cp310-win_amd64.pyd
+optv/transforms.cp310-win_amd64.pyd
