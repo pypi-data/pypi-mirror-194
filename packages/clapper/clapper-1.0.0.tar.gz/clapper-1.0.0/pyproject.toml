@@ -1,0 +1,92 @@
+# SPDX-FileCopyrightText: Copyright © 2022 Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+[build-system]
+    requires = ["setuptools>=61.0.0", "wheel"]
+    build-backend = "setuptools.build_meta"
+
+[project]
+name = "clapper"
+version = "1.0.0"
+requires-python = ">=3.9"
+description = "Configuration Support for Python Packages and CLIs"
+readme = "README.md"
+license = {text = "BSD 3-Clause License"}
+authors = [
+  {name = "Andre Anjos", email = "andre.anjos@idiap.ch"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "click>=8",
+    "tomli",
+    "tomli-w",
+    "xdg",
+]
+
+[project.urls]
+documentation = "https://clapper.readthedocs.io/en/v1.0.0/"
+homepage = "https://pypi.org/project/clapper"
+repository = "https://gitlab.idiap.ch/software/clapper"
+changelog = "https://gitlab.idiap.ch/software/clapper/-/releases"
+
+[project.optional-dependencies]
+qa = ["pre-commit"]
+doc = [
+    "sphinx",
+    "furo",
+    "sphinx-autodoc-typehints",
+    "sphinxcontrib-programoutput",
+    "auto-intersphinx",
+    "sphinx-copybutton",
+    "sphinx-inline-tabs",
+    ]
+test = [
+    "pytest",
+    "pytest-cov",
+    "coverage",
+    ]
+
+[project.entry-points."clapper.test.config"]
+first = "tests.data.basic_config"
+first-a = "tests.data.basic_config:a"
+first-b = "tests.data.basic_config:b"
+second = "tests.data.second_config"
+second-b = "tests.data.second_config:b"
+second-c = "tests.data.second_config:c"
+complex = "tests.data.complex"
+complex-var = "tests.data.complex:cplx"
+verbose-config = "tests.data.verbose_config"
+error-config = "tests.data.doesnt_exist"
+
+[tool.setuptools]
+zip-safe = true
+package-dir = {"" = "src"}
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.isort]
+profile = "black"
+line_length = 80
+order_by_type = true
+lines_between_types = 1
+
+[tool.black]
+line-length = 80
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov=clapper",
+    "--cov-report=term-missing",
+    "--import-mode=append",
+]
+junit_logging = "all"
+junit_log_passing_tests = false
