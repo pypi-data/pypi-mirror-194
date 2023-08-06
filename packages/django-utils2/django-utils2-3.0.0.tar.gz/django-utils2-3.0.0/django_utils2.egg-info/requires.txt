@@ -1,0 +1,15 @@
+python-utils>=3.5.2
+
+[docs]
+django
+mock
+sphinx>=1.7.2
+
+[tests]
+sphinx
+pytest
+pytest-cache
+pytest-cov
+pytest-django
+jinja2
+pygments
