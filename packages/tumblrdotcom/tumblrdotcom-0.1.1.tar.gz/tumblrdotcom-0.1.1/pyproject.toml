@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tumblrdotcom"
+version = "0.1.1"
+description = '''Nyaa!! OwO what's this? *glomps you*'''
+keywords = ["Tumblr", "API"]
+
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT License"}
+classifiers = [
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+repository = "https://github.com/James-Ansley/tumblr-dot-com"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+where = ["src"]
