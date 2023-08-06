@@ -1,0 +1,38 @@
+CHANGELOG
+=========
+
+0.0.1 (2/26/2023)
+-----------------
+
+
+- Released colortree
+
+
+0.0.2 (2/26/2023)
+-----------------
+
+
+- Bux fixes
+
+
+0.0.3 (2/26/2023)
+-----------------
+
+
+- Added new function
+
+
+0.0.4 (2/26/2023)
+-----------------
+
+
+- Bug fixes
+- Added easier import methods
+- Increased simplicity
+
+
+0.0.5 (2/26/2023)
+-----------------
+
+
+- Bug fixes
