@@ -1,0 +1,22 @@
+[project]
+name = "mprisctl"
+version = "0.0.1"
+authors = [
+        { name = "RangHo Lee", email = "hello@rangho.me" },
+]
+description = "Command line utility to control music players."
+readme =  "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/RangHo/mprisctl"
+"Bug Tracker" = "https://github.com/RangHo/mprisctl/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

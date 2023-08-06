@@ -1,0 +1,10 @@
+LICENSE
+README.md
+mprisctl.py
+pyproject.toml
+setup.py
+mprisctl.egg-info/PKG-INFO
+mprisctl.egg-info/SOURCES.txt
+mprisctl.egg-info/dependency_links.txt
+mprisctl.egg-info/entry_points.txt
+mprisctl.egg-info/top_level.txt
