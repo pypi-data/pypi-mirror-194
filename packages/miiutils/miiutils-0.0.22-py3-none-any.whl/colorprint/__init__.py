@@ -1,0 +1,1 @@
+from colorprint.colorprint import *
