@@ -1,0 +1,12 @@
+[build-system]
+    requires = ["setuptools>=61.0"]
+    build-backend = "setuptools.build_meta"
+[project]
+    name = "fst-ext-0"
+    version = "0.0.0"
+    dependencies = [
+        "frame-semantic-transformer==0.6.0"
+    ]
+    authors = [
+        {name = "Jacob Striebel"}
+    ]
