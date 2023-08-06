@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: SimpleBinderGTA5Package
+Version: 0.1
+Summary: Simple binder for GTA5 online
+Author: Renich
+Requires-Python: >=3.6
+Requires-Dist: keyboard
+Requires-Dist: pywin32
+
