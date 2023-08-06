@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bootleg_jwt.egg-info/PKG-INFO
+bootleg_jwt.egg-info/SOURCES.txt
+bootleg_jwt.egg-info/dependency_links.txt
+bootleg_jwt.egg-info/requires.txt
+bootleg_jwt.egg-info/top_level.txt
+src/bootleg_jwt/__init__.py
+src/bootleg_jwt/funcs.py
+src/bootleg_jwt/main.py
+src/bootleg_jwt/messages.py
+src/bootleg_jwt/schema.py
