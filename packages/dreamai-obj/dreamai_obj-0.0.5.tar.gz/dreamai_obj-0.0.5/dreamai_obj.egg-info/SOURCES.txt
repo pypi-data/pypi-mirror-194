@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+dreamai_obj/__init__.py
+dreamai_obj/_modidx.py
+dreamai_obj/core.py
+dreamai_obj/imports.py
+dreamai_obj.egg-info/PKG-INFO
+dreamai_obj.egg-info/SOURCES.txt
+dreamai_obj.egg-info/dependency_links.txt
+dreamai_obj.egg-info/entry_points.txt
+dreamai_obj.egg-info/not-zip-safe
+dreamai_obj.egg-info/requires.txt
+dreamai_obj.egg-info/top_level.txt
