@@ -1,0 +1,8 @@
+pythonpixelengine.cpp
+setup.py
+pixelengine.egg-info/PKG-INFO
+pixelengine.egg-info/SOURCES.txt
+pixelengine.egg-info/dependency_links.txt
+pixelengine.egg-info/not-zip-safe
+pixelengine.egg-info/requires.txt
+pixelengine.egg-info/top_level.txt
