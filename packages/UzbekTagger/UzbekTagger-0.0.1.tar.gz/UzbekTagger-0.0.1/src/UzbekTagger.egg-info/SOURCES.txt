@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/UzbekTagger/UzbekTagger.py
+src/UzbekTagger/__init__.py
+src/UzbekTagger/my_path.py
+src/UzbekTagger/read_xml.py
+src/UzbekTagger/service_to_uzbek_text.py
+src/UzbekTagger.egg-info/PKG-INFO
+src/UzbekTagger.egg-info/SOURCES.txt
+src/UzbekTagger.egg-info/dependency_links.txt
+src/UzbekTagger.egg-info/top_level.txt

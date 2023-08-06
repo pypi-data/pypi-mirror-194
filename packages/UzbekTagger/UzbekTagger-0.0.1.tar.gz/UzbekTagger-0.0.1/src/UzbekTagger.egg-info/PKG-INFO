@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: UzbekTagger
+Version: 0.0.1
+Author-email: "Sharipov Maksud,Yuldashov Ollabergan" <maqsbek72@gmail.com>
+Project-URL: Homepage, https://https://github.com/MaksudSharipov/UzbekTokenizer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# UzbekTokenizer
