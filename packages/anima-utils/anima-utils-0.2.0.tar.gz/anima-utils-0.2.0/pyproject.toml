@@ -1,0 +1,46 @@
+[build-system]
+requires = [
+    "setuptools",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anima-utils"
+version = "0.2.0"
+authors = [
+  { name="Dez", email="desmeraldoo@gmail.com" },
+]
+description = "Utils for assisting players and GMs in the tabletop roleplaying game Anima: Beyond Fantasy"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "tabulate"
+]
+
+[project.scripts]
+anima = "anima.core:main"
+
+[project.urls]
+Homepage = "https://github.com/desmeraldoo/anima"
+"Bug Tracker" = "https://github.com/desmeraldoo/anima/issues"
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+enable_error_code = ["ignore-without-code"]
+ignore_missing_imports = true
+no_implicit_reexport = true
+no_namespace_packages = true
+strict_concatenate = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unused_ignores = true

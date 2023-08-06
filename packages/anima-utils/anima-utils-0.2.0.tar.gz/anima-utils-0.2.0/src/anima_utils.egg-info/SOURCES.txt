@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/anima/__init__.py
+src/anima/__main__.py
+src/anima/const.py
+src/anima/core.py
+src/anima_utils.egg-info/PKG-INFO
+src/anima_utils.egg-info/SOURCES.txt
+src/anima_utils.egg-info/dependency_links.txt
+src/anima_utils.egg-info/entry_points.txt
+src/anima_utils.egg-info/requires.txt
+src/anima_utils.egg-info/top_level.txt
+tests/test_attack.py
