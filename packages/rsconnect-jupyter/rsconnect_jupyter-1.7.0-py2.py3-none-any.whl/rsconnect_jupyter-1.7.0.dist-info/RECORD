@@ -1,0 +1,17 @@
+rsconnect_jupyter/__init__.py,sha256=OAe97K1rRZFgKbd-WGY3-Ph8I_R74MQAKRU4Bq1LYWM,12511
+rsconnect_jupyter/version.py,sha256=xEsqlx2F7rrYv3-LnPmnPb_SMSS5lKorUlRJjNvV0O4,160
+rsconnect_jupyter/static/.eslintrc.yml,sha256=irB1AwfvYpGmwTu88llkB7ngbmbBN37oV_wImrakyNo,5980
+rsconnect_jupyter/static/connect.js,sha256=BlBJ8k_wFTUFNjqJo9e-wdk9cZHPlifgncv8WCTRIfg,80512
+rsconnect_jupyter/static/index.js,sha256=jkHe7WFDrYlmQSPxNqWif-7uQdQlcmiSIVrag00_Ux0,669
+rsconnect_jupyter/static/main.css,sha256=VNjPGpab3cT-TqAXiEr0dY0nWs99sXXQIoMDYSZz-rQ,3164
+rsconnect_jupyter/static/rsconnect.js,sha256=0f58J9ktV-ElmFY-QJvOGeOlLboWYoEiYvfPYnVAxwc,21810
+rsconnect_jupyter/static/version.json,sha256=hKG6xuZK3LLQPp8GzPylkV7TT6pHjoeHJMl7_PYgzBo,20
+rsconnect_jupyter/static/images/publishDocWithSource.png,sha256=VvsJ8yFkp2tDKPHrRLVguAE88SyT9lR3OK0NeNtUfbU,4132
+rsconnect_jupyter/static/images/publishDocWithSource_2x.png,sha256=Z_SzRPUqa2IwfICml3zDUppHAlRP8du5m17d7TcKq5I,9562
+rsconnect_jupyter/static/images/publishDocWithoutSource.png,sha256=uyI1cse_oVtpzj2Mv9pN6XUo7b66wrVb27RpPxzA_eE,1990
+rsconnect_jupyter/static/images/publishDocWithoutSource_2x.png,sha256=uB-x9hRHNpE3ckouiikNHNk0efgQkmnRgrYKF5uYlwY,6891
+rsconnect_jupyter-1.7.0.dist-info/LICENSE.md,sha256=MVVce6oSrBFQvJpI-22FtV2c6hM2rjr6k9ZT9o_km7I,17879
+rsconnect_jupyter-1.7.0.dist-info/METADATA,sha256=aKWySgkV8aEhPYWsgVFNbUXd2RkHoKzp_BC4Qp-rwiw,1258
+rsconnect_jupyter-1.7.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+rsconnect_jupyter-1.7.0.dist-info/top_level.txt,sha256=P_EciDuk3IHkKOIYu1OtUEKADKRb8KwsVW-3kfwpifg,18
+rsconnect_jupyter-1.7.0.dist-info/RECORD,,
