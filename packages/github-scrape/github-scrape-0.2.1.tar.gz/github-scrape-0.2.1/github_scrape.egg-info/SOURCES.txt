@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+akinyeleib/__init__.py
+akinyeleib/main.py
+github_scrape.egg-info/PKG-INFO
+github_scrape.egg-info/SOURCES.txt
+github_scrape.egg-info/dependency_links.txt
+github_scrape.egg-info/requires.txt
+github_scrape.egg-info/top_level.txt
