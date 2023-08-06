@@ -1,0 +1,10 @@
+bookdog/__init__.py,sha256=kV5cbyXMHa9BptZp3dJ8nPk_TOnmvJaNn2YXVyP-wbg,96
+bookdog/database.py,sha256=Et9Dwd82vkJKk0mwiF-r7WgsH5NpoQ3pKiQ8EX6Md6U,1075
+bookdog/main.py,sha256=uwwUMnALMGtcT-zwEYATmaHsGX6W5AhiLO7PNAatmfs,1060
+bookdog/model.py,sha256=9OA9nTET0MTdimd5eoMiwtpZJeShmH-j0IBLx7_M0m4,2780
+bookdog/views.py,sha256=icP9sSgCSq1M4Ve5rH_Al1dnzLRVnzrRWBpRMLgeGog,6174
+bookdog-1.0.0.dist-info/entry_points.txt,sha256=Y1Bofn4Owvc0U3TSGafwUhdo5SwkQRwlUG9MFVM7blc,45
+bookdog-1.0.0.dist-info/LICENSE,sha256=q8djvO1TgCHLOETXG7b6tCIx9uNEdfGNyaATyNf_hnw,1069
+bookdog-1.0.0.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+bookdog-1.0.0.dist-info/METADATA,sha256=gyHrFXo4XxefzsSx2vafSmUlVLnQBLXUx7Kd98z8uC4,1227
+bookdog-1.0.0.dist-info/RECORD,,
