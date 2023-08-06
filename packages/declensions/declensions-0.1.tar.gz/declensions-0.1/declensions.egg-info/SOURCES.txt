@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+declensions/declensions.py
+declensions.egg-info/PKG-INFO
+declensions.egg-info/SOURCES.txt
+declensions.egg-info/dependency_links.txt
+declensions.egg-info/not-zip-safe
+declensions.egg-info/top_level.txt
