@@ -1,0 +1,2 @@
+[console_scripts]
+home-journal = home_journal.run:main

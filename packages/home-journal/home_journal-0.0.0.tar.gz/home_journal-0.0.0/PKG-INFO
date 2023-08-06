@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: home_journal
+Version: 0.0.0
+Summary: A simple journal for use at home by the family
+Author: Bradley A. Thornton
+License: MIT
+Project-URL: Homepage, https://github.com/cidrblock/home_journal
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# A prototype home journaling system
+
+This is a prototype home journaling system. It is a work in progress.
