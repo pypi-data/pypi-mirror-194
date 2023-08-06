@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+conll_iterator/ConllIterator.py
+conll_iterator/Extractor.py
+conll_iterator/__init__.py
+conll_iterator.egg-info/PKG-INFO
+conll_iterator.egg-info/SOURCES.txt
+conll_iterator.egg-info/dependency_links.txt
+conll_iterator.egg-info/not-zip-safe
+conll_iterator.egg-info/top_level.txt
