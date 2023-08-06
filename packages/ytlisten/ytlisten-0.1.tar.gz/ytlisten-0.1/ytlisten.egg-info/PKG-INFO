@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ytlisten
+Version: 0.1
+Summary: A command-line tool to search and listen to YouTube audio
+Home-page: https://github.com/ismaelc/ytlisten
+Author: Chris Ismael
+Author-email: chris.ismael@gmail.com

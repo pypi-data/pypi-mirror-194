@@ -1,0 +1,8 @@
+README.md
+setup.py
+ytlisten.egg-info/PKG-INFO
+ytlisten.egg-info/SOURCES.txt
+ytlisten.egg-info/dependency_links.txt
+ytlisten.egg-info/entry_points.txt
+ytlisten.egg-info/requires.txt
+ytlisten.egg-info/top_level.txt
