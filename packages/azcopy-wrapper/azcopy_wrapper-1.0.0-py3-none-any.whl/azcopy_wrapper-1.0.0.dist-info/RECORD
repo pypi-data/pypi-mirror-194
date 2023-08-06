@@ -1,0 +1,13 @@
+azcopy_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azcopy_wrapper/azcopy_client.py,sha256=aaEPw8f4mXPUNYwlVg1JwglYqmXD2v1MBNeVvKgnUD8,11169
+azcopy_wrapper/azcopy_summary.py,sha256=hK-lHzIC-H9ySAqI9fL43-CQCaZQeTGgu_6xYbctFW4,3494
+azcopy_wrapper/azcopy_utilities.py,sha256=8plzCTSl-Kma2WIdrVRL1Gv8XsU96940IEKHcj5RjR4,10098
+azcopy_wrapper/sas_token_validation.py,sha256=XbSv8vdpBJjlDWctUnaYBhBKtudZovOupZkarCN2dq4,929
+azcopy_wrapper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azcopy_wrapper/utils/constants.py,sha256=hVfnQD7OvS9yF3rzYbx8EGOXD7Hs_NVN4S955RwjhlA,77
+azcopy_wrapper/utils/execute_command.py,sha256=f7lRYGpnMgTLyCvE5dIO2Jf9rJWTrl6MAHA_myENirg,718
+azcopy_wrapper-1.0.0.dist-info/LICENSE.md,sha256=xYfZbpsWcFhbB3sJS-9h9kOIvnIglqlr2Y7CpmB72jU,1070
+azcopy_wrapper-1.0.0.dist-info/METADATA,sha256=O9iqxRKW_g0Udj1hMjNcsS-r-BTOxVTryZ1EmYfaw98,6442
+azcopy_wrapper-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+azcopy_wrapper-1.0.0.dist-info/top_level.txt,sha256=AkQr4cNVxU-_WpKeXxVxM2ClM2YBgiI9ZStPJS3_ttQ,37
+azcopy_wrapper-1.0.0.dist-info/RECORD,,
