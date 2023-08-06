@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lazy-commands
+Version: 0.1.2
+Summary: A simple command line interface which converts a description of a command into the command itself and vice versa.
+Home-page: UNKNOWN
+Author: minhalvp (Minhal Valiya Peedikakkal)
+License: UNKNOWN
+Keywords: python,langchain,gpt,openai,cli
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+UNKNOWN
+
