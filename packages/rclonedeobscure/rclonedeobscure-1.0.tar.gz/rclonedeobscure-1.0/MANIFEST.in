@@ -1,0 +1,3 @@
+include rclonedeobscure/README.md
+include rclonedeobscure/rclonedeobscure.py
+include rclonedeobscure/requirements.txt
