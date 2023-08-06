@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+nonebot_plugin_afd/__init__.py
+nonebot_plugin_afd/config.py
+nonebot_plugin_afd/group_new_member.py
+nonebot_plugin_afd.egg-info/PKG-INFO
+nonebot_plugin_afd.egg-info/SOURCES.txt
+nonebot_plugin_afd.egg-info/dependency_links.txt
+nonebot_plugin_afd.egg-info/requires.txt
+nonebot_plugin_afd.egg-info/top_level.txt
