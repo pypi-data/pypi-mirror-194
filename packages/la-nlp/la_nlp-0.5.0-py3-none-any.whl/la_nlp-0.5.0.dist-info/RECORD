@@ -1,0 +1,16 @@
+la_nlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+la_nlp/components.py,sha256=KjsQBTjkcctyygtojObj6MXYQvWCpJ0infgWn9fFL-g,14516
+la_nlp/scratch.py,sha256=BWnrOQmj4IKAQcaAL60h_xVnDQDIAxCtEwcdXKb0fWM,799
+la_nlp/scratch2.py,sha256=h1ExaNC2dJsynfVlXityQW_SBpZfsMzuteMimzjaM3A,364
+la_nlp/utils.py,sha256=POi8-W7Ieo9i2ve52gEJdaVYXLajlZ-Lc8JtWjt_Z2E,1348
+la_nlp/data/aspects.toml,sha256=8j69l4QaFb1ZhX-3fPXPcLUKQW-wvjhrhpF6sJQu6X8,433
+la_nlp/pipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+la_nlp/pipes/aspect_sentiment.py,sha256=74UnB5q1LKrA348YwCv1dKAJMiKifv0wI7XolT_GiZs,4271
+tests/test_aspect_sentiment.py,sha256=L9-JQDXWzuINl2vj3Ayxb7PQ-2rvNCgC-ZfALP_R6Uo,8676
+tests/test_components.py,sha256=BCGSl4BFcVEV8u-h83SRNoNlEHybmcYbUlkaN5BwhT0,3559
+tests/test_utils.py,sha256=IHllo_ZAVJ8bqMT00HuvrkhTB8SdDsq-1jPqH9FusKM,1797
+la_nlp-0.5.0.dist-info/LICENSE,sha256=BErNpDdFyUOv612YrrSScyhcFDPuwJfnh4iKbGFO4Lo,1098
+la_nlp-0.5.0.dist-info/METADATA,sha256=USzm_CmrHdNBcwS3iZD6cwej5V1HTOkvXX_iuI5WYew,410
+la_nlp-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+la_nlp-0.5.0.dist-info/top_level.txt,sha256=SLpxRIbrYhWlnwp-KP7EdG2K0Q5_6uhLa_55uK3pZrU,13
+la_nlp-0.5.0.dist-info/RECORD,,
