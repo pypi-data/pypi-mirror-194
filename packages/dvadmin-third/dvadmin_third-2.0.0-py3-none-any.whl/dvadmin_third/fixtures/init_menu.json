@@ -1,0 +1,55 @@
+[{
+    "name": "系统管理",
+    "icon": "cog",
+    "sort": 1,
+    "is_link": false,
+    "is_catalog": true,
+    "web_path": "",
+    "component": "",
+    "component_name": "",
+    "status": true,
+    "cache": false,
+    "visible": true,
+    "parent": null,
+    "children": [{
+        "name": "第三方登录管理",
+        "icon": "users",
+        "sort": 4,
+        "is_link": false,
+        "is_catalog": false,
+        "web_path": "/third",
+        "component": "plugins/dvadmin-third-web/src/thirdUsers/index",
+        "component_name": "thirdUsers",
+        "status": true,
+        "cache": false,
+        "visible": true,
+        "children": [],
+        "menu_button": [
+                    {
+                        "name": "查询",
+                        "value": "Search",
+                        "api": "/api/third_users/",
+                        "method": 0
+                    },
+                    {
+                        "name": "详情",
+                        "value": "Retrieve",
+                        "api": "/api/third_users/{id}/",
+                        "method": 0
+                    },
+                    {
+                        "name": "编辑",
+                        "value": "Update",
+                        "api": "/api/third_users/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "删除",
+                        "value": "Delete",
+                        "api": "/api/third_users/{id}/",
+                        "method": 3
+                    }
+        ]
+    }],
+    "menu_button": []
+}]
