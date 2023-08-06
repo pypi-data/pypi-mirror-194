@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "fancybot"
+version = "0.0.1"
+description = "fancybot"
+authors = ["HE Yaowen <he.yaowen@hotmail.com>"]
+license = "GPL-3.0"
+packages = [{include = "fancybot", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
