@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: neftpy
+Version: 0.1
+Summary: petroleum engineering calculation functions
+Project-URL: Homepage, https://github.com/unifloc/neftpy
+Project-URL: Bug Tracker, https://github.com/unifloc/neftpy/issues
+Author-email: Khabibullin Rinat <khabibullinra@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+# neftpy
