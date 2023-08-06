@@ -1,0 +1,39 @@
+[project]
+name = "functiontrace"
+version = "0.3.7"
+description = "A profiling tool that traces your application's execution"
+authors = [
+    { name = "Matt Bryant", email = "functiontrace@programsareproofs.com"},
+    { name = "Alistair Dobke" }
+]
+license = { text = "The Prosperity Public License 3.0.0" }
+readme = "README.rst"
+requires-python = ">=3.6,<3.12"
+keywords = [
+    "profiler",
+    "debugger"
+]
+classifiers = [
+	"Intended Audience :: Developers",
+	"Topic :: Software Development :: Debuggers",
+	"License :: Free for non-commercial use",
+	"Operating System :: Unix",
+	"Environment :: Console",
+    "Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Programming Language :: Python :: Implementation :: CPython",
+]
+
+[project.urls]
+homepage = "https://functiontrace.com"
+repository = "https://gitlab.com/mbryant/functiontrace"
+
+[project.scripts]
+functiontrace = "functiontrace:main"
+
+[project.entry-points.functiontrace]
+functiontrace = "functiontrace"
+
+[build-system]
+requires = ["setuptools", "toml"]
+build-backend = "setuptools.build_meta"
