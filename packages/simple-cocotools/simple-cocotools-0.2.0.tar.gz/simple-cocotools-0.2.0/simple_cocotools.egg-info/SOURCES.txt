@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simple_cocotools/__init__.py
+simple_cocotools/detections.py
+simple_cocotools/evaluator.py
+simple_cocotools.egg-info/PKG-INFO
+simple_cocotools.egg-info/SOURCES.txt
+simple_cocotools.egg-info/dependency_links.txt
+simple_cocotools.egg-info/requires.txt
+simple_cocotools.egg-info/top_level.txt
+simple_cocotools/utils/__init__.py
+simple_cocotools/utils/coco.py
+simple_cocotools/utils/data.py
+tests/test_keypoint_rcnn_example.py
+tests/test_mask_rcnn_example.py
