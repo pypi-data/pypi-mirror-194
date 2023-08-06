@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+bucketit/__init__.py
+bucketit/bucketit.py
+bucketit.egg-info/PKG-INFO
+bucketit.egg-info/SOURCES.txt
+bucketit.egg-info/dependency_links.txt
+bucketit.egg-info/entry_points.txt
+bucketit.egg-info/requires.txt
+bucketit.egg-info/top_level.txt
