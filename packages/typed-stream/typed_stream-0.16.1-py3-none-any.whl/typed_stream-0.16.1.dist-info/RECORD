@@ -1,0 +1,15 @@
+typed_stream/__init__.py,sha256=5Wq7LSv-2bVdfAOq20uLPfwky8UwGYO3rFdYPQtZmCM,677
+typed_stream/common_types.py,sha256=58uN7ypBBDgWkeYsjjLMwfogu5zkr5EsLScm6X6FfYg,2003
+typed_stream/constants.py,sha256=aFID-cbGahtsfUCQt2RmwkYhY_QqZG_TO2hfkHQXz1k,369
+typed_stream/exceptions.py,sha256=REZ9zqO2hbfZAl25BB5eGyVzw2Fo57VHPZIa4U0xM7k,691
+typed_stream/functions.py,sha256=0I7IHa4Tykl3HCmawS8k4WDoCgwJNtGHAbK47zSWLFU,4014
+typed_stream/iteration_utils.py,sha256=ZCSGevlcU8c3MP4W9B1b8SRhgbb24E1LILjtWjlTdwE,5072
+typed_stream/lazy_file_iterators.py,sha256=kyCEBy1stx5WtArUUClMWKQ24fyw7mg2tYeJcElb538,4538
+typed_stream/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typed_stream/streamable.py,sha256=Y6P3AsnhbEnMK9DBCl2MUjSvj2shmeEAvggBYB03-_0,2661
+typed_stream/streams.py,sha256=P0ityLw6eZ-bFfjHmcsIf_t1gNZL24LVFMGab3rlUSo,25613
+typed_stream/version.py,sha256=TvPfAgV-d89u1Du81ktXRM0aJs4gt3XAVMfTAVS3Zn0,246
+typed_stream-0.16.1.dist-info/LICENSE,sha256=b8nnCcy_4Nd_v_okJ6mDKCvi64jkexzbSfIag7TR5mU,13827
+typed_stream-0.16.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+typed_stream-0.16.1.dist-info/METADATA,sha256=N643g5Lme9CSuqDfkWn0FkJ4qPiU1zGeG12inFoD-lQ,3020
+typed_stream-0.16.1.dist-info/RECORD,,
