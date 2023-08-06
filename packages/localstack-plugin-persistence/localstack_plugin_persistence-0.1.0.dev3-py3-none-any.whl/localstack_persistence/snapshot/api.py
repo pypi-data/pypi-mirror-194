@@ -1,0 +1,2 @@
+from enum import Enum
+class SaveStrategy(Enum):'\n    There are three strategies that govern when state is stored:\n    - on request: on every request that potentially modifies backend state, we dump the service state\n    - on shutdown: when localstack shuts down, we dump the entire state\n    - scheduled: every X requests or N seconds, we dump the state\n    ';ON_REQUEST='ON_REQUEST';ON_SHUTDOWN='ON_SHUTDOWN';SCHEDULED='SCHEDULED'
