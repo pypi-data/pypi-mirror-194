@@ -1,0 +1,9 @@
+*~
+*.pyc
+*.py#
+*.bat
+*.swp
+.idea/
+dist/
+venv/
+__pycache__/
