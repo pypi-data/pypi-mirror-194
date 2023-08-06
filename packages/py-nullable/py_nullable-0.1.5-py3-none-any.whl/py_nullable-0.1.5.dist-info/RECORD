@@ -1,0 +1,10 @@
+py_nullable/__init__.py,sha256=iuMjN8TqoXJSp5h2x2EMerEzoy3jjtn3HWjynxhkp5w,1000
+py_nullable/__version__.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+py_nullable/exception.py,sha256=w2Bj817HWFgGL58vPynZrk1uzMTUAVcA3pzRUb3cEI8,4263
+py_nullable/nullable.py,sha256=jMoYMdkckIKvi7JB-x1jQBQCWe--1Y_SoaqGqXshPuw,12820
+py_nullable/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_nullable-0.1.5.dist-info/LICENSE,sha256=C-mcfTpqUObLIntZcnlk6UzT_NB0MSYwq84zhrN6Sso,1073
+py_nullable-0.1.5.dist-info/METADATA,sha256=saepo8Fch51ktlPYTYIrWXoEjgSgPXE1PUzti6tjiiw,4025
+py_nullable-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+py_nullable-0.1.5.dist-info/top_level.txt,sha256=obDblSHWSNDrsh5314GzoIft0_B6lmCZOSQq6ICu_DM,12
+py_nullable-0.1.5.dist-info/RECORD,,
