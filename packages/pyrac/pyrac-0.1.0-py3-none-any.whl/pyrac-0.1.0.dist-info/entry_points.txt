@@ -1,0 +1,2 @@
+[console_scripts]
+notkearash = pyrac.__main__:main
