@@ -1,0 +1,11 @@
+telegram_pot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_pot/apis.py,sha256=OxbDzsJ2Ih_VGmSiG2vaOsX5oFOC6EKcYUcngE7dqps,18172
+telegram_pot/bot.py,sha256=dM7lHu9Pqy4W_EF0DIQZ98I5M7YNODc5KWLjNg0ffaQ,4900
+telegram_pot/exceptions.py,sha256=GR2HXTMq5SfH4m94r3j1zB_SBYrdut7HXwS3CsqDMyk,130
+telegram_pot/model.py,sha256=Z1t0fCjqSL827TLylkL1dQYXeXJ69Xsx0ZdZfSDp3ro,7244
+telegram_pot/models.py,sha256=0a1QMkNwHAJAVHXhQMwPPxkhn-iwSZXoG-IyY1yjk64,25807
+telegram_pot-0.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+telegram_pot-0.0.2.dist-info/METADATA,sha256=2IR3DnPP4i3P7sm7HYexdQNqldZBOMwaR1aKM34f-mg,570
+telegram_pot-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+telegram_pot-0.0.2.dist-info/top_level.txt,sha256=PbPtvL5jb76zGqtrmmcSy-IBjy_HcRbpfV0bqZSPsdw,13
+telegram_pot-0.0.2.dist-info/RECORD,,
