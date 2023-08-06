@@ -1,0 +1,16 @@
+notion_nlp/__init__.py,sha256=Ah_3iY-6tTb4XXrzv47mKQTnYocW_FfJy5mgD2Asq_g,148
+notion_nlp/__main__.py,sha256=c7TXDrDNWmmIjPA5gIgDuFnCzlzpM8cKbvjSBs6yR78,3467
+notion_nlp/core/__init__.py,sha256=OdoeIMMD5QsaPua32lpA90gW6P_MGP2UEq6b33MBE3g,37
+notion_nlp/core/api.py,sha256=mZMLUpVdp9ZRxjpT_A1QugwzezbtLgK8b0znk4G3KSo,4084
+notion_nlp/core/nlp.py,sha256=WlaaTJXWSaZ8u-lsIZg1iooHU_E9Hg8_b-CpYJ8Yu90,15693
+notion_nlp/core/task.py,sha256=9EpTcl6mztgE3Gha1f0brCaPTWv_xbGtuaj_pzU9Q84,7459
+notion_nlp/core/visual.py,sha256=_NfIZ3U0hB2r-iLorbXUxm6oLiUhx6VY0Ye03crXwJg,4367
+notion_nlp/parameter/__init__.py,sha256=_n95t3tU-i358woRAWSWaucc5P8epGAXPnET9_cG2_Y,40
+notion_nlp/parameter/config.py,sha256=8ir3BRLAMuLjEynUYHxxz4mfVyi803Lw-TLd4SkbdLU,9233
+notion_nlp/parameter/error.py,sha256=MDY75a-BhWkWpUE7-2TQxRee7hybXG00HZfQlcLwm1I,275
+notion_nlp/parameter/log.py,sha256=J88ramlxXq44ikpn9S58NOWYzbuSwqxKPFloZ3jJ06c,5843
+notion_nlp/parameter/utils.py,sha256=X6K5g236QVqTWxLlxDDjdYw7rv_D_GEUWkntWIOLS4I,6088
+notion_nlp-1.0.6.dist-info/LICENSE,sha256=7tKb1hy2UMU6-v-kUzkH-1K7f9oYyoWXgWfvmGCVSYw,1068
+notion_nlp-1.0.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+notion_nlp-1.0.6.dist-info/METADATA,sha256=zM3FolKAtF6vHK6EXKiQZN-euE1wwaoE3y10tqb51Ew,11468
+notion_nlp-1.0.6.dist-info/RECORD,,
