@@ -1,0 +1,15 @@
+sc_inclusive/__init__.py,sha256=Nxhe-Fm1kAsq-nAWGuT9hWhj5NZ5E_lczFiA5OHuAsA,1177
+sc_inclusive/main.py,sha256=5GwOi07T52E7ECfpZ3ICaeQiZBbVmaOZDcSUwK7GXrg,5961
+sc_inclusive/manifest_utils.py,sha256=pgjXw0ALm1ERQZhw4hoCm0Am5A5rhxfom_1ztevFSHY,8979
+sc_inclusive/analyzer/__init__.py,sha256=nnFlO-f_84tHmjU-u0XqC4miLnw4HuzAfEYX43HMBWI,1132
+sc_inclusive/analyzer/base_analyzer.py,sha256=pihOeSnWODqHAKKx9vN74oqe2AtUeYS4ijHztaDKTj0,2486
+sc_inclusive/analyzer/inclusive_avg_daily_summary_analyzer.py,sha256=Orb93d0dTyKgOQVNnJ74WLFB0uvywOQfcgf1RrA4UdM,11070
+sc_inclusive/tests/__init__.py,sha256=5QNcohCZooPxnY9TtRMJ3w2cHgggAPl99Jp9-GIFTe0,1114
+sc_inclusive/tests/sample_config/detail-production.yml,sha256=9F0y6UCxcyK3VWfD2JlafWqhDTGKCBJItjgWw1ZjSTk,5651
+sc_inclusive/tests/sample_config/production.yml,sha256=Mx5ZP_P6O4JDn80_b4UTLeI1_KBrmrguiQuGXLc3xAY,4676
+sc_inclusive_analysis-0.0.4.dist-info/LICENSE,sha256=48l_zi7sXkPAoMS5fF_oFZuBFReKAuNfmzYynXjjaB4,1076
+sc_inclusive_analysis-0.0.4.dist-info/METADATA,sha256=1iGlHjbtA3qwAAGeVwGji-0JCk4EhHWhXHKSIvnqnUU,2132
+sc_inclusive_analysis-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sc_inclusive_analysis-0.0.4.dist-info/entry_points.txt,sha256=JxcU_ok5RHFyYSar9xwi5lbVxjdsQaMWz4iExf0mVV8,65
+sc_inclusive_analysis-0.0.4.dist-info/top_level.txt,sha256=x2y8GfCJiMFdmLb0MfqtGVg63iPSDvLJHLx1UzshG98,13
+sc_inclusive_analysis-0.0.4.dist-info/RECORD,,
