@@ -1,0 +1,3 @@
+[console_scripts]
+serverlesspy=serverlesspy.helpers.cli:cli_handler
+
