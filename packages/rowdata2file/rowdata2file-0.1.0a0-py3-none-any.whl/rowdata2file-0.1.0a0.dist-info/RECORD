@@ -1,0 +1,10 @@
+rowdata2file/__init__.py,sha256=QLvNtMQfe0KYjuvVvz5OmcO5h3iyhmC_FGQc7QeayAc,109
+rowdata2file/__main__.py,sha256=jBLIB2y5AduuIzmWcpvS6R01q2pCkNg_55GFS2RmEuw,956
+rowdata2file/gen_docx.py,sha256=FHzfW4VHviJGwANO8COqqfl7RU6MPO3SGLR0mqtAwYU,2798
+rowdata2file/rowdata2docx.py,sha256=n_bQ8VSi0uLgL8C4wnKXrdE2x3jOca28yFTtBPMqj5Q,3138
+rowdata2file/rowdata2file.py,sha256=W0rAjJiBTYfnZUFF7p6wPBtGwakb7WMW4FSlbaquVHU,448
+rowdata2file-0.1.0a0.dist-info/entry_points.txt,sha256=4Gw2FpmNHvrLtTAl0pAmLbEZvDiBYb_exXBoniOhDVw,58
+rowdata2file-0.1.0a0.dist-info/LICENSE,sha256=2Z4g7Eq1bQRfTQoryBnNsyhlWBpAGylKyp1KFJMlTWU,1085
+rowdata2file-0.1.0a0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+rowdata2file-0.1.0a0.dist-info/METADATA,sha256=LkzEw7kbUAJ8nk6inw_mDsN598Q7dPIcVmP-nf5ZyVQ,1675
+rowdata2file-0.1.0a0.dist-info/RECORD,,
