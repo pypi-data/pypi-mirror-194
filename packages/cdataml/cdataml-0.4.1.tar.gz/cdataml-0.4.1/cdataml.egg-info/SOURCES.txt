@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cdataml.egg-info/PKG-INFO
+cdataml.egg-info/SOURCES.txt
+cdataml.egg-info/dependency_links.txt
+cdataml.egg-info/requires.txt
+cdataml.egg-info/top_level.txt
+data/__init__.py
+data/lesion_score_key.tif
