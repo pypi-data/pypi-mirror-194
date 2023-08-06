@@ -1,0 +1,12 @@
+xvec/__init__.py,sha256=JwAWglq6TPQPi6nedUG0crSXmpZ7aH1KANI6z-cWXUk,263
+xvec/accessor.py,sha256=bSrwIlxroq-03bV8NUYId2OsnJs77EAC_R8PZ7Mp9Q8,40802
+xvec/index.py,sha256=JgajuQalQfPV3PniA80TcNJM_FikvHk4n2kROnh12Ys,9003
+xvec/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xvec/tests/conftest.py,sha256=BEHciaamlExVGftPA4E5llQmcIuaPj3ON72Ty8uH-hQ,4380
+xvec/tests/test_accessor.py,sha256=pVVIb9JVTMZKSnrdsuOrRcpybxFu6r07_tKj6isNaWo,20645
+xvec/tests/test_index.py,sha256=9qj8WTRDAr7ILFLSfudUcR1b_7rvUJ7smC2bPTlGRWU,6196
+xvec-0.1.0.dist-info/LICENSE,sha256=LC4eUMl0xWDP-AKAmku-sVCWElZ8UefyE6IZcSccvqw,1073
+xvec-0.1.0.dist-info/METADATA,sha256=x0HqFOQjsyGjUCraLjSxNrbhCb4OpPL6jH8AtY78DKE,2155
+xvec-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xvec-0.1.0.dist-info/top_level.txt,sha256=hAe_Q1pbz8ZXP9KwIlvnxvAjaB6lJ2dgK_QxJnPdEAQ,5
+xvec-0.1.0.dist-info/RECORD,,
