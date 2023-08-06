@@ -1,0 +1,5 @@
+mlflow_cortex/__init__.py,sha256=6tr2lFb2koZBfjhOXtLVwTucPzthBdy7MahBJ4sbkSI,10734
+mlflow_cortex-1.10.0.dist-info/METADATA,sha256=J6DWFFEvpdOdbzdsZ2cxasrQ6UDB7yXGHbWW47JR2Pk,230
+mlflow_cortex-1.10.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mlflow_cortex-1.10.0.dist-info/top_level.txt,sha256=Af5nBjOAzG_Mhil7C3f6sDx8UaRYNFiP2zKEBlzVwY8,14
+mlflow_cortex-1.10.0.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mlflow-cortex
+Version: 1.10.0
+Summary: MLflow model flavor for mlflow_cortex with keras custom object integration
+Author: Matthew Grohotolski
+Requires-Python: >=3.8.13
+Requires-Dist: mlflow (>=1.11.0)
+
