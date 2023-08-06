@@ -1,0 +1,12 @@
+tira/__init__.py,sha256=KmvgK4czP_uzxaU-GF3cdXswome8SlgjgmXRk0J_LLU,24
+tira/io_utils.py,sha256=YOqISyWPA8YrU7pTyKaC2pi--r7EJAiaBwUUqon1TjE,1242
+tira/local_client.py,sha256=unDlw1_NuwXPRci60C2ttTlG4dROO-cLf3o0Vui7Q2c,9776
+tira/local_execution_integration.py,sha256=sAPdFc7IOVZSFhq5vsXeVyVuu3kMVo5r05LTR_a7jBc,4472
+tira/pyterrier_integration.py,sha256=dTmcAE90pN0g7-KaCFYlJ0hZP8bM10-WItx9y_q5ziE,5477
+tira/pyterrier_util.py,sha256=jR45HL0qh8xUZ_GCD1xDAnEbFmxkmKM3ay__DCFdTxQ,4583
+tira/rest_api_client.py,sha256=mHpLWbaWWSmczt0R7nI-2dMeZb-KevDXm3petBd8j1w,9043
+tira/third_party_integrations.py,sha256=u7qdJZVmLK5PrVYMR5-vQCa_t2bGevHuMbbrkga2eug,4309
+tira-0.0.18.dist-info/METADATA,sha256=Cmfwu3t5PPBFnZn1NIKClLqjK6S1Th3uuVSJAeWPDuU,1001
+tira-0.0.18.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tira-0.0.18.dist-info/top_level.txt,sha256=Cmn2jAOjNUnXGPa21lt2J8J076ipDQ9k000fdf_pRs4,5
+tira-0.0.18.dist-info/RECORD,,
