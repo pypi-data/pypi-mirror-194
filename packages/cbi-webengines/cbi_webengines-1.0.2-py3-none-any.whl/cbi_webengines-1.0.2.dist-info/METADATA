@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cbi-webengines
+Version: 1.0.2
+Summary: Base CBI objects for popular web engines (FastAPI, etc)
+Home-page: https://github.com/cloudberrybi/base-webengines
+Maintainer: CloudberryBI
+Maintainer-email: cto@cloudberry.bi
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cbi-ddd (==1.0.0)
+
+# base-webengines
+
+Base CBI objects for popular web engines (FastAPI, etc)

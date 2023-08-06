@@ -1,0 +1,13 @@
+cbi_webengines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cbi_webengines/interfaces/__init__.py,sha256=qanuJ5sSQ2BXGtl3sopWkivFqoJP8oGqTlOZu0r7dQU,101
+cbi_webengines/interfaces/header.py,sha256=Ssvwh7dtTRsFSQKzupJen0aHXEn0hnORyPlU4PWXLgU,87
+cbi_webengines/interfaces/request.py,sha256=5vKLpLSQYB_P5tL_Q6bEw9jIQWA9xJV9sN9zAQ4tfLQ,320
+cbi_webengines/repositories/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cbi_webengines/repositories/engine_repository.py,sha256=PjTcT5uaOw_pcdynx7Ypd4kWCMsTf58EWKw_Otv7-X4,154
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cbi_webengines-1.0.2.dist-info/LICENSE,sha256=HQhV54Wad948yuHrp7i0uiLRPJ6WkyULXa-g60-zftQ,1070
+cbi_webengines-1.0.2.dist-info/METADATA,sha256=xq9QBjjG56GlvwJQ0ULwhEy7JNLUDhhEdJwQjoSZKY8,729
+cbi_webengines-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cbi_webengines-1.0.2.dist-info/top_level.txt,sha256=IwplY9_9pLZ6KB5dkBdSCyBI8aY-h83IF2JoKcffDqY,21
+cbi_webengines-1.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cbi_webengines-1.0.2.dist-info/RECORD,,
