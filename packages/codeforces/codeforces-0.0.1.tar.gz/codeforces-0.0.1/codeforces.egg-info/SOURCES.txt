@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+utils.py
+cf/__init__.py
+cf/config.py
+cf/contests.py
+cf/parse.py
+cf/run.py
+cf/submit.py
+codeforces.egg-info/PKG-INFO
+codeforces.egg-info/SOURCES.txt
+codeforces.egg-info/dependency_links.txt
+codeforces.egg-info/entry_points.txt
+codeforces.egg-info/requires.txt
+codeforces.egg-info/top_level.txt
