@@ -1,0 +1,2 @@
+[console_scripts]
+clumpsptm = clumpsptm.__main__:main
