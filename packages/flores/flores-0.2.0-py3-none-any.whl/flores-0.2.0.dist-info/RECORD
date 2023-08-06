@@ -1,0 +1,13 @@
+flores/__init__.py,sha256=lpETyrKAPuYQ0L2G0qIqoVLyguo7EzzkQNbHGWuI1rM,141
+flores/__main__.py,sha256=06ipd2tXzVesf3C8cbJJDu06MUY8YhwP5gI0RfR88mM,5216
+flores/exceptions.py,sha256=-Dtod3tHhwX-YziblAGXpjUbcYrbcVVk6-eHyeRjsNM,2282
+flores/generator.py,sha256=M6SMWDtQzX-wsywJZf4ZYLnH85wN2C7iW1IQ_xlPzx8,68415
+flores/logger.py,sha256=mlWGXgF2IrvHqT5bkE5LqSgvj-Dw6Fimhu_gSnUGupU,7682
+flores/py.typed,sha256=QI9h7sA53DADPPTOXFH8NrLWpR72fLHZibtFszvdnvE,65
+flores/server.py,sha256=ly4myKnlCNcdVG4khImkwlAtYjsnsR8izpfz4LmcZ3k,9885
+flores-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+flores-0.2.0.dist-info/METADATA,sha256=JuJBOTZjATbED78InEUPd-X_yN5qZYa43U8fQL-gAiY,2545
+flores-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flores-0.2.0.dist-info/entry_points.txt,sha256=HmU7zzH4ysX_sFNMeV9s5K96UoKqVifxbwzGot1lhII,48
+flores-0.2.0.dist-info/top_level.txt,sha256=pyegbUmhUOCs3hKfHAMuxTiKybjmzkfKH4dbbhgZhJY,7
+flores-0.2.0.dist-info/RECORD,,
