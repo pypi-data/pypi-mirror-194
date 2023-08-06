@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fybrik-python-transformation
+Version: 0.2.0
+Summary: Python Transformation Package for Fybrik
+Home-page: https://github.com/fybrik/fybrik/tree/master/python/transformation
+Author: FybrikUser
+Author-email: FybrikUser@ibm.com
+License: Apache License, Version 2.0
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (==1.4.2)
+Requires-Dist: pyarrow (==8.0.0)
+
+## Python Transformation Package for Fybrik
