@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: deki
+Version: 0.0.1.dev1
+Summary: Deki is a library is to create beautiful interative visuals to understand your optimizer better, because seeing is believing!
+Author-email: Bhavnick Minhas <bhavnicksm@gmail.com>
+Maintainer-email: Bhavnick Minhas <bhavnicksm@gmail.com>
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/Dawn-Of-Eve/deki
+Project-URL: Bug Tracker, https://github.com/Dawn-Of-Eve/deki/issues
+Keywords: machine learning,optimization,visualization
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# :sparkles: Deki
+
+Deki is a library is to create beautiful ✨interative✨ visuals to understand your optimizer better, because seeing is believing!
+
+Just a few easy steps to get your own visuals:
+
+```
+from deki import Rosenbrock
+
+optimiser = my_special_optimiser
+optimiser_state = {"lr":0.01}
+steps = 1000
+
+Rosenbrock.plot((optimiser, optimiser_state), steps)
+
+#output: get a interative Rosenbrock plot
+```

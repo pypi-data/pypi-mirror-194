@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/deki/__init__.py
+src/deki/rosenbrock.py
+src/deki/sphere.py
+src/deki/visualizer.py
+src/deki.egg-info/PKG-INFO
+src/deki.egg-info/SOURCES.txt
+src/deki.egg-info/dependency_links.txt
+src/deki.egg-info/requires.txt
+src/deki.egg-info/top_level.txt
