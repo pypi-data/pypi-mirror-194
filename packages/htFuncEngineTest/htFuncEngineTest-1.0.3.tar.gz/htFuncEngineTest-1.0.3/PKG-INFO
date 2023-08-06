@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: htFuncEngineTest
+Version: 1.0.3
+Summary: 海拓算法可视化配置
+Home-page: UNKNOWN
+Author: wanglie
+Author-email: lie_wangxy@163.com
+License: MIT
+Description: 海拓函数调度引擎实现算法可视化配置
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
