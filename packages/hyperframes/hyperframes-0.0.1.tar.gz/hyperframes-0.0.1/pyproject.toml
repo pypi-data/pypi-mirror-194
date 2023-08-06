@@ -1,0 +1,28 @@
+
+
+[tool.poetry]
+name = "hyperframes"
+version = "0.0.1"
+authors = ["Leon Luithlen <leontimnaluithlen@gmail.com>"]
+description = "Labeled high dimensional matrix access"
+keywords = ["data", "data storage", "matrix", "high dimensional data"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/0xideas/hyperframe"
+repository = "https://github.com/0xideas/hyperframe"
+include = [
+    "LICENSE",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9.0"
+pandas = "^1.1.4"
+numpy = "^1.19.5"
+
+[tool.poetry.scripts]
+sequifier = 'sequifier.sequifier:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
