@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "gpt-commit-cli"
+version = "0.1.1"
+description = "Generate commit messages using GPT-3."
+authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "gpt_commit" }]
+homepage = "https://github.com/tddschn/gpt-commit-cli"
+repository = "https://github.com/tddschn/gpt-commit-cli"
+classifiers = ["Topic :: Utilities"]
+keywords = ["GPT-3", "Git commit", "Git", "cli"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tddschn/gpt-commit-cli/issues"
+
+[tool.poetry.scripts]
+gpt-commit = "gpt_commit.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.26.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
