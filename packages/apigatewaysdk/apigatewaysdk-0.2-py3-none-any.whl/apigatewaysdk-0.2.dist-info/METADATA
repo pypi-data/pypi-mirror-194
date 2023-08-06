@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: apigatewaysdk
+Version: 0.2
+Summary: Viettel Cloud API Gateway SDK
+Home-page: UNKNOWN
+Author: trongnp3
+Author-email: trongnp3@viettel.com.vn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.28.2)
+
+## Hướng dẫn sử dụng
+
+1.Build thành thư viện và cài đặt
+- Tạo file LICENSE.txt : 
+```
+Copyright 2023 trongnp3
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+- Tạo file setup.py:
+```
+import setuptools
+
+with open("README.md", "r") as fh:
+
+    long_description = fh.read()
+
+REQUIRES = [
+    "requests==2.28.2",
+]
+
+setuptools.setup(
+    name="viettel-api-gateway",
+    version="1.1-dev",
+    author="trongnp3",
+    author_email="trongnp3@viettel.com.vn",
+    description="Viettel Cloud API Gateway SDK",
+    long_description=long_description,
+    install_requires=REQUIRES,
+    long_description_content_type="text/markdown",
+    url="<https://github.com/authorname/templatepackage>",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+
+    python_requires='>=3.6',
+)
+```
+- Cài các package cần thiết : setuptools, wheel, twine, tqdm
+- Chạy lệnh `python setup.py bdist_wheel`
+- Đăng ký 1 tài khoản trên `https://pypi.org/`
+- Chạy lệnh `twine upload --repository-url https://upload.pypi.org/legacy/ dist/*` để upload thư viện
+![Screenshot from 2023-02-28 15-26-56.png](..%2FPictures%2FScreenshot%20from%202023-02-28%2015-26-56.png)
+-  Install thư viện vào project `pip install apigatewaysdk`
+
+2. Thử nghiệm một số API:
+- Tạo Upstream: 
+```
+from apigateway.clients.client import ApiGatewayClient
+from apigateway.models.upstream import Upstream
+
+upstream1 = Upstream(name='TestUpstream1', description='des1', scheme='http', type='roundrobin', retries=1, 
+                     retry_timeout=5,connect_timeout=1, read_timeout=1, send_timeout=1, 
+                     host_list={"host:80": 100, "host1:80": 10})
+
+client = ApiGatewayClient()
+print(client.create_upstream(upstream1))
+```
+Kết quả:
+![img.png](img.png)
+- List các Upstream:
+```
+from apigateway.clients.client import ApiGatewayClient
+
+client = ApiGatewayClient()
+client.list_upstreams()
+```
+Kết quả:
+```
+[<apigateway.models.upstream.Upstream object at 0x7f02af3d23d0>, 
+<apigateway.models.upstream.Upstream object at 0x7f02af3151c0>, 
+<apigateway.models.upstream.Upstream object at 0x7f02af315280>, 
+<apigateway.models.upstream.Upstream object at 0x7f02ae843400>,
+<apigateway.models.upstream.Upstream object at 0x7f02ae843520>]
+```
+- Update Upstream:
+```
+from apigateway.clients.client import ApiGatewayClient
+from apigateway.models.upstream import Upstream
+
+upstream_info = Upstream(name='UpdatedUpstream11', description='des232', scheme='http', type='roundrobin', retries=1,
+                     retry_timeout=5,connect_timeout=1, read_timeout=1, send_timeout=1,
+                     host_list={})
+
+client = ApiGatewayClient()
+client.update_upstream('00000000000000000251', upstream_info)
+```
+Ket qua:
+![Screenshot 2023-02-28 at 15-30-58 Upstream - APISIX Dashboard.png](..%2FDownloads%2FScreenshot%202023-02-28%20at%2015-30-58%20Upstream%20-%20APISIX%20Dashboard.png)
+- Tạo Consumer:
+```
+from apigateway.clients.client import ApiGatewayClient
+from apigateway.models.consumer import Consumer
+
+consumer = Consumer(username="ConsumerTest1", plugins={"key-auth": {"key": "viettel123"}})
+
+client = ApiGatewayClient()
+client.create_consumer(consumer)
+```
+Kết quả:
+![Screenshot 2023-02-28 at 15-15-48 Consumer - APISIX Dashboard.png](..%2FDownloads%2FScreenshot%202023-02-28%20at%2015-15-48%20Consumer%20-%20APISIX%20Dashboard.png)
+- List các Consumer:
+```
+from apigateway.clients.client import ApiGatewayClient
+from apigateway.models.consumer import Consumer
+
+client = ApiGatewayClient()
+print(client.list_consumers())
+```
+Kết quả:
+```
+[<apigateway.models.consumer.Consumer object at 0x7efdb3bdf3d0>]
+```
+- Tạo Route:
+```
+
+```
+
