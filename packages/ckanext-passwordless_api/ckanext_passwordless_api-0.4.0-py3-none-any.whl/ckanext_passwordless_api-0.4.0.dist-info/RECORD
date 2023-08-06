@@ -1,0 +1,14 @@
+ckanext/__init__.py,sha256=WGSMBFzEHyOxbc34623FfZroP0Ho6tVQAbegPksZtQE,230
+ckanext/passwordless_api/__init__.py,sha256=OPV571ivSTg46dT3IixHLFtzMBuYskYT-IC6AUg6frE,235
+ckanext/passwordless_api/__version__.py,sha256=sjQfd0e1VgMoRgolbftlhxdVjIBHbOoRa0su-F2xZsk,43
+ckanext/passwordless_api/logic.py,sha256=k5HBmn5hvqOP_5NfTe2x-Ak7IjKhXzOLcnSBOoaTbuw,13017
+ckanext/passwordless_api/mailer.py,sha256=6ECQZG8xnNApCgxcVvyotLdgWofR7eqVqM7jUZMSlJ0,2403
+ckanext/passwordless_api/plugin.py,sha256=2gIowAm0njAnlV5hoV4F0K6h4HFztXfKDZt80cQ9GAM,4955
+ckanext/passwordless_api/templates/reset_key.txt,sha256=vGC3FSK_spNPm8uCqDLC2ZmzM1qYcbv2Gwx8ptx9H-s,488
+ckanext/passwordless_api/templates/welcome_user.txt,sha256=FRg15jDMpcH6vzaTegnDO1z3ndryH96YMaFRfxpCE98,1014
+ckanext/passwordless_api/util.py,sha256=BqNxdiS1NXvdEhyUZckEpRLT_D9U9gAsThKFfrc5AKg,7174
+ckanext_passwordless_api-0.4.0.dist-info/entry_points.txt,sha256=euv3futS0VTZc8lRXtexzfu4wjwBJ3TBzGxqqucMLYw,87
+ckanext_passwordless_api-0.4.0.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+ckanext_passwordless_api-0.4.0.dist-info/METADATA,sha256=Wf7PITmmKsFZDVvP3A5x5G18jNWxWCcR6c2PBNppNcA,6757
+ckanext_passwordless_api-0.4.0.dist-info/licenses/LICENSE,sha256=wKIHRwcqKLhtFUi6th4g2M9o--I3HKhM6vejWXsrsW0,1060
+ckanext_passwordless_api-0.4.0.dist-info/RECORD,,
