@@ -1,0 +1,2 @@
+[console_scripts]
+teleencrypt = teleencrypt.teleencrypt:cli
