@@ -1,0 +1,4 @@
+onvif-zeep
+opencv-python
+mediapipe
+scipy
