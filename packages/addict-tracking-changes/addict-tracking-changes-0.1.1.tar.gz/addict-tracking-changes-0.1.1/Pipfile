@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+addict = {editable = true, path = "."}
+addict-tracking-changes = {editable = true, path = "."}
+
+[dev-packages]
+pytest = "*"
+black = "*"
+hatch = "*"
+flit = "*"
+
+[requires]
+python_version = "3.11"
