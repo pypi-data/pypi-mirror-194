@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+platform_wasm/__init__.py
+platform_wasm.egg-info/PKG-INFO
+platform_wasm.egg-info/SOURCES.txt
+platform_wasm.egg-info/dependency_links.txt
+platform_wasm.egg-info/top_level.txt
+platform_wasm.egg-info/zip-safe
