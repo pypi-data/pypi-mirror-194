@@ -1,0 +1,9 @@
+derivation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+derivation/common.py,sha256=2fPXzBqzVXjUg8SaBLa2-Jb5vKTzZzYe07jGH3JExHs,500
+derivation/constraint.py,sha256=---rJ4Wat8GXuGaIAT1iL3hGGPe2o19wr9YC9JHudRk,5927
+derivation/derivative.py,sha256=xHKzye1YmopZxoqbeL6ApzJK1u-PGoeHTU2Cukq23v8,2937
+derivation/errors.py,sha256=_t_81fbUnrTxj23RDbhUenKLUcOKFjjvJPaN-eiRDVQ,502
+derivation/federation.py,sha256=GVPBEJdlpWfUqymxapAv6YwTSqOK5YWCRbomkMfnAJY,4660
+derivation-0.6.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+derivation-0.6.0.dist-info/METADATA,sha256=afvZ1Uph7NM93PXwy6e5L5_fpkrM7SZDj4rskExp8sY,8146
+derivation-0.6.0.dist-info/RECORD,,
