@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gluesnake
+Version: 0.0.1
+Summary: Funcionalidades Spark para facilitar a criação de jobs Glue na AWS
+Home-page: https://github.com/ThiagoPanini/gluesnake
+Author: Thiago Panini
+Author-email: panini.development@gmail.com
+License: MIT
+Keywords: Cloud,AWS,Python,Spark,pyspark
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.0.0
+Description-Content-Type: text/markdown
+
+<div align="center">
+    <br><img src="https://github.com/ThiagoPanini/cloudgeass/blob/feature/repo-first-organization/docs/assets/imgs/header-readme.png?raw=true" alt="gluesnake-logo">
+</div>
