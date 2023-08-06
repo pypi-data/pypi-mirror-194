@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+sqlanalyticsconnectorpy.egg-info/PKG-INFO
+sqlanalyticsconnectorpy.egg-info/SOURCES.txt
+sqlanalyticsconnectorpy.egg-info/dependency_links.txt
+sqlanalyticsconnectorpy.egg-info/top_level.txt
