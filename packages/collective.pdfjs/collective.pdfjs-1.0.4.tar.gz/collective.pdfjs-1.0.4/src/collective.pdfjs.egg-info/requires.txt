@@ -1,0 +1,6 @@
+setuptools
+Products.CMFPlone
+plone.app.upgrade
+
+[test]
+plone.app.testing

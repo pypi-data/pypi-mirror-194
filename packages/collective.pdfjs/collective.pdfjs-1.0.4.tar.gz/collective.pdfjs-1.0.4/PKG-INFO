@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: collective.pdfjs
+Version: 1.0.4
+Summary: pdf.js integration for Plone
+Home-page: http://pypi.python.org/pypi/collective.pdfjs
+Author: zedr
+Author-email: zedr@zedr.com
+License: GPL
+Keywords: plone zope pdf JavaScript
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Programming Language :: Python
+Classifier: Framework :: Plone :: 6.0
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Provides-Extra: test
+
+collective.pdfjs - Plone integration for Mozilla's JavaScript PDF reader
+========================================================================
+
+
+
+Introduction
+------------
+
+This product adds pdf.js support for Plone.
+
+Pdf.js is a JavaScript library for rendering PDF documents in the canvas,
+without using external plugins; only JavaScript is needed.
+
+.. _PDF.js Repository: https://github.com/mozilla/pdf.js
+.. _collective.pdfjs Repository: https://github.com/collective/collective.pdfjs
+
+This product will make the JavaScript library available as a resource, and
+add a new view for the File content type.
+
+Please note that pdf.js is still under heavy development; as such:
+
+    - a modern browser is required;
+    - not all PDFs may be rendered correctly, or at all;
+
+
+Installation
+------------
+
+Using zc.buildout add ``collective.pdfjs`` to the list of eggs to install::
+
+    [instance]
+    recipe = plone.recipe.zope2instance
+    ...
+    eggs =
+        ...
+        collective.pdfjs
+
+Re-run buildout, e.g. with::
+
+    $ ./bin/buildout
+
+Restart your plone instance and install this addon.
+
+Usage
+-----
+
+If the view detects a PDF file, it will attempt to render it inline using
+pdf.js. If the user browser doesn't have JavaScript enabled, it will embed
+any available PDF reader plugin (Acrobat's, Google Chrome native, etc) instead.
+
+
+Additional information
+----------------------
+
+Currently, the whole document is downloaded and each page rendered
+incrementally inside the canvas. This means that big files on slow connections
+will take a while before displaying; you might want to switch to the standard
+view in this case.
+
+Source Code and Contributions
+=============================
+
+If you want to help with the development (improvement, update, bug-fixing, ...)
+of ``collective.pdfjs`` this is a great idea!
+
+The code is located in the
+`github collective <https://github.com/collective/collective.pdfjs>`_.
+
+You can clone it or `get access to the github-collective
+<http://collective.github.com/>`_ and work directly on the project.
+
+Contributors
+------------
+
+- Rigel Di Scala <zedr@zedr.com> <http://github.com/zedr>
+
+- Marcel
+
+- Jens Klein
+
+- Benjamin Stefaner
+
+- Maik Derstappen <md@derico.de> <http://github.com/MrTango>
+
+Changelog
+=========
+
+1.0.4 (2023-02-27)
+------------------
+
+- Add missing dependency on plone.app.upgrade
+  [MrTango]
+
+
+1.0.3 (2023-02-27)
+------------------
+
+- Depend only on Products.CMFPlone not on Plone package
+  [MrTango]
+
+
+1.0.2 (2022-11-04)
+------------------
+
+- Fix manifest file
+
+
+1.0.1 (2022-11-04)
+------------------
+
+- hide upgrade steps in quickinstaller
+  [MrTango]
+
+
+1.0 (2022-11-04)
+----------------
+
+- Overhaul to the most recent pdfjs release including its recent viewer.js
+  [jensens, benniboy]
+
+- make it compatiple with Plone 6
+  [MrTango]
+
+0.4.2
+-----
+
+- Tests: added a test on availableLayouts
+  This fails because the view is not present,
+  no idea why. Must recheck.
+
+- Added human name for the view, after a suggestion by
+  Marcel
+
+0.4.0
+-----
+
+- Tests: basic code coverage
+- Reasonably minified pdf.js
+
+0.3.6
+-----
+
+- Minified pdf.min.js
+- Tested on Chrome and Firefox
+
+0.2.2
+-----
+
+- Renders the Tracemonkey PDF
+
+
