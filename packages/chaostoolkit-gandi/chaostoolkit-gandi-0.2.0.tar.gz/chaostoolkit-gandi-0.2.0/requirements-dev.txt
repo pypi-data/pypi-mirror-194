@@ -1,0 +1,9 @@
+coverage
+pytest
+pytest-cov
+pytest-sugar
+requests_mock
+pyflakes==2.4.0
+black
+flake8
+isort
