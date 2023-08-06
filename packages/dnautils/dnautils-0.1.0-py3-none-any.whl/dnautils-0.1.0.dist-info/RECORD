@@ -1,0 +1,7 @@
+dna_utils/__init__.py,sha256=KUCFsaZdQwx8AP-3xOQt5sj2SiFhBzsB57Q7gVWi3Kc,41
+dna_utils/__version__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+dna_utils/dna_utils.py,sha256=2Y-J2dcHf269fQ5KLL7kWtLC0B6HnxPSNWfW3QIeaIQ,3901
+dna_utils/mapper.py,sha256=HXYT-NUn1jueZeLxSaTV7iMz9ck9aYgxJgJb8r7Hw1s,2280
+dnautils-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+dnautils-0.1.0.dist-info/METADATA,sha256=uRjAtreub9I6EVK43BWk8brob9gvZu-c_vdfgSFwg1c,1352
+dnautils-0.1.0.dist-info/RECORD,,

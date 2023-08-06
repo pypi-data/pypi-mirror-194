@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dnautils
+Version: 0.1.0
+Summary: 
+Author: Benoitdw
+Author-email: bw@oncodna.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pyfaidx (>=0.7.2.1,<0.8.0.0)
+Requires-Dist: pytest (>=7.2.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+# Genomic References
+OncoDNA library to handle genomic reference directory
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+## Git repository
+origin git@gitlab.oncoworkers.oncodna.com:bioinfo/libraries/dna_utils.git
+
+## Installation
+
+```sh
+pip install 
+--index-url http://devpi.oncoworkers.oncodna.com/root/pypi/+simple
+--extra-index-url http://devpi.oncoworkers.oncodna.com/root/public/+simple
+--trusted-host devpi.oncoworkers.oncodna.com
+
+dna_utils
+```
+
+## Usage
+
+```python
+from dna_utils import DNAUtils
+
+print(DNAUtils.complement("AAG"))
+```
+
+
+## 🛠️ DEV 🛠️
+
+### Environment Setup
+1. First install [poetry](https://python-poetry.org/docs/)
+2. `git clone github repo`
+3. `cd DNAUtils`
+4. `poetry init`
+5. `poetry install --with dev`
+6. `poetry run pre-commit install`
+
+### Before pushing
+* Each new implementation should be unitested. (`poetry run pytest`)
+* Run precommit (`poetry run pre-commit run --all-files`)
