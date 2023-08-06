@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: glass-camb
+Version: 2023.2
+Summary: GLASS module for CAMB interoperability
+Home-page: https://github.com/glass-dev/glass-camb
+Maintainer: Nicolas Tessore
+Maintainer-email: n.tessore@ucl.ac.uk
+License: MIT
+Project-URL: Issues, https://github.com/glass-dev/glass-camb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: camb
+Requires-Dist: glass (>=2023.2)
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+CAMB helper for GLASS
+=====================
+
+This is a small GLASS extension package to compute angular matter power spectrum
+in the GLASS format with CAMB.
