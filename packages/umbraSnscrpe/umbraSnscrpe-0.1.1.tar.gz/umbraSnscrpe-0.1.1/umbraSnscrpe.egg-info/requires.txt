@@ -1,0 +1,7 @@
+beautifulsoup4
+filelock
+lxml
+requests[socks]
+
+[:python_version < "3.9.0"]
+pytz
