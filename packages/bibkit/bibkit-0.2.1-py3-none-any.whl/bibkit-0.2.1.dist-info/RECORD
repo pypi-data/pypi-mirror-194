@@ -1,0 +1,8 @@
+bibkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bibkit/identifiers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bibkit/identifiers/doi.py,sha256=dA2hjfdf8q__AnROErfkOlpV2HQR9I_C9xRM36_jBDo,2791
+bibkit/utils.py,sha256=sbOJm7e1fsfIfS6SiN2zweyWtLHTGiz5A8_WxUVi8dY,536
+bibkit-0.2.1.dist-info/LICENSE,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+bibkit-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bibkit-0.2.1.dist-info/METADATA,sha256=gKTxW9ZyHrpYMyzkRjki6wAic7nUDNO6XATzrvKWv2k,728
+bibkit-0.2.1.dist-info/RECORD,,
