@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: evidence
+Version: 1.0.0
+Summary: Differential analysis of DFXML idifference2.py output
+Home-page: https://github.com/5f0ne/evidence
+Author: 5f0
+License: MIT
+Classifier: Operating System :: OS Independent 
+Classifier: Programming Language :: Python :: 3 
+Classifier: License :: OSI Approved :: MIT License 
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Description
+
+Differential analysis of DFXML idifference2.py output
+
+# Installation
+
+`pip install evidence`
+
+# Usage
+
+**From command line:**
+
+`python -m evidence --path PATH [--output OUTPUT]`
+
+| Option | Short | Type | Default | Description |
+|---|---|---|---|---|
+|--path | -p | String | - | Path to idifference output dir |
+|--output | -o | String | output | Path to result dir |
+
+
+# Example
+
+Given the following files, where the first placeholer describes
+the action and the secon placeholder describes the number of execution.
+
+```
+ge/
+    *.*.idiff
+    noise.idiff
+```
+
+
+`python -m evidence -p path/to/idifference2result`
+
+```
+# The following directories will be created for each run of above command.
+# Note: Content of this directories will be deleted 
+
+output/
+        ce/
+            *.ce
+        me/
+            *.me
+        pe/
+            *.*.pe
+```
+
+
+# License
+
+MIT
