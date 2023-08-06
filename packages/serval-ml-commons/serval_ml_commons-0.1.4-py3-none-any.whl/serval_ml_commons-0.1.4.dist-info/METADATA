@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: serval-ml-commons
+Version: 0.1.4
+Summary: SerVal Machine learning commons is a tools box that ease the development of ML experiments at SerVal.
+Author: Thibault Simonetto
+Author-email: thibault.simonetto.001@student.uni.lu
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: torch
+Requires-Dist: h5py (>=2.0.0)
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: requests (>=2.27)
+Requires-Dist: scikit-learn (>=0.24.0)
+Requires-Dist: torch (>=1.12.1,<1.13.0); extra == "torch"
+Requires-Dist: uuid (>=1.30,<2.0)
