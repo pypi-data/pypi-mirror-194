@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_connection.py,sha256=HTS78EBgy1fcOrLM-W6Z0EvESwMUZYwjHnAlcziinNs,9375
+tests/test_connection_details.py,sha256=EB5GS0J593IdUl7QQlfhyd27Jdb39bO_-ogN9aqt4u8,5995
+tinyproto/__init__.py,sha256=vI4ui8ZNRGDXWIczc0Gzu26Joq-3DXekvFtRf3vLyv8,986
+tinyproto/client.py,sha256=EAQ2cPuu9IKODMB5M9xUxsXWtJCkKCIUT12TCSyT06o,3808
+tinyproto/connection.py,sha256=rEhfUIpM8J8ZyfbdENyjB2vdTaeLdbI7so544rRjvFM,8795
+tinyproto/connection_details.py,sha256=4ZYcVmSQKrx2QS48AY6m0qxDlLXZr5dbcOrcZvQn47w,2149
+tinyproto/errors.py,sha256=npzEF6-hlgwXNvYayY2zOrpTX2UYOWHLtWPGuqXnHdA,780
+tinyproto/plugins.py,sha256=Yp5sK75Pd38s7q43SFSXDxUnLyL3GEz1hEcUbhRV2uo,865
+tinyproto/server.py,sha256=l5WqIlpP8vFfJIaGPdkdU3RnVFS7nEiagduTPoiTB7Y,6926
+tinyproto-3.0.dist-info/METADATA,sha256=n9gy9KPUOVhMzyDbshayXtGr9hHjyQAceXWqi9Y4nD4,5759
+tinyproto-3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tinyproto-3.0.dist-info/top_level.txt,sha256=UMyxBb5wk7I5V6SeXryZ5ivXejbn_jwzk-ywVibkav8,16
+tinyproto-3.0.dist-info/RECORD,,
