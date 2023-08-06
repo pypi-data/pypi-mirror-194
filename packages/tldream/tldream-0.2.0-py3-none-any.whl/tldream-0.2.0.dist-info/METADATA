@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: tldream
+Version: 0.2.0
+Summary: A tiny little diffusion drawing app
+Home-page: https://github.com/Sanster/tldream
+Author: PanicByte
+Author-email: cwq1913@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.12.1)
+Requires-Dist: albumentations (==1.3.0)
+Requires-Dist: opencv-contrib-python
+Requires-Dist: pytorch-lightning (==1.5.0)
+Requires-Dist: omegaconf (==2.1.1)
+Requires-Dist: einops (==0.3.0)
+Requires-Dist: transformers (>=4.19.2)
+Requires-Dist: addict (==2.4.0)
+Requires-Dist: yapf (==0.32.0)
+Requires-Dist: fastapi[all]
+Requires-Dist: python-multipart
+Requires-Dist: typer
+Requires-Dist: rich
+Requires-Dist: loguru
+Requires-Dist: python-socketio
+Requires-Dist: safetensors
+
+<h1 align="center">tldream</h1>
+<p align="center">A tiny little diffusion drawing app</p>
+
+<p align="center">
+  <a href="https://github.com/Sanster/tldream">
+    <img alt="total download" src="https://pepy.tech/badge/tldream" />
+  </a>
+  <a href="https://pypi.org/project/tldream/">
+    <img alt="version" src="https://img.shields.io/pypi/v/tldream" />
+  </a>
+</p>
+
+![A screenshot of the tldream web app](https://github.com/Sanster/tldream-frontend/blob/tldream/assets/tldream.png)
+
+### Quick Start
+
+```bash
+pip install tldream
+tldream --device cuda
+```
+
+### Command line arguments
+
+```bash
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --listen       --no-listen                     If true, start server at 0.0.0.0 [default: no-listen] │
+│ --port                          INTEGER        [default: 4242]                                       │
+│ --device                        TEXT           Device to use (cuda, cpu or mps) [default: cuda]      │
+│ --model                         TEXT           Local path to model or model download link or model   │
+│                                                name(sd15, any3)                                      │
+│                                                [default: sd15]                                       │
+│ --low-vram     --no-low-vram                   Use low vram mode [default: low-vram]                 │
+│ --no-half      --no-no-half                    Not use float16 mode [default: no-no-half]            │
+│ --model-dir                     PATH           Directory to store models [default: ./models]         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+
