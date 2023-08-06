@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "neoclient"
+version = "0.1.17"
+description = "Fast API Clients for Python"
+authors = ["Tom Bulled <26026015+tombulled@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/tombulled/neoclient"
+repository = "https://github.com/tombulled/neoclient"
+keywords = ["python", "api", "http", "client", "json", "framework", "web", "rest"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typing-extensions = "^4.3.0"
+httpx = "^0.23.0"
+mediate = "^0.1.7"
+pydantic = "^1.10.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.2"
+mypy = "^0.982"
+black = "^22.6.0"
+isort = "^5.10.1"
+
+[tool.poetry.group.examples.dependencies]
+fastapi = "^0.86.0"
+uvicorn = "^0.19.0"
+rich = "^12.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+check_untyped_defs = true
+ignore_missing_imports = true
+show_error_codes = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+exclude = [
+    "examples/",
+    "tests/",
+]
+
+[tool.pytest.ini_options]
+testpaths = "tests"
