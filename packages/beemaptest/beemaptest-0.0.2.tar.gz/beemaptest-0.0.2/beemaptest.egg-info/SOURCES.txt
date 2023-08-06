@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+beemaptest/__init__.py
+beemaptest/beemaptest.py
+beemaptest.egg-info/PKG-INFO
+beemaptest.egg-info/SOURCES.txt
+beemaptest.egg-info/dependency_links.txt
+beemaptest.egg-info/not-zip-safe
+beemaptest.egg-info/top_level.txt
