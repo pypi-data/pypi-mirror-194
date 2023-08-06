@@ -1,0 +1,3 @@
+[console_scripts]
+nip05er = bleetube_nip05er.nip05er:cli
+reports = bleetube_nip05er.reports:cli
