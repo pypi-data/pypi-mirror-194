@@ -1,0 +1,1 @@
+habbo extension interface for Python
