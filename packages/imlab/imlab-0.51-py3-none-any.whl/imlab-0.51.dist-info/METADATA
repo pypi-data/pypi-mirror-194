@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: imlab
+Version: 0.51
+Summary: Image machine learning helper
+Author: Thomas Portier
+License-File: LICENSE.md
+Requires-Dist: numpy (>=1.19.4)
+Requires-Dist: tensorflow
+Requires-Dist: torch
+Requires-Dist: torchvision
+
