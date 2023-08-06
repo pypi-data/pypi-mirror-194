@@ -1,0 +1,4 @@
+[console_scripts]
+stochss-compute = stochss_compute.launch:launch_server
+stochss-compute-cluster = stochss_compute.launch:launch_with_cluster
+
