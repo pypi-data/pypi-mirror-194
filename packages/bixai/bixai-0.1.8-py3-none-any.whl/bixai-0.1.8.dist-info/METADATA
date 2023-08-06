@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: bixai
+Version: 0.1.8
+Summary: Package that helps you make some machine learning models easier to understand
+Home-page: UNKNOWN
+Author: Simon Teggelaar
+Author-email: simonteggelaar@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: plotly
+Requires-Dist: statsmodels
+Requires-Dist: tqdm
+Requires-Dist: xgboost
+Requires-Dist: scikit-learn
+
+# `bixai`
+
+The `bixai` is a package made for NLO to make an attempt at understanding drivers behind models
+
+It contains multiple modules to analyse different problems:
+1. Decomposition for logistic regressions over time
+2. Multinomial logistic regression with impact of variables 
+3. Visualize a decision tree
+4. Time-series forecasting with regressions and random forest
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install bixai.
+
+```bash
+pip install bixai
+```
+
+## Usage Decomposition for logistic regressions over time
+
+```python
+
+# import modules
+from bixai.generate_example_data import GenerateData
+from bixai.creating_dataset import CreatingDataSet
+from bixai.logistic_regression_decomp import LogisticDecomposition
+from random import randint
+from sklearn.linear_model import LogisticRegression
+import plotly.io as pio
+pio.renderers.default = 'browser'
+
+# Generate data
+example_data = GenerateData(10000)
+df_example = example_data.generate_dataset()
+
+# Using CreatingDataSet to clean the data
+getting_data = CreatingDataSet(df_example, {})
+
+# The sample size you want from the data and the variables (X and y) to be used
+subset_size = 5000 
+X_vars = ['percentage_gelezen_mails', 'geslacht', 'leeftijd', 'maanden_lid', 'kanaal_instroom', 'actie_instroom',
+          'contact_vorm']
+y = 'churn'
+
+# Create the test/train
+X_train, X_test, y_train, y_test = getting_data.get_train_test(y, X_vars, divided_by_max=False, scale_data=True,
+                                                               add_random_int=False, add_random_cont=False, set_seed=2,
+                                                               size=subset_size, test_size=0.25, random_state=12,
+                                                               with_mean=True, with_std=True)
+
+# Logistic Regression Model
+model_churn = LogisticRegression().fit(X_train, y_train)
+
+# Add a random variable to split on for this example (this should come from own data)
+split_var = [randint(2018, 2022) for p in range(0, len(X_train))] 
+vars_to_show = []
+model_decomp = LogisticDecomposition(model_churn)
+decomposition_results = model_decomp.decomposition_logistic(X_train, split_var=split_var, plot=True, y=[],
+                                                             X_vars_to_show=vars_to_show,
+                                                             scaling_to_mean_odds_model=True,
+                                                             scaling_to_actual_odds=False)
+
+```
+
+## Usage Multinomial Logistic Regression
+```python
+from bixai.generate_example_data import GenerateData
+from bixai.creating_dataset import CreatingDataSet
+from bixai.ml_models import Models, EvaluateModels
+import plotly.io as pio
+pio.renderers.default = 'browser'
+
+# Generate data
+example_data = GenerateData(10000)
+df_example = example_data.generate_dataset()
+
+# Select what and how much data we wanna use
+getting_data = CreatingDataSet(df_example, {})
+subset_size = 10000
+# Selection of variables we wanna use in the model:
+X_vars = ['percentage_gelezen_mails', 'geslacht', 'leeftijd', 'maanden_lid', 'kanaal_instroom', 'actie_instroom',
+          'contact_vorm']
+# The variable we wanna explain:
+y = 'tweede_merk_keuze_stl_spelers'
+# Get train/test datasets
+X_train, X_test, y_train, y_test = getting_data.get_train_test(y, X_vars, divided_by_max=False, scale_data=True,
+                                                               add_random_int=False, add_random_cont=False, set_seed=2,
+                                                               size=subset_size, test_size=0.25, random_state=12,
+                                                               with_mean=True, with_std=True)
+# Multinomial Logistic Regression Model
+model = Models(X_train, y_train)
+model_mvl = model.multivariate_logistic_regression()
+
+# Get the accuracy of the model
+evalueren_model = EvaluateModels(X_train, X_test, y_train, y_test)
+evalueren_model.accuracy_models([model_mvl])
+
+# Visualize the probabilities of the model
+evalueren_model.visualize_probabilities_mvlogit(model_mvl, bin_size=0.01).show()
+
+# Visualize the impact of each variable on a brand, merken_x_as=True gives the brands on the x_as, False the y_as
+evalueren_model.visualize_impact_variables(model_mvl, merken_x_as=False).show()
+
+```
+
+## License
+
+Copyright (c) 2023 Rumiko
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+
