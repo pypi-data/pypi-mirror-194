@@ -1,0 +1,12 @@
+capsolver/__init__.py,sha256=JgkDEfPZVKzvjNrjimfvHtoWzG7dYLs8BSNylPo4BPQ,791
+capsolver/__main__.py,sha256=-eGJdfX04-cN3uDLnhgzBQvYCSq4IhYuP0onhR_uc4g,16
+capsolver/api_requestor.py,sha256=bB-a8U4-ANaiDm7ild3f2uFoFFNpS386C8nZ_uhdrUo,5510
+capsolver/capsolver.py,sha256=LA-f01qlhi-d7eI3AV5kO1OH87KouxlaP01NS5H_ipc,1710
+capsolver/capsolver_object.py,sha256=D4pxDpoyWwI-BhxBf8Bp2s4OTSxM4EECA-Z28xLLeIM,3236
+capsolver/error.py,sha256=DFvbmG32p5CC784AtHuqlC93Fsk_7_3iN9jVDjWdbK0,928
+capsolver-1.0.0.dist-info/LICENSE,sha256=bBkavjEXti1M3U6b9A2KZRQls9X4qBA0wCUV9brFSz4,1075
+capsolver-1.0.0.dist-info/LICENSE.rst,sha256=GZwDWrRTigcgRjIlHL6rPzu99uIjPPVaSei-GsyyYkU,1073
+capsolver-1.0.0.dist-info/METADATA,sha256=Ca_asyP3EYKPPOyx1RW_AbVvj-7fjXY_joxtWLkrujw,2072
+capsolver-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+capsolver-1.0.0.dist-info/top_level.txt,sha256=o1TagzRYYLwjrj4pbNKSPe1pdJVM_aMO8iOtB41dRFQ,10
+capsolver-1.0.0.dist-info/RECORD,,
