@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+marathon_envs.egg-info/PKG-INFO
+marathon_envs.egg-info/SOURCES.txt
+marathon_envs.egg-info/dependency_links.txt
+marathon_envs.egg-info/not-zip-safe
+marathon_envs.egg-info/top_level.txt
