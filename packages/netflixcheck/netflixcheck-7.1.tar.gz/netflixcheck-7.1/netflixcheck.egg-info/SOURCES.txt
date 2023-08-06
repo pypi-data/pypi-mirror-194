@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+netflixcheck/__init__.py
+netflixcheck/figlets_file.py
+netflixcheck.egg-info/PKG-INFO
+netflixcheck.egg-info/SOURCES.txt
+netflixcheck.egg-info/dependency_links.txt
+netflixcheck.egg-info/requires.txt
+netflixcheck.egg-info/top_level.txt
