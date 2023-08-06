@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ndy-cli
+Version: 0.1.0
+Summary: A To-Do List application featuring natural language support.
+Home-page: https://github.com/neomoon007/ndy-cli
+Author: neomoon007 (Marcos Costa)
+Author-email: costamarcos404@gmail.com
+License: UNKNOWN
+Description: # NutDoneYet-CLI
+        NutDoneYet-CLI is a task management tool that allows you to easily manage your to-do list from the command line. It is currently under development and does not have any functionality at the moment.
+        
+        <img alt="GitHub" src="https://img.shields.io/github/license/neomoon007/ndy-cli">
+        
+        ## Features
+        NutDoneYet-CLI will include the following features:
+        
+        * Natural language support for date input
+        * Labels for categorizing tasks
+        * Projects for organizing related tasks
+        * Sub-tasks for breaking down larger tasks into smaller ones
+        
+        ## Getting Started
+        At the moment, there is no functionality available in NutDoneYet-CLI. Stay tuned for updates as development progresses.
+        
+        ## Contributing
+        Contributions to NutDoneYet-CLI are welcome! If you'd like to contribute, please submit a pull request.
+        
+        ## License
+        NutDoneYet-CLI is licensed under the [MIT License](LICENSE).
+        
+Keywords: python,cli,todolist
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
