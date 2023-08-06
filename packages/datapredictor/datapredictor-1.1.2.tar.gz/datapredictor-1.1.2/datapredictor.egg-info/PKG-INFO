@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: datapredictor
+Version: 1.1.2
+Summary: This packet is predict data!
+Home-page: 
+Author: Umidyor
+Author-email: umidyor007@hmail.com
+License: MIT
+Keywords: data predict
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+First, check out the documentation on how this package works:
+
+https://medium.com/@actualnew001/my-data-predictor-python-packet-a99b12395dfc
+
+
+Change Log
+==========
+
+0.0.1 (26/02/2023)
+-------------------
+- Second Release
