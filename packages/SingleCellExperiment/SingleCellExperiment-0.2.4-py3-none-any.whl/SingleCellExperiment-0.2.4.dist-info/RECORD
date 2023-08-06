@@ -1,0 +1,10 @@
+singlecellexperiment/SingleCellExperiment.py,sha256=4v7RcNqN3sg-Rl0ypgyh4Fz-cuc9OyO6Qz1XkZ87pOY,16448
+singlecellexperiment/__init__.py,sha256=M0lf2CeCInkr-t4F5JeHIRnhTT1uWzffs2wbuVrW6s4,786
+singlecellexperiment/io/__init__.py,sha256=YbsmJ6RfVVpjxC34X0nAyxMYfjnSTzQPzl-sAqQ5ps8,82
+singlecellexperiment/io/anndata.py,sha256=jOzXFHpAcocB1wuHeTWvr5ZMxg0oq4LcLi0SluQX8J0,1145
+singlecellexperiment/io/tenx.py,sha256=y-5XGgt-vJofuY5UBfnxaLPEQs2bv1G0I8n-VBbsVt8,2154
+SingleCellExperiment-0.2.4.dist-info/LICENSE.txt,sha256=pkwgQ8WMTR1-Qa0qwIaBf5I1-8OGN1B20E_eeDg-bqc,1082
+SingleCellExperiment-0.2.4.dist-info/METADATA,sha256=ljO1KZjqj76qxEhNYdvol74QZhvC_Hi5r1lIAbrrG0w,2029
+SingleCellExperiment-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+SingleCellExperiment-0.2.4.dist-info/top_level.txt,sha256=z7r7iD9iq5gSYLft8QIBKCE9uGMFEdbkqqqMMYB53Rk,21
+SingleCellExperiment-0.2.4.dist-info/RECORD,,
