@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+    "setuptools>=54",
+    "wheel",
+    "Jinja2",
+    "openpyxl"
+]
+build-backend = "setuptools.build_meta"
