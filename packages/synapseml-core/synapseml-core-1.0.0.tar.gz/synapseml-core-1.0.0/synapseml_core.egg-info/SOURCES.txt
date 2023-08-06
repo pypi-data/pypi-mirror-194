@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+synapseml_core.egg-info/PKG-INFO
+synapseml_core.egg-info/SOURCES.txt
+synapseml_core.egg-info/dependency_links.txt
+synapseml_core.egg-info/top_level.txt
