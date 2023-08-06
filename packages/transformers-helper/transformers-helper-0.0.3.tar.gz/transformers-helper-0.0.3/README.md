@@ -1,0 +1,66 @@
+Supported models 
+
+<pre>
+import transformers_helper
+
+#ANN
+transformers_helper.models.ANNConfig
+transformers_helper.models.ANNForTabularRegression
+transformers_helper.models.AnnForTabularBinaryClassification
+transformers_helper.models.AnnForTabularClassification
+transformers_helper.models.TabularFeatureExtractor
+
+#CNN
+transformers_helper.models.CNNConfig
+transformers_helper.models.CNNForImageClassification
+transformers_helper.models.GrayscaleImageProcessor
+transformers_helper.models.CNNForKeyPointDetection
+
+#RNN
+transformers_helper.models.RNNConfig
+transformers_helper.models.RNNForAudioClassification
+transformers_helper.models.RNNForTimeSeriesRegression
+
+#Embedded RNN
+transformers_helper.models.EmbeddedRNNConfig
+transformers_helper.models.EmbeddedRNNForSequenceClassification
+transformers_helper.models.EmbeddedRNNForFixedLengthTranslation
+transformers_helper.models.PretrainedEmbeddedRNNForSequenceClassification
+transformers_helper.models.TorchtextTokenizer
+
+#Embedded 1DCNN
+transformers_helper.models.Embedded1DCNNConfig
+transformers_helper.models.Embedded1DCNNForSequenceClassification
+
+#Faster RCNN
+transformers_helper.models.FasterRCNNConfig
+transformers_helper.models.FasterRCNNForObjectDetection
+transformers_helper.models.FasterRCNNImageProcessor
+</pre>
+
+<pre>
+import transformers_helper
+
+#Custom Bert
+transformers_helper.models.CustomBertConfig
+transformers_helper.models.CustomBertForSequenceClassification
+
+#Custom Wav2Vec2
+transformers_helper.models.CustomWav2Vec2FeatureExtractor
+</pre>
+
+Supported pipelines
+
+<pre>
+import transformers_helper
+
+transformers_helper.pipelines.FixedLengthTranslationPipeline
+transformers_helper.pipelines.TabularBinaryClassificationPipeline
+transformers_helper.pipelines.TabularClassificationPipeline
+transformers_helper.pipelines.TabularRegressionPipeline
+</pre>
+<pre>
+import transformers_helper
+
+transformers_helper.pipelines.CustomImageClassificationPipeline
+</pre>
