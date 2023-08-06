@@ -1,0 +1,14 @@
+README.md
+setup.py
+steal/__init__.py
+steal/ast.py
+steal/cli.py
+steal/langspec.json
+steal/langspec.py
+steal/scanner.py
+steal.egg-info/PKG-INFO
+steal.egg-info/SOURCES.txt
+steal.egg-info/dependency_links.txt
+steal.egg-info/entry_points.txt
+steal.egg-info/requires.txt
+steal.egg-info/top_level.txt
