@@ -1,0 +1,2 @@
+[console_scripts]
+borg2mqtt = borg2mqtt:run_borg2mqtt

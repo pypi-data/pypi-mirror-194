@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/borg2mqtt/__init__.py
+src/borg2mqtt/actions.py
+src/borg2mqtt/const.py
+src/borg2mqtt/repo.py
+src/borg2mqtt.egg-info/PKG-INFO
+src/borg2mqtt.egg-info/SOURCES.txt
+src/borg2mqtt.egg-info/dependency_links.txt
+src/borg2mqtt.egg-info/entry_points.txt
+src/borg2mqtt.egg-info/requires.txt
+src/borg2mqtt.egg-info/top_level.txt

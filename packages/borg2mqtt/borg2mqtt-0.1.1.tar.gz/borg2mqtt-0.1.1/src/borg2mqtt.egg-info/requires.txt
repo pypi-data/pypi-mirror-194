@@ -1,0 +1,11 @@
+paho-mqtt
+platformdirs
+python-slugify
+pyyaml
+
+[dev]
+check-manifest
+pre-commit
+
+[test]
+pytest
