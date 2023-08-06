@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: commonroad-crime
+Version: 0.0.3
+Summary: criticality measures of automated vehicles
+Author: yuanfei Lin
+Author-email: yuanfei.lin@tum.de
+License: GPLv3
+Keywords: criticality,autonomous driving
+Provides-Extra: tests
+License-File: LICENSE
