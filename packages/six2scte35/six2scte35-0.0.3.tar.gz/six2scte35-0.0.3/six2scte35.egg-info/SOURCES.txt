@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+six2scte35.py
+bin/six2scte35
+six2scte35.egg-info/PKG-INFO
+six2scte35.egg-info/SOURCES.txt
+six2scte35.egg-info/dependency_links.txt
+six2scte35.egg-info/requires.txt
+six2scte35.egg-info/top_level.txt
