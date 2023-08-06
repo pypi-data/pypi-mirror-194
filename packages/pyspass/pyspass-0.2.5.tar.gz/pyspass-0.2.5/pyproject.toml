@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "twine"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyspass"
+authors = [
+    { name = "Stefan Seltmann", email = "s.seltmann06@web.de" },
+]
+description = "Python Single Page Applications HTML"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version", "readme"]
+
+[tool.setuptools]
+packages = ["pyspass"]
+
+[tool.setuptools.dynamic]
+version = { attr = "pyspass.__version__" }
+readme = { file = ["README.rst"] }
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pylint]
+disable = "C0103, C0114, C0115, C0116, R0903"
+max-line-length = 120
+ignore-patterns = "tests*"
+max-args = 10
+
+[tools.flake8]
+max-line-length = 120
