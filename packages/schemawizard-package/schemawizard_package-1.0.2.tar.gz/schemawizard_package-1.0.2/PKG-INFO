@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: schemawizard_package
+Version: 1.0.2
+Summary: Reads a csv and generates a table design for Postgres, MySQL or BigQuery
+Project-URL: Homepage, https://github.com/daveskura/postgresdave
+Project-URL: Author Linkedin, https://www.linkedin.com/in/2166883
+Author-email: Dave Skura <dskura@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# schemawizard
