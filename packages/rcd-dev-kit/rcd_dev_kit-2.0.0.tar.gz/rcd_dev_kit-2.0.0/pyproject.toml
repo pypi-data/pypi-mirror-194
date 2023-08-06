@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "rcd-dev-kit"
+version = "2.0.0"
+description = "Interact with OIP ecosystem."
+authors = ["Davi FACANHA", "Yu LE VERN"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'Programming Language :: Python :: 3.8',
+]
+homepage = "https://github.com/OpenInnovationProgram/rcd-dev-kit"
+repository = "https://github.com/OpenInnovationProgram/rcd-dev-kit"
+exclude = ["src/rcd_dev_kit/main.py",
+        "src/rcd_dev_kit/migrate_sf_data.py",
+        "src/rcd_dev_kit/Untitled.ipynb",
+        "src/rcd_dev_kit/.ipynb_checkpoints",
+        "src/rcd_dev_kit/migrate_big_data.py",
+        "src/rcd_dev_kit/list_wrong_tables.py",
+        "src/rcd_dev_kit/datawarehouse_quality_report.txt"]
+
+[tool.poetry.dependencies] # requirements.txt
+python = "^3.8"
+boto3 = "^1.22.7"
+numpy = "^1.22.3"
+pandas = "^1.4.2"
+botocore = "^1.25.7"
+sqlalchemy-redshift = "^0.8.11"
+sqlalchemy = "^1.4"
+psycopg2-binary = "^2.9.3"
+snowflake-connector-python = {extras = ["pandas"], version = "2.7.9"}
+sqlparse = "^0.4.2"
+elasticsearch = ">=7.0.0,<8.0.0"
+python-dotenv = "^0.20.0"
+connectorx = "^0.3.0"
+py-markdown-table = "^0.3.3"
+tqdm = "^4.64.1"
+statsmodels = "^0.13.2"
+scikit-learn = "^1.1.2"
+pyspark = "^3.0.0"
+#snowflake-sqlalchemy = "^1.4.0"
+
+google = { version = "^3.0.0", optional = true }
+google-api-python-client = { version = "^2.47.0", optional = true }
+google-cloud-storage = { version = "^2.3.0", optional = true }
+googletrans = { version = "3.0.0", optional = true }
+#google-cloud = { version = "^0.34.0", optional = true }
+
+dagster = { version = "^1.0.16", optional = true }
+dagit = { version = "^1.0.16", optional = true }
+dagster-postgres = { version = "0.16.16", optional = true }
+dagster-k8s =  { version = "0.16.16", optional = true }
+requests = { version = "^2.28.1", optional = true }
+
+Sphinx = { version = "^5.2.3", optional = true }
+sphinx-rtd-theme = { version = "1.0.0", optional = true }
+sphinxcontrib-napoleon = { version = "0.7", optional = true }
+myst-nb = {version = "^0.17.1", python = "^3.8", optional = true }
+sphinx-autoapi = { version = "^2.0.0", optional = true }
+
+pytest = { version = "^7.1", optional = true }
+pytest-cov = { version = "^3.0.0", optional = true }
+
+[tool.poetry.extras]
+google = ["google", "google-api-python-client", "google-cloud-storage", "googletrans"]
+dagster = ["dagster", "dagit", "dagster-postgres", "dagster-k8s", "requests"]
+py_test = ["pytest", "pytest-cov"]
+docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon", "sphinx-autoapi", "myst-nb"]
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version" # version location
+branch = "main"                             # branch to make releases of
+changelog_file = "CHANGELOG.md"             # changelog file
+build_command = "poetry build"              # build dists
+dist_path = "dist/"                         # where to put dists
+upload_to_release = true                    # auto-create GitHub release
+upload_to_pypi = false                      # don't auto-upload to PyPI
+remove_dist = false                         # don't remove dists
+patch_without_tag = true                    # patch release by default
+
+[tool.pytest.ini_options] # Pytest Init Configs
+addopts = "-p no:warnings"
+
+[build-system] # setuptools
+requires = ["setuptools>=42", "wheel", "poetry-core>=1.0.0"] 
+build-backend = "poetry.core.masonry.api"
