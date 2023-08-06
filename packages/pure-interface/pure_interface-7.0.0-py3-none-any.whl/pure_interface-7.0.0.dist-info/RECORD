@@ -1,0 +1,11 @@
+pure_interface/__init__.py,sha256=gCDsZ0Ql7wmlMZgqzNhVLuRnE18EVx8aSl52jbjiYu8,617
+pure_interface/adaption.py,sha256=PCl0HQ3sDE1XsdzJ2pBzJptYj2_v_tUtiqQa6JdgIk8,7884
+pure_interface/data_classes.py,sha256=tUzaR32JjGEFtZjLcUYiBg4wTNe0ThksH9PqRBiyCTc,2167
+pure_interface/delegation.py,sha256=FGAHt4hu6wwgMRZyrKTdr8UJDb4UhNQm80XwclgJphU,7720
+pure_interface/errors.py,sha256=XyDuGiot7IpfqaUSA0K_tKQpDfctY84pLvCnUuDpsv0,372
+pure_interface/interface.py,sha256=ffhtFsv52TNFewITDm_yU29SQd_VMATWqZ-9wexRAoc,33894
+pure_interface-7.0.0.dist-info/LICENSE,sha256=sJ5e4j4lDNdU1ipp2tiPIQgZ_RQughGCgyeaPN53A38,1070
+pure_interface-7.0.0.dist-info/METADATA,sha256=bvHoh26lJCptWmb-RnP_0EisK9zZnMTw6QpUUGj-_WU,33881
+pure_interface-7.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pure_interface-7.0.0.dist-info/top_level.txt,sha256=sBKv5vbVvXSiBU6VEfJL7Q1bRMSeQZUMozSFsvdzuyU,15
+pure_interface-7.0.0.dist-info/RECORD,,
