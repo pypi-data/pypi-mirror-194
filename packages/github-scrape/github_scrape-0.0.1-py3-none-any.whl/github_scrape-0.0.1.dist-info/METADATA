@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: github-scrape
+Version: 0.0.1
+Summary: A program to scrape github followers
+Home-page: https://github.com/akinyeleib/github-followers-scrape
+Author: Akinyele Ibrahim
+Author-email: iakinyele3@gmail.com
+License: MIT
+Keywords: Github,scrape,check followers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: requests
+
