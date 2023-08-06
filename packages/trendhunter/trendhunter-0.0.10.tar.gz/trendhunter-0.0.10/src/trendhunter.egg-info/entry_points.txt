@@ -1,0 +1,2 @@
+[console_scripts]
+trendhunter = trendhunter.bin.console:cli
