@@ -1,0 +1,2 @@
+class TextGridError(Exception):
+    pass
