@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: imgsteg
+Version: 1.0.2
+Summary: python library for image steganography. used to encrypt and decrypt text message inside an image
+Home-page: https://sujaid.pythonanywhere.com
+Author-email: sujaidsujaid1162@gmail.com
+License: MTL
+Keywords: image steganography,steganography,image,sujaid
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: Pillow
+
+This is a python library for image steganography. Using this library user can encrypt and decrypt text message inside an image.
+
+# How to use this package
+
+# need to install package
+
+>>pip install imgsteg
+
+In .py file
+
+>>import imgsteg
+
+create object
+
+>>obj = imgsteg
+
+How encryption work
+
+>>image = "name and path of the image including extension"  #image = "car.png"
+>>new_image = "new.png"
+>>message = "your message that want to encrypt"
+>>obj.Encrypt(image, message, new_image)
+
+How decryption work
+
+>>image = "name and path of the image including extension"  #image = "car.png"
+>>data = obj.Decrypt(image)
+>>print(data.message)
