@@ -1,0 +1,2 @@
+[console_scripts]
+artitle = src.main:main

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+artitle.egg-info/PKG-INFO
+artitle.egg-info/SOURCES.txt
+artitle.egg-info/dependency_links.txt
+artitle.egg-info/entry_points.txt
+artitle.egg-info/requires.txt
+artitle.egg-info/top_level.txt
+src/__init__.py
+src/client.py
+src/config.json
+src/grobid_client.py
+src/main.py
