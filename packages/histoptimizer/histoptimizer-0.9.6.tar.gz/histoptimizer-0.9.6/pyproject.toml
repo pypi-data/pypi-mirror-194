@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "histoptimizer"
+version = "0.9.6"
+description = "A library for creating even partitions of ordered items."
+authors = ["Kelly Joyner <de@lusion.org>"]
+license = "BSD 0-Clause License"
+readme = "README.md"
+homepage = "https://histoptimizer.org/"
+repository = "https://github.com/delusionary/histoptimizer"
+documentation = "https://histoptimizer.org/"
+keywords = ["cuda", "numba", "dynamic programming", "partition"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: BSD License",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8"
+numba = "^0.56"
+numpy = "^1"
+pandas = "^1.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pytest-cov = "^4"
+
+[tool.poetry.scripts]
+histoptimizer = "histoptimizer.cli:cli"
+histobench = "histoptimizer.benchmark:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
