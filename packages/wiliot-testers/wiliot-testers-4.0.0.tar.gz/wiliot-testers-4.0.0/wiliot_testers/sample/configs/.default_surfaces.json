@@ -1,0 +1,7 @@
+{
+  "EmulateSurface":{
+    "simulate cardboard":  915000,
+    "simulated RPC":  915000,
+    "no simulation": 915000
+  }
+}
