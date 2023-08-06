@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ngspicehlp"
+version = "0.0.1"
+authors = [{ name = "Mark Chadwick", email = "mark.chadwick@techsharpen.com" }]
+description = "ngspice helper"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT License" }
+keywords = ["ngspice", "spice", "simulation"]
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.urls]
+repository = "https://github.com/astorguy/ngspicehlp_project"
