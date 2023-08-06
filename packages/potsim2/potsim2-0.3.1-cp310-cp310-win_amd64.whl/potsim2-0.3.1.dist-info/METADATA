@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: potsim2
+Version: 0.3.1
+Home-page: https://github.com/chembl/potsim2
+Author: Eloy Felix
+Author-email: eloyfelix@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: MDAnalysis (>=2.3.0)
+Requires-Dist: GridDataFormats (>=1.0.1)
+
+# PotSim2: Simple package to segment and compare protein potential grids
+
+Using [gridDataFormats](https://github.com/MDAnalysis/GridDataFormats) to read the grids and [MDAnalysis](https://www.mdanalysis.org/) to make pdb atom selections
+
+## Installation
+
+It requires [pybind11](https://github.com/pybind/pybind11) to compile the C++ extension
+
+```bash
+pip install pybind11
+git clone https://github.com/chembl/potsim2.git
+pip install potsim2/
+```
+
+## Usage: Open two grids and calculate [PIPSA](https://pipsa.h-its.org/pipsa/) like scores
+
+The protein electrostatic potential grids can generated with [APBS](https://github.com/Electrostatics/apbs)
+
+```python
+from potsim2 import PotGrid
+
+# read grids
+grid1 = PotGrid('A__02_01.pdb', 'A__02_01.pkl')
+grid2 = PotGrid('A__11_01.pdb', 'A__11_01.pkl')
+
+# calculate skin for grid1 
+skin_mask1 = grid1.get_skin_mask()
+grid1.apply_mask(skin_mask1)
+
+# calculate skin for grid2 
+skin_mask2 = grid2.get_skin_mask()
+grid2.apply_mask(skin_mask2)
+
+# calc the Hodgkin similarity index and PIPSA like distance 
+hsi, dis = grid1.score(grid2)
+
+# export the skins in uncompressed OpenDX format to be visualized in PyMol/ChimeraX
+grid1.export('A__02_01.dx')
+grid2.export('A__11_01.dx')
+```
