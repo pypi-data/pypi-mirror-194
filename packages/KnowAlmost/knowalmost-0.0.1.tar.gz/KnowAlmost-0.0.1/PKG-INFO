@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: KnowAlmost
+Version: 0.0.1
+Summary: KnowAlmost is a package that encapsulates the KnowAlmost api. I often use it in competitions and work. More skills are on the way!
+Home-page: UNKNOWN
+Author: W·Wen
+Author-email: 23626319@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Know Almost
+
+KnowAlmost is a package that encapsulates the KnowAlmost api. I often use it in competitions and work. More skills are on the way!
+
+
