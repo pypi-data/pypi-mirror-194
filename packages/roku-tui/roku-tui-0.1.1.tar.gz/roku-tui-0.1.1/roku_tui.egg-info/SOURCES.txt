@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+roku_tui.py
+setup.py
+roku_tui.egg-info/PKG-INFO
+roku_tui.egg-info/SOURCES.txt
+roku_tui.egg-info/dependency_links.txt
+roku_tui.egg-info/entry_points.txt
+roku_tui.egg-info/top_level.txt

@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: roku-tui
+Version: 0.1.1
+Summary: A TUI remote for Roku
+Home-page: https://github.com/winsbe01/roku-tui
+Author: Ben Winston
+Author-email: ben@benwinston.us
+Project-URL: Source, https://github.com/winsbe01/roku-tui
+Keywords: roku,remote,tui,cli
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# roku-tui
+a command line TUI remote for Roku
+
+## install and run
+`me@computer ~$ python3 -m pip install roku-tui`
+`me@computer ~$ roku-tui`
+
+## basic usage
+Keys on the left map to standard Roku remote buttons on the right
+* `h` -> Home
+* `b` -> Back
+* `p` -> Play/Pause
+* `r` -> Replay
+* `*` -> Options (star key)
+* arrow keys -> navigation
+* `ENTER` -> OK
+* `<` -> Rewind
+* `>` -> Fast-Forward
+
+For help inside the application, type '?'.
+To quit the application, type `q`.
+
+## typing mode
+In some instances, you may need to type something into a Roku screen 
+(when searching or logging into a service, for example). This can be 
+incredibly cumbersome using the standard navigation.
+
+To enter typing mode, press `/`, and you will see a cursor appear below 
+the remote. At this point, all alphanumeric keys (and backspace) will 
+be interpreted literally and sent to the Roku.
+
+To exit typing mode, press `ENTER` or `ESC`.
+
+NOTE: this doesn't work with all text interfaces.
