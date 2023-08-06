@@ -1,0 +1,8 @@
+singer-python==5.5.0
+requests==2.20.0
+braintree==4.18.1
+
+[dev]
+pylint
+ipdb
+nose
