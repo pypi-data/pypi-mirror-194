@@ -1,0 +1,7 @@
+aiohttp==3.8.1
+asyncio==3.4.3
+attrs==19.3.0
+chardet==3.0.4
+idna==2.8
+multidict
+yarl==1.4.2
