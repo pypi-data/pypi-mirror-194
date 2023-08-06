@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dataengtoolbox
+Version: 0.4.0
+Summary: Data Engineering Toolbox
+Home-page: UNKNOWN
+Author: ITESO MAF - Data Engineering Course
+License: UNKNOWN
+Description: # dataengtoolbox
+Platform: UNKNOWN
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
