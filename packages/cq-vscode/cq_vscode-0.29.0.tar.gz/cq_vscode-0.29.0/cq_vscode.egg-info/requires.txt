@@ -1,0 +1,2 @@
+ocp-tessellate>=1.0.0rc7
+requests
