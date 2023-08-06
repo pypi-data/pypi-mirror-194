@@ -1,0 +1,16 @@
+dbpal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbpal/config.py,sha256=_eUzS1__9GIUUzvuAvine_UWJixcusfYZkFOFem0w2w,620
+dbpal/data.py,sha256=XT0bh8t1zv1x6rSo8uNNPv9L6h60e69CXw3MPwRFqRs,2053
+dbpal/tables.py,sha256=F33H6oT1xcv6s5o8llZVby_9P31-c7nuVe2w3Tua5dg,1017
+dbpal/utils.py,sha256=P29A3WkzPQhY9FUO2bWthsiUmbBFyFQ54G_ad-0y8T8,7203
+dbpal/tests/conftest.py,sha256=d_a68ozZqsy881IHy9MkP78-9xqLQbbE2vGEWq1nYrA,1723
+dbpal/tests/helpers.py,sha256=wDh7QMvkhno-j8in-N_3ZbvATi3-UqhRyJvx5bbVyfU,911
+dbpal/tests/test_data.py,sha256=j6wLJeU8IVIj1X1wFmmOPH1309g9FzpxdgZTmsI3O5U,401
+dbpal/tests/test_utils.py,sha256=FcDHfz62BRaO2bQ6i1erb6W8O1HIVPSPP_8MNHXHaIU,2129
+dbpal/tests/example_files/data.jsonl,sha256=nAe9Czf4CxL3hId7gBfs3MqUom_DLUagAbCcBX7nH88,18
+dbpal/tests/example_files/data.parquet,sha256=sZVDbTg0lDcspEvf3RLMufkziPdrW87LEenKz_TaM-s,1648
+dbpal-0.0.2.dist-info/LICENSE,sha256=PKbJ4FooFYXQWg8APcWaBg6s9xJ2K1rOr1EmQhRaVqw,1069
+dbpal-0.0.2.dist-info/METADATA,sha256=DOvOSMI6yNzhEEc7wXYNm7J6honCzotLIPC9IN-lB8c,1032
+dbpal-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dbpal-0.0.2.dist-info/top_level.txt,sha256=9tu6Q6MxUf3l7NwClQuGMLgtghGWpKMGaqEXJBQ_mc4,6
+dbpal-0.0.2.dist-info/RECORD,,
