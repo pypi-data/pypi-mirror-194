@@ -1,0 +1,3 @@
+[console_scripts]
+rdsutilspack = rdsutilspack.__main__:main
+
