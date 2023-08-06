@@ -1,0 +1,3 @@
+[console_scripts]
+pocpoc=pocpoc.api.microservices.cli:cli
+
