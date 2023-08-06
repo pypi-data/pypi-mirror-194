@@ -1,0 +1,34 @@
+{% extends "multitenancy/admin/base.html" %}
+
+{% load i18n %}
+{% load bootstrap4 %}
+
+{% block body_class %}account account-settings{% endblock %}
+
+{% block head_title %}{% trans "Account" %}{% endblock %}
+
+
+{% block page_title %}Account{% endblock %}
+{%block breadcrumbs%}
+{%if user.is_superuser%}
+<li class="breadcrumb-item " ><a href="{% url 'settings_index' %}">Settings</a></li>
+{%endif%}
+<li class="breadcrumb-item active">Account</li>
+{% endblock%}
+
+{% block main_content %}
+<div class="container  text-dark">
+    <div class="row">
+        <div class="col-md-6">
+            <form method="POST" action="{% url "account_settings" %}">
+                
+                {% csrf_token %}
+                {% bootstrap_field form.email %}
+                {% bootstrap_field form.timezone %}
+                {% bootstrap_field form.language %}
+                <button class="btn btn-info" type="submit">{% trans "Save" %}</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
