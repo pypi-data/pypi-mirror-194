@@ -1,0 +1,16 @@
+morcilla/__init__.py,sha256=6U7JMfz_ba7NldhrGg4x976_HywxyT8LsCyK2y_7joY,162
+morcilla/core.py,sha256=Yu-gz3OsRHFVlF8BfXAwq0M9riZn_giXsMRQvDsFV0c,17276
+morcilla/importer.py,sha256=UeU5jzybPYKDTLCnip0SD-NJ6JV0mqSPIDYIHGbC1fM,1104
+morcilla/interfaces.py,sha256=1kfuj6STjx26dXcxJYcmkjiVlaj6sP6KsOHaBZf_88U,2758
+morcilla/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+morcilla/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morcilla/backends/aiopg.py,sha256=232WgNP-g2jkUGtDQY8oi7ZV4-O2ABd4ZPC328l05ac,10172
+morcilla/backends/asyncmy.py,sha256=IJiYVnStK-MrmU8bbVEMnLNsUfIK9Uauh7HpLbArR4I,10417
+morcilla/backends/asyncpg.py,sha256=vfnRotGBxrHfPNq9oYPMuH7IL1u1WqT2s8sp9EfqiQQ,13097
+morcilla/backends/mysql.py,sha256=eBEawCOCb7oR3sGgjoFS8xh10Wt92hO0z7SQStTDHRI,10025
+morcilla/backends/sqlite.py,sha256=lUw7erRbqPnAUXMGm3ScJVlylSV90wiHBIgjwCKcqvM,10740
+morcilla-0.5.34.dist-info/LICENSE.md,sha256=rRqP1p8qMCB3kKToUMl8a-RwjN2E9EnoY7ZMUq6Eu0c,1518
+morcilla-0.5.34.dist-info/METADATA,sha256=EHAIlyBxcDkaBs2bfweE7fxq_n3PfJfiuQTfO2caLTA,5493
+morcilla-0.5.34.dist-info/WHEEL,sha256=00yskusixUoUt5ob_CiUp6LsnN5lqzTJpoqOFg_FVIc,92
+morcilla-0.5.34.dist-info/top_level.txt,sha256=xuzTDnUZQZeLQvUxGJAFVhFI8ZK73Q9s3D3qCN13cfw,27
+morcilla-0.5.34.dist-info/RECORD,,
