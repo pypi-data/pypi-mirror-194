@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+synapseml_opencv.egg-info/PKG-INFO
+synapseml_opencv.egg-info/SOURCES.txt
+synapseml_opencv.egg-info/dependency_links.txt
+synapseml_opencv.egg-info/top_level.txt
