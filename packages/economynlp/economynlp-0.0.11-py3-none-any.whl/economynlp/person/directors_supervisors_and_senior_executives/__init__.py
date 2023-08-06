@@ -1,0 +1,3 @@
+from economynlp.person.directors_supervisors_and_senior_executives.manager import *
+from economynlp.person.directors_supervisors_and_senior_executives.director import *
+from economynlp.person.directors_supervisors_and_senior_executives.supervisor import *
