@@ -1,0 +1,8 @@
+README.md
+setup.py
+foldergenie/FolderGenie.py
+foldergenie/__init__.py
+foldergenie.egg-info/PKG-INFO
+foldergenie.egg-info/SOURCES.txt
+foldergenie.egg-info/dependency_links.txt
+foldergenie.egg-info/top_level.txt
