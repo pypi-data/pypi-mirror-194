@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.10.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "coco_types"
+authors = [{name="Bagard Hoel"}]
+description = "Package for handling COCO datasets types."
+keywords = ["COCO", "COCO dataset"]
+readme = "README.md"
+classifiers = [
+            "License :: OSI Approved :: MIT License",
+            "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.9",
+            "Programming Language :: Python :: 3.10",
+            "Operating System :: OS Independent",
+            "Intended Audience :: Developers",
+]
+license = {text = "MIT"}
+dynamic = ["version"]
+dependencies = ["pydantic"]
+requires-python = ">=3.9"
+
+[project.urls]
+"Homepage" = "https://github.com/hoel-bagard/coco_types"
+"Bug Tracker" = "https://github.com/hoel-bagard/coco_types/issues"
+
+[project.optional-dependencies]
+test = ["pytest"]
+dev = ["pre-commit", "pip-tools", "flake8", "flake8-docstrings", "pep8-naming", "flake8-import-order", "flake8-bugbear", "flake8-quotes", "flake8-comprehensions"]
+
+[tool.hatch.version]
+path = "coco_types/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/.pytest_cache",
+  "/build",
+  "/dist",
+  "/docs",
+]
+
+[tool.hatch.envs.pypi.scripts]
+# hatch run pypi:publish_test
+publish_test = "hatch build --clean && hatch publish -r test"
+publish = "hatch build --clean && hatch publish"
+
+[tool.isort]
+line_length = 120
+case_sensitive = false
+order_by_type = false
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/7.1.x/explanation/goodpractices.html
+addopts = [
+    "--import-mode=importlib",
+]
