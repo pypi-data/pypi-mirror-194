@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: dopelines
+Version: 0.1.1
+Summary: Douglas-Peucker line simplification
+Author-email: dennisvang <djvg@protonmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Dennis
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: source, https://github.com/dennisvang/dope
+Project-URL: issues, https://github.com/dennisvang/dope/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: plot
+License-File: LICENSE
+
+# DoPe
+
+[**Do**uglas-**Pe**ucker][1] line simplification (data reduction).
+
+Reduces the number of points in a two-dimensional dataset, while preserving its most striking features.
+
+The resulting dataset is a subset of the original dataset.
+
+Although line simplification is typically used for geographical data, e.g. when zooming a digital map (see e.g. [Django's GEOSGeometry.simplify()][4] based on [GEOS][5]),
+this type of algorithm can also be applied to general data reduction problems, as an alternative (or addition) to conventional filtering or subsampling. Some examples:
+- creating miniature data plots
+- pre-processing time-series data for feature detection (e.g. peak detection) 
+
+ 
+
+## Installation
+
+Normal installation:
+
+```pip install dopelines```
+
+With plot support (adds `matplotlib`):
+
+```pip install dopelines[plot]```
+
+With development tools:
+
+```pip install dopelines[dev]```
+
+Note: The PyPi project is called `dopelines` instead of `dope`, because PyPi would not let us create a project named `dope`, even though the name appears to be available. 
+
+## Example
+
+```python
+from dope import DoPeR
+
+data_original = [
+    [0, 0], [1, -1], [2, 2], [3, 0], [4, 0], [5, -1], [6, 1], [7, 0]
+]
+
+dp = DoPeR(data=data_original)
+
+# use tolerance threshold (i.e. max. error w.r.t. normalized data)
+data_simplified_eps = dp.simplify(tolerance=0.2)
+
+# compare original data and simplified data in a plot
+dp.plot()
+
+# or use maximum recursion depth
+data_simplified_depth = dp.simplify(max_depth=2)
+
+```
+
+![Example line simplification plot.][3]
+
+Also see examples in [tests][2].
+
+## Limitations
+
+Currently we only offer a recursive implementation (depth-first), which is intuitive, but may not be the most efficient solution.
+An iterative implementation is in the works (breadth-first).
+
+## References:
+
+[Douglas DH, Peucker TK. *Algorithms for the reduction of the number of points required to represent a digitized line or its caricature.*
+Cartographica: the international journal for geographic information and geovisualization. 1973 Dec 1;10(2):112-22.][1]
+
+[1]: https://doi.org/10.3138/FM57-6770-U75U-7727
+[2]: https://github.com/dennisvang/dope/tree/main/tests
+[3]: https://github.com/dennisvang/dope/blob/main/pdf/dope-example.png
+[4]: https://docs.djangoproject.com/en/stable/ref/contrib/gis/geos/#django.contrib.gis.geos.GEOSGeometry.simplify
+[5]: https://libgeos.org/doxygen/namespacegeos_1_1simplify.html

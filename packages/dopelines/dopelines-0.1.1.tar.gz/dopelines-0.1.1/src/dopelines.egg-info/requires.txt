@@ -1,0 +1,9 @@
+numpy
+
+[dev]
+black
+build
+twine
+
+[plot]
+matplotlib

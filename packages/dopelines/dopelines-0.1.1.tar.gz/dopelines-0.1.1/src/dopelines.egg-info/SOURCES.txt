@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/dope/__init__.py
+src/dopelines.egg-info/PKG-INFO
+src/dopelines.egg-info/SOURCES.txt
+src/dopelines.egg-info/dependency_links.txt
+src/dopelines.egg-info/requires.txt
+src/dopelines.egg-info/top_level.txt
+tests/test_dope.py
