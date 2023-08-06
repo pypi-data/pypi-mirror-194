@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+stdchecker/__init__.py
+stdchecker/astm.py
+stdchecker/constants.py
+stdchecker/iec.py
+stdchecker/ieee.py
+stdchecker/tse.py
+stdchecker.egg-info/PKG-INFO
+stdchecker.egg-info/SOURCES.txt
+stdchecker.egg-info/dependency_links.txt
+stdchecker.egg-info/requires.txt
+stdchecker.egg-info/top_level.txt
