@@ -1,0 +1,13 @@
+[console_scripts]
+db-create=braid_db.tools.db_create:main
+db-print=braid_db.tools.db_print:main
+db-to-dot=braid_db.service.viz.dot_graphing:main
+db-to-mermaid=braid_db.service.viz.mermaid_graphing:main
+funcx-add-record=braid_db.funcx.funcx_main:funcx_add_record
+invalidate-record=braid_db.tools.record_invalidate:main
+register-funcx=braid_db.funcx.funcx_main:register_functions
+workflow-BraggNN=workflows.BraggNN.workflow:main
+workflow-CTSegNet=workflows.CTSegNet.workflow:main
+workflow-SLAC=workflows.SLAC.workflow:main
+workflow-SSX=workflows.SSX.workflow:main
+
