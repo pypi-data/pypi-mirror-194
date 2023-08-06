@@ -1,0 +1,14 @@
+LICENSE,sha256=9cGsMiheiMljgTE7QlqCSMPQnvlgWrLqGxtVRwASJOc,1074
+fastapi_cruddy_framework/__init__.py,sha256=C5-Q_B_fho8s2orw7tMpq95EjJ8p2txsJ81acwX8DRA,858
+fastapi_cruddy_framework/adapters.py,sha256=Am8luoIRVovjTeJSrH3COqiut8K6Kg7FiQzQOoJdLRw,2321
+fastapi_cruddy_framework/controller.py,sha256=tYyr5IHAKr1v55s5viOpIXz2QnRrHv4tgEXL-Vh4s1g,13978
+fastapi_cruddy_framework/inflector.py,sha256=6WBoStfQJOQl7Tu0fZyN-73hvSUUWaoejbE0IoL9gFE,46
+fastapi_cruddy_framework/repository.py,sha256=MQfD7knePW7aUvx6HGrCULQ7dC5ySv6n4XuOonevj84,15608
+fastapi_cruddy_framework/resource.py,sha256=h5--AEIs7q2Sl95BDMYRHLLY_NwFyqafai8JvGkGmoY,15585
+fastapi_cruddy_framework/router.py,sha256=M-0ovKrQu5043BHwDxWgmYxgWu-gB9OtwY4jnDureqg,2282
+fastapi_cruddy_framework/schemas.py,sha256=D8Ga0tPZiJo8kawOB5rreVsR8B1jeT-XkgzWYm_TVmE,2604
+fastapi_cruddy_framework/uuid.py,sha256=OoOHsPGaHbRnT-XdY699ix3v2b3Mouw1hYRArSRmUcM,4840
+fastapi_cruddy_framework-0.0.2.dist-info/LICENSE,sha256=9cGsMiheiMljgTE7QlqCSMPQnvlgWrLqGxtVRwASJOc,1074
+fastapi_cruddy_framework-0.0.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fastapi_cruddy_framework-0.0.2.dist-info/METADATA,sha256=N1zILS9DQldlUAplXWVokvcw7h15vvwsdlhVpFAB8NI,3473
+fastapi_cruddy_framework-0.0.2.dist-info/RECORD,,
