@@ -1,0 +1,8 @@
+obspy
+
+[dev]
+pytest
+ipython
+ipdb
+flake8
+nose
