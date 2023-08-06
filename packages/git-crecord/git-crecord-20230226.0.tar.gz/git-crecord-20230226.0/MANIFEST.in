@@ -1,0 +1,7 @@
+exclude .git*
+exclude .github/**
+
+include CONTRIBUTORS
+include COPYING
+include *.rst
+include *.png

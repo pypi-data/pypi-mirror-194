@@ -1,0 +1,12 @@
+
+[lint]
+flake8
+flake8-blind-except
+flake8-builtins
+flake8-commas
+flake8-comprehensions
+flake8-docstrings
+flake8-isort
+
+[test]
+pytest>=6
