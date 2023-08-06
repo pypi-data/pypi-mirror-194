@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "FastMVC"
+version = "0.1.2"
+description = "Rapid application development built for the cloud."
+authors = ["MBeebe <pyn-sol@beebe.dev>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+fastmvc = "fastmvc.main:app"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+typer = {extras = ["all"], version = "*"}
+fastapi = "*"
+Jinja2 = "*"
+python-multipart = "*"
+python-dotenv = "*"
+authlib = "*"
+itsdangerous = "*"
+httpx = "*"
+pyjwt = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
