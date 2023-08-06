@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nsg-octopart"
+version = "0.1.0"
+description = "NSG class for making request to Octopart using nexarClient"
+authors = ["Antonio Arroyave <antonio.arroyave@nsg-engineering.com>",
+"Hector Flores <hector.flores@nsg-engineering.com>"]
+readme = "README.md"
+packages = [{include = "nsg_octopart"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
