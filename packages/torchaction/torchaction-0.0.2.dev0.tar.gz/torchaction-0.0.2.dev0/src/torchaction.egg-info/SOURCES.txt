@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/torchaction/__init__.py
+src/torchaction/actions.py
+src/torchaction/meanloss.py
+src/torchaction/parse_args.py
+src/torchaction.egg-info/PKG-INFO
+src/torchaction.egg-info/SOURCES.txt
+src/torchaction.egg-info/dependency_links.txt
+src/torchaction.egg-info/entry_points.txt
+src/torchaction.egg-info/requires.txt
+src/torchaction.egg-info/top_level.txt
