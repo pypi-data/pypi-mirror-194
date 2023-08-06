@@ -1,0 +1,16 @@
+requests
+pandas
+typing-extensions
+
+[dev]
+pre-commit
+pytest
+pytest-dotenv
+requests-mock
+jsonschema
+
+[pipeline]
+build
+pytest-cov
+pytest-azurepipelines
+pytest-xdist[psutil]
