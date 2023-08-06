@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "vsb_text"
+version = "0.1.0"
+description = "Simple demo project"
+authors = ["vsbd <vsagar19@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyfiglet = "^0.8.post1"
+termcolor = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
