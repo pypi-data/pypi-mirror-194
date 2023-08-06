@@ -1,0 +1,12 @@
+istatapi/__init__.py,sha256=p9_5QfhAEjDSUopiI8TsYUKNbarEWtltbnY3uEjFipk,113
+istatapi/_modidx.py,sha256=uJ4GXy7JV1db-J-YgOMvwiqa2DDF6V4-lTH-EIVhzAE,4619
+istatapi/base.py,sha256=_lrCXgLcsUA_QYhb6Z-oGFiUILLKQmPCkFJ18diGrKM,806
+istatapi/discovery.py,sha256=UVTC18HFrGSf8FMbPjJPrL_Uze9KO8besX1cHRU7id8,8991
+istatapi/retrieval.py,sha256=X3nMC0A8pXunLzpM5XNb0WXUvO3DzMTbEXq9Ovh097s,1496
+istatapi/utils.py,sha256=XA-yl1t2jmmnJnz-vMKYztJWv4rX0T8thFzQMQUYF6A,558
+istatapi-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+istatapi-0.0.1.dist-info/METADATA,sha256=KyruQfXAGMftBZeSWnNLgkd-A1HVyMPQM_Uvczoqw58,15170
+istatapi-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+istatapi-0.0.1.dist-info/entry_points.txt,sha256=l1wIy2ZuO9gTckBI3pD_KO2ey60Hejbw-tNAkpeIS4Y,38
+istatapi-0.0.1.dist-info/top_level.txt,sha256=MEMMsgTdq2xCL22xTtYf49tZWRycUP9JSczrlZ6LTJ0,9
+istatapi-0.0.1.dist-info/RECORD,,
