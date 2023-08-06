@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pytyped_curry/__init__.py
+src/pytyped_curry/_curry.py
+src/pytyped_curry/_curry_3_11.py
+src/pytyped_curry/_curry_3_7.py
+src/pytyped_curry/_curry_3_8.py
+src/pytyped_curry/_decorator.py
+src/pytyped_curry/_doc.py
+src/pytyped_curry.egg-info/PKG-INFO
+src/pytyped_curry.egg-info/SOURCES.txt
+src/pytyped_curry.egg-info/dependency_links.txt
+src/pytyped_curry.egg-info/top_level.txt
