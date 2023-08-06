@@ -1,0 +1,6 @@
+requests
+numpy
+astropy
+matplotlib
+Pillow
+bokeh
