@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+steamguardgenpy/__init__.py
+steamguardgenpy/guard.py
+steamguardgenpy.egg-info/PKG-INFO
+steamguardgenpy.egg-info/SOURCES.txt
+steamguardgenpy.egg-info/dependency_links.txt
+steamguardgenpy.egg-info/top_level.txt

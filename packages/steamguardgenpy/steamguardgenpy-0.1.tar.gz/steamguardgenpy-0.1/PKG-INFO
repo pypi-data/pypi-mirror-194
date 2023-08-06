@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: steamguardgenpy
+Version: 0.1
+Summary: Generate steam twofactor (onetime/TOTP) code.
+Home-page: https://github.com/paradox4280/steamguardgenpy
+Author: paradox4280
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# steamguardgenpy
+
+**Steamguardgenpy** easily generate steam twofactor (onetime/TOTP) code.
+
+```python
+>>> from steamguardgenpy import gen_two_factor_code
+>>> gen_two_factor_code('FG+4a7-86d7-4986322f7f6b')
+'QQQJP'
+```
+
+Steamguardgenpy allows you to generate steam twofactor codes using your account shared secret.
+
+## Installation
+
+```console
+python -m pip install steamguardgenpy 
+```

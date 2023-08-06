@@ -1,0 +1,1 @@
+from .guard import gen_two_factor_code
