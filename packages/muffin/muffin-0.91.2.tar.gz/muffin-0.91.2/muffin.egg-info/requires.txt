@@ -1,0 +1,25 @@
+asgi-tools>=0.70.3
+modconfig>=1.2.1
+
+[:implementation_name == "cpython"]
+ujson
+
+[dev]
+aiofile
+pytest
+pytest-aio[curio,trio]>=1.1.1
+pre-commit
+bump2version
+
+[dev:implementation_name == "cpython"]
+uvloop
+pytest-mypy
+types-ujson
+
+[docs]
+sphinx
+pydata-sphinx-theme
+
+[standard]
+gunicorn
+uvicorn[standard]
