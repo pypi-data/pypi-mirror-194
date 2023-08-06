@@ -1,0 +1,11 @@
+separability/__init__.py,sha256=zUReYghjeeTbEwtLxWmURzXRVacxGGyYHTLyi7fJ0pk,97
+separability/activations.py,sha256=AL-OrjnLkcAqoMfbORzGFKeW3e-zjWLiGYZL14Wi3us,28493
+separability/data_classes.py,sha256=a0gQzt8yDvnwcwEd1WNzA4pTDoat7NO8Z71QcEqhuCg,8535
+separability/model.py,sha256=vPAYVn94poLngSHHaHq4BpG2iJmsvE1wYgxT2K5cTvM,37728
+separability/model_maps.py,sha256=U0Cotdfw7DOH4SjyF_WWxbaU2kzVP3cjBMvVwxyFx24,3296
+separability/model_repos.py,sha256=D7xwW2eBkDdSJbcSQ4XGtI5EPMpqtaN5vP6_xgiZlk4,715
+separability/nn.py,sha256=-JIwf-6Ho0yWf-_jVOydKDDhr6zeKRWtBAm1A9BBQhc,5162
+separability/texts.py,sha256=Wya0q5IUawCm6bJMG73i01SsrROWZwEPvUT9J1S3AnM,2814
+separability-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+separability-0.1.4.dist-info/METADATA,sha256=K3ACGEafsCQCDgv4rRd637z2vDqvznJ7dCfpjydR40A,3942
+separability-0.1.4.dist-info/RECORD,,
