@@ -1,0 +1,9 @@
+"""
+
+    Constants
+
+"""
+
+
+HTTP_TIMEOUT_SECONDS = (20, 60)
+JOB_TIMEOUT_SECONDS = 60
