@@ -1,0 +1,4 @@
+fastavro
+attrs
+django
+edx-opaque-keys[django]
