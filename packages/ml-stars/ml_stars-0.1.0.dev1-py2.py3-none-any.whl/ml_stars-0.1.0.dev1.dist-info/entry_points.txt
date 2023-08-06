@@ -1,0 +1,4 @@
+[mlblocks]
+pipelines = mlstars:MLBLOCKS_PIPELINES
+primitives = mlstars:MLBLOCKS_PRIMITIVES
+
