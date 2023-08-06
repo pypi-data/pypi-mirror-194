@@ -1,0 +1,30 @@
+{
+    "config": {
+        "abort": {
+            "all_configured": "Toate bridge-urile Philips Hue sunt deja configurate",
+            "already_configured": "Dispozitivul a fost configurat deja",
+            "already_in_progress": "Configurarea flow-ului este deja in progres",
+            "cannot_connect": "Nu a reu\u0219it sa se conecteze",
+            "discover_timeout": "Imposibil de descoperit bridge-urile Hue",
+            "no_bridges": "Nu au fost descoperite bridge-uri Philips Hue",
+            "not_hue_bridge": "Nu este un bridge Hue",
+            "unknown": "Eroare nea\u0219teptat\u0103"
+        },
+        "error": {
+            "linking": "Eroare nea\u0219teptat\u0103",
+            "register_failed": "Nu a reu\u0219it \u00eenregistrarea, te rug\u0103m s\u0103 \u00eencerci din nou"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "host": "Gazd\u0103 (host)"
+                },
+                "title": "Alege un bridge Hue"
+            },
+            "link": {
+                "description": "Apas\u0103 butonul de pe bridge pentru a \u00eenregistra Philips Hue cu Home Assistant. \n\n![Loca\u021bia butonului pe bridge](/static/images/config_philips_hue.jpg)",
+                "title": "Leag\u0103 hub"
+            }
+        }
+    }
+}

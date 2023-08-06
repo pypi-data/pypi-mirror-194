@@ -1,0 +1,19 @@
+{
+    "config": {
+        "error": {
+            "connection_timeout": "Conexiunea cu gazda nu s-a putut face \u00een timp util",
+            "resolve_failed": "IP-ul acestei gazde nu poate fi rezolvat"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Gazd\u0103 (host)",
+                    "name": "Numele certificatului",
+                    "port": "Port"
+                },
+                "title": "Definire certificat de test"
+            }
+        }
+    },
+    "title": "Expirarea certificatului"
+}
