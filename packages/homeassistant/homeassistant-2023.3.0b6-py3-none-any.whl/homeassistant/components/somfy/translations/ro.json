@@ -1,0 +1,11 @@
+{
+    "config": {
+        "abort": {
+            "authorize_url_timeout": "\u00cent\u00e2rziere generata de autorizarea URL-ului",
+            "missing_configuration": "Componenta nu este configurat\u0103. V\u0103 rog urma\u021bi instruc\u021biunile din documenta\u021bie."
+        },
+        "create_entry": {
+            "default": "Autentificare realizata cu succes"
+        }
+    }
+}
