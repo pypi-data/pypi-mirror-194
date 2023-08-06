@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: keinsum
+Version: 0.1
+Summary: An extension of einsum where capital letters serve as multiple ellipses
+Home-page: https://github.com/axil/keinsum
+Author: Lev Maximov
+Author-email: lev.maximov@gmail.com
+License: MIT License
+Keywords: einsum,array,ndarray,numpy,contraction
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+п»ї# keinsum
+
+[![pypi](https://img.shields.io/pypi/v/keinsum.svg)](https://pypi.python.org/pypi/keinsum)
+[![python](https://img.shields.io/pypi/pyversions/keinsum.svg)](https://pypi.org/project/keinsum/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![License](https://img.shields.io/pypi/l/keinsum)](https://pypi.org/project/keinsum/)
+
+An extension of np.einsum where capital letters serve as multiple ellipses, see [Einsum Visualized](https://betterprogramming.pub/einsum-visualized-c050903145ef?sk=e05c7d70e150f91e29f3d0a37326e087) for details.
+
+## Installation: 
+
+    pip install keinsum
+
+## Usage
+
+`keinsum('Ik,kJ', a, b)` is the same as `np.einsum('ijk,klm', a, b)` where `a` and `b` are 3D arrays.
+
+## Testing
+
+Run `pytest` in the project root.
+
+
