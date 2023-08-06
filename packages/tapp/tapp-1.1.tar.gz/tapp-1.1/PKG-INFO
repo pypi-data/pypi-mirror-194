@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: tapp
+Version: 1.1
+Summary: The library for management events
+Project-URL: Homepage, https://github.com/liketapi/tapp
+Project-URL: Bug Tracker, https://github.com/liketapi/tapp/issues
+Author-email: liketapi <seryumed@gmail.com>
+License-File: LICENSE
+Keywords: anyio,app,asyncio,events,events-library,telegram
+Requires-Python: >=3.7
+Requires-Dist: anyio~=3.6.2
+Requires-Dist: magic-filter~=1.0.9
+Provides-Extra: dev
+Requires-Dist: black~=23.1; extra == 'dev'
+Requires-Dist: isort~=5.11; extra == 'dev'
+Requires-Dist: ruff~=0.0.246; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest-asyncio~=0.20.3; extra == 'test'
+Requires-Dist: pytest-cov~=4.0.0; extra == 'test'
+Requires-Dist: pytest~=7.2.1; extra == 'test'
+Description-Content-Type: text/markdown
+
+# tapp
+
+Asyncio library for creating applications for
+handling events from the user.
+
+Documentation:
++ [English](docs/index.md)
+
+## Quick start
+
+Install:
+
+```shell
+pip install tapp
+```
+
+Example:
+
+```python
+# !/usr/bin/python
+
+# content examples/some.py
+
+import asyncio
+
+from tapp import TApp
+
+app = TApp()
+
+
+@app.route(method="method")
+async def method_handler(message: str, version: str) -> None:
+    print(message, version)
+
+
+async def main() -> None:
+    await app("method", "message", version="version")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```

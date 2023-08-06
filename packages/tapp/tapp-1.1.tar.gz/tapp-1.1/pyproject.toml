@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tapp"
+version = "1.1"
+authors = [
+    { name = "liketapi", email = "seryumed@gmail.com" }
+]
+keywords = [
+    "asyncio",
+    "telegram",
+    "app",
+    "events",
+    "events-library",
+    "anyio",
+]
+dependencies = [
+    "anyio~=3.6.2",
+    "magic-filter~=1.0.9",
+]
+description = "The library for management events"
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+test = [
+    "pytest~=7.2.1",
+    "pytest-cov~=4.0.0",
+    "pytest-asyncio~=0.20.3",
+]
+dev = [
+    "black~=23.1",
+    "isort~=5.11",
+    "ruff~=0.0.246"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/liketapi/tapp"
+"Bug Tracker" = "https://github.com/liketapi/tapp/issues"
+
+[tool.ruff]
+line-length = 99
+select = [
+    "C4",
+    "E",
+    "F",
+    "T10",
+    "T20",
+    "Q",
+    "RET",
+]
+src = ["src/tapp"]
+ignore = [
+    "F401"
+]
+exclude = [
+    ".git",
+    "dist",
+    ".venv",
+    "tests",
+]
+target-version = "py37"
+
+[tool.black]
+line-length = 99
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+exclude = '''
+(
+    \.git
+  | dist
+  | .venv
+)
+'''
+
+[tool.isort]
+profile = "black"
