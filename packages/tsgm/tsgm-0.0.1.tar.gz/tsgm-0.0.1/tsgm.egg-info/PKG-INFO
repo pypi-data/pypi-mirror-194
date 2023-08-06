@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tsgm
+Version: 0.0.1
+Summary: Time Series Generative Modelling Framework
+Home-page: https://github.com/AlexanderVNikitin/tsgm
+Download-URL: 
+Author: Alexander Nikitin
+Author-email: 
+Maintainer: Alexander Nikitin
+Maintainer-email: 
+License: Apache-2.0
+Keywords: machine learning,deep learning,signal processing,temporal signal,time series,generative modeling,neural networks,GAN
+License-File: LICENSE
