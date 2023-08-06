@@ -1,0 +1,13 @@
+clouddrift/__init__.py,sha256=dlafgpaQ8kn34UibuiWX13fCn2ql4SOf6VWU3wuAS-4,222
+clouddrift/_version.py,sha256=UyGvjOU9AYY1MkJZivc7AN0PI2roC7hJ8qvHZPVYCpI,85
+clouddrift/analysis.py,sha256=eL0mSA3xmGxirMwCQCyXREa7YSjNfXoiauThE7JJGu0,11054
+clouddrift/dataformat.py,sha256=8FmHFvN_O7brF8L57YFkA5CtySgnWXGcQdy9qcXF-aY,15218
+clouddrift/haversine.py,sha256=Bn94yNTyRMBozBtWMxYt2CbrGqfI6R5ei_z27_wTiJ0,3691
+clouddrift/select.py,sha256=rEEDFPAdo0R6Q_ye4E588NIbkVfFelH9CIdEp21NobA,2904
+clouddrift/sphere.py,sha256=UZo4fQ-6lDDayFkoHRYmjix7paR3uIQ4eEIWxqZK7Zg,2444
+clouddrift/adapters/__init__.py,sha256=cqA0bS_2n3bVa1xzs0q6LqGERidMoNx0TA0Au76IW0o,373
+clouddrift/adapters/gdp.py,sha256=IllqkGZSmY9KwrK8O0ZTPLRLAlHJ-addlo-OxzPc1p4,24510
+clouddrift-0.7.0.dist-info/METADATA,sha256=JzYKaNDabP_UBo2fYKu328C0QmYuUtr3V4Td3bw4-pU,5047
+clouddrift-0.7.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+clouddrift-0.7.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+clouddrift-0.7.0.dist-info/RECORD,,
