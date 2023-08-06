@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: scoop-template-engine
+Version: 0.0.24
+Summary: Scoop Template Engine
+Author-email: Roland Herzog <roland.herzog@iwr.uni-heidelberg.de>
+Project-URL: homepage, https://gitlab.com/scoopgroup-public/scoop-template-engine
+Project-URL: repository, https://gitlab.com/scoopgroup-public/scoop-template-engine
+Project-URL: Bug Tracker, https://gitlab.com/scoopgroup-public/scoop-template-engine/issues
+Keywords: template engine,LaTeX,scientific publishing,journals
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bibtexparser (>=1.3.0)
+Requires-Dist: cloudscraper (>=1.2.68)
+Requires-Dist: numpy (>=1.0.0)
+Requires-Dist: packaging (>=23.0.0)
+Requires-Dist: patch (>=1.16)
+Requires-Dist: pyyaml (>=6.0)
+Requires-Dist: requests (>=2.9.2)
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: setuptools-git-versioning (>=1.9.0)
+
+The purpose of the scoop template engine (`ste`) is to facilitate the preparation of manuscripts in [LaTeX](https://www.latex-project.org/) for publication in scientific journals.
+It allows the separation of layout from content.
+The layout, which depends on the journal, will be automatically generated.
+An effort is made to achieve compatibility of a range of standard LaTeX packages with each supported journal.
+In addition, a consistent set of theorem-like environments is provided across journals. 
+
+
+## Installation
+```python
+pip3 install scoop-template-engine
+ste init
+```
+
