@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/zoyapkg/__init__.py
+src/zoyapkg/example.py
+src/zoyapkg/main.py
+src/zoyupkg.egg-info/PKG-INFO
+src/zoyupkg.egg-info/SOURCES.txt
+src/zoyupkg.egg-info/dependency_links.txt
+src/zoyupkg.egg-info/top_level.txt
