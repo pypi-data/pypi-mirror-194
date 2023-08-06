@@ -1,0 +1,11 @@
+[console_scripts]
+hint = dofast.sli_entry:_hint_wubi
+hostoss = dofast.apps.hostoss:upload_to_oss
+jsy = dofast.sli_entry:jsonify
+pcloud_upload = dofast.web.pcloud:pcloud_upload_entry
+qflask = dofast.qflask:run
+setupfish = dofast.setups.fish:setup_fish
+sli = dofast.apps.sli:main
+weather = dofast.weather:entry
+websurf = dofast.nsq.websurf:run
+ydd = dofast.toolkits.youdao_dict:run
