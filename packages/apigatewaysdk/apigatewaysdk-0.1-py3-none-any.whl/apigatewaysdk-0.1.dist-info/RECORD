@@ -1,0 +1,17 @@
+apigateway/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apigateway/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apigateway/clients/client.py,sha256=0clm4uCENethq7C6tOh0XEKbYpaJjT14jgSdqUj2bMM,14949
+apigateway/clients/constants.py,sha256=YA8xdy_gPJ3oqoXH3hmsU6Jk8VodyeASlE4glW_FURY,298
+apigateway/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apigateway/exceptions/exceptions.py,sha256=2J7zFTQ2mqvoswCrNNkMExkqhWwl85arKTZAWr9E6RU,54
+apigateway/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apigateway/models/consumer.py,sha256=Or1JDo32Z-VKlYS6ZrQ0JgW4Gpxl4fSavnC9sRLegcM,876
+apigateway/models/plugin_config.py,sha256=M84NX3xkrbNgielebpErTTobHqXmAeX-U_XFnf0p4IA,1047
+apigateway/models/route.py,sha256=1Xr1R-xzKxM8yy8Zj8wje5hkJgFQwpxAqUpQp4i4cQk,1822
+apigateway/models/upstream.py,sha256=nc0wuPMQiruy-9mGtAYSuT6jFgU95mtpc3tUS3bxYCI,2885
+apigateway/models/upstream_host.py,sha256=9k827g9Y9ARZiXDZbY0ce2tujhs7W5jVUcAJt82UK0c,728
+apigatewaysdk-0.1.dist-info/LICENSE.txt,sha256=QVE6E_Lds5BHOCSpLLaGmUziIb8DTpBK_sw6KgV8JtY,1055
+apigatewaysdk-0.1.dist-info/METADATA,sha256=hMoFhxJroZ6T-tzcN-3uWeZ__Oc-QPVciB78OFtlJrc,458
+apigatewaysdk-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+apigatewaysdk-0.1.dist-info/top_level.txt,sha256=eafHRZ9bYBbOy5OME3zFRjethUTL1Ia8QcZ7TCRlVs4,11
+apigatewaysdk-0.1.dist-info/RECORD,,
