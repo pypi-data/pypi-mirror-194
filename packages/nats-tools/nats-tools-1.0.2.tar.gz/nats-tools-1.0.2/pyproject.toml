@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nats-tools"
+authors = [
+    { name = "Guillaume Charbonnier", email = "guillaume.charbonnier@araymond.com" },
+]
+description = "Useful tools to develop Python projects relying on NATS"
+readme = "README.md"
+requires-python = ">=3.8,<4.0"
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dynamic = ["version"]
+dependencies = ["httpx", "jinja2"]
+
+[project.optional-dependencies]
+build = ["build", "invoke", "pip-tools"]
+dev = [
+    "black",
+    "isort",
+    "invoke",
+    "flake8",
+    "mypy",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "types-setuptools",
+]
+docs = [
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-material",
+    "mkdocs-section-index",
+    "mkdocstrings[python]",
+    "pymdown-extensions",
+]
+
+[project.urls]
+Repository = "https://github.com/quara-dev/nats-tools"
+Issues = "https://github.com/quara-dev/nats-tools/issues"
+
+[project.entry-points."pytest11"]
+nats = "nats_tools.testing"
+
+[tool.setuptools.dynamic]
+version = { attr = "nats_tools.__about__.__version__" }
