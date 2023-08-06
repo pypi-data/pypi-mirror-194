@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/deltaray/__init__.py
+src/deltaray.egg-info/PKG-INFO
+src/deltaray.egg-info/SOURCES.txt
+src/deltaray.egg-info/dependency_links.txt
+src/deltaray.egg-info/requires.txt
+src/deltaray.egg-info/top_level.txt
+src/deltaray/data/__init__.py
+src/deltaray/data/read_api.py
