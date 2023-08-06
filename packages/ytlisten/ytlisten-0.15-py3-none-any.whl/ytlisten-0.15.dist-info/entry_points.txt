@@ -1,0 +1,2 @@
+[console_scripts]
+ytlisten = myproject.main:main
