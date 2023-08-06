@@ -1,0 +1,9 @@
+DISTRIBUTION_DIRECTORY: dist
+SOURCE_DATE_FORMAT: '%d %b %Y %I:%M %p %z'
+DISPLAY_DATE_FORMAT: '%d %b %Y'
+RSS_DATE_FORMAT:  '%a %d %b %Y %H:%M %Z'
+RSS_ARTICLE_COUNT: 10
+RSS_FEED_TEMPLATE: templates/rss.xml
+BLOG_DISTRIBUTION_DIRECTORY: dist/blog
+BLOG_TEMPLATE: templates/blog.html
+BLOG_ARCHIVE_TEMPLATE: templates/archive.html

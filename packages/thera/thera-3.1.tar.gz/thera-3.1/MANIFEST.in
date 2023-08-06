@@ -1,0 +1,2 @@
+include HISTORY
+recursive-include demo *
