@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: salmon-triplets
+Version: 1.0.0rc11
+Summary: Efficient crowdsourcing for ordinal embeddings
+Home-page: https://docs.stsievert.com/salmon
+Author: Scott Sievert
+Author-email: salmon@stsievert.com
+License: BSD 3-clause License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.18.0)
+Requires-Dist: scipy
+Requires-Dist: pandas (>=1.0.1)
+Requires-Dist: Cython
+Requires-Dist: scikit-learn
+Requires-Dist: skorch (>=0.8.0)
+Requires-Dist: torch
+Requires-Dist: pydantic
+Requires-Dist: PyYAML
+Provides-Extra: dev
+Requires-Dist: autodoc-pydantic ; extra == 'dev'
+Requires-Dist: sphinx (>=4.0.0) ; extra == 'dev'
+Requires-Dist: numpydoc ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: server
+Requires-Dist: fastparquet ; extra == 'server'
+Requires-Dist: bokeh (==2.0.1) ; extra == 'server'
+Requires-Dist: jinja2 (<3.1.0) ; extra == 'server'
+Requires-Dist: redis (==3.5.*) ; extra == 'server'
+Requires-Dist: dask (>=2021.02.0) ; extra == 'server'
+Requires-Dist: distributed (>=2021.02.0) ; extra == 'server'
+Requires-Dist: dask-ml ; extra == 'server'
+Requires-Dist: lz4 ; extra == 'server'
+Requires-Dist: blosc ; extra == 'server'
+Requires-Dist: cytoolz ; extra == 'server'
+Requires-Dist: ujson ; extra == 'server'
+Requires-Dist: pyyaml ; extra == 'server'
+Requires-Dist: fastapi[all] ; extra == 'server'
+Requires-Dist: rejson ; extra == 'server'
+Requires-Dist: httpx ; extra == 'server'
+Requires-Dist: aiofiles ; extra == 'server'
+Requires-Dist: pyarrow ; extra == 'server'
+Requires-Dist: matplotlib ; extra == 'server'
+Requires-Dist: gunicorn ; extra == 'server'
+Requires-Dist: python-multipart ; extra == 'server'
+Requires-Dist: jupyter-server-proxy ; extra == 'server'
+Requires-Dist: ipywidgets ; extra == 'server'
+Requires-Dist: starlette-exporter ; extra == 'server'
+Requires-Dist: cloudpickle ; extra == 'server'
+
+Salmon is a tool for efficiently generating ordinal
+embeddings. It relies on active machine learning algorithms
+to choose the most informative queries for humans to answer.
