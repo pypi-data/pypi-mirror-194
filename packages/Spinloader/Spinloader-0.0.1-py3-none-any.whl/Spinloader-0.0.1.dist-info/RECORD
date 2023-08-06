@@ -1,0 +1,10 @@
+spinloader/__init__.py,sha256=hFNVZH-gk_T3vcWDcux5Ve-79XkLfouCK8gfylNpSAM,697
+spinloader/colors.py,sha256=aHkWeTdKCydEhdgGI5rN4kOfX2OgQOTSHk6I4aa2b7Q,1324
+spinloader/exceptions.py,sha256=ola-ZSpuAK6fGBYfn-qA2ItfSoXgOQtWlzO5QlS9XVI,75
+spinloader/spinloader.py,sha256=DUlXOsLeeF4PTdVLNLLdshlHuWEsXvBH2E6nMfHJ6GA,2154
+spinloader/threads.py,sha256=KfLZFv6al6csaLJK_9Ko71pZlIysmjmS8iKn_vmNQjo,1145
+Spinloader-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+Spinloader-0.0.1.dist-info/METADATA,sha256=MVzdv1_m8nC5POE0ccZpV9xea8G6bC8ogknlUOIIqTI,220
+Spinloader-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Spinloader-0.0.1.dist-info/top_level.txt,sha256=jJKAziWwQb2A6LlZeVBY36nl-7gOzeGcWkN9pmEw2so,11
+Spinloader-0.0.1.dist-info/RECORD,,
