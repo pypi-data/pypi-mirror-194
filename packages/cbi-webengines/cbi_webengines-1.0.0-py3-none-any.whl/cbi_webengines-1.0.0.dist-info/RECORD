@@ -1,0 +1,12 @@
+cbi_webengines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cbi_webengines/interfaces/__init__.py,sha256=_X8bUXUltqcJBOFfZ4EqfZDJ8gVdBKxazwuF5lfG1aE,60
+cbi_webengines/interfaces/request.py,sha256=Ek0qrxaaQBXISVQ_8EcLKiczVPAWEGMm8MpNNUPVLBc,68
+cbi_webengines/repositories/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cbi_webengines/repositories/engine_repository.py,sha256=PjTcT5uaOw_pcdynx7Ypd4kWCMsTf58EWKw_Otv7-X4,154
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cbi_webengines-1.0.0.dist-info/LICENSE,sha256=nYqqSHCbpN-_xQdxQN2sH1saEvCxN-C9QFzEPp5fkis,1069
+cbi_webengines-1.0.0.dist-info/METADATA,sha256=1CL2zz9ubPeU0r-mBR2qwcEp_uXVPecXQ72Z35NvoA4,672
+cbi_webengines-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cbi_webengines-1.0.0.dist-info/top_level.txt,sha256=IwplY9_9pLZ6KB5dkBdSCyBI8aY-h83IF2JoKcffDqY,21
+cbi_webengines-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cbi_webengines-1.0.0.dist-info/RECORD,,
