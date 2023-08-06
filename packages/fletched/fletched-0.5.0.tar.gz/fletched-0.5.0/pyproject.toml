@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fletched"
+version = "0.5.0"
+description = "Tools to build flet apps with multiple views/routes"
+authors = ["iron3oxide <jason.hottelet@tuta.io>"]
+license = "Apache-2.0"
+readme = "docs/index.md"
+packages = [{ include = "fletched" }]
+homepage = "https://iron3oxide.github.io/fletched/"
+repository = "https://github.com/iron3oxide/fletched"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+repath = "^0.9.0"
+flet = "^0.4.0"
+pydantic = "^1.10.5"
+abstractcp = "^0.9.9"
+polars = "^0.16.8"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs-material = "^9.0.13"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
