@@ -1,0 +1,2 @@
+[console_scripts]
+haipy = haipy.haipy:main
