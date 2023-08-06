@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pritamlib
+Version: 0.2
+Summary: A simple globalmart utility to fetch records from globalmart API
+Author: Pritam
+Author-email: someone@abc.com
+License: NIT
+Requires-Dist: pandas
+
+Has functions to fetch records from API, converting it to dataframe, some useful utility functions
