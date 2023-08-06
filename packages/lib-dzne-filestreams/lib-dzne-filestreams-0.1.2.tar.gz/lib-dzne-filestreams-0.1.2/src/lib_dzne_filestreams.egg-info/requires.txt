@@ -1,0 +1,6 @@
+pandas>=1.4.2
+Bio>=1.5.3
+tomli_w
+lib-dzne-basetables>=0.1.1
+lib-dzne-tsv>=0.1.1
+lib-dzne-workbook>=0.1.3
