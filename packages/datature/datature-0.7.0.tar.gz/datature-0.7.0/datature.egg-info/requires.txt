@@ -1,0 +1,9 @@
+requests
+google-crc32c
+pyhumps
+pyyaml
+inquirer
+tqdm
+halo
+filetype
+opencv-python
