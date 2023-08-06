@@ -1,0 +1,5 @@
+[cms.djangoapp]
+openedx_course_export = openedx_course_export.apps:CourseExportConfig
+
+[lms.djangoapp]
+openedx_course_export = openedx_course_export.apps:CourseExportConfig
