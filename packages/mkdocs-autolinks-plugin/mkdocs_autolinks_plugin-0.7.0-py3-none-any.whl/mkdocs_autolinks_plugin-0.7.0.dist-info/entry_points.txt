@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+autolinks = mkdocs_autolinks_plugin.plugin:AutoLinksPlugin
