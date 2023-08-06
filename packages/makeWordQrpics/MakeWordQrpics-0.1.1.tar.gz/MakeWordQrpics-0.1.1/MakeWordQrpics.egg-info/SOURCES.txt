@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+MakeWordQrpics/__init__.py
+MakeWordQrpics/make_word_qrpics.py
+MakeWordQrpics.egg-info/PKG-INFO
+MakeWordQrpics.egg-info/SOURCES.txt
+MakeWordQrpics.egg-info/dependency_links.txt
+MakeWordQrpics.egg-info/top_level.txt
+MakeWordQrpics/Function/__init__.py
+MakeWordQrpics/Function/optionDb.py
+MakeWordQrpics/Ui/TableToWordUi.py
+MakeWordQrpics/Ui/__init__.py
