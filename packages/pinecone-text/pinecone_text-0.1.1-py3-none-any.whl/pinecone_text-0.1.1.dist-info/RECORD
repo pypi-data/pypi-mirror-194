@@ -1,0 +1,7 @@
+pinecone_text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pinecone_text/sparse/__init__.py,sha256=wa5Hdpycqhp-IaEdfYZWHVDnRk7-miTFcgUrOzzMP40,185
+pinecone_text/sparse/bm25.py,sha256=okbb2DuQiTDeHK9edTaZmQpap2UlB8bqZZtlKLDBcso,6464
+pinecone_text/sparse/splade.py,sha256=9o8zK0ZG1LdbCpd2FgqR6tVTkBEtQd7OloQyS757LYI,2040
+pinecone_text-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pinecone_text-0.1.1.dist-info/METADATA,sha256=JaU-soIBB0ETPsO-y3AlLmXG4ViBQDVHdxXpHY_EWyI,2010
+pinecone_text-0.1.1.dist-info/RECORD,,
