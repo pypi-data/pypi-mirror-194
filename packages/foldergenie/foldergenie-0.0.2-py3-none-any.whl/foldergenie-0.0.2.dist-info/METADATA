@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: foldergenie
+Version: 0.0.2
+Summary: Directory structure creation
+Home-page: UNKNOWN
+Author: Skadoosh (Hariprasad)
+Author-email: <hariprasad19036@gmail.com>
+License: UNKNOWN
+Keywords: python,folder,file,directory,organize
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that allows to create complex folder structures
+
+
