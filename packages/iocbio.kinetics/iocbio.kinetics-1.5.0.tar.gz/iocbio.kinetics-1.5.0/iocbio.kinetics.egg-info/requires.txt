@@ -1,0 +1,13 @@
+iocbio.db>=2.0
+PySide6
+h5py
+scipy
+numpy
+pyqtgraph
+XlsxWriter
+tabulate
+msgpack
+attrdict3
+netCDF4
+python-dateutil
+tifffile

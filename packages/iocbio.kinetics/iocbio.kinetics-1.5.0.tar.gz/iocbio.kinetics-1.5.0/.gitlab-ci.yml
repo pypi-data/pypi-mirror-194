@@ -1,0 +1,87 @@
+stages:
+  - style
+  - docs
+  - build
+
+style:
+  stage: style
+  image: python:3.10
+  script:
+    - python -m pip install --upgrade pip
+    - pip install flake8
+    - pip install flake8-class-attributes-order
+    - flake8
+    - pip install black
+    - black iocbio --check
+
+pages:
+  stage: docs
+  image: python:3.9-buster
+  script:
+  - pip3 install --upgrade pip
+  - pip3 install mkdocs
+  - pip3 install sphinx sphinx-glpi-theme recommonmark
+  - mkdocs build
+  - rm -rf site/api-docs/
+  - pip3 install --upgrade-strategy only-if-needed -e .
+  - sphinx-build -b html docs/api site/api-docs
+  - rm -rf site/api
+  - mv site public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+  
+.windows_build_task:
+  stage: build
+  tags:
+  - shared-windows
+  - windows
+  - windows-1809
+  script:
+  - choco install -y python3 --version=3.9.7
+  - $env:ChocolateyInstall = Convert-Path "$((Get-Command choco).Path)\..\.."
+  - Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+  - refreshenv
+  - python.exe -m pip install --upgrade pip
+  - pip.exe install msvc-runtime
+  - pip.exe install pywin32
+  - pip.exe install -r requirements.txt
+  - pip.exe install pyinstaller
+  - pip.exe install .
+  - copy .\packaging\pyinstaller\gui.spec .
+  - copy .\packaging\pyinstaller\gui.py .
+  - pyinstaller gui.spec
+  - dir dist
+  - ren dist Kinetics
+  - copy .\packaging\pyinstaller\kinetics.bat .\Kinetics
+  - dir Kinetics
+  - dir
+  - mkdir .\Kinetics\app\iocbio\kinetics\modules
+  - dir Kinetics
+  - Xcopy /E .\iocbio\kinetics\modules\sysbio .\Kinetics\app\iocbio\kinetics\modules
+  - dir .\Kinetics\app\iocbio\kinetics\modules
+  - 7z a Kinetics.zip .\Kinetics 
+  - If ($CI_COMMIT_TAG -like '') {$NAME = 'kinetics-windows-dev.zip'}
+  - If ($CI_COMMIT_TAG -notlike '') {$NAME = -join('kinetics-windows-', $CI_COMMIT_TAG, '.zip')}
+  - ren Kinetics.zip $NAME
+  - wget.exe --no-check-certificate https://dl.min.io/client/mc/release/windows-amd64/mc.exe
+  - .\mc.exe cp --insecure $NAME sysbio/iocbio-kinetics/
+  - .\mc.exe ls --insecure sysbio/iocbio-kinetics/
+  only:
+  - tags
+
+build_windows_on_tags:
+  extends: .windows_build_task
+  only:
+    - tags
+
+build_windows_manually:
+  extends: .windows_build_task
+  when: manual
+  only:
+    - master
+    - /^bugfix*/
+    - /^feature.*/
+    - /^release.*/
