@@ -1,0 +1,5 @@
+py_arkworks_bls12381-0.3.3.dist-info/METADATA,sha256=Rj_MYZ_yWS8HHtAK740SvkSC5S-VoKHsqYLXqWSsSFw,3662
+py_arkworks_bls12381-0.3.3.dist-info/WHEEL,sha256=PRePfWf7yPrKjgGsII58VHCXjVsyChmUKB6P_iLtskI,129
+py_arkworks_bls12381/__init__.py,sha256=Qmv0aEwxFA7DkVStSa8vvkBJGqd6UzR7ssFN5ce1Jvs,163
+py_arkworks_bls12381/py_arkworks_bls12381.cpython-311-s390x-linux-gnu.so,sha256=bERJsz6HVePA9WV3e7Fh_oKfRhrMpUlADdv9x3o5XNA,6882440
+py_arkworks_bls12381-0.3.3.dist-info/RECORD,,
