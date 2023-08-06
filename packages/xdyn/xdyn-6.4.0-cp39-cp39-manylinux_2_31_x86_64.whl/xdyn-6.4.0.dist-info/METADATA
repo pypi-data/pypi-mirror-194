@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xdyn
+Version: 6.4.0
+Summary: A Python wrapper for XDyn
+Home-page: UNKNOWN
+Author: Sirehna
+Author-email: sirehna@sirehna.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+UNKNOWN
+
