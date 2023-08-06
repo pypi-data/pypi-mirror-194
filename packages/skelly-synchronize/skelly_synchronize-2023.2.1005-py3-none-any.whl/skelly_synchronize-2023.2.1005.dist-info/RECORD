@@ -1,0 +1,15 @@
+skelly_synchronize/__init__.py,sha256=E5lyFndAnRK1oETAK4-sILtczYtDh-_1dR0tN-A-Gew,976
+skelly_synchronize/__main__.py,sha256=7MiIw8j8yH6z8p_8ukqE6rQztu-us9yPHxNuUtkrR8E,333
+skelly_synchronize/skelly_synchronize.py,sha256=Z98EL3EcfetZ_9tmqCw1r_Ic4C4DitSi2ehmSt81cWw,13799
+skelly_synchronize/gui/skelly_synchronize_gui.py,sha256=fVp0BVolWcOJ7Nhkjiv-VNE6zYf8xu3kEtzj1zadOPw,1799
+skelly_synchronize/gui/widgets/run_button_widget.py,sha256=fvdXhiSqLKa-IAXEufEPUB7Lt3Fv9KSFJJShT6ec-BI,420
+skelly_synchronize/system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skelly_synchronize/system/default_paths.py,sha256=zun1rY1GS_EjyC8FEghMcodfgYg92zS5DtXjjpLime8,1479
+skelly_synchronize/system/logging_configuration.py,sha256=ePKoRwiHyJGKeClUkKN9PDZZU-qq0evSwrMS4jqtdNM,1402
+skelly_synchronize/tests/unit_tests.py,sha256=Nji6_aneJz0pu1RvEnmV8Ys6Jarc9vwLUMCWEnRRLZg,1018
+skelly_synchronize/utils/get_video_files.py,sha256=8PtbjKF88IFYIACvGGgQjthIF4841Ie3zZ805sMB8SE,1340
+skelly_synchronize-2023.2.1005.dist-info/entry_points.txt,sha256=Lt0by4KNFW7Oxys4aRI-JS_l8vbAIZUcStdrOGxqFH0,71
+skelly_synchronize-2023.2.1005.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+skelly_synchronize-2023.2.1005.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+skelly_synchronize-2023.2.1005.dist-info/METADATA,sha256=T4KIYeWbJK-8LsiGqUTAxIP17V7Qn1U5vK2wvUY7dbM,2671
+skelly_synchronize-2023.2.1005.dist-info/RECORD,,
