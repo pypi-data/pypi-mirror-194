@@ -1,0 +1,8 @@
+README.MD
+README.md
+pyfind.py
+pyproject.toml
+pyfindtool.egg-info/PKG-INFO
+pyfindtool.egg-info/SOURCES.txt
+pyfindtool.egg-info/dependency_links.txt
+pyfindtool.egg-info/top_level.txt
