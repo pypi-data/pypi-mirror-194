@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: easyMirai
+Version: 2.30.36
+Summary: 帮助QBot开发者快速构建简单的QQ机器人
+Home-page: https://github.com/easyMirais/easyMirai
+Author: ExMikuPro & HexMikuMax
+Author-email: sfnco-miku@outlook.com
+License: GNU
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: rich
+
+
+# easyMirai
+
+项目地址：https://github.com/easyMirais/easyMirai
+
+项目文档：https://github.com/easyMirais/easyMirai/wiki
+
+提交反馈：sfnco-miku@outlook.com
+
