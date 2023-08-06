@@ -1,0 +1,2 @@
+[console_scripts]
+torchaction = torchaction.parse_args:main
