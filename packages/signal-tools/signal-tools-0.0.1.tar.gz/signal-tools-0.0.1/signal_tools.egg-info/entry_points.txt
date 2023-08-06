@@ -1,0 +1,3 @@
+[console_scripts]
+signal-stream-tools = signal_tools.cli:stream_cli
+signal-tools = signal_tools.cli:file_cli

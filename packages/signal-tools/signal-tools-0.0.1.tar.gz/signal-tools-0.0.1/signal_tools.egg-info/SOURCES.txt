@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+signal_tools/__init__.py
+signal_tools/cli.py
+signal_tools/trapezfilter.py
+signal_tools.egg-info/PKG-INFO
+signal_tools.egg-info/SOURCES.txt
+signal_tools.egg-info/dependency_links.txt
+signal_tools.egg-info/entry_points.txt
+signal_tools.egg-info/requires.txt
+signal_tools.egg-info/top_level.txt
