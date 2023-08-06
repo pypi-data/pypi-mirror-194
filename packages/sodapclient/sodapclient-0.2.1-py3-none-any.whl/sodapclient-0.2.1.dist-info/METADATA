@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sodapclient
+Version: 0.2.1
+Summary: A simple OpenDAP client library
+Home-page: https://bitbucket.org/sea_dev/sodapclient
+Author: Systems Engineering & Assessment Ltd.
+Author-email: Marcus.Donnelly@sea.co.uk
+License: MIT
+Keywords: OpenDAP,Environment,Science
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.20)
+
