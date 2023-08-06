@@ -1,0 +1,10 @@
+urchin/__init__.py,sha256=447XDki3zdBtpk32NoqaFNOxt-cuT2ApQzogYORVGpk,957
+urchin/urdf.py,sha256=WNfAmEXUM-TJchPFnHtTRuhkXU_fk9dtuFkKsktIzzY,131594
+urchin/urdf_math.py,sha256=WNfAmEXUM-TJchPFnHtTRuhkXU_fk9dtuFkKsktIzzY,131594
+urchin/utils.py,sha256=I6cMTcbJFe1tXKQAnrCVKgA1OdlL3sKMeK8M7vtXhEY,8010
+urchin/version.py,sha256=3LOMIFpU6nmRpZPqoAcWvDbsCkfB6CYJrh-8UnxWtWs,23
+urchin-0.0.26.dist-info/LICENSE,sha256=snxGwLReJ69Md5-UFGqIk0pq0Mqdhhax0fcdkK3K0Gs,1083
+urchin-0.0.26.dist-info/METADATA,sha256=E1ulF0qa81Z-rEEL5h0jMDu6DfS9v6Iat4KnqN8czEc,1375
+urchin-0.0.26.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+urchin-0.0.26.dist-info/top_level.txt,sha256=wpTF1kC_Z6FlKzLDpICs4XMmbbOzNKpsfw6jb0Pc994,7
+urchin-0.0.26.dist-info/RECORD,,
