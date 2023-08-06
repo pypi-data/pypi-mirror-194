@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: meme-generator
+Version: 0.0.1a2
+Summary: Python package for making fun pictures
+Home-page: https://github.com/MeetWq/meme-generator
+License: MIT
+Author: meetwq
+Author-email: meetwq@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi (>=0.87.0,<1.0.0)
+Requires-Dist: filetype (>=1.2.0,<2.0.0)
+Requires-Dist: httpx (>=0.20.0,<1.0.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: pil-utils (>=0.1.0,<0.2.0)
+Requires-Dist: python-multipart (>=0.0.5,<0.0.6)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: tqdm (>=4.60.0,<5.0.0)
+Requires-Dist: uvicorn (>0.17.0,<1.0.0)
+Project-URL: Repository, https://github.com/MeetWq/meme-generator
+Description-Content-Type: text/markdown
+
+# meme_generator
+
+### TODO
+
+- [x] 加载表情
+- [x] 调用表情
+- [x] 构建 API
+- [x] cli 方式调用
+- [x] 配置项设置
+- [x] 迁移 petpet 和 memes 的表情
+- [ ] 图片打包方式（计划在 setup.py 中完成图片下载）
+
