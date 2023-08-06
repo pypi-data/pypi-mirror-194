@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: baked-brie
+Version: 1.0.0b1.dev0
+Summary: The Barrier Inlet Environment (BRIE) Model
+Author: Katherine Anarde
+Author-email: kanarde@ncsu.edu
+Maintainer: Katherine Anarde
+Maintainer-email: kanarde@ncsu.edu
+License: The MIT License (MIT)
+        =====================
+        
+        Copyright (c) `2023` `Katherine Anarde`
+        
+        Permission is hereby granted, free of charge, to any person
+        obtaining a copy of this software and associated documentation
+        files (the "Software"), to deal in the Software without
+        restriction, including without limitation the rights to use,
+        copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the
+        Software is furnished to do so, subject to the following
+        conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+        OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+        HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+        WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+        FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: homepage, https://github.com/UNC-CECL/brie
+Project-URL: documentation, https://github.com/UNC-CECL/brie
+Project-URL: repository, https://github.com/UNC-CECL/brie
+Project-URL: changelog, https://raw.githubusercontent.com/UNC-CECL/brie/master-brie/CHANGES.rst
+Keywords: earth science,coast,barrier inlet
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE.rst
+License-File: AUTHORS.rst
+
+BRIE: The Barrier Inlet Environment model
+=========================================
+
+This is the python version of the BarrieR Inlet Envrionment (BRIE) model written
+by Jaap Nienhuis and Jorge Lorenzo Trueba. The matlab to python conversion was
+performed by Katherine Anarde. Eric Hutton worked to wrap the model with a basic
+model interface, reorganized the many model components into classes (i.e., The
+Alongshore Transporter), which now allows for dynamical testing of the alongshore
+transporter model (see the Jupyter Notebook).
+
+|Build Status|
+
+
+.. |Build Status| image:: https://travis-ci.com/UNC-CECL/brie.svg?branch=master
+   :target: https://travis-ci.com/UNC-CECL/brie
+
+Credits
+=======
+
+Development Leads
+-----------------
+
+* Katherine Anarde <kanarde@ncsu.edu> (python conversion)
+* Jaap Nienhuis <j.h.nienhuis@uu.nl> (original matlab version)
+
+Contributors
+------------
+
+* Eric Hutton <mcflugen@gmail.com>
+
+Changelog for brie
+==================
+
+1.0.0b1 (unreleased)
+--------------------
+
+- Nothing changed yet.
+
+
+1.0.0b0 (2023-02-23)
+--------------------
+
+- Nothing changed yet

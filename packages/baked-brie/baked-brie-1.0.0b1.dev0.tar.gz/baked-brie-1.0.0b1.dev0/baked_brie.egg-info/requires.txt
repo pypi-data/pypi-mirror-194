@@ -1,0 +1,7 @@
+bmipy
+numpy
+pyyaml
+scipy
+
+[dev]
+nox

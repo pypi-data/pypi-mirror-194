@@ -1,0 +1,4 @@
+bmipy
+numpy
+pyyaml
+scipy
