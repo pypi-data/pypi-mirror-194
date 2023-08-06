@@ -1,0 +1,116 @@
+import nonebot
+from nonebot import logger
+from pydantic import BaseModel, Extra
+from pathlib import Path
+from typing import Set, Union
+import httpx
+from aiocache import cached
+try:
+    import ujson as json
+except ModuleNotFoundError:
+    import json
+
+
+class PluginConfig(BaseModel, extra=Extra.ignore):
+    '''
+        Path of tarot images resource
+    '''
+    tarot_path: Path = Path(__file__).parent / "resource"
+    chain_reply: bool = True
+    nickname: Set[str] = {"Bot"}
+
+
+driver = nonebot.get_driver()
+tarot_config: PluginConfig = PluginConfig.parse_obj(driver.config.dict())
+
+
+class DownloadError(Exception):
+    pass
+
+
+class ResourceError(Exception):
+    pass
+
+
+class EventsNotSupport(Exception):
+    pass
+
+
+async def download_url(url: str) -> Union[httpx.Response, None]:
+    async with httpx.AsyncClient() as client:
+        for i in range(3):
+            try:
+                response = await client.get(url)
+                if response.status_code != 200:
+                    continue
+
+                return response
+
+            except Exception:
+                logger.warning(
+                    f"Error occured when downloading {url}, {i+1}/3")
+
+    logger.warning("Abort downloading")
+    return None
+
+
+@driver.on_startup
+async def tarot_version_check() -> None:
+    '''
+        Get the latest version of tarot.json from repo
+    '''
+    if not tarot_config.tarot_path.exists():
+        tarot_config.tarot_path.mkdir(parents=True, exist_ok=True)
+
+    tarot_json_path = Path(__file__).parent / "tarot.json"
+
+    cur_version = 0
+    if tarot_json_path.exists():
+        with tarot_json_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+            cur_version = data.get("version", 0)
+
+    url = "https://raw.fastgit.org/MinatoAquaCrews/nonebot_plugin_tarot/main/nonebot_plugin_tarot/tarot.json"
+    response = await download_url(url)
+
+    if response is None:
+        if not tarot_json_path.exists():
+            logger.warning("Tarot text resource missing! Please check!")
+            raise ResourceError
+    else:
+        docs = response.json()
+        try:
+            version = docs.get("version")
+        except KeyError:
+            logger.warning(
+                "Tarot text resource downloaded incompletely! Please check!")
+            raise DownloadError
+
+        # Update when there is a newer version
+        if version > cur_version:
+            with tarot_json_path.open("w", encoding="utf-8") as f:
+                json.dump(docs, f, ensure_ascii=False, indent=4)
+                logger.info(
+                    f"Updated tarot.json, version: {cur_version} -> {version}")
+
+
+@cached(ttl=180)
+async def get_tarot(_theme: str, _type: str, _name_cn: str) -> Union[bytes, None]:
+    '''
+        Downloads tarot image and stores cache temporarily
+        if downloading failed, return None
+    '''
+    logger.info(
+        f"Downloading tarot image {_theme}/{_type}/{_name_cn} from repo")
+
+    url = "https://raw.fastgit.org/MinatoAquaCrews/nonebot_plugin_tarot/main/nonebot_plugin_tarot/resource/" + \
+        f"{_theme}/{_type}/{_name_cn}"
+
+    data = await download_url(url)
+    
+    if data is None:
+        logger.warning(
+            f"Downloading tarot image {_theme}/{_type}/{_name_cn} failed!")
+        return None
+
+    return data.content
