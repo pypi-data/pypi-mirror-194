@@ -1,0 +1,8 @@
+pywolf/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pywolf/db/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pywolf/lang/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pywolf/lang/typeutils.py,sha256=dg1nBBQ6yBAaQQJW1c8n6zM1avEW8Utc6q0eXH-ugis,73
+pywolf-0.1.0.dist-info/LICENSE,sha256=xmUmg3xu7yD6VU6TqOlu6xt473MbUKfBHGm2UMO3VOM,1066
+pywolf-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pywolf-0.1.0.dist-info/METADATA,sha256=rKalV-dzhyl543rDalzQo1zlnOO92FPgAWLbi1BXtzo,399
+pywolf-0.1.0.dist-info/RECORD,,
