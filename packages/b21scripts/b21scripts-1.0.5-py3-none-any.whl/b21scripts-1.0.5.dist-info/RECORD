@@ -1,0 +1,12 @@
+b21scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b21scripts/readwrite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b21scripts/readwrite/dat.py,sha256=fo_syp3LvhNGBSdT5Jclsxg6gAXrC3ZevN81z6zqse0,6146
+b21scripts/readwrite/interface.py,sha256=UkIoCmw8i7lH_3RoyOohtTU3G7FDYuE2xeHuajxfYvg,395
+b21scripts/readwrite/pdb.py,sha256=BhPRBKJtFv4cflaPH7oZkVn7_s0IkhkM35IZqs3CiGM,13786
+b21scripts/saxs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b21scripts/saxs/saxs_calc.py,sha256=WV8Xz1VNdfAMSmVICpb62hrbjcZgJ3QtBpxIEPEyANo,11290
+b21scripts-1.0.5.dist-info/LICENCE,sha256=uZjrIFWvNoGhNJB2WV-ncsfh1rHDzGwI4JnTh79AXps,1084
+b21scripts-1.0.5.dist-info/METADATA,sha256=RPX3QnCp22UGGQ3UWshhDcCZxCI23Yux62lh1Olpyak,2466
+b21scripts-1.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+b21scripts-1.0.5.dist-info/top_level.txt,sha256=Vrm64FDPvxJmxBChuzTRAEzQJhVINK-fyg6bGQ7pWJI,11
+b21scripts-1.0.5.dist-info/RECORD,,
