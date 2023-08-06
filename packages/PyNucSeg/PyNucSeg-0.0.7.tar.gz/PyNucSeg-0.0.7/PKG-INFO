@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: PyNucSeg
+Version: 0.0.7
+Summary: Segment fluorescent nucleus, and measure the area, and the mean intensity per nucleus.
+Home-page: https://github.com/pganes/PyNucSeg
+Author: Ganesh Pandey
+Author-email: gpande3@uic.edu
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# PyNucSeg
+A python package for segmentation of fluorescent nucleus, and measure the area of nucleus and the mean intensity per nucleus. This package uses `stardist` (https://github.com/stardist/stardist) for segmentation, and `napari` (https://github.com/napari/napari) for visualization.
+
+## Installation
+Run the follwing to install:
+```python
+pip install pynucseg
+```
+## Import
+
+```python
+from pynucseg import ReferenceImage
+```
