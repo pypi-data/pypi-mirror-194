@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_simple.py,sha256=CT5ItiPyj9br93oW8U-EF8vIDuT8LrmyDZwF-t9UvnQ,11146
+tests/test_texplain_example1.py,sha256=RsPeHai86MrM8v0aMaFnSc5QZEMlEgKxuZY01UsTYLo,1438
+texplain/__init__.py,sha256=371lv_55uiIv5I3ONTkP3Kzd7iM5sqZkUsJ_oCxr7QE,31713
+texplain/_version.py,sha256=a0yJhWk72IWejRWIifC48k_2JA1SnCm-v-dQs-bk4io,160
+texplain-0.6.1.dist-info/LICENSE,sha256=TThVvgTUvAGbVLrQy6b6sEIRRuXBdWaLoHgctmDis94,1068
+texplain-0.6.1.dist-info/METADATA,sha256=aHviFtpN7Ov6l4neFBcwKdFcqpV8cfsT8LGLu2mtZos,3410
+texplain-0.6.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+texplain-0.6.1.dist-info/entry_points.txt,sha256=X9_7eoTwwOqQIoyu6FS5LCODqy14XozMGVcnt1gmRqU,94
+texplain-0.6.1.dist-info/top_level.txt,sha256=hFYfmiNH3f9-5U-c6TS2L9VoQz_1FDXvcmqODbfBE3k,15
+texplain-0.6.1.dist-info/RECORD,,
