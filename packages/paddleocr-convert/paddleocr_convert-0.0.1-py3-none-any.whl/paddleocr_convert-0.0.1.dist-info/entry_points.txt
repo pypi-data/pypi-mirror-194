@@ -1,0 +1,3 @@
+[console_scripts]
+paddleocr_convert = paddleocr_convert.main:main
+
