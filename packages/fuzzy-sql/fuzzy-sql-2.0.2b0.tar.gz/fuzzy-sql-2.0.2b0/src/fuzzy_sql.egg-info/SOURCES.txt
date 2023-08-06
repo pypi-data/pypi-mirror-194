@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fuzzy_sql/__init__.py
+src/fuzzy_sql/generate.py
+src/fuzzy_sql/load.py
+src/fuzzy_sql/randomquery.py
+src/fuzzy_sql/report.py
+src/fuzzy_sql.egg-info/PKG-INFO
+src/fuzzy_sql.egg-info/SOURCES.txt
+src/fuzzy_sql.egg-info/dependency_links.txt
+src/fuzzy_sql.egg-info/requires.txt
+src/fuzzy_sql.egg-info/top_level.txt
