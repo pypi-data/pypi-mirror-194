@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: golem-kernel
+Version: 0.1.0
+Summary: Jupyter Kernel on Golem (https://www.golem.network/)
+License: LGPL-3.0-or-later
+Author: Jan Betley
+Author-email: jan.betley@golem.network
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: golem_core (==0.1.0)
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: websockets (==10.4)
