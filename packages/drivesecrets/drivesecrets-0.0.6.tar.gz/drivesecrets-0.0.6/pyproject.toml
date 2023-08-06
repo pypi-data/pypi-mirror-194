@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "drivesecrets"
+version = "0.0.6"
+description = "Save secrets in your google drive to secure your Colaboratory notebooks."
+authors = ["Kevin Katz <contact@kevinkatz.io>"]
+
+# [tool.poetry.dependencies]
+# google-colab = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
