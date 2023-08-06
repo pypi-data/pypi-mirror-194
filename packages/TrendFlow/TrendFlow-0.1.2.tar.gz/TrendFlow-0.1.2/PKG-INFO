@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: TrendFlow
+Version: 0.1.2
+Summary: A tool for literature research and analysis
+Home-page: https://github.com/leoxiang66/research-trends-analysis
+Author: Tao Xiang
+Author-email: tao.xiang@tum.de
+License: UNKNOWN
+Description: 
+        
+        # Research Trends Analysis App
+        An app for analyzing research trends and directions.
+        
+        [[doc](https://leoxiang66.github.io/research-trends-analysis/)]
+        
+        
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
