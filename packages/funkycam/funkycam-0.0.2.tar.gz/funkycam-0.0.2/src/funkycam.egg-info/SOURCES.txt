@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/funkycam/__init__.py
+src/funkycam/funkycam.py
+src/funkycam.egg-info/PKG-INFO
+src/funkycam.egg-info/SOURCES.txt
+src/funkycam.egg-info/dependency_links.txt
+src/funkycam.egg-info/top_level.txt

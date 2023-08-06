@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: funkycam
+Version: 0.0.2
+Summary: A small package to make funky video, images, and real-time video
+Author: Luke Tambakis
+Project-URL: Homepage, https://github.com/LTambam/funkycam
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FunkyCam
+
+This is a simple package with one class, Funky, that allows you to recolor images by brightness of each pixel and extract edges and thicken edges. 
+The final product is a cartoon-like version of the original image. Like this:
+
+
+
+The luminance calculation is simplified so that it can recolor video in "realtime" (depends on image quality and number of colors chosen). 
+To select colors, there are 3 options:
+1. Use the seaborn color_palettes.
+2. Manually input RGB colors in a list of lists. Resolution is 8 bits: 0-255 each color.
+3. Specify "random_colors=True".
+
+You can also specify the line size, blur value when finding edges, and blur value when finding colors. Generally increasing blur values will reduce detail in the edges and colors, i.e. fewer edges and larger splotches of colors.
+
+Examples are given in the "examples" folder to demonstrate how to use this package with a webcam, image files, and video files.
+
+Turns out this is a little bit like "cel-shading", a commonly used shader algorithm. 
