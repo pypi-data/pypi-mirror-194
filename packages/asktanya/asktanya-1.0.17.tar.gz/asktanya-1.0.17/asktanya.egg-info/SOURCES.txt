@@ -1,0 +1,23 @@
+.gitignore
+.python-version
+MANIFEST.in
+Makefile
+README.md
+requirements.txt
+setup.py
+.github/workflows/pythonpackage.yml
+asktanya/__init__.py
+asktanya/clean.py
+asktanya/func.py
+asktanya/main.py
+asktanya.egg-info/PKG-INFO
+asktanya.egg-info/SOURCES.txt
+asktanya.egg-info/dependency_links.txt
+asktanya.egg-info/not-zip-safe
+asktanya.egg-info/requires.txt
+asktanya.egg-info/top_level.txt
+asktanya/data/.keep
+notebooks/.keep
+notebooks/Google Search.ipynb
+scripts/ask-tanya
+tests/__init__.py

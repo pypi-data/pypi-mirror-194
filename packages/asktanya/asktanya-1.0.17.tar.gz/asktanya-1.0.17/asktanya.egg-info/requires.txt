@@ -1,0 +1,7 @@
+wikipedia
+pywikihow
+beautifulsoup4
+requests
+nltk
+black
+flake8
