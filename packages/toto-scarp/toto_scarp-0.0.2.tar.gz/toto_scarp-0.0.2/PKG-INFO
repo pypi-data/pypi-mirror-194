@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: toto_scarp
+Version: 0.0.2
+Summary: Forward function to generate chlorine 36 profiles on fault scarp
+Author-email: Maureen Llinares <maureenllin@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+
+# forward_pymodelscarp
+This package is 
+
+# Build Status
+
+# Installation
+1) create a virtual environment with virtual-env
+run the following command in terminal:
+
+2) install package with pip:
+pip install forward-pymodelscarp==0.0.2
+
+# How to Use?
+
+
+# Credits
+This project is an adapted version for python of modelscarp.m (Schlagenhauf et al. 2010) and modelscarp.f90 (Tesson & Benedetti 2019)
+
+# License
+MIT
+
+
+
