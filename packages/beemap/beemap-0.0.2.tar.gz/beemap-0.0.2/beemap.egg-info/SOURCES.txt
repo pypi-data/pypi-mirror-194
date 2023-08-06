@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+beemap/__init__.py
+beemap/beemap.py
+beemap.egg-info/PKG-INFO
+beemap.egg-info/SOURCES.txt
+beemap.egg-info/dependency_links.txt
+beemap.egg-info/not-zip-safe
+beemap.egg-info/top_level.txt
