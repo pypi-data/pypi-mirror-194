@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: theorytoolkit
+Version: 0.0.1
+Summary: This package refers to the topic of automata theory, which includes DFA, NDFA, Mealy machines, and Moore machines.
+Author: Mohammed Varaliya
+Author-email: <mail@neuralnine.com>
+Keywords: python,DFA,NDFA,Mealy machines,Moore machines,Automata,Theory of Computation
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+The package contains a set of tools and algorithms for theoretical computer science, which could include automata theory as well as other topics.
