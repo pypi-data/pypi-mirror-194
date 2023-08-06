@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gdcbeutils
+Version: 1.0.1
+Summary: Simple package with utility functions for everyday projects in Python
+Author-email: Gustavo Diniz da Corte <gustavodacorte@gmail.com>
+Project-URL: Homepage, https://github.com/Gdcorte/base-utils-backend-lib
+Project-URL: Bug Tracker, https://github.com/Gdcorte/base-utils-backend-lib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Base Backend Utils
+
+Simple package to provide with handy utility functions and helpers for backend applications
