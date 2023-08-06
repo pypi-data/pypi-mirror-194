@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: xh-utils
+Version: 1.0.0
+Summary: xh personal Python util libs
+Home-page: https://github.com/wfs420100/XhUtils
+Author: wfs420100
+Author-email: wfs420100@126.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# XhUtils
+
+```shell
+python setup.py bdist_wheel --universal
+twine upload dist/*  # pip install twine
+
+pip install xh_utils -i https://www.pypi.org/simple/
+```
+
+1. 彩色日志
+
+## 示例
+
+### 1.彩色日志
+
+```python
+from xh_utils.logger import Logger as logger
+
+logger.init_logger()
+# logger.init_logger(log_pathdir="./log/",is_split_logfile=True) # 日志同步写入文件，并按天进行文件分割写入
+logger.debug("debug")
+logger.info("info")
+logger.warning("warning")
+logger.error("error")
+```
+
