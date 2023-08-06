@@ -1,0 +1,2 @@
+[console_scripts]
+face_eval = nsface.eval.commands.run:main
