@@ -1,0 +1,5 @@
+[console_scripts]
+pytest-langchain = pytest_langchain:main
+
+[pytest11]
+langchain = pytest_langchain.plugin
