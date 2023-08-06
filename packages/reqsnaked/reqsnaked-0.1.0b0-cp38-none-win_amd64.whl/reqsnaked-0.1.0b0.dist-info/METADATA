@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: reqsnaked
+Version: 0.1.0b0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: aiohttp==3.8.4; extra == 'benchmark'
+Requires-Dist: httpx==0.23.3; extra == 'benchmark'
+Requires-Dist: pytest-benchmark==4.0.0; extra == 'benchmark'
+Requires-Dist: pytest==7.2.1; extra == 'test'
+Requires-Dist: pytest-asyncio==0.20.3; extra == 'test'
+Requires-Dist: mkdocs==1.4.2; extra == 'docs'
+Requires-Dist: mkdocs-material==9.0.14; extra == 'docs'
+Requires-Dist: mike==1.1.2; extra == 'docs'
+Requires-Dist: pillow==9.4.0; extra == 'docs'
+Requires-Dist: cairosvg==2.6.0; extra == 'docs'
+Provides-Extra: benchmark
+Provides-Extra: test
+Provides-Extra: docs
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Reqsnaked
+Reqsnaked is a blazing fast async/await HTTP client for Python written on Rust using reqwests.
+
+* [Works 15% faster than `aiohttp` on average](./benchmarks)
+* RAII approach without context managers
+* Memory-efficient lazy JSON parser
+* Fully-typed even being written on Rust
+
+***
+__Docs__: [https://deknowny.github.io/reqsnaked/devel/](https://deknowny.github.io/reqsnaked/devel/)
+
+## Overview
+```python title="Example"
+import asyncio
+import datetime
+
+import reqsnaked
+
+
+async def main():
+    client = reqsnaked.Client(
+        user_agent="Reqsnaked/1.0",
+        headers={"X-Foo": "bar"},
+        store_cookie=True
+    )
+    request = reqsnaked.Request(
+        "POST", "https://httpbin.org/anything",
+        multipart=reqsnaked.Multipart(
+            reqsnaked.Part(
+                "foo", b"01010101",
+                filename="foo.txt",
+                mime="text/plain"
+            )
+        ),
+        query={"foo": "bar"},
+        headers={"X-Bar": "foo"},
+        timeout=datetime.timedelta(seconds=30),
+    )
+    response = await client.send(request)
+    print(response.status)
+    data = await response.json()
+    data.show()
+
+
+asyncio.run(main())
+```
+```
+HTTPStatus.OK
+```
+```json
+{
+  "args": {
+    "foo": "bar"
+  },
+  "data": "",
+  "files": {
+    "foo": "01010101"
+  },
+  "form": {},
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, br",
+    "Content-Length": "246",
+    "Content-Type": "multipart/form-data; boundary=a59212f1bfcc112f-b3b83c8afd39b140-f302f74df067620a-a8a38a37c3355abe",
+    "Host": "httpbin.org",
+    "User-Agent": "Reqsnaked/1.0",
+    "X-Amzn-Trace-Id": "Root=1-63fcfd9b-412668b5117367524668f43b",
+    "X-Bar": "foo",
+    "X-Foo": "bar"
+  },
+  "json": null,
+  "method": "POST",
+  "origin": "1.1.1.1",
+  "url": "https://httpbin.org/anything?foo=bar"
+}
+```
+
+## Installlation
+Currently the library is not published to PyPI, so the only way to install it is from GitHub:
+```bash
+python -m pip install -U https://github.com/deknowny/reqsnaked/archive/main.zip
+```
+
