@@ -1,0 +1,28 @@
+[project]
+name = "todo"
+version = "0.1.0"
+description = "Create Tasks"
+authors = [
+    { name = "hlop3z", email = "23062270+hlop3z@users.noreply.github.com" },
+]
+dependencies = [
+]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+
+[tool.pdm.scripts]
+app = "python manage.py"
+test = "pytest -rA ./automated-testing/"
+
+[tool.pdm.dev-dependencies]
+testing = ["pytest>=7.2.0", "httpx>=0.23.1", "pytest-asyncio>=0.20.2"]
+dev = [
+   "-e fastberry[testing] @ file:///${PROJECT_ROOT}/..",
+]

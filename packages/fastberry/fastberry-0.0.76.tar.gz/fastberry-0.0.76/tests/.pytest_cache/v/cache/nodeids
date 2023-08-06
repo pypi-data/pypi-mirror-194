@@ -1,0 +1,7 @@
+[
+  "automated-testing/test_main.py::test_all_tasks",
+  "automated-testing/test_main.py::test_root",
+  "automated-testing/test_main.py::test_root[asyncio]",
+  "automated-testing/test_main.py::test_root[trio]",
+  "automated-testing/test_main.py::test_search"
+]
