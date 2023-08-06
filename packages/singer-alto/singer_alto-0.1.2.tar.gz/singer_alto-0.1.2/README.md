@@ -1,0 +1,147 @@
+# Alto (WIP)
+
+A lightweight yet intelligent way to manage Singer based ELT.
+
+> How is this different than what exists today?
+
+Using Meltano as the baseline of comparison, there are some noteworthy differences.
+
+- Significantly smaller dependency footprint by an order of magnitude. Alto only has 4 direct dependencies with no C or rust extensions in the dependency tree. The below comparison includes transitives:
+    - **Meltano**: 151
+    - **Alto**: 7
+- Because of its dependency footprint, it can be installed in very tiny containers and packaged formats such as `PEX` are cross platform compatible. It can also be used with `PyOxide` or `Nuitka`.
+- We use `PEX` (PythonEXecutable) for all plugins instead of loose venvs making plugins single files that are straightforward to cache.
+- We use a (simple) caching algorithm that makes the plugins re-usable across machines when combined with a remote filesystem.
+- We use `fsspec` to provide a filesystem abstraction layer that provides the exact same experience locally on a single machine as when plugged into a remote blob store such as `s3`, `gcs`, or any supported `fsspec` storage.
+- An order of magnitude (`>85%`) less code which makes iteration/maintenance or forking easier (in theory)
+- We use `Dynaconf` to manage configuration
+    - This gives us uniform support for json, toml, and yaml out of the box
+    - We get environment management 
+    - We get configuration inheritance / deep merging
+    - We get `.env` support
+    - We get unique ways to render vars with `'@format ` tokens
+
+**Meltano**
+```
+───────────────────────────────────────────────────────────────────────────────
+Language                 Files     Lines   Blanks  Comments     Code Complexity
+───────────────────────────────────────────────────────────────────────────────
+Python                     154     26842     2402      4262    20178       1106
+```
+
+**Alto**
+```
+───────────────────────────────────────────────────────────────────────────────
+Language                 Files     Lines   Blanks  Comments     Code Complexity
+───────────────────────────────────────────────────────────────────────────────
+Python                      12      2892      226       164     2502        190
+```
+
+
+
+## Example
+
+An entire timed end-to-end example can be carried out via the below command.
+
+From start to finish, it will:
+
+1. Create a directory
+2. Initialize an alto project (create the `alto.toml` file)
+3. Run an extract -> load of an open API to target jsonl
+    1. Build PEX plugins for `tap-carbon-intensity` and `target-jsonl`
+    2. Dynamically generate config for the Singer plugin based on the toml file (supports toml/yaml/json)
+    3. Run discovery and cache catalog to ~/.alto/(project-name)/catalog
+    4. Apply user configuration to the catalog
+    5. Run the pipeline
+    6. Clean up the staging directory
+    7. Manage and persist the state
+
+```bash
+# Create a dir, init a project, run an end-2-end pipeline, show some output as proof
+mkdir example_project \
+&& cd $_; yes | alto init; \
+time alto tap-carbon-intensity:target-jsonl; \
+cat output/* | head -8; ls -l output; cd -; \
+tree example_project
+```
+
+Resulting in the below output:
+
+```
+example_project
+├── .alto
+│   ├── logs
+│   │   └── dev
+│   └── plugins
+│       ├── 263b729b56cf48f4bc3d08b687045ad3f81713ce
+│       └── 60e33af4f316a41812ee404136d7a747011ba811
+├── .alto.json
+├── alto.secrets.toml
+├── alto.toml
+└── output
+    ├── entry-20230228T205342.jsonl
+    ├── generationmix-20230228T205342.jsonl
+    └── region-20230228T205342.jsonl
+
+5 directories, 8 files
+```
+
+`>>> cat alto.toml`
+
+```toml
+[default]
+project_name = "4c167d53"
+extensions = []
+namespace = "raw"
+
+[default.taps.tap-carbon-intensity]
+pip_url = "git+https://gitlab.com/meltano/tap-carbon-intensity.git#egg=tap_carbon_intensity"
+namespace = "carbon_intensity"
+capabilities = ["state", "catalog"]
+select = ["*.*"]
+
+[default.taps.tap-carbon-intensity.config]
+
+[default.targets.target-jsonl]
+pip_url = "target-jsonl==0.1.4"
+
+[default.targets.target-jsonl.config]
+destination_path = "output"
+```
+
+## The tale of a tiny binary
+
+One can produce a sub 50mb binary with `nuitka` that can be built in a multistage docker image and copied into the final stage producing incredibly small containers.
+
+`nuitka3 --standalone --onefile --output-dir=build --output-filename=alto alto/main.py`
+
+Resulting image based on bundled Dockerfile inspected with `dive`:
+
+```
+❯ CI=true dive tinysinger:test
+  Using default CI config
+Image Source: docker://tinysinger:test
+Fetching image... (this can take a while for large images)
+Analyzing image...
+  efficiency: 100.0000 %
+  wastedBytes: 0 bytes (0 B)
+  userWastedPercent: 0.0000 %
+Inefficient Files:
+Count  Wasted Space  File Path
+None
+Results:
+  PASS: highestUserWastedPercent
+  SKIP: highestWastedBytes: rule disabled
+  PASS: lowestEfficiency
+Result:PASS [Total:3] [Passed:2] [Failed:0] [Warn:0] [Skipped:1]
+```
+
+So the example above could be ran like this:
+
+```bash
+mkdir example_project \
+&& cd $_; yes | docker run -i -v$(pwd):/stage z3z1ma/alto:test-1 -- --root /stage init; \
+time docker run -v$(pwd):/stage z3z1ma/alto:test-1 -- --root /stage tap-carbon-intensity:target-jsonl; \
+cat output/* | head -8; ls -l output; cd -; \
+tree example_project
+```
