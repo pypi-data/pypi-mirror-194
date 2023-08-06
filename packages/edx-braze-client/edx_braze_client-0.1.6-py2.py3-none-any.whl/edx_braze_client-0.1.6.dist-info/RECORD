@@ -1,0 +1,10 @@
+braze/__init__.py,sha256=zbMbDuFufSuU6UMi3Hx3QBbxqZUPc9q2sPLNlj53Vlw,78
+braze/client.py,sha256=XNVmpEzVCtLV8x4DTGXgP4N-QRYFRAYXQrn4aI4TlGA,14808
+braze/constants.py,sha256=PePS9Ym-JHRp2A9Am0zyyfFLpDX5KqL3YU1WKMRjAXI,555
+braze/exceptions.py,sha256=Aa9IUrbehOo4ojUdSzWK_fV5t1SIJrm6qUd7ZyjmG5U,1142
+edx_braze_client-0.1.6.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+edx_braze_client-0.1.6.dist-info/LICENSE.txt,sha256=QTW2QN7q3XszgUAXm9Dzgtu5LXYKbR1SGnqMa7ufEuY,35139
+edx_braze_client-0.1.6.dist-info/METADATA,sha256=OSOYb_xSBhAKbV8SR3m56YoRieY_Iq3nIWAmqh5s6g0,5749
+edx_braze_client-0.1.6.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+edx_braze_client-0.1.6.dist-info/top_level.txt,sha256=yh0Zl5klgaKnq0jhu-MeML966qp7upJvQ_l4OE3DqQI,6
+edx_braze_client-0.1.6.dist-info/RECORD,,
