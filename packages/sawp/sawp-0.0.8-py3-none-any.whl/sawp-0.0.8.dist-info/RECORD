@@ -1,0 +1,11 @@
+sawp/SunbeltClient.py,sha256=tWCKDFaXctKMD4inuFwSjFvYVvwxhm_hL66G1LYr8vk,2017
+sawp/__init__.py,sha256=5KvFi7vrXrRaptg_0bXEPATZ9pJNampdDPLPBQmhMoA,41
+sawp/base.py,sha256=9AUie09zCud6hQCpXRefQW8U4sjMncspXif9V59OiEk,8970
+sawp/generators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sawp/generators/generators.py,sha256=6piURBZqN6hq6b3HFVqmqtHTEeXkbZusWb2RLzaSoH0,8237
+sawp/generators/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sawp/generators/models/models.py,sha256=xqDOuIZCGzO_H2SqCP_3qe1ryfHk64L0qVL9iZSLWEs,8099
+sawp-0.0.8.dist-info/METADATA,sha256=PSQtO2QAnuSG5foNzN6i_ot169oPUHVspm09Kkk2q-g,10884
+sawp-0.0.8.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+sawp-0.0.8.dist-info/licenses/LICENSE.TXT,sha256=KvujD1sI3-_1rSMxZZc-KwEikq_UyolQxd-OMWYJqg8,1067
+sawp-0.0.8.dist-info/RECORD,,
