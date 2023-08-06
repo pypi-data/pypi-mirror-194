@@ -1,0 +1,10 @@
+bacalhau_apiclient/__init__.py,sha256=sglI875tytpTzpCT5O2-ofdTEYtvpFLFbxIu7yx0U38,649
+bacalhau_apiclient/api_client.py,sha256=PYr9Pc7zRzXQmFosgxxsphCyvgjqpTeSP01-S5ik93w,25221
+bacalhau_apiclient/configuration.py,sha256=_QaxTSocEKHI6tsGmFlfJYzSKrbquo7eNyPKADnlI7M,8164
+bacalhau_apiclient/rest.py,sha256=wci6SiiCYFId-3dRIIZwJOO6CiO4o1QDU4QPBvf2AJY,13150
+bacalhau_apiclient/api/__init__.py,sha256=enoGbEuAsuK3hr-4bY_BMEhbG3yApB5T_H3XbiVC8xQ,87
+bacalhau_apiclient/models/__init__.py,sha256=FkJxIhH1fAGLRllic6674SgGTJI053gz6r2fCI1aXJc,489
+bacalhau_apiclient-0.3.23.post5.dist-info/METADATA,sha256=Y-3--otAuVS-4q09EBd5eSW76G2cZtocU6wQT3vaabU,2494
+bacalhau_apiclient-0.3.23.post5.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+bacalhau_apiclient-0.3.23.post5.dist-info/licenses/LICENSE,sha256=vjRb3f4cgv8l-G-YzxqI4rU9ghrBUgm_D6fF61gfHUo,11348
+bacalhau_apiclient-0.3.23.post5.dist-info/RECORD,,
