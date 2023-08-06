@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hpmser
+Version: 0.2.2
+Summary: Hyper Parameters Search
+Home-page: https://github.com/piteren/hpmser.git
+Author: Piotr Niewinski
+Author-email: pioniewinski@gmail.com
+License: MIT
