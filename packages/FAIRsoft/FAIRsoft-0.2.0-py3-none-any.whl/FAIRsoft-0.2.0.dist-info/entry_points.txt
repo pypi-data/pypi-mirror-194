@@ -1,0 +1,11 @@
+[console_scripts]
+FAIRsoft_evaluate = FAIRsoft.indicators_evaluation.cli:main
+FAIRsoft_import_bioconda = FAIRsoft.importers.bioconda_imp.cli:main
+FAIRsoft_import_bioconductor = FAIRsoft.importers.bioconductor_imp.cli:main
+FAIRsoft_import_opeb_metrics = FAIRsoft.importers.opeb_metrics_imp.cli:main
+FAIRsoft_import_opeb_tools = FAIRsoft.importers.bioconda_biotools_galaxy_imp.cli:main
+FAIRsoft_import_repositories = FAIRsoft.importers.repositories_imp.cli:main
+FAIRsoft_import_sourceforge = FAIRsoft.importers.sourceforge_imp.cli:main
+FAIRsoft_import_toolshed = FAIRsoft.importers.toolshed_imp.cli:main
+FAIRsoft_integrate = FAIRsoft.integration.cli:main
+FAIRsoft_transform = FAIRsoft.transformation.cli:main
