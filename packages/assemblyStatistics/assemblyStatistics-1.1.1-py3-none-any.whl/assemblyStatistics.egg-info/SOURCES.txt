@@ -1,0 +1,11 @@
+FastaUtils.py
+LICENSE
+README.md
+assemblyStatistics.py
+setup.cfg
+setup.py
+assemblyStatistics.egg-info/PKG-INFO
+assemblyStatistics.egg-info/SOURCES.txt
+assemblyStatistics.egg-info/dependency_links.txt
+assemblyStatistics.egg-info/entry_points.txt
+assemblyStatistics.egg-info/top_level.txt
