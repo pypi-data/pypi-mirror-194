@@ -1,0 +1,9 @@
+README.md
+setup.py
+keinsum/__init__.py
+keinsum.egg-info/PKG-INFO
+keinsum.egg-info/SOURCES.txt
+keinsum.egg-info/dependency_links.txt
+keinsum.egg-info/not-zip-safe
+keinsum.egg-info/requires.txt
+keinsum.egg-info/top_level.txt
