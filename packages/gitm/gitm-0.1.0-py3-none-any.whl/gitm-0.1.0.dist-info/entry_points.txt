@@ -1,0 +1,2 @@
+[console_scripts]
+bonbast = gitm.__main__:run
