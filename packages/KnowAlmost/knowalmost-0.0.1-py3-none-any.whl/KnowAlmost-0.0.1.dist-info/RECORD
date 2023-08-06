@@ -1,0 +1,15 @@
+KnowAlmost/__init__.py,sha256=kiLto5p2mxBWwNjyDjcAv6J9AAnTY9FLVBg7ZyU86Ig,19
+KnowAlmost/main.py,sha256=EjOwiRHoawRvbukitLEPVALKN__SmLR0GCAJhzltFp8,5118
+KnowAlmost/setting.py,sha256=OWeE2a45g67_GRTBsVRQQXxFkHnnb1JnJTFGIgOcQIM,491
+KnowAlmost/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KnowAlmost/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KnowAlmost/utils/base.py,sha256=FHzLI8--6T_ZhypO2Fiw9QCNL2_dGB2fpdgrXs7bmgU,777
+KnowAlmost/utils/error.py,sha256=fHUN5XxdFIpLxM1wijO0vxgW3WyX1HSoyZ9wQAt3_ss,3557
+KnowAlmost/utils/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KnowAlmost/utils/parsers.py,sha256=-vEstGDtxwfnZp1TVqKM-zhUOJvZLByM59UvNWwJQOo,2244
+KnowAlmost/utils/util.py,sha256=Z4ydQFODZXt8qRTfwyFE08uwEz-8tYw_T27bBt17ztM,449
+KnowAlmost-0.0.1.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+KnowAlmost-0.0.1.dist-info/METADATA,sha256=vEZ6QAyuIrJpEHNBHpSE-cDnQCsQpk2Q0FC9StvFbSA,2021
+KnowAlmost-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+KnowAlmost-0.0.1.dist-info/top_level.txt,sha256=ziPi1ORqsOFRLKuNbDCrjbMmwA1iUGMtyBkMqGloDpI,11
+KnowAlmost-0.0.1.dist-info/RECORD,,
