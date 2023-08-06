@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+requirements.txt
+setup.py
+influxlog/__init__.py
+influxlog/__main__.py
+influxlog.egg-info/PKG-INFO
+influxlog.egg-info/SOURCES.txt
+influxlog.egg-info/dependency_links.txt
+influxlog.egg-info/requires.txt
+influxlog.egg-info/top_level.txt
