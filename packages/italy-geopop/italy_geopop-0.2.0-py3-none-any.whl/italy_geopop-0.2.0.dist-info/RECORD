@@ -1,0 +1,14 @@
+conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+italy_geopop/__init__.py,sha256=9ppxeUpyVmfcYWnLhDYn7hxDBY-2wrONXNyLVMRQmQE,90
+italy_geopop/__version__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+italy_geopop/_utils.py,sha256=lGEdSWRRxB1hQt_qulDE34gkxDUfcHi56363rJiHaDM,641
+italy_geopop/geopop.py,sha256=4mrPWKoN5RbBb8f7Sgu-Or99jnetaSSCs68Jf6ZwBvw,6155
+italy_geopop/italy_geo_pop_municipalities.csv,sha256=HhKiuzi7wl1HOEtBeMViHVfVZQM0WgMtjUzdW5uvoEw,673162
+italy_geopop/limits_IT_municipalities.geojson,sha256=yCU-owgjeeBQ3MwnBtbE0v35V8l3uapsS4GX50fb0Ps,38126769
+italy_geopop/limits_IT_provinces.geojson,sha256=ncGpHqq8osCKC2YSQ6jJgLTHsqpdPDtLiGYGmmR23CE,5740781
+italy_geopop/limits_IT_regions.geojson,sha256=UslhIZBBZZZW0wKfukdOZnqYeSWOJEowUeHDyHOR4Kc,2913351
+italy_geopop/pandas_extension.py,sha256=GtpoEbpa_wlqL0xXVfx6y2ThdOpUdt6CP4AHJZ33TG8,10786
+italy_geopop-0.2.0.dist-info/METADATA,sha256=dJvl1wY_pKAGr67vpfpCV9TpxGed9E3qTjGg6ZC9wXE,28467
+italy_geopop-0.2.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+italy_geopop-0.2.0.dist-info/licenses/LICENSE,sha256=PylBRewaLC_oz9YD8tbmi20Dic-gILT41OPSAZtfiyE,18175
+italy_geopop-0.2.0.dist-info/RECORD,,
