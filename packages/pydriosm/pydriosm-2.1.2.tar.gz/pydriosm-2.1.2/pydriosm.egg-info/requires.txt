@@ -1,0 +1,4 @@
+pyhelpers>=1.4.6
+GDAL>=3.0
+pyrcs>=0.3.5
+pyshp
