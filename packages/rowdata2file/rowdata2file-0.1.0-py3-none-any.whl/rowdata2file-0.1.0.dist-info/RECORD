@@ -1,0 +1,11 @@
+rowdata2file/__init__.py,sha256=6EK1wEctXd_pyAyQdAAhPQ5GhplI7lTRpoit_8gugnw,107
+rowdata2file/__main__.py,sha256=jBLIB2y5AduuIzmWcpvS6R01q2pCkNg_55GFS2RmEuw,956
+rowdata2file/gen_docx.py,sha256=7cZsDnidEWIrkUHDHxv8pwzYSTPfQMmBCUZUBA2ui1w,2775
+rowdata2file/rowdata2docx.py,sha256=myYEchCpOm3F92nOhQ7WYOKyjvqIinRUTEVBcBlrHwM,3120
+rowdata2file/rowdata2docx_t.py,sha256=LXo8WOjsasbIcZXXSLL3dImjU3oKO6PlSuz-A3Y0A_0,2431
+rowdata2file/rowdata2file.py,sha256=sC1BU66aDkop5iz6VJjBlEZ5jJaxfvAlrtp0FnSHAaI,448
+rowdata2file-0.1.0.dist-info/entry_points.txt,sha256=4Gw2FpmNHvrLtTAl0pAmLbEZvDiBYb_exXBoniOhDVw,58
+rowdata2file-0.1.0.dist-info/LICENSE,sha256=2Z4g7Eq1bQRfTQoryBnNsyhlWBpAGylKyp1KFJMlTWU,1085
+rowdata2file-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+rowdata2file-0.1.0.dist-info/METADATA,sha256=rRXSZj-V9lhDfbtXZOdA21HQtE0OLsULw58Ap1XEtw4,1766
+rowdata2file-0.1.0.dist-info/RECORD,,
