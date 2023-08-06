@@ -1,0 +1,2 @@
+[console_scripts]
+discord-repl = discord_repl.__main__:_main

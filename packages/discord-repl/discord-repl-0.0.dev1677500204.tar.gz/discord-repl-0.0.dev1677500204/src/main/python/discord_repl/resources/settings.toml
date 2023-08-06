@@ -1,0 +1,157 @@
+[executor.defaults]
+network_mode = 'none'
+mem_limit = '256m'
+nano_cpus = 250000000
+entrypoint = []
+
+[[executors]]
+lang = "python"
+extensions = [".py"]
+image = "python"
+aliases = ['py']
+command = "python {}"
+file = "script.py"
+
+[[executors]]
+lang = "java"
+extensions = [".java"]
+image = "openjdk"
+aliases = []
+command = "java {}"
+file = "Script.java"
+
+[[executors]]
+lang = "javascript"
+extensions = [".js"]
+image = "node:lts"
+aliases = ['js']
+command = "node {}"
+file = "script.js"
+
+[[executors]]
+lang = "typescript"
+extensions = [".ts"]
+image = "lukechannings/deno"
+aliases = ['ts']
+command = "deno run -q {}"
+file = "script.ts"
+
+[[executors]]
+lang = "php"
+extensions = ['.php']
+image = "php:cli"
+aliases = []
+command = "php {}"
+file = "script.php"
+
+[[executors]]
+lang = "c"
+extensions = ['.c']
+image = "gcc"
+aliases = []
+command = "/bin/bash -c \"gcc {} -o /tmp/a.out;/tmp/a.out\""
+file = "script.c"
+
+[[executors]]
+lang = "c++"
+extensions = ['.cpp']
+image = "gcc"
+aliases = ['cpp']
+command = "/bin/bash -c \"gcc -x c++ {} -lstdc++ -o /tmp/a.out;/tmp/a.out\""
+file = "script.cpp"
+
+[[executors]]
+lang = "rust"
+extensions = ['.rs']
+image = "rust"
+aliases = []
+command = "/bin/bash -c \"rustc {} -o /tmp/a.out;/tmp/a.out\""
+file = "script.rs"
+
+[[executors]]
+lang = "shell"
+extensions = ['.sh']
+image = "fedora"
+aliases = ['sh']
+command = "/bin/sh {}"
+file = "script.sh"
+
+[[executors]]
+lang = "bash"
+extensions = ['.sh']
+image = "fedora"
+aliases = []
+command = "/bin/bash {}"
+file = "script.sh"
+
+[[executors]]
+lang = "go"
+extensions = ['.go']
+image = "golang"
+aliases = []
+command = "go run {}"
+file = "script.go"
+
+[[executors]]
+lang = "lua"
+extensions = ['.lua']
+image = "woahbase/alpine-lua"
+aliases = []
+command = "lua {}"
+file = "script.lua"
+
+[[executors]]
+lang = "ruby"
+extensions = ['.rb']
+image = "ruby"
+aliases = []
+command = "ruby {}"
+file = "script.rb"
+
+[[executors]]
+lang = "haskell"
+extensions = ['.hs']
+image = "haskell"
+aliases = []
+command = "runghc {}"
+file = "script.hs"
+
+[[executors]]
+lang = "lisp"
+extensions = ['.lisp']
+image = "daewok/lisp-devel"
+aliases = []
+command = "sbcl --script {}"
+file = "script.lisp"
+
+[[executors]]
+lang = "perl"
+extensions = ['.pl']
+image = "perl"
+aliases = []
+command = "perl {}"
+file = "script.pl"
+
+[[executors]]
+lang = "r"
+extensions = ['.r']
+image = "r-base"
+aliases = []
+command = "Rscript {}"
+file = "script.r"
+
+[[executors]]
+lang = "julia"
+extensions = ['.jl']
+image = "julia"
+aliases = []
+command = "julia {}"
+file = "script.js"
+
+[[executors]]
+lang = "kotlin"
+extensions = ['.kts']
+image = "zenika/kotlin"
+aliases = []
+command = "kotlinc -script {}"
+file = "script.kts"

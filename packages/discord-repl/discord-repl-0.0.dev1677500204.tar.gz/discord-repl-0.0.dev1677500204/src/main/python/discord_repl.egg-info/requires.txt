@@ -1,0 +1,5 @@
+discord.py==1.7.*
+emoji==0.6.*
+docker==6.*
+toml==0.10.*
+pyyaml==6.*
