@@ -1,0 +1,174 @@
+datatypes:
+  default: arrangement_spec
+  arrangement_spec:
+    list_of:
+      one_of:
+        - prefixed_unit_id
+        - interval
+    splitted_by: ","
+  unit_id: { regex: '[A-Za-z_][A-Za-z_0-9]*' }
+  interval:
+    one_of:
+      - special_interval
+      - range_interval
+  special_interval:
+    values:
+      - "&": {"special": "overlap", "type": "interval"}
+      - "><": {"special": "near", "type": "interval"}
+      - "<>": {"special": "distant", "type": "interval"}
+      - "<.>": {"special": "same_molecule", "type": "interval"}
+      - "<|>": {"special": "other_molecule", "type": "interval"}
+  range_interval:
+    composed_of:
+      - n_features: n_features_spec
+      - length: length_spec
+    splitted_by: "["
+    required: 1
+    implicit: {"type": "interval"}
+  unsigned_integer_or_infinite:
+    one_of:
+      - unsigned_integer
+      - constant: {"*": null}
+  n_features_spec:
+    one_of:
+      - n_features_spec_range_w_max
+      - n_features_spec_range_wo_max
+      - n_features_spec_lt
+      - n_features_spec_gt
+      - n_features_spec_le
+      - n_features_spec_ge
+  n_features_spec_range_w_max:
+    composed_of:
+      - min: unsigned_integer
+      - separator: {constant: ":"}
+      - max: unsigned_integer_or_infinite
+      - type_spec: feature_type_spec
+    required: 2
+    empty: {"min": 0, "max": null}
+    hide_constants: True
+    #merge_keys: ["type_spec"]
+  n_features_spec_range_wo_max:
+    composed_of:
+      - min: unsigned_integer
+      - type_spec: feature_type_spec
+    required: 1
+    #merge_keys: ["type_spec"]
+  feature_type_spec:
+    one_of:
+      - feature_type_single_spec
+      - feature_type_multi_spec
+  feature_type_single_spec:
+    composed_of:
+      - prefix: {constant: '('}
+      - type: {"regex": "[A-Za-z0-9_]+"}
+      - suffix: {constant: ')'}
+    hide_constants: True
+  feature_type_multi_spec:
+    composed_of:
+      - prefix: {constant: '('}
+      - types:
+          list_of: {"regex": "[A-Za-z0-9_]+"}
+          splitted_by: ";"
+      - suffix: {constant: ')'}
+    hide_constants: True
+  n_features_spec_gt:
+    composed_of:
+      - prefix: {constant: ">"}
+      - min_excl: unsigned_integer
+    implicit: {"max": null}
+    hide_constants: True
+  n_features_spec_lt:
+    composed_of:
+      - prefix: {constant: "<"}
+      - max_excl: unsigned_integer
+    implicit: {"min": 0}
+    hide_constants: True
+  n_features_spec_ge:
+    composed_of:
+      - prefix: {constant: ">="}
+      - min: unsigned_integer
+    implicit: {"max": null}
+    hide_constants: True
+  n_features_spec_le:
+    composed_of:
+      - prefix: {constant: "<="}
+      - max: unsigned_integer
+    implicit: {"min": 0}
+    hide_constants: True
+  prefixed_unit_id:
+    composed_of:
+      - prefix: {regex: "[>^=]?"}
+      - unit: unit_id
+    implicit: {"type": "unit"}
+  length_spec:
+    one_of:
+      - length_spec_range
+      - length_spec_gt
+      - length_spec_lt
+      - length_spec_le
+      - length_spec_ge
+      - length_spec_approx
+  length_spec_range:
+    suffix: "]"
+    splitted_by: ":"
+    composed_of:
+      - min: length_value
+      - max: length_value_or_infinite
+    required: 1
+  length_spec_approx:
+    suffix: "]"
+    composed_of:
+      - prefix: {constant: '~'}
+      - approx: length_value
+    hide_constants: True
+  length_spec_ge:
+    suffix: "]"
+    composed_of:
+      - prefix: {constant: ">="}
+      - min: length_value
+    hide_constants: True
+    implicit: {"max": null}
+  length_spec_le:
+    suffix: "]"
+    composed_of:
+      - prefix: {constant: "<="}
+      - max: length_value
+    hide_constants: True
+    implicit: {"min": {"value": 0, "multiplier": 1}}
+  length_spec_gt:
+    suffix: "]"
+    composed_of:
+      - prefix: {constant: ">"}
+      - min_excl: length_value
+    hide_constants: True
+    implicit: {"max": null}
+  length_spec_lt:
+    suffix: "]"
+    composed_of:
+      - prefix: {constant: "<"}
+      - max_excl: length_value
+    hide_constants: True
+    implicit: {"min": {"value": 0, "multiplier": 1}}
+  length_value:
+    composed_of:
+      - value: unsigned_integer
+      - multiplier:
+         empty: 1
+         values:
+           - "b": 1
+           - "bp": 1
+           - "kb": 1000
+           - "kbp": 1000
+           - "Mb": 1000000
+           - "Mbp": 1000000
+           - "Gb": 1000000000
+           - "Gbp": 1000000000
+         canonical:
+           "bp": 1
+           "kb": 1000
+           "Mb": 1000000
+           "Gb": 1000000000
+  length_value_or_infinite:
+    one_of:
+       - length_value
+       - constant: {"*": null}

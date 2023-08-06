@@ -1,0 +1,13 @@
+AUTHORS.txt
+LICENSE.txt
+README.md
+setup.py
+fardes/__init__.py
+fardes/parser.py
+fardes.egg-info/PKG-INFO
+fardes.egg-info/SOURCES.txt
+fardes.egg-info/dependency_links.txt
+fardes.egg-info/not-zip-safe
+fardes.egg-info/requires.txt
+fardes.egg-info/top_level.txt
+fardes/data/fardes.tf.yaml
