@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: WriteProMD
+Version: 0.0.5
+Summary: Converts markdown-like syntax documents to polished PDFs with a wide range of formatting options
+Home-page: https://github.com/almog-co/WriteProMD
+Author: Almog Cohen
+Author-email: me@almogcohen.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
