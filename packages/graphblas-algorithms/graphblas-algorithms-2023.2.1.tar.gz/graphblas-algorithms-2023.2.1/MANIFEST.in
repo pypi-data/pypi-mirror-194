@@ -1,0 +1,5 @@
+recursive-include graphblas_algorithms *.py
+include setup.py
+include README.md
+include LICENSE
+include MANIFEST.in
