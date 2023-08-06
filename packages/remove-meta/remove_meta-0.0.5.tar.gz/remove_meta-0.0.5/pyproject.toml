@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remove_meta"
+version = "0.0.5"
+authors = [
+  { name = "Maxim Makovskiy", email = "makovskiyms@gmail.com" },
+]
+description = "Recursivly find all Excel files open them and remove personal information"
+license = { text = "MIT" }
+classifiers = [
+  "Environment :: Win32 (MS Windows)",
+  "Operating System :: Microsoft :: Windows",
+]
+requires-python = ">=3.7"
+dependencies = [
+  "pywin32",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/evorition/remove-meta"
+"Source" = "https://github.com/evorition/remove-meta"
+
+[project.scripts]
+remove-meta = "remove_meta:remove_meta"

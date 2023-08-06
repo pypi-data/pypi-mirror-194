@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/remove_meta/__init__.py
+src/remove_meta.egg-info/PKG-INFO
+src/remove_meta.egg-info/SOURCES.txt
+src/remove_meta.egg-info/dependency_links.txt
+src/remove_meta.egg-info/entry_points.txt
+src/remove_meta.egg-info/requires.txt
+src/remove_meta.egg-info/top_level.txt
