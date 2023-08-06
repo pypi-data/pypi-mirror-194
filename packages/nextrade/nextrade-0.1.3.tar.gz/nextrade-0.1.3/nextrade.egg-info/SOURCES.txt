@@ -1,0 +1,9 @@
+README.md
+setup.py
+nextrade/__init__.py
+nextrade/nxt.py
+nextrade.egg-info/PKG-INFO
+nextrade.egg-info/SOURCES.txt
+nextrade.egg-info/dependency_links.txt
+nextrade.egg-info/requires.txt
+nextrade.egg-info/top_level.txt
