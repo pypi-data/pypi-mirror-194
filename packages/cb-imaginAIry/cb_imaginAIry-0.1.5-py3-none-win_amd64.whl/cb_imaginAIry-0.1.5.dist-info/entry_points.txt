@@ -1,0 +1,3 @@
+[console_scripts]
+cb-aimg = imaginairy.cli.main:aimg
+cb-imagine = imaginairy.cli.main:imagine_cmd
