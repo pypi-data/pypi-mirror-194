@@ -1,0 +1,12 @@
+
+[docs]
+django
+mock
+sphinx>=3.0.0
+
+[tests]
+django-utils2>=3.0.0
+pytest
+pytest-cov
+pytest-django
+pytest-flake8
