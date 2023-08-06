@@ -1,0 +1,9 @@
+README.md
+setup.py
+quantum_lab/__init__.py
+quantum_lab/jobs.py
+quantum_lab/resources.py
+quantum_lab.egg-info/PKG-INFO
+quantum_lab.egg-info/SOURCES.txt
+quantum_lab.egg-info/dependency_links.txt
+quantum_lab.egg-info/top_level.txt
