@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: vocode
+Version: 0.1.6
+Summary: The all-in-one voice SDK
+License: MIT
+Author: Ajay Raj
+Author-email: ajay@vocode.dev
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pyaudio (==0.2.13)
+Requires-Dist: pydantic (==1.10.5)
+Requires-Dist: python-dotenv (==0.21.1)
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: websockets (==10.4)
+Description-Content-Type: text/markdown
+
+# vocode-python-sdk
+
+```bash
+# set up environment
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# start talking to an AI
+python simple_conversation.py
+```
+
