@@ -1,0 +1,16 @@
+evalAIRR/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evalAIRR/main.py,sha256=nn1x61Ba_RAQcnUqEGs2jjSPWkOcS-LfscAISaN0m4s,10464
+evalAIRR/version.py,sha256=9UMAkivMiZfppwpwVdBxJI652ZiB-ir2iX3yh0Gxu9M,20
+evalAIRR/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evalAIRR/util/copula.py,sha256=rUeLVjkav8kT9pKz07LBwa1Xe092f-yaOZLuB9higOo,4516
+evalAIRR/util/corr.py,sha256=IF7VVLtbOKbqMYt-OLvMvCYF4lN10dU3cq4zrteb8wY,2779
+evalAIRR/util/input.py,sha256=ljAemtsSKsRWYO-hfpu1y9_iKkyBA9AOnUkmCe3_47E,563
+evalAIRR/util/ml.py,sha256=UmBFNL9k1SP5pVrXgojzXDE5SisJJPsuJzr2s-pp5jg,535
+evalAIRR/util/pca.py,sha256=FXwrwVjNdx5oenRwqg6NNLvSQTZecSWfPxiHWvGXUxU,2828
+evalAIRR/util/report.py,sha256=FHMQT9eOAh5_LV58fvpJNWImuxQrioCMb6gn00AT6sg,3068
+evalAIRR/util/univar.py,sha256=tnjCR3dT_KUMxcDI2KKbPNfDaG4OZV9y5UdaNjtnJBA,19429
+evalAIRR-0.0.12.dist-info/METADATA,sha256=sI4G3TgLSu9xuPL1s6KtQmAJy8m82_4qN2dtnpKGGWc,10794
+evalAIRR-0.0.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+evalAIRR-0.0.12.dist-info/entry_points.txt,sha256=jTvR0gwMQisV8xTcxtvxD4_Ja5cKNcwVpMVmzzwNGwU,47
+evalAIRR-0.0.12.dist-info/top_level.txt,sha256=Dn-GBHQSklSdlfTaJQHC71mYP_SFMBgtb9M7q3Fe1PU,9
+evalAIRR-0.0.12.dist-info/RECORD,,
