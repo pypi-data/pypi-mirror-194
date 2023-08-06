@@ -1,0 +1,4 @@
+graphlearning
+numpy
+matplotlib
+Pillow

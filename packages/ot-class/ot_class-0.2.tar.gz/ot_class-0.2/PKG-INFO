@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ot_class
+Version: 0.2
+Summary: Optimal transport methods for classification
+Home-page: https://github.com/gstamatiou/optimal-classification
+Author: Giorgos Stamatiou
+Author-email: s6gestam@uni-bonn.de
+License: MIT
+License-File: LICENSE

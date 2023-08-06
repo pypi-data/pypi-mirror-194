@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ot_class/__init__.py
+ot_class/graph_utils.py
+ot_class/helpers.py
+ot_class/pd_alg.py
+ot_class/ppoisson.py
+ot_class/wass_dist.py
+ot_class.egg-info/PKG-INFO
+ot_class.egg-info/SOURCES.txt
+ot_class.egg-info/dependency_links.txt
+ot_class.egg-info/not-zip-safe
+ot_class.egg-info/requires.txt
+ot_class.egg-info/top_level.txt
