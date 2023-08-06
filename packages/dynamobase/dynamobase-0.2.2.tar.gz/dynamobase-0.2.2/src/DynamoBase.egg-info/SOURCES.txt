@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/DynamoBase.py
+src/DynamoBase.egg-info/PKG-INFO
+src/DynamoBase.egg-info/SOURCES.txt
+src/DynamoBase.egg-info/dependency_links.txt
+src/DynamoBase.egg-info/requires.txt
+src/DynamoBase.egg-info/top_level.txt
+src/dynamobase.egg-info/PKG-INFO
+src/dynamobase.egg-info/SOURCES.txt
+src/dynamobase.egg-info/dependency_links.txt
+src/dynamobase.egg-info/requires.txt
+src/dynamobase.egg-info/top_level.txt
+tests/test.py
