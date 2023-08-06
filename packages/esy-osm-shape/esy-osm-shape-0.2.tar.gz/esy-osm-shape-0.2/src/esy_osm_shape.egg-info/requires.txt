@@ -1,0 +1,2 @@
+shapely>=1.6
+esy-osm-pbf==0.0.1
