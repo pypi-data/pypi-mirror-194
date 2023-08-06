@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vitalserver
+Version: 0.0.1
+Summary: VitalDB FastAPI
+Home-page: https://github.com/dldmstjs500/vitalserver
+Author: Eunsun Rachel Lee
+Author-email: eunsun.lee93@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# vitalserver
+
+
