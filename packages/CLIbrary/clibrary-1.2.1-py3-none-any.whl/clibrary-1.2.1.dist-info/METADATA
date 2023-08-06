@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: CLIbrary
+Version: 1.2.1
+Summary: A standardized collection of CLI utilities written in Python to handle commands, I/O and files.
+Project-URL: Homepage, https://github.com/diantonioandrea/CLIbrary
+Project-URL: Documentation, https://github.com/diantonioandrea/CLIbrary/blob/main/docs.md
+Project-URL: Bug Tracker, https://github.com/diantonioandrea/CLIbrary/issues
+Author-email: Andrea Di Antonio <mail@diantonioandrea.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# CLIbrary
+
+A standardized collection of CLI utilities written in Python to handle commands, I/O and files.  
+Make sure to take a look at the [documentation](https://github.com/diantonioandrea/CLIbrary/blob/main/docs.md)
+
+## Usage
+
+### Installing CLIbrary
+
+**CLIbrary** can be installed from [PyPI](https://pypi.org) by:
+
+	python3 -m pip install CLIbrary
+
+### Importing CLIbrary
+
+**CLIbrary** can be imported by:
+
+	import CLIbrary
