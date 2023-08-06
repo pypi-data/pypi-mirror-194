@@ -1,0 +1,7 @@
+setup.py
+hashbrowns/__init__.py
+hashbrowns/hashbrowns.py
+hashbrowns.egg-info/PKG-INFO
+hashbrowns.egg-info/SOURCES.txt
+hashbrowns.egg-info/dependency_links.txt
+hashbrowns.egg-info/top_level.txt
