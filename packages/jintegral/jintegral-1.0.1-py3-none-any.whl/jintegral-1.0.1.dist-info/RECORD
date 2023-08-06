@@ -1,0 +1,15 @@
+jintegral/__init__.py,sha256=5YdTwwQoP6maFB-_aV12Jf5cZJMLoUeunz-pb1XWKV0,14
+jintegral/abaqus_sample.py,sha256=qxRQH3SEt-jOiJ_QZEqU9-ZOn129Q2ASjGHKW4TXTpc,8951
+jintegral/crack.py,sha256=vukzAKZNzQQxggRt9e4rMl8t0_AhQpVGjxLqakr3ha4,29637
+jintegral/davis_sample.py,sha256=U8tajtXa7VF3fSSiYbFYboK4-qztLHU4fNXQaztZyGk,4670
+jintegral/fig_template.py,sha256=mVdEk-rNHch-Y1cWiSFDUN49btnTYEyyXvdcqKw_MoY,964
+jintegral/frame.py,sha256=V94asGhqxX2e0tdno0NB2Ltnv2Eq3l7f9JVwS45c3gI,7583
+jintegral/jintegral.py,sha256=ocHVJu7R2J2aeyh_fIAVlXP1O2X6XSW2nEWwlO1pg84,55603
+jintegral/material.py,sha256=XSu0Z_RRZVupIZ9sHpplADwgMeHw2hN3MPEaq_YUfGQ,1573
+jintegral/sample.py,sha256=ulMSgJJulK4euURjIqvK6yiwF_4cImHe25YrV2qhs78,12250
+jintegral/utils.py,sha256=bVuS8Kq0rNMdOPB7vXsBFUzhlxxtkvQ1jq2nyVoN_cg,14159
+jintegral/vic_sample.py,sha256=8xKM9o-bYFWxdJavDB2ctSaBDNqqhSGP67jolZk8WyU,5470
+jintegral-1.0.1.dist-info/LICENSE,sha256=1CSGzgUYZmFUZFhnX2ZeiYyhb3KjeqJhbDEYAGcKZQ0,1677
+jintegral-1.0.1.dist-info/METADATA,sha256=dqMZ77wPBs2jGRZFkxgv6Ti5N2v7-SRpjYH-wEZ2MVU,1662
+jintegral-1.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+jintegral-1.0.1.dist-info/RECORD,,
