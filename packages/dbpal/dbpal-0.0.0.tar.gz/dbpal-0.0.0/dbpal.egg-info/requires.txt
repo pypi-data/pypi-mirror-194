@@ -1,0 +1,14 @@
+plum-dispatch
+fsspec
+gcsfs
+importlib_resources
+pandas
+sqlalchemy
+sqlalchemy-bigquery
+siuba
+
+[dev]
+pytest
+pytest-dotenv
+duckdb_engine
+pandas-gbq
