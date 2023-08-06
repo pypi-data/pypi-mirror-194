@@ -1,0 +1,3 @@
+[console_scripts]
+generate-ssm-parameters = generate_ssm_parameters:cli
+
