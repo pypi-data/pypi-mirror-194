@@ -1,0 +1,5 @@
+health_indicator/__init__.py,sha256=HAlec6GQD5DdSAIyI9kKa19lvUwCrSXmVHq6xwCBEy8,54
+health_indicator/health_indicator.py,sha256=asLq60kxC0KqCRMVBOLerl9XpB7SRePJGzFTMcFcXFY,8282
+health_indicator-0.0.3.dist-info/METADATA,sha256=7wq-_S2NT7aiAvPIWh4-46im-OCDR1EQJIMdYjlhAEo,1147
+health_indicator-0.0.3.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+health_indicator-0.0.3.dist-info/RECORD,,
