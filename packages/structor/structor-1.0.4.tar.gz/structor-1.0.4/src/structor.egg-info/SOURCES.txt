@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/structor/__init__.py
+src/structor/base_commands.py
+src/structor/custom_exceptions.py
+src/structor/structor.py
+src/structor/utils.py
+src/structor.egg-info/PKG-INFO
+src/structor.egg-info/SOURCES.txt
+src/structor.egg-info/dependency_links.txt
+src/structor.egg-info/entry_points.txt
+src/structor.egg-info/requires.txt
+src/structor.egg-info/top_level.txt
+tests/test_main_behavior.py

@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: structor
+Version: 1.0.4
+Summary: Simple package that allow you to create templates of folders/files structure and generate them from a cli (like done in angular, django, react...)
+Home-page: https://github.com/MayasMess/structor
+Author: Amayas Messara
+Author-email: amayas.messara@gmail.com
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/MayasMess/structor
+Keywords: structor,file generator
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center">
+  <a><img src="static/structor.png" alt="Structor"></a>
+</p>
+<p align="center">
+    <em>Simple library that allow you to create templates of folders/files structure and generate them from a cli (like done in angular, django, react...)</em>
+</p>
+
+---
+
+Installation:
+-
+### On macOS
+
+```shell script
+brew install pipx
+pipx ensurepath
+pipx install structor
+```
+
+### On Linux, install via pip (requires pip 19.0 or later)
+
+```shell script
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+pipx install structor
+```
+
+### On Windows, install via pip (requires pip 19.0 or later)
+
+```shell script
+# If you installed python using the app-store, replace `python` with `python3` in the next line.
+# If you have a pre-installed version on windows replace `python` with `py`
+python -m pip install --user pipx
+python -m pipx ensurepath
+pipx install structor
+```
+
+Initialization
+-
+Run the command "structor init" to initialize a sample template. this will generate the folder and the yaml file.
+![](static/init.gif)
+
+- In this example, the command "structor run startproject" will create all the folders and the files in the startproject section and the command "structor run addmodule my_new_module" will create new modules/components
+```yaml
+---
+commands:
+  startproject:
+    src:
+    - __init__.py
+    src > config:
+    - __init__.py
+    - config.py
+    - local_config.py.dist
+    src > modules:
+    - __init__.py
+    src > static: []
+  addmodule:
+    src > modules > {{APP-NAME}}:
+    - __init__.py
+    - "{{APP-NAME}}.py"
+    - "models.py"
+    - "views.py"
+    - "controllers.py"
+replacement:
+  "{{APP-NAME}}": "**1"
+file-template:
+  src > modules > {{APP-NAME}} > {{APP-NAME}}.py: "my_template_file.py.struct"
+```
+
+- The values "**1", "**2"... will be replaced by the arguments passed in the cli.
+- All values put in the "replacement" section will be replaced in the folders/files and files content.
+- The "file-template" section allow you to init the created files from a file template
