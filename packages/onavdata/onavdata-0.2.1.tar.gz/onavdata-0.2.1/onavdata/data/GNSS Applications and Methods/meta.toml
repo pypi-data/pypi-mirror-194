@@ -1,0 +1,36 @@
+"vehicle-type" = "CAR"
+drop-unnamed = true
+
+[info]
+simulation = true
+
+[columns-dtype]
+"VelNorth (m/s)" = "float64"
+"VelEast (m/s)" = "float64"
+"VelDown (m/s)" = "float64"
+"PosNorth (m)" = "float64"
+"PosEast (m)" = "float64"
+"PosDown (m)" = "float64"
+"GNSSVelNorth (m/s)" = "float64"
+"GNSSVelEast (m/s)" = "float64"
+"GNSSVelDown (m/s)" = "float64"
+"GNSSPosNorth (m)" = "float64"
+"GNSSPosEast (m)" = "float64"
+"GNSSPosDown (m)" = "float64"
+"CompassAngleHeading (rad)" = "float64"
+"AngleHeading (rad)" = "float64"
+"AnglePitch (rad)" = "float64"
+"AngleRoll (rad)" = "float64"
+
+# The transformations below should have no effect.
+# They have been defined for creating a test to verify this.
+[Rsensor2body]
+Accel = [[1, 0, 0], 
+         [0, 1, 0],
+         [0, 0, 1]]
+AngleRate = [[1, 0, 0], 
+             [0, 1, 0],
+             [0, 0, 1]]
+MagField = [[1, 0, 0], 
+            [0, 1, 0],
+            [0, 0, 1]]
