@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dbpal
+Version: 0.0.0
+Summary: A utility package for pushing around data
+Author-email: Michael Chow <mc_al_github@fastmail.com>
+Keywords: data
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: plum-dispatch
+Requires-Dist: fsspec
+Requires-Dist: gcsfs
+Requires-Dist: importlib-resources
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+Requires-Dist: sqlalchemy-bigquery
+Requires-Dist: siuba
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-dotenv ; extra == 'dev'
+Requires-Dist: duckdb-engine ; extra == 'dev'
+Requires-Dist: pandas-gbq ; extra == 'dev'
+
+# tidypal
+
+| variable | description |
+| -------- | ----------- |
+| `PIPELINE_BUCKET` | Path to pipeline bucket. Used by fsspec. |
+| `PIPELINE_WAREHOUSE_URI` | Warehouse URI (e.g. `duckdb:///:memory:`). Used by sqlalchemy. |
+| `PIPELINE_USER` | Name of user. If not set to "pipeline", write operations will become no-ops. |
