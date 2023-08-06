@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FAIRsoft"
+version = "0.2.0"
+authors = [
+  { name="Eva Martin del Pico", email="eva.martin@bsc.es" },
+]
+description = "FAIRsoft package for the aggregation of Life Sciences software metadata and FAIR evaluation."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU Affero General Public License v3"
+]
+
+[project.urls]
+"Bug Tracker" = "https://gitlab.bsc.es/inb/elixir/software-observatory/FAIRsoft_ETL/issues"
+"Repository" = "https://gitlab.bsc.es/inb/elixir/software-observatory/FAIRsoft_ETL/-/tree/master/FAIRsoft" 
+
+[project.scripts]
+FAIRsoft_import_bioconda = "FAIRsoft.importers.bioconda_imp.cli:main"
+FAIRsoft_import_bioconductor = "FAIRsoft.importers.bioconductor_imp.cli:main"
+FAIRsoft_import_opeb_tools = "FAIRsoft.importers.bioconda_biotools_galaxy_imp.cli:main"
+FAIRsoft_import_toolshed = "FAIRsoft.importers.toolshed_imp.cli:main"
+FAIRsoft_import_opeb_metrics = "FAIRsoft.importers.opeb_metrics_imp.cli:main"
+FAIRsoft_import_repositories = "FAIRsoft.importers.repositories_imp.cli:main"
+FAIRsoft_import_sourceforge = "FAIRsoft.importers.sourceforge_imp.cli:main"
+FAIRsoft_transform = "FAIRsoft.transformation.cli:main"
+FAIRsoft_integrate = "FAIRsoft.integration.cli:main"
+FAIRsoft_evaluate = "FAIRsoft.indicators_evaluation.cli:main"
+
+[options] 
+install_requires = [
+    "bidict",
+    "matplotlib",
+    "munch",
+    "pymongo",
+    "requests",
+    "selenium",
+    "simplejson",
+    "webdriver_manager",
+    "bibtexparser"]
