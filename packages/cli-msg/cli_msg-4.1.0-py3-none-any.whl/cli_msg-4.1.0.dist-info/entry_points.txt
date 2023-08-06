@@ -1,0 +1,2 @@
+[console_scripts]
+cli_msg = hello:cli

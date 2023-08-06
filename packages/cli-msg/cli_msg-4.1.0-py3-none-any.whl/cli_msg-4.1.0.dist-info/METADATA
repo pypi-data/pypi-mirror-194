@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cli-msg
+Version: 4.1.0
+Summary: CLI Messages
+Home-page: https://github.com/your_username/your_project
+Author: Bleuzkernel
+Author-email: your@email.com
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: rich
+
+# CLI Messages
+
+TEST!
