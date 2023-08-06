@@ -1,0 +1,9 @@
+pygeoops/__init__.py,sha256=NpC9zQlkKax8griaPLb-HGzF9KqHaNSBTSjwT45TUfE,293
+pygeoops/centerline.py,sha256=yNt35maGpKUxxggTvfSf5ujztcP_2HwbzLVpyaZNbao,9872
+pygeoops/version.txt,sha256=nl0QuK9OJRcWs5mWRMzukGKxgYwjuYYRuX1prfcU7zk,8
+pygeoops/view_angles.py,sha256=eKYMp2ue0pZswrcECsFSCM5eA-8_1kfYgU-JfurENNI,5049
+pygeoops-0.1.0a1.dist-info/LICENSE,sha256=aE8mZkX5scfJMCICrD-dTrkAlic2ngFR_rd5P9e_Kj0,1495
+pygeoops-0.1.0a1.dist-info/METADATA,sha256=EojWfft7-eYtEsX5wDlGSvj1CYrh_Z1ubAwBrNAH8VM,1715
+pygeoops-0.1.0a1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pygeoops-0.1.0a1.dist-info/top_level.txt,sha256=h550Y1XNOjJoFFK_a_vg0vGYSyO7-wPaJ2AjJv32Trk,9
+pygeoops-0.1.0a1.dist-info/RECORD,,
