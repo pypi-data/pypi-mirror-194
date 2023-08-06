@@ -1,0 +1,254 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# Imports
+from flask import Flask
+from google.api_core import retry
+from google import pubsub
+from google.cloud import storage
+from google.oauth2 import service_account
+from .publisher import PubCatcher
+from .storage import BucketCatcher
+import google.auth
+import threading
+import traceback
+import time
+import json
+
+
+# Overload Flask
+class PubSub:
+    flask = None
+    gcp_pub_client = None
+    gcp_sub_client = None
+    gcp_storage_client = None
+    project_id = None
+    topic_prefix = None
+    auto_setup = False
+    concurrent_consumers = 4
+    concurrent_messages = 2
+    gcp_credentials_json = None
+    gcp_credentials_file = None
+    deadline = 300
+    return_immediately = False
+    requests = []
+    callbacks = {}
+    configuration_table = {
+        'PUBSUB_PROJECT_ID': 'project_id',
+        'PUBSUB_CREDENTIALS_JSON': 'gcp_credentials_json',
+        'PUBSUB_CREDENTIALS_FILE': 'gcp_credentials_file',
+        'PUBSUB_CONCURRENT_CONSUMERS': 'concurrent_consumers',
+        'PUBSUB_CONCURRENT_MESSAGES': 'concurrent_messages',
+        'PUBSUB_TOPIC_PREFIX': 'topic_prefix',
+        'PUBSUB_AUTO_SETUP': 'auto_setup',
+        'PUBSUB_DEADLINE': 'deadline',
+        'PUBSUB_PULL_RETURN_IMMEDIATELY': 'return_immediately'
+    }
+
+    def __init__(self, app: Flask = None, **kwargs):
+        if app:
+            self.init_app(app)
+        cfgtable = self.configuration_table.values()
+        for cfgkey in kwargs:
+            assert cfgkey in cfgtable, f'Unknown option "{cfgkey}"'
+            setattr(self, cfgkey, kwargs.get(cfgkey))
+
+    def init_app(self, app: Flask):
+        """Initialize with Flask application context"""
+        self.flask = app
+        self.init_config()
+
+    def init_config(self):
+        """Get configuration from Flask application context"""
+        for cfgkey in self.configuration_table:
+            setattr(self, cfgkey, self.flask.config.get(cfgkey, None))
+
+    def check_configuration(self):
+        """Ensure configuration is ready"""
+        check_keys = {
+            'project_id': {
+                'type': (str, )
+            }
+        }
+        for cfgkey, cfgparams in check_keys.items():
+            assert isinstance(getattr(self, cfgkey), cfgparams['type']), f'Invalid type expected for "{cfgkey}'
+
+    def get_oauth2_token(self):
+        credentials = None
+        scopes = [
+            "https://www.googleapis.com/auth/cloud-platform",
+            "https://www.googleapis.com/auth/devstorage.full_control"
+        ]
+        if self.gcp_credentials_json:
+            credentials = service_account.Credentials.from_service_account_info(self.gcp_credentials_json, scopes=scopes)
+        elif self.gcp_credentials_file:
+            credentials = service_account.Credentials.from_service_account_file(self.gcp_credentials_file, scopes=scopes)
+        else:
+            credentials, _ = google.auth.default(scopes=scopes)
+
+        request = google.auth.transport.requests.Request()
+        credentials.refresh(request)
+        return credentials
+
+    def get_storage_client(self):
+        """Client to GCP Storage"""
+        if not self.gcp_storage_client:
+            credentials = self.get_oauth2_token()
+            self.gcp_storage_client = storage.Client(credentials=credentials)
+        return self.gcp_storage_client
+
+    def get_pub_client(self):
+        """Client Publisher to GCP Pub/Sub"""
+        if not self.gcp_pub_client:
+            creds = None
+            if self.gcp_credentials_json:
+                creds = service_account.Credentials.from_service_account_info(self.gcp_credentials_json)
+            elif self.gcp_credentials_file:
+                creds = service_account.Credentials.from_service_account_file(self.gcp_credentials_file)
+            self.gcp_pub_client = pubsub.PublisherClient(credentials=creds)
+        return self.gcp_pub_client
+
+    def get_sub_client(self):
+        """Client Subscriber from GCP Pub/Sub"""
+        if not self.gcp_sub_client:
+            creds = None
+            if self.gcp_credentials_json:
+                creds = service_account.Credentials.from_service_account_info(self.gcp_credentials_json)
+            elif self.gcp_credentials_file:
+                creds = service_account.Credentials.from_service_account_file(self.gcp_credentials_file)
+            self.gcp_sub_client = pubsub.SubscriberClient(credentials=creds)
+        return self.gcp_sub_client
+
+    def create_topic(self, name):
+        """Create a dedicated topic if needed"""
+        if self.topic_prefix:
+            name = f'{self.topic_prefix}_{name}'
+        cli = self.get_pub_client()
+        topic_path = cli.topic_path(self.project_id, name)
+        if self.auto_setup:
+            topics = cli.list_topics(
+                request={
+                    'project': f'projects/{self.project_id}'
+                },
+                retry=retry.Retry(deadline=self.deadline)
+            )
+            found = False
+            for topic in topics:
+                if topic.name == topic_path:
+                    found = True
+                    break
+            if not found:
+                topic = cli.create_topic(
+                    request={
+                        'name': topic_path
+                    }
+                )
+        return topic_path
+
+    def callback_subscription(self, message):
+        print('received', message)
+        message.ack()
+
+    def register_subscriber(self, func, raw=False):
+        """Create a subscription to the function"""
+        identifier = func.__name__
+        if self.topic_prefix:
+            identifier = f'{self.topic_prefix}_{identifier}'
+        cli_pub = self.get_pub_client()
+        cli_sub = self.get_sub_client()
+        topic_path = cli_pub.topic_path(self.project_id, identifier)
+        subscription_path = cli_sub.subscription_path(self.project_id, identifier)
+
+        sub = cli_sub.get_subscription(
+            request={
+                'subscription': subscription_path
+            },
+            retry=retry.Retry(deadline=self.deadline),
+            timeout=30
+        )
+        if not sub:
+            sub = cli_sub.create_subscription(
+                request={
+                    'name': subscription_path,
+                    'topic': topic_path
+                }
+            )
+
+        self.requests.append({
+            'name': subscription_path,
+            'topic': topic_path,
+            'callback': func,
+            'weight': 5,
+            'raw': raw
+        })
+
+    def pull_item(self):
+        cli = self.get_sub_client()
+        requests = sorted(self.requests, key=lambda x: x['weight'])
+        for request in requests:
+            response = cli.pull(
+                request={
+                    'subscription': request['name'],
+                    'max_messages': self.concurrent_messages,
+                    'return_immediately': self.return_immediately
+                },
+                retry=retry.Retry(deadline=self.deadline)
+            )
+            if len(response.received_messages) > 0:
+                funcref = request['topic'].split('/')[-1]
+                for message in response.received_messages:
+                    cli.acknowledge(
+                        request={
+                            'subscription': request['name'],
+                            'ack_ids': [message.ack_id]
+                        }
+                    )
+                    if request['raw']:
+                        args = []
+                        kwargs = message.message.attributes
+                    else:
+                        data = json.loads(message.message.data)
+                        args = data.get('args', [])
+                        kwargs = data.get('kwargs', {})
+                    result = None
+                    exec_time = time.time()
+                    print(f'status=received message_id={message.message.message_id} function={funcref}')
+                    try:
+                        if self.flask:
+                            with self.flask.app_context():
+                                result = request['callback'](*args, **kwargs)
+                        else:
+                            result = request['callback'](*args, **kwargs)
+                    except Exception:
+                        result = 'crash'
+                        traceback.print_exc()
+                    exec_time = time.time() - exec_time
+                    print(f'status=processed message_id={message.message.message_id} function={funcref} result={result} execution_time={exec_time}')
+
+                return
+
+    def run(self):
+        print('Start consumers')
+        while True:
+            slots = (self.concurrent_consumers + 1) - threading.active_count()
+            for slot in range(slots):
+                thr = threading.Thread(target=self.pull_item)
+                thr.start()
+            time.sleep(0.5)
+
+    def task(self, f):
+        """Register a new task"""
+        self.check_configuration()
+        topic = self.create_topic(f.__name__)
+        self.register_subscriber(f)
+        return PubCatcher(self.get_pub_client(), topic)
+
+    def bucket(self, bucket_name, **kwargs):
+        """Register a new task, based on bucket notification"""
+        def inner(f):
+            self.check_configuration()
+            topic = self.create_topic(f.__name__)
+            self.register_subscriber(f, True)
+            kwargs['auto_setup'] = self.auto_setup
+            return BucketCatcher(self.get_storage_client(), topic, bucket_name, **kwargs)
+        return inner
