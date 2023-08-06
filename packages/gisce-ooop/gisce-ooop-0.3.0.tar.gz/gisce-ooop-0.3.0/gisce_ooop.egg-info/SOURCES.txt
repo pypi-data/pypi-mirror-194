@@ -1,0 +1,7 @@
+README.md
+ooop.py
+setup.py
+gisce_ooop.egg-info/PKG-INFO
+gisce_ooop.egg-info/SOURCES.txt
+gisce_ooop.egg-info/dependency_links.txt
+gisce_ooop.egg-info/top_level.txt
