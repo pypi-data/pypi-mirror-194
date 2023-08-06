@@ -1,0 +1,16 @@
+[console_scripts]
+torchani-step-installer = torchani_step.__main__:run
+
+[org.molssi.seamm]
+TorchANI = torchani_step:TorchANIStep
+
+[org.molssi.seamm.tk]
+TorchANI = torchani_step:TorchANIStep
+
+[org.molssi.seamm.torchani]
+Energy = torchani_step:EnergyStep
+Optimization = torchani_step:OptimizationStep
+
+[org.molssi.seamm.torchani.tk]
+Energy = torchani_step:EnergyStep
+Optimization = torchani_step:OptimizationStep

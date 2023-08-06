@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: torchani-step
+Version: 2023.2.28
+Summary: A SEAMM plug-in for TorchANI
+Home-page: https://github.com/molssi-seamm/torchani_step
+Author: Paul Saxe
+Author-email: psaxe@molssi.org
+License: BSD-3-Clause
+Keywords: SEAMM,SEAMMplugin,flowchart
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Platform: Windows
+Classifier: Environment :: Plugins
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+======================
+SEAMM TorchANI Plug-in
+======================
+
+.. image:: https://img.shields.io/github/issues-pr-raw/molssi-seamm/torchani_step
+   :target: https://github.com/molssi-seamm/torchani_step/pulls
+   :alt: GitHub pull requests
+
+.. image:: https://github.com/molssi-seamm/torchani_step/workflows/CI/badge.svg
+   :target: https://github.com/molssi-seamm/torchani_step/actions
+   :alt: Build Status
+
+.. image:: https://codecov.io/gh/molssi-seamm/torchani_step/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/molssi-seamm/torchani_step
+   :alt: Code Coverage
+
+.. image:: https://github.com/molssi-seamm/torchani_step/workflows/CodeQL/badge.svg
+   :target: https://github.com/molssi-seamm/torchani_step/security/code-scanning
+   :alt: Code Quality
+
+.. image:: https://github.com/molssi-seamm/torchani_step/workflows/Release/badge.svg
+   :target: https://molssi-seamm.github.io/torchani_step/index.html
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/v/torchani_step.svg
+   :target: https://pypi.python.org/pypi/torchani_step
+   :alt: PyPi VERSION
+
+A SEAMM plug-in for TorchANI
+
+* Free software: BSD-3-Clause
+* Documentation: https://molssi-seamm.github.io/torchani_step/index.html
+* Code: https://github.com/molssi-seamm/torchani_step
+
+Features
+--------
+
+* Please edit this section!
+
+Acknowledgements
+----------------
+
+This package was created with the `molssi-seamm/cookiecutter-seamm-plugin`_ tool, which
+is based on the excellent Cookiecutter_.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`molssi-seamm/cookiecutter-seamm-plugin`: https://github.com/molssi-seamm/cookiecutter-seamm-plugin
+
+Developed by the Molecular Sciences Software Institute (MolSSI_),
+which receives funding from the `National Science Foundation`_ under
+award CHE-2136142.
+
+.. _MolSSI: https://molssi.org
+.. _`National Science Foundation`: https://www.nsf.gov
+
+
+=======
+History
+=======
+
+2023.2.28 -- Initial version!
+    * Handles energy and optimization.
+    * ANI-1x, ANI-1ccx, and ANI-2x models
+      
+2023.1.17 (2023-01-17)
+    * Plug-in created using the SEAMM plug-in cookiecutter.
