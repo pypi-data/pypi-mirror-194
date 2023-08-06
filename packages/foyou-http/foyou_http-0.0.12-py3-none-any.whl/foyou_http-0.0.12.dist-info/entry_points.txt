@@ -1,0 +1,2 @@
+[console_scripts]
+foyou-http = simplehttp:main
