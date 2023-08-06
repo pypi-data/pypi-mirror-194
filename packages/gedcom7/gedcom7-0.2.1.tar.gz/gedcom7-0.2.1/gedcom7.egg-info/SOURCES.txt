@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gedcom7/__init__.py
+gedcom7/const.py
+gedcom7/grammar.py
+gedcom7/parser.py
+gedcom7/types.py
+gedcom7.egg-info/PKG-INFO
+gedcom7.egg-info/SOURCES.txt
+gedcom7.egg-info/dependency_links.txt
+gedcom7.egg-info/top_level.txt
+test/test_parser.py
+test/test_types.py
