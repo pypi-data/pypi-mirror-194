@@ -1,0 +1,12 @@
+RedLionfishDeconv/RLDeconv3DReiknaOCL.py,sha256=RpCqI9nctLqFlUOYJMFTZC-ERn2rU2AbQDU-jP2G5Tc,21289
+RedLionfishDeconv/RLDeconv3DScipy.py,sha256=HZNnBQtogGOEXAZhoj6mVJQpn8khMNKBHtEy-8DeQJ0,6373
+RedLionfishDeconv/RLDeconvolve.py,sha256=nVKS20Rl9QWYpZxbOxNcKrdDvQOmoJu1RxMwF8Z89X8,6274
+RedLionfishDeconv/__init__.py,sha256=a3CMSjaVpPBQMiLQ8K1pReaiv93-2gBMJ7REUqUyYeQ,691
+RedLionfishDeconv/helperfunctions.py,sha256=xCwsV5bUMpz6PiYGZ9w_lpCaEecOtqI-OevQ_2iQmk4,5738
+RedLionfishDeconv/napari_plugin.py,sha256=eAxOT-h6oZ0ZDXCsPXxWTAlFrq4NkktsFv6Kvlx3Dvw,4830
+RedLionfish-0.9.dist-info/LICENSE,sha256=vEAJIrOSYqbjlCcDrw2B_ZgSwT_ni0tiFi7wrZcv37I,11562
+RedLionfish-0.9.dist-info/METADATA,sha256=npae9baV6KIDB_RWE9WFABAdnFCPS2Lqri2_0RISS9o,10137
+RedLionfish-0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+RedLionfish-0.9.dist-info/entry_points.txt,sha256=yzzy9p4fdD3DCqrSMkAS_jTHL8zRta8iBulBjvRWdR8,62
+RedLionfish-0.9.dist-info/top_level.txt,sha256=MTnJKgMqjabVOiUycdsgCHpv0RW60LruamwHIC6i-Sg,18
+RedLionfish-0.9.dist-info/RECORD,,
