@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "picklejar"
+version = "3.1.0"
+description = "Read and write pickles to a single file"
+authors = ["Jesse Almanrode <jesse@almanrode.com>"]
+license = "GNU Lesser General Public License v3 or later (LGPLv3+)"
+readme = "README.md"
+homepage = "http://picklejar.readthedocs.io/"
+repository = "https://bitbucket.org/isaiah1112/picklejar/"
+packages = [{include = "picklejar.py"}]
+classifiers = ["Programming Language :: Python",
+            "Intended Audience :: Developers",
+            "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+            "Development Status :: 5 - Production/Stable",
+            "Programming Language :: Python",
+            "Programming Language :: Python :: 3.8",
+            "Programming Language :: Python :: 3.9",
+            "Programming Language :: Python :: 3.10",
+            "Programming Language :: Python :: 3.11",
+            "Programming Language :: Python :: Implementation :: PyPy",
+            "Topic :: Software Development :: Libraries",
+            "Topic :: Software Development :: Libraries :: Python Modules",
+            ]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+dill = "^0.3.6"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.1.0"
+discover = "^0.4.0"
+flake8 = "^6.0.0"
+mock = "^5.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
