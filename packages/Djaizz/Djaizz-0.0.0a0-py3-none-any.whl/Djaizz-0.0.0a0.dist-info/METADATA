@@ -1,0 +1,287 @@
+Metadata-Version: 2.1
+Name: Djaizz
+Version: 0.0.0a0
+Summary: Artificial Intelligence (AI) in Django Applications
+Author-email: "STEAM for Vietnam Foundation: AI, IoT & Robotics Educational Initiative" <Edu.AI@STEAMforVietNam.org>
+Maintainer-email: "STEAM for Vietnam Foundation: AI, IoT & Robotics Educational Initiative" <Edu.AI@STEAMforVietNam.org>
+License: MIT License
+        
+        Copyright (c) 2021 The Vinh LUONG (LƯƠNG Thế Vinh)
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://GitHub.com/Djaizz/Djaizz
+Project-URL: Repository, https://GitHub.com/Djaizz/Djaizz
+Project-URL: GitHub, https://GitHub.com/Djaizz/Djaizz
+Project-URL: Documentation, https://Djaizz.GitHub.io/Djaizz
+Keywords: Django,Artificial Intelligence,A.I.,AI,application,app
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Framework :: Dash
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: IPython
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Kedro
+Classifier: Framework :: Matplotlib
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Other OS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Education
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Software Development :: Widget Sets
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Dask (>=2023.2.1)
+Requires-Dist: Distributed (>=2023.2.1)
+Requires-Dist: MetaFlow (>=2.8.0)
+Requires-Dist: NumPy (>=1.23)
+Requires-Dist: Pandas (>=1.5.3)
+Requires-Dist: Pandarallel (>=1.6.4)
+Requires-Dist: PyArrow (>=11.0.0)
+Requires-Dist: PySpark (>=3.3.2)
+Requires-Dist: SciPy (>=1.10.1)
+Requires-Dist: Pillow (>=9.4.0)
+Requires-Dist: SciKit-Image (>=0.19.3)
+Requires-Dist: Imbalanced-Learn (>=0.10.1)
+Requires-Dist: StatsModels (>=0.13.5)
+Requires-Dist: SciKit-Learn (>=1.2.1)
+Requires-Dist: TensorFlow (>=2.12.0rc0)
+Requires-Dist: TensorFlow-DataSets (>=4.8.3)
+Requires-Dist: TensorFlow-Hub (>=0.12.0)
+Requires-Dist: Torch-Model-Archiver (>=0.7.1)
+Requires-Dist: TorchServe (>=0.7.1)
+Requires-Dist: OpenCV-Python (>=4.7.0)
+Requires-Dist: DataSets (>=2.10.0)
+Requires-Dist: HuggingFace-Hub (>=0.12.1)
+Requires-Dist: Transformers (>=4.26.1)
+Requires-Dist: SentencePiece (>=0.1.97)
+Requires-Dist: GUDHI (>=3.7.1)
+Requires-Dist: GoogleTrans (>=4.0.0rc1)
+Requires-Dist: Bayesian-Optimization (>=1.4.2)
+Requires-Dist: ConfigSpace (>=0.6.1)
+Requires-Dist: Hpbandster (>=0.7.4)
+Requires-Dist: Tabulate (>=0.9.0)
+Requires-Dist: LIME (>=0.2.0.1)
+Requires-Dist: SciKit-Fuzzy (>=0.4.2)
+Requires-Dist: FSSpec (>=2023.1.0)
+Requires-Dist: CloudPickle (>=2.2.1)
+Requires-Dist: JobLib (>=1.2.0)
+Requires-Dist: Django (>=4.1.7)
+Requires-Dist: Django-Polymorphic (>=3.1.0)
+Requires-Dist: Django-Admin-HStore-Widget (>=1.2.1)
+Requires-Dist: Django-Admin-Relation-Links (>=0.2.5)
+Requires-Dist: Django-Grappelli (>=3.0.4)
+Requires-Dist: Django-Jazzmin (>=2.6.0)
+Requires-Dist: Django-Autocomplete-Light (>=3.9.4)
+Requires-Dist: Django-Generic-M2M (>=0.3.1)
+Requires-Dist: Django-GM2M (>=1.1.1)
+Requires-Dist: Django-QuerySetSequence (>=0.16)
+Requires-Dist: Django-Tagging (>=0.5.0)
+Requires-Dist: Django-Taggit (>=3.1.0)
+Requires-Dist: Ariadne (>=0.18.1)
+Requires-Dist: Django-GraphQL-Extensions (>=0.1.0)
+Requires-Dist: Django-RESTQL (>=0.15.3)
+Requires-Dist: GQL (>=3.4.0)
+Requires-Dist: Graphene (>=3.2.1)
+Requires-Dist: Graphene-Django (>=3.0.0)
+Requires-Dist: Graphene-Django-Optimizer (>=0.9.1)
+Requires-Dist: GraphQLClient (>=0.2.4)
+Requires-Dist: GraphQL-Core (>=3.2.3)
+Requires-Dist: GraphQL-Relay (>=3.2.0)
+Requires-Dist: Py-GQL (>=0.6.1)
+Requires-Dist: SGQLC (>=16.1)
+Requires-Dist: Strawberry-GraphQL (>=0.159.0)
+Requires-Dist: DjangoRESTFramework (>=3.14.0)
+Requires-Dist: DRFPasswordless (>=1.5.8)
+Requires-Dist: DRF-Writable-Nested (>=0.6.4)
+Requires-Dist: CoreAPI (>=2.3.3)
+Requires-Dist: CoreAPI-CLI (>=1.0.9)
+Requires-Dist: Markdown (>=3.4.1)
+Requires-Dist: DjangoRESTFramework-JSONAPI (>=6.0.0)
+Requires-Dist: DRF-Nested-Routers (>=0.93.4)
+Requires-Dist: Django-PolyModels (>=1.7.0)
+Requires-Dist: Django-Typed-Models (>=0.12.0)
+Requires-Dist: HAL-Codec (>=1.0.2)
+Requires-Dist: JSONHyperSchema-Codec (>=1.0.3)
+Requires-Dist: OpenAPI-Codec (>=1.3.2)
+Requires-Dist: JSONSchema (>=4.17.3)
+Requires-Dist: Pydantic (>=1.10.5)
+Requires-Dist: HTTPie (>=3.2.1)
+Requires-Dist: Django-Filter (>=22.1)
+Requires-Dist: DjangoRESTFramework-Filters (>=1.0.0.dev2)
+Requires-Dist: Django-Guardian (>=2.4.0)
+Requires-Dist: Rules (>=3.3)
+Requires-Dist: Django-Debug-Toolbar (>=3.8.1)
+Requires-Dist: Django-Query-Profiler (>=0.9)
+Requires-Dist: Django-Silk (>=5.0.3)
+Requires-Dist: Kolo (>=2.4.2)
+Requires-Dist: Django-Annoying (>=0.10.6)
+Requires-Dist: Django-Choices (>=1.7.2)
+Requires-Dist: Django-Compressor (>=4.3.1)
+Requires-Dist: Django-Configurations (>=2.4)
+Requires-Dist: Django-Crispy-Forms (>=2.0)
+Requires-Dist: Django-Environ (>=0.9.0)
+Requires-Dist: Django-Extensions (>=3.2.1)
+Requires-Dist: Django-JSON-Widget (>=1.1.1)
+Requires-Dist: Django-LocalFlavor (>=3.1)
+Requires-Dist: Django-Nested-InLines (>=0.1)
+Requires-Dist: Django-Storages (>=1.13.2)
+Requires-Dist: Django-Query-Graph (>=0.0.0.dev1)
+Requires-Dist: Dj-Util (>=0.0.0.dev1)
+Requires-Dist: Django-CORS-Headers (>=3.10)
+Requires-Dist: Django-HTMX (>=1.14.0)
+Requires-Dist: Django-Plotly-Dash (>=1.7)
+Requires-Dist: Dash-Bootstrap-Components (>=0.13)
+Requires-Dist: DPD-Static-Support (>=0.0.5)
+Requires-Dist: Django-Bootstrap4 (>=22.3)
+Requires-Dist: WhiteNoise (>=6.4.0)
+Requires-Dist: Flask (<2.2,>=2.1)
+Requires-Dist: Werkzeug (<2.1,>=2.0)
+Requires-Dist: Gradio (>=3.19.1)
+Requires-Dist: Streamlit (>=1.19.0)
+Requires-Dist: Watchdog (>=2.3.0)
+Requires-Dist: MariaDB-DynCol (>=3.6.1)
+Requires-Dist: Django-MySQL (>=4.9.0)
+Requires-Dist: MySQLClient (>=2.1.1)
+Requires-Dist: MySQL-Connector-Python (>=8.0.32)
+Requires-Dist: PsycoPG2-binary (>=2.9.5)
+Requires-Dist: ASGIRef (>=3.6.0)
+Requires-Dist: Channels (>=2.4)
+Requires-Dist: Daphne (>=2.5)
+Requires-Dist: GUnicorn (>=20.1.0)
+Requires-Dist: H11 (>=0.9)
+Requires-Dist: Hypercorn (>=0.14.3)
+Requires-Dist: Quart (>=0.17)
+Requires-Dist: Starlette (>=0.25.0)
+Requires-Dist: Uvicorn (>=0.20.0)
+Requires-Dist: CLICK (>=8.1.3)
+Requires-Dist: Colored (>=1.4.4)
+Requires-Dist: Jupyter (>=1.0.0)
+Requires-Dist: GitPython (>=3.1.31)
+Requires-Dist: Ruamel.YAML (>=0.17.21)
+Requires-Dist: PSUtil (>=5.9.4)
+Requires-Dist: Python-DateUtil (>=2.8.2)
+Requires-Dist: Python-DotEnv (>=1.0.0)
+Requires-Dist: PyTZ (>=2022.7.1)
+Requires-Dist: Requests (>=2.28.2)
+Requires-Dist: Tqdm (>=4.64.1)
+Requires-Dist: NumBa (>=0.56.4) ; python_version < "3.11"
+Requires-Dist: Ray (>=1.13.0) ; python_version < "3.11"
+Requires-Dist: Kedro (>=0.18.5) ; python_version < "3.11"
+Requires-Dist: Torch (>=1.13.1) ; python_version < "3.11"
+Requires-Dist: TorchAudio (>=0.13.1) ; python_version < "3.11"
+Requires-Dist: TorchText (>=0.14.1) ; python_version < "3.11"
+Requires-Dist: TorchVision (>=0.14.1) ; python_version < "3.11"
+Requires-Dist: TIMM (>=0.6.12) ; python_version < "3.11"
+Requires-Dist: Giotto-TDA (>=0.6.0) ; python_version < "3.11"
+Requires-Dist: SHAP (>=0.41.0) ; python_version < "3.11"
+Provides-Extra: build
+Requires-Dist: Build (>=0.10.0) ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: Commitizen (>=2.42.1) ; extra == 'dev'
+Requires-Dist: Pre-Commit (>=3.1.1) ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: Sphinx (>=6.1.3) ; extra == 'doc'
+Requires-Dist: Sphinx-AutoBuild (>=2021.3.14) ; extra == 'doc'
+Requires-Dist: SphinxContrib-JSMath (>=1.0.1) ; extra == 'doc'
+Requires-Dist: CommonMark (>=0.9.1) ; extra == 'doc'
+Requires-Dist: ReCommonMark (>=0.7.1) ; extra == 'doc'
+Provides-Extra: lint
+Requires-Dist: Bandit (>=1.7.4) ; extra == 'lint'
+Requires-Dist: Flake8 (>=6.0.0) ; extra == 'lint'
+Requires-Dist: MyPy (>=1.0.0) ; extra == 'lint'
+Requires-Dist: PyCodeStyle (>=2.10.0) ; extra == 'lint'
+Requires-Dist: PyDocStyle (>=6.3.0) ; extra == 'lint'
+Requires-Dist: PyLama (>=8.4.1) ; extra == 'lint'
+Requires-Dist: PyLint (>=2.16.1) ; extra == 'lint'
+Provides-Extra: publish
+Requires-Dist: Twine (>=4.0.2) ; extra == 'publish'
+Provides-Extra: test
+Requires-Dist: Nose (>=1.3.7) ; extra == 'test'
+Requires-Dist: Nose2 (>=0.12.0) ; extra == 'test'
+Requires-Dist: PyTest (>=7.2.1) ; extra == 'test'
+Requires-Dist: PyTest-Cov (>=4.0.0) ; extra == 'test'
+Requires-Dist: UnitTest2 (>=1.1.0) ; extra == 'test'
+Provides-Extra: viz
+Requires-Dist: Altair (>=4.2.2) ; extra == 'viz'
+Requires-Dist: Bokeh (>=3.0.3) ; extra == 'viz'
+Requires-Dist: Dash (>=1.20) ; extra == 'viz'
+Requires-Dist: Dash-DAQ (>=0.5.0) ; extra == 'viz'
+Requires-Dist: PlotLy (>=5.13.0) ; extra == 'viz'
+Requires-Dist: PlotNine (>=0.10.1) ; extra == 'viz'
+Requires-Dist: Seaborn (>=0.12.2) ; extra == 'viz'
+
+# `Djaizz`: Artificial Intelligence (AI) in Django Applications
+
+
+## Developer Note on Maintaining & Updating Dependencies
+
+Install in editable development mode: `./install-editable-dev`
