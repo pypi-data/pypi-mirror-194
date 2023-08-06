@@ -1,0 +1,3 @@
+[console_scripts]
+hackathon_linc = hackathon_linc.cli:main
+
