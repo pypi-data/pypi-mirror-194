@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/tKot.egg-info/PKG-INFO
+src/tKot.egg-info/SOURCES.txt
+src/tKot.egg-info/dependency_links.txt
+src/tKot.egg-info/requires.txt
+src/tKot.egg-info/top_level.txt
+src/tkinter_extentions/buttons.py
+src/tkinter_extentions/settings.py
