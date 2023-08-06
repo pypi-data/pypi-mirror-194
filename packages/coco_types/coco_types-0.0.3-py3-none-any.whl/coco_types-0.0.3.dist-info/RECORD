@@ -1,0 +1,10 @@
+coco_types/__init__.py,sha256=T__JK7yNiEOax_6eNXhfUr2K98GNWowcIIhF2aU5wzw,528
+coco_types/coco_keypoints.py,sha256=bsonskwzg7NDin0_CFC9yobrnbo9tOGnIHdDPHDoNVE,1471
+coco_types/coco_object_detection.py,sha256=HpZUv4U6xMJlNsvke-ntAU_0ApRZaYB4oExyaiiGY-I,1528
+coco_types/dicts/__init__.py,sha256=TVHo4-6gtji5fwpWxa04aiLAqJYt0HjmOUKnExkKbcM,67
+coco_types/dicts/coco_keypoints.py,sha256=IrlE730VixZn5TJFsIUH7FcQg2tzQCQXgxXr2e0ves0,447
+coco_types/dicts/coco_object_detection.py,sha256=vGeMixLHB68-4DTihZSwm9dnxgpMoOJ7x476b54iDEM,1463
+coco_types-0.0.3.dist-info/METADATA,sha256=wSGHw-056lLVqP1xMOkm_bUnAJzVtNfAFpV08O_uLmU,3291
+coco_types-0.0.3.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+coco_types-0.0.3.dist-info/licenses/LICENSE.md,sha256=wH71WWe4KMwDlpn2y501Fyy1nKbHzA6O-Zs3gRbvgXk,1069
+coco_types-0.0.3.dist-info/RECORD,,
