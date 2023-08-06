@@ -1,0 +1,15 @@
+scryfallscraper/__init__.py,sha256=bAF9h82tJrulpY3O0V4HmacH6PVbXa3NbMjGb_hylEw,569
+scryfallscraper/scraper.py,sha256=IYmLafq3zcN7V8UYj1TdYUwjIXYJ92YhVQ62ODfDAkI,1499
+scryfallscraper/bulk_scraping/__init__.py,sha256=tFKe6a3Td2tFfpYMb5ke1YvN94DJS30YGfzQvxTcODk,291
+scryfallscraper/bulk_scraping/functions.py,sha256=gNe1O0aPFDQ8mM38sbssT3OPXx7tSRaij3C0RL5uySI,2321
+scryfallscraper/bulk_scraping/util.py,sha256=wdNQytU3aA6AM2Pr02kG9TEB_jVFPSWvLXS49mWvipc,1692
+scryfallscraper/compression/__init__.py,sha256=joLlI6acVDabB_FIuQBPvBe1iBlGQlzgsuxMlyL2kv8,74
+scryfallscraper/compression/functions.py,sha256=M1S-WYhwXKSalOVMd8RspTr0_d_DXAmh3mE1Q72KnB4,840
+scryfallscraper/sets/__init__.py,sha256=TH9IOUkTERJdPlwr8BrJyyctWTeOZY6Wjg6wLrrltlQ,223
+scryfallscraper/sets/functions.py,sha256=0jnFw_eQWczc0O9x1G6_SGy20LhxE1jOvE108yEl49s,2274
+scryfallscraper/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scryfallscraper/util/util.py,sha256=8kWaw8vkG1wLr5uroadXCbgtpO8jAiIJqvPXhAyJSv0,1183
+scryfallscraper-0.0.3.2.dist-info/METADATA,sha256=e3sIySMMh5RSOnAcZKRlVHSZbnD7fbXW1_kxgWNGV0Q,1322
+scryfallscraper-0.0.3.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+scryfallscraper-0.0.3.2.dist-info/top_level.txt,sha256=2fbwVymi78AYDYW5eTLcbUvXFqMAY_fjl6uWQdDIxcg,16
+scryfallscraper-0.0.3.2.dist-info/RECORD,,
