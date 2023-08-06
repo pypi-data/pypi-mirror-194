@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: openthaigpt
+Version: 0.0.3
+Summary: OpenThaiGPT focuses on developing a Thai Chatbot system to have capabilities equivalent to ChatGPT, as well as being able to connect to external systems and be able to retrieve data flexibly. Easily expandable and customizable and developed into Free open source software for everyone.
+Home-page: https://github.com/OpenThaiGPT/openthaigpt
+Author: Kobkrit Viriyayudhakorn
+Author-email: kobkrit@iapp.co.th
+License: Apache Software License 2.0
+Keywords: openthaigpt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Thai
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: transformers[sentencepiece]
+
+# OpenThaiGPT
+
+[![](https://img.shields.io/pypi/v/openthaigpt.svg)](https://pypi.python.org/pypi/openthaigpt) [![](https://pyup.io/repos/github/OpenThaiGPT/openthaigpt/shield.svg)](https://pyup.io/repos/github/OpenThaiGPT/openthaigpt/)
+
+OpenThaiGPT focuses on developing a Thai Chatbot system to have capabilities equivalent to ChatGPT, as well as being able to connect to external systems and be able to retrieve data flexibly. Easily expandable and customizable and developed into Free open source software for everyone.
+
+* Free software: Apache Software License 2.0
+* Project Homepage: https://openthaigpt.aieat.or.th
+* Documentation: https://openthaigpt.readthedocs.io.
+
+## Requirements
+
+* Nvidia GPU
+
+
+## Features
+
+* The Third PoC Model for OpenThaiGPT (version 0.0.3)
+
+
+# History
+
+0.0.3 (2023-02-28)
+
+* First release on PyPI.
