@@ -1,0 +1,9 @@
+README.md
+setup.py
+passaosfriday/FileService.py
+passaosfriday/__init__.py
+passaosfriday.egg-info/PKG-INFO
+passaosfriday.egg-info/SOURCES.txt
+passaosfriday.egg-info/dependency_links.txt
+passaosfriday.egg-info/requires.txt
+passaosfriday.egg-info/top_level.txt
