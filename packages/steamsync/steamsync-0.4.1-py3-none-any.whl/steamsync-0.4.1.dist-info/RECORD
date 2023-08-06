@@ -1,0 +1,16 @@
+steamsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+steamsync/defs.py,sha256=KK8e3izJ6M4Tp-u-Y8bgbV4Y1zlYmUYBje9ypkI3lhw,2142
+steamsync/launchers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+steamsync/launchers/egs.py,sha256=UmKmhbUgKk2K4D4Ja9wuxmMykY8nw-CPkyQAxXLnVqU,4270
+steamsync/launchers/itch.py,sha256=gKtzZdvguPfafbaaIS6pe8ZL9IdmghV9c0quT3l1QlA,5437
+steamsync/launchers/launcher.py,sha256=OiUreGzL7UPp05397YIEjIkiuLiNziE263RJjlngJQE,932
+steamsync/launchers/legendary.py,sha256=KelIxscqivciBA6ppQON3A8gK4MGp_3xLtDR5mjSW_g,2326
+steamsync/launchers/static/list_xbox_games.ps1,sha256=Qdi3kyhlQ_B-VbttrxMB4wsr-u4RVcs07xdY4PtWb2I,1330
+steamsync/launchers/xbox.py,sha256=uXKzZG1Bi0L01K4dSlzxMJDH1IeJXwXWx9Tk-9ehTsw,6830
+steamsync/steameditor.py,sha256=sjvodpFx608EnG6UDKfzvlsCpH-fwl7rf-bfZ35Dn4k,15530
+steamsync/steamsync.py,sha256=KR0YMgQrFaXvtmfnM73z6SlqT7QCi_iTNS1ZS8OT9s4,22999
+steamsync/util.py,sha256=enOwwXyPedy9vHRd8fm89_nK4iQt4CPUvh_xEAFKxX4,359
+steamsync-0.4.1.dist-info/entry_points.txt,sha256=-GBM-5XER29QWwzZ3r8zzMYXTZi1C6LiwSgIB4vZT-M,54
+steamsync-0.4.1.dist-info/METADATA,sha256=ETRt6ZqbmJuMf-CdI7TpEdVLhn0OhVFYc6h0ITycleU,8890
+steamsync-0.4.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+steamsync-0.4.1.dist-info/RECORD,,
