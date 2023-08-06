@@ -1,0 +1,15 @@
+yomikata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yomikata/__main__.py,sha256=9rFhF8x4GcSBHAsJQGjli9Ui81GTsUxe2XwMAIc1hYE,1324
+yomikata/dbert.py,sha256=JG-tqWMWytEl6N_mRGCO0FsaW7EjtfGdQZmdNJfEUeU,15534
+yomikata/dictionary.py,sha256=vVm6XkJueMrzdEBv9ybVqwZ9c6FEFJ4NjWEKqDVDmv8,3883
+yomikata/main.py,sha256=y2ZHvFAv6nHLHbVVA0IagZZdq-8_LCwZ3UVi3p1tfSk,3399
+yomikata/reader.py,sha256=PnZxUCCltnG5n1GqgKlElSDX2ybkwFzfhO5z93U2OTE,381
+yomikata/utils.py,sha256=tBZKLKx4ia5A63H8s3UV-s0Du9rmmrLrO9eJRkvFiz8,10093
+yomikata/config/__init__.py,sha256=6n-sn-HlIZcEDNiXaPyaKbMv2Yr0GKEE6qLMXl01FnQ,27
+yomikata/config/config.py,sha256=Ku9b6GftGx3C3vARsZMsXQ-Ic9HHa3GmbMnF6RdkLh0,3148
+yomikata/download/download.py,sha256=fo-yzuoHgn19L7Dif9KmXNmtPv16zUxxWNjGGrhW4lY,3792
+yomikata-0.0.2.dist-info/LICENSE.md,sha256=KZpg7d2Xkc-itjlTn4GnfWjIKW-l_tqasKXYVmsGtKI,1070
+yomikata-0.0.2.dist-info/METADATA,sha256=_v0SwDvAO_7Ktov6pfsw2Re3q3dguIhIbq1Uhtaa-Tw,4166
+yomikata-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+yomikata-0.0.2.dist-info/top_level.txt,sha256=hh_pmKXaFe2HSbiT37pRuwcyOcxuWbv75o5NLfkPosA,9
+yomikata-0.0.2.dist-info/RECORD,,
