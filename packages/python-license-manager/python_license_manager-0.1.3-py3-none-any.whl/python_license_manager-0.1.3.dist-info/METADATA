@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: python-license-manager
+Version: 0.1.3
+Summary: Python license manager
+Author-email: Nico Schlömer <nico.schloemer@gmail.com>
+Project-URL: Code, https://github.com/pysos/plm
+Project-URL: Issues, https://github.com/pysos/plm/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: x21 (>=0.4.10,<0.5.0)
+Requires-Dist: platformdirs
+Requires-Dist: cryptography
+Requires-Dist: py-machineid
+Requires-Dist: PyNaCl
+Requires-Dist: requests
+Requires-Dist: requests-cache
+Requires-Dist: rich
+Requires-Dist: rich-argparse
+Requires-Dist: tomli-w
+Requires-Dist: tomli ; python_version < "3.11"
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+
+# PLM
