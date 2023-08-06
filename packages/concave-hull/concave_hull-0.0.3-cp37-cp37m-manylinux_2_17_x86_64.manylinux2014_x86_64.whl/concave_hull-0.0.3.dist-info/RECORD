@@ -1,0 +1,7 @@
+pybind11_concave_hull.cpython-37m-x86_64-linux-gnu.so,sha256=8ZdCKT9nr8buzumk0E3gbVBZgNebbZ_zKku_D208k7Q,208648
+concave_hull/__init__.py,sha256=88OChGlWaAdSswk80e8hxSpmPWDCvW7jcVI-Kdm1Qoo,1731
+concave_hull-0.0.3.dist-info/top_level.txt,sha256=HVDblrtHaeL5cl4VLSxtaC7Ca_v0cguy4B44_1TaCDM,13
+concave_hull-0.0.3.dist-info/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
+concave_hull-0.0.3.dist-info/METADATA,sha256=Me-BMZEteQxDmcBFNlg84DYFnEcu2chbS-L0k1RZkRQ,3323
+concave_hull-0.0.3.dist-info/RECORD,,
+concave_hull-0.0.3.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
