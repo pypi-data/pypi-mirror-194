@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyworms
+Version: 0.3.0
+Summary: Python client for the WoRMS REST service
+Author: Pieter Provoost
+Author-email: pieterprovoost@gmail.com
+License: BSD
+License-File: LICENSE.txt
