@@ -1,0 +1,11 @@
+CHANGES.md
+LICENSE
+MANIFEST.in
+README.md
+dogpt.py
+setup.py
+dogpt.egg-info/PKG-INFO
+dogpt.egg-info/SOURCES.txt
+dogpt.egg-info/dependency_links.txt
+dogpt.egg-info/entry_points.txt
+dogpt.egg-info/top_level.txt
