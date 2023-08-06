@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: shadowconf
+Version: 0.0.1
+Summary: An elegant, dynamic, lightweight, reflective, productive, reproducible, and uninvasive Python yaml configuration framework. The shadow of your codebase.
+Home-page: https://github.com/ashleve/shadowconf
+Author: Łukasz Zalewski
+Author-email: lukasz.zalewski.ai@gmail.com
+License: MIT
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown

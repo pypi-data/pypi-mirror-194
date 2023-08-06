@@ -1,0 +1,8 @@
+README.md
+setup.py
+shadowconf/__init__.py
+shadowconf.egg-info/PKG-INFO
+shadowconf.egg-info/SOURCES.txt
+shadowconf.egg-info/dependency_links.txt
+shadowconf.egg-info/requires.txt
+shadowconf.egg-info/top_level.txt
