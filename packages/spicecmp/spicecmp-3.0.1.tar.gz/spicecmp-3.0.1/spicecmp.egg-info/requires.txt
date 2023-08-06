@@ -1,0 +1,11 @@
+pandas
+hdl21==3.0.1
+vlsir==3.0.1
+vlsirtools==3.0.1
+
+[dev]
+pytest==7.1
+coverage
+pytest-cov
+black==22.6
+twine
