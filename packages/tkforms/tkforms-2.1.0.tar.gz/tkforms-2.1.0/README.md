@@ -1,0 +1,87 @@
+# tkforms
+来自WinForms界面扩展库做出来的组件
+
+## Metro 
+> 免费使用，但是UI风格比较原始
+
+> `Windows XP SP1/SP2/SP3`
+> `Windows Vista`
+> `Windows 7`
+> `Windows 8`
+> `Windows 10`
+
+```python
+# 基础示例1
+from tkforms import tkmetro
+from tkinter import Tk
+
+root = Tk()
+button = tkmetro.Button()
+button.pack(fill="both", expand="yes", padx=5, pady=5)
+root.mainloop()
+```
+
+```python
+# 基础示例2
+from tkforms import tkmetro
+from tkinter import Tk
+
+root = Tk()
+button1 = tkmetro.Button()
+button1.pack(fill="both", expand="yes", padx=5, pady=5)
+button2 = tkmetro.Button()
+button2.configure(theme="dark")  # theme设置组件主题配色，可设置为 "light" 或 "dark"
+button2.pack(fill="both", expand="yes", padx=5, pady=5)
+root.mainloop()
+```
+
+
+## Guna UI2
+> [项目地址](https://www.nuget.org/packages/Guna.UI2.WinForms) 这只是实验上的库，Guna UI2库在扩展中是需要付费解锁，请谨慎使用
+
+> `.NET => 4.0`
+
+```python
+# 基础示例1
+from tkforms import tkguna
+from tkinter import Tk
+
+root = Tk()
+button = tkguna.Button()
+button.pack(fill="both", expand="yes", padx=5, pady=5)
+root.mainloop()
+```
+
+```python
+# 基础示例2
+from tkforms import tkguna
+from tkinter import Tk
+
+root = Tk()
+button = tkguna.Button()
+button.configure(animated=True, auto_rounded=True)  # animated设置是否有动画效果 auto_rounded自动设置圆角的大小
+button.pack(fill="both", expand="yes", padx=5, pady=5)
+root.mainloop()
+```
+
+```python
+# 基础示例3
+from tkforms import tkguna
+from tkinter import Tk
+
+root = Tk()
+button = tkguna.Button()
+button.configure(animated=True)  # animated设置是否有动画效果
+button.configure(border_radius=5)  # border_radius设置圆角大小
+button.pack(fill="both", expand="yes", padx=5, pady=5)
+root.mainloop()
+```
+
+## 备注
+自2.0版本开始，将使用configure设置属性，例如：
+```python
+Widget.text = "Widget" # <2.0
+```
+```python
+Widget.configure(text="Widget") # =>2.0
+```
