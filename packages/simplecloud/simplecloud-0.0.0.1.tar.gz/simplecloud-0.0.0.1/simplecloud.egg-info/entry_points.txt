@@ -1,0 +1,3 @@
+[console_scripts]
+cloud = cloud.cloud_cli:main
+cloud-server = cloud.cloud_api:main
