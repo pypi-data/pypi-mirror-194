@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/ocr_general_method/__init__.py
+src/ocr_general_method.egg-info/PKG-INFO
+src/ocr_general_method.egg-info/SOURCES.txt
+src/ocr_general_method.egg-info/dependency_links.txt
+src/ocr_general_method.egg-info/top_level.txt
+src/ocr_general_method/common/__init__.py
+src/ocr_general_method/common/exception.py
+src/ocr_general_method/common/file_utils.py
+src/ocr_general_method/common/http_utils.py
+src/ocr_general_method/example/__init__.py
+src/ocr_general_method/example/example.py
