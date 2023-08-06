@@ -1,0 +1,12 @@
+ffmpeg-python==0.2.0
+ruff
+black
+isort
+numpy
+pytest
+pytest-cov
+pytest-xdist[psutil]
+pytest-asyncio
+build
+virtualenv
+twine
