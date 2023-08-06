@@ -1,0 +1,2 @@
+[console_scripts]
+roku-tui = roku_tui:startup
