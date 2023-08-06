@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: pybenchmarker
+Version: 0.1.0
+Summary: Python module to benchmark and compare functions
+Author: Owain Davies
+License: MIT License
+        
+        Copyright (c) 2023 Owain Davies
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/OTheDev/pybenchmarker
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.10.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pybenchmarker
+A simple utility for comparing the efficiency of functionally-equivalent
+functions in Python.
+
+## Installation
+```
+pip install pybenchmarker
+```
+
+## BenchmarkN class
+**Problem**
+
+<ul>
+
+**Input**: two lists of equal length ``list_0``, ``list_1``.
+
+**Output**: a *list* of booleans encoding which items of ``list_0`` are in
+``list_1``.
+
+</ul>
+
+What's the fastest way to do this?
+```Python
+import numpy as np
+
+from pybenchmarker import BenchmarkN, sizes
+from random import randint
+
+
+@sizes([2**k for k in range(18)])
+def argfunc(n):
+    return [randint(1, n) for i in range(n)], [randint(1, n) for i in range(n)]
+
+
+def naive_lcomp(lists):
+    return [x in lists[1] for x in lists[0]]
+
+
+def set_other(lists):
+    s = set(lists[1])
+    return [x in s for x in lists[0]]
+
+
+def numpy_isin(lists):
+    return list(np.isin(lists[0], lists[1]))
+
+
+if __name__ == '__main__':
+    title = "list_3: list[bool], encoding which items in list_1 are in list_2"
+
+    b = BenchmarkN(functions=[naive_lcomp, set_other, numpy_isin],
+                   argfunc=argfunc)
+
+    b.plot(xlabel="n", title=title, fname="my_figure", transparent=True,
+           dpi=300)
+```
+This results in the following plot:
+
+<!--Apparently, GitHub sanitizes inline styles, but the deprecated align
+    attribute works.-->
+<div align="center">
+    <img src="https://github.com/OTheDev/pybenchmarker/raw/main/images/example.png"
+         width="80%" height="80%">
+</div>
+
+## Inspiration
+This project was inspired by [perfplot](https://github.com/nschloe/perfplot),
+which was used to contribute to
+
+- "[How do I efficiently find which elements of a list are in another list?](https://stackoverflow.com/questions/71990420/how-do-i-efficiently-find-which-elements-of-a-list-are-in-another-list)"
