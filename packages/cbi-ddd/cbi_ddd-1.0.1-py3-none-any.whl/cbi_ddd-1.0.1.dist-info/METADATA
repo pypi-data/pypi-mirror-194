@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cbi-ddd
+Version: 1.0.1
+Summary: Base CBI objects
+Home-page: https://github.com/cloudberrybi/base-ddd
+Maintainer: CloudberryBI
+Maintainer-email: cto@cloudberry.bi
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: dramatiq (==1.14.1)
+Requires-Dist: prometheus-client (==0.16.0)
+Requires-Dist: pydantic (==1.10.5)
+Requires-Dist: python-ulid (==1.1.0)
+Requires-Dist: pytz (==2022.7.1)
+Requires-Dist: redis (==4.5.1)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: typing-extensions (==4.5.0)
+
