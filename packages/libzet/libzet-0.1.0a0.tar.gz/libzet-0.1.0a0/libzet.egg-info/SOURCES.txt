@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+libzet/Attributes.py
+libzet/NoCompare.py
+libzet/Zettel.py
+libzet/__init__.py
+libzet/parse_duration.py
+libzet.egg-info/PKG-INFO
+libzet.egg-info/SOURCES.txt
+libzet.egg-info/dependency_links.txt
+libzet.egg-info/requires.txt
+libzet.egg-info/top_level.txt
+tests/test_attributes.py
+tests/test_zettel.py
