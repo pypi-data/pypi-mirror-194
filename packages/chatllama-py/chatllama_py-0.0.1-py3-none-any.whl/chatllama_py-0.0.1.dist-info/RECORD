@@ -1,0 +1,15 @@
+chatllama/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatllama/llama_model.py,sha256=F1glgM58m0gEtRRoTcZL87MKA6jkXKyYVyY1A721OC0,8101
+chatllama/langchain_modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatllama/langchain_modules/prompt_templates.py,sha256=Zou4YhsGlkgB6WJ2Hzj5qRmsQLAWOA68mfR8l9LGH4o,2960
+chatllama/rlhf/__init__.py,sha256=bhb4zXkTbV1KJbPc_G-2U909OKwvCwgyFypEG2cDFUM,66
+chatllama/rlhf/actor.py,sha256=bXp_jecyaF02T1tIwGFSm143CO21M7CPevt19nvxC6I,13099
+chatllama/rlhf/config.py,sha256=cqnfaiV78BZGA05mmoc36mx3L1LQFFSp-NYkOK2kzSI,9822
+chatllama/rlhf/reward.py,sha256=xCDlU-JN971oj2-DqDFRo_0R8JLRD9yRVRv1edyKe7A,17674
+chatllama/rlhf/test.py,sha256=fRU5esnHxoGrze1-c_4tp0kyUbOnp5BIiTR7IpUVBWk,1491
+chatllama/rlhf/trainer.py,sha256=FPIvPQAFN-pu_fTlTpdg39fbIJA5bUHuRMNKo8PqOVo,24782
+chatllama/rlhf/utils.py,sha256=2DAWlytlR34Kxcfi6pFaQISDz018fHIv9yhA7X-2x_Q,5377
+chatllama_py-0.0.1.dist-info/METADATA,sha256=Hta0mtG0AHW98vUxzKv2Cw8RNIkoHHV2fmxBfjVlEmI,4240
+chatllama_py-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatllama_py-0.0.1.dist-info/top_level.txt,sha256=Vy7gvYt8EIr9DuemeNkrPiS55suxmLa7m03FMMzvmLQ,10
+chatllama_py-0.0.1.dist-info/RECORD,,
