@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+lnj.egg-info/PKG-INFO
+lnj.egg-info/SOURCES.txt
+lnj.egg-info/dependency_links.txt
+lnj.egg-info/top_level.txt
