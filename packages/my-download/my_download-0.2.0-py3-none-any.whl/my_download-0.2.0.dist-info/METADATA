@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: my-download
+Version: 0.2.0
+Summary: file download function，Support split download
+Home-page: https://gitee.com/yternal/my-download
+Author: yrq
+Author-email: 1307272972@qq.com
+License: MIT
+Requires-Python: >=3.8
+License-File: license.txt
+Requires-Dist: requests (>=1.18.8)
+Requires-Dist: my-retry (>=0.1.0)
+
