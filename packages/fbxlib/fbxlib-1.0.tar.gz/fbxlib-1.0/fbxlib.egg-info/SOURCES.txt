@@ -1,0 +1,7 @@
+FbxCommon.py
+fbxpy.py
+setup.py
+fbxlib.egg-info/PKG-INFO
+fbxlib.egg-info/SOURCES.txt
+fbxlib.egg-info/dependency_links.txt
+fbxlib.egg-info/top_level.txt
