@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hashbrowns
+Version: 1.0
+Summary: A package for cryptography in python with unique functions
+Author: Cooper ransom
+Author-email: Cooperransom08@outlook.com
+Keywords: python,crypto,cryptograpgy,rsa,hashing-algo
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+
+A python package for cryptography and data mixing from strings/files more on github.
+
+        https://github.com/itzCozi/HashBrowns-Python
