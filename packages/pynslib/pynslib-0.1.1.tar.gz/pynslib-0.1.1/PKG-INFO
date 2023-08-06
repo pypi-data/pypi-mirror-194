@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pynslib
+Version: 0.1.1
+Summary: A synchronous/asynchronous library for the NS API
+Home-page: https://github.com/AavHRF/nslib
+License: GPL-3.0-only
+Keywords: nationstates
+Author: Aav
+Author-email: aav.verinhall@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.4,<4.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Repository, https://github.com/AavHRF/nslib
