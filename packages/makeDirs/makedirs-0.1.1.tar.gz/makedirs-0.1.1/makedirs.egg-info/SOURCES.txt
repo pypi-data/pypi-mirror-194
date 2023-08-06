@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+makedirs.egg-info/PKG-INFO
+makedirs.egg-info/SOURCES.txt
+makedirs.egg-info/dependency_links.txt
+makedirs.egg-info/top_level.txt
+mkdirs/__init__.py
+mkdirs/mkdir.py
+mkdirs/Function/MkdirFunction.py
+mkdirs/Function/__init__.py
+mkdirs/Ui/MaskWin.py
+mkdirs/Ui/__init__.py
+mkdirs/Ui/mkdirUi.py
