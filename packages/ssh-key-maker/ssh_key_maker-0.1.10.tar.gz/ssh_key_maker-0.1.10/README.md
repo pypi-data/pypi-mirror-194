@@ -1,0 +1,18 @@
+## Package Description
+
+This package helps to create SSH key pairs and upload the public key to a remote server. It is designed for use on Windows machines.
+
+## Usage
+
+To use this package, you can follow these steps:
+
+1. Import the `ssh_key_maker` module into your Python code.
+2. Call the `ssh_key_maker.generate_ssh_key()` function to create an SSH key pair on your local machine.
+   - If an SSH key is already present on your machine, the function will skip this step.
+   - If an SSH key is created, the public key will be downloaded to your machine.
+3. You can use this key pair to log in to services like GitHub, BitBucket, GitLab, and more.
+
+## Change Log
+
+* 1.0.0 - Initial release
+* 0.1.10 - Added CHANGELOG, updated settings, no changes to code.
