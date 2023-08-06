@@ -1,0 +1,10 @@
+_moderngl.py,sha256=aIdqwYRvx1MF8FgtOeE3hqdj81m2g1kNzaBFj1hPriA,11685
+moderngl/__init__.py,sha256=dcxx3zZADaj_B6gPiVZi-9pJl8laxhRxzY-UvDMt4Ug,65059
+moderngl/__main__.py,sha256=pdkP1_vczg2jxE0iFODmnuKK2wqrnDwW3AMRYWtF68g,1494
+moderngl/mgl.cpython-38-darwin.so,sha256=QmNrg5-PyknQao70K1p3UfvgACzrDEVDMuh6zHF6xJw,549024
+moderngl-stubs/__init__.pyi,sha256=TpLautI9mG0haEJyxWhThp5q_XyIWU0i2IaJmQI9BCM,145672
+moderngl-5.8.1.dist-info/LICENSE,sha256=5KfFsddO4Q2CVYNNC_7Oh2Rh4DR3uMabpUKGfG_a46w,1091
+moderngl-5.8.1.dist-info/METADATA,sha256=BKa0zptgparJdgT56HR5hXrTVuBJ0lPW2fXX4BjdUZ8,8474
+moderngl-5.8.1.dist-info/WHEEL,sha256=f0DNLMaNsc-95zYGo8YHdJDGIYxIuAJmaOltzIIjqBk,113
+moderngl-5.8.1.dist-info/top_level.txt,sha256=9Vmih6X57tbrO6Zpi0hcRQa5bmtmbIqpTQIGk78arzU,34
+moderngl-5.8.1.dist-info/RECORD,,
