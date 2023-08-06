@@ -1,0 +1,15 @@
+telerdac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telerdac/telerdac.py,sha256=sNzwe04Cs5IV1wpBSDdIGMZMjoYEey4GAktSE7WkV7o,1120
+telerdac/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telerdac/cmd/cmd.cpython-38-x86_64-linux-gnu.so,sha256=WTZQWNwovcofFfXMCc3XPlaie_PFDCxWUeji8ovzEKE,107680
+telerdac/const/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telerdac/const/click_setting.cpython-38-x86_64-linux-gnu.so,sha256=fk2KON_-ZcdN3c8DMUj55gXQEOwYSkURuPrAhp47xy0,28360
+telerdac/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telerdac/utils/device_utils.cpython-38-x86_64-linux-gnu.so,sha256=XpQflUsNIKi0s7GL7G6371IQ9DCpFPd5cEQjT9VrqFM,39992
+telerdac/utils/file_utils.cpython-38-x86_64-linux-gnu.so,sha256=t9KOkD2pmHXusBFQ7KoDJYsoAwkg1D9nEXGcI8w_cLU,43920
+telerdac/utils/license_utils.cpython-38-x86_64-linux-gnu.so,sha256=6ftDZlhtbmM_zNdyyT20HVMbooL1jMNlCDCcouNUyuM,139104
+telerdac-0.1.0.dist-info/METADATA,sha256=dRVkdc6W7Nm4SVKXYrK01ljOD8rtyJgebCvrwKmnan0,507
+telerdac-0.1.0.dist-info/WHEEL,sha256=w1d_q2QQYYWFjc1BOr71GnX8BifSnUvEochN_fqB7tA,108
+telerdac-0.1.0.dist-info/entry_points.txt,sha256=oYkB8ck3LKH8_xxJW4Mo9amwguxlsuNNbPjT2CihoPw,51
+telerdac-0.1.0.dist-info/top_level.txt,sha256=kuLeQgf4Uw4r-6RHhZLoWMDsyakNTcyAI9ZTlV8zWKM,9
+telerdac-0.1.0.dist-info/RECORD,,
