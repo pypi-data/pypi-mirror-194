@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: xcon
+Version: 0.4.0
+Summary: Dynamic configuration retreiver.
+Home-page: https://github.com/xyngular/py-xsettings
+License: The Unlicense (Unlicense)
+Keywords: settings,configuration,lazy,boto,aws,secrets manager,param store,ssm
+Author: Josh Orr
+Author-email: josh@orr.blue
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: ciso8601 (>=2.3.0,<3.0.0)
+Requires-Dist: xbool (>=1.0.0,<2.0.0)
+Requires-Dist: xboto (>=1.0.2,<2.0.0)
+Requires-Dist: xinject (>=1.3.0,<2.0.0)
+Requires-Dist: xloop (>=1.0.1,<2.0.0)
+Requires-Dist: xsentinels (>=1.2.1,<2.0.0)
+Requires-Dist: xsettings (>=1.1.2,<2.0.0)
+Project-URL: Repository, https://github.com/xyngular/py-xsettings
+Description-Content-Type: text/markdown
+
+![PythonSupport](https://img.shields.io/static/v1?label=python&message=%203.8|%203.9|%203.10|%203.11|%203.12&color=blue?style=flat-square&logo=python)
+![PyPI version](https://badge.fury.io/py/xcon.svg?)
+
+- [Introduction](#introduction)
+- [Documentation](#documentation)
+- [Install](#install)
+- [Licensing](#licensing)
+
+# Introduction
+
+Helps retrieve configuration information from aws/boto services such as Ssm's Param Store and Secrets Manager,
+with the ability the cache a flattened list into a dynamodb table.
+
+Right now this is **pre-release software**, as the dynamo cache table and related need further documentation and testing.
+
+Retrieving values from Param Store and Secrets Manager should work and be relatively fast, as we bulk-grab values
+at the various directory-levels that are checked.
+
+**More documentation and testing will be coming soon, for a full 1.0.0 release sometime in the next month or so.**
+
+See **[xsettings docs](https://xyngular.github.io/py-xcon/latest/)**.
+
+# Documentation
+
+**[📄 Detailed Documentation](https://xyngular.github.io/py-xcon/latest/)** | **[🐍 PyPi](https://pypi.org/project/xcon/)**
+
+# Install
+
+```bash
+# via pip
+pip install xcon
+
+# via poetry
+poetry add xcon
+```
+
+# Licensing
+
+This library is licensed under the "The Unlicense" License. See the LICENSE file.
+
