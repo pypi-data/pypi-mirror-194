@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: airbyte-api-wrapper
+Version: 0.0.3
+Summary: A wrapper for Airbyte API.
+Author-email: Thibaut de Broca <thibaut@grooptown.com>
+Project-URL: Homepage, https://github.com/tdebroc/airbyte-api-wrapper
+Project-URL: Bug Tracker, https://github.com/tdebroc/airbyte-api-wrapper/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python wrapper for API
+
+Full API spec of the API can be found here:
+
+https://airbyte-public-api-docs.s3.us-east-2.amazonaws.com/rapidoc-api-docs.html
+
+
+## How to use
+
+### Create client
+
+```
+from airbyte_python_helper import AirbyteHelper
+import os
+
+airbyte_url = os.environ["AIRBYTE_URL"]
+airbyte_client_id = os.environ["CLIENT_ID"]
+airbyte_client_secret = os.environ["CLIENT_SECRET"]
+
+airbyte_client = AirbyteHelper(
+airbyte_url, airbyte_client_id, airbyte_client_secret
+)
+```
+
+### Destinations
+
+```
+wid = airbyte_client.get_first_workspace_id()
+print("workspaceId", wid)
+print(airbyte_client.list_destinations(wid))
+
+for destination in airbyte_client.list_destinations(wid):
+    airbyte_client.delete_destination(destination["destinationId"])
+
+sources = airbyte_client.list_sources(wid)
+```
+
+### Sources
+
+```
+wid = airbyte_client.get_first_workspace_id()
+print("workspaceId", wid)
+sources = airbyte_client.list_sources(wid)
+print(sources)
+for source in sources:
+    print(source["sourceId"])
+```
+
+### Workspaces
+
+```
+workspaces = airbyte_client.list_workspaces()
+print(workspaces)
+```
