@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+clickuptosql/__init__.py
+clickuptosql.egg-info/PKG-INFO
+clickuptosql.egg-info/SOURCES.txt
+clickuptosql.egg-info/dependency_links.txt
+clickuptosql.egg-info/requires.txt
+clickuptosql.egg-info/top_level.txt
