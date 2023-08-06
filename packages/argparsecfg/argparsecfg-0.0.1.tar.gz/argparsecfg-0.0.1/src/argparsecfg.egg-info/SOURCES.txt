@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/argparsecfg/__init__.py
+src/argparsecfg/version.py
+src/argparsecfg.egg-info/PKG-INFO
+src/argparsecfg.egg-info/SOURCES.txt
+src/argparsecfg.egg-info/dependency_links.txt
+src/argparsecfg.egg-info/requires.txt
+src/argparsecfg.egg-info/top_level.txt
