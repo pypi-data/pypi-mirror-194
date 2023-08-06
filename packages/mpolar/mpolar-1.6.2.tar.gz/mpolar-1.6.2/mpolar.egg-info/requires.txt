@@ -1,0 +1,7 @@
+netCDF4
+numpy
+pandas
+xarray
+xarray-schema
+pint-xarray
+cf-xarray
