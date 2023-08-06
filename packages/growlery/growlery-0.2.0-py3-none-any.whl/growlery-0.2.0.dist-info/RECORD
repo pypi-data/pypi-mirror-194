@@ -1,0 +1,14 @@
+CHANGELOG.md,sha256=Wwi-oRGdtwvdepg04UJmIqSMZNZ6CEJhkFPzEUeCaS0,3161
+LICENSE,sha256=CN2WkBt3eZl6wiuTomHTUdoePIYgiKVzPzCE_Dp7_v8,1069
+growlery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+growlery/__main__.py,sha256=TGI1VQDavD14XQFAdceT2pDHqUd6e7hf-UVPbHLHypU,268
+growlery/cogs/__init__.py,sha256=fRh0tBDo9K42tT_x1jUY2mIKOZQtuuJXWCgF-eBQ178,106
+growlery/cogs/hiscores.py,sha256=iD57c8KQBU2OvwUYaQzhwPv8-BZnVuJEnDHpogytpT8,9234
+growlery/config.py,sha256=LrW95hLYXKDDFBPp1jNlhGaz6pYewWH0RT_TejDNtc0,3388
+growlery/http_request.py,sha256=iKeCJ0pSQqRXF_nwnPC4h_sJ7k2lUxUxejSX0dryrKY,1226
+growlery/main.py,sha256=WPKzajU8oyn6-PfjLHT7JuoF-OzaLkVZngmppcfhJ7w,1357
+growlery/table.py,sha256=256tsKrWD0mfDFxNZPsg-sdFqq--7BlJwf1mslVsiMQ,6738
+growlery-0.2.0.dist-info/LICENSE,sha256=CN2WkBt3eZl6wiuTomHTUdoePIYgiKVzPzCE_Dp7_v8,1069
+growlery-0.2.0.dist-info/METADATA,sha256=NOI24iw37a-i40kG1lI7SbEFGfuq9-Y7yNS4Uc7MxXI,6808
+growlery-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+growlery-0.2.0.dist-info/RECORD,,
