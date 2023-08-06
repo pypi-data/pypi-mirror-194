@@ -1,0 +1,7 @@
+[console_scripts]
+rattleSNP = rattleSNP.main:main
+vcf2geno = rattleSNP.scripts.vcf2geno:main
+vcf2phylip = rattleSNP.scripts.vcf2phylip:main
+
+[rattleSNP]
+rattleSNP = __init__
