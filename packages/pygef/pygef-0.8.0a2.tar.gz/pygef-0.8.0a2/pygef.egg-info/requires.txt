@@ -1,0 +1,4 @@
+polars[pyarrow]>=0.14.28
+matplotlib>=3.4.2
+lxml==4.9.1
+gef-file-to-map==0.1.0
