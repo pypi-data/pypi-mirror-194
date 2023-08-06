@@ -1,0 +1,9 @@
+flashtext2/__init__.py,sha256=fhwZKMKhikSnOR-abJq44uOqHcyV2MHzgqXjJAADZEk,183
+flashtext2/exceptions.py,sha256=SOxolZvvRwujiyRX298KpprLyeqAaePa2N8MFEw2jus,282
+flashtext2/keyword_processor.py,sha256=uPCr8TawByY3IwLvmX2lv3-SJjW8bc7STv7usVKZlg0,5417
+flashtext2/trie_dict.py,sha256=XGOULY4g7LYp5mjfxd9YcyoTZdV5B1pUb2m3lzafiI8,15437
+flashtext2/utils.py,sha256=-ppz76PdETXjBeCPK3wjYiSP3bnsSuAjEeQBJJZ7J_s,1433
+flashtext2-0.1.0.dist-info/LICENSE,sha256=_YeTAG8GqKLYeo9Vs0YpHZgUttb0GHrLrIxHAedJvw0,1092
+flashtext2-0.1.0.dist-info/METADATA,sha256=xZAO9rpaavU5odODVvLNSD4bQdb3LgWBxxeffMWDViY,6781
+flashtext2-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+flashtext2-0.1.0.dist-info/RECORD,,
