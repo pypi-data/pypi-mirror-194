@@ -1,0 +1,26 @@
+# Belqis client by Ahmed Khorsi
+
+This is a python client for Belqis System
+https://belqis.intelgx.com
+
+# Installation
+
+First you will have to sign up to get an API key
+https://belqis.intelgx.com/signup
+
+then install the package
+
+`pip install -U pybelqis`
+
+# Usage
+
+```python
+from belqis import Belqis
+b = Belqis(token='<put in here the token you get from https://belqis.intelgx.com/dashboard>')
+
+# Diactritization
+r = b.tashkeel('السلام عليكم')
+
+# Other services
+IN SHAA ALLAH will be made available
+```
