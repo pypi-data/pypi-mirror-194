@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pyyjson/__init__.py
+pyyjson/binding.c
+pyyjson/memory.c
+pyyjson/wrapper.py
+pyyjson/yyjson.c
+pyyjson.egg-info/PKG-INFO
+pyyjson.egg-info/SOURCES.txt
+pyyjson.egg-info/dependency_links.txt
+pyyjson.egg-info/not-zip-safe
+pyyjson.egg-info/requires.txt
+pyyjson.egg-info/top_level.txt
