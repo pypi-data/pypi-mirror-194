@@ -1,0 +1,8 @@
+alibabacloud_eventbridge20200401/__init__.py,sha256=Oi2b5pm3sFbESQW0xgj8kqwDPX_Hxmx4gNILYpLzYqI,21
+alibabacloud_eventbridge20200401/client.py,sha256=AjZfuCrjf6GRlETnv16BdR5MgKLGF3FN0Jw_4TN3l-I,142905
+alibabacloud_eventbridge20200401/models.py,sha256=tQV1IAYHB389qZrngDyRjLJY8mrwHR2vQXDpSMpRlAc,725880
+alibabacloud_eventbridge20200401-1.0.4.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+alibabacloud_eventbridge20200401-1.0.4.dist-info/METADATA,sha256=c34CRw1Y9DF4s1D_ABhESaggWoO8Pk_Lvc2ll8S8VQc,2265
+alibabacloud_eventbridge20200401-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alibabacloud_eventbridge20200401-1.0.4.dist-info/top_level.txt,sha256=Tkkdl3Ponj57JoNKDTltusRFRsX27GtQpAeY1OnJepI,33
+alibabacloud_eventbridge20200401-1.0.4.dist-info/RECORD,,
