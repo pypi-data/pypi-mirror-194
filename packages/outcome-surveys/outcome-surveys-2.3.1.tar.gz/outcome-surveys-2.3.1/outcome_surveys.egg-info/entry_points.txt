@@ -1,0 +1,3 @@
+[lms.djangoapp]
+outcome_surveys = outcome_surveys.apps:OutcomeSurveysConfig
+
