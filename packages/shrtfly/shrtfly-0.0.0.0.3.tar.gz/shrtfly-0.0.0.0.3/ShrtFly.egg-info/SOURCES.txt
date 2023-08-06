@@ -1,0 +1,16 @@
+LICENCE
+README.md
+setup.py
+ShrtFly.egg-info/PKG-INFO
+ShrtFly.egg-info/SOURCES.txt
+ShrtFly.egg-info/dependency_links.txt
+ShrtFly.egg-info/requires.txt
+ShrtFly.egg-info/top_level.txt
+shrtfly/__init__.py
+shrtfly/config.py
+shrtfly/shortener.py
+shrtfly.egg-info/PKG-INFO
+shrtfly.egg-info/SOURCES.txt
+shrtfly.egg-info/dependency_links.txt
+shrtfly.egg-info/requires.txt
+shrtfly.egg-info/top_level.txt
