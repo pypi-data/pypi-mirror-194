@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: FormanceHQ
+Version: 1.0.20230301
+Summary: Formance Stack API
+Home-page: UNKNOWN
+Author: Formance
+Author-email: support@formance.com
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,Formance Stack API
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: certifi (>=14.5.14)
+Requires-Dist: frozendict (~=2.3.4)
+Requires-Dist: python-dateutil (~=2.7.0)
+Requires-Dist: setuptools (>=21.0.0)
+Requires-Dist: typing-extensions (~=4.3.0)
+Requires-Dist: urllib3 (~=1.26.7)
+
+    Open, modular foundation for unique payments flows  # Introduction This API is documented in **OpenAPI format**.  # Authentication Formance Stack offers one forms of authentication:   - OAuth2 OAuth2 - an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications. &lt;SecurityDefinitions /&gt;   # noqa: E501
+    
+
