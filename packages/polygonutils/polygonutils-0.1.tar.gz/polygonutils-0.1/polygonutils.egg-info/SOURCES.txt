@@ -1,0 +1,5 @@
+setup.py
+polygonutils.egg-info/PKG-INFO
+polygonutils.egg-info/SOURCES.txt
+polygonutils.egg-info/dependency_links.txt
+polygonutils.egg-info/top_level.txt
