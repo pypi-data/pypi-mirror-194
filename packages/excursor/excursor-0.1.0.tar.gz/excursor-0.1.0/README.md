@@ -1,0 +1,3 @@
+# excursor
+
+Trading bot.

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+excursor.egg-info/PKG-INFO
+excursor.egg-info/SOURCES.txt
+excursor.egg-info/dependency_links.txt
+excursor.egg-info/entry_points.txt
+excursor.egg-info/top_level.txt
+tests/test_console.py

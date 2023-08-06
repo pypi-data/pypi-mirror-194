@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: excursor
+Version: 0.1.0
+Summary: Trading bot.
+Home-page: https://github.com/jaichel/excursor
+Author: Joshua Lusk
+Author-email: luskjh@gmail.com
+License: BSD
+Project-URL: Source, https://github.com/jaichel/excursor
+Project-URL: Tracker, https://github.com/jaichel/excursor/issues
+Keywords: trading bot
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+License-File: LICENSE
+
+# excursor
+
+Trading bot.
