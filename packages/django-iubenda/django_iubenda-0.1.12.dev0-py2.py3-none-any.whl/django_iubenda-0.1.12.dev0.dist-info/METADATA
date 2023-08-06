@@ -1,0 +1,166 @@
+Metadata-Version: 2.1
+Name: django-iubenda
+Version: 0.1.12.dev0
+Summary: Django application for handling privacy and cookie policies configured with Iubenda.
+Home-page: https://github.com/DLRSP/django-iubenda
+Author: DLRSP
+Author-email: dlrsp.dev@gmail.com
+License: MIT License
+Keywords: django,iubenda,privacy,cookie
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=2.2)
+Provides-Extra: linting
+Requires-Dist: flake8 ; extra == 'linting'
+Requires-Dist: pylint ; extra == 'linting'
+Provides-Extra: testing
+Requires-Dist: coverage ; extra == 'testing'
+Requires-Dist: codecov ; extra == 'testing'
+
+# django-iubenda [![PyPi license](https://img.shields.io/pypi/l/django-iubenda.svg)](https://pypi.python.org/pypi/django-iubenda)
+
+[![PyPi status](https://img.shields.io/pypi/status/django-iubenda.svg)](https://pypi.python.org/pypi/django-iubenda)
+[![PyPi version](https://img.shields.io/pypi/v/django-iubenda.svg)](https://pypi.python.org/pypi/django-iubenda)
+[![PyPi python version](https://img.shields.io/pypi/pyversions/django-iubenda.svg)](https://pypi.python.org/pypi/django-iubenda)
+[![PyPi downloads](https://img.shields.io/pypi/dm/django-iubenda.svg)](https://pypi.python.org/pypi/django-iubenda)
+[![PyPi downloads](https://img.shields.io/pypi/dw/django-iubenda.svg)](https://pypi.python.org/pypi/django-iubenda)
+[![PyPi downloads](https://img.shields.io/pypi/dd/django-iubenda.svg)](https://pypi.python.org/pypi/django-iubenda)
+
+## GitHub ![GitHub release](https://img.shields.io/github/tag/DLRSP/django-iubenda.svg) ![GitHub release](https://img.shields.io/github/release/DLRSP/django-iubenda.svg)
+
+## Test [![codecov.io](https://codecov.io/github/DLRSP/django-iubenda/coverage.svg?branch=master)](https://codecov.io/github/DLRSP/django-iubenda?branch=master) [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/DLRSP/django-iubenda/master.svg)](https://results.pre-commit.ci/latest/github/DLRSP/django-iubenda/master) [![gitthub.com](https://github.com/DLRSP/django-iubenda/actions/workflows/ci.yml/badge.svg)](https://github.com/DLRSP/django-iubenda/actions/workflows/ci.yml)
+
+## Compliance for websites and apps
+Click [here](http://iubenda.refr.cc/dlrspapi) and get 10% discount on first year at Iubenda
+[![Iubenda](https://cdn.filestackcontent.com/kTEmy2XBQJiiEy0ULvg0)](http://iubenda.refr.cc/dlrspapi)
+
+
+## Check Demo Project
+* Browser the demo app on-line on [Heroku](https://django-iubenda.herokuapp.com/)
+* Check the demo repo on [GitHub](https://github.com/DLRSP/example/tree/django-iubenda)
+
+## Requirements
+-   Python 3.7 to 3.10 supported.
+-   Django 3.2 to 4.0 supported.
+
+## Setup
+1. Install from **pip**:
+```shell
+pip install django-iubenda
+```
+
+2. Modify `settings.py` by adding the app to `INSTALLED_APPS`:
+```python
+INSTALLED_APPS = (
+    "modeltranslation",
+    # ...
+    "iubenda",
+    # ...
+)
+```
+
+3. Modify `settings.py` by adding the app's context processor to `TEMPLATES`:
+```python
+TEMPLATES = [
+    {
+        # ...
+        'OPTIONS': {
+            'context_processors': [
+                # ...
+                'iubenda.context_processors.iubenda',
+                # ...
+            ],
+        },
+    },
+]
+```
+
+4. Be sure the Django's Locale middleware is enabled inside `settings.py`:
+```python
+MIDDLEWARE = (
+    # ...
+    'django.middleware.locale.LocaleMiddleware',
+    # ...
+)
+```
+
+5. Be sure the variable `LANGUAGE_CODE` is available for HTML templates:
+```html
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+```
+
+6. Modify your project's template to add privacy and cookie policies. 
+   For example inside the `footer.html` add following code:
+```html
+{% if not debug %}
+    {% block iubenda %}{% include "iubenda/include-content.html" %}{% endblock iubenda %}
+{% endif %}
+```
+
+## Optional
+
+### Content Security Policy
+If Content Security Policy are implemented in your server and inline scripts are disabled,
+the variable `IUBENDA_CSP_NONCE` can be set with nonce tag will be inserted script's nonce.
+```html
+<script type="text/javascript" {% if cx_iubenda_nonce %}nonce="{{ cx_iubenda_nonce }}"{% endif %}>
+```
+
+### Iubenda's Options
+To personalize the Iubenda script behaviour, the dict `IUBENDA_OPTIONS` can be configured inside `settings.py`
+```python
+IUBENDA_OPTIONS = {"ccpaAcknowledgeOnDisplay": "true",
+                   "ccpaApplies": "true",
+                   "consentOnContinuedBrowsing": "false",
+                   "enableCcpa": "true",
+                   "floatingPreferencesButtonDisplay": "bottom-left",
+                   "invalidateConsentWithoutLog": "true",
+                   "perPurposeConsent": "true",
+                   "whitelabel": "false",
+                   "banner": {
+                       "acceptButtonDisplay": "true",
+                       "backgroundOverlay": "true",
+                       "closeButtonRejects": "true",
+                       "customizeButtonDisplay": "true",
+                       "explicitWithdrawal": "true",
+                       "fontSize": "14px",
+                       "listPurposes": "true",
+                       "position": "float-center",
+                       "rejectButtonDisplay": "true"
+                   }
+                   }
+```
+
+## Run Example Project
+
+```shell
+git clone --depth=50 --branch=django-iubenda https://github.com/DLRSP/example.git DLRSP/example
+cd DLRSP/example
+python manage.py runserver
+```
+
+Now browser the app @ http://127.0.0.1:8000
