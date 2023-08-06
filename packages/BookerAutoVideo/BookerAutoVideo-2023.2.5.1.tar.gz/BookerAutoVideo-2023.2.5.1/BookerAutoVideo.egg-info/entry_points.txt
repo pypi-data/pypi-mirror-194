@@ -1,0 +1,5 @@
+[console_scripts]
+BookerAutoVideo = BookerAutoVideo.__main__:main
+auto-video = BookerAutoVideo.__main__:main
+bav = BookerAutoVideo.__main__:main
+
