@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_tables2_ajax/__init__.py
+django_tables2_ajax/apps.py
+django_tables2_ajax.egg-info/PKG-INFO
+django_tables2_ajax.egg-info/SOURCES.txt
+django_tables2_ajax.egg-info/dependency_links.txt
+django_tables2_ajax.egg-info/top_level.txt
+django_tables2_ajax/static/django_tables2_ajax/tables.js
+django_tables2_ajax/templates/django_tables2_ajax/table.html
+django_tables2_ajax/templatetags/__init__.py
+django_tables2_ajax/templatetags/responsive_table.py
