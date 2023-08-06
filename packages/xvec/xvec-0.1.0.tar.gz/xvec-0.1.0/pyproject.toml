@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "xvec"
+dynamic = ["version"]
+authors = [
+    {name = "Martin Fleischmann", email = "martin@martinfleischmann.net"},
+    {name = "Benoît Bovy", email = "benbovy@gmail.com"},
+]
+maintainers = [
+    {name = "Xvec contributors"},
+]
+license = {text = "MIT"}
+description = "Vector data cubes for Xarray"
+keywords = ["GIS", "cartography", "pandas", "shapely"]
+readme = "Readme.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "xarray >= 2022.12.0",
+    "pyproj >= 3.0.0",
+    "shapely >= 2.0b1",
+]
+
+[project.urls]
+Home = "https://xvec.readthedocs.io"
+Repository = "https://github.com/xarray-contrib/xvec"
+
+[tool.setuptools.packages.find]
+include = [
+    "xvec",
+    "xvec.*",
+]
+
+[tool.coverage.run]
+omit = ["xvec/tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "except ImportError",
+    "except PackageNotFoundError",
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "I", "UP", "B", "A", "C4", "Q"]
+exclude = ["doc"]
+target-version = "py39"

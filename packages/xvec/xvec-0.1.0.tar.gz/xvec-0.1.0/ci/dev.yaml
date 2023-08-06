@@ -1,0 +1,20 @@
+name: xvec_dev
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # to build from source
+  - cython
+  - geos
+  - proj
+  # testing
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - pytest-reportlog
+  - geopandas-base
+  - pip
+  - pip:
+      - git+https://github.com/shapely/shapely.git@main
+      - git+https://github.com/pydata/xarray.git@main
+      - git+https://github.com/pyproj4/pyproj.git

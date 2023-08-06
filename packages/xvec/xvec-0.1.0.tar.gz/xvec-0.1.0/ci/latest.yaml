@@ -1,0 +1,15 @@
+name: xvec
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # required
+  - shapely=2
+  - xarray
+  - pyproj
+  # testing
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - pytest-reportlog
+  - geopandas-base
