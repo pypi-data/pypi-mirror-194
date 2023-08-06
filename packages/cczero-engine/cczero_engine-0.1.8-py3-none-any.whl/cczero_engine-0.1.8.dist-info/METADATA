@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cczero-engine
+Version: 0.1.8
+Summary: Chinese chess engine
+Author: cchess
+Author-email: 455255111@qq.com
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: <=3.7.13
+Requires-Dist: h5py (==2.10)
+Requires-Dist: tensorflow (==1.15.0)
+Requires-Dist: protobuf (==3.20.3)
+Requires-Dist: Keras (==2.2.5)
+
