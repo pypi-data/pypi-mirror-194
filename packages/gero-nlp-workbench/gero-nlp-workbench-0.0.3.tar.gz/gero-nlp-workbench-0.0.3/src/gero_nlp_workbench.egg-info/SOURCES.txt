@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+src/gero/nlp_workbench/Corpus.py
+src/gero/nlp_workbench/Document.py
+src/gero/nlp_workbench/__init__.py
+src/gero_nlp_workbench.egg-info/PKG-INFO
+src/gero_nlp_workbench.egg-info/SOURCES.txt
+src/gero_nlp_workbench.egg-info/dependency_links.txt
+src/gero_nlp_workbench.egg-info/requires.txt
+src/gero_nlp_workbench.egg-info/top_level.txt

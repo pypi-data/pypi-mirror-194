@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gero-nlp-workbench
+Version: 0.0.3
+Summary: A simple NLP workbench.
+Author-email: Gerome Meyer <meyerger@students.zhaw.ch>
+Project-URL: Homepage, https://github.com/GeroVanMi/NLP_Project_Workbench
+Keywords: nlp,natural language processing,example,workbench,toolkit
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
