@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+fsspec_wrapper.egg-info/PKG-INFO
+fsspec_wrapper.egg-info/SOURCES.txt
+fsspec_wrapper.egg-info/dependency_links.txt
+fsspec_wrapper.egg-info/top_level.txt
