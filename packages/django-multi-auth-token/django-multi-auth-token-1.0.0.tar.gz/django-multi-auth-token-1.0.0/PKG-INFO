@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: django-multi-auth-token
+Version: 1.0.0
+Summary: A Django package that allows multi token authentication for Django Rest Framework(DRF)
+Home-page: https://github.com/adu013/django-multi-auth-token
+Author: Arindam Dutta
+Author-email: "aridutta101010@gmail.com"
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+django-multi-auth-token
+
+This package allows multi token authentication for Django Rest Framework(DRF)
+
+
+Quick start
+-----------
+1. Add "multi_auth_token" to your INSTALLED_APPS setting like this::
+``
+INSTALLED_APPS = [
+...
+'multi_auth_token',
+]
+``
+
+2. Add "multi_auth_token.authentication.MultiTokenAuthentication" to "DEFAULT_AUTHENTICATION_CLASSES" like this:
+``
+REST_FRAMWORK = {
+'DEFAULT_AUTHENTICATION_CLASSES': [
+'multi_auth_token.authentication.MultiTokenAuthentication',
+...
+]
+}
+``
+
+3. Migrate
+``
+python manage.py migrate
+``
+
+
+IMPORTANT
+---------
+1. DO NOT add "rest_framework.authtoken" to your INSTALLED_APPS.
+2. DO NOT add "rest_framework.authentication.TokenAuthentication" to DEFAULT_AUTHENTICATION_CLASSES
+
+
+TODO
+----
+
+
+Changelog
+---------
+1.0.0 - 2023-03-01 Arindam Dutta - First release
+
+
+Copyright(c) 2023 Arindam Dutta
