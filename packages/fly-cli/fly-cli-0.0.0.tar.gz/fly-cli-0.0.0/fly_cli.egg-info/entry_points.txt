@@ -1,0 +1,3 @@
+[console_scripts]
+fly = fly_cli:main
+
