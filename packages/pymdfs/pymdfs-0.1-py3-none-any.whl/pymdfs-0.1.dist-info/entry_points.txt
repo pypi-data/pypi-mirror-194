@@ -1,0 +1,3 @@
+[console_scripts]
+mdfs_dump = pymdfs.client_dump:_main
+mdfs_query = pymdfs.client_query:_main
