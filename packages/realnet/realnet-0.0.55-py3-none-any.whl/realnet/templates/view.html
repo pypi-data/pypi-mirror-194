@@ -1,0 +1,301 @@
+{% set views=None %}
+{% if views %}
+    <div class="row">
+        <ul class="nav nav-pills justify-content-center">
+            {% for subview in views %}
+                {% if app %}
+                    {% if active_subview_name and subview.name == active_subview_name %}
+                    <li class="nav-item">
+                    <a class="nav-link active" href="?app={{app.name | lower}}&view={{view.name}}&subview={{subview.name}}">{{subview.name}}</a> 
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                    <a class="nav-link" href="?app={{app.name | lower}}&view={{view.name}}&subview={{subview.name}}">{{subview.name}}</a> 
+                    </li>
+                    {% endif %}
+                {% else %}
+                    {% if active_subview_name and subview.name == active_subview_name %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="?view={{view.name}}&subview={{subview.name}}">{{subview.name}}</a> 
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="?view={{view.name}}&subview={{subview.name}}">{{subview.name}}</a> 
+                    </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {% for subview in views %}
+                {% if active_subview_name and subview.name == active_subview_name %}
+                    {% with item=item, items=items, view=subview %}
+                        {% include "view.html" %}
+                    {% endwith %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+    </div>
+{% else %}
+    {% if view['type'] == 'ListView' %}
+    <div class="row  justify-content-center align-items-center">
+        <div class="col-auto .text-center">
+            <table class="table table-fit table-striped w-auto table-responsive">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Icon</th>
+                        <th scope="col">Name</th>
+                        {% if view.columns %}
+                            {% for column in view.columns%}
+                                <th>
+                                    {{column}}
+                                </th>
+                            {% endfor %}    
+                        {% endif %}
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for item in items %}
+                    <tr >
+                        <th scope="row">
+                            {{loop.index}}
+                        </th>
+                        <th scope="row">
+                            {% if item.attributes %}
+                            <i class="material-icons mr-1">{{item.attributes['icon']}}</i>
+                            {% endif %}
+                        </th>
+                        <td>
+                            {% if item.attributes['resource'] %}
+                                <a  href="/{{item.attributes['resource']}}/{{item.id}}">{{item.name}}</a>
+                            {% else %}
+                                <a  href="/items/{{item.id}}">{{item.name}}</a>
+                            {% endif %}
+                        </td>
+                        {% if view.columns %}
+                            {% for column in view.columns%}
+                                <td>
+                                    {{column}}
+                                </td>
+                            {% endfor %}    
+                        {% endif %}
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <i class="material-icons mr-1">more_vert</i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                  <button data-toggle="modal" data-target="#form_Edit" class="dropdown-item" type="button"><i class="material-icons mr-1">edit</i>Edit</button>
+                                  <button data-toggle="modal" data-target="#form_Delete" class="dropdown-item" type="button"><i class="material-icons mr-1">delete</i>Delete</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% elif view['type'] == 'AttributesView' %}
+    <div class="row  justify-content-center align-items-center">
+        <div class="col-8 .text-center">
+            <table class="table table-fit table-striped w-auto table-responsive">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Value</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for key,value in item.attributes.items() %}
+                    <tr >
+                        <th scope="row">
+                            {{loop.index}}
+                        </th>
+                        <td>
+                            {{key}}
+                        </td>
+                        <td>
+                            {{value}}
+                        </td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <i class="material-icons mr-1">more_vert</i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                  <button data-toggle="modal" data-target="#form_Attr{{key}}Edit" class="dropdown-item" type="button"><i class="material-icons mr-1">edit</i>Edit</button>
+                                  <button data-toggle="modal" data-target="#form_Attr{{key}}Delete" class="dropdown-item" type="button"><i class="material-icons mr-1">delete</i>Delete</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% elif view['type'] == 'FormView' %}
+    <div class="row  justify-content-center align-items-center">
+        <div class="col-8 .text-center">
+            {% set form=all_forms[view.attributes['form']] %}
+            {% if form.attributes['upload'] == 'true' %} 
+                      <form enctype="multipart/form-data" id="create" action="/{{form.attributes['path']}}" method="{{form.attributes['method']}}">
+                        <div class="modal-header">
+                          {% if form.attributes['edit'] == 'true' %} 
+                            <h5 class="modal-title" id="exampleModalLabel">{{form.attributes['title_prefix']}} {{item.name}}</h5>
+                          {% elif form.attributes['type'] %} 
+                            <h5 class="modal-title" id="exampleModalLabel">{{form.attributes['title_prefix']}} {{form.attributes['type']}}</h5>
+                          {% elif item %}
+                            <h5 class="modal-title" id="exampleModalLabel">{{form.attributes['title_prefix']}} {{item.name}}</h5> 
+                          {% endif %}
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          {% if form.attributes['text'] %}
+                          <div>
+                            {{form.attributes['text']}}
+                          </div>
+                          {% endif %}
+                          {% for control in form.items %}
+                            {% with item=item, control=control, form=form %}
+                              {% include "control.html" %}
+                            {% endwith %}
+                          {% endfor %}
+                          <div class="form-group">
+                            <div class="custom-file" id="customFile" lang="sr">
+                              <input type="file" class="custom-file-input" id="file" aria-describedby="fileHelp" name="file">
+                                <label class="custom-file-label" for="file">
+                                  File not selected...
+                                </label>
+                            </div>
+                          </div>
+                          <div class="progress" >
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:20%;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" id="create_cancel">Close</button>
+                          <button type="submit" class="btn btn-primary" id="create_submit">{{form.attributes['submit_text']}}</button>
+                          <button type="button" class="btn btn-primary" id="create_submitting" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Uploading in progress...
+                          </button>
+                        </div>
+                      </form>
+                    {% else %} 
+                      <form action="/{{form.attributes['path']}}" method="{{form.attributes['method']}}">
+                        <div class="modal-header">
+                          {% if form.attributes['edit'] == 'true' %} 
+                            <h5 class="modal-title" id="exampleModalLabel">{{form.attributes['title_prefix']}} {{item.name}}</h5>
+                          {% elif form.attributes['type'] %} 
+                            <h5 class="modal-title" id="exampleModalLabel">{{form.attributes['title_prefix']}} {{form.attributes['type']}}</h5>
+                          {% elif item %}
+                            <h5 class="modal-title" id="exampleModalLabel">{{form.attributes['title_prefix']}} {{item.name}}</h5> 
+                          {% endif %}
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          {% if form.attributes['text'] %}
+                          <div>
+                            {{form.attributes['text']}}
+                          </div>
+                          {% endif %}
+                          {% for control in form.items %}
+                            {% if not (control.instance.type and control.instance.type.name == 'ButtonCtrl') %}
+                              {% with item=item, control=control, form=form %}
+                                {% include "control.html" %}
+                              {% endwith %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                        <div class="modal-footer">
+                          {% for control in form.items %}
+                            {% if control.instance.type and control.instance.type.name == 'ButtonCtrl' %}
+                              {% with item=item, control=control, form=form %}
+                                {% include "control.html" %}
+                              {% endwith %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                      </form>
+                    {% endif %}
+        </div>
+    </div>
+    {% elif view['type'] == 'CodeView' %}
+      <div class="row justify-content-end mb-1 mt-1">
+        <div class="col-10">
+            <input type="hidden" id="language" value="python">
+        </div>
+        <div class="col-2">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-success ml-2 mr-2">Reset</button>
+                  <button type="button" class="btn btn-warning" id="save">Save</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-12">
+          <div id="editor" style="min-height: 85vh; width:100%;"># Code goes here....</div>
+        </div>
+      </div>
+    <script src="{{url_for('static', filename='/scripts/ace/ace.js')}}"></script>
+    <script src="{{url_for('static', filename='/scripts/ace/ext-beautify.js')}}"></script>
+    <script>
+        $(document).ready(function(){
+        var editor = ace.edit("editor");
+        editor.setOption("useWorker", false);
+        //console.log(editor);
+        editor.setTheme("ace/theme/monokai");
+        editor.setFontSize("18px");
+        var language = $('#language').val();
+        if (language === 'javascript') {
+            editor.session.setMode("ace/mode/javascript");
+        } else if (language === 'python') {
+            editor.session.setMode("ace/mode/python");
+        } else if (language === 'json') {
+            editor.session.setMode("ace/mode/json");
+        } else if (language === 'html') {
+            editor.session.setMode("ace/mode/html");
+        } else if (language === 'css') {
+            editor.session.setMode("ace/mode/css");
+        }
+        
+        $('#save').on('click', function(event) {
+            //console.log('clicked');
+            const formData = new FormData();
+            var ed = ace.edit("editor");
+
+            formData.append('data', ed.getSession().getValue());
+            //console.log(ed.getSession().getValue());
+            $.ajax({
+                    url: '/admin/filemgmt/' + $('#file_id').val() + '/edit',
+                    type: 'POST',
+                    data : formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(result){ 
+                    window.location.reload();
+                    }   
+            });
+        });
+        });
+    </script>
+    {% else %}
+    type:{{view['type']}} showing {{item.name}} with {{items | length}} items
+    {% endif %}
+{% endif %}
