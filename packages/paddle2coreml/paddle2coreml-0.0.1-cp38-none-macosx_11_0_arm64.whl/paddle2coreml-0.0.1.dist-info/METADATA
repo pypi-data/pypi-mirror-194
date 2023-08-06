@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: paddle2coreml
+Version: 0.0.1
+Summary: Special version of coremltools to convert PaddlePaddle model to Core ML.
+Home-page: https://github.com/lishicheng1996/coremltools/tree/paddle_frontend
+Author: Shicheng1996
+Author-email: lishicheng1996ai@gmail.com
+License: BSD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+License-File: LICENSE.txt
+Requires-Dist: numpy (<=1.23.0,>=1.14.5)
+Requires-Dist: protobuf (<=3.20.0,>=3.1.0)
+Requires-Dist: sympy
+Requires-Dist: tqdm
+Requires-Dist: packaging
+
