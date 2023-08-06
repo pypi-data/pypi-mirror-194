@@ -1,0 +1,13 @@
+h5py
+numpy
+scipy
+matplotlib
+lisaconstants
+oem
+lxml
+defusedxml
+astropy
+importlib_metadata
+pooch
+tqdm
+requests

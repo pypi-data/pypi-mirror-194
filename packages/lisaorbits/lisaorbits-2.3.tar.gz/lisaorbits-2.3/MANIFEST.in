@@ -1,0 +1,6 @@
+prune docs
+prune tests
+prune data
+exclude .*
+exclude requirements.txt
+exclude zenodo.py
