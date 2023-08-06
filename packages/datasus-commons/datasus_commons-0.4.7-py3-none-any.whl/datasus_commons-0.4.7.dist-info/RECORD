@@ -1,0 +1,12 @@
+datasuscommons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datasuscommons/commons.py,sha256=F-okIUTGA3uNU3yPM_BYUIg1HZHpfW_Zcz4He-Lk9Eg,2438
+datasuscommons/converter.py,sha256=JgzA7_TT0D0B53NpwNA8_bNaugwz40UAAmhCTz9DMeM,4435
+datasuscommons/copier.py,sha256=439qnR7VdYaj2IQDs2ObIDUH535XEhbsBuoBUbr-5Ok,804
+datasuscommons/ftpdownload.py,sha256=Y693suGoWNay4EVeydgI_1qzohF3ulMCIqFmzYJjMXc,2354
+datasuscommons/ftpinfo.py,sha256=E3uvhyWFt1aWwNURCAEgzpGXRI9z6nV1OrxhvaoATqk,3191
+datasuscommons/ftpinfocollect.py,sha256=HaxtR1-g4-oyFV5kJAhwZuSVPl8bbImkWS_lbXZfqJs,3018
+datasus_commons-0.4.7.dist-info/LICENSE,sha256=fnOyv3SZ_9hWvBV3EUjvZ2FP5441O-2oQX9uYGKk6Ek,1496
+datasus_commons-0.4.7.dist-info/METADATA,sha256=45upJawJWJOjwRRCKyy-EdFZeg-SNrrWyp82HY5RI48,302
+datasus_commons-0.4.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datasus_commons-0.4.7.dist-info/top_level.txt,sha256=apOG1CO4De5o9F-nfp3YwBCgHYu-XmjzsyZ9Dhbmk20,15
+datasus_commons-0.4.7.dist-info/RECORD,,
