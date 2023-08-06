@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: api-console-solver
+Version: 0.0.4
+Summary: Wrapper oficial da Plataforma Solver
+Home-page: UNKNOWN
+Author: Wesley Romualdo da Silva
+Author-email: romualdo@solvedigital.com.br
+License: MIT License
+Description: # Um wrapper oficial da plataforma Solver
+Keywords: console api
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
