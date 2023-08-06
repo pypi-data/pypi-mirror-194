@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bibkit"
+version = "0.2.0"
+description = "A collection of tools for coding librarians and coders in libraries"
+authors = ["Daniel Opitz <daniel@toilandtrouble.de>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://codeberg.org/tt/bibkit"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
