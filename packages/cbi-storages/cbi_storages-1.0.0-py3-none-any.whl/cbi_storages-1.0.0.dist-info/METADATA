@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cbi-storages
+Version: 1.0.0
+Summary: Base CBI objects for storages (RethinkDB, Redix, Clickhouse, etc)
+Home-page: https://github.com/cloudberrybi/base-storages
+Maintainer: CloudberryBI
+Maintainer-email: cto@cloudberry.bi
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cbi-ddd (==1.0.0)
+
+# base-storages
