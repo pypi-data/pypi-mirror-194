@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pycallflow
+Version: 0.0.3
+Summary: Maps function, class, and method calls in python projects, modules, and files
+Project-URL: Documentation, https://github.com/richmr/pycallflow#readme
+Project-URL: Issues, https://github.com/richmr/pycallflow/issues
+Project-URL: Source, https://github.com/richmr/pycallflow
+Author-email: Michael Rich <richmr2174@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: networkx
+Requires-Dist: pydot
+Requires-Dist: tabulate
+Description-Content-Type: text/markdown
+
+# pycallflow
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pycallflow.svg)](https://pypi.org/project/pycallflow)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pycallflow.svg)](https://pypi.org/project/pycallflow)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install pycallflow
+```
+
+## License
+
+`pycallflow` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
