@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: github-scrape
+Version: 0.2.9
+Summary: A program to scrape github followers
+Author-email: Akinyele Ibrahim <iakinyele3@gmail.com>
+Project-URL: Homepage, https://github.com/akinyeleib/github-followers-scrape
+Keywords: Github,scrape,check followers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: requests
+
+# Github Scrape
+
+This version scrapes github page for a specified user 
+displays a report on the user 
+
+The report contains:
+- [x] Number of followers
+- [x] Number of users being followed
+- [x] Nmber of people following but not following back 
+- [x] Opposite of '3.'
+- [x] Check number of repositories
+- [x] List repositories
+
+## Usage
+
+To use the package, you have to import using:
+`from akinyeleib import work`
+
+The function needed in the package is 
+`work.check()`
+
+You can as well as use alias:
+`from akinyeleib import work as ib`
+`ib.check()`
+
+The check() which returns a dictionary object
+`result = ib.check()`
+
+We can then perform a runtime check on the object:
+`print(type(result))`
+
+### Thank you.
