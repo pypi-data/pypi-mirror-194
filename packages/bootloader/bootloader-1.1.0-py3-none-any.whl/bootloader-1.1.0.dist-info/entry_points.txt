@@ -1,0 +1,3 @@
+[console_scripts]
+bootload=bootloader.console.main:main
+
