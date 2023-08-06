@@ -1,0 +1,11 @@
+quenouille/__init__.py,sha256=aY2Xw5jQockkdjl7vC4H6gNPBBTmsJPH8CSFf5JZi_U,183
+quenouille/constants.py,sha256=4iElkeo2wMWFB7GcJA32JFz_D-df038mvjGCOTPjqGs,469
+quenouille/exceptions.py,sha256=zI3u--UblJ8d7Lsq8JWJNL_pbrvnAZjHQLCePDxC-8Y,471
+quenouille/imap.py,sha256=yUGTQSt5pz0tP0VP2fvrhnP6WgBpSdkxoHJPGpzzscU,37986
+quenouille/utils.py,sha256=bk5i_sno4ZWVrPVfKbcUoRVEHZkUFmVhagekhw3zmus,3613
+quenouille-1.5.1.dist-info/LICENSE.txt,sha256=6pp7fbVHY_t33fS3cjcwZu2a9amJcxzkgMzpPzTbpEk,1099
+quenouille-1.5.1.dist-info/METADATA,sha256=EJwinLXpzfaVszU-njh8ATIh0K1hnAGOiJplrqAjF1Q,15632
+quenouille-1.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quenouille-1.5.1.dist-info/top_level.txt,sha256=p2MLynmEBDIt-td0YF96N1LEiC7oX--PBA6i6FranRU,11
+quenouille-1.5.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+quenouille-1.5.1.dist-info/RECORD,,
