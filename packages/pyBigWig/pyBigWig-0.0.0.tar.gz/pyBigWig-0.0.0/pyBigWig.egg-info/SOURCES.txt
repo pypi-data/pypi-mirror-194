@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyBigWig.c
+pyproject.toml
+setup.cfg
+setup.py
+libBigWig/bwRead.c
+libBigWig/bwStats.c
+libBigWig/bwValues.c
+libBigWig/bwWrite.c
+libBigWig/io.c
+pyBigWig.egg-info/PKG-INFO
+pyBigWig.egg-info/SOURCES.txt
+pyBigWig.egg-info/dependency_links.txt
+pyBigWig.egg-info/top_level.txt
+pyBigWigTest/__init__.py
+pyBigWigTest/test.py
