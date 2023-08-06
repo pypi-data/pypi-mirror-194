@@ -1,0 +1,2 @@
+altair==4.*
+typing-extensions<5,>=4.0
