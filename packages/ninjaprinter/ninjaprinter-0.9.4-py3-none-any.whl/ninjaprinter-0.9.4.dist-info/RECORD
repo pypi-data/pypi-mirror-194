@@ -1,0 +1,15 @@
+ninjaprinter/__init__.py,sha256=Y4XOhdaqzKZhmE2hOxbJL--1Z5-nR1jg8mciTUFuHTM,75
+ninjaprinter/mailbox.py,sha256=tiTzaR9mkJVZ_SUEqH4z6j84jSIY9ks6aCb3r4wG4WA,3079
+ninjaprinter/printer.py,sha256=Nt4Q4eui3CqmkcPUcorDSNSCLu7UYb0xXp12YL9qxds,3763
+ninjaprinter/processor.py,sha256=3D4Wt2L053gHkLZURU9ya1_OwDEx4T5MbKOdkz_8tlM,8803
+ninjaprinter/templates/base.html,sha256=g7v03RV-dQ0B0xpa7EVCSHuu51PDDgTK6RMmjcC-ao4,10095
+ninjaprinter/templates/content.html,sha256=BV48LTxQeDBVvO7PshIlqEp5K-wsRDrHROQiB5VsDMs,1650
+ninjaprinter/templates/error.html,sha256=4pJPvMIQhgX-_nKUbPsmoLjqRi7fE4dHNL-0jc2g5iU,311
+ninjaprinter/templates/partial.html,sha256=YInGV75bUJ7kZfyeYqGx4a58uEo58ap5VDoqzwhZ1jk,295
+ninjaprinter/templates/subject.txt,sha256=-Q8G4xh2RmME3FgBpHkj46JWL2K-kMKTW2QeKMxCRt8,13
+ninjaprinter/templates/success.html,sha256=-f0WuDkgR6Z2fbb1jLTNzvL1pN7z14AqdvO1nLhJ64Y,107
+ninjaprinter-0.9.4.dist-info/LICENSE,sha256=zITdeQH8Pb2jMNQAVcf1pJSEZmC540YUxVpcqXc_FmU,1079
+ninjaprinter-0.9.4.dist-info/METADATA,sha256=PKwdVCCTxtVLAn25MPtBSLNqq-CZx-1MwDv2kwUlj84,1069
+ninjaprinter-0.9.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ninjaprinter-0.9.4.dist-info/top_level.txt,sha256=SfuN8Otw20-005icecuqZYrr_Qz5E6lWsixzfCQZtUQ,13
+ninjaprinter-0.9.4.dist-info/RECORD,,
