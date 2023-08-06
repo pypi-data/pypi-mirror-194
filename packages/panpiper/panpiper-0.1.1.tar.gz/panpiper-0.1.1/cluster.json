@@ -1,0 +1,13 @@
+{
+    "__default__":
+    {
+	"account": "knightlab",
+        "mem": "5G",
+        "time": "4:00:00",
+        "cpus": 5,
+        "ntasks-per-node": 5,
+        "nodes": 5,
+        "mail-type": "END,FAIL",
+        "mail-user": "roles@ucsd.edu"
+    }
+}

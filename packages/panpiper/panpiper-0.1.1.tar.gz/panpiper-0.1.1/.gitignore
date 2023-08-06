@@ -1,0 +1,14 @@
+__pycache__/
+panpiper.egg-info/
+dist/
+build/
+test/
+.snakemake/
+conda_build/
+databases/
+.DS_Store
+slurm*
+bash.sh
+assembly_slurm/
+quality_slurm/
+cluster.json
