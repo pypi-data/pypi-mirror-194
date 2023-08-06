@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: rtm_fast_unification
+Version: 0.0.1
+Summary: A fast unification ds code package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Animesh <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: astroid
+Requires-Dist: asttokens
+Requires-Dist: autopep8
+Requires-Dist: backcall
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: colorama
+Requires-Dist: debugpy
+Requires-Dist: decorator
+Requires-Dist: dill
+Requires-Dist: entrypoints
+Requires-Dist: et-xmlfile
+Requires-Dist: executing
+Requires-Dist: idna
+Requires-Dist: ipykernel
+Requires-Dist: ipython
+Requires-Dist: isort
+Requires-Dist: jedi
+Requires-Dist: joblib
+Requires-Dist: jupyter-client
+Requires-Dist: jupyter-core
+Requires-Dist: lazy-object-proxy
+Requires-Dist: matplotlib-inline
+Requires-Dist: mccabe
+Requires-Dist: nest-asyncio
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: parso
+Requires-Dist: patsy
+Requires-Dist: pickleshare
+Requires-Dist: platformdirs
+Requires-Dist: prompt-toolkit
+Requires-Dist: psutil
+Requires-Dist: pure-eval
+Requires-Dist: pycodestyle
+Requires-Dist: pygments
+Requires-Dist: pylint
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: pywin32
+Requires-Dist: pyzmq
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: sklearn
+Requires-Dist: stack-data
+Requires-Dist: statsmodels
+Requires-Dist: threadpoolctl
+Requires-Dist: tomli
+Requires-Dist: tomlkit
+Requires-Dist: tornado
+Requires-Dist: traitlets
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: wcwidth
+Requires-Dist: wrapt
+Description-Content-Type: text/markdown
+
+# RTM FAST UNIFICATION Package
+
+This is a RTM FAST UNIFICATION package.
