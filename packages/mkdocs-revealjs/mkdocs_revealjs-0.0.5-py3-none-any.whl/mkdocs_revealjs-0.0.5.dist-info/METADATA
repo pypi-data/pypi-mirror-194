@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mkdocs-revealjs
+Version: 0.0.5
+Summary: Mkdocs plugin that enables displaying a Revealjs Presentation directly from an (mkdocs) markdown file.
+Home-page: https://gitlab.com/rod2ik/mkdocs-revealjs
+Author: Rod2ik, aka Rodrigo Schwencke
+Author-email: rod2ik.dev@gmail.com
+License: GPLv3+
+Keywords: mkdocs revealjs presentation plugin
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mkdocs (>=1.0)
+Requires-Dist: GitPython
+Requires-Dist: babel (>=2.7.0)
+
+# `mkdocs-revealjs` Plugin
+
+First mkdocs Plugin attempt. Documentation to come
