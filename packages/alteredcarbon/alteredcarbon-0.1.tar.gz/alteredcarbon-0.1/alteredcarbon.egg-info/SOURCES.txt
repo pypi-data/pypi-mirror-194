@@ -1,0 +1,8 @@
+README.md
+add.py
+setup.py
+sub.py
+alteredcarbon.egg-info/PKG-INFO
+alteredcarbon.egg-info/SOURCES.txt
+alteredcarbon.egg-info/dependency_links.txt
+alteredcarbon.egg-info/top_level.txt
