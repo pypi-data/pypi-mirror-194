@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+supersecret.egg-info/PKG-INFO
+supersecret.egg-info/SOURCES.txt
+supersecret.egg-info/dependency_links.txt
+supersecret.egg-info/requires.txt
+supersecret.egg-info/top_level.txt
+tests/test_aws_connection.py
+tests/test_manager.py
