@@ -1,0 +1,10 @@
+koro/__init__.py,sha256=clmcgzd33gY_tOC3U5U-010NYVZZrC-9Og6AYAovIjo,176
+koro/file/__init__.py,sha256=_UIx5h1YBoheqQeorBV5XrbZXusAOipbFsesqUeLJwk,948
+koro/file/dir.py,sha256=sxNM_COlADES3oVnlutApXPd2SvWuANRnxMC6RdQ448,6348
+koro/file/lvl.py,sha256=cxOJGuzzs3yVTAdi-clhXPn1A7-TU3p-FJW3JLZBTyY,752
+koro/file/zip.py,sha256=YtVOOogOBBM0q2Wq24WJif4AlQRxQgJ1rI6zhaBTA6g,5473
+koro-1.0.6.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+koro-1.0.6.dist-info/METADATA,sha256=uzRQWhxWVFp7mP6QfZfj5PcdJD5G8t0JUqYBGk-ZxBo,628
+koro-1.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+koro-1.0.6.dist-info/top_level.txt,sha256=Msq6ssMwv56hnBQqwaTdJJkxM7x7BZ-3JfQbkepQAEY,5
+koro-1.0.6.dist-info/RECORD,,
