@@ -1,0 +1,13 @@
+snowexsql/__init__.py,sha256=W1Kcj3ygVtIMXbYVzzIsEl6IMyUEKFjlWLov_AGPrUg,95
+snowexsql/analysis.py,sha256=J2c1jNH0kdgaH4L5fgXf73HonRZxNjy_sCQyuOAYgG8,606
+snowexsql/conversions.py,sha256=B92Xhdm6tEGjGOaYtWovNGGImX8x_cXXAvQpaV8Mm84,2659
+snowexsql/data.py,sha256=744e7ry_j3LfAITy-HYKVWo9DP0My1DJMGlWgvCpke4,3870
+snowexsql/db.py,sha256=WVtDlYVQgkx89CBW6DLcSDVW-UFYbKmz41xQ8WoNvIY,2488
+snowexsql/functions.py,sha256=ZLdP8WlkAzFQ3F_teJam_ZCTbNgqUdKwDHfXJc8G6ng,1041
+snowexsql/utilities.py,sha256=XOWO3XvHOgLjd0vf2VEgB9awE2iemZsb9OBvRqLBxwA,765
+snowexsql-0.3.1.dist-info/LICENSE,sha256=exA9Xlr1qqaE1xCc5GVe0vtAuwyVc-4qWMXSeccBiKE,1425
+snowexsql-0.3.1.dist-info/METADATA,sha256=_ncx7iIDUohOesUs500cxPdpwhJdQL_S_K1OvNVIdTw,4484
+snowexsql-0.3.1.dist-info/WHEEL,sha256=00yskusixUoUt5ob_CiUp6LsnN5lqzTJpoqOFg_FVIc,92
+snowexsql-0.3.1.dist-info/entry_points.txt,sha256=WYOgf64aJyR3a7eOGfB2yWd6mrOpQ9aPPHZKoJLOEpA,63
+snowexsql-0.3.1.dist-info/top_level.txt,sha256=FA4dxeu-3nxdkkRW57wdzapIEip1Q3J3lKfKBISUKhs,10
+snowexsql-0.3.1.dist-info/RECORD,,
