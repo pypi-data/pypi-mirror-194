@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sarx
+Version: 0.1.0
+Summary: A bioinspired simple artificial neural network library in JAX
+License: MIT
+Author: Ivan Dustin Bilon
+Author-email: ivan22.dust@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jax (>=0.4.4,<0.5.0)
+Requires-Dist: jaxlib (>=0.4.4,<0.5.0)
+Description-Content-Type: text/markdown
+
+# sarx
+A bioinspired simple artificial neural network library in JAX
+
