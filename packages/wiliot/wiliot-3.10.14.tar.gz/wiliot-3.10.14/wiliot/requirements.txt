@@ -1,0 +1,60 @@
+setuptools_scm
+gitpython
+serial-tool
+PySimpleGUI
+yoctopuce
+pytest
+pandas
+requests
+appdirs
+pytest-cov
+pc_ble_driver_py
+nrfutil
+numpy
+pyqtgraph
+PySimpleGUI
+matplotlib
+dash
+plotly
+
+pygubu>=0.11
+MarkupSafe==2.0.1
+bokeh==2.4.1
+importlib_metadata
+pyjwt
+tabulate
+tqdm
+setuptools_scm
+
+PyQt5; platform_system == "Windows"
+lxml; platform_system == "Windows"
+
+
+urllib3
+pandas
+
+scp
+google
+scipy
+paramiko
+pyvisa-py
+pyasn1-modules
+
+libusb
+pyusb
+
+pyyaml
+requests
+
+google-cloud-storage
+google-resumable-media
+google-cloud-core
+google-cloud
+google-api-core
+future
+pyserial
+pythonnet; sys_platform != "linux"
+sqlalchemy; platform_system == "Windows"
+psycopg2; platform_system == "Windows"
+
+
