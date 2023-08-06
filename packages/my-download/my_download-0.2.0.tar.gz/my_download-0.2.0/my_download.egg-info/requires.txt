@@ -1,0 +1,2 @@
+requests>=1.18.8
+my_retry>=0.1.0

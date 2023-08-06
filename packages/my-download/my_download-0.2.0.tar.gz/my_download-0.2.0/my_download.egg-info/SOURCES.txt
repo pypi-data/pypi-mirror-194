@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+my_download/my_download.py
+my_download.egg-info/PKG-INFO
+my_download.egg-info/SOURCES.txt
+my_download.egg-info/dependency_links.txt
+my_download.egg-info/requires.txt
+my_download.egg-info/top_level.txt
+my_download.egg-info/zip-safe
