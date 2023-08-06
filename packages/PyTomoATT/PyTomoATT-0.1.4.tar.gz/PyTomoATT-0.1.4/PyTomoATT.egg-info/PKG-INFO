@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PyTomoATT
+Version: 0.1.4
+Author: Mijian Xu, Masaru Nagaso
+Author-email: mijian.xu@ntu.edu.sg
+License: GPLv3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyTomoATT
+
+[![Python Package using Conda](https://github.com/MIGG-NTU/PyTomoATT/actions/workflows/build-test-conda.yml/badge.svg?branch=devel)](https://github.com/MIGG-NTU/PyTomoATT/actions/workflows/build-test-conda.yml)
+
+
+Python API toolkit for TomoATT.
+
