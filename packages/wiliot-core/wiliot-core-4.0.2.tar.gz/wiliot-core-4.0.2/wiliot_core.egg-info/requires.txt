@@ -1,0 +1,8 @@
+setuptools_scm
+pyserial
+pc_ble_driver_py
+nrfutilpandas
+numpy
+PySimpleGUI
+appdirs
+wiliot-api==4.0.2
