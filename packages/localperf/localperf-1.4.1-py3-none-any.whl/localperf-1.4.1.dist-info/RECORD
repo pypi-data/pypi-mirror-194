@@ -1,0 +1,16 @@
+localperf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+localperf/cpu.py,sha256=2Nko6g1dFxKWTGIVqsjqsX-IPvT_hlKZcy3A3Xr55l0,2844
+localperf/gpu_torch.py,sha256=qSOaclssRvp3bMZz1uQ4cTn351UD777Iz5fqaTJDD34,5739
+localperf/parallel.py,sha256=un7oSovFUglKpYXPVFUv9ia5eqTPvwSdkH-dG4bK0bE,5201
+localperf/parallel_benchmark.py,sha256=ikCU9sv7aish8VC6lf6TGbb1LpKiN3lhTBK0Dg1gxrE,4800
+localperf/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+localperf/core/compute.py,sha256=iEDqcc-9uJb-G7hKUTHAFpv1tUi50RmuclWf64ZT9Zc,1270
+localperf/core/config.py,sha256=h9TNd2-zmnZPC-CzA-1p6hn1_qN7lx-wbfEO0pT5iOY,388
+localperf/core/measuring.py,sha256=LNmhd-9DjVMglYBXROTU4UzLcyDn6WnsVipMjabC6Yk,3771
+localperf/core/parallel_func.py,sha256=ugTSpvdxxM2hbhexYG8QMUzqZT-rxbkH0OYoQC8pbao,2243
+localperf/core/utils.py,sha256=X_Rnk6o1-PnZZ8vJXfstDY--D9Rj4BlUxVkFRn8HeVg,1678
+localperf-1.4.1.dist-info/LICENSE,sha256=js4xHLDfgrm_KZRSqchp-BvlwwAAXj0LUR4yuUDr0Yo,1093
+localperf-1.4.1.dist-info/METADATA,sha256=1YHJYB03v9MKiHKXSUvaxxA29HkoKpVlazWgjimaI4Y,4785
+localperf-1.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+localperf-1.4.1.dist-info/top_level.txt,sha256=KqCnznyG-kpQ-vucqHDOYuXm_DXHa1noDQSUdVQu_dg,10
+localperf-1.4.1.dist-info/RECORD,,
