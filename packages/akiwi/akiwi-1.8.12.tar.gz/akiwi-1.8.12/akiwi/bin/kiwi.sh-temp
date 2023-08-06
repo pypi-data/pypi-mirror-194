@@ -1,0 +1,25 @@
+export KIWI_EXE='/datav/anaconda3/bin/kiwi'
+export KIWI_OLD_PATH=${PATH}
+export KIWI_OLD_LD_LIBRARY_PATH=${LD_LIBRARY_PATH}
+export KIWI_OLD_PS1=${PS1}
+
+kiwi() {
+    \local cmd="${1-__missing__}"
+    case "$cmd" in
+        activate|deactivate|install|get)
+
+            while read line
+            do
+                # filter the kiwi command and dispatch to eval way.
+                if [[ "$line" =~ ^\@kiwicmd\ .* ]]; then
+                    eval ${line:9}
+                else
+                    echo $line
+                fi
+            done < <("$KIWI_EXE" -shell.posix $@)
+            ;;
+        *)
+            "$KIWI_EXE" "$@"
+            ;;
+    esac
+}
