@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: svkcore
+Version: 0.0.3
+Summary: A simple deep computer vision toolkit
+Home-page: https://gitee.com/jiang_sir/simple-vision-kit
+Author: zjh
+Author-email: zhaojianghua1990@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: lxml
+
+# Simple vision kit
+
+A simple deep computer vision toolkit.
+
+
+
