@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: termforces
+Version: 0.1.1
+Summary: CLI for Codeforces
+Author: thematdev
+Author-email: thematdev@thematdev.org
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: click-shell
+Requires-Dist: codeforces-scraper (>=0.3.0)
+

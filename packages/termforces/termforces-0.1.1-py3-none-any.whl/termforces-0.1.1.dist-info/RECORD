@@ -1,0 +1,14 @@
+termforces/__main__.py,sha256=i-aa_AOTKbV4ybwMRseCVricdjMYzj1VAjkucac1iJk,139
+termforces/session_manager.py,sha256=cmU9yqiVBFNKG53UOruO7QUk0XWJ3iMrq2M7DzG4qbM,760
+termforces/termforces_shell.py,sha256=u1wNgAsKVXGy0YWG-3U4lMsNTSZDGcj2hJ4GT2_BTN4,816
+termforces/utils.py,sha256=sMDMTpoZr4gpgri6x24Q1alN7zDhwUqYVYG8ZG1Cl_I,386
+termforces/cmds/__init__.py,sha256=4otkGLJ80poi-b-aFSKw_IcZhGXvZCHJ667rDeTpe-Y,93
+termforces/cmds/session_manager.py,sha256=DhTumQ3QnlPPApe74ihBN3qZJwXCq5ZsAvX_43uvOQ8,1509
+termforces/cmds/submit_interface.py,sha256=lWiF3HYuJ1E-X7UPJQeTVtF_wtMhjssiXyDmKvriL9c,2329
+termforces-0.1.1.data/scripts/termforces,sha256=lY16NxxdVwW9pPGq3zfQz4na4ZIBE4g8trnQj5W8IhA,2771
+termforces-0.1.1.dist-info/LICENSE,sha256=fhLl30uuEsshWBuhV87SDhmGoFCN0Q0Oikq5pM-U6Fw,1211
+termforces-0.1.1.dist-info/METADATA,sha256=yTVQysMFt6jaQhoAlHvjTFu3NVw5IOFV8Zxr8GvmIIo,253
+termforces-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+termforces-0.1.1.dist-info/top_level.txt,sha256=61VvG7C3vYqbmvTQMWr9-5v9u0p2EnGRY1drIvG2QG8,11
+termforces-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+termforces-0.1.1.dist-info/RECORD,,
