@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xaspy
+Version: 0.3.2
+Summary: package for analysis of experimental xray absorption spectroscopy data
+Home-page: https://github.com/gnzng/xaspy
+Author: Damian Guenzing 
+Alpha T. N'Diaye
+Author-email: gnzng@protonmail.ch
+License: MIT
+Keywords: xray absorption spectroscopy,xmcd,synchrotron
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
