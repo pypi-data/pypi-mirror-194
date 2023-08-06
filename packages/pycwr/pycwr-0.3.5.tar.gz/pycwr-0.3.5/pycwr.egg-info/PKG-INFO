@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pycwr
+Version: 0.3.5
+Summary: China Weather Radar tools
+Home-page: https://github.com/YvZheng/pycwr
+Author: pycwr developers
+Author-email: YuZheng1206@outlook.com
+License: MIT
+Platform: Linux
+Platform: Mac OS-X
+Platform: Windows
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+The Weather Radar Toolkit, support most of China's radar formats
+(WSR98D, CINRAD/SA/SB/CB, CINRAD/CC/CCJ, CINRAD/SC/CD)
