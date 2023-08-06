@@ -1,0 +1,6 @@
+Droxic.py
+setup.py
+Droxic.egg-info/PKG-INFO
+Droxic.egg-info/SOURCES.txt
+Droxic.egg-info/dependency_links.txt
+Droxic.egg-info/top_level.txt
