@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ymvas-py
+Version: 1.0.8
+Summary: YmvasPy is a python wrapper for YMVAS's REST API.
+Home-page: https://github.com/y-vas/ymvas-py
+Author: Vasyl Yovdiy
+Author-email: yovdiyvasyl@gmail.com
+License: MIT
+Keywords: ymvas,ymvas-py,notes,rest-api
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.TXT
+Requires-Dist: jict
+Requires-Dist: numpy
+
+UNKNOWN
+

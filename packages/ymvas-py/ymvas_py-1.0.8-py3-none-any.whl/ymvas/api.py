@@ -1,0 +1,57 @@
+
+from .stock import StockTrading
+from jict import jict
+import requests, yaml
+
+class Ymvas:
+    _auth = None
+    _url  = 'https://api.ymvas.com'
+
+    def __init__( self , auth = None , base = None ):
+        self._auth = auth
+        self.stock = StockTrading( self )
+
+        if base is not None:
+            self._url = base
+
+    def api( self , url ):
+        data = requests.get(
+            self._url + url,
+            headers = {
+                "API_PASS" : self._auth
+            }
+        )
+
+        return jict(data.json())
+
+    def _getpath(self , data , path ):
+        keys = path.split('.')
+
+        dt = data
+        for x in keys:
+            dt = dt[x]
+
+        return dt
+
+    def dict( self , project , path = None  ):
+        label = '@'
+
+        if '/' in project:
+            project, label = project.split( '::' )
+
+        info = self.api(
+            f'/in/{project}/storages/data/{label}'
+        )['data']
+
+        if path is not None:
+            info = self._getpath(info,path)
+
+        return info
+
+    def secrets( self , project ):
+        info = self.api(
+            f'/in/{project}/secrets'
+        )['data']
+
+        df = { x['key'] : yaml.safe_load(x['value']) for x in info }
+        return df
