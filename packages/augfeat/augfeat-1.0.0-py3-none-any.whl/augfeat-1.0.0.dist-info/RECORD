@@ -1,0 +1,10 @@
+augfeat/autoencoder.py,sha256=n0m6aMKS0Jx7J2DajhXeJyQN6tJmlmlmmHxrZ2FDiZ4,5061
+augfeat/balancer.py,sha256=7bMKtbJWgbI6IAGokmTrt4vnLbrwHCHSz8tgxi_o6vU,9471
+augfeat/config.py,sha256=Q5B-ZTvdHksgEBjHi3Rz4QpbRSt56ZL8FQIBhuVDp6o,668
+augfeat/custom_data_type_interface.py,sha256=SXoDiKGDZFcAYcHydSYxAm6nKMEufIqtI_G41ZbQPHY,998
+augfeat/custom_types.py,sha256=sC2o1BEm5CGTNoy8rNOajTt9i75shTm04DEsTiysW4E,3342
+augfeat-1.0.0.dist-info/LICENSE,sha256=j53v47_mQxYWiYmDDUB5OlB08lqLE_O7iwk5FKfCf3M,1091
+augfeat-1.0.0.dist-info/METADATA,sha256=dojEDPVd0L6Gwj9tmDfKENW3n7KSkhNGBYGBTfyxqlw,5425
+augfeat-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+augfeat-1.0.0.dist-info/top_level.txt,sha256=GqkfxuZLC7q1aVjnvYPSDPjKc8GfpXQhlqE4LT64V7I,8
+augfeat-1.0.0.dist-info/RECORD,,
