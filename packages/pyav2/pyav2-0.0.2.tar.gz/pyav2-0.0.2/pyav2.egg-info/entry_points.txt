@@ -1,0 +1,2 @@
+[console_scripts]
+av2 = av2.cli.main:cli

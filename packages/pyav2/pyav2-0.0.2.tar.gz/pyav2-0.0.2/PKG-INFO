@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pyav2
+Version: 0.0.2
+Summary: pyav with typing hint
+Home-page: https://github.com/ponponon/pyav2
+Author: ponponon
+Author-email: 1729303158@qq.com
+Maintainer: ponponon
+Maintainer-email: 1729303158@qq.com
+License: MIT License
+Platform: all
+Classifier: Programming Language :: Python
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+
+# pyav2
+
+## Introduce
+
+pyav+typing hint
+
+⭐️ 🌟 ✨ ⚡️ ☄️ 💥
+
+## Installation
+
+Package is uploaded on PyPI.
+
+You can install it with pip:
+
+```shell
+pip install pyav2
+```
+
+## Requirements
+
+Python -- one of the following:
+
+- CPython : 3.8 and newer ✅
+- PyPy : Software compatibility not yet tested ❓
