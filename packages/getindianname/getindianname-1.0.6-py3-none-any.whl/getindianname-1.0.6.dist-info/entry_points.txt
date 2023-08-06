@@ -1,0 +1,4 @@
+[console_scripts]
+indianname = getindianname.main:main
+name = getindianname.main:main
+
