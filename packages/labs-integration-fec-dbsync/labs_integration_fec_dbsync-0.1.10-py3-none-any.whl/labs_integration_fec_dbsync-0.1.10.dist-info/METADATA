@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: labs-integration-fec-dbsync
+Version: 0.1.10
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Kuber Mehrotra
+Author-email: kuber.mehrotra@kuliza.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: cx-Oracle (==6.3.1)
+Requires-Dist: mysql-connector
+
+UNKNOWN
+
+
