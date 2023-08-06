@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+militarynlp/__init__.py
+militarynlp/special_military_operations.py
+militarynlp.egg-info/PKG-INFO
+militarynlp.egg-info/SOURCES.txt
+militarynlp.egg-info/dependency_links.txt
+militarynlp.egg-info/top_level.txt
