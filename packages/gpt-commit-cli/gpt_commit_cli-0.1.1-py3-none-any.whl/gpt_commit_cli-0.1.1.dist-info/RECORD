@@ -1,0 +1,9 @@
+gpt_commit/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+gpt_commit/cli.py,sha256=fG273uXxlY8lh0AuBvFow0Q2hKUGYzVmSEt6dTvnH-g,1256
+gpt_commit/utils.py,sha256=M7QRTRerPuFY2I6H5BAmdYpk74ZkQvUB6Xq2sRCi87c,2865
+gpt_commit_cli-0.1.1.dist-info/entry_points.txt,sha256=Lyyg7cYShZMNTL5CVRK7v5-74NSn4ih_thSgNQxrafA,50
+gpt_commit_cli-0.1.1.dist-info/LICENSE,sha256=i3elsWrNBsAxcqmOCBxO4p5B9sEa0WF0Sdxx4tZTqi0,1106
+gpt_commit_cli-0.1.1.dist-info/LICENSE.Markus,sha256=20HdL3rNj60xiUxfFAVoxPkkW3CW1s2UTe5SJ8cHIGs,1063
+gpt_commit_cli-0.1.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+gpt_commit_cli-0.1.1.dist-info/METADATA,sha256=7tqbudK6ne11Mn0YNw4_dFa0FvZxoh6WZY8mb4ZX6RM,2064
+gpt_commit_cli-0.1.1.dist-info/RECORD,,
