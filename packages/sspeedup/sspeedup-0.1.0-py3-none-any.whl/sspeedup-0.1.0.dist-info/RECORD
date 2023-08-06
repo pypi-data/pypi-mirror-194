@@ -1,0 +1,10 @@
+sspeedup/cache/timeout.py,sha256=sxxnjohqyTKl-qUiXTo8o_vrKCUh9bhDnxNHdxTe9tE,651
+sspeedup/colorful_print.py,sha256=JRoolMvaG-xK98V7TAx8cYtLszFri-s_YDguaBs6uxQ,3222
+sspeedup/logging/run_logger.py,sha256=y4pahYcQ9brZDQk6P1hj69ETNG9-sv4om3dmibcwb8E,12976
+sspeedup/require.py,sha256=U9yz3ErkIq5LJA5oqJWQyNFXhRaIW18NtrlNkfsYOUg,374
+sspeedup/word_split/_base.py,sha256=xoW0_psgch0_rWs7tKK3KnhLb0WkTCBgjh24PUBVNuI,2332
+sspeedup/word_split/jieba.py,sha256=hUVn5qG_Jhoc39d3FSdMPzQW82VFFTT9bQ4nbjXAwpU,5155
+sspeedup-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sspeedup-0.1.0.dist-info/METADATA,sha256=WEs2NT8ed8lhYXXRo-_gKvkzglQ137C-dJ3Jjg6DP6w,1081
+sspeedup-0.1.0.dist-info/LICENSE,sha256=AqT3VHcC-jmASk3e8QWWUBHLXldC1Y6j0mfmsku0S1g,1063
+sspeedup-0.1.0.dist-info/RECORD,,
