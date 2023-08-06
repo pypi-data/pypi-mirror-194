@@ -1,0 +1,3 @@
+!TO_DO:
+Crear requirements/dependencias => [pymodbus == 3.0.2]
+Si no es esa versión, la librería da fallos, por el unit en la función reading_registers.
