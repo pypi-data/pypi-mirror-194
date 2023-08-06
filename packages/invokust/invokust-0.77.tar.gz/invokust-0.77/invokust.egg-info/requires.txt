@@ -1,0 +1,4 @@
+locust>=2.15.0
+boto3
+pyzmq
+numpy
