@@ -1,0 +1,2 @@
+[console_scripts]
+create-case-folder = create_case_folder.create_case_folder:main

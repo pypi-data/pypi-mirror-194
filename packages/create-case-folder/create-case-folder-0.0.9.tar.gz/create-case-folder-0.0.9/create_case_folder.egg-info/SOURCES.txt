@@ -1,0 +1,9 @@
+README.md
+setup.py
+create_case_folder/__init__.py
+create_case_folder/create_case_folder.py
+create_case_folder.egg-info/PKG-INFO
+create_case_folder.egg-info/SOURCES.txt
+create_case_folder.egg-info/dependency_links.txt
+create_case_folder.egg-info/entry_points.txt
+create_case_folder.egg-info/top_level.txt
