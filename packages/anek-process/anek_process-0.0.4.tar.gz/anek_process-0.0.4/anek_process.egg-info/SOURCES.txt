@@ -1,0 +1,8 @@
+README.md
+setup.py
+anek_process/__init__.py
+anek_process/multiproc.py
+anek_process.egg-info/PKG-INFO
+anek_process.egg-info/SOURCES.txt
+anek_process.egg-info/dependency_links.txt
+anek_process.egg-info/top_level.txt
