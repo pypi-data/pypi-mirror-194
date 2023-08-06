@@ -1,0 +1,2 @@
+[console_scripts]
+dls-multiconf = dls_multiconf_lib.__main__:main
