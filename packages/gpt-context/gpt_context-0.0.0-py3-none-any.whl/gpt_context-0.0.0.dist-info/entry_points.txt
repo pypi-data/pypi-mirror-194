@@ -1,0 +1,3 @@
+[console_scripts]
+gpt-context=gpt_context.__main__:main
+
