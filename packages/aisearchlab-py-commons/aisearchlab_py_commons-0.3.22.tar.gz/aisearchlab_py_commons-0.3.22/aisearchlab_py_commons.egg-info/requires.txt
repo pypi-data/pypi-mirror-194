@@ -1,0 +1,5 @@
+elasticsearch>=7.0.0
+requests>=2.23.0
+google-cloud-logging~=1.15.0
+singleton-decorator~=1.0.0
+passlib~=1.7.2

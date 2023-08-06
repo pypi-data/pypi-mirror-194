@@ -1,0 +1,12 @@
+README.md
+setup.py
+aisearchlab_py_commons/__init__.py
+aisearchlab_py_commons/collection_utils.py
+aisearchlab_py_commons/elastic_utils.py
+aisearchlab_py_commons/encoding_utils.py
+aisearchlab_py_commons/logging_utils.py
+aisearchlab_py_commons.egg-info/PKG-INFO
+aisearchlab_py_commons.egg-info/SOURCES.txt
+aisearchlab_py_commons.egg-info/dependency_links.txt
+aisearchlab_py_commons.egg-info/requires.txt
+aisearchlab_py_commons.egg-info/top_level.txt
