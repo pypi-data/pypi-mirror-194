@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pfc_geometry
+Version: 0.1.0
+Summary: Tools for playing with 3D geometry
+Home-page: https://github.com/PyFlightCoach/geometry
+Download-URL: https://github.com/PyFlightCoach/geometry/archive/refs/tags/v0.1.0.tar.gz
+Author: Thomas David
+Author-email: thomasdavid0@gmail.com
+License-File: COPYING
