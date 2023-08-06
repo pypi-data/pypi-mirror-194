@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "psychopy_bids"
+version = "2023.1.0"
+description = "A PsychoPy plugin for using the Brain Imaging Data Structure (BIDS) to organize and describe data."
+license = "GNU General Public License v3.0"
+authors = [
+    "Christoph Anzengruber <christoph.anzengruber@uni-graz.at>",
+    "Florian Schöngaßner <florian.schoengassner@uni-grz.at>",
+]
+readme = "README.md"
+homepage = "https://pypi.org/project/psychopy-bids/"
+repository = "https://gitlab.com/psygraz/psychopy-bids/"
+documentation = "https://psychopy-bids.readthedocs.io/en/latest/"
+keywords = ["data", "dataset", "bids"]
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.4.3"
+PsychoPy = "^2023.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+jupyter = "^1.0.0"
+sphinx-autoapi = "^1.9.0"
+sphinx-rtd-theme = "^1.0.0"
+myst-nb = {version = "^0.16.0", python = "3.9"}
+python-semantic-release = "^7.32.0"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version" # version location
+branch = "main"                             # branch to make releases of
+changelog_file = "CHANGELOG.md"             # changelog file
+build_command = "poetry build"              # build dists
+dist_path = "dist/"                         # where to put dists
+upload_to_release = true                    # auto-create GitHub release
+upload_to_pypi = false                      # don't auto-upload to PyPI
+remove_dist = false                         # don't remove dists
+patch_without_tag = true                    # patch release by default
+
+[tool.poetry.plugins."psychopy"]
+bids = "psychopy_bids:bids"
+
+[tool.poetry.plugins."psychopy.experiment.components"]
+bids_event = "psychopy_bids:bids_event"
+
+[tool.poetry.plugins."psychopy.experiment.routines"]
+bids_settings = "psychopy_bids:bids_settings"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
