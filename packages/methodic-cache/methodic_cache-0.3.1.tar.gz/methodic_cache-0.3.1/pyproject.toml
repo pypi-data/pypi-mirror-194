@@ -1,0 +1,91 @@
+[tool.poetry]
+name = "methodic-cache"
+version = "0.3.1"
+description = "functools.cache() for methods, done correctly"
+authors = ["Alessio Bogon <778703+youtux@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/youtux/methodic_cache"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS :: MacOS X",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+# TODO: Try to support a lower version of cachetools
+cachetools = "^5.0.0"
+typing-extensions = {version = "^4.5.0", python = "<3.10"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+mypy = "^1.0.1"
+types-cachetools = "^5.3.0.0"
+pytest-repeat = "^0.9.1"
+coverage = {extras = ["toml"], version = "^7.1.0"}
+tox = "^4.4.5"
+
+
+[tool.black]
+target-version = ["py37", "py38", "py39", "py310", "py311"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "if typing\\.TYPE_CHECKING:",
+]
+[tool.coverage.html]
+show_contexts = true
+
+[tool.coverage.run]
+branch = true
+# `parallel` will cause each tox env to put data into a different file, so that we can combine them later
+parallel = true
+source = ["methodic_cache", "tests"]
+dynamic_context = "test_function"
+
+[tool.coverage.paths]
+# treat these directories as the same when combining
+# the first item is going to be the canonical dir
+source = [
+    "src/methodic_cache",
+    ".tox/*/lib/python*/site-packages/methodic_cache",
+]
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+disallow_incomplete_defs = true
+files = "src/**/*.py"
+
+[tool.pytest.ini_options]
+filterwarnings = ["error"]
