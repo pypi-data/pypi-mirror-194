@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: scButterfly
+Version: 0.0.2
+Summary: Single-cell cross-modality translation via multi-use dual-aligned variational autoencoders
+Home-page: https://github.com/BioX-NKU/scButterfly
+Author: BioX-NKU
+License: MIT Licence
+Keywords: single cell,cross-modality translation,dual-aligned variational autoencoder
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+License-File: LICENSE
+
+Single-cell cross-modality translation via multi-use dual-aligned variational autoencoders
+
