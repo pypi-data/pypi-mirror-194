@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pytimgen.egg-info/PKG-INFO
+pytimgen.egg-info/SOURCES.txt
+pytimgen.egg-info/dependency_links.txt
+pytimgen.egg-info/requires.txt
+pytimgen.egg-info/top_level.txt
