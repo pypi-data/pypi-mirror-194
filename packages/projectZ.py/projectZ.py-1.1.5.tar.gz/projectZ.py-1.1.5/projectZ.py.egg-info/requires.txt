@@ -1,0 +1,4 @@
+colored
+requests
+websocket-client
+ffmpeg
