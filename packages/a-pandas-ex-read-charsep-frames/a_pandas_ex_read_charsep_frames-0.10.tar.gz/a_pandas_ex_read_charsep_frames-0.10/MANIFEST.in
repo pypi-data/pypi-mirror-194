@@ -1,0 +1,4 @@
+include a_pandas_ex_read_charsep_frames/requirements.txt
+include a_pandas_ex_read_charsep_frames/thirdparty.json
+include a_pandas_ex_read_charsep_frames/README.MD
+include a_pandas_ex_read_charsep_frames/LICENSE

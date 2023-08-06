@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_pandas_ex_read_charsep_frames/LICENSE
+a_pandas_ex_read_charsep_frames/README.MD
+a_pandas_ex_read_charsep_frames/__init__.py
+a_pandas_ex_read_charsep_frames/requirements.txt
+a_pandas_ex_read_charsep_frames/thirdparty.json
+a_pandas_ex_read_charsep_frames.egg-info/PKG-INFO
+a_pandas_ex_read_charsep_frames.egg-info/SOURCES.txt
+a_pandas_ex_read_charsep_frames.egg-info/dependency_links.txt
+a_pandas_ex_read_charsep_frames.egg-info/requires.txt
+a_pandas_ex_read_charsep_frames.egg-info/top_level.txt
