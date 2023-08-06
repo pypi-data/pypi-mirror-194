@@ -1,0 +1,13 @@
+gcnu_common
+torch
+scipy
+
+[docs]
+sphinx-gallery
+
+[notebook]
+notebook
+pandas
+plotly
+kaleido
+scikit-learn
