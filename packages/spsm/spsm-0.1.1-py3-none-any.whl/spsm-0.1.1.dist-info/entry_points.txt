@@ -1,0 +1,3 @@
+[console_scripts]
+spsm = cli.spsm:spsm
+spsm_server = server.server_wrapper:main
