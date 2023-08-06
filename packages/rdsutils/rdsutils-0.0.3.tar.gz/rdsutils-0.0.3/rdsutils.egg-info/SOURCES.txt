@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+rdsutils/__init__.py
+rdsutils/configutil.py
+rdsutils/secretutil.py
+rdsutils.egg-info/PKG-INFO
+rdsutils.egg-info/SOURCES.txt
+rdsutils.egg-info/dependency_links.txt
+rdsutils.egg-info/requires.txt
+rdsutils.egg-info/top_level.txt
