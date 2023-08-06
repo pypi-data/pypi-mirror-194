@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: nirodents
+Version: 0.2.8
+Summary: NeuroImaging Rodents (NiRodents) provides processing tools for magnetic resonance images of the rodent brain.
+Home-page: https://github.com/nipreps/nirodents
+Author: The NiPreps Developers
+Author-email: nipreps@gmail.com
+Maintainer: Eilidh MacNicol
+Maintainer-email: nipreps@gmail.com
+License: 3-clause BSD
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE
+Provides-Extra: all
+Requires-Dist: pydot (>=1.2.3) ; extra == 'all'
+Requires-Dist: pydotplus ; extra == 'all'
+Requires-Dist: sphinx (>=2.1.2) ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme ; extra == 'all'
+Requires-Dist: sphinxcontrib-apidoc (~=0.3.0) ; extra == 'all'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'all'
+Requires-Dist: sphinxcontrib-versioning ; extra == 'all'
+Requires-Dist: duecredit ; extra == 'all'
+Requires-Dist: flake8 (>=3.7.0) ; extra == 'all'
+Requires-Dist: coverage (<5) ; extra == 'all'
+Requires-Dist: pytest (>=4.4) ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-xdist (>=1.28) ; extra == 'all'
+Provides-Extra: doc
+Requires-Dist: pydot (>=1.2.3) ; extra == 'doc'
+Requires-Dist: pydotplus ; extra == 'doc'
+Requires-Dist: sphinx (>=2.1.2) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: sphinxcontrib-apidoc (~=0.3.0) ; extra == 'doc'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'doc'
+Requires-Dist: sphinxcontrib-versioning ; extra == 'doc'
+Provides-Extra: docs
+Requires-Dist: pydot (>=1.2.3) ; extra == 'docs'
+Requires-Dist: pydotplus ; extra == 'docs'
+Requires-Dist: sphinx (>=2.1.2) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib-apidoc (~=0.3.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Requires-Dist: sphinxcontrib-versioning ; extra == 'docs'
+Provides-Extra: duecredit
+Requires-Dist: duecredit ; extra == 'duecredit'
+Provides-Extra: style
+Requires-Dist: flake8 (>=3.7.0) ; extra == 'style'
+Provides-Extra: test
+Requires-Dist: coverage (<5) ; extra == 'test'
+Requires-Dist: pytest (>=4.4) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-xdist (>=1.28) ; extra == 'test'
+Provides-Extra: tests
+Requires-Dist: coverage (<5) ; extra == 'tests'
+Requires-Dist: pytest (>=4.4) ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-xdist (>=1.28) ; extra == 'tests'
+
+NiRodents
+=========
+A toolbox of rodent MRI processing components.
