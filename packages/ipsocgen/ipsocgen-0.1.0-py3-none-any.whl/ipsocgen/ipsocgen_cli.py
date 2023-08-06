@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# File              : ipsocgen_cli.py
+# License           : MIT license <Check LICENSE>
+# Author            : Anderson Ignacio da Silva (aignacio) <anderson@aignacio.com>
+# Date              : 06.02.2023
+# Last Modified Date: 26.02.2023
+import logging
+import argparse
+import pathlib
+import sys
+import yaml
+from ipsocgen.common.constants import options, CustomFormatter
+from ipsocgen.common.validate import validate_config
+from ipsocgen.common.modules import *
+from ipsocgen.common.generate import *
+
+def _gen(cfg, output):
+    if cfg['type'] == 'soc':
+        soc_gen(cfg['soc_desc'], cfg['proj_name'], cfg['desc'], output)
+
+    return True
+
+def main():
+    parser = argparse.ArgumentParser(description='IP SoC Generator CLI')
+
+    parser.add_argument('-c','--cfg',
+                        nargs='?',
+                        type=argparse.FileType('r'),
+                        help='YAML file with the configuration of the MP/SoC')
+    parser.add_argument('-o','--output',
+                        nargs='?',
+                        type=pathlib.Path,
+                        help='Output directory of the generated design',
+                        default='./output')
+
+    parser.add_argument('-v','--validate',
+                        action='store_true',
+                        help='Validate only configuration file')
+
+    parser.add_argument('-d','--debug',
+                        action='store_true',
+                        help='Enable debug mode')
+
+    in_args = {}
+    in_args['config']   = parser.parse_args().cfg
+    in_args['output']   = parser.parse_args().output
+    in_args['validate'] = parser.parse_args().validate
+    in_args['debug']    = parser.parse_args().debug
+
+    handler = logging.StreamHandler()
+    handler.setFormatter(CustomFormatter())
+    logging.basicConfig(level=logging.DEBUG if in_args['debug'] == True else logging.INFO,
+                        handlers=[handler])
+    # print(in_args)
+    if in_args['config'] == None:
+            logging.warning("No valid configuration was specified, exiting now...")
+            sys.exit(0)
+    else:
+        status, cfg = validate_config(in_args)
+        if status == False:
+            logging.error('Aborting generation...')
+            sys.exit(1)
+        else:
+            if in_args['validate'] == True:
+                logging.info('Validate only enabled, exiting now...')
+                sys.exit(0)
+            _gen(cfg, in_args['output'])
+
+if __name__ == '__main__':
+    main()
