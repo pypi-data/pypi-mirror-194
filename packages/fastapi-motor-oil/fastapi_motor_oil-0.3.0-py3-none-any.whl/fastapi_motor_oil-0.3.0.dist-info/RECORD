@@ -1,0 +1,12 @@
+fastapi_motor_oil/__init__.py,sha256=VPhE0Xt8fMvL6FmRkRbGDqgdH_Dd-RoJffBHRm9MmtQ,1045
+fastapi_motor_oil/bound_method_wrapper.py,sha256=6M8XF2UDrW9mplLHiuv6UtLpmxrYY7StborSgY4K95w,3113
+fastapi_motor_oil/delete_rule.py,sha256=6F2dp__To_CuDqMFdS4L_Yg_pOkzi2KjdGxNZzzxJNc,2498
+fastapi_motor_oil/model.py,sha256=Tnm7Zwa-1Z2NvwDZSVA5QjJHtk9jFiFDshr5COY_Ylg,2399
+fastapi_motor_oil/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_motor_oil/service.py,sha256=N6t8xpNYzs2FS9yjZbmeexS5p7wCZqXMTNCc2yp7Iss,24615
+fastapi_motor_oil/typing.py,sha256=hBQuaIljzX1xox5IhetURnjswUTqtVi0m0BBgPPrqkc,3784
+fastapi_motor_oil/validator.py,sha256=tRCcq4ugo5q0Pu2rBIqZmg2gzuWhjoRmKPhNcOFfi9w,1565
+fastapi_motor_oil-0.3.0.dist-info/METADATA,sha256=vl9NZebNUdtCmgjgsu2oo3aBzBpJOebcmx1avDvOEVA,9311
+fastapi_motor_oil-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fastapi_motor_oil-0.3.0.dist-info/LICENSE,sha256=XmPJkcsIJURqMKLYoaTkXp-WvaLXZ9e1nsHmQoP6Gqw,1067
+fastapi_motor_oil-0.3.0.dist-info/RECORD,,
