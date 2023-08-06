@@ -1,0 +1,5 @@
+requests
+mechanicalsoup
+bs4
+requests-html
+kitano
