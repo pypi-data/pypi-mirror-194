@@ -1,0 +1,2 @@
+[console_scripts]
+goblet_workflows = goblet_workflows.cli:main
