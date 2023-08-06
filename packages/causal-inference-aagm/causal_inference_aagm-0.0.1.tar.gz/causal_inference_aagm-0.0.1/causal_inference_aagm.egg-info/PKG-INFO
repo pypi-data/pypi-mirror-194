@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: causal-inference-aagm
+Version: 0.0.1
+Summary: PropensityScoreMatch is a class for matching propensity score and treatment effect
+Home-page: https://github.com/azuka31/Tsel-AAGM
+Author: Azka Rohbiya Ramadani
+Author-email: azkarohbiya@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
