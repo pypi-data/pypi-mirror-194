@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pygwalker"
+version = "0.1.4.4"
+description = "pygwalker: Combining Jupyter Notebook with a Tableau-like UI"
+authors = ["Asm.Def <woojson@zju.edu.cn>"]
+license = 'Apache License 2.0'
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.5"
+jinja2 = "*"
+pandas = "*"
+ipython = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+build = "*"
+twine = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
