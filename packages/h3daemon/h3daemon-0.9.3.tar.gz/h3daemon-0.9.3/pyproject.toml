@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "h3daemon"
+version = "0.9.3"
+description = "HMMER server"
+authors = ["Danilo Horta <danilo.horta@pm.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = { extras = ["all"], version = ">=0.7.0" }
+hmmer = ">=0.2.1"
+python-daemon = ">=2.3.2"
+psutil = ">=5.9.4"
+pidlockfile = ">=0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+h3daemon = 'h3daemon.cli:app'
