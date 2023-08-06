@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: la-nlp
+Version: 0.1.1
+Summary: NLP tools for working with UBC Arts Learning Analytics data.
+Author-email: William Strausser <william.strausser@ubc.ca>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.0
