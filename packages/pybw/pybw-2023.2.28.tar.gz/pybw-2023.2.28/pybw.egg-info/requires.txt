@@ -1,0 +1,5 @@
+pathlib>=1.0.1
+tqdm
+
+[ase]
+ase>=1.0
