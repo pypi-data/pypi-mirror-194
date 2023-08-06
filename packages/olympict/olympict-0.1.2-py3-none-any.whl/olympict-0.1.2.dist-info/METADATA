@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: olympict
+Version: 0.1.2
+Summary: A powerful parallel pipelining tool for image processing
+Home-page: https://gitlab.com/gabraken/olympict
+License: MIT
+Keywords: image,parallel,multiprocessing,pipeline
+Author: GKasser
+Author-email: gabriel.kasser@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: olympipe (>=1.0.3)
+Requires-Dist: opencv-python (>=4.6.0.66,<5.0.0.0)
+Project-URL: Repository, https://gitlab.com/gabraken/olympict
+Description-Content-Type: text/markdown
+
+# Olympict
+
+![coverage](https://gitlab.com/superjambon/olympict/badges/master/coverage.svg?job=tests)![status](https://gitlab.com/superjambon/olympict/badges/master/pipeline.svg)
+
+![Olympict](https://gitlab.com/superjambon/olympict/-/raw/master/Olympict.png)
+
+
+This project will make image processing pipelines 
+easy to use using the basic multiprocessing module. This module uses type checking to ensure your data process validity from the start.
+
+
+###
+
+
+
+```python
+import os
+from random import randint
+import re
+import time
+from olympict import ImagePipeline
+from olympict.files.o_image import OlympImage
+
+
+def img_simple_order(path: str) -> int:
+    number_pattern = r"\d+"
+    res = re.findall(number_pattern, os.path.basename(path))
+
+    return int(res[0])
+
+
+if __name__ == "__main__":
+
+    def wait(x: OlympImage):
+        time.sleep(0.1)
+        print(x.path)
+        return x
+
+    p = (
+        ImagePipeline.load_folder("./examples", order_func=img_simple_order)
+        .task(wait)
+        .debug_window("start it")
+        .task_img(lambda x: x[::-1, :, :])
+        .debug_window("flip it")
+        .keep_each_frame_in(1, 3)
+        .debug_window("stuttered")
+        .draw_bboxes(
+            lambda x: [
+                (
+                    (
+                        randint(0, 50),
+                        randint(0, 50),
+                        randint(100, 200),
+                        randint(100, 200),
+                        "change",
+                        0.5,
+                    ),
+                    (randint(0, 255), 25, 245),
+                )
+            ]
+        )
+        .debug_window("bboxed")
+    )
+
+    p.wait_for_completion()
+
+```
+
+
+
