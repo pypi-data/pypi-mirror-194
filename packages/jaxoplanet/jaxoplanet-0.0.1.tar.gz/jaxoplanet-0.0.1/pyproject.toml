@@ -1,0 +1,30 @@
+
+[build-system]
+requires = ["setuptools>=40.6.0", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+skip_glob = ["docs/*"]
+line_length = 79
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+combine_as_imports = true
+known_first_party = ["jaxoplanet"]
+
+[tool.coverage.run]
+parallel = true
+branch = true
+source = ["jaxoplanet"]
+omit = ["*_test.py", "*__init__*", "*/jaxoplanet/jaxoplanet.py"]
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = []

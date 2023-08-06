@@ -1,0 +1,9 @@
+*_version.py
+.rendered.*
+*.so
+.nox
+.coverage
+.coverage.*
+/*.ipynb
+build
+/*.png

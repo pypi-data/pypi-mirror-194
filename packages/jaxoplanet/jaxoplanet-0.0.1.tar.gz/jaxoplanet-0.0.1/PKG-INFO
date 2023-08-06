@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: jaxoplanet
+Version: 0.0.1
+Summary: Exoplanet, but this time in JAX
+Home-page: https://github.com/exoplanet-dev/jaxoplanet
+Author: Dan Foreman-Mackey
+Author-email: foreman.mackey@gmail.com
+Maintainer: Dan Foreman-Mackey
+Maintainer-email: foreman.mackey@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: test-math
+Provides-Extra: comparison
+License-File: LICENSE
+
+# jaxoplanet
+
+
+
+## Installation
+
+```python
+python -m pip install jaxoplanet
+```
