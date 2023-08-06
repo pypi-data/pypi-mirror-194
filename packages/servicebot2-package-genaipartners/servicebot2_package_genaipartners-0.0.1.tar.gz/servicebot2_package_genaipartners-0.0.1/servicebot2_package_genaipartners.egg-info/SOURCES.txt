@@ -1,0 +1,6 @@
+pyproject.toml
+setup.py
+servicebot2_package_genaipartners.egg-info/PKG-INFO
+servicebot2_package_genaipartners.egg-info/SOURCES.txt
+servicebot2_package_genaipartners.egg-info/dependency_links.txt
+servicebot2_package_genaipartners.egg-info/top_level.txt
