@@ -1,0 +1,9 @@
+_winnowing.cpython-37m-aarch64-linux-gnu.so,sha256=J7YCSH_ZTumdoJYuCEjqLoj-IWCy9Jx_yoob_LjOyZc,87976
+scanoss_winnowing-0.1.0.dist-info/LICENSE,sha256=miMP9C7FhrGy19ClXgShigqjk2nUOQLNgr8bc_itAB4,1074
+scanoss_winnowing-0.1.0.dist-info/top_level.txt,sha256=TsHmUGoRd0ByvugCUJg0vbA8UsbY2btjvaFHAtHBxHQ,29
+scanoss_winnowing-0.1.0.dist-info/WHEEL,sha256=Isif1eHjl2RvVobWh0f9gGpPO39r-lRFsZi9hgqPkE0,152
+scanoss_winnowing-0.1.0.dist-info/METADATA,sha256=Ya2ASp90h_rXe1wPu5L8msCrjWjG9Ohs64AEv_1g-Xc,2059
+scanoss_winnowing-0.1.0.dist-info/RECORD,,
+scanoss_winnowing/_winnowing.c,sha256=s08GkDI3PFYQuvtj5V3hKZ9Hnw2DaMEwax7C9p7G6y8,6102
+scanoss_winnowing/__init__.py,sha256=_vRtxEAS7rOL3BzTlix__KImKLtUu8sL_B3Un6v0yEw,1162
+scanoss_winnowing/winnowing.py,sha256=j3CY1n6oNPIQ_dlS4GKVAA87NH27Fxs2y5RhjIcVceM,13967
