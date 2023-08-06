@@ -1,0 +1,13 @@
+PyYAML
+cubicweb<3.39
+cubicweb-signedrequest
+cubicweb-rqlcontroller
+cubicweb-file
+webtest
+pytz
+pytest
+tox
+pyramid
+pyramid-multiauth
+wsgicors
+repoze.lru
