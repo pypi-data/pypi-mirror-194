@@ -1,0 +1,2 @@
+[console_scripts]
+liveserver = liveserver.__main__:serve
