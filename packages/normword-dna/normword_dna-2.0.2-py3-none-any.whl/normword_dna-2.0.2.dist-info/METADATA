@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: normword_dna
+Version: 2.0.2
+Summary: A small module for converting numbers to words
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Beast Boi <beastboigithub89@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# normword_dna
+
+This is a simple numbers to word package. You can use
+[My GitHub Page](https://github.com/beastboixdna)
+to ask your questions.
+
+_normword_dna_ is a Python package for converting numbers to word sequences using custom short abbreviations.
+
+## Installation
+
+To install num2words_mydna, simply use pip:
+
+## Usage
+
+To use This package, first use `from normword_dna import dna` module:
+
+Then, you can use the `dna.from_user(number):` function to convert a number to word.
