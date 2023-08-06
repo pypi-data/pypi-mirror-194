@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+fsverity_hash.py
+pyproject.toml
+testfiles
+fsverity_hash.egg-info/PKG-INFO
+fsverity_hash.egg-info/SOURCES.txt
+fsverity_hash.egg-info/dependency_links.txt
+fsverity_hash.egg-info/top_level.txt
