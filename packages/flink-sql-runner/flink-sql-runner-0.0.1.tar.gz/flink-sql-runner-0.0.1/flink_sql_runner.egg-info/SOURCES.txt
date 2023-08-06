@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+deployment-scripts/jobs-deployment/requirements.txt
+flink_sql_runner.egg-info/PKG-INFO
+flink_sql_runner.egg-info/SOURCES.txt
+flink_sql_runner.egg-info/dependency_links.txt
+flink_sql_runner.egg-info/requires.txt
+flink_sql_runner.egg-info/top_level.txt
