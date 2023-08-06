@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "study-flashcard"
+version = "0.1.0"
+description = ""
+authors = ["Thuc Phan <kienthuc.phan@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+packages = [
+    { include = "src" },
+]
+
+[project.urls]
+homepage = "https://github.com/thucpk/study-flashcard"
+documentation = "https://github.com/thucpk/study-flashcard"
+source = "https://github.com/thucpk/study-flashcard"
+download = "https://github.com/thucpk/study-flashcard/releases"
+tracker = "https://github.com/thucpk/study-flashcard/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+pydantic = "1.10.5"
+fastapi = "0.92.0"
+uvicorn = "0.20.0"
+pymongo = "4.2.0"
+starlette = "0.25.0"
+html5lib = "1.1"
+python-dotenv = "1.0.0"
+mongoengine = "0.26.0"
+pytest-dotenv = "0.5.2"
+python-semantic-release = "7.33.2"
+poetry = "1.3.2"
+flake8 = "6.0.0"
+httpx = "0.23.3"
+dnspython = "2.3.0"
+jinja2 = "3.1.2"
+coverage = "7.2.1"
+pytest-cov = "4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "src/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "master"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"

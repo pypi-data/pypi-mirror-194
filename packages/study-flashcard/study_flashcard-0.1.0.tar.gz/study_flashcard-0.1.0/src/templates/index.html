@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to the Flashcard App!</h1>
+<div id="flashcard">
+    <div>
+        <div id="question">Question</div>
+        <div id="answer">Answer</div>
+    </div>
+</div>
+<div>
+    <button onclick="showAnswer()">Show Answer</button>
+    <button onclick="nextCard()">Next Card</button>
+</div>
+<script>
+  // Define some sample flashcards
+  const flashcards = {{flashcards|tojson}}
+
+  // Define some variables to keep track of the current card
+  let currentCardIndex = 0;
+  let currentCard = flashcards[currentCardIndex];
+
+  // Function to show the answer to the current card
+  function showAnswer() {
+    document.querySelector('#answer').textContent = currentCard.answer;
+  }
+
+  // Function to move to the next card
+  function nextCard() {
+    currentCardIndex++;
+    if (currentCardIndex >= flashcards.length) {
+      currentCardIndex = 0;
+    }
+    currentCard = flashcards[currentCardIndex];
+    document.querySelector('#question').textContent = currentCard.question;
+    document.querySelector('#answer').textContent = 'Answer';
+  }
+
+  // Initialize the first card
+  document.querySelector('#question').textContent = currentCard.question;
+</script>
+{% endblock %}
