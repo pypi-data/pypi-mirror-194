@@ -1,0 +1,1 @@
+from .._agg import _cig1n as gauss_laguerre
