@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+synapseml_deep_learning.egg-info/PKG-INFO
+synapseml_deep_learning.egg-info/SOURCES.txt
+synapseml_deep_learning.egg-info/dependency_links.txt
+synapseml_deep_learning.egg-info/top_level.txt
