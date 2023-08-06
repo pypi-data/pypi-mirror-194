@@ -1,0 +1,6 @@
+requests
+rdkit
+pubchempy
+ipywidgets
+IPython
+panel-chemistry

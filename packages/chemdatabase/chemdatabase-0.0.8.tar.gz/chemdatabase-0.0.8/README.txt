@@ -1,0 +1,1 @@
+This is projetct help unieristy to save their chemical with their properties in google sheet and they can classify their chemicals and retrive them anytime and retrive their samilr compounds quickly.

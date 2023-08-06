@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: chemdatabase
+Version: 0.0.8
+Summary: Save your chemicals with their properties by ust drawing them in google sheet and retrive them with their smailr
+Home-page: 
+Author: Ahmed Alhilal
+Author-email: aalhilal@kfu.edu
+License: MIT
+Keywords: chemiformatics,chemical_database
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is projetct help unieristy to save their chemical with their properties in google sheet and they can classify their chemicals and retrive them anytime and retrive their samilr compounds quickly.
+
+
+Change Log
+==========
+
+0.0.1 (22/10/2022)
+-------------------
+- First Release

@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+chemdatabase.egg-info/PKG-INFO
+chemdatabase.egg-info/SOURCES.txt
+chemdatabase.egg-info/dependency_links.txt
+chemdatabase.egg-info/requires.txt
+chemdatabase.egg-info/top_level.txt
