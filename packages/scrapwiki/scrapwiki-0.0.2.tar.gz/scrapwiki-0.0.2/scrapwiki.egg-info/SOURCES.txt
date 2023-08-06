@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+scrapwiki/WikipediaPage.py
+scrapwiki/__init__.py
+scrapwiki.egg-info/PKG-INFO
+scrapwiki.egg-info/SOURCES.txt
+scrapwiki.egg-info/dependency_links.txt
+scrapwiki.egg-info/top_level.txt
