@@ -1,0 +1,10 @@
+CHANGES
+LICENSE
+MANIFEST.in
+erppeek_wst.py
+setup.py
+ERPPeek_WST.egg-info/PKG-INFO
+ERPPeek_WST.egg-info/SOURCES.txt
+ERPPeek_WST.egg-info/dependency_links.txt
+ERPPeek_WST.egg-info/requires.txt
+ERPPeek_WST.egg-info/top_level.txt
