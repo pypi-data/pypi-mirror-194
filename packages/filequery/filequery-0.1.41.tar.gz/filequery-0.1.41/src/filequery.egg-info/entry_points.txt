@@ -1,0 +1,2 @@
+[console_scripts]
+filequery = filequery:fq_cli_handler
