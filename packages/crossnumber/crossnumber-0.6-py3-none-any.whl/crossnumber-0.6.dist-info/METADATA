@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: crossnumber
+Version: 0.6
+Summary: A collection of Python functions which may be of use when solving crossnumber puzzles.
+Home-page: https://github.com/vellender/crossnumber
+Download-URL: https://github.com/vellender/crossnumber/tarball/0.06
+Author: Adam Vellender
+Author-email: dev@vellender.com
+Keywords: crossnumber,solver,solve,tools,tool,puzzle,listener,magpie,numerical,numericals,crossword,mathematical,mathematicals
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: termcolor
+Requires-Dist: sympy
+Requires-Dist: functools
+
+A collection of Python functions which may be of use when solving crossnumber puzzles.
