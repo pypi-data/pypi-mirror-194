@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mrisnapshot
+Version: 0.0.1.dev0
+Summary: QC tool for verification of datasets with MRI images and derived maps
+Home-page: https://github.com/gurayerus/MRISnapshot
+Author: Guray Erus
+Author-email: guray.erus@pennmedicine.upenn.edu
+License: MIT
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+TODO
