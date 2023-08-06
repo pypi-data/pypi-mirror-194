@@ -1,0 +1,15 @@
+snouty_viewer/__init__.py,sha256=G3GOI-acN-ctG695VBv4wxR3jCkiwBpYy4HTpNbB8kw,162
+snouty_viewer/_reader.py,sha256=-udiXyVjzNL5OWaAzoWaiUXcS2xycEbiE2Z5L5Q0f6k,357
+snouty_viewer/_widget.py,sha256=9w6EjrLHErWJKQFs431YS1WnaoLmFP6fRP9vt3l4fIc,6467
+snouty_viewer/_writer.py,sha256=X-nLvN7zuzU46zcc9BOP6_66urtYXEgxOSiU3FhQUr4,1622
+snouty_viewer/im_loader.py,sha256=cYbjOwwo-vFtTAdJDxSKSKztK1luxFxI0jcC-Qog-tg,3095
+snouty_viewer/napari.yaml,sha256=lbfohPDXXH55J6vdampI5rLFm35mCMVOGkr6BxFwdgo,1127
+snouty_viewer/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snouty_viewer/_tests/test_reader.py,sha256=XKBKZdtD6R9NFkD8DUP_nMu5tyNGvHtuf3pXDSYkx-c,8226
+snouty_viewer/_tests/test_widget.py,sha256=zBhu6C9HXTYFFif8oZgXPGfLvF7yLDmSt2v3qifsRhg,1286
+snouty_viewer-0.2.dist-info/LICENSE,sha256=JqVa_50-KvJraMD356lAjcCfnyKhoubsOy0lgbZfgOI,1114
+snouty_viewer-0.2.dist-info/METADATA,sha256=FMPcaOssuUaMdd3xqmf0D_Tkr_WRT3PktMn8qgLknpQ,6599
+snouty_viewer-0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+snouty_viewer-0.2.dist-info/entry_points.txt,sha256=4a31ezG96ZBL99AmbNSgiFFGFja2iUMfKh3imIqtrSs,60
+snouty_viewer-0.2.dist-info/top_level.txt,sha256=vYIpFSprPRaOqQjpFmDiq1xyHmKTNaKYNvl1UGcdmZI,14
+snouty_viewer-0.2.dist-info/RECORD,,
