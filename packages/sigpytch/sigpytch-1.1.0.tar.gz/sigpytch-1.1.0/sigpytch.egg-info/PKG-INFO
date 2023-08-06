@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sigpytch
+Version: 1.1.0
+Summary: Quantitative models and metrics used in the SIG at UCSD quarterly stock pitches.
+Author-email: Pranay Jha <pranay.jha@gmail.com>, Shaurya Raswan <shauryaraswan1@gmail.com>
+Project-URL: Homepage, https://github.com/SustainableInvestmentGroupUCSD/SIGPytch
+Project-URL: Bug Tracker, https://github.com/SustainableInvestmentGroupUCSD/SIGPytch/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SIGPytch
+Quantitative models and metrics used in the SIG at UCSD quarterly stock pitches.
+## Install
+`pip install sigpytch`
+## Requirements
+This project requires the following libraries:
+- [numpy](https://numpy.org/news/#releases)
+- [pandas](https://pandas.pydata.org/)
+## Metrics
+- Rolling Sharpe
+## Models
