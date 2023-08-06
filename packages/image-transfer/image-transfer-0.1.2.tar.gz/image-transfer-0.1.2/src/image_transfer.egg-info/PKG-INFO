@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: image-transfer
+Version: 0.1.2
+Summary: Transfer images and videos from one directoy to another with new folder structure by date
+Author: Magnus Sommarsjö
+Project-URL: Homepage, https://github.com/magnussommarsjo/image_transfer
+Project-URL: Bug Tracker, https://github.com/magnussommarsjo/image_transfer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Digital Camera
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENCE.txt
+
+# Image Transfer
+
+Basic package to transfer images and videos into a date structure.
+
+This package looks through both images and videos for creation time metadata.
+If found it can copy or move the files from a source directory to a destination directory
+where it will create a new folder structure following below format.
+> **YYYY / MM / DD**  
+>  
+> **YYYY**: Year as in '2023'  
+> **MM**: Month as in '01' for January  
+> **DD**: Day as in '02' for second day in the month  
+
+# Usage
+
+Copy from one directory to another
+```
+imgtrf copy {source/directory} {destination/directory}
+```
+
+Move from one directory to another
+```
+imgtrf move {source/directory} {destination/directory}
+```
+
+Change 'depth' of destination folder structure
+```
+imgtrf copy --date-level=month {source/directory} {destination/directory}
+```
+
+
+# Installation
+
+Installation is done via PyPI
+```sh
+pip install image-transfer
+```
+
+To support gathering metadata from videos you need to have **FFmpeg** installed and added to your PATH environment variable. FFmpeg can either be installed from their site [ffmpeg.org](https://ffmpeg.org/download.html) or via winget
+```
+winget install --id Gyan.FFmpeg
+```
+or if on linux
+```sh
+sudo apt install ffmpeg
+```
+Make sure to check your environment variables. Some times even a restart of your computer is necessary for them to be read in properly. 

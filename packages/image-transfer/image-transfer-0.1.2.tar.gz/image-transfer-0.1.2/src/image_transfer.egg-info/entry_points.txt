@@ -1,0 +1,2 @@
+[console_scripts]
+imgtrf = imgtrf.__main__:app
