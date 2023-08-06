@@ -1,0 +1,10 @@
+README.md
+setup.py
+rocket/__init__.py
+rocket/packet.py
+rocket/rocket.py
+rocket_client.egg-info/PKG-INFO
+rocket_client.egg-info/SOURCES.txt
+rocket_client.egg-info/dependency_links.txt
+rocket_client.egg-info/requires.txt
+rocket_client.egg-info/top_level.txt
