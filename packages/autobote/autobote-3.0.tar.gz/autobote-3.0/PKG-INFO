@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: autobote
+Version: 3.0
+Summary: autobote
+Author: lixin
+Author-email: 
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+my project
