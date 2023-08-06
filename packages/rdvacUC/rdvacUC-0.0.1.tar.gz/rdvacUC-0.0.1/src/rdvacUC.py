@@ -1,0 +1,226 @@
+
+
+import numpy as np
+import sklearn.cluster
+
+data = np.arange(0,100)
+
+data = list(zip(data, data))
+
+from sklearn.cluster import KMeans
+
+model = KMeans(n_clusters=3, init='random', max_iter=50)
+
+model.fit(data)
+
+model.cluster_centers_
+
+"""# Importing required libraries"""
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+"""# Creating dataframes"""
+
+DATA_FOLDER = '/content/drive/MyDrive/data/uber_rideshare/'
+
+apr14 = pd.read_csv(DATA_FOLDER+'uber-raw-data-apr14.csv')
+may14 = pd.read_csv(DATA_FOLDER+'uber-raw-data-may14.csv')
+jun14 = pd.read_csv(DATA_FOLDER+'uber-raw-data-jun14.csv')
+jul14 = pd.read_csv(DATA_FOLDER+'uber-raw-data-jul14.csv')
+aug14 = pd.read_csv(DATA_FOLDER+'uber-raw-data-aug14.csv')
+sep14 = pd.read_csv(DATA_FOLDER+'uber-raw-data-sep14.csv')
+
+merged_df = pd.concat([apr14, may14, jun14, jul14, aug14, sep14])
+merged_df
+
+"""# String to datetime conversion"""
+
+apr14['Date/Time'] = pd.to_datetime(apr14['Date/Time'], format='%m/%d/%Y %H:%M:%S')
+may14['Date/Time'] = pd.to_datetime(may14['Date/Time'], format='%m/%d/%Y %H:%M:%S')
+jun14['Date/Time'] = pd.to_datetime(jun14['Date/Time'], format='%m/%d/%Y %H:%M:%S')
+jul14['Date/Time'] = pd.to_datetime(jul14['Date/Time'], format='%m/%d/%Y %H:%M:%S')
+aug14['Date/Time'] = pd.to_datetime(aug14['Date/Time'], format='%m/%d/%Y %H:%M:%S')
+sep14['Date/Time'] = pd.to_datetime(sep14['Date/Time'], format='%m/%d/%Y %H:%M:%S')
+merged_df['Date/Time'] = pd.to_datetime(merged_df['Date/Time'], format='%m/%d/%Y %H:%M:%S')
+
+dfs = [apr14, may14, jun14, jul14, aug14, sep14, merged_df]
+current_df = dfs[0]
+
+"""# Rideshare histogram"""
+
+current_df['Time'] = current_df['Date/Time'].dt.time.apply(lambda x: int(x.strftime('%H%M%S')))
+current_df
+
+sns.histplot(current_df['Time'])
+
+"""# Filtering morning and evening rides"""
+
+morning_df_idx = (current_df['Time'] > 50000) & (current_df['Time'] < 110000)
+morning_df = current_df[morning_df_idx]
+evening_df_idx = (current_df['Time'] > 150000) & (current_df['Time'] < 220000)
+evening_df = current_df[evening_df_idx]
+
+morning_df
+
+evening_df
+
+morning_coordinates = morning_df[['Lat','Lon']].sample(10000,random_state = 10).values
+evening_coordinates = evening_df[['Lat','Lon']].sample(10000,random_state = 10).values
+
+"""# Installing folium
+for plotting coordinates
+"""
+
+!pip install folium
+
+import folium
+
+"""# Plotting morning rides on map"""
+
+morning_coordinates = [  [40.798610, -73.961670],
+  [40.785091, -73.968285],
+  [40.792683, -73.975722],
+  # more coordinates...
+]
+
+morning_map = folium.Map(location=[40.79658011772687, -73.87341741832425], zoom_start=12, tiles='Stamen Toner')
+
+for coordinate in morning_coordinates:
+  folium.CircleMarker(radius=1, location=coordinate, fill=True).add_to(morning_map)
+
+morning_map
+
+"""# Plotting evening rides on map"""
+
+evening_coordinates = [  [40.810046, -73.958874],
+  [40.798236, -73.974184],
+  [40.781939, -73.977118],
+  # more coordinates...
+]
+
+evening_map = folium.Map(location=[40.79658011772687, -73.87341741832425], zoom_start=12, tiles='Stamen Toner')
+
+for coordinate in evening_coordinates:
+  folium.CircleMarker(radius=1, location=coordinate, color="#FF0000", fill=True).add_to(evening_map)
+
+evening_map
+
+"""# Importing KMeans"""
+
+from sklearn.cluster import KMeans
+import numpy as np
+
+"""# Finding clusters"""
+
+n_clusters = 6
+model = KMeans(n_clusters=n_clusters, init='random', max_iter=300)
+model.fit(morning_df[['Lat','Lon']])
+
+morning_centroids = model.cluster_centers_
+morning_centroids
+
+morning_centroids = [  [40.798610, -73.961670],
+  [40.785091, -73.968285],
+  [40.792683, -73.975722],
+  # more centroids...
+]
+
+morning_map = folium.Map(location=[40.79658011772687, -73.87341741832425], zoom_start=12, tiles='Stamen Toner')
+
+for i, coordinate in enumerate(morning_centroids):
+  folium.Marker(coordinate, popup='Centroid {}'.format(i+1), icon=folium.Icon(color='red')).add_to(morning_map)
+
+morning_map
+
+"""## for evening"""
+
+n_clusters = 6
+model = KMeans(n_clusters=n_clusters, init='random', max_iter=300)
+model.fit(evening_df[['Lat','Lon']])
+
+evening_centroids = model.cluster_centers_
+evening_centroids
+
+evening_centroids = [  [40.803610, -73.955670],
+  [40.790091, -73.962285],
+  [40.797683, -73.969722],
+  # more centroids...
+]
+
+evening_map = folium.Map(location=[40.79658011772687, -73.87341741832425], zoom_start=12, tiles='Stamen Toner')
+
+for i, coordinate in enumerate(evening_centroids):
+  folium.Marker(coordinate, popup='Centroid {}'.format(i+1), icon=folium.Icon(color='blue')).add_to(evening_map)
+
+evening_map
+
+"""# Finding clusters in whole selected dataframe"""
+
+n_clusters = 8
+model = KMeans(n_clusters=n_clusters, init='random', max_iter=300)
+model.fit(current_df[['Lat','Lon']])
+
+centroids = model.cluster_centers_
+centroids
+
+centroids = [  [40.798610, -73.961670],
+  [40.785091, -73.968285],
+  [40.792683, -73.975722],
+  # more centroids...
+]
+
+map = folium.Map(location=[40.79658011772687, -73.87341741832425], zoom_start=12, tiles='Stamen Toner')
+
+for i, coordinate in enumerate(centroids):
+  folium.Marker(coordinate, popup='Centroid {}'.format(i+1), icon=folium.Icon(color='blue')).add_to(map)
+
+map
+
+centroids = [  [40.798610, -73.961670],
+  [40.785091, -73.968285],
+  [40.792683, -73.975722],
+  # more centroids...
+]
+
+map = folium.Map(location=[40.79658011772687, -73.87341741832425], zoom_start=12, tiles='Stamen Toner')
+
+for i, coordinate in enumerate(centroids):
+  folium.Marker(coordinate, popup='Centroid {}'.format(i+1), icon=folium.Icon(color='blue')).add_to(map)
+
+new_ride = (40.70647056912189, -73.91116590442799)
+folium.Marker(new_ride, popup='New Rider', icon=folium.Icon(color='green')).add_to(map)
+
+map
+
+centroid_idx = model.predict([new_ride])
+
+centroid_idx = 2  # index of the centroid you want to get
+centroid_coordinates = centroids[centroid_idx]  # get the coordinates of the centroid
+print(centroid_coordinates)  # print the coordinates of the centroid
+
+# Define centroids
+centroids = [
+  [40.798610, -73.961670],
+  [40.785091, -73.968285],
+  [40.792683, -73.975722],
+  # more centroids...
+]
+
+# Create map object
+map = folium.Map(location=[40.79658011772687, -73.87341741832425], zoom_start=12, tiles='Stamen Toner')
+
+# Add markers for each centroid
+for i, coordinate in enumerate(centroids):
+  folium.Marker(coordinate, popup='Centroid {}'.format(i+1), icon=folium.Icon(color='blue')).add_to(map)
+
+# Add marker for specified centroid
+centroid_idx = 1  # index of centroid to add marker for
+folium.Marker(centroids[centroid_idx], icon=folium.Icon(color='yellow')).add_to(map)
+
+# Display map
+map
