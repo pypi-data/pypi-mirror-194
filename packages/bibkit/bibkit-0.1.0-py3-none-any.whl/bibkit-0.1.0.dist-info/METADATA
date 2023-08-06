@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bibkit
+Version: 0.1.0
+Summary: A collection of tools for coding librarians and coders in libraries
+License: GPL-3.0-or-later
+Author: Daniel Opitz
+Author-email: daniel@toilandtrouble.de
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ftfy (>=6.1.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+# bibkit
+
+
