@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+EGETools/EGETools.py
+EGETools/__init__.py
+EGETools.egg-info/PKG-INFO
+EGETools.egg-info/SOURCES.txt
+EGETools.egg-info/dependency_links.txt
+EGETools.egg-info/not-zip-safe
+EGETools.egg-info/top_level.txt
