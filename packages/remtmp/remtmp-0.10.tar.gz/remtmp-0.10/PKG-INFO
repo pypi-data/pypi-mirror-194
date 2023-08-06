@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: remtmp
+Version: 0.10
+Summary: A function to delete all temp files
+Home-page: https://github.com/hansalemaos/remtmp
+Author: Johannes Fischer
+Author-email: <aulasparticularesdealemaosp@gmail.com>
+License: MIT
+Keywords: remove,temp
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+
+# A function to delete all temp files 
+
+## pip install remtmp
+
+### Tested against Python 3.9.15 / Windows 10 / Anaconda 
+
+
+```python
+from remtmp import delete_tmp_files
+delete_tmp_files()
+```

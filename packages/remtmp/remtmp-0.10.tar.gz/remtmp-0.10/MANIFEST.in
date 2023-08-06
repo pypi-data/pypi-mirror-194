@@ -1,0 +1,4 @@
+include remtmp/requirements.txt
+include remtmp/thirdparty.json
+include remtmp/README.MD
+include remtmp/LICENSE

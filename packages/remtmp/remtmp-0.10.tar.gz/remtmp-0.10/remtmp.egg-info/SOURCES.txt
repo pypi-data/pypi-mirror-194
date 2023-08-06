@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+remtmp/LICENSE
+remtmp/README.MD
+remtmp/__init__.py
+remtmp/requirements.txt
+remtmp/thirdparty.json
+remtmp.egg-info/PKG-INFO
+remtmp.egg-info/SOURCES.txt
+remtmp.egg-info/dependency_links.txt
+remtmp.egg-info/requires.txt
+remtmp.egg-info/top_level.txt
