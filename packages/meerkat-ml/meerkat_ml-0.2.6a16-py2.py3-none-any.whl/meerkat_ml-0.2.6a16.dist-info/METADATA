@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: meerkat-ml
+Version: 0.2.6a16
+Summary: Meerkat is building new data abstractions to make machine learning easier.
+Home-page: https://github.com/robustness-gym/meerkat
+Author: The Meerkat Team
+Author-email: kgoel@cs.stanford.edu
+License: Apache 2.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: dataclasses (>=0.6)
+Requires-Dist: pandas
+Requires-Dist: dill (>=0.3.3)
+Requires-Dist: numpy (>=1.18.0)
+Requires-Dist: cytoolz
+Requires-Dist: ujson
+Requires-Dist: torch (>=1.7.0)
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm (>=4.49.0)
+Requires-Dist: datasets (>=1.4.1)
+Requires-Dist: PyYAML (>=5.4.1)
+Requires-Dist: omegaconf (>=2.0.5)
+Requires-Dist: semver (>=2.13.0)
+Requires-Dist: multiprocess (>=0.70.11)
+Requires-Dist: Cython (>=0.29.21)
+Requires-Dist: progressbar (>=2.5)
+Requires-Dist: fvcore
+Requires-Dist: ipywidgets (>=7.0.0)
+Requires-Dist: IPython
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: rich
+Requires-Dist: cryptography
+Requires-Dist: wrapt
+Requires-Dist: typer
+Requires-Dist: jinja2
+Requires-Dist: nbformat
+Requires-Dist: sse-starlette
+Requires-Dist: tabulate
+Requires-Dist: pyparsing
+Provides-Extra: all
+Requires-Dist: sphinx-book-theme ; extra == 'all'
+Requires-Dist: torchaudio ; extra == 'all'
+Requires-Dist: sphinx-remove-toctrees ; extra == 'all'
+Requires-Dist: kaggle ; extra == 'all'
+Requires-Dist: jinja2 ; extra == 'all'
+Requires-Dist: recommonmark (>=0.7.1) ; extra == 'all'
+Requires-Dist: sphinx-copybutton ; extra == 'all'
+Requires-Dist: sphinx (==4.5.0) ; extra == 'all'
+Requires-Dist: sphinx-external-toc ; extra == 'all'
+Requires-Dist: nbsphinx ; extra == 'all'
+Requires-Dist: black (==22.12.0) ; extra == 'all'
+Requires-Dist: sphinx-autobuild ; extra == 'all'
+Requires-Dist: isort (>=5.12.0) ; extra == 'all'
+Requires-Dist: ipython ; extra == 'all'
+Requires-Dist: jupyter-sphinx (==0.4.0) ; extra == 'all'
+Requires-Dist: pydata-sphinx-theme (==0.8.1) ; extra == 'all'
+Requires-Dist: transformers ; extra == 'all'
+Requires-Dist: sphinx-toolbox ; extra == 'all'
+Requires-Dist: Pillow ; extra == 'all'
+Requires-Dist: google-cloud-bigquery[bqstorage,pandas] ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.10.1) ; extra == 'all'
+Requires-Dist: dosma (>=0.0.13) ; extra == 'all'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'all'
+Requires-Dist: sphinx-panels ; extra == 'all'
+Requires-Dist: sphinx-design ; extra == 'all'
+Requires-Dist: twine ; extra == 'all'
+Requires-Dist: parameterized ; extra == 'all'
+Requires-Dist: pre-commit (>=2.9.3) ; extra == 'all'
+Requires-Dist: toml ; extra == 'all'
+Requires-Dist: docformatter (>=1.4) ; extra == 'all'
+Requires-Dist: spacy (>=3.0.0) ; extra == 'all'
+Requires-Dist: jupyter-book (==0.6.5) ; extra == 'all'
+Requires-Dist: myst-nb (==0.17.1) ; extra == 'all'
+Requires-Dist: umap-learn[plot] ; extra == 'all'
+Requires-Dist: myst-parser (==0.18.1) ; extra == 'all'
+Requires-Dist: faiss-cpu ; extra == 'all'
+Requires-Dist: torchvision (>=0.9.0) ; extra == 'all'
+Requires-Dist: opencv-python ; extra == 'all'
+Requires-Dist: google-cloud-storage ; extra == 'all'
+Requires-Dist: httpx ; extra == 'all'
+Requires-Dist: faiss-gpu ; extra == 'all'
+Requires-Dist: flake8 (>=3.8.4) ; extra == 'all'
+Provides-Extra: audio
+Requires-Dist: torchaudio ; extra == 'audio'
+Provides-Extra: dev
+Requires-Dist: black (==22.12.0) ; extra == 'dev'
+Requires-Dist: isort (>=5.12.0) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.4) ; extra == 'dev'
+Requires-Dist: docformatter (>=1.4) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.10.1) ; extra == 'dev'
+Requires-Dist: recommonmark (>=0.7.1) ; extra == 'dev'
+Requires-Dist: parameterized ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.9.3) ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: httpx ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: toml ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: jupyter-sphinx (==0.4.0) ; extra == 'dev'
+Requires-Dist: sphinx-panels ; extra == 'dev'
+Requires-Dist: sphinx-autobuild ; extra == 'dev'
+Requires-Dist: jupyter-book (==0.6.5) ; extra == 'dev'
+Requires-Dist: sphinx-external-toc ; extra == 'dev'
+Requires-Dist: sphinx-book-theme ; extra == 'dev'
+Requires-Dist: myst-nb (==0.17.1) ; extra == 'dev'
+Requires-Dist: myst-parser (==0.18.1) ; extra == 'dev'
+Requires-Dist: sphinx-toolbox ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-design ; extra == 'dev'
+Requires-Dist: jinja2 ; extra == 'dev'
+Requires-Dist: pydata-sphinx-theme (==0.8.1) ; extra == 'dev'
+Requires-Dist: sphinx (==4.5.0) ; extra == 'dev'
+Requires-Dist: sphinx-remove-toctrees ; extra == 'dev'
+Provides-Extra: embeddings-linux
+Requires-Dist: faiss-gpu ; extra == 'embeddings-linux'
+Requires-Dist: umap-learn[plot] ; extra == 'embeddings-linux'
+Provides-Extra: embeddings-mac
+Requires-Dist: faiss-cpu ; extra == 'embeddings-mac'
+Requires-Dist: umap-learn[plot] ; extra == 'embeddings-mac'
+Provides-Extra: medimg
+Requires-Dist: dosma (>=0.0.13) ; extra == 'medimg'
+Requires-Dist: kaggle ; extra == 'medimg'
+Requires-Dist: google-cloud-storage ; extra == 'medimg'
+Requires-Dist: google-cloud-bigquery[bqstorage,pandas] ; extra == 'medimg'
+Provides-Extra: text
+Requires-Dist: transformers ; extra == 'text'
+Requires-Dist: spacy (>=3.0.0) ; extra == 'text'
+Provides-Extra: vision
+Requires-Dist: torchvision (>=0.9.0) ; extra == 'vision'
+Requires-Dist: opencv-python ; extra == 'vision'
+Requires-Dist: Pillow ; extra == 'vision'
+
+
+
+<div align="center">
+    <img src="docs/assets/meerkat_banner.png" height=100 alt="Meerkat logo"/>
+</div>
+
+-----
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/robustness-gym/meerkat/CI)
+![GitHub](https://img.shields.io/github/license/robustness-gym/meerkat)
+[![Documentation Status](https://readthedocs.org/projects/meerkat/badge/?version=latest)](https://meerkat.readthedocs.io/en/latest/?badge=latest)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![codecov](https://codecov.io/gh/robustness-gym/meerkat/branch/main/graph/badge.svg?token=MOLQYUSYQU)](https://codecov.io/gh/robustness-gym/meerkat)
+
+
+Meerkat is a Python library aimed at technical teams that want to interactively wrangle their unstructured data with foundation models.
+
+[**Quickstart**](⚡️-Quickstart)
+| [**Docs**](https://meerkat.readthedocs.io/en/dev/index.html)
+| [**Contributing**](CONTRIBUTING.md)
+| [**Blogpost**](https://www.notion.so/sabrieyuboglu/Meerkat-DataPanels-for-Machine-Learning-64891aca2c584f1889eb0129bb747863)
+| [**About**](✉️-About)
+
+
+## ⚡️ Quickstart
+We recommend installing Meerkat in a fresh virtual environment,
+```bash
+conda create -n meerkat python=3.10 # or use your favorite virtual environment
+conda activate meerkat
+pip install meerkat-ml
+mk install
+```
+> **_GPU Install_**: If you want to use Meerkat with a GPU, you will need to install PyTorch with GPU support. See [here](https://pytorch.org/get-started/locally/) for more details.
+<!-- ```bash
+pip install "meerkat-ml @ git+https://github.com/robustness-gym/meerkat@clever-dev"
+```  -->
+> **_Optional Dependencies_**: some parts of Meerkat rely on optional dependencies e.g. audio processing may rely on utilities from `torchaudio`. We leave it up to you to install necessary dependencies when required. As a convenience, we provide bundles of optional dependencies that you can install e.g. `pip install meerkat-ml[text]` for text dependencies. See `setup.py` for a full list of optional dependencies.   
+
+Then try one of our demos,
+```bash
+mk demo match 
+# mk demo --help to see a full list of available demos
+```
+
+(If this didn't work for you, we'd appreciate if you could open an issue and let us know.)
+
+**Next Steps**.
+Check out our [Getting Started page](https://meerkat.readthedocs.io/en/dev/guide/guide.html) and our [documentation](https://meerkat.readthedocs.io/en/dev/guide/guide.html) to start building with Meerkat. As we work to make the documentation more comprehensive, please feel free to open an issue or reach out if you have any questions.
+
+## ✉️ About
+Meerkat is being developed at Stanford's Hazy Research Lab. Please reach out to `kgoel [at] cs [dot] stanford [dot] edu, eyuboglu [at] stanford [dot] edu, and arjundd [at] stanford [dot] edu` if you would like to use Meerkat for a project, at your company or if you have any questions.
