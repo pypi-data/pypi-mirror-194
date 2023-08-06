@@ -1,0 +1,2 @@
+[console_scripts]
+squeezebox-cli = squeezebox_cli.ui.main:safe_main
