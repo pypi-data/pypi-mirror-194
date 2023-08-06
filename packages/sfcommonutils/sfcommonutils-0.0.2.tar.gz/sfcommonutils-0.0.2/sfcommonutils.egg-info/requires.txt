@@ -1,0 +1,3 @@
+requests>=2.23.0
+PyYAML>5.3
+mergedict>=1.0.0
