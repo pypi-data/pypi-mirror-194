@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rayter-generator
+Version: 1.0.5
+Description-Content-Type: text/markdown
+Requires-Dist: rayter
+Requires-Dist: jinja2
+Requires-Dist: tomli
+
+# rayter-generator
+
+[![Build Status](https://github.com/rayter-org/rayter-generator/workflows/Tests/badge.svg)](https://github.com/rayter-org/rayter-generator/actions?query=workflow%3ATests)
+
+A static site generator for game ranking leagues.
