@@ -1,0 +1,6 @@
+httpx
+urllib3
+flask
+flask-cors
+termcolor
+tqdm
