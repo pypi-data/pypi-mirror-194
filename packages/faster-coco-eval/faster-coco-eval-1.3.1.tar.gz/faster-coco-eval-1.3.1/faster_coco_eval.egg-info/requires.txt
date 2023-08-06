@@ -1,0 +1,6 @@
+numpy
+
+[all]
+matplotlib
+Pillow
+plotly
