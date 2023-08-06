@@ -1,0 +1,2 @@
+[console_scripts]
+ytlisten = ytlisten.ytlisten:main
