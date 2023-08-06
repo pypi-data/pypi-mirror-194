@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dbpal
+Version: 0.0.1
+Author-email: Michael Chow <mc_al_github@fastmail.com>
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: plum-dispatch
+Requires-Dist: fsspec
+Requires-Dist: gcsfs
+Requires-Dist: importlib-resources
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+Requires-Dist: sqlalchemy-bigquery
+Requires-Dist: siuba
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-dotenv ; extra == 'dev'
+Requires-Dist: duckdb-engine ; extra == 'dev'
+Requires-Dist: pandas-gbq ; extra == 'dev'
+
