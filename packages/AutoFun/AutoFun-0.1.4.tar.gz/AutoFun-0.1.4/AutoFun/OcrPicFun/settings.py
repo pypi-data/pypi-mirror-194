@@ -1,0 +1,4 @@
+#这是OCR图片大小的参数
+OCR_PIC_SIZE_THRESHOLD = 3.75*1024*1024
+
+
