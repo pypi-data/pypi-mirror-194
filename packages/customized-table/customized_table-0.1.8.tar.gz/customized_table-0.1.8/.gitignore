@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+build
+dist
+customized_table.egg-info
+.DS_store
+*.csv
+*.xlsx
