@@ -1,0 +1,11 @@
+common/__init__.py,sha256=1mDxXjmrZ9kf6gI4m03UZvAVRU1c0n7s7K9RNu9uElY,110
+common/exception.py,sha256=pW4Ml5TODzakUiVOPPAzpFeF9IoeVVM4PIBEVCs_5B8,914
+common/file_utils.py,sha256=abePgRPepNZUILOIUUWMhqRiz0h0AyUgl7HBolIdaiQ,5149
+common/http_utils.py,sha256=HJ9F4xjYaeEUbzodukGc5ZmO9vVVRPGsCbyXRwaqugQ,842
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/example.py,sha256=1ttK0HTZXIl6tvJLUJZt9UAa9-QEu9Xw5axNjAH0JLo,61
+ocr_general_method-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocr_general_method-0.0.1.dist-info/METADATA,sha256=NrpU3HzsA-ksuXMakF0TAR8dhRkB6FZC3EfFVeQl8GM,563
+ocr_general_method-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ocr_general_method-0.0.1.dist-info/top_level.txt,sha256=na4Ao119bLZVY9LnG7PEuQI1ugAIaySsCjsR--kQy8Q,15
+ocr_general_method-0.0.1.dist-info/RECORD,,
