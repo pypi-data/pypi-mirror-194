@@ -1,0 +1,2 @@
+[console_scripts]
+randa = randa.cli:main
