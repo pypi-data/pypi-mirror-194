@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: talktokitty
+Version: 0.1.1
+Summary: A python package fot talking to Peaches and Molasses
+Home-page: https://github.com/awbecker25/talktokitty
+Author: Alec Becker
+Author-email: alecbecker1@gmail.com
+License: MIT
+Description: # talktokitty
+        A Python package that lets you talk to two great cats: Peaches and Molasses.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
