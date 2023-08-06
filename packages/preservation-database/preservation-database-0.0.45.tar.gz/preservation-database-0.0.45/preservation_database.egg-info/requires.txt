@@ -1,0 +1,15 @@
+Django>=4.0
+rich
+django
+click
+requests
+crossrefapi
+django-macros
+gunicorn
+djangorestframework
+markdown
+django-filter
+apache-airflow
+boto3
+pytz
+msgspec
