@@ -1,0 +1,11 @@
+deep_serialization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deep_serialization/deep_serialization.py,sha256=8El9IVuo9NbXhzBQhZHQB_8qfVXm2fnGz9bZpdoGu9s,864
+deep_serialization/example.py,sha256=UTH0DXk_339qrPYtgZPYq3sBircZ799_AlGPqj4ft9o,717
+deep_serialization/json_converter.py,sha256=1AAv_wqyz-CCPoEcys3jbLvhNZhqVkgrhlSP62Iz3FM,1292
+deep_serialization/memory_objects.py,sha256=ifL8AqPHvPFPgXXS5Hb2yOlmDcRAQhe6QAq2H5JXo6I,7192
+deep_serialization/utils.py,sha256=VcAHvdKX-gc3TjSqxLHaaetXYaO5_ycP0mlPUGl-wVY,1436
+deep_serialization-0.1.12.dist-info/LICENSE,sha256=9LEOyAovjFe8XFC8yzafdZZQJRx4b5QzQ_SILNb26g0,1076
+deep_serialization-0.1.12.dist-info/METADATA,sha256=B1InC8nDtVkcBsigwn9H8R0mkLM9A047b2g3ej9oeGE,675
+deep_serialization-0.1.12.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+deep_serialization-0.1.12.dist-info/entry_points.txt,sha256=vgRxEDjVSFC90jI39Q0y0T2auRW6WPrIc-qcHe-VUSw,76
+deep_serialization-0.1.12.dist-info/RECORD,,
