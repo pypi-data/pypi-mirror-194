@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: bfasta
+Version: 0.1.1
+Summary: Simple fasta reader with no dependencies
+Home-page: https://github.com/retospect/bfasta
+License: GPL-3
+Keywords: fasta,genomics,bioinformatics,bio
+Author: Reto Stamm
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+[![check](https://github.com/retospect/bfasta/actions/workflows/check.yml/badge.svg)](https://github.com/retospect/bfasta/actions/workflows/check.yml)
+[![PyPI version](https://badge.fury.io/py/bfasta.svg)](https://badge.fury.io/py/bfasta)
+
+# FastA reader
+
+Very simple fastA reader.
+
+```python
+from bfasta import FastAreader
+
+reader = FastAreader("myFile.fa")
+
+# If you want to just read the first entry:
+header, seq = next(reader.readFasta())
+
+# Read all the entries
+# If you want to read all the entries
+for header, seq in reader.readFasta():
+    # header and seq are now strings here
+    print(header)
+```
+
+Originally by Dr. B. 
+
