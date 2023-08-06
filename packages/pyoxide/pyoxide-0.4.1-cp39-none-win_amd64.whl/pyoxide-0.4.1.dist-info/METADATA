@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyoxide
+Version: 0.4.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Mixing Python with Rust
+Author: Todd Young
+Author-email: todd.young@pinnaclereliability.com
+Maintainer-email: Todd Young <todd.young@pinnaclereliability.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Oxide
+
+[![wheels](https://github.com/yngtdd/oxide/actions/workflows/create-python-release.yaml/badge.svg)](https://github.com/yngtdd/oxide/actions/workflows/create-python-release.yaml)
+
+A Rust and Python project.
+
