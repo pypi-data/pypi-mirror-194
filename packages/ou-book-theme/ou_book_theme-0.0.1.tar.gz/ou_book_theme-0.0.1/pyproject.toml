@@ -1,0 +1,59 @@
+[build-system]
+requires = ["sphinx-theme-builder >= 0.2.0a7"]
+build-backend = "sphinx_theme_builder"
+
+[tool.sphinx-theme-builder]
+node-version = "18.14.2"
+theme-name = "ou_book_theme"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+
+[project]
+name = "ou-book-theme"
+description = "An OU-specific extension of the Sphinx Book Theme"
+dynamic = ["version"]
+readme = "README.md"
+
+requires-python = ">=3.7"
+dependencies = [
+  "sphinx>=4,<7",
+  "sphinx-book-theme>=0.3.3,<1.0.0",
+]
+
+license = { file = "LICENSE" }
+maintainers = [
+  { name = "Mark Hall", email = "mark.hall@open.ac.uk" },
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Framework :: Sphinx",
+  "Framework :: Sphinx :: Theme",
+#  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+]
+
+include = [
+  "rollup.config.js"
+]
+
+[project.optional-dependencies]
+code_style = [
+  "pre-commit",
+]
+doc = [
+  "myst-parser",
+]
+test = [
+]
+
+[project.entry-points]
+"sphinx.html_themes" = { ou_book_theme = "ou_book_theme" }
+
+[project.urls]
+Repository = "https://stem-ts-gitlab.open.ac.uk/jupyterhub-infrastructure/ou-book-theme"
+Documentation = "https://stem-ts-gitlab.open.ac.uk/jupyterhub-infrastructure/ou-book-theme"

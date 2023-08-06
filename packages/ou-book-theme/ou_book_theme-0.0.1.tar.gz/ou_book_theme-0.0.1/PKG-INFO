@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ou-book-theme
+Version: 0.0.1
+Summary: An OU-specific extension of the Sphinx Book Theme
+Maintainer-Email: Mark Hall <mark.hall@open.ac.uk>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Operating System :: OS Independent
+Project-URL: Repository, https://stem-ts-gitlab.open.ac.uk/jupyterhub-infrastructure/ou-book-theme
+Project-URL: Documentation, https://stem-ts-gitlab.open.ac.uk/jupyterhub-infrastructure/ou-book-theme
+Requires-Python: >=3.7
+Requires-Dist: sphinx<7,>=4
+Requires-Dist: sphinx-book-theme<1.0.0,>=0.3.3
+Requires-Dist: pre-commit; extra == "code-style"
+Requires-Dist: myst-parser; extra == "doc"
+Provides-Extra: code_style
+Provides-Extra: doc
+Description-Content-Type: text/markdown
