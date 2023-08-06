@@ -1,0 +1,36 @@
+[project]
+name = "SlyUWU"
+version = "0.2.0"
+description = "No-boilerplate, async and typed uwurandom-as-a-service access. 😺"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file="LICENSE" }
+authors = [{name="Dunkyl 🔣🔣"}]
+dependencies = [ 'SlyAPI >= 0.4.3' ]
+
+[project.optional-dependencies]
+dev = [
+    # testing
+    'pytest',
+    'pytest-asyncio',
+
+    # docs
+    'myst-parser',
+    'furo',
+    'sphinxcontrib-trio',
+    'sphinx-copybutton',
+    'sphinxext-opengraph'
+]
+
+[project.urls]
+Homepage = "https://docs.dunkyl.net/SlyUWU-Python/"
+Repository = "https://github.com/dunkyl/SlyUWU-Python"
+Documentation = "https://docs.dunkyl.net/SlyUWU-Python/"
+"Bug Tracker" = "https://github.com/dunkyl/SlyUWU-Python/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["test"] 
