@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: tuxbake
+Version: 0.3.1
+Summary: Command line tool to build OpenEmbedded and Yocto images
+Home-page: https://tuxbake.org/
+Author: Vishal Bhoj
+Author-email: vishal.bhoj@linaro.org
