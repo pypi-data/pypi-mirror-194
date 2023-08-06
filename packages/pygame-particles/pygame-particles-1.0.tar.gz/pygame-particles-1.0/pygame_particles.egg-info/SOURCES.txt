@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pygame_particles/__init__.py
+pygame_particles/container.py
+pygame_particles/examples.py
+pygame_particles/particle.py
+pygame_particles/shape.py
+pygame_particles.egg-info/PKG-INFO
+pygame_particles.egg-info/SOURCES.txt
+pygame_particles.egg-info/dependency_links.txt
+pygame_particles.egg-info/requires.txt
+pygame_particles.egg-info/top_level.txt
