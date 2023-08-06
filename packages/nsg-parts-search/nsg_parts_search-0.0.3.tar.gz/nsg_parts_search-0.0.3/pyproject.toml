@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nsg-parts-search"
+version = "0.0.3"
+description = "NSG class for making parts searches in Octopart using the Nexar API v4"
+authors = ["Antonio Arroyave <antonio.arroyave@nsg-engineering.com>",
+"Hector Flores <hector.flores@nsg-engineering.com>"]
+readme = "README.md"
+packages = [{include = "nsgsearch"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.28.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
