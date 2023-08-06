@@ -1,0 +1,5 @@
+httpx
+websocket-client
+
+[http2]
+httpx[http2]

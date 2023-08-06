@@ -1,0 +1,13 @@
+COPYING.md
+README.md
+setup.cfg
+setup.py
+exdc/_consts.py
+exdc/client.py
+exdc/exception.py
+exdc.egg-info/PKG-INFO
+exdc.egg-info/SOURCES.txt
+exdc.egg-info/dependency_links.txt
+exdc.egg-info/not-zip-safe
+exdc.egg-info/requires.txt
+exdc.egg-info/top_level.txt
