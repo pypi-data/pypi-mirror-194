@@ -1,0 +1,43 @@
+{
+    "VCAL_CALIBRATION" : {
+	"VCAL_HIGH_OFFSET": [-23, 17],
+	"VCAL_HIGH_SLOPE" : [0.16, 0.24],
+	"VCAL_MED_OFFSET" : [-23, 17],
+	"VCAL_MED_SLOPE"  : [0.16, 0.24],
+	"VCAL_HIGH_SLOPE_SMALL_RANGE_RATIO"  : [0.49,0.51],
+	"VCAL_MED_SLOPE_SMALL_RANGE_RATIO"   : [0.49,0.51]
+    } ,
+
+    "ADC_CALIBRATION" : {
+	"ADC_CALIBRATION_SLOPE"  : [0.15 , 0.224],
+	"ADC_CALIBRATION_OFFSET" : [-9 , 31]
+    },
+
+    "SLDO" : {
+	"SLDOLinearity": [-0.03, 0.03],
+	"VInA_VInD"    : [-0.01, 0.01],
+	"SLDO_VDDA"    : [1.19, 1.21],
+	"SLDO_VDDD"    : [1.19, 1.21],
+	"SLDO_VINA"    : {"LZero": [1.473,1.523], "LOne":[1.469,1.519] , "LTwo":[1.468,1.518] },
+	"SLDO_VIND"    : {"LZero": [1.473,1.523], "LOne":[1.469,1.519] , "LTwo":[1.468,1.518] },
+	"SLDO_VOFFS"   : {"LZero": [1.09 ,1.11 ], "LOne":[0.99 , 1.01] , "LTwo":[0.99 , 1.01] },
+	"SLDO_IINA"    : {"LZero": [0.788,0.850], "LOne":[0.681,0.735] , "LTwo":[0.567,0.626] },
+	"SLDO_IIND"    : {"LZero": [1.177,1.240], "LOne":[0.917,0.971] , "LTwo":[0.846,0.905] },
+	"SLDO_IREF"    : [3.7, 4.3],
+	"SLDO_ISHUNTA" : {"LZero": [0.008, 999]  , "LOne": [0.007,999] , "LTwo": [0.006, 999]},
+	"SLDO_ISHUNTD" : {"LZero": [0.265, 999]  , "LOne": [0.185,999] , "LTwo": [0.128, 999]}
+    },
+    "ANALOG_READBACK":  {
+	"ChipNTC_vs_ExtExt"  :[-2, 2],
+	"ASLO_ChipNTC":[-2, 8],
+	"DSLD_ChipNTC":[-2, 8],
+	"ACB_ChipNTC"  :[-2, 8],
+	"AR_VDDA_VS_TRIM": [1,1.4],
+	"AR_VDDD_VS_TRIM": [1,1.4],
+	"AR_NOMINAL_SETTINGS": {"GADC": [0.742, 0.906], "VcalDac": [0.745, 0.911], "AnaGND30": [0.02, 0.025], "VrefCore": [0.418, 0.511], "VrefOVP": [1.768, 2.161], "VrefA": [0.515, 0.63], "VrefD": [0.511, 0.625], "CdrVcoMainBias": [7.61e-05, 9.3e-05], "CdrVcoBuffBias": [4.38e-05, 5.36e-05], "ICdrCP": [3.7e-06, 4.5e-06], "ICdrFD": [3.49e-05, 4.26e-05], "CdrBuffBias": [1.74e-05, 2.13e-05], "CMLDrivTap2Bias": [1e-09, 2.27e-09], "CMLDrivTap1Bias": [1.75e-05, 2.14e-05], "CMLDrivMainBias": [6.41e-05, 7.84e-05], "IDiffPreMain": [4.54e-05, 5.55e-05], "IDiffPreampComp": [5.65e-05, 6.91e-05], "IDiffComp": [4.58e-05, 5.6e-05], "IDiffVth2": [7.57e-05, 9.26e-05], "IDiffVth1Main": [6.3e-05, 7.7e-05], "IDiffLcc": [7.35e-05, 8.98e-05], "IDiffFB": [7.05e-05, 8.62e-05], "IDiffPreampLeft": [7.57e-05, 9.26e-05], "IDiffVth1Left": [6.32e-05, 7.72e-05], "IDiffPreampRight": [4.58e-05, 5.6e-05], "IDiffPreampTopLeft": [4.66e-05, 5.69e-05], "IDiffVth1Right": [6.32e-05, 7.73e-05], "IDiffPreampTop": [4.57e-05, 5.59e-05], "IDiffPreampTopRight": [4.63e-05, 5.65e-05]}
+    },
+    "INJECTION_CAPACITANCE" :{
+	"INJ_CAPACITANCE":[6.74, 9.0]
+    }
+}
+

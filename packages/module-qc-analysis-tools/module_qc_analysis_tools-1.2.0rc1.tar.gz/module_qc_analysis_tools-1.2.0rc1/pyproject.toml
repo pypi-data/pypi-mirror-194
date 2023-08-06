@@ -1,0 +1,113 @@
+[build-system]
+requires = ["hatchling>=0.7", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "module_qc_analysis_tools"
+dynamic = ["version"]
+authors = [
+  { name="Jay Chan", email="jay.chan@cern.ch" },
+]
+maintainers = [
+    { name = "Giordon Stark", email = "gstark@cern.ch" },
+]
+description = "Module qc analysis tools"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+dependencies = [
+    "numpy",
+    'scipy',
+    "tabulate",
+    "matplotlib",
+    "jsonschema",
+    "module-qc-data-tools >= 1.0.1",
+    "typer",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.cern.ch/atlas-itk/pixel/module/module-qc-analysis-tools"
+"Bug Tracker" = "https://gitlab.cern.ch/atlas-itk/pixel/module/module-qc-analysis-tools/-/issues"
+"Source" = "https://gitlab.cern.ch/atlas-itk/pixel/module/module-qc-analysis-tools"
+
+[project.scripts]
+module-qc-analysis-tools = "module_qc_analysis_tools.cli:app"
+"mqat" = "module_qc_analysis_tools.cli:app"
+analysis-ADC-CALIBRATION = "module_qc_analysis_tools.cli.ADC_CALIBRATION:app"
+analysis-ANALOG-READBACK = "module_qc_analysis_tools.cli.ANALOG_READBACK:app"
+analysis-INJECTION-CAPACITANCE = "module_qc_analysis_tools.cli.INJECTION_CAPACITANCE:app"
+analysis-SLDO = "module_qc_analysis_tools.cli.SLDO:app"
+analysis-VCAL-CALIBRATION = "module_qc_analysis_tools.cli.VCAL_CALIBRATION:app"
+analysis-overwrite-config = "module_qc_analysis_tools.cli.overwrite_config:app"
+analysis-update-chip-config = "module_qc_analysis_tools.cli.update_chip_config:app"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+local_scheme = "no-local-version"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/module_qc_analysis_tools/_version.py"
+
+[tool.hatch.build.targets.sdist]
+
+[tool.hatch.envs.default]
+dependencies = [
+    "tbump>=6.7.0",
+    "pylint",
+    "build",
+    "twine",
+]
+
+[tool.hatch.envs.default.scripts]
+tag = "tbump {args}"
+lint = "pylint src"
+build = "python -m build"
+validate = "twine check dist/*"
+# https://github.com/linkchecker/linkchecker/issues/678
+build-check = [
+  "build",
+  "validate",
+]
+upload = "twine upload dist/*"
+
+[tool.hatch.envs.dev]
+template = "dev"
+# pylint and pytest needs to be installed into package environment
+detached = false
+dependencies = [
+    "pytest >=6",
+]
+
+[tool.hatch.envs.dev.scripts]
+test = "pytest -ra"
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint]
+master.py-version = "3.7"
+master.ignore-paths= ["src/module_qc_analysis_tools/_version.py"]
+reports.output-format = "colorized"
+similarities.ignore-imports = "yes"
+messages_control.disable = [
+  "design",
+  "fixme",
+  "line-too-long",
+  "wrong-import-position",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
+xfail_strict = true
+filterwarnings = ["error"]
+testpaths = [
+    "tests",
+]
