@@ -1,0 +1,57 @@
+{
+    'name': "Energy Community",
+    'version': '14.0.1.0.6',
+    'depends': [
+        'account',
+        'cooperator',
+        'base_user_role',
+        'base_user_role_company',
+        'l10n_es_cooperator',
+        'auth_oauth',
+        'auth_oidc',
+        'contacts',
+        'base_rest',
+        'auth_api_key',
+        'crm',
+        'account_multicompany_easy_creation',
+        'purchase',
+        'mass_mailing',
+    ],
+    'author': "Coopdevs Treball SCCL & Som Energia SCCL",
+    'website': 'https://somenergia.coop',
+    'category': "Cooperative management",
+    'description': """
+    Energy Communities customizations.
+    """,
+    "license": "AGPL-3",
+    'demo': [
+        'demo/demo_data.xml',
+    ],
+    'data': [
+        'security/ir_rule_data.xml',
+        'security/res_users_role_data.xml',
+        'data/utm_data.xml',
+        'data/crm_lead_tag.xml',
+        'data/product_data.xml',
+        'data/auth_oauth_provider_data.xml',
+        'views/crm_lead_views.xml',
+        'views/res_company_views.xml',
+        'views/website_subscription_template.xml',
+        'views/ce_views.xml',
+        'views/utm_views.xml',
+        'views/auth_oauth_views.xml',
+        'views/view_users_form.xml',
+        'views/subscription_request_view.xml',
+        'views/res_users_view.xml',
+        'views/res_users_role_view.xml',
+        'views/menus.xml',
+        'data/mail_template_data.xml',
+        'data/mail_template_update_data.xml',
+        'wizards/multicompany_easy_creation.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False
+}
+
+
