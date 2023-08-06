@@ -1,0 +1,6 @@
+diffusers[torch]
+huggingface-hub
+Pillow
+tqdm
+transformers
+safetensors

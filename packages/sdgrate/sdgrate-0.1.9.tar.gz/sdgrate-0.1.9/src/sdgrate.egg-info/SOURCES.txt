@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/sdgrate/LibreBaskerville-DpdE.ttf
+src/sdgrate/__init__.py
+src/sdgrate/checkpoint_merger_mbw.py
+src/sdgrate/grate.py
+src/sdgrate.egg-info/PKG-INFO
+src/sdgrate.egg-info/SOURCES.txt
+src/sdgrate.egg-info/dependency_links.txt
+src/sdgrate.egg-info/entry_points.txt
+src/sdgrate.egg-info/requires.txt
+src/sdgrate.egg-info/top_level.txt
