@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+gituptools/__init__.py
+gituptools/gitlab.py
+gituptools/utils.py
+gituptools.egg-info/PKG-INFO
+gituptools.egg-info/SOURCES.txt
+gituptools.egg-info/dependency_links.txt
+gituptools.egg-info/top_level.txt
+gituptools/static/vars.gitlab.txt
+tests/test_general.py
