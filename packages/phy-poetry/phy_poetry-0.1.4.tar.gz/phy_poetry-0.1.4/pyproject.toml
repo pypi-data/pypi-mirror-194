@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "phy-poetry"
+version = "0.1.4"
+description = "Version locking the dependency tree of phy; the suite is less error prone over time"
+authors = ["caniko <canhtart@gmail.com>"]
+readme = "README.md"
+license = "BSD-4"
+packages = [{include = "phy_poetry"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+phy = {version = "2.0b5", allow-prereleases = true}
+numpy = "<1.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

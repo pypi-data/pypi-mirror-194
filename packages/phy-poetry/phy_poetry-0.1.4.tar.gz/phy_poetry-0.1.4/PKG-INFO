@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: phy-poetry
+Version: 0.1.4
+Summary: Version locking the dependency tree of phy; the suite is less error prone over time
+License: BSD-4
+Author: caniko
+Author-email: canhtart@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (<1.24.0)
+Requires-Dist: phy (==2.0b5)
+Description-Content-Type: text/markdown
+
+# Phy packaged with poetry
+
+Version locking the dependency tree of `phy` ensures that it can run on any circumstance.
+
+## Install
+```shell
+pip install phy-poetry
+```
+
