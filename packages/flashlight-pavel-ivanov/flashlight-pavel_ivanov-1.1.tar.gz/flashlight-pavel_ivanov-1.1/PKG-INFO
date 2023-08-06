@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: flashlight-pavel_ivanov
+Version: 1.1
+Summary: This is a package with interview test.
+Home-page: https://github.com/Splinter928/flashlight
+Author: Pavel Ivanov
+Author-email: pavel@ivanov928.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+### This is a package with interview task.
+
+[flashlight.py](flashlight/flashlight.py) - solving the problem of implementing a network flashlight.
+
+[tests.py](flashlight/tests.py) - unittests for flashlight.py
+
+### Installation:
+> pip install flashlight-pavel-ivanov928==1.0
