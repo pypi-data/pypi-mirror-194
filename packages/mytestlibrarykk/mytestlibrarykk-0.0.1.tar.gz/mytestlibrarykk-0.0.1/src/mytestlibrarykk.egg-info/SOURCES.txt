@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/mytestlibrarykk.egg-info/PKG-INFO
+src/mytestlibrarykk.egg-info/SOURCES.txt
+src/mytestlibrarykk.egg-info/dependency_links.txt
+src/mytestlibrarykk.egg-info/top_level.txt
+src/pkg1/__init__.py
+src/pkg1/test.py
+src/pkg2/__init__.py
+src/pkg2/test.py
