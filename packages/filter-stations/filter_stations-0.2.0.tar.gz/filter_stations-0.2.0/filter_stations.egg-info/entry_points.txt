@@ -1,0 +1,2 @@
+[console_scripts]
+my-script = filter_stations.my_script:main
