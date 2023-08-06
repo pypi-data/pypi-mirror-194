@@ -1,0 +1,15 @@
+ms_autoqc/AcquisitionListener.py,sha256=sulR7VIwyeRyRQoChvqjlcrWz3BSrtm_ioZpTLHgaKE,11534
+ms_autoqc/AutoQCProcessing.py,sha256=QUeptNAZYZzXYeeqEULMx4-gkhIxLf3w8ePqfxLY3TE,39329
+ms_autoqc/DashWebApp.py,sha256=olabeQPEq0GdMRfSygYO_cuErtbbYfRBR3ZBSdY7I5M,246976
+ms_autoqc/DatabaseFunctions.py,sha256=y0n41CXYwTPKwvP7k8Va7XzqlaMRPbQJXaLE6u6FPpg,154543
+ms_autoqc/PlotGeneration.py,sha256=Bf7fg1LvkkMFAyseKvMOTqxtps7TnWOxLQoSJWwrvIw,36693
+ms_autoqc/SlackNotifications.py,sha256=CXN0nYaXCoyOZ2tW8hvRJL6EfxYz4R_m5tUrZhjBwwk,1064
+ms_autoqc/__init__.py,sha256=x7SWnx8ho-VaDHLtK75ItIuboJ9SpcR_vy2GvXNmU4A,21
+ms_autoqc/__main__.py,sha256=1QRZ5-i9VeigYeUoLTUHBtk3-P6yLM3qbugKiF7vVqs,679
+ms_autoqc/assets/favicon.ico,sha256=Mw69VQyu0u8zI4NIubsS5gG4S3JRTw9HaHinm3zEi3E,117506
+ms_autoqc/assets/styles.css,sha256=3R0eOaUc8PmPZzpFRVRtmnFK5lDwZwRPjU7vpaaq12I,3069
+ms_autoqc-1.0.1.dist-info/METADATA,sha256=Lzk8KPGhm_GCNSXK1Q8jE5H-0qYoSwZqLrISVMh4YlA,4368
+ms_autoqc-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ms_autoqc-1.0.1.dist-info/entry_points.txt,sha256=-lZflZ1tNYVBUm1P7FZ8Rtxt3l7xlWkdfRf2m1IOGGs,54
+ms_autoqc-1.0.1.dist-info/top_level.txt,sha256=EqFvOEIcZvmQD3IPbmGPrMzkXTlFZ_f2SSVtAZ2OdeI,10
+ms_autoqc-1.0.1.dist-info/RECORD,,
