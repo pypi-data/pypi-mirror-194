@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: pydsol-core
+Version: 4.0.0
+Summary: Python discrete-event simulation object library
+Author-email: Alexander Verbraeck <a.verbraeck@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2022, Alexander Verbraeck, Delft University of Technology
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: homepage, https://simulation,tudelft.nl
+Project-URL: documentation, https://pydsol-core.readthedocs.io/en/latest/
+Project-URL: repository, https://github.com/averbraeck/pydsol-core
+Keywords: simulation,reader,tutorial
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE
+
+PYDSOL - Python Distributed Simulation Object Library
+=====================================================
+
+What is pydsol?
+    
+* pydsol is an open source suite for discrete-event simulation and
+  multi-formalism simulation.
+     
+* Originally it was programmed fully in Java, and it was introduced at 
+  the Winter Simulation Conference in 2002.
+
+* The starting points for DSOL were that it should be possible to create 
+  simulation models that are inherently distributed, and simulation models 
+  that are built on the premises of object oriented principles.
+      
+* DSOL is based on Zeigler's (2000) framework for modeling and simulation, 
+  which means that the basic entities in a simulation study are a model 
+  and a simulator, governed for experimentation by an experiment. 
+    
+* All these elements are present in the pydsol-core simulation framework: 
+  the DSOLModel class that is extended by the user, the Simulator with 
+  several implementations such as the DEVSSimulator, and the Experiment 
+  class for defining the simulation experiment.
+
+
+Implemented formalisms
+======================
+    
+At the moment, only the event scheduling formalism has been implemented in 
+pydsol-core. The process interaction, differential equations, flow modeling, 
+classical DEVS, Port-based DEVS, hierarchical DEVS, and agent-based modeling
+are all possible as extensions and will be added shortly. In the Java version
+of DSOL, differential equations, process modeling, and various DEVS variants 
+were implemented, which will be ported to Python.
+
+
+DSOL license
+============
+
+DSOL has an open source BSD 3-clause license.
+
+* Third party components used in DSOL can not have a license that is 
+  more restrictive than permissive licenses such as BSD, Apache, MIT, 
+  LGPL, Eclipse.
+
+* pydsol can be incorporated in part or in full in other products for 
+  any use (educational, commercial, whatever).
+
+* pydsol may be extended or adapted by anyone into anything else 
+  for any purpose.
