@@ -1,0 +1,20 @@
+[
+    {
+        key: test.func
+        import: servers.test
+        call: Test
+    }
+    {
+        key: test.file
+        import: servers.test
+        call: TestFile
+    }
+    {key: ip, val: 127.0.0.1},
+    { key: port, val: <8080, int>},
+    {
+        key: urls,
+        args: [
+            ./testz.js
+        ]
+    }
+]

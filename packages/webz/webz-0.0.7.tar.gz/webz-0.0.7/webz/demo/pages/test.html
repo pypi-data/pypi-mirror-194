@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Test</title>
+        <script src="/webz/js/base.js"></script>
+        <script src="/webz/js/packs.js"></script>
+    </head>
+    <body class="container">
+        <div id="app">
+            <div>
+                <input type = "file" id="file" />
+                <button class="btn btn-success" @click="upload">upload</button>
+            </div>
+            Page {{id}}
+            <div>
+                Hello World
+            </div>
+            <div>
+                <input v-model="testVal" style="width: 90%"></input>
+            </div>
+            <div>
+                <button @click="test()">Test</button>
+                <button @click="jump()">Jump</button>
+                <button v-if="id>0" @click="_.back()">Back</button>
+            </div>
+            result:
+            <div v-if="result">
+                {{result}}
+            </div>
+            <br v-for="i,j in 'asdf'" :key="j"></br>
+            <test-comp :key1="testVal" :val1="result" @test="jump"></test-comp>
+        </div>
+        <script>
+            component("testComp.html");
+            newVue({
+                data(){
+                    return {
+                        testVal: "hello",
+                        result: null,
+                        id: 0
+                    }
+                },
+                mounted(){
+                    console.log("Test Mount");
+                    var data = _.data();
+                    if (data && data['val']) {
+                        this.testVal = data['val'];
+                        this.id = data['id'];
+                    }
+                },
+                methods: {
+                    upload() {
+                        var file = document.getElementById("file");
+                        console.log("file:");
+                        _.file = file;
+                        var data = {
+                            file: file.files[0],
+                            name: "test.jpg"
+                        }
+                        $.upload("/rest/upload", data, (rst) => {
+                            console.log("rst:");
+                            console.log(rst);
+                        })
+                    },
+                    jump() {
+                        var data = {
+                            id: this.id+1,
+                            val: 'click "Test" to set'
+                        }
+                        if (this.result) {
+                            data['val'] = _.jd(this.result);
+                        }
+                        _.jump("test.html", data);
+                    },
+                    test() {
+                        var data = {
+                            val: this.testVal
+                        };
+                        $.json("/func/abc", data, (rst) => {
+                            this.result = rst;
+                        });
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

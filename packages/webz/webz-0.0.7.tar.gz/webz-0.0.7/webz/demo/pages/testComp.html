@@ -1,0 +1,35 @@
+<div>
+    <template id="testComp">
+        <div>
+            In Component
+            <div>
+                key: {{key1}}
+            </div>
+            <div>
+                val: {{val1}}
+            </div>
+            <button @click="test"> testComp</button>
+        </div>
+    </template>
+</div>
+<script>
+    Vue.component("testComp", {
+        template:"#testComp",
+        props: {
+            key1: {
+                type: String
+            },
+            val1: {
+                type: Object
+            }
+        },
+        data() {
+            return {}
+        },
+        methods: {
+            test(val) {
+                this.$emit("test", val);
+            }
+        }
+    });
+</script>
