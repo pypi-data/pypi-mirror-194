@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "flask-api-factory"
+version = "0.2.2"
+homepage = "https://github.com/rodrigopmatias/flask-api-factory/blob/main/README.md"
+repository = "https://github.com/rodrigopmatias/flask-api-factory"
+description = "one small flask rest api factory"
+authors = ["Rodrigo Pinheiro Matias <rodrigopmatias@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flask_api_factory"}]
+
+[tool.poetry.extras]
+mysql = ["mysql"]
+postgres = ["psycopg2-binary"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+gunicorn = "^20.1.0"
+flask-sqlalchemy = "^3.0.3"
+prometheus-flask-exporter = "^0.21.0"
+pydantic = {version = "^1.10.4", extras = ["dotenv"]}
+flask-migrate = "^4.0.4"
+pika = "^1.3.1"
+mysql = { version = "^0.0.3", optional = true }
+psycopg2-binary = {version = "^2.9.5", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+pytest-randomly = "^3.12.0"
+pytest-flask = "^1.2.0"
+pre-commit = "^3.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-vvv --cov=flask_api_factory --cov-branch --cov-report=term-missing"
+
+[tool.black]
+line_length = 109
+
+[tool.isort]
+profile = "black"
+line_length = 109
+
+[tool.skjold]
+sources = ["pyup", "gemnasium"]
+report_only = false
+cache_dir = '.skjold'
+cache_expires = 86400
+ignore_file = '.skjoldignore'
+verbose = true
