@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pydantic-env-settings"
+version = "0.1.0"
+description = "Pydantic BaseSettings Explicit"
+authors = ["Jakub <jjagielka@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "pydantic_env_settings" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
