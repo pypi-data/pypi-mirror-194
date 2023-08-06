@@ -1,0 +1,75 @@
+TictotApp {
+    align: center middle;
+    background: $surface;
+    layout: vertical;
+}
+
+ListItem {
+    grid-columns: 20% 1fr 20%;
+    grid-size: 3 1;
+    layout: grid;
+    min-height: 1;
+    padding: 1;
+}
+
+ListView {
+    min-height: 9;
+}
+
+Timer {
+    background: $boost;
+    color: $text;
+}
+
+TaskInput {
+    border: none;
+    display: block;
+    min-width: 9;
+}
+
+Display {
+    content-align: center middle;
+    min-height: 3;
+    text-opacity: 60%;
+}
+
+.total {
+    grid-columns: 20% 1fr 20%;
+    grid-size: 3 1;
+    height: 3;
+    layout: grid;
+    padding: 1;
+}
+
+.buttons {
+    height: 4;
+}
+
+#start {
+    dock: left;
+}
+
+#stop {
+    dock: right;
+}
+
+.counting {
+    color: $text;
+    text-style: bold;
+}
+
+.counting TimeDisplay {
+    text-opacity: 100%;
+}
+
+.counting TaskInput {
+    display: none;
+}
+
+.counting #start {
+    display: block;
+}
+
+.counting #stop {
+    display: block;
+}
