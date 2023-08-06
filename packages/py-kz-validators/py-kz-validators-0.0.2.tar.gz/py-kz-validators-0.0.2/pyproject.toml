@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=67.4.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-kz-validators"
+version = "0.0.2"
+authors = [
+  { name="Talgat Abdraimov", email="abdraimov.talga@gmail.com" },
+]
+description = "A collection of Python validators for various Kazakhstani identification numbers, such as the Individual Identification Number (IIN) and Taxpayer Identification Number (TIN)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+  [project.optional-dependencies]
+  dev = [
+    "black",
+
+    "pytest",
+    "pytest-cov",
+
+    "flake8",
+    "flake8-print",
+    "flake8-multiline-containers",
+    "flake8-builtins",
+    "flake8-import-order",
+    "flake8-commas",
+    "flake8-quotes",
+  ]
+
+[project.urls]
+homepage = "https://github.com/tlgtaa/py-kz-validators"
+repository = "https://github.com/tlgtaa/py-kz-validators.git"
+
+[tool.black]
+line-length=120
+target-version=['py310']
+skip-string-normalization=true
+
+[tool.bumpver]
+current_version = "0.0.2"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+    [tool.bumpver.file_patterns]
+    "pyproject.toml" = [
+        'current_version = "{version}"',
+        'version = "{version}"',
+    ]
+    "kz/validators/__init__.py" = ["{version}"]
