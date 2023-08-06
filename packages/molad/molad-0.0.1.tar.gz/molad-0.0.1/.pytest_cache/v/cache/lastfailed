@@ -1,0 +1,6 @@
+{
+  "src/molad/tests/test_molad.py": true,
+  "tests/test_molad.py::test_molad_friendly": true,
+  "tests/test_molad.py::test_molad_day": true,
+  "tests/test_molad.py::test_molad_hours": true
+}
