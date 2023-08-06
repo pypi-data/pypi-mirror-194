@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bookdog
+Version: 1.0.0
+Summary: This module provides the bookdog package.
+Author-email: Jim Anderson <jima.coding@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyQt5==5.15.7
+Requires-Dist: PyQt5-Qt5==5.15.2
+Requires-Dist: PyQt5-sip==12.11.0
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: bump2version >= 1.0.1 ; extra == "dev"
+Requires-Dist: bumpversion >= 0.6.0 ; extra == "dev"
+Requires-Dist: invoke >= 1.7.3 ; extra == "dev"
+Project-URL: Home, https://github.com/jima80525/bookdog
+Provides-Extra: dev
+
+# Bookdog
+Simple book database tracker.  Currently being rewritten to use QT
+
+## TODO
+
+* add about dialog with copyright, license, and version
+* filters (but maybe not as important with the sorted view?)
+* do I want menus instead of button? in addition to?
+* Packaging:
+  * move main.py to __main__.py and fixup
+  * get versioning cleaned up and bumpversion working correctly
+  * continue with https://realpython.com/pypi-publish-python-package/#publish-your-package-to-pypi
+
