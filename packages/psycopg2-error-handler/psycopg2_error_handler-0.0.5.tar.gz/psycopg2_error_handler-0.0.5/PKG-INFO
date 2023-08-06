@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: psycopg2_error_handler
+Version: 0.0.5
+Summary: Psycopg2 Error Handler
+Author: Alexander Lopatin
+License: MIT
+License-File: LICENSE
