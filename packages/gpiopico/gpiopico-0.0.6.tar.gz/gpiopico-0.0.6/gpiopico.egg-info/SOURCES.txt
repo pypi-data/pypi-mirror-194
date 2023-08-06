@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+gpiopico/__init__.py
+gpiopico/__main__.py
+gpiopico/input_devices.py
+gpiopico/output_devices.py
+gpiopico/utils.py
+gpiopico.egg-info/PKG-INFO
+gpiopico.egg-info/SOURCES.txt
+gpiopico.egg-info/dependency_links.txt
+gpiopico.egg-info/top_level.txt
