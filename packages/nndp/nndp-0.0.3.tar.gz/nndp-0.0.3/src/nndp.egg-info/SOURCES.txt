@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+examples/income_fluctuations/main.ipynb
+examples/income_fluctuations/model.py
+examples/income_fluctuations/simulation_results.csv
+src/nndp/__init__.py
+src/nndp/core.py
+src/nndp/policy_function.py
+src/nndp.egg-info/PKG-INFO
+src/nndp.egg-info/SOURCES.txt
+src/nndp.egg-info/dependency_links.txt
+src/nndp.egg-info/requires.txt
+src/nndp.egg-info/top_level.txt
