@@ -1,0 +1,13 @@
+
+[dev]
+black
+build
+click
+fastapi
+flask
+isort
+mkdocs
+pytest
+redis
+twine
+uvicorn
