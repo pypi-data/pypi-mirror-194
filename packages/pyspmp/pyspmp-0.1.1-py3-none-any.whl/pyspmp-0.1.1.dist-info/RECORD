@@ -1,0 +1,10 @@
+pyspmp/__init__.py,sha256=hGQ8z-q3eKV7vspJhIPBp0p8WC1iITYr7iFvU1VHZ1A,327
+pyspmp/carregar_csv.py,sha256=gyj08z5MY-Gl-1gCgSKRHicrJyNZxuFuVeeuZnf8DEo,290
+pyspmp/dataset/dataset.csv,sha256=xs4rYcSNs9xparGgnlMdNrxh3Gi-m93hFVu518Xhobs,8285393
+pyspmp/dataset.py,sha256=0OQYJvcK6ZpWzcEWkRryR4s8aYTcx-OvouBVtzS4sjc,4089
+pyspmp/parametros/parametros.csv,sha256=aHXPW4v841Xu3ZqfnhJy5sMe5jjmxJfHCwHbh90p9g8,8630
+pyspmp/periodos.py,sha256=ZaqG7iUINSVblwE6s3SeVOaXTYS31Dam_7qTvgS8jnU,2581
+pyspmp/variaveis_out.py,sha256=eNlLEjP1ewVDl7iEh3o1Ed314Q-_BSAzD4woKs5uGew,1905
+pyspmp-0.1.1.dist-info/METADATA,sha256=mmuKK0RW6Qw0Irzup_cwgwwMHsE5v-FU2necjp2CWH4,1102
+pyspmp-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pyspmp-0.1.1.dist-info/RECORD,,
