@@ -1,0 +1,4 @@
+include charchef/requirements.txt
+include charchef/thirdparty.json
+include charchef/README.MD
+include charchef/LICENSE

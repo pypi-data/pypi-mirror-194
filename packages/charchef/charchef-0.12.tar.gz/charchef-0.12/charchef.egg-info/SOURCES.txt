@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+charchef/LICENSE
+charchef/README.MD
+charchef/__init__.py
+charchef/requirements.txt
+charchef/thirdparty.json
+charchef.egg-info/PKG-INFO
+charchef.egg-info/SOURCES.txt
+charchef.egg-info/dependency_links.txt
+charchef.egg-info/requires.txt
+charchef.egg-info/top_level.txt
