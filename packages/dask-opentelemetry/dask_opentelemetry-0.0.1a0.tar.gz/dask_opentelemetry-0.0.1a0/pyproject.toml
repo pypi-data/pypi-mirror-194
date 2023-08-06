@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dask-opentelemetry"
+description = "Instrument Dask with OpenTelemetry"
+readme = "README.md"
+requires-python = ">=3.8, <4.0"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Hendrik Makait", email = "hendrik@makait.com" },
+]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "distributed>=2023.2.0",
+  "opentelemetry-api>=1.16.0",
+  "opentelemetry-sdk>=1.16.0",
+  "opentelemetry-semantic-conventions>=0.37b0",
+
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/hendrikmakait/dask-opentelemetry#readme"
+Issues = "https://github.com/hendrikmakait/dask-opentelemetry/issues"
+Source = "https://github.com/hendrikmakait/dask-opentelemetry"
+
+[tool.hatch.version]
+path = "dask_opentelemetry/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pre-commit",
+  "pytest",
+  "pytest-cov",
+]
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=dask_opentelemetry --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "dask_opentelemetry/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.isort]
+profile = "black"
