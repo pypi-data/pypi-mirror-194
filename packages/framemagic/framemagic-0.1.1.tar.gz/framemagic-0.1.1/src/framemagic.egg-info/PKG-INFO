@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: framemagic
+Version: 0.1.1
+Summary: Python magic based on frame stack call
+Home-page: https://github.com/sammnnz/PyMagic
+Author: Sam Nazarov
+Author-email: drozdosam@mail.ru
+License: MIT
+Keywords: frame,getframe,nameof,stackframe
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+Provides-Extra: testing
+License-File: LICENSE
+
+# PyMagic
+
+[![license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Tests](https://github.com/sammnnz/PyMagic/actions/workflows/tests.yml/badge.svg)
+[![codecov](https://codecov.io/gh/sammnnz/PyMagic/branch/master/graph/badge.svg?token=P8ZKEDO1MS)](https://codecov.io/gh/sammnnz/PyMagic)
+
+This is a Python package based on calling the stack of frames at runtime and analyzing the code object of frames.
+
+For example, the `nameof` function is implemented here (as in C#).

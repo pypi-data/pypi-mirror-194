@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/framemagic.egg-info/PKG-INFO
+src/framemagic.egg-info/SOURCES.txt
+src/framemagic.egg-info/dependency_links.txt
+src/framemagic.egg-info/not-zip-safe
+src/framemagic.egg-info/requires.txt
+src/framemagic.egg-info/top_level.txt
+src/pymagic/__init__.py
+src/pymagic/py.typed
+src/pymagic/pymagic.py
+src/pymagic/pymagic.pyi
