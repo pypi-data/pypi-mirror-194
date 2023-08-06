@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pytelerdac
+Version: 0.1.1
+Summary: Python Package for tele rdac client
+Author: imason
+Author-email: moy7@chinatelecom.cn
+Keywords: pytelerdac
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6,
+Description-Content-Type: text/markdown
+Requires-Dist: teleencrypt (==0.1.1)
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: rsa (>=4.9)
+
+Tele rdac python client
+==========================
