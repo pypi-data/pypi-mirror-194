@@ -1,0 +1,10 @@
+slim_trees/__init__.py,sha256=Pu6e99k-MEFp1QAFItfDhb8l8Rny49pbpS4ath-ERoU,1916
+slim_trees/_version.py,sha256=iu1LfpkR9atJZ3QuC_jQ1CqDDKaKnD7dPkn3OhswCgM,106
+slim_trees/compression_utils.py,sha256=1-QaenGHW3mH2MgJHp02YKU0m6GC7ttvVKE76oPjTqY,1758
+slim_trees/lgbm_booster.py,sha256=WwIDRwf5DKhRHDfSKiLbavAFo2EjZ7dXV2b9RkPrNf0,6834
+slim_trees/pickling.py,sha256=s6JLUyLcAP-7TpF7hOQUZYJtLuhzx5uH6jUozu1pSsI,5114
+slim_trees/sklearn_tree.py,sha256=pQG9NihWAhSIsCkUflc20JK2NJd7IxI8k3oa58w-NBE,4949
+slim_trees-0.0.0.dist-info/METADATA,sha256=FWm5B0LOqh0RU0jdIR-N9Ryt91rr3rzhkG6wR4vq5DU,1750
+slim_trees-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+slim_trees-0.0.0.dist-info/top_level.txt,sha256=PYzgHifWipaclxKx0RquHTS0tamXMDe8foMmbl6eXmI,11
+slim_trees-0.0.0.dist-info/RECORD,,
