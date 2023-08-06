@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: pbandplot
+Version: 0.1.1.2
+Summary: pbandplot: phonon band structure plot from phonopy result.
+Home-page: https://github.com/lkccrr/pbandplot
+Author: kan
+Author-email: luokan@hrbeu.edu.cn
+License: MIT
+Description: UNKNOWN
+Keywords: phonopy band structure plot
+Platform: Unix
+Platform: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
