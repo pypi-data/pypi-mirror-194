@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.cfg
+src/foma_with_lib/__init__.py
+src/foma_with_lib/attapply.py
+src/foma_with_lib/foma.py
+src/foma_with_lib/foma2js.py
+src/foma_with_lib/phonrule.py
+src/foma_with_lib.egg-info/PKG-INFO
+src/foma_with_lib.egg-info/SOURCES.txt
+src/foma_with_lib.egg-info/dependency_links.txt
+src/foma_with_lib.egg-info/top_level.txt
+src/foma_with_lib/c_libs/__init__.py
+src/foma_with_lib/c_libs/linux/libfoma.so.0.10.0
+src/foma_with_lib/c_libs/windows/libfoma.dll
+src/foma_with_lib/c_libs/windows/zlib1.dll
+test/test_foma.py
