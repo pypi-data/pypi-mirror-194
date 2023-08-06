@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pfc-geometry
+Version: 0.1.1
+Summary: A package for handling 3D geometry with a nice interface
+Home-page: https://github.com/PyFlightCoach/geometry
+Author: Thomas David
+Author-email: thomasdavid0@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: COPYING
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# README #
+
+Tools for handling 3D geometry, mostly just adds a nice interface to various of geometric enterties.
+
