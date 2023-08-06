@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "camellia"
+version = "0.0.1"
+authors = [
+  { name = "Yiming Liu", email = "artyomliu@hust.edu.cn" }
+]
+description = "A Python 3 library to speed up Verilog programming."
+readme = "README.md"
+requires-python = ">= 3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
