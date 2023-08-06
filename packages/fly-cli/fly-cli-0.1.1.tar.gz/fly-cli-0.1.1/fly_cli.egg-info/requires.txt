@@ -1,0 +1,6 @@
+
+[develop]
+pypandoc
+pytest
+twine
+wheel
