@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "lunni-cli"
+version = "0.1.1"
+description = "Lunni's CLI companion"
+license = "Apache-2.0"
+authors = ["Alexander Pushkov <ale@aedge.dev>"]
+readme = "README.md"
+homepage = "https://lunni.dev/"
+repository = "https://gitlab.com/lunni/lunni-cli"
+documentation = "https://lunni.dev/docs/cli/"
+keywords = ["docker", "swarm", "cli", "deploy"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Natural Language :: English",
+  "Topic :: Software Development",
+  "Topic :: System :: Software Distribution",
+]
+packages = [{include = "lunni_cli"}]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/lunni/lunni-cli/-/issues"
+
+[tool.poetry.scripts]
+lunni = "lunni_cli.app:app"
+lun = "lunni_cli.app:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.7.0"
+cookiecutter = "^2.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
