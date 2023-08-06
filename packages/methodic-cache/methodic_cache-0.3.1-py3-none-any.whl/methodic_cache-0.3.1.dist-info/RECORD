@@ -1,0 +1,9 @@
+methodic_cache/__init__.py,sha256=1CK4LbSdmDLRVfRyHTpFin98ofWoHK1JeX4SVazaWSA,109
+methodic_cache/_cache.py,sha256=YmVcOh-qRKSanhq3fu63lli-Uf2-QAdPb6M3diE3CiE,2209
+methodic_cache/_exceptions.py,sha256=IcLhqHIDn1t_lCOko5jlRDYr3mO2huZr4PNUhzD-rA0,231
+methodic_cache/_wrappers.py,sha256=hBhwNj2fd_hc4XKiL7rnrNO_5mApdXpo13POjH1DPOM,1598
+methodic_cache/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+methodic_cache-0.3.1.dist-info/LICENSE,sha256=7RttmVJYzYZV8qCdosu3Pj2-AcpW45mz1uEf0L4H8hs,1070
+methodic_cache-0.3.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+methodic_cache-0.3.1.dist-info/METADATA,sha256=5j8N3qHHysRnCPVcUnxSd0xzJNplfQv-N7KjSW2vh3A,4891
+methodic_cache-0.3.1.dist-info/RECORD,,
