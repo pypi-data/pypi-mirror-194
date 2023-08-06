@@ -1,0 +1,11 @@
+matplotlib>=3.0
+numpy
+scipy
+PyQt5
+lmfit
+
+[minuit]
+iminuit
+
+[repl]
+qtconsole
