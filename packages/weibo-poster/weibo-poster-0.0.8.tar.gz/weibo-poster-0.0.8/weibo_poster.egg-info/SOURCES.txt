@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+weibo_poster/__init__.py
+weibo_poster/biligo.py
+weibo_poster/utils.py
+weibo_poster/weibo.py
+weibo_poster.egg-info/PKG-INFO
+weibo_poster.egg-info/SOURCES.txt
+weibo_poster.egg-info/dependency_links.txt
+weibo_poster.egg-info/requires.txt
+weibo_poster.egg-info/top_level.txt
