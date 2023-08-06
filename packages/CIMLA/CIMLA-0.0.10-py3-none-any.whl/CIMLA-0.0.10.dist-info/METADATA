@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: CIMLA
+Version: 0.0.10
+Summary: Counterfactual Inference by Machine Learning and Attribution Models
+Home-page: https://github.com/PayamDiba/CIMLA
+Author: Payam Dibaeinia
+Author-email: dibaein2@illinois.edu
+License: MIT License
+Requires-Python: ==3.8.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dask (==2021.10.0)
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: numpy (==1.21.2)
+Requires-Dist: pandas (==1.3.3)
+Requires-Dist: scipy
+Requires-Dist: tensorflow (==2.2.0)
+Requires-Dist: dask-ml (==1.9.0)
+Requires-Dist: tables (==3.6.*)
+Requires-Dist: shap (==0.39.0)
+
+# CIMLA
+Counterfactual Inference by Machine Learning and Attribution Models
