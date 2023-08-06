@@ -1,0 +1,46 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "argus-api"
+description = "SDK for the Argus API"
+authors = ["mnemonic <opensource@mnemonic.no>"]
+version = "3.8.0"
+readme = "README.md"
+homepage = "https://mnemonic.no"
+license = "ISC"
+
+packages = [
+    { include = "argus_api" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+requests = "^2.25"
+# certifi dependency to make snyk happy.
+certifi=">=2022.12.7"
+importlib_metadata = "*"
+importlib-resources = "^5.4.0"
+requests-oauthlib = {version = "^1.3.1", optional = true}
+oauthlib = {version = "^3.2.1", optional = true}
+
+[tool.poetry.extras]
+oauth = ["requests-oauthlib"]
+
+[tool.poetry.dev-dependencies]
+requests-mock = "*"
+faker = "*"
+terminaltables = "*"
+black = "^22.1.0"
+pytest = "^6.2.2"
+commitizen = "^2.10.0"
+colorlog = "^5.0.1"
+Sphinx = "^5.1.1"
+sphinx-rtd-theme = "^1.0.0"
+sphinxcontrib-confluencebuilder = "^1.5.0"
+
+[[tool.poetry.source]]
+name = "artifactory"
+url = "https://artifactory.mnemonic.no/artifactory/api/pypi/virt-pypi/simple/"
+default = true
