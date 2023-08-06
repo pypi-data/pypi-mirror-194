@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ezdownloader/__init__.py
+ezdownloader/ezdownloader.py
+ezdownloader.egg-info/PKG-INFO
+ezdownloader.egg-info/SOURCES.txt
+ezdownloader.egg-info/dependency_links.txt
+ezdownloader.egg-info/entry_points.txt
+ezdownloader.egg-info/requires.txt
+ezdownloader.egg-info/top_level.txt
