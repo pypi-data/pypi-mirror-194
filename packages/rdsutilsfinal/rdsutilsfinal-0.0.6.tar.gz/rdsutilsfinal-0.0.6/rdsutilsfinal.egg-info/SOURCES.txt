@@ -1,0 +1,10 @@
+README.md
+rdsutilsfinal/__init__.py
+rdsutilsfinal/__main__.py
+rdsutilsfinal/setup.py
+rdsutilsfinal.egg-info/PKG-INFO
+rdsutilsfinal.egg-info/SOURCES.txt
+rdsutilsfinal.egg-info/dependency_links.txt
+rdsutilsfinal.egg-info/entry_points.txt
+rdsutilsfinal.egg-info/requires.txt
+rdsutilsfinal.egg-info/top_level.txt

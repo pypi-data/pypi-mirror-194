@@ -1,0 +1,3 @@
+[console_scripts]
+rdsutilsfinal = rdsutilsfinal.__main__:main
+
