@@ -1,0 +1,27 @@
+# Manifest syntax https://docs.python.org/2/distutils/sourcedist.html
+graft wheelhouse
+
+recursive-exclude __pycache__  *.pyc *.pyo *.orig
+
+include defi_protocols/config.json
+include defi_protocols/db/Aura_db.json
+include defi_protocols/db/Convex_db.json
+include defi_protocols/db/SushiSwap_db.json
+include defi_protocols/db/Symmetric_db.json
+include defi_protocols/prices/token_mapping.json
+
+include *.json
+exclude *.git*
+exclude *.coveragerc
+exclude *.sh
+exclude proc*
+exclude pylint*
+exclude README*
+
+include requirements*.*
+exclude requirements-dev.*
+include *.py
+
+prune .git
+prune venv
+prune test*
