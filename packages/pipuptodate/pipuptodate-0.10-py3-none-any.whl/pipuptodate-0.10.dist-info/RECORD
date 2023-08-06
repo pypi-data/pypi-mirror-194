@@ -1,0 +1,10 @@
+pipuptodate/LICENSE,sha256=D1zl09NUYVPZHBZlhxMZqm8KZZpk4NpBqWdZAI_v5AU,1090
+pipuptodate/README.MD,sha256=yLM2EfErZMQfmwI-wW8qK3mao7Gs_LpjLPc24FF2UF0,1430
+pipuptodate/__init__.py,sha256=f09pkI_6q3rcPZ1iU-3cO0Z3Of4zWNubIDQHMXBLZMg,7757
+pipuptodate/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipuptodate/thirdparty.json,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+pipuptodate-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+pipuptodate-0.10.dist-info/METADATA,sha256=2onmgqfB_R8cwoz0Xr1rgQzxFCRFGElEpz2UEJJ5s6g,2320
+pipuptodate-0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pipuptodate-0.10.dist-info/top_level.txt,sha256=_0EU2gRdcPxovuFEjnz6qOz3i2-RNCo_F5OIjhVRyp8,12
+pipuptodate-0.10.dist-info/RECORD,,
