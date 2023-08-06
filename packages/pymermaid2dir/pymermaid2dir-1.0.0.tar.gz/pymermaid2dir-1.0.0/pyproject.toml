@@ -1,0 +1,36 @@
+[build-system]
+requires = ["wheel", "setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pymermaid2dir"
+version = "1.0.0"
+authors = [
+  { name="sonoh5n", email="hsono10n1@gmail.com"},
+]
+description = "Python module for simple reading of Excel(.xlsx)"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sonoh5n/pymermaid2dir"
+"Bug Tracker" = "https://github.com/sonoh5n/pymermaid2dir/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["tests",]
+
+[tool.flake8]
+max-line-kength=88
+extend-ignore="E501, W503"
+--max-doc-length=1000
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tools.pytest.ini_options]
+testpaths = ["tests", ]
