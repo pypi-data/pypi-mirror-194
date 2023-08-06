@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pocket/__init__.py
+pocket/__main__.py
+pocket/app.py
+pocket/import_ssh.py
+ssh_pocket.egg-info/PKG-INFO
+ssh_pocket.egg-info/SOURCES.txt
+ssh_pocket.egg-info/dependency_links.txt
+ssh_pocket.egg-info/entry_points.txt
+ssh_pocket.egg-info/requires.txt
+ssh_pocket.egg-info/top_level.txt
