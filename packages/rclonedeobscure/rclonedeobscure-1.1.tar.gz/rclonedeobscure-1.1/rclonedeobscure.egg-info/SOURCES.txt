@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+rclonedeobscure/README.md
+rclonedeobscure/__init__.py
+rclonedeobscure/rclonedeobscure.py
+rclonedeobscure/requirements.txt
+rclonedeobscure.egg-info/PKG-INFO
+rclonedeobscure.egg-info/SOURCES.txt
+rclonedeobscure.egg-info/dependency_links.txt
+rclonedeobscure.egg-info/entry_points.txt
+rclonedeobscure.egg-info/requires.txt
+rclonedeobscure.egg-info/top_level.txt
