@@ -1,0 +1,16 @@
+fpcross/__init__.py,sha256=6eLvqoerg8aeNauI64bXispgVVsTsXGj1h1EZm8ybyI,158
+fpcross/equation.py,sha256=X9zEoR1MJ5V07tm2yxA8BI3j2kHlF7cRwCUlMk-xd30,12100
+fpcross/fpcross.py,sha256=AAId-QnogNorh2UUuTS6jWbOEUodO69wFG9yAwiKr5k,8688
+fpcross/fpcross_oup_diag.py,sha256=816vvXgtxnbR7U8_Z_UAqrppsieZbgmhH65L6wkRN5o,1131
+fpcross/plot.py,sha256=TcmHZmgPd4rIpVskJNUX6fFAcPwYv7N5ieFdHZdvCmg,3167
+fpcross/utils.py,sha256=9mqRUsfB9qAge1vyQWwluZkP72WkEEeri9jfotd5K5I,283
+fpcross/equation_demo/__init__.py,sha256=ZW1qVMdeXsPfJD0LZj8Bf_1Y34QVkk2tnTRebNqmjvw,161
+fpcross/equation_demo/equation_dif.py,sha256=LL8pVBn8NrxgsbZDlvUnQtym9FDVFYjVGehytiYPYYI,714
+fpcross/equation_demo/equation_dum.py,sha256=PZNQotcsfOsChGZIKyiQIUUGgIS2Jpzy272EZJYF7Fc,2608
+fpcross/equation_demo/equation_oup.py,sha256=-jE89_qb_0V5lN0vjWIKVsXM7KQkTUQ3hHfmu7XyHzQ,1783
+fpcross/equation_demo/equation_oup_univ.py,sha256=QwIRbQTiC4VTTQUK2LEkwiNYGJDSj-FAzsMAUGVX3Y4,1628
+fpcross-0.5.3.dist-info/LICENSE.txt,sha256=YxKZtJkw8zFxlJ6GmLD2QKiGBz6ZSy0HWyAJJa5KS-o,1080
+fpcross-0.5.3.dist-info/METADATA,sha256=8XnNQuLR4Z_1MtsW2luHeAOwiTwekeVpaUvNOxw97lU,4011
+fpcross-0.5.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fpcross-0.5.3.dist-info/top_level.txt,sha256=HDePD2ZBIcaQz_yedTvVDiYcBvcsP5ZLavpz_e6JTsU,8
+fpcross-0.5.3.dist-info/RECORD,,
