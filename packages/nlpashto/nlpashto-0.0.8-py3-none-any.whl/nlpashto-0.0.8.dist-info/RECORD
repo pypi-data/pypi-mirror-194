@@ -1,0 +1,9 @@
+nlpashto/__init__.py,sha256=hYMdnzL688tn54elwEQPmBS2QSdZeOVWKx0hhWkYzDg,89
+nlpashto/char_replace.py,sha256=XqfODHjls2EnyaKvqkkrugBmBjnGD9ZJSIi1rFkl3aQ,314
+nlpashto/functions.py,sha256=cLOLTfKMgwAzRugc0yU8oFk3HzlH7wZJKjS2VNkOfLs,1608
+nlpashto/utils.py,sha256=rHLuSU1Pz2S58_XG5e3ky95xr9_Ih30Y6q2s1vnmSGI,4881
+nlpashto-0.0.8.dist-info/LICENSE,sha256=0iwn6i1faCJte8DfDphN5RsDwusCcJw_yZ-WcumB8bw,1096
+nlpashto-0.0.8.dist-info/METADATA,sha256=cO5lViJpEc_jQEXiYnMVWakz4FXv-kvUKiem3l0-Wbs,2005
+nlpashto-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nlpashto-0.0.8.dist-info/top_level.txt,sha256=lhe3HpOug-7QT7qePidRWHMO7ozYX_VpzhItl6PNAvY,9
+nlpashto-0.0.8.dist-info/RECORD,,
