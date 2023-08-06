@@ -1,0 +1,1 @@
+foma_with_lib

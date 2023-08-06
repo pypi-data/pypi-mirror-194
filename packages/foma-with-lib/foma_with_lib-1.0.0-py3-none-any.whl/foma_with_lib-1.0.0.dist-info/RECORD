@@ -1,0 +1,13 @@
+foma_with_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foma_with_lib/attapply.py,sha256=8lgVPxbZE2PC-za2QYy5HRGuDPfN1YUGFOU1Mhio27s,7395
+foma_with_lib/foma.py,sha256=v8OaFdxJof51P1hl8VI3ublnv_uDP48n_j9lapu4EeU,21825
+foma_with_lib/foma2js.py,sha256=2JD1eYS2-udGjehmlHDBHE5ibs1DVbu_xTm_nG_5s0A,5156
+foma_with_lib/phonrule.py,sha256=bIwvC2eBIIUJrj7ntNfN8nZ8SBQSC54Snh4vGfdTYyI,4229
+foma_with_lib/c_libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foma_with_lib/c_libs/linux/libfoma.so.0.10.0,sha256=Z1YeTXwbzCkHwymhW-o-9kepVqSwZhsMqksNbNKMH8Y,644600
+foma_with_lib/c_libs/windows/libfoma.dll,sha256=h-U9No1yCz1UWnvuqkgz7N3V-Alklu8cfY3-Y42zRa8,1054108
+foma_with_lib/c_libs/windows/zlib1.dll,sha256=bLGlUqyDTeAMLIiqUwRR1TVTgRABiiA2Qhbg3jCJctI,120302
+foma_with_lib-1.0.0.dist-info/METADATA,sha256=c2QCQpK3bCeGUF9p2NVxUSMkpwo-rBm-mpXDWAOLdtA,165
+foma_with_lib-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+foma_with_lib-1.0.0.dist-info/top_level.txt,sha256=V__x_88skKHaHiK9BVHC48ZUwy2N-EX60vlTPY_1qX8,14
+foma_with_lib-1.0.0.dist-info/RECORD,,
