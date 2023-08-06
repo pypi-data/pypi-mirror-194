@@ -1,0 +1,3 @@
+[console_scripts]
+xmlsign = xmlsec.tools:sign_cmd
+xmlverify = xmlsec.tools:verify_cmd
