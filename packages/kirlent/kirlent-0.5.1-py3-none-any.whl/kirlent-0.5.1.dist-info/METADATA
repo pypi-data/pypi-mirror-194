@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: kirlent
+Version: 0.5.1
+Summary: Educational material builder.
+Keywords: 
+Author-email: "H. Turgut Uyar" <uyar@tekir.org>
+Requires-Python: ~=3.8
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Text Processing :: Markup
+Requires-Dist: invoke>=2.0
+Requires-Dist: kirlent[tests,lint] ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: build ; extra == "dev"
+Requires-Dist: flake8 ; extra == "lint"
+Requires-Dist: flake8-isort ; extra == "lint"
+Requires-Dist: mypy ; extra == "lint"
+Requires-Dist: pytest ; extra == "tests"
+Requires-Dist: pytest-cov ; extra == "tests"
+Project-URL: homepage, https://tekir.org/kirlent/
+Project-URL: repository, https://github.com/uyar/kirlent
+Provides-Extra: dev
+Provides-Extra: lint
+Provides-Extra: tests
+
+Kirlent
+=======
+
+Tools for building educational material.
+
+Dependencies
+------------
+
+- kirlent_docutils for ImpressJS and RevealJS slides.
+- decktape for PDF slides.
+- pdfjam for n-up PDF documents.
+
