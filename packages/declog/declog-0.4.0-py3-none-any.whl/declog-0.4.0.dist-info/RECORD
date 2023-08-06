@@ -1,0 +1,17 @@
+_version.py,sha256=QiCQVGOicQZY3DBr4tYPU9egzT1VgzOJGfLt9Q26uyU,160
+declog/__init__.py,sha256=g0TzANNZ_Jii08A5gEkEDp-yG6VWoR6VEKdjHy69a-U,107
+declog/core.py,sha256=vNsRbxlAfMyTmmvY4nlMJFs5-92aVLP6JaxQYvOpYSk,912
+declog/utils.py,sha256=hoQwZxP2-m8FKJHitILH53ceU3RLNfk8FPR4oYlywsg,215
+declog/database/__init__.py,sha256=3MZFz2DupQXVmr4PR4OabQAgaWSVTvGKqSeUa1CBKio,168
+declog/database/base_database.py,sha256=UwmVhIwxtF-u9GdxwAMI8hGx6v1W34wAzfmfuXmVOUA,386
+declog/database/pickle_database.py,sha256=9enOM8DmMe5qD1MZi-LDb1V7sWkzx0SUmCnySTAdfs0,770
+declog/database/std_out_database.py,sha256=SISY4m6Rs4WdeFmIUhpaakrcvPxEsIcKdEXi-hiFOIA,306
+declog/logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+declog/logger/base_logger.py,sha256=nqk3KpdWQp1J8osxJKJX_7wKl8v3XzCKSiEUU8hSYpg,2738
+declog/logger/default_logger.py,sha256=g2y_mgwKhq6OolsQjjYubrFeMHEKxfz9ug-tHqj6yfU,206
+declog/logger/mixins.py,sha256=gPkuzLFHtj7idhQffuL_WmI4lxYqQLRX4UvG2HasZuU,394
+declog-0.4.0.dist-info/LICENSE,sha256=X-9bGCX9JIA7NUEPzc8zTiAAy9RFDQ1epP5hS8vE2zc,1066
+declog-0.4.0.dist-info/METADATA,sha256=ZqnHAvsVkh-ohdiy-KFnnR2DXiOlRtlucWpxS76iJB4,2280
+declog-0.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+declog-0.4.0.dist-info/top_level.txt,sha256=uDO4WFrx0JbkNhHSwwxlUY89Oa-KFHFC7Dsic6LKeV4,16
+declog-0.4.0.dist-info/RECORD,,
