@@ -1,0 +1,13 @@
+COPYING
+README.md
+setup.py
+sandwine/__init__.py
+sandwine/__main__.py
+sandwine/_main.py
+sandwine/_metadata.py
+sandwine.egg-info/PKG-INFO
+sandwine.egg-info/SOURCES.txt
+sandwine.egg-info/dependency_links.txt
+sandwine.egg-info/entry_points.txt
+sandwine.egg-info/requires.txt
+sandwine.egg-info/top_level.txt
