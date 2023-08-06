@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+dejawidth/__init__.py
+dejawidth/default-widths.json
+dejawidth/measure.py
+dejawidth.egg-info/PKG-INFO
+dejawidth.egg-info/SOURCES.txt
+dejawidth.egg-info/dependency_links.txt
+dejawidth.egg-info/top_level.txt

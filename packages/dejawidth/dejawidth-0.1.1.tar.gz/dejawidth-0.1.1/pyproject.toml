@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dejaWidth"
+version = "0.1.0"
+description = "measure the width, in pixels, of a string rendered using dejavu sans 110pt"
+authors = ["Rahul Jha <rj722@protonmail.com>"]
+include = ["dejawidth/default-widths.json"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
