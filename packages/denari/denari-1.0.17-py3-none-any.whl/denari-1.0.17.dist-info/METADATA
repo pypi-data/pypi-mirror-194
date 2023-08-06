@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: denari
+Version: 1.0.17
+Summary: DenariAnalytics OpenSouce Business and Tax Tools
+Home-page: UNKNOWN
+Author: Fadil Karim
+Author-email: insights@denarianalytics.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENCE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: dash
+
+UNKNOWN
+
