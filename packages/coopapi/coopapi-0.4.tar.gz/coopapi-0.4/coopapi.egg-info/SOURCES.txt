@@ -1,0 +1,14 @@
+README.md
+setup.py
+coopapi/__init__.py
+coopapi/apiShell.py
+coopapi/enums.py
+coopapi/errors.py
+coopapi/http_request.py
+coopapi/http_request_handlers.py
+coopapi.egg-info/PKG-INFO
+coopapi.egg-info/SOURCES.txt
+coopapi.egg-info/dependency_links.txt
+coopapi.egg-info/not-zip-safe
+coopapi.egg-info/requires.txt
+coopapi.egg-info/top_level.txt
