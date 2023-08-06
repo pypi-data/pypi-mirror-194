@@ -1,0 +1,4 @@
+[console_scripts]
+bin2csv = utils.bin2csv:main
+bin2csvgui = utils.bin2csvgui:main
+
