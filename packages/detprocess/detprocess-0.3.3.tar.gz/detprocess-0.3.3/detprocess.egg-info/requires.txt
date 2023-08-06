@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+pyyaml
+qetpy>=1.6.2
+pandas
+pytesdaq>=0.2.8
+scikit-image
+iminuit>=2
+seaborn
