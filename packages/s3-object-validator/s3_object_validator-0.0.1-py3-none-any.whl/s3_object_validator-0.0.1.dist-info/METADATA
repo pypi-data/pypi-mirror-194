@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: s3-object-validator
+Version: 0.0.1
+Summary: Validator for S3 object key names
+Author-email: Scott Cooper <sgcooper78@gmail.com>
+Project-URL: Homepage, https://github.com/sgcooper78/s3_object_validator
+Project-URL: Bug Tracker, https://github.com/sgcooper78/s3_object_validator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# s3_object_validator
+S3 Object Validtor
+
+This tool is meant to scan through a directory or files to clean them up before you upload them directly to S3.
+This tool is destructive by default so make sure to run with -s if you want to just scan what files would cause potential issues.
+Run tool with 
+python3 s3_object_validator.py path
+
+## Import
+If you need to import then import the file
+from s3_object_validator import validator
