@@ -1,0 +1,2 @@
+[console_scripts]
+se_utils = se_utils.__main__:main
