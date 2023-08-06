@@ -1,0 +1,4 @@
+h5py
+numpy
+scipy>=1.7.3
+et-xmlfile>=1.0.1

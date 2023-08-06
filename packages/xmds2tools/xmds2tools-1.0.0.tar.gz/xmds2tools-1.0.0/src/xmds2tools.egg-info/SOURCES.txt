@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+examples/bc_groundstate.py
+examples/bessel_integration.py
+examples/groundstate_workedexamples.py
+src/xmds2tools/__init__.py
+src/xmds2tools/bessel.py
+src/xmds2tools/reader.py
+src/xmds2tools.egg-info/PKG-INFO
+src/xmds2tools.egg-info/SOURCES.txt
+src/xmds2tools.egg-info/dependency_links.txt
+src/xmds2tools.egg-info/requires.txt
+src/xmds2tools.egg-info/top_level.txt

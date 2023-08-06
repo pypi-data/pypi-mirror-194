@@ -1,0 +1,29 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=62.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xmds2tools"
+version = "1.0.0"
+description = "Tools to read .hdf5 and .xsil files generated using XMDS2 and functions to implement Bessel transformations and Bessel quadrature integration"
+readme = "README.md"
+authors = [{ name = "Craig Chisholm", email = "craig.chisholm@protonmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["XMDS2", "HDF5", "Bessel"]
+dependencies = [
+    "h5py",
+    "numpy",
+    "scipy >= 1.7.3",
+    "et-xmlfile >= 1.0.1",
+]
+requires-python = ">=3.5"
+
+[project.urls]
+Homepage = "https://github.com/CSChisholm/xmds2-tools"
