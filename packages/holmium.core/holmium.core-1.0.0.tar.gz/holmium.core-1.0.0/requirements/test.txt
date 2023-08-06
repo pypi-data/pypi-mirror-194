@@ -1,0 +1,9 @@
+-r main.txt
+coverage
+pytest
+pytest-cov
+hiro
+mock
+flask
+Flask-Testing
+Werkzeug
