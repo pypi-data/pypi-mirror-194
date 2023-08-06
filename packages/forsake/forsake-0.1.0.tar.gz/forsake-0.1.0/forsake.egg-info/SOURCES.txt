@@ -1,0 +1,16 @@
+README.md
+setup.py
+forsake/__init__.py
+forsake/cli.py
+forsake/client.py
+forsake/forker.py
+forsake/rpc.py
+forsake/server.py
+forsake.egg-info/PKG-INFO
+forsake.egg-info/SOURCES.txt
+forsake.egg-info/dependency_links.txt
+forsake.egg-info/entry_points.txt
+forsake.egg-info/requires.txt
+forsake.egg-info/top_level.txt
+test/test_client_server.py
+test/test_plugin_client_server.py
