@@ -1,0 +1,184 @@
+{
+  "language": "zh-hk",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<turn_off> <area> (風扇 | 吊扇)"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "<turn_off> <area> <light>",
+            "[<let>] <area> <light> <turn_off>"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "lights_area"
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "<turn_on> <area> <light>",
+            "[<let>] <area> <light> <turn_on>"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "lights_area"
+        },
+        {
+          "sentences": [
+            "<turn_on><area>(風扇|吊扇)"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_area"
+        }
+      ]
+    }
+  },
+  "settings": {
+    "ignore_whitespace": true
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "對唔住，我聽不明白",
+      "no_area": "沒有區域名叫 {{ area }}",
+      "no_domain": "區域名 {{ area }} 不包含 {{ domain }}",
+      "no_device_class": "區域名 {{ area }} 不包含 {{ device_class }}",
+      "no_entity": "無設備或實體叫 {{ entity }}",
+      "handle_error": "處理時發生意外錯誤"
+    },
+    "intents": {
+      "HassGetState": {},
+      "HassTurnOff": {
+        "default": "{{ slots.name }}已關閉",
+        "lights_area": "{{ slots.area }}燈已關閉",
+        "fans_area": "{{ slots.area }}風扇已關閉",
+        "cover_area": "{{ slots.area }}窗簾已關閉",
+        "cover_door": "{{ slots.area }}門已關閉",
+        "cover_window": "{{ slots.area }}窗戶已關閉"
+      },
+      "HassTurnOn": {
+        "default": "{{ slots.name }}已打開",
+        "lights_area": "{{ slots.area }}燈已打開",
+        "fans_area": "{{ slots.area }}風扇已打開",
+        "cover_area": "{{ slots.area }}窗簾已打開",
+        "cover_door": "{{ slots.area }}門已打開",
+        "cover_window": "{{ slots.area }}窗戶已打開"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "红色",
+          "out": "red"
+        },
+        {
+          "in": "橙色",
+          "out": "orange"
+        },
+        {
+          "in": "黄色",
+          "out": "yellow"
+        },
+        {
+          "in": "綠色",
+          "out": "green"
+        },
+        {
+          "in": "藍色",
+          "out": "blue"
+        },
+        {
+          "in": "紫色",
+          "out": "purple"
+        },
+        {
+          "in": "白色",
+          "out": "white"
+        },
+        {
+          "in": "黑色",
+          "out": "black"
+        },
+        {
+          "in": "棕色",
+          "out": "brown"
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        {
+          "in": "c|攝氏|度|℃",
+          "out": "celsius"
+        },
+        {
+          "in": "f|華氏|度|℉",
+          "out": "fahrenheit"
+        }
+      ]
+    },
+    "brightness_level": {
+      "values": [
+        {
+          "in": "(最大|最光|最高|最亮)",
+          "out": 100
+        },
+        {
+          "in": "(最小|最暗|最低|最黑)",
+          "out": 1
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "name": "{name}[的|嘅]",
+    "area": "{area}[的|嘅]",
+    "let": "[請|把|给|讓]",
+    "all": "(全部|所有)[的]",
+    "what_is": "是什麼",
+    "how_many_is": "(是|有)多少",
+    "brightness": "[百分之]{brightness}[%]",
+    "to": "(為|到|至)",
+    "set_to": "(設置|設定|調節|調)(為|到|至)",
+    "turn_on": "(打開|開啟|開|着)",
+    "turn_off": "(關閉|關掉|關了|關|閂)",
+    "open": "(打開|開)",
+    "close": "(關閉|關掉|關了|關|閂)",
+    "light": "(燈|吸頂燈|筒燈|射燈|檯燈|台燈|床頭燈|燈光)[的|嘅]",
+    "temp": "溫度",
+    "temperature": "{temperature} [{temperature_unit}]"
+  },
+  "skip_words": []
+}
