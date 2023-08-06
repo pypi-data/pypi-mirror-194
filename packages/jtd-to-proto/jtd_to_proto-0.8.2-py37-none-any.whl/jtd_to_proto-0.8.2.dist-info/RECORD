@@ -1,0 +1,10 @@
+jtd_to_proto/__init__.py,sha256=LkGAtyHF9jn8Z83ETqu8DV5NwsJiw0TvYVlIdkAEqsE,1127
+jtd_to_proto/descriptor_to_file.py,sha256=4FNdgvdezwsh0vLklGGonx-_VMbRf_W-E7s0nYobB5I,7714
+jtd_to_proto/descriptor_to_message_class.py,sha256=ZVJOSFm3E8Zw8wzj8RrvjGcJq615eEPm2qnKiQnKHH0,3380
+jtd_to_proto/json_to_service.py,sha256=lHZ1bzDaEgQuO1iQm18xTz6n5UNJkeXOdRwZ-i9QrOU,9006
+jtd_to_proto/jtd_to_proto.py,sha256=D5YdHfZgnKOD9Q9Bd-ZhZhpe274CyqrkULNMoo5BPy8,26271
+jtd_to_proto-0.8.2.dist-info/LICENSE,sha256=t-ZkY-vak1QWjzid8VIzMds6wT0xEafbk406cLmdj_Q,1088
+jtd_to_proto-0.8.2.dist-info/METADATA,sha256=OFWuH6EDSkTg3BO2GQCNdGg9wvjUjkoKX-xUYJw40XA,4584
+jtd_to_proto-0.8.2.dist-info/WHEEL,sha256=2xGNLE5j1eEI8-cj_72WFM0Q35Swggz6D_mbZrAPXdo,93
+jtd_to_proto-0.8.2.dist-info/top_level.txt,sha256=EDJIuz7w8kyKYDIsdOjD8MLYOJ_SGhYDXAvnBSEJyQg,13
+jtd_to_proto-0.8.2.dist-info/RECORD,,
