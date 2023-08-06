@@ -1,0 +1,14 @@
+panda_model-0.1.0.dist-info/RECORD,,
+panda_model-0.1.0.dist-info/WHEEL,sha256=zT8EC17V1uSVazzJde2QDv7xip216U_JEmvOBCNqIUw,153
+panda_model-0.1.0.dist-info/METADATA,sha256=3lvkIZN6BnC5n2BCfphIL2rHf-8kJf_WuEFuZZM5NpM,14705
+panda_model-0.1.0.dist-info/entry_points.txt,sha256=hIFA4MU4Z84tEARfIE2PKO1e3wp6FAKxcxGNrYIf5ts,67
+panda_model.libs/libPocoNet-ac8eb170.so.31,sha256=19JOTANuZKAUPi2e9OJq1bF2qgrTOWPCrRcD5qGwb3U,1615409
+panda_model.libs/libPocoFoundation-c26869a6.so.31,sha256=-KR9BM4Jp7wQoZxoW-dXqBFYUpD_9i4iJXZ4b_pLi_k,2252345
+panda_model.libs/libpcre-9513aab5.so.1.2.0,sha256=Au2oUOBJMWVtivgfUXG_902L7BVT09hcPTLX_F7-iGQ,406817
+panda_model/download.py,sha256=rrnj1ohCxdsBBs6Da0cNaw_l9Jv4ap8CTfXwrqt6UbE,1568
+panda_model/__init__.pyi,sha256=iYEDrlnLcwbTrEB_udkORzmRqEIRJHVsuUMCUc8tndE,2972
+panda_model/__init__.py,sha256=s8T9aKZKpYMYZIIzEFhup_WxUGIH52GrGzFZaVqGmFE,1959
+panda_model/_core.cpython-37m-x86_64-linux-gnu.so,sha256=57BK4gcoVCyPTwtEchDs4zdkofdPRPtpBe6Q2eelZ3A,475681
+panda_model/_core/__init__.pyi,sha256=z6nV8IFQ-Q1rYUuoDq7m7ec031A_qhXzvmCTNg0VwqI,11456
+panda_model-0.1.0.data/headers/include/pandamodel/model.h,sha256=o8hOMom_Yi_yWYPNrQeRlgA0gjuJ1CxdhcoaiOmnEvQ,6071
+panda_model-0.1.0.data/headers/include/pandamodel/defaults.h,sha256=fQbZEw_teqCTB9nT2RvgibxBCnhgQT7vQ00FN_itIes,304
