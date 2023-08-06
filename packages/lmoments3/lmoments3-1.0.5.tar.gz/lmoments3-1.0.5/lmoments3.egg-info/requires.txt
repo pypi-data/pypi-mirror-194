@@ -1,0 +1,10 @@
+numpy
+scipy
+
+[dev]
+black
+blackdoc
+flake8
+pydocstyle
+sphinx
+sphinx-rtd-theme>=1.0
