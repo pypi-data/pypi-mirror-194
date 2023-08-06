@@ -1,0 +1,5 @@
+changepoint-0.2.0.dist-info/METADATA,sha256=Gwdzj0rXyJCaRnNOPWqfue5u9xkGwCuYpzELHJyNM5c,2708
+changepoint-0.2.0.dist-info/WHEEL,sha256=LFhk541pG6KE1ZAhFfjoP1l6Mar2MPuXcCsS8D4MpPc,127
+pychangepoint/__init__.py,sha256=ZZ1U7EvCRRdmClMGt_aESbYgsTKiIsU99Q5EYlqu2sk,135
+pychangepoint/pychangepoint.cpython-39-s390x-linux-gnu.so,sha256=tKz0jrCHIezW6_MQvKh9PThHyOaG4OyBui7dK_J2yQE,6320880
+changepoint-0.2.0.dist-info/RECORD,,
