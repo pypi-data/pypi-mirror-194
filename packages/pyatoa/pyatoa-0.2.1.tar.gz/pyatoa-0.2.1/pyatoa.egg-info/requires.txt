@@ -1,0 +1,17 @@
+obspy
+pyasdf
+pandas
+cartopy
+pyyaml
+pypdf2
+pyflex
+pyadjoint
+pysep-adjtomo
+
+[dev]
+pytest
+ipython
+ipdb
+
+[test]
+pytest
