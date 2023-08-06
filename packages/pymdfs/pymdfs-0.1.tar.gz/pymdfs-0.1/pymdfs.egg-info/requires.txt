@@ -1,0 +1,9 @@
+awx
+numpy>=1.10
+xarray
+pandas
+logzero>=1.0
+pyyaml
+protobuf
+retrying
+httplib2
