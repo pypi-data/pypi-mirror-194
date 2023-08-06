@@ -1,0 +1,31 @@
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Index of {{ title }}</title>
+</head>
+<body>
+<h1>Index of {{ title }}</h1>
+<hr>
+<pre><a href="../">../</a>
+{% for f in body -%}
+{% set len = f.path | length -%}
+{% if len < 50 -%}
+    <a href="{{ f.path }}">{{ f.path }}</a>{{ ('{:>' + (70 - len) | string + '}').format(f.time) }}{{ '{:>20}'.format(f.size) }}
+{% else -%}
+    <a href="{{ f.path }}">{{ f.path[:47] }}..></a>{{ '{:>20}'.format(f.time) }}{{ '{:>20}'.format(f.size) }}
+{% endif -%}
+{% endfor -%}
+</pre>
+<hr>
+
+<form id="file" method="post" enctype="multipart/form-data" action="">
+    <input type="file" name="files" multiple/>
+    <input type="submit" value="上传"/>
+</form>
+
+<script>
+    document.getElementById("file").action = `${location.origin}/upload?url=${location.href}`
+</script>
+
+</body>
+</html>
