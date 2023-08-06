@@ -1,0 +1,5 @@
+pytest>=3.7.0
+requests
+python-dateutil
+polling
+requests-cache==0.9.8
