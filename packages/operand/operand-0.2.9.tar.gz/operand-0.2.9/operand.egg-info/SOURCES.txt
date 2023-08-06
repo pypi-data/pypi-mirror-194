@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+./client.py
+./mcp/file/v1/file_pb2.py
+./mcp/operand/v1/operand_pb2.py
+./mcp/tenant/v1/tenant_pb2.py
+operand.egg-info/PKG-INFO
+operand.egg-info/SOURCES.txt
+operand.egg-info/dependency_links.txt
+operand.egg-info/requires.txt
+operand.egg-info/top_level.txt
