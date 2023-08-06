@@ -1,0 +1,189 @@
+Metadata-Version: 2.1
+Name: zymod
+Version: 0.0.1.18
+Summary: ZhiYan Python SDK
+Home-page: https://gitee.com/warp-drive-tech/libzymod-python
+Author: Chengdu Geek Camp
+Author-email: lq@cdgeekcamp.com
+License: MIT
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: grpcio-tools
+Requires-Dist: setuptools
+Requires-Dist: happy-python
+Requires-Dist: wheel
+Requires-Dist: zygrpc
+Requires-Dist: cryptography
+Requires-Dist: pyinotify
+Requires-Dist: dbus-python
+Requires-Dist: meson
+Requires-Dist: ninja
+
+# libzymod-python
+
+智眼Python SDK
+
+## 单元测试
+
+基于 `test` 文件夹中的 `\\__init__.py` -> `load_tests` 自动发现：
+
+`python -m unittest tests`
+
+## 安装SDK
+
+### 从 pip 安装
+
+`pip install -U zymod`
+
+### 使用方法
+
+#### 使用
+
+比如：
+
+`from zymod import upload`
+
+### 本地打包安装
+
+#### 打包
+
+安装依赖包：
+
+`pip install -U setuptools wheel`
+
+运行：
+
+`rm -rf build/ dist/ zymod.egg-info/ && python setup.py bdist_wheel`
+
+在 `dist` 目录下会生成类似 `zymod-1.0.0-py3-none-any.whl` 的安装包。
+
+#### 本地安装
+
+全局安装：
+
+`sudo pip install -U dist/zymod-*-py3-none-any.whl`
+
+用户目录安装：
+
+`pip install --user -U dist/zymod-*-py3-none-any.whl`
+
+#### 卸载
+
+`pip uninstall zymod`
+
+### 上传至PyPI
+
+#### 配置文件
+
+`~/.pypirc`
+
+```
+[distutils]
+index-servers=
+    pypi
+
+[pypi]
+username: 
+password: 
+```
+
+#### 安装上传工具
+
+`pip install -U twine`
+
+#### 上传
+
+`twine upload dist/*`
+
+如果使用国内镜像源，需要等一两天国内服务器才会同步官方源。
+
+可以临时指定官方源安装：
+
+`python3 -m pip install -i https://pypi.org/simple/ example-pkg`
+
+## FQA
+
+### 安装dbus-python时，出现单元测试链接错误
+
+#### 标准输出
+
+```text
+      [29/32] Linking target _dbus_glib_bindings.cpython-310-x86_64-linux-gnu.so
+      [30/32] Compiling C object test/dbus_py_test.cpython-310-x86_64-linux-gnu.so.p/dbus_py_test.c.o
+      [31/32] Linking target test/dbus_py_test.cpython-310-x86_64-linux-gnu.so
+      [32/32] Linking target test/test-import-repeatedly
+      FAILED: test/test-import-repeatedly
+      cc  -o test/test-import-repeatedly test/test-import-repeatedly.p/import-repeatedly.c.o -Wl,--as-needed -Wl,--no-undefined -Wl,--start-group /usr/local/python-3.10.4/lib/libpython3.10.a -Wl,--end-group
+      /usr/local/python-3.10.4/lib/libpython3.10.a(thread.o): In function `init_condattr':
+      /root/download/Python-3.10.4/Python/thread_pthread.h:157: undefined reference to `pthread_condattr_setclock'
+      /usr/local/python-3.10.4/lib/libpython3.10.a(thread.o): In function `PyThread_tss_create':
+      /root/download/Python-3.10.4/Python/thread_pthread.h:894: undefined reference to `pthread_key_create'
+      /usr/local/python-3.10.4/lib/libpython3.10.a(thread.o): In function `PyThread_start_new_thread':
+      /root/download/Python-3.10.4/Python/thread_pthread.h:296: undefined reference to `pthread_create'
+      /root/download/Python-3.10.4/Python/thread_pthread.h:313: undefined reference to `pthread_detach'
+      /usr/local/python-3.10.4/lib/libpython3.10.a(thread.o): In function `PyThread_tss_delete':
+```
+
+#### 解决方法
+
+```bash
+mkdir -p ~/downloads
+cd ~/downloads
+pip3 install meson ninja
+ln -s /usr/local/python3/bin/meson /usr/local/bin/
+ln -s /usr/local/python3/bin/ninja /usr/local/bin/
+
+yum install -y dbus-devel glib2-devel patch
+
+wget https://github.com/freedesktop/dbus-python/archive/refs/tags/dbus-python-1.3.2.tar.gz -O dbus-python-1.3.2.tar.gz
+rm -rf dbus-python-dbus-python-1.3.2
+tar xf dbus-python-1.3.2.tar.gz
+cd dbus-python-dbus-python-1.3.2
+
+cat << EOF > fix_testcase_link_err.patch
+--- test/meson.build	2022-09-07 04:37:31.000000000 +0800
++++ test/meson.build.fix	2022-12-16 13:35:54.497893457 +0800
+@@ -90,15 +90,23 @@
+ 
+ compiled_test_cases = ['import-repeatedly']
+ 
++libm = cc.find_library('m')
++libdl = cc.find_library('dl')
++libutil = cc.find_library('util')
++
+ foreach test_case : compiled_test_cases
+     exe = executable(
+         'test-' + test_case,
+         test_case + '.c',
+         dependencies: [
++            libm,
++            libdl,
++            libutil,
+             py.dependency(embed: true),
+         ],
+         install: get_option('installed_tests'),
+         install_dir: installed_test_testdir,
++        link_args: '-pthread'
+     )
+     test(
+         test_case,
+EOF
+
+patch -p0 < fix_testcase_link_err.patch
+rm -f fix_testcase_link_err.patch
+
+python3 -m build -w
+pip3 install dist/dbus_python-1.3.2-cp310-cp310-linux_x86_64.whl
+
+pip3 show dbus-python
+
+cd ~/downloads
+rm -rf dbus-python-dbus-python-1.3.2
+```
