@@ -1,0 +1,7 @@
+setup.py
+pyslinger/__init__.py
+pyslinger/main.py
+pyslinger.egg-info/PKG-INFO
+pyslinger.egg-info/SOURCES.txt
+pyslinger.egg-info/dependency_links.txt
+pyslinger.egg-info/top_level.txt
