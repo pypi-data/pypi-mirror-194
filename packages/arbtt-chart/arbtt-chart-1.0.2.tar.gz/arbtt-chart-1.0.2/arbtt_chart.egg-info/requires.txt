@@ -1,0 +1,12 @@
+pandas>=1.0.0
+
+[dev]
+build>=0.7
+cram
+flake8>=3.7.0
+isort>=5.0
+mypy>=0.900
+twine
+
+[test]
+pytest
