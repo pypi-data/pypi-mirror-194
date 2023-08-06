@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: Copyright 2023 xlogic <https://xlogic.dev> and contributors to the project
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileContributor: 2023 Tymoteusz Blazejczyk <tymoteusz.blazejczyk@tymonx.com>
+
+[project]
+name = "rdl2nd"
+description = "It generates registers memory map documentation from SystemRDL input files to NaturalDocs output."
+version = "0.1.0"
+license = {text = "Apache-2.0"}
+readme = {file = "README.md", content-type = "text/markdown"}
+keywords = ["SystemRDL", "NaturalDocs", "documentation", "FPGA", "ASIC", "RTL", "HDL"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+maintainers = [
+    { name = "Tymoteusz Blazejczyk", email = "tymoteusz.blazejczyk@tymonx.com" }
+]
+
+[project.urls]
+homepage = "https://rdl2nd.xlogic.dev"
+documentation = "https://rdl2nd.xlogic.dev"
+repository = "https://gitlab.com/xlogic/tool/rdl2nd"
+
+[project.scripts]
+rdl2nd = "rdl2nd:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["lib"]
