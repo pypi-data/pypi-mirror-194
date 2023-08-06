@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: web3-security-engine
+Version: 1.2.8
+Summary: Web3 Security Engine
+Home-page: https://debank.com
+Author: Debank
+Author-email: security@debank.com
+Requires-Python: >=3.7
