@@ -1,0 +1,9 @@
+h3daemon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h3daemon/app.py,sha256=k1L_6t5WUE1xYdApxdonHJwvretRbpuWax-1e4Jvg4k,3674
+h3daemon/cli.py,sha256=QTtAH2HGreTFnbxgiLuqK7RyBHclkKkrRHHEhTs_XMg,3791
+h3daemon/process.py,sha256=OkwVQUjk_wPpdu2fxbPynuBPLfrheqYEMpbAm-GVIyU,1758
+h3daemon-0.9.3.dist-info/LICENSE,sha256=VeypA5u6oDDoZK7tEa4h2TeJ9GrHzr2Tss6RyDIcRVk,1063
+h3daemon-0.9.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+h3daemon-0.9.3.dist-info/entry_points.txt,sha256=EEVEMyo13JTCTA575SwjkSWysTnha0UMw8ujMYWtjp8,45
+h3daemon-0.9.3.dist-info/METADATA,sha256=fd_jRYU8VjnNtUwx0JSByzooLoW2G9RNY_3QZmroUrA,3270
+h3daemon-0.9.3.dist-info/RECORD,,
