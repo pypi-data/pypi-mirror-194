@@ -1,0 +1,15 @@
+#!python
+
+import jsii
+import sys
+
+__jsii_assembly__ = jsii.JSIIAssembly.load(
+    "@cdk-use-cases/custom-cloud9-ssm",
+    "1.2.0",
+    "cdk_use_cases.custom_cloud9_ssm",
+    "custom-cloud9-ssm@1.2.0.jsii.tgz",
+)
+
+__jsii_assembly__.invokeBinScript(
+    "@cdk-use-cases/custom-cloud9-ssm", "custom-cloud9-ssm", sys.argv[1:]
+)
