@@ -1,0 +1,2 @@
+[console_scripts]
+conditor = conditor.__main__:main
