@@ -1,0 +1,9 @@
+selenium_loader/__init__.py,sha256=9Wd3gC9HBUANCUIxYxL4_zj0p9xN-xh458kqK5L-um0,258
+selenium_loader/action_executor.py,sha256=CZNSqUTNKJnHKZ33KCTbzU-E96GRF4AvFgeMMZ-KGy4,2318
+selenium_loader/browser.py,sha256=vooY1fVHpFJ7vP5aWEwga6WcXXNdUGdzwX7e4m3Ibxc,3462
+selenium_loader/config.py,sha256=PZeQNQGvQ0KtzZVzT6xLKuctv-QfUlT4b38IZwvYXvY,1840
+selenium_loader/custom_web_driver_handler.py,sha256=MmWVGmwcXKsGe8HTo6-9_Z7PXiQleyF_oXp9IEnT4lg,890
+selenium_loader-0.1.7.dist-info/LICENSE,sha256=Xh3qh14sKhcH62nKZO7h-vao8t-BgjCUPVkPeU0So1k,11365
+selenium_loader-0.1.7.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+selenium_loader-0.1.7.dist-info/METADATA,sha256=4L56sUBYWVcircmUPQ467G-8TzSwkKhB42eGA3lPfAw,3108
+selenium_loader-0.1.7.dist-info/RECORD,,
