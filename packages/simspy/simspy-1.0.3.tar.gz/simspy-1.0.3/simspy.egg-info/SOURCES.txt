@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+simspy/__init__.py
+simspy/fcsimspy.py
+simspy.egg-info/PKG-INFO
+simspy.egg-info/SOURCES.txt
+simspy.egg-info/dependency_links.txt
+simspy.egg-info/requires.txt
+simspy.egg-info/top_level.txt
