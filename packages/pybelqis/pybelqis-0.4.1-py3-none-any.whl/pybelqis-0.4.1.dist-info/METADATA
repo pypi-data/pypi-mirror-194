@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pybelqis
+Version: 0.4.1
+Summary: A python client of Belqis systems. Allows you to query the services of Belqis systems from a python program
+Author-email: Ahmed Khorsi <ahmedkhorsi18@gmail.com>
+Project-URL: Homepage, https://github.com/ahmedkhorsi/pybelqis
+Project-URL: Bug Tracker, https://github.com/ahmedkhorsi/pybelqis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: gql
+Requires-Dist: aiohttp
+
+# Belqis client by Ahmed Khorsi
+
+This is a python client for Belqis System
+https://belqis.intelgx.com
+
+# Installation
+
+First you will have to sign up to get an API key
+https://belqis.intelgx.com/signup
+
+then install the package
+
+`pip install -U pybelqis`
+
+# Usage
+
+```python
+from belqis import Belqis
+b = Belqis(token='<put in here the token you get from https://belqis.intelgx.com/dashboard>')
+
+# Diactritization
+r = b.tashkeel('السلام عليكم')
+
+# Other services
+IN SHAA ALLAH will be made available
+```
