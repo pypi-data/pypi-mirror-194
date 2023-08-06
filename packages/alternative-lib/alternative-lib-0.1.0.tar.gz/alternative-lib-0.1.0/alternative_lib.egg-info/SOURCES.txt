@@ -1,0 +1,9 @@
+README.md
+setup.py
+alternative_lib/__init__.py
+alternative_lib/alternative_client.py
+alternative_lib.egg-info/PKG-INFO
+alternative_lib.egg-info/SOURCES.txt
+alternative_lib.egg-info/dependency_links.txt
+alternative_lib.egg-info/requires.txt
+alternative_lib.egg-info/top_level.txt
