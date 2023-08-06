@@ -1,0 +1,36 @@
+[project]
+name = "convertmusic"
+version = "1.0.1"
+description = "A simple music converter for local personal use"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = 'GPL-3.0-or-later'}
+keywords = ["music", "conversion", "ffmpeg"]
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Multimedia :: Sound/Audio",
+  "Topic :: Multimedia :: Sound/Audio :: Conversion",
+  "Topic :: Utilities",
+]
+
+[[project.authors]]
+name = 'Taylor C. Richberger'
+email = 'taywee@gmx.com'
+
+[[project.maintainers]]
+name = 'Taylor C. Richberger'
+email = 'taywee@gmx.com'
+
+[project.urls]
+repository = "https://gitlab.com/Taywee/convertmusic"
+
+[project.scripts]
+convertmusic = "convertmusic.__main__:main"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
