@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling", "rpy2", "pandas"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nwslpy"
+version = "0.0.0.1"
+authors = [
+  { name="Alison Gale", email="agale123.dev@gmail.com" },
+]
+description = "Python wrapper around the nwslR library"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nwslR/nwslpy"
+"Bug Tracker" = "https://github.com/nwslR/nwslpy/issues"
