@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AreaVol
+Version: 0.0.1
+Summary: Package to calculate are and volume
+Author-email: Rachit Murarka <murarka.10.rachit.v@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Are Volume Library
