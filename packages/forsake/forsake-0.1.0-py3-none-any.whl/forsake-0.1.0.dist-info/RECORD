@@ -1,0 +1,11 @@
+forsake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forsake/cli.py,sha256=-8fRW550j59t7BI9gLgiTFJ5Ozjbw4tS52-6pRmxHcM,2026
+forsake/client.py,sha256=NsPtWX8uB9wY-kHXks96qBzFqBQzLBhuhXR0eZbv1Kc,3683
+forsake/forker.py,sha256=JQFzaYUfI8kwSNk0VnmPsz5wR6pTYwBzRx0NWSO1b-s,1528
+forsake/rpc.py,sha256=ZIOafXCx09fP2jUL3lVH_G6hYEvD3tVRWjbF4b_KFxE,2297
+forsake/server.py,sha256=xQYYBdVqE3vV2zlSnx9-7gfUw58jbC4kui1WZug1kDc,3087
+forsake-0.1.0.dist-info/METADATA,sha256=jLrV2zOWHHaJABkE5kcsI5J8rhm0-Ec3IxxB8Ez_5jw,633
+forsake-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+forsake-0.1.0.dist-info/entry_points.txt,sha256=y8TfQQyQg-wj4PIskl5iXXESjhRu4bBqlpEAZMTnizM,90
+forsake-0.1.0.dist-info/top_level.txt,sha256=vE5-5psZmtbmHkLSll8LCyZ0mnH6jes6HtHVjE8tuYo,8
+forsake-0.1.0.dist-info/RECORD,,
