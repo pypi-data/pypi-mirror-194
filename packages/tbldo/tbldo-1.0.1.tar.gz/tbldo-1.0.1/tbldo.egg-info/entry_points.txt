@@ -1,0 +1,2 @@
+[console_scripts]
+tbldo = tbldo.__main__:main
