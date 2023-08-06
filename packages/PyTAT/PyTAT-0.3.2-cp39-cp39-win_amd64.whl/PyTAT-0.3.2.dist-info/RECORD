@@ -1,0 +1,10 @@
+TAT.cp39-win_amd64.pyd,sha256=bymZQPVFA87GfVDtdQ3WyNpDT0hyAkXFYKQhfu5pkug,45721600
+PyTAT-0.3.2.data/platlib/.load-order-PyTAT-0.3.2,sha256=cnYPhvEdv72dtVNGqmyqOKJrsLBd0Z3ntv80GH4_UUs,79
+PyTAT-0.3.2.data/platlib/concrt140.dll,sha256=LcInbOOJ48oiQJhNg6uGn79KmboUrzdf7ihwkGPmVKc,316816
+PyTAT-0.3.2.data/platlib/libopenblas-d54d17f357bdff8f5b0b4326a8b4b0a6.dll,sha256=x_UhtQdobdwlvudTioDDdB139be2wSvd9miU5nLuvgs,48536473
+PyTAT-0.3.2.data/platlib/msvcp140.dll,sha256=2ExkDbO80wjmHYuP056wph8qowp8J4dldxx7VAEWp_U,621960
+PyTAT-0.3.2.dist-info/DELVEWHEEL,sha256=Se2c82deAxxcLhM_wk6KrWXSqS44qv1yH44eUZawyio,446
+PyTAT-0.3.2.dist-info/METADATA,sha256=bQ0qzA_rkTXLWkmANf1_LlVEW_TTIcV8R_47W7O4zCc,23590
+PyTAT-0.3.2.dist-info/RECORD,,
+PyTAT-0.3.2.dist-info/top_level.txt,sha256=NEy1NX8IzL0WkAHS2iFfEQwvqjO69-_nlAY7pqdmyWs,6
+PyTAT-0.3.2.dist-info/WHEEL,sha256=J_4V_gB-O6Y7Pn6lk91K27JaIhI-q07YM5J8Ufzqla4,100
