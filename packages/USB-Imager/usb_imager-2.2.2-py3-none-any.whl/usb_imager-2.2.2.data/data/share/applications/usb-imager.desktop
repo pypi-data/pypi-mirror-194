@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=USB-Imager
+
+GenericName=Write images to USB-Key
+GenericName[de]=Dateiträgerabbilder auf USB-Stick schreiben
+
+Exec=usb-imager
+TryExec=usb-imager
+Icon=usb-imager.png
+
+Categories=System;Utility;FileTools;
+Keywords=usb;image;img;iso;write;writer;dd;flash;boot;
+
+Terminal=false
+StartupNotify=true
