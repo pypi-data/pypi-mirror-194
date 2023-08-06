@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/httpanalyzer/__init__.py
+src/httpanalyzer/src.py
+src/httpanalyzer/utils.py
+src/httpanalyzer.egg-info/PKG-INFO
+src/httpanalyzer.egg-info/SOURCES.txt
+src/httpanalyzer.egg-info/dependency_links.txt
+src/httpanalyzer.egg-info/top_level.txt
