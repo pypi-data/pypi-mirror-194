@@ -1,0 +1,3 @@
+[console_scripts]
+flit=ptulsconv.__main__:main
+
