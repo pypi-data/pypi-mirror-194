@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/sleepyask/__init__.py
+src/sleepyask/chat.py
+src/sleepyask/chatgpt.py
+src/sleepyask.egg-info/PKG-INFO
+src/sleepyask.egg-info/SOURCES.txt
+src/sleepyask.egg-info/dependency_links.txt
+src/sleepyask.egg-info/requires.txt
+src/sleepyask.egg-info/top_level.txt
