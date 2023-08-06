@@ -1,0 +1,15 @@
+PyYaml
+jsonschema
+flasgger
+marshmallow
+apispec
+pymongo
+GitPython
+mongomock
+requests
+
+[tests]
+tox
+responses
+mongomock
+pandas
