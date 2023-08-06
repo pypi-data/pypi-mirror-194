@@ -1,0 +1,9 @@
+README.md
+setup.py
+flashlight/__init__.py
+flashlight/flashlight.py
+flashlight/tests.py
+flashlight_pavel_ivanov.egg-info/PKG-INFO
+flashlight_pavel_ivanov.egg-info/SOURCES.txt
+flashlight_pavel_ivanov.egg-info/dependency_links.txt
+flashlight_pavel_ivanov.egg-info/top_level.txt
