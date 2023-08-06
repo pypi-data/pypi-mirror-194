@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lnls-ophyd
+Version: 1.0.0
+Summary: LNLS OPHYD hardware abstraction
+Home-page: https://gitlab.cnpem.br/SOL/bluesky/lnls-ophyd
+Author: Hugo Campos
+Author-email: hugo.campos@lnls.br
+
+LNLS OPHYD
