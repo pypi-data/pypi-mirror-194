@@ -1,0 +1,6 @@
+#!python
+import jpterm
+
+
+if __name__ == '__main__':
+    jpterm.main()
