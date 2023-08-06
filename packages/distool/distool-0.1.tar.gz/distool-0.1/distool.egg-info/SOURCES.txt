@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+distool/__init__.py
+distool.egg-info/PKG-INFO
+distool.egg-info/SOURCES.txt
+distool.egg-info/dependency_links.txt
+distool.egg-info/requires.txt
+distool.egg-info/top_level.txt
