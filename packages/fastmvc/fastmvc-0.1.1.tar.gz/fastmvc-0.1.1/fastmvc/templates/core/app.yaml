@@ -1,0 +1,2 @@
+runtime: python310
+entrypoint: gunicorn --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind :$PORT main:app
