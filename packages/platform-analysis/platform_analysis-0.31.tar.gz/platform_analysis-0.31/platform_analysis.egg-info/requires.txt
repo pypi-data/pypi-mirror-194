@@ -1,0 +1,14 @@
+decorator
+PyGithub
+networkx
+requests
+python-dateutil
+six
+splitstream
+xmltodict
+pandas
+datetime
+pydiscourse
+ratelimit
+twitter
+pathlib
