@@ -1,0 +1,16 @@
+avclass/__init__.py,sha256=t0WT-Cc5EaGhnIsFSUWG2hEUe7bkujvBuQgBe-4KUq0,401
+avclass/common.py,sha256=GaxIgNBSf06fnkh3rrdPMd7I950NgvM3McKh_D1X6JE,19917
+avclass/evaluate.py,sha256=JAH70mgqW91IRGswBla5PMMHSex3rd05XINls6oxGB0,4202
+avclass/labeler.py,sha256=AjqWMtXgh7buRfq-yyJImi84BvquGjB32sHWT1bhXrg,23606
+avclass/normalize.py,sha256=x3zQTYYeVZrOrpSTf48HrVR2DevGzXyVYapkVeNHmi0,1704
+avclass/update.py,sha256=tIicKlJzCx5mjH3ha4Gzwa2LePUUIiR7c1fBB6ROKKw,17636
+avclass/data/andropup.expansion,sha256=mX5h1QgCcfTfy2tXzWu8ucaAYQhgdRcBpdDTFEPnUdA,6823
+avclass/data/default.expansion,sha256=HFZx78SY5PawYzAkGpEtNxmPBq91dlXt4aObRYJZgH0,308
+avclass/data/default.tagging,sha256=TPt9g6ViPMEkIGJdcdHtvMFOuvFjd_Sn_aFpnVdlWKY,24120
+avclass/data/default.taxonomy,sha256=jRVdWlGuRwRCclvGIbIff-Ahc9qYYBI-Gyq4m5oG9cs,15901
+avclass_malicialab-2.7.1.dist-info/LICENSE,sha256=lLN1WeBhDzB9OCDcMwgx0fsLajlfEMvjgi8MREUi2_M,1100
+avclass_malicialab-2.7.1.dist-info/METADATA,sha256=FDa-A58qZq92DAZFM1QuA8E4AQOmwjUTCpF0vh4WOoY,17096
+avclass_malicialab-2.7.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+avclass_malicialab-2.7.1.dist-info/entry_points.txt,sha256=JZywh-YP5hzoH-02EinIhMTBFKBMTVz2u09OLEydpkM,129
+avclass_malicialab-2.7.1.dist-info/top_level.txt,sha256=KzlcgFwvgXDoh_VSD5oysMYhky4eHk3zfhQKrRDqqsc,8
+avclass_malicialab-2.7.1.dist-info/RECORD,,
