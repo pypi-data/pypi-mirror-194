@@ -1,0 +1,10 @@
+setup.py
+dfba/__init__.py
+dfba/dio.py
+dfba/model.py
+dfba/reactions.py
+dfba/solver.py
+kinetics_dfba.egg-info/PKG-INFO
+kinetics_dfba.egg-info/SOURCES.txt
+kinetics_dfba.egg-info/dependency_links.txt
+kinetics_dfba.egg-info/top_level.txt
