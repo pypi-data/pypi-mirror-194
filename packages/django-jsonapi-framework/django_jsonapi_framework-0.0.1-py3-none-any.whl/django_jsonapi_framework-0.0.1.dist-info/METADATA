@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: django-jsonapi-framework
+Version: 0.0.1
+Summary: Django JSON:API Framework makes it easier to build Django apps with REST API's that follow the JSON:API specification.
+Project-URL: homepage, https://django-jsonapi-framework.org/
+Author-email: Digital Valley <techteam@digitalvalley.nl>
+License-File: LICENSE.md
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: django
+Requires-Dist: jsonschema
+Description-Content-Type: text/markdown
+
+# Django JSON:API Framework
+
+Django JSON:API Framework makes it easier to build Django apps with REST API's
+that follow the JSON:API specification.
+
+## Resources
+
+Django: https://www.djangoproject.com/
+JSON:API: https://jsonapi.org/
