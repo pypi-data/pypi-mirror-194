@@ -1,0 +1,4 @@
+API_STATES_DIRECTORY='api_states'
+API_STATES_JSON='api_states.json'
+MOTO_BACKEND_STATE_FILE='backend.state'
+LOCALSTACK_STORE_STATE_FILE='store.state'
