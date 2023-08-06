@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: batch_jaro_winkler
+Version: 0.1.2
+Summary: Fast batch jaro winkler distance implementation in C99.
+Home-page: https://github.com/dbousque/batch_jaro_winkler
+Author: Dominik Bousquet
+Author-email: bousquet.dominik@gmail.com
+License: MIT
+Requires-Python: >=3.3
+
+This project gets its performance from the pre-calculation of an optimized model in advance of the actual runtime calculations. Supports any encoding.
