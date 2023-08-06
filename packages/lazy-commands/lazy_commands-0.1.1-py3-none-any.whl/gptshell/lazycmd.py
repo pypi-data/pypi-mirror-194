@@ -1,0 +1,26 @@
+import subprocess
+import typer
+from typing import List
+from lazycmd import GPTshell
+
+app = typer.Typer()
+LLMCommands = GPTshell()
+
+  
+@app.command(help="text to command: Execute a shell command by providing its description.")
+def ttc(ttc: List[str]):
+  text_to_command = " ".join(ttc)
+  output = LLMCommands.text_to_command(text_to_command)
+  print(f"\033[1;32;40m{output}\033[0m Do you want to run this command? (y/n)")
+  if input().lower() == 'y':
+    result = subprocess.run(["powershell", "-Command", output], capture_output=True, text=True)
+    print(result.stdout)
+
+@app.command(help="command to text: Get the description of a shell command.")
+def ctt(ctt: List[str]):
+  command = " ".join(ctt)
+  output = LLMCommands.command_to_text(command)
+  print(output)
+
+if __name__ == "__main__":
+  app()
