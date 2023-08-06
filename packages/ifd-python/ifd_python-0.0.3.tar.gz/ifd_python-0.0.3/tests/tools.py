@@ -1,0 +1,2 @@
+def verifierSiLesDonnéesJsonEstExcateAuClasses(json, image):
+    
