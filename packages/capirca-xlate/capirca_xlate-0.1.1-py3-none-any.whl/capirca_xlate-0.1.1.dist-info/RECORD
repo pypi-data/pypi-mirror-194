@@ -1,0 +1,8 @@
+capirca_xlate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+capirca_xlate/templates/acl.pol.j2,sha256=ZIAL4s_OTsC1_N5GM09TZ0PpRHgTrbxnqWRcuOg5JAE,949
+capirca_xlate/templates/def.net.j2,sha256=uh4vBR3n2NQB76TjzTVu5vJEfLCfY-t3r38F8ejx9cc,233
+capirca_xlate/templates/def.svc.j2,sha256=FFcKPHw-qtx7B9lMRaV3o4WmYxDfIE47VWi2-ps9Ryw,253
+capirca_xlate/xlate.py,sha256=qopzmk6SHk17_MVKaKURVYNbKZ4qAQEQ4aDxKyMqLzk,8958
+capirca_xlate-0.1.1.dist-info/METADATA,sha256=vJRqbQmrpXYlvPeMadLo8k1sBfgIpLI0SK1eCUChkBM,6981
+capirca_xlate-0.1.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+capirca_xlate-0.1.1.dist-info/RECORD,,
