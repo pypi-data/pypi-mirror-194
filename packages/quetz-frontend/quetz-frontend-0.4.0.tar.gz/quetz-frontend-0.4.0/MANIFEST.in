@@ -1,0 +1,22 @@
+include LICENSE
+include *.md
+include *.png
+include pyproject.toml
+
+include package.json
+include ts*.json
+include yarn.lock
+include lerna.json
+
+graft quetz_frontend/app
+graft packages
+
+prune quetz_frontend/app/build
+prune **/node_modules
+
+# Patterns to exclude from any directory
+global-exclude *~
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude .git
+global-exclude .ipynb_checkpoints

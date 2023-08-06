@@ -1,0 +1,52 @@
+{
+  "name": "quetz-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "builder",
+      "examples/*",
+      "quetz_frontend/app",
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "build": "yarn run build:packages && yarn run build:core",
+    "build:core": "cd quetz_frontend/app && yarn && yarn run build",
+    "build:core:prod": "cd quetz_frontend/app && yarn && yarn run build:prod",
+    "build:examples": "lerna run build --scope \"@quetz-example/*\"",
+    "build:packages": "lerna run build --scope \"@quetz-frontend/!(main-app)*\"",
+    "build:prod": "yarn run build:packages && yarn run build:core:prod",
+    "clean": "yarn run clean:core && yarn run clean:packages",
+    "clean:all": "lerna run clean:all && rimraf yarn.lock && rimraf node_modules",
+    "clean:core": "cd quetz_frontend/app && yarn run clean",
+    "clean:examples": "lerna run clean --scope \"@quetz-example/*\"",
+    "clean:packages": "lerna run clean --scope \"@quetz-frontend/!(main-app)*\"",
+    "eslint": "eslint . --ext .ts,.tsx --fix",
+    "eslint:check": "eslint . --ext .ts,.tsx",
+    "install": "lerna bootstrap",
+    "prettier": "prettier --write \"**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}\"",
+    "prettier:check": "prettier --list-different \"**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}\"",
+    "update:dependency": "node ./node_modules/@jupyterlab/buildutils/lib/update-dependency.js --lerna",
+    "watch": "run-p watch:lib watch:app",
+    "watch:app": "lerna exec --stream --scope \"@quetz-frontend/main-app\" yarn watch",
+    "watch:lib": "lerna exec --stream --scope @quetz-frontend/metapackage yarn watch"
+  },
+  "devDependencies": {
+    "@jupyterlab/buildutils": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-jsdoc": "^38.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "lerna": "^5.4.0",
+    "lint-staged": "^11.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.4.0",
+    "shell-quote": "^1.7.2",
+    "yarn": "^1.22.11"
+  }
+}
