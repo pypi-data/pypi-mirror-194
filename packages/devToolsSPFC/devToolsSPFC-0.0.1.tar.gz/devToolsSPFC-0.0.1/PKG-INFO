@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: devToolsSPFC
+Version: 0.0.1
+Summary: devToolsSPFC
+Home-page: UNKNOWN
+Author: Dev Raj
+Author-email: dev.raj.pandey.7836@gmail.com
+License: UNKNOWN
+Keywords: python,easy-to-use,one line code,simple,Dev Raj
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: license
+
+A package to create long tasks applications such as making calculator,spammer,time etc,in just one line of code.                       Type "import devToolsFCOD".your_variable = devToolsFCOD.MLibrary.            Play around with the module ,it is small and easy to use module ,you can understand easily.                                                         These are the functions spam(),infSpam(),currentTime(),facts() and calculator()
+

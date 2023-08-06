@@ -1,0 +1,9 @@
+license
+setup.py
+devToolsSPFC/MLibrary.py
+devToolsSPFC/__init__.py
+devToolsSPFC.egg-info/PKG-INFO
+devToolsSPFC.egg-info/SOURCES.txt
+devToolsSPFC.egg-info/dependency_links.txt
+devToolsSPFC.egg-info/requires.txt
+devToolsSPFC.egg-info/top_level.txt
