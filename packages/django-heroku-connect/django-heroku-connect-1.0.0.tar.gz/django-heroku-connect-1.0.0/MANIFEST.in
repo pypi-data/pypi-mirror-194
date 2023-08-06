@@ -1,0 +1,5 @@
+include README.rst
+include CONTRIBUTING.md
+recursive-include tests *
+recursive-include docs *
+include LICENSE
