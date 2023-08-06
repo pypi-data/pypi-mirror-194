@@ -1,0 +1,12 @@
+memberaudit_securegroups/__init__.py,sha256=t49FR96nItlICswyBBtsI5akLf6tTexwGy_JNZZmsH8,43
+memberaudit_securegroups/admin.py,sha256=muFoSKc6kgVm-ezaHVsA5YHGkPNr1Adflhc8DlGXjPs,2025
+memberaudit_securegroups/apps.py,sha256=MvjM94_Ll5-03pV8b30U8rCNxFw38uOligVDcvCGkn0,313
+memberaudit_securegroups/auth_hooks.py,sha256=pir7zZ3PbM_vCKxhGuwf98Xxp_5CUfZKXvYXlf4RYxM,488
+memberaudit_securegroups/models.py,sha256=zQsdLOAA2K6NSsipkDwZfOjcipyvnTx00KnnROx4Vv8,12844
+memberaudit_securegroups/migrations/0001_initial.py,sha256=4ozJsbCdhxUMR0SyvKAr9DDaCMo_Mx9FsO_EkWSRlog,6062
+memberaudit_securegroups/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aa_memberaudit_securegroups-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aa_memberaudit_securegroups-0.2.0.dist-info/METADATA,sha256=R_7fyes-jnVlysU4tF7YE5iw7OnW0aYwzTCkOJWKEdk,3919
+aa_memberaudit_securegroups-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aa_memberaudit_securegroups-0.2.0.dist-info/top_level.txt,sha256=nhndxfoNFbZNu4d25r8tw3-u012phjVthX8of_AbvdA,25
+aa_memberaudit_securegroups-0.2.0.dist-info/RECORD,,
