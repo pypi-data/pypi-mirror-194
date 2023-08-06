@@ -1,0 +1,21 @@
+jinja2
+jsonschema>=3.0
+numpy
+pandas>=0.18
+toolz
+
+[:python_version < "3.11"]
+typing_extensions>=4.0.1
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[dev]
+black<24
+ipython
+flake8
+pytest
+pytest-cov
+m2r
+vega_datasets
+vl-convert-python
