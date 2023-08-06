@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+python/sentry_kafka_schemas/__init__.py
+python/sentry_kafka_schemas/sentry_kafka_schemas.py
+python/sentry_kafka_schemas/types.py
+python/sentry_kafka_schemas.egg-info/PKG-INFO
+python/sentry_kafka_schemas.egg-info/SOURCES.txt
+python/sentry_kafka_schemas.egg-info/dependency_links.txt
+python/sentry_kafka_schemas.egg-info/not-zip-safe
+python/sentry_kafka_schemas.egg-info/requires.txt
+python/sentry_kafka_schemas.egg-info/top_level.txt
+python/sentry_kafka_schemas/schemas/querylog.v1.schema.json
+python/sentry_kafka_schemas/topics/querylog.yaml
