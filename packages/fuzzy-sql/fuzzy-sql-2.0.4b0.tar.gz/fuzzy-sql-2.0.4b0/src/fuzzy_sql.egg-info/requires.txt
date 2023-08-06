@@ -1,0 +1,15 @@
+pandas
+Jinja2
+seaborn
+scikit-learn
+jupyter
+jsonschema
+multiprocess
+scipy
+matplotlib
+
+[dev]
+wheel
+dvc
+Sphinx
+sphinxcontrib-bibtex
