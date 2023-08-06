@@ -1,0 +1,2 @@
+[console_scripts]
+psite = psite.main:psite
