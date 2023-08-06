@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyChatGPTLoop/Auth0.py
+pyChatGPTLoop/__init__.py
+pyChatGPTLoop/__main__.py
+pyChatGPTLoop/pyChatGPTLoop.py
+pyChatGPTLoop.egg-info/PKG-INFO
+pyChatGPTLoop.egg-info/SOURCES.txt
+pyChatGPTLoop.egg-info/dependency_links.txt
+pyChatGPTLoop.egg-info/requires.txt
+pyChatGPTLoop.egg-info/top_level.txt
