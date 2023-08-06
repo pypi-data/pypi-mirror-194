@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: phyplot
+Version: 0.1.0
+Summary: PhyloGrpah is a python package for plotting evolutionary trees and data.
+Home-page: https://github.com/ChrisOrgan/phyplot
+Author: Chris Organ & Andrew Meade
+License: GNU General Public License v3.0
+Keywords: plotting,graphs,evolution,phylogenetics,phylodynamics,comparative methods
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: pandas (>=1.2.3)
+Requires-Dist: scipy (>=1.6.3)
+Requires-Dist: numpy (>=1.20.3)
+Requires-Dist: ply (>=3.11)
+
+# <img alt="Phyplot" src="/docs/logo/phylograph_logo.png">
+
+# Phyplot
+http://www.sciphy.org/
+
+Phyplot is a plotting library for use with Sci-Phy (statistical analysis and modelling of evolved data using phylogenetic trees).
+
+## Authors
+By Chris Organ & Andrew Meade
+
+## Requirements
+Python 3.8+
+Sci-Phy
+
