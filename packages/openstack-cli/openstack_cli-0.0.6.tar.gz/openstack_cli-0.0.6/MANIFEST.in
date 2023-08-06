@@ -1,0 +1,5 @@
+include requirements.txt
+include .pypirc
+include LICENCE
+graft docs
+graft tests
