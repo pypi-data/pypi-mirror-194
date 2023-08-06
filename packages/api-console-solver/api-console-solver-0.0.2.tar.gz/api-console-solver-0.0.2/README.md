@@ -1,0 +1,1 @@
+# Um wrapper oficial da plataforma Solver
