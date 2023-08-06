@@ -1,0 +1,9 @@
+anek_process/__init__.py,sha256=g5bSgsSTs6mBXksILsbnKimv_jI-EjiKOpkmmRdiY2s,65
+anek_process/multiproc.py,sha256=yYOAzdqO67vs7S624a3Dy3RlOEtkdm4JOqMWdNSuS00,6237
+anek_process/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anek_process/utils/logger.py,sha256=K5EBPK5lzwKhnQOhtigkHsEZTGBSwtTs2dRmE2OzVkQ,601
+anek_process-0.0.5.dist-info/LICENSE.md,sha256=bmiJq41hEpSaPUq9tU7wccADdAjPCJFHWQPsb7Jt8d0,1069
+anek_process-0.0.5.dist-info/METADATA,sha256=sIr5lhMbsW8dXwY2DWlWhwAPKx6pjOKqVqBGGftSca4,802
+anek_process-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+anek_process-0.0.5.dist-info/top_level.txt,sha256=O3AlJzQiX4dqoBOh9h7tzzaJf1L6xqSlPmFoan4knCc,13
+anek_process-0.0.5.dist-info/RECORD,,
