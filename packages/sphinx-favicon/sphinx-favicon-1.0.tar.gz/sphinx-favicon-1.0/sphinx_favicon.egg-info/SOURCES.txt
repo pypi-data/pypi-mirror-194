@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sphinx_favicon/__init__.py
+sphinx_favicon.egg-info/PKG-INFO
+sphinx_favicon.egg-info/SOURCES.txt
+sphinx_favicon.egg-info/dependency_links.txt
+sphinx_favicon.egg-info/requires.txt
+sphinx_favicon.egg-info/top_level.txt
+tests/test_options.py

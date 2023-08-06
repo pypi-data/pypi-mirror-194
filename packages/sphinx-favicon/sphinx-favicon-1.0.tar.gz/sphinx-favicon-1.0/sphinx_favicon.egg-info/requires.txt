@@ -1,0 +1,16 @@
+sphinx>=3.4
+
+[dev]
+pre-commit
+nox
+
+[doc]
+sphinx<6
+pydata-sphinx-theme
+sphinx-copybutton
+sphinx-design
+
+[test]
+pytest
+beautifulsoup4
+pytest-cov
