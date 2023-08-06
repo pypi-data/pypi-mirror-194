@@ -1,0 +1,18 @@
+#!python
+
+"""
+test-script
+"""
+
+import cdataml
+import argparse
+
+parser = argparse.ArgumentParser(add_help=True, formatter_class=argparse.RawDescriptionHelpFormatter, description = "test-script"
+
+parser.add_argument("-p", "--print_me", help="String to run in test function", type=str, default="Hello World")
+
+def CallFunc(string):
+    cdataml.test.testfunc(string)
+
+if __name__ == '__main__':
+    CallFunc(string=args.print_me)
