@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+LiliDB.egg-info/PKG-INFO
+LiliDB.egg-info/SOURCES.txt
+LiliDB.egg-info/dependency_links.txt
+LiliDB.egg-info/top_level.txt
+lilidb/__init__.py
+lilidb/db.py
