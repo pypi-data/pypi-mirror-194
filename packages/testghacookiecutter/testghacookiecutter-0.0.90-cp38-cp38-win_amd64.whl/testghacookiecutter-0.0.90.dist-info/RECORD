@@ -1,0 +1,9 @@
+testghacookiecutter/__init__.py,sha256=OBqOctWq6djKLdCiXn_w9DPt5OUOfcnNV8bkboqyMCc,253
+testghacookiecutter/_testghacookiecutter.cp38-win_amd64.pyd,sha256=zBXf2uwVEs13nSxrkYBhK8DqzAIbZxDkT0-P-XpCWEs,111616
+testghacookiecutter/include/test-gha-cookiecutter/test-gha-cookiecutter.hpp,sha256=xJI_XphGsAx1roIMsv5L-qTyHbEK2dK_kT_Ug88g0Kw,454
+testghacookiecutter/lib/cmake/test-gha-cookiecutter/test-gha-cookiecutter-config.cmake,sha256=mS5zi7t3BRVYU76YH-rQm30dyH55Ulwd2fIFuy6j-7E,4273
+testghacookiecutter-0.0.90.dist-info/LICENSE.md,sha256=scwZm1ncOOBqsAmrBbQz-jOpx5yJvouik7Q7sMdjlSg,1093
+testghacookiecutter-0.0.90.dist-info/METADATA,sha256=KII3n2JjPpIujqmvWA6XqnF4i0-ChnRj0JdLK8fLNg4,3569
+testghacookiecutter-0.0.90.dist-info/WHEEL,sha256=YtM-ug_GKkvvGGNYi1nWfTFjPSr4u-CGqbhyiKZxvnY,94
+testghacookiecutter-0.0.90.dist-info/top_level.txt,sha256=IswgbSrIopzF6Lm7sluyuTfnHzFtW7dBRGigD5EsE00,20
+testghacookiecutter-0.0.90.dist-info/RECORD,,
