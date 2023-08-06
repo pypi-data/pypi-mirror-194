@@ -1,0 +1,3 @@
+[console_scripts]
+artsBrainExtraction = nirodents.cli.brainextraction:main
+plot_mask = nirodents.cli.plotmask:main
