@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aggdirect_price_calculator
+Version: 0.4
+Summary: Price Calculator functions
+Home-page: 
+Author: Karan Kadakia
+Author-email: 
+Keywords: Price Calculator,AGGDIRECT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
