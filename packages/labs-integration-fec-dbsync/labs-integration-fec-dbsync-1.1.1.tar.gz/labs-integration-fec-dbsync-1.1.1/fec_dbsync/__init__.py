@@ -1,0 +1,1 @@
+default_app_config = 'fec_dbsync.apps.FecDbsyncConfig'
