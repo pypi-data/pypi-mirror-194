@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gbwyljp_simple_package.egg-info/PKG-INFO
+gbwyljp_simple_package.egg-info/SOURCES.txt
+gbwyljp_simple_package.egg-info/dependency_links.txt
+gbwyljp_simple_package.egg-info/top_level.txt
+mymod/__init__.py
+mymod/car.py
