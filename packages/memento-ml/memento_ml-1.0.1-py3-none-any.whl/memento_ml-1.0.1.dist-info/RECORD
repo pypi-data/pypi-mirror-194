@@ -1,0 +1,13 @@
+memento/__init__.py,sha256=2Xx3uJ3_srwNaETHp9AEkrpLaQxGvEHQqlN1nE2256I,1594
+memento/caching.py,sha256=GlXeezBjvAgkLElmXfM_Gafxm2iLhE7QMRndOGT-jF8,9082
+memento/configurations.py,sha256=PZyYMZ74zWkCroqcd-mUyqY1wbNryQZZPw_40MeJi8I,3451
+memento/exceptions.py,sha256=NRGyNsyDgmhEaEzY8EbPk9l_x0tLe6OyCQQQaWxyjrE,1099
+memento/memento.py,sha256=sqR-dxbSW1irnvcRciQ--P5yzDTBYtwGY9z6jUCq5Js,8022
+memento/notifications.py,sha256=9kBqh1HmMp3_pKNTCJbcDQ4OAPvAHFS7shejc1QC71I,6438
+memento/parallel.py,sha256=t1tT-ao2w-Ot4rGw9--S5RK5jcB-fUXUtDThGXkAPM4,6593
+memento/task_interface.py,sha256=onwOmRoI6EYfcVSwdOIqntm8MsIGP4yV1pchiqqbUe4,9894
+memento_ml-1.0.1.dist-info/LICENSE,sha256=Eu52jl9s4fgGpeCPXnNC-zYdUxRoAOzRDy4f9NiHPis,1496
+memento_ml-1.0.1.dist-info/METADATA,sha256=UrTyCcJZavdmLsYj56DhX_Av1Xhr07nHtwIAyUwkDBY,8172
+memento_ml-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+memento_ml-1.0.1.dist-info/top_level.txt,sha256=kOQvQu-nppWlZmTNHpi_kACgoIzqAChsn6ltuK2CoxY,8
+memento_ml-1.0.1.dist-info/RECORD,,
