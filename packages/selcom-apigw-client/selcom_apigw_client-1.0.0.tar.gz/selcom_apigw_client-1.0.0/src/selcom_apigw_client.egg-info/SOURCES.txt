@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/selcom_apigw_client/__init__.py
+src/selcom_apigw_client/apigwClient.py
+src/selcom_apigw_client.egg-info/PKG-INFO
+src/selcom_apigw_client.egg-info/SOURCES.txt
+src/selcom_apigw_client.egg-info/dependency_links.txt
+src/selcom_apigw_client.egg-info/requires.txt
+src/selcom_apigw_client.egg-info/top_level.txt
