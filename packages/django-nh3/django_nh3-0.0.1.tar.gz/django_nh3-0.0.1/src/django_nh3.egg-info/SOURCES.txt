@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/django_nh3/__init__.py
+src/django_nh3/apps.py
+src/django_nh3/forms.py
+src/django_nh3.egg-info/PKG-INFO
+src/django_nh3.egg-info/SOURCES.txt
+src/django_nh3.egg-info/dependency_links.txt
+src/django_nh3.egg-info/not-zip-safe
+src/django_nh3.egg-info/requires.txt
+src/django_nh3.egg-info/top_level.txt
+tests/test_forms.py
