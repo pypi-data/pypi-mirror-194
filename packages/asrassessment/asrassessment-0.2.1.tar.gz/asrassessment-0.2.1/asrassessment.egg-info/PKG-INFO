@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: asrassessment
+Version: 0.2.1
+Summary: Provides Phoneme Error Rate & Visualisation Assessment
+Home-page: https://github.com/JonathanLim1/ASR_Assessment
+Author: Jonathan Lim
+Author-email: Jonathanlimws@gmail.com
+License: MIT
+Keywords: ASR
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Click on github to find out more!
