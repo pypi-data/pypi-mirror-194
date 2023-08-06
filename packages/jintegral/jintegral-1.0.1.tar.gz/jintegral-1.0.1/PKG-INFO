@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: jintegral
+Version: 1.0.1
+Summary: A Python implementation of J-integral data reduction for translaminar toughness of compact tension specimens
+License: BSD3
+Author: Guillaume Broggi
+Author-email: 25569517+GuillaumeBroggi@users.noreply.github.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: csaps (>=1.1.0,<2.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: plotly (>=5.13.1,<6.0.0)
+Requires-Dist: scikit-learn (>=1.2.1,<2.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+[![DOI](https://zenodo.org/badge/563768686.svg)](https://zenodo.org/badge/latestdoi/563768686)
+
+# Jintegral
+A Python implementation of J-integral data reduction for translaminar toughness of compact tension specimens
+
+# Roadmap 
+Currently, this repository contains only (functional) raw code as a support for paper doi: .
+It will be cleaned and (hopefully) packaged for a future release. 
+
+# Documentation
+To be done
+
+# Related works on github
+
+- https://github.com/smrg-uob/OUR-OMA
+- https://github.com/irfancn/Matlab-J-integral
+
+# Acknowledgement
+
+The research leading to this software has been carried out within the framework of [HyFiSyn project](https://www.hyfisyn.eu/) and has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No. 765881. 
+
