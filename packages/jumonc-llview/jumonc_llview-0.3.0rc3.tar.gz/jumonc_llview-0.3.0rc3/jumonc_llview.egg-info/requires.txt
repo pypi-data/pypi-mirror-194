@@ -1,0 +1,3 @@
+JuMonC>=0.10.0rc5
+pluggy
+pycryptodome
