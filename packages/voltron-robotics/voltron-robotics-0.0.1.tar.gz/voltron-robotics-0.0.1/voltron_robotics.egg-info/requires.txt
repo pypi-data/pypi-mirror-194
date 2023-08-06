@@ -1,0 +1,12 @@
+gdown
+einops
+torch
+torchvision
+torchaudio
+transformers
+
+[dev]
+black
+ipython
+pre-commit
+ruff
