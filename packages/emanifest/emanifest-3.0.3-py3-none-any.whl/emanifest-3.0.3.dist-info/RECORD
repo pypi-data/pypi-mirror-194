@@ -1,0 +1,8 @@
+emanifest/__init__.py,sha256=dfAcYqSkhAyrAQ0CRrjHrkNG8IpvNh9OxhDnijxLvpc,53
+emanifest/client.py,sha256=rI7SvbTeX4fMcMzsxk2e-yyHgl5HiU3P-o1t3-rXcgU,37641
+emanifest/test_client.py,sha256=aZ5WFE5-N-hVmULgqxHJhdukZUWbRCxg8pHolsGInOs,7039
+emanifest-3.0.3.dist-info/LICENSE.txt,sha256=uwSCSJYmLPXc5pXveNU_QFGkrV6JyWC1yn_4zRn0owY,1327
+emanifest-3.0.3.dist-info/METADATA,sha256=PIimLbNEHajk0wymqsXkWFMmeQWVZr5_8aRoTbg8p-M,10606
+emanifest-3.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+emanifest-3.0.3.dist-info/top_level.txt,sha256=BwFwsV_q28d2v51j5RHTH-gGXIqDzRaoOR3-gEIbxUs,10
+emanifest-3.0.3.dist-info/RECORD,,
