@@ -1,0 +1,13 @@
+sp_variant/__init__.py,sha256=w0B7uyYGmcH6SEogdJLSvZ17v8r5JWV2Tp7207tSHOc,457
+sp_variant/__main__.py,sha256=N23pNP3TqZrTcIJ-4tsqHm7TcXJIKxsfcydt3DTklQE,13247
+sp_variant/defs.py,sha256=x2GXyI39UMXI9uIs4QfypxN1WnmEQmnpyFxZGtiBFPk,4598
+sp_variant/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sp_variant/variant.py,sha256=y_8qxu9NDSvzvh0otnhaak2Em5aNEjF8QzL97QJqFlk,5655
+sp_variant/vbuild.py,sha256=jWAYav8AyjSylGM7qfjTogxMMnsQNmdwp6qKcMqT4Fs,28608
+sp_variant/yaiparser.py,sha256=-FuTYRhu8K4fj1mYtsgYQzv3Qr3dRwuuJOGE23HALuU,4484
+sp_variant-3.1.1.dist-info/METADATA,sha256=_sKnnLH_TAw-jj6ti9NJyFGF80P1wcURw_R57yq2CFg,3124
+sp_variant-3.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sp_variant-3.1.1.dist-info/entry_points.txt,sha256=6IJlFlC4MkvTuJSJfkIv-t8I2aZ6PgUxEJsCB_VaZOA,56
+sp_variant-3.1.1.dist-info/top_level.txt,sha256=rmttCrPkYYQjQLhteROCTtbDUIijG5hOAfUFJoegsK8,11
+sp_variant-3.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sp_variant-3.1.1.dist-info/RECORD,,
