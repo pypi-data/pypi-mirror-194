@@ -1,0 +1,44 @@
+.alert {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 600px; 
+    max-width: 100%
+}
+
+.bi {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.125em;
+    fill: currentcolor
+}
+
+.dmvc-navbar {
+    background-color: rgb(var(--bs-body-bg-rgb));
+    border-bottom: 1px solid rgba(var(--bs-body-color-rgb), 0.1)
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #bd399c;
+    background: linear-gradient(to right, #6030a2 0%, #f73b95 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background: linear-gradient(to right, #6d42a8 0%, #f73b95 100%);
+}
+
+/* Support for dark mode wysiwyg editor */
+
+trix-toolbar .trix-button {
+    background: rgba(255,255,255,0.3) !important;
+}
+
+trix-toolbar .trix-button.trix-active {
+    background: rgba(255,255,255,0.6) !important;
+}
