@@ -1,0 +1,26 @@
+[project]
+name = "shortscale"
+description = "English conversion from number to string"
+authors = [{name = "Jürgen Leschner", email = "jldec@users.noreply.github.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version"]
+
+[project.urls]
+Home = "https://github.com/jldec/shortscale-py"
+
+[project.scripts]
+shortscale = "shortscale:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "shortscale.shortscale.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = [
+    "shortscale/tests",
+]
