@@ -1,0 +1,7 @@
+pytest_hpfeeds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_hpfeeds/plugin.py,sha256=-52rK5egPLvo-YUbkAfc1mpZDiJPqAkfpd2EQNwnxiY,2189
+pytest_hpfeeds-0.2.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pytest_hpfeeds-0.2.8.dist-info/METADATA,sha256=7hpUFp_zkV1Du-KO7YiP_tGtu3LaaKjVOaEC2Jqtiqg,5774
+pytest_hpfeeds-0.2.8.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+pytest_hpfeeds-0.2.8.dist-info/entry_points.txt,sha256=--ufvvd0R-KcZK6V2xEqe7BLl7zx7V4ZtccTtxGPvKY,42
+pytest_hpfeeds-0.2.8.dist-info/RECORD,,

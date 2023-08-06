@@ -1,0 +1,3 @@
+[pytest11]
+hpfeeds=pytest_hpfeeds.plugin
+
