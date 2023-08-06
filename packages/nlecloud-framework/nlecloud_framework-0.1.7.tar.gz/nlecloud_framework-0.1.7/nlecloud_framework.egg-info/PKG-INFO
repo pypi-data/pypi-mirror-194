@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: nlecloud-framework
+Version: 0.1.7
+Summary: nlecloud_framework框架
+Home-page: https://gitee.com/daliyup0518/nlecloud_framework.git
+Author: cfp
+Author-email: 954742660@qq.com
+Maintainer: dalyer
+Maintainer-email: 954742660@qq.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+此框架是基于tornado的web框架
+当然其中也包含了很多的库1
+
+
+
+```python
+import os
+```
+
+
+
