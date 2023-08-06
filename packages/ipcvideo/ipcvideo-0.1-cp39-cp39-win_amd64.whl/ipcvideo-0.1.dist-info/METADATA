@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ipcvideo
+Version: 0.1
+Summary: An open-source ipc(Interprocess Communication) real-time video data sharing library.
+Home-page: https://github.com/theo8028/ipcvideo/tree/master/src
+Download-URL: https://github.com/theo8028/ipcvideo/tree/archive/master.zip
+Author: theo
+Author-email: theo8028@gmail.com
+
