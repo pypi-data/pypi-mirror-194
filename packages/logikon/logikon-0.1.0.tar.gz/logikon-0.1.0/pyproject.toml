@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "logikon"
+version = "0.1.0"
+description = ""
+authors = ["Gregor Betz <gregor.betz@gmail.com>"]
+readme = "README.md"
+packages = [{include = "logikon"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
