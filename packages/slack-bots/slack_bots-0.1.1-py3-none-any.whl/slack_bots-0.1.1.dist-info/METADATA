@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: slack-bots
+Version: 0.1.1
+Summary: Collection of simple and reusable Slack bot prototypes.
+Home-page: https://github.com/mbdevpl/slack-bots
+Download-URL: 
+Author: Mateusz Bysiek
+Author-email: mateusz.bysiek@gmail.com
+Maintainer: Mateusz Bysiek
+Maintainer-email: mateusz.bysiek@gmail.com
+License: Apache License 2.0
+Keywords: bot,bots,chat,slack
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: slackclient (~=2.9)
+Requires-Dist: slackeventsapi (~=3.0)
+Requires-Dist: version-query (~=1.2)
+
+.. role:: python(code)
+    :language: python
+
+
+==========
+slack-bots
+==========
+
+.. image:: https://img.shields.io/pypi/v/slack-bots.svg
+    :target: https://pypi.org/project/slack-bots
+    :alt: package version from PyPI
+
+.. image:: https://img.shields.io/github/license/mbdevpl/slack-bots.svg
+    :target: https://github.com/mbdevpl/slack-bots/blob/v0.1.1/NOTICE
+    :alt: license
+
+Collection of simple and reusable Slack bot prototypes.
+
+.. contents::
+    :backlinks: none
+
+
+Introduction
+============
+
+This package is in design phase. Contributions at design level are welcome.
+
+
+Details
+-------
+
+TBD.
+
+.. code:: python
+
+    from slack_bots import SlackEventBot, SlackRtmBot
+
+
+Requirements
+============
+
+Python version 3.11 or later.
+
+Python libraries as specified in `requirements.txt <https://github.com/mbdevpl/slack-bots/blob/v0.1.1/requirements.txt>`_.
+
+
+Similar projects
+================
+
+
+*   https://github.com/lins05/slackbot
+
+*   https://github.com/nkouevda/slack-rtm-bot
