@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ritdu_slacker/__init__.py
+ritdu_slacker/__main__.py
+ritdu_slacker/api.py
+ritdu_slacker/cli.py
+ritdu_slacker/version.py
+ritdu_slacker.egg-info/PKG-INFO
+ritdu_slacker.egg-info/SOURCES.txt
+ritdu_slacker.egg-info/dependency_links.txt
+ritdu_slacker.egg-info/entry_points.txt
+ritdu_slacker.egg-info/requires.txt
+ritdu_slacker.egg-info/top_level.txt
