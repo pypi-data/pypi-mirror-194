@@ -1,0 +1,15 @@
+zc.zope3recipes-1.0-py3.9-nspkg.pth,sha256=i7g33RdQzJ33LZYHfQ_YmQhLOchcWGnBnib2zxQJCiY,519
+zc/zope3recipes/README.rst,sha256=DRKsPB6GLq3e2WU2btqtQuvRwcHEOx6aoPzjNreMiaU,95412
+zc/zope3recipes/WINDOWS.rst,sha256=feqJ5TeFvHEFLtHitB8w8Dzc-rl5W0LNCNRmUPTiTJ4,52632
+zc/zope3recipes/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+zc/zope3recipes/ctl.py,sha256=l7WtdBFdOziW_cYjtQrE6rM3QeyGuewnccmGOdq957E,1623
+zc/zope3recipes/debugzope.py,sha256=hGtf_1CafRISmtaT6dm6Mll4iY6R-nmgRbgn9u2Tdk8,3031
+zc/zope3recipes/recipes.py,sha256=Z63B4OON3G71nSns4BiiV0FwOPm05PkiBANU68XwsVE,28692
+zc/zope3recipes/tests.py,sha256=3n3BN_3bWhPFazxv8GsdzXc8JBrI5OoKbPBdXq0pVNo,10523
+zc/zope3recipes/winctl.py,sha256=1C3tObs1dZ5wtL9bXzQxB_HTK1201It9E10z6tKYI2Q,10722
+zc.zope3recipes-1.0.dist-info/METADATA,sha256=liXClto4PgBEVldjxyyAQEKU8KSDDs9u0EqJxNZpOSs,101284
+zc.zope3recipes-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zc.zope3recipes-1.0.dist-info/entry_points.txt,sha256=T7Glft9W6qtwAlK4WDIwZ5wzg-yfihC-otTgmU6tYTI,228
+zc.zope3recipes-1.0.dist-info/namespace_packages.txt,sha256=nptwHX5ivUBBZ49av8trjckjjvj_7OZ_f0bSLnluz1k,3
+zc.zope3recipes-1.0.dist-info/top_level.txt,sha256=nptwHX5ivUBBZ49av8trjckjjvj_7OZ_f0bSLnluz1k,3
+zc.zope3recipes-1.0.dist-info/RECORD,,
