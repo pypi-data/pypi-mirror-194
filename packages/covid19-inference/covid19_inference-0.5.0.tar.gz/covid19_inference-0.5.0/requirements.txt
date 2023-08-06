@@ -1,0 +1,10 @@
+numpy
+matplotlib
+pymc>=5.0.0
+pytensor
+pandas
+pytest
+requests
+numpyro
+cairosvg
+watermark
