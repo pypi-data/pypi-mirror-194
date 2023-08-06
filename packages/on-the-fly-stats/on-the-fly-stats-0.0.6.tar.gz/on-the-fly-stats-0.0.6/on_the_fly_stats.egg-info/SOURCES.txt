@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+on_the_fly_stats/__init__.py
+on_the_fly_stats.egg-info/PKG-INFO
+on_the_fly_stats.egg-info/SOURCES.txt
+on_the_fly_stats.egg-info/dependency_links.txt
+on_the_fly_stats.egg-info/requires.txt
+on_the_fly_stats.egg-info/top_level.txt
+on_the_fly_stats/lib/average_info.py
+on_the_fly_stats/lib/counter_info.py
+on_the_fly_stats/lib/min_max_info.py
+on_the_fly_stats/lib/otf_stats.py
+on_the_fly_stats/lib/stddev_info.py
+on_the_fly_stats/lib/version.json
