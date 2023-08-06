@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: python-paypal-api
+Version: 0.0.3
+Summary: Paypal Python 3 API integration
+Home-page: https://github.com/denisneuf/python_paypal_api
+Author: denisneuf
+Author-email: denisneuf@hotmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<2.29.0,>=2.27.1)
+Requires-Dist: confuse (<2.1,>=1.7)
+
+# PyPaypal Client Library
+
+Unofficial python Paypal API client with v1 and v2 endpoint support.
+
