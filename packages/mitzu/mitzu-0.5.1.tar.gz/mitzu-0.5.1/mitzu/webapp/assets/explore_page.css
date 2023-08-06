@@ -1,0 +1,108 @@
+:root {
+  --component-height: 31px;
+  --mdb-body-font-size-large: 18px;
+  --mdb-body-font-size: 12px;
+  --mdb-body-font-size-small: 8px;
+}
+
+.complex_segment {
+  margin-bottom: 5px;
+}
+
+.complex_segment .simple_segment {
+  width: 100%;
+  display: flex;
+  padding-left: 10px;
+}
+
+.graph_container {
+  min-height: 450px;
+}
+
+.spinner-border {
+  height: var(--mdb-body-font-size);
+  width: var(--mdb-body-font-size);
+  border-width: 1px;
+}
+
+.complex_segment {
+  margin-bottom: 5px;
+}
+
+.complex_segment .mantine-12zgr9 {
+  font-size: var(--mdb-body-font-size) !important;
+}
+
+.complex_segment .mantine-1e8dll4,
+.complex_segment .mantine-zmh4e,
+.complex_segment .mantine-1ajyf09,
+.complex_segment .mantine-qew57g {
+  /* All selects in complex segment */
+  border: 0px;
+  background: transparent;
+  font-size: var(--mdb-body-font-size) !important;
+  font-weight: var(--mdb-body-font-weight);
+  line-height: var(--mdb-body-font-weight);
+  font: var(--mdb-font-roboto);
+}
+
+.property_name_dropdown .mantine-qew57g,
+.property_name_dropdown .mantine-12sbrde {
+  /* Property name min width */
+  width: 200px;
+  padding-right: 0px;
+}
+
+.property_operator_dropdown .mantine-qew57g,
+.property_operator_dropdown .mantine-12sbrde {
+  /* Property operator min width */
+  width: 70px;
+  padding-right: 0px;
+}
+
+.property_value_input .mantine-fqghar {
+  /* Simple segment selected values */
+  font-size: var(--mdb-body-font-size) !important;
+  font-weight: var(--mdb-body-font-weight);
+  font: var(--mdb-font-roboto);
+  background: rgba(39, 128, 227, 0.2);
+}
+
+.complex_segment_group_by.with_value {
+  background-color: #6ebbaa2a;
+}
+
+.event_name_dropdown.with_value {
+  background-color: #6eaadd2a;
+}
+
+.simple_segment.with_value {
+  background-color: #6eaadd15;
+}
+
+.complex_segment .mantine-uquezq {
+  /* Caret of every select  */
+  display: none;
+}
+
+.property_value_input .mantine-rynikm {
+  /* Property value popup dropdown */
+  width: fit-content !important;
+  min-width: 200px;
+}
+
+.property_name_dropdown .mantine-rynikm {
+  /* Property name dropdown popup position from screen left */
+  left: 10px !important;
+}
+
+.event_segment {
+  border-radius: 5px;
+  margin: 7px;
+}
+
+.complex_segment .mantine-1e8dll4 {
+  /* Simple segment value dropdown */
+  background: transparent;
+  border: none;
+}
