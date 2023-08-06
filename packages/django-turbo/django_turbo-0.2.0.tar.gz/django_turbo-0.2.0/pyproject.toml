@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "django-turbo"
+version = "0.2.0"
+description = "Use Hotwire Turbo in your Django application."
+authors = ["Josiah Kaviani <proofit404@gmail.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+packages = [{include = "django_turbo"}]
+
+[tool.poetry.dependencies]
+python = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
