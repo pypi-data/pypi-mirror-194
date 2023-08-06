@@ -1,0 +1,10 @@
+wammodels/OPTIMIZACION_NEW.r,sha256=XmiJM5r4uzhRyEvi4OJmdCBuvyCvMcPUHGJQz0hzcPc,2662
+wammodels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wammodels/combination.py,sha256=29zQ5_teH9sCLWu2UD7C1dIrhMWphcsXU24nLqwGoDU,26903
+wammodels/descomp.py,sha256=_Bj4RHh0DFV4-OYsoF-IzJX3xDLweJvowM1seSC-k0k,6347
+wammodels/global_func.py,sha256=xmaRfVRvNZl7-7uTytw_oz9LEBmPai3ZLGxtNyXtNco,3281
+wammodels/optimization.py,sha256=ivhF0X8fWxbWdGyrHnknRCjBE6nEeLFmunisbWYbZYU,1707
+wammodels-0.0.7.dist-info/METADATA,sha256=9dvY2sU2ZKPcCSPERt5D0XInwslKYYzo1z35Wu45sgA,7660
+wammodels-0.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wammodels-0.0.7.dist-info/top_level.txt,sha256=QWc0KjA4ZfuYMsp8nuHkcWGULoA2FV_OQsXjtvZBIyA,10
+wammodels-0.0.7.dist-info/RECORD,,
