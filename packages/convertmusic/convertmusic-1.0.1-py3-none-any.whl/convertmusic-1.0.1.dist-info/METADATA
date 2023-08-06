@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: convertmusic
+Version: 1.0.1
+Summary: A simple music converter for local personal use
+Keywords: music,conversion,ffmpeg
+Author-email: "Taylor C. Richberger" <taywee@gmx.com>
+Maintainer-email: "Taylor C. Richberger" <taywee@gmx.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Classifier: Topic :: Utilities
+Project-URL: repository, https://gitlab.com/Taywee/convertmusic
+
+# convertmusic
+
+Convert a source archive music set into an encoded directory of music, taking
+care of illegal characters and doing conversion in parallel if you wish.
+

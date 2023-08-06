@@ -1,0 +1,3 @@
+[console_scripts]
+convertmusic=convertmusic.__main__:main
+
