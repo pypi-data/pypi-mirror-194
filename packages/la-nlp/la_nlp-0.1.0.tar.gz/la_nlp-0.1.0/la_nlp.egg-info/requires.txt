@@ -1,0 +1,2 @@
+spacy==3.4.3
+vaderSentiment==3.3.2
