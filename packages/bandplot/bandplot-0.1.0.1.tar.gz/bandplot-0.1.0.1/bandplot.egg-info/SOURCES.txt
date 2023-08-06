@@ -1,0 +1,12 @@
+LICENSE.txt
+setup.py
+bandplot/__init__.py
+bandplot/plots.py
+bandplot/readdata.py
+bandplot/wrapper.py
+bandplot.egg-info/PKG-INFO
+bandplot.egg-info/SOURCES.txt
+bandplot.egg-info/dependency_links.txt
+bandplot.egg-info/entry_points.txt
+bandplot.egg-info/requires.txt
+bandplot.egg-info/top_level.txt
