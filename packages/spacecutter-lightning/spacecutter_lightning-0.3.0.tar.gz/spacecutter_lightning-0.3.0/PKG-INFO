@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: spacecutter-lightning
+Version: 0.3.0
+Summary: PyTorch-Lightning callback for spacecutter
+License: MIT
+Author: Soof Golan
+Author-email: pypi@soofgolan.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytorch-lightning (>=1.9.3,<2.0.0)
+Requires-Dist: spacecutter-torch (>=0.4.0,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Spacecutter Lightning
+
+A PyTorch Lightning Callback for Spacecutter.
+
+## Installation
+
+```bash
+pip install spacecutter-lightning
+```
+
+## Usage
+
+```python
+import torch
+import pytorch_lightning as pl
+from spacecutter_lightning import ClipCutpoints
+from spacecutter import OrdinalLogisticHead, CumulativeLinkLoss
+
+num_classes = 10
+num_features = 5
+hidden_size = 10
+size = 200
+
+x = torch.randn(size, num_features)
+y = torch.randint(0, num_classes, (size, 1))
+
+train_dataloader = torch.utils.data.DataLoader(
+    torch.utils.data.TensorDataset(x, y),
+)
+
+model = torch.nn.Sequential(
+    torch.nn.Linear(num_features, hidden_size),
+    torch.nn.ReLU(),
+    torch.nn.Linear(hidden_size, 1),
+    OrdinalLogisticHead(num_classes),
+)
+
+loss_fn = CumulativeLinkLoss()
+
+
+class LitModel(pl.LightningModule):
+    def __init__(self):
+        super().__init__()
+        self.model = model
+        self.loss_fn = loss_fn
+
+    def forward(self, x):
+        return self.model(x)
+
+    def training_step(self, batch, batch_idx):
+        x, y = batch
+        y_hat = self(x)
+        loss = self.loss_fn(y_hat, y)
+        self.log("train_loss", loss)
+        return loss
+
+    def configure_optimizers(self):
+        return torch.optim.Adam(self.parameters(), lr=1e-3)
+
+
+trainer = pl.Trainer(
+    callbacks=[ClipCutpoints()],
+    max_epochs=10,
+)
+trainer.fit(LitModel(), train_dataloader)
+```
