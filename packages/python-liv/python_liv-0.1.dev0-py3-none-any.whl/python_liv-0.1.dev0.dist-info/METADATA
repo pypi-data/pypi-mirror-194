@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: python-liv
+Version: 0.1.dev0
+Summary: Generating verification conditions out of C programs.
+Home-page: https://gitlab.com/sosy-lab/software/liv
+Author: Martin Spiessl
+License: Apache-2.0
+Project-URL: Documentation, https://gitlab.com/sosy-lab/software/liv/doc
+Project-URL: Changelog, https://gitlab.com/sosy-lab/software/liv/CHANGELOG.md
+Project-URL: Issue Tracker, https://gitlab.com/sosy-lab/software/liv/issues
+Keywords: verification,validation
+Platform: Linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: coveriteam
+Requires-Dist: graphviz
+
+# LIV: Generating verification conditions out of C programs
+
+
+
+
