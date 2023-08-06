@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: YISYKS
+Version: 0.1.0
+Summary: YIS (YouTube Info Search) is a Python desktop application that allows you to search for and download YouTube videos using their URLs.
+Home-page: https://github.com/TheTechyKid/YIS
+Author: TheTechyKid
+Author-email: thefriendlyhacker44@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pytube (>=12.1.2)
+Requires-Dist: setuptools (>=65.5.0)
+Requires-Dist: fast-youtube-search (>=0.0.8)
+Requires-Dist: customtkinter (>=5.1.2)
+
