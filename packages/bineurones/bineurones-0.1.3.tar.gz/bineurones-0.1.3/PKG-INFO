@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bineurones
+Version: 0.1.3
+Summary: a libary to create neurones with two inputs
+Home-page: https://github.com/Guille-ux
+Author: Guillermo Leira Temes
+Author-email: guilleleiratemes@gmail.com
+License: GPL
