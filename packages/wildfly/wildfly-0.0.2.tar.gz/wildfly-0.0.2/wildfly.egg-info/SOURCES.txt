@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+wildfly/__init__.py
+wildfly/wildfly.py
+wildfly.egg-info/PKG-INFO
+wildfly.egg-info/SOURCES.txt
+wildfly.egg-info/dependency_links.txt
+wildfly.egg-info/not-zip-safe
+wildfly.egg-info/top_level.txt
