@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: dvg-pid-controller
+Version: 2.1.1
+Summary: PID controller with integral-windup & derivative-kick prevention and bumpless manual-to-auto-mode transfer.
+Home-page: https://github.com/Dennis-van-Gils/python-dvg-pid-controller
+Author: Dennis van Gils
+Author-email: vangils.dennis@gmail.com
+License: MIT
+Project-URL: Issue Tracker, https://github.com/Dennis-van-Gils/python-dvg-pid-controller/issues
+Keywords: PID,feedback,controller,automation,laboratory,science
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering 
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: numpy (~=1.15)
+Requires-Dist: dvg-debug-functions (~=2.1)
+
+.. image:: https://img.shields.io/pypi/v/dvg-pid-controller
+    :target: https://pypi.org/project/dvg-pid-controller
+.. image:: https://img.shields.io/pypi/pyversions/dvg-pid-controller
+    :target: https://pypi.org/project/dvg-pid-controller
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+.. image:: https://img.shields.io/badge/License-MIT-purple.svg
+    :target: https://github.com/Dennis-van-Gils/python-dvg-pid-controller/blob/master/LICENSE.txt
+
+DvG_PID_Controller
+==================
+*PID controller with integral-windup & derivative-kick prevention and bumpless
+manual-to-auto-mode transfer.*
+
+- Github: https://github.com/Dennis-van-Gils/python-dvg-pid-controller
+- PyPI: https://pypi.org/project/dvg-pid-controller
+
+Installation::
+
+    pip install dvg-pid-controller
+
+Based on C++ code by:
+
+    ::
+
+        /******************************************************************************
+        * Arduino PID Library - Version 1.2.1
+        * by Brett Beauregard <br3ttb@gmail.com> brettbeauregard.com
+        *
+        * This Library is licensed under the MIT License
+        ******************************************************************************/
+
+    More information:
+        * http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
+        * http://playground.arduino.cc/Code/PIDLibrary
+
+    Ported to Python by Dennis van Gils.
+
+Modifications:
+
+    * Code refactoring.
+    * P_ON_M mode has been removed.
+    * Made the proportional, integrative and derivative terms accessible.
+    * Made the last error accessible.
+    * Added optional argument `differential_input` to have the PID controller
+      regulate a specific difference with respect to the main argument
+      `current_input`. The specific difference that will be regulated is set by
+      `setpoint`.
+      Contributor: https://github.com/antonverburg.
+
+Changelog
+=========
+
+2.1.1 (2023-02-27)
+------------------
+* Deprecated `requires.io`
+
+2.1.0 (2021-12-04)
+------------------
+* Made the last error accessible
+* Added optional argument `differential_input` to have the PID controller
+  regulate a specific difference with respect to the main argument
+  `current_input`. The specific difference that will be regulated is set by
+  `setpoint`.
+  Contributor: https://github.com/antonverburg.
+
+2.0.2 (2021-12-04)
+------------------
+(yanked, should have been minor version increment instead of patch)
+
+2.0.1 (2021-12-03)
+------------------
+(yanked, should have been minor version increment instead of patch)
+
+2.0.0 (2020-07-02)
+------------------
+* DvG module filenames changed to lowercase
+
+1.0.1 (2020-06-29)
+------------------
+* Fixed Readme typo
+
+1.0.0 (2020-06-29)
+------------------
+* First release on PyPI
