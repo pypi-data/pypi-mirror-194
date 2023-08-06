@@ -1,0 +1,9 @@
+kafka_connect_api/__init__.py,sha256=vf4FwlyQjF4aiDi7yyNA4BuojvXr3-zNk-w9LZEkHfA,141
+kafka_connect_api/aws_lambdas.py,sha256=cbD7J_UnVVm3a3Y_pKcaOQpUX8dlyzeHud0g6GOswsE,7429
+kafka_connect_api/errors.py,sha256=vkmKpdkw5adO7lnE33iKePMalAlM5UdzNViB21Uf8UE,2712
+kafka_connect_api/kafka_connect_api.py,sha256=aqmu6OuRFkDp1vkhTkDhI7eOAdIdM_P2QlZO5wRvql8,10210
+kafka_connect_api/tools.py,sha256=1Iedgy_do3TPyuxS9DTHWhkypCTRAjF7L9SbX30ttFU,162
+kafka_connect_api-0.5.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+kafka_connect_api-0.5.1.dist-info/METADATA,sha256=oW6Jogeltzd59juzm6Yee29uesIDS1BCYMINnEx5KPM,3373
+kafka_connect_api-0.5.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+kafka_connect_api-0.5.1.dist-info/RECORD,,
