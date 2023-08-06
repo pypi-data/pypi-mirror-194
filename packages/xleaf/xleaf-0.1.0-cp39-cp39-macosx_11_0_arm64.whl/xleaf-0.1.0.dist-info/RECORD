@@ -1,0 +1,10 @@
+xleaf/__init__.py,sha256=bYkauYJ396AjMQg58C9tN8GQ83Q-IKncgK4JFSQIDlU,142
+xleaf/__version__.py,sha256=u-KCI1MrK9_U6iuAAidEBa5uvzbcGtdMTzwjL6A3r4U,12
+xleaf/parameters.py,sha256=mYByR0pjIie_hc9elrag0iKqibgl4C31E21fXi770-A,319
+xleaf/prosail.cpython-39-darwin.so,sha256=HwnHHKmLFvm7Ib5aM99bhpmNBOdzbD0KGtyB0cfHReE,442569
+xleaf/simulators.py,sha256=bd9FFjxioDut7JvVZGWSLEZCqmgXr5pmIJnS29MpjZQ,6038
+xleaf-0.1.0.dist-info/LICENSE,sha256=jWWsBQlpx4LFPEz7dDnsHoA72Rccl5YmDEr-K7JT5H8,1077
+xleaf-0.1.0.dist-info/METADATA,sha256=sOb-aTT51Lt7CR5DryXdm6tEc9EE5zWgYY7EBMIjT1I,721
+xleaf-0.1.0.dist-info/WHEEL,sha256=C_UN2A-Q94yg5uF00Lizg2aQEZjfzpeyFE_wdLoeYLk,108
+xleaf-0.1.0.dist-info/top_level.txt,sha256=S3pQDQmAO04HLZhDvtiuY4UNyXhJN-lX7Us_Y0u9hBo,6
+xleaf-0.1.0.dist-info/RECORD,,
