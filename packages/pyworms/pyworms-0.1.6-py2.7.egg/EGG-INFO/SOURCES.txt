@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyworms/__init__.py
+pyworms/utils.py
+pyworms.egg-info/PKG-INFO
+pyworms.egg-info/SOURCES.txt
+pyworms.egg-info/dependency_links.txt
+pyworms.egg-info/requires.txt
+pyworms.egg-info/top_level.txt
+test/test.py
