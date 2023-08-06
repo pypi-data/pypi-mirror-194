@@ -1,0 +1,11 @@
+lowatt_grdf/__init__.py,sha256=a-WvdAzAHbMCoBm_9B6IoGdU8lA34ux5H7wFhyroQv4,1161
+lowatt_grdf/api.py,sha256=yMyo9p_Uuea67wSCsIGyuwNqJRqOqxyWBTmvj5MMCo8,8619
+lowatt_grdf/main.py,sha256=ZToLIj0S5GjzEPAMZufpzOQA4yzPx7XXOxz72Ic2RBg,6448
+lowatt_grdf/models.py,sha256=n8zTkcpkMVREpBTuDLLnm5fFBg_9XAv8AkXvU0Kgje4,5518
+lowatt_grdf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lowatt_grdf-2.1.2.dist-info/LICENSE,sha256=k5raFzDbjw80llKj41vxUzI-PK16CE8rZd9WV6wSyg0,1084
+lowatt_grdf-2.1.2.dist-info/METADATA,sha256=i8l0tFqk4H4EhOHBjIMINiEnfleALv9dtMF1hMfnypg,3086
+lowatt_grdf-2.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+lowatt_grdf-2.1.2.dist-info/entry_points.txt,sha256=49J87VYPwPwD_mQrr9r_wOtWq_YZ-d0aplj5ccisH20,54
+lowatt_grdf-2.1.2.dist-info/top_level.txt,sha256=nqqSqS4ZR4hgBlIPqGn1VVu3uck5q_-WAjBVVg7ohtU,12
+lowatt_grdf-2.1.2.dist-info/RECORD,,
