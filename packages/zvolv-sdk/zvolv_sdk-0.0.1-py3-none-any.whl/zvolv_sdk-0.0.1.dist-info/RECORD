@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_divide_by_three.py,sha256=paZw5e3wj5yHl3sIZTROnp68AC4rjRMUbHyyWn8VYzU,194
+zvolv_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zvolv_sdk/divide_by_three.py,sha256=oPx1y3ofS41P-LtGCOXdp1DC7uNdatMxWcE7WZXUiMc,41
+zvolv_sdk/version.py,sha256=cwUmr0seJIybRfGf6esj7j-LWeL2YW25YQgO9dkwH5M,91
+zvolv_sdk-0.0.1.dist-info/LICENSE,sha256=nwr1ThHsok15VZWTqaOPrQQ0LTkUnzPxi82-ZdL0EsU,1065
+zvolv_sdk-0.0.1.dist-info/METADATA,sha256=GzCa7Pp30L_zv0dVPSIcL523etcl4CO-WnOjOdfPuv4,5457
+zvolv_sdk-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zvolv_sdk-0.0.1.dist-info/top_level.txt,sha256=G98VdL5lWIYtYcsPMJzoM2mxgVbbyVxhb_Vebe38WYE,16
+zvolv_sdk-0.0.1.dist-info/RECORD,,
