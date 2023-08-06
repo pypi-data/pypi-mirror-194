@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "verbake"
+version = "1.0.0"
+description = "Overwrite __version__ in a package's __init__.py with the version from pyproject.toml"
+authors = ["Ariff Jeff <ariffjeff@icloud.com>"]
+readme = "README.md"
+packages = [{include = "verbake"}]
+
+[tool.poetry.dependencies]
+python = "^3.8, <3.12"
+packaging = "^23.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
