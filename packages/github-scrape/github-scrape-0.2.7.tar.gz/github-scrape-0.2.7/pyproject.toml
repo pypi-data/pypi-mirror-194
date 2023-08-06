@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-scrape"
+version = "0.2.7"
+authors = [
+  { name="Akinyele Ibrahim", email="iakinyele3@gmail.com" }
+]
+
+description = "A program to scrape github followers"
+readme = "README.md"
+requires-python = ">=3.7"
+#install_requires = ['requests', 'bs4']
+#download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz'
+keywords = ['Github', 'scrape', 'check followers']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ['bs4', 'lxml', 'requests']
+
+[project.urls]
+"Homepage" = "https://github.com/akinyeleib/github-followers-scrape"
