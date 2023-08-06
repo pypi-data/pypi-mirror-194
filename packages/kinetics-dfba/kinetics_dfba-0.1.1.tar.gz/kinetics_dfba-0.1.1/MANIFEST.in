@@ -1,0 +1,4 @@
+exclude *.ipynb
+exclude *.xml
+exclude solver_unmodified.py
+exclude test1.pyt
