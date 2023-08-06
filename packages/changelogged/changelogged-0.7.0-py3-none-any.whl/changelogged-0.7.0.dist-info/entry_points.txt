@@ -1,0 +1,3 @@
+[console_scripts]
+changelogger=changelogger.__main__:app
+
