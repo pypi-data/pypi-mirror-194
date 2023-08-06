@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: anonlink-client
+Version: 0.1.8
+Summary: Client side tool for clkhash and blocklib
+Home-page: https://github.com/data61/anonlink-client
+License: Apache-2.0
+Author: Wilko Henecka
+Author-email: wilkohenecka@gmx.net
+Requires-Python: >=3.8,<3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Security :: Cryptography
+Requires-Dist: bashplotlib (>=0.6,<0.7)
+Requires-Dist: blocklib (>=0.1.8,<0.2.0)
+Requires-Dist: click (>=7.1.2,<9.0.0)
+Requires-Dist: clkhash (>=0.17,<0.18)
+Requires-Dist: ijson (>=3.1.4,<4.0.0)
+Requires-Dist: jsonschema (>=3.2,<5.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: minio (>=7.0.3,<8.0.0)
+Requires-Dist: pydantic (>=1.10.5,<2.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: retrying (>=1.3.3,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/data61/anonlink-client/issues
+Project-URL: Documentation, https://anonlink-client.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/data61/anonlink-client
+Description-Content-Type: text/markdown
+
+[![codecov](https://codecov.io/gh/data61/anonlink-client/branch/main/graph/badge.svg)](https://codecov.io/gh/data61/anonlink-client)
+[![Documentation Status](https://readthedocs.org/projects/anonlink-client/badge/?version=latest)](http://anonlink-client.readthedocs.io/en/latest/?badge=latest)
+[![Testing](https://github.com/data61/anonlink-client/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/data61/anonlink-client/actions/workflows/ci.yml)
+[![Requirements Status](https://requires.io/github/data61/anonlink-client/requirements.svg?branch=main)](https://requires.io/github/data61/anonlink-client/requirements/?branch=main)
+[![Downloads](https://pepy.tech/badge/anonlink-client)](https://pepy.tech/project/anonlink-client)
+# Anonlink Client
+
+
+Client-facing API to interact with anonlink system including command line tools and Rest API communication.
+Anonlink system needs the following three components to work together:
+
+* [clkhash](https://github.com/data61/clkhash)
+* [blocklib](https://github.com/data61/blocklib)
+
+This package provides an easy-to-use API to interact with the above packages to complete a record linkage job.
+
+The way to interact with anonlink system is via Command Line Tool `anonlink`. You can encode data containing PI (Personal
+ Identifying Information) locally using `anonlink encode` and generate candidate blocks locally to scale up record linkage 
+ using `anonlink block`.
+
+### Installation
+
+Install with pip/poetry etc.:
+
+```shell
+pip install anonlink-client
+```
+
+### Documentation
+
+https://anonlink-client.readthedocs.io/en/stable/
+
+### CLI Tool
+
+After installation, you should have a `anonlink` program in your path. For
+example, to encode PII data  `alice.csv` locally with schema `schema.json` and secret `horse`, run:
+```bash
+$ anonlink encode 'alice.csv' 'horse' 'schema.json' 'encoded-entities.json'
+```
+
+It will generate the CLK output and store in `clk.json`. To find out how to define the schema
+for your PII data, please refer [this page](https://clkhash.readthedocs.io/en/stable/schema.html) for 
+details.
+
+

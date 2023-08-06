@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=cRVCpu3uXQbGQDsLp9FxPxnszdfPJOJDK0866vtWlbg,1472
+anonlinkclient/__init__.py,sha256=5NjEWz99pI7VndusKN9zRtvfpA7LPTfI6OWd7ZJSJ1g,201
+anonlinkclient/cli.py,sha256=YG1q3fLzKPSSSyE9aGHst_GR_YIwtSbaDI9dY3ssN4c,17701
+anonlinkclient/data/blocking_schema.json,sha256=4eQeYZRW0kWp33VKOZOHBJc27sIjUU78LY8CtQR6Umw,253
+anonlinkclient/data/nvtr_schema.json,sha256=r8xt7SUmqkdhj8wQNKUZRLi4mDYOEdKUwkhaMbrGoaY,1027
+anonlinkclient/data/randomnames-schema.json,sha256=m4SQfEdTcOtetnoLSsW5yyRl7NyI_12Rv6wK2YlVr04,1547
+anonlinkclient/data/schema.json,sha256=75Shwi3ZhOuuXVKrItjKhoiLQXDK6mcF0ELnQNm7o_A,2176
+anonlinkclient/utils.py,sha256=97joOqZDXr7HYqvLWWxoF59NRaqgqIK7l3dKkSli094,6757
+anonlink_client-0.1.8.dist-info/LICENSE,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+anonlink_client-0.1.8.dist-info/METADATA,sha256=oORTwNfqPTimPaosEZvuhxW1XW5jVC1OortTLacVSaE,3971
+anonlink_client-0.1.8.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+anonlink_client-0.1.8.dist-info/entry_points.txt,sha256=mG-8hhZ1LRt8l3iSGtzIbSqSzjQJS7-QiyD8aiCZBaQ,51
+anonlink_client-0.1.8.dist-info/RECORD,,
