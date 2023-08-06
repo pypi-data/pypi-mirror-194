@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: autonomi
+Version: 0.1.2
+Summary: Autonomi Cloud Python Client
+Home-page: https://www.autonomi.ai
+Download-URL: https://github.com/autonomi-ai/autonomi-client
+Author: Sudeep Pillai
+Author-email: sudeep@autonomi.ai
+License: MIT License        
+        Copyright (c) 2022-, Autonomi AI, Inc., all rights reserved.        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Project-URL: Documentation, https://docs.autonomi.ai
+Project-URL: Source Code, https://github.com/autonomi-ai/autonomi-client
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7.3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (>=8.1.0)
+Requires-Dist: cloudpathlib[gs,s3]
+Requires-Dist: ipython
+Requires-Dist: loguru
+Requires-Dist: opencv-python-headless (>=4.6)
+Requires-Dist: pandas
+Requires-Dist: Pillow (==9.2.0)
+Requires-Dist: pydantic[dotenv]
+Requires-Dist: requests
+Requires-Dist: sentry-sdk
+Requires-Dist: tenacity
+Requires-Dist: tqdm
+Requires-Dist: typer (>=0.6.1)
+Provides-Extra: all
+Requires-Dist: loguru ; extra == 'all'
+Requires-Dist: notebook ; extra == 'all'
+Requires-Dist: opencv-python-headless (>=4.6) ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: Pillow (==9.2.0) ; extra == 'all'
+Requires-Dist: pre-commit ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-dependency ; extra == 'all'
+Requires-Dist: tenacity ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: loguru ; extra == 'dev'
+Requires-Dist: notebook ; extra == 'dev'
+Requires-Dist: opencv-python-headless (>=4.6) ; extra == 'dev'
+Requires-Dist: pandas ; extra == 'dev'
+Requires-Dist: Pillow (==9.2.0) ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-dependency ; extra == 'dev'
+Requires-Dist: tenacity ; extra == 'dev'
+
+# Autonomi Cloud Python Client
+
+<p align="center">
+    <a href="https://pypi.org/project/autonomi/">
+        <img alt="PyPi Version" src="https://badge.fury.io/py/autonomi.svg">
+    </a>
+    <a href="https://pypi.org/project/autonomi/">
+        <img alt="PyPi Version" src="https://img.shields.io/pypi/pyversions/autonomi">
+    </a>
+    <a href="https://pypi.org/project/autonomi/">
+        <img alt="PyPi Downloads" src="https://img.shields.io/pypi/dm/autonomi">
+    </a>
+    <a href="https://betteruptime.com/?utm_source=status_badge">
+        <img alt="Better Uptime" src="https://betteruptime.com/status-badges/v1/monitor/m27f.svg" height="20px">
+    </a>
+</p>
+
+
+The Autonomi Cloud Python Client provides a convenient way to interact with the Autonomi Cloud API. We provide a unified client interface for various API services offered on the [Autonomi Cloud Platform](https://console.autonomi.ai/).
+
+
+## Installation
+
+The Autonomi AI Python Client is available on PyPI. You can install it using pip:
+
+```sh
+pip install autonomi
+```
+
+Install from source:
+
+```sh
+git clone https://github.com/autonomi-ai/autonomi-client
+cd autonomi-client
+pip install -e .
+```
+
+## Authentication
+
+The Autonomi AI Python Client uses API keys to authenticate requests. You can create your own API keys, after you've signed up, in the [Autonomi Cloud console](https://console.autonomi.ai/).
+
+```bash
+export AUTONOMI_API_KEY='...'
+```
+
+## Usage
+
+The python client needs to be configured with your personal API key before you can use it. You can set the API key in the environment variable `AUTONOMI_API_KEY` as described above or pass it to the client constructor.
+
+```python
+from autonomi.client import AutonomiClient
+
+# Usage with variable `AUTONOMI_API_KEY` read from your environment.
+>>> cli = AutonomiClient()
+AutonomiClient [version=X.Y.Z] :: [endpoint=https://api.autonomi.ai/v1, health=OK, auth=OK]
+
+# Usage with API key passed to constructor
+cli = AutonomiClient(api_key='...')
+AutonomiClient [version=X.Y.Z] :: [endpoint=https://api.autonomi.ai/v1, health=OK, auth=OK]
+```
+
+## Requirements
+
+ - Python 3.7+
+
+ We currently support Python 3.7+ on Linux and macOS. If you have any questions or issues, please [open an issue](https://github.com/autonomi-ai/autonomi-client/issues).
