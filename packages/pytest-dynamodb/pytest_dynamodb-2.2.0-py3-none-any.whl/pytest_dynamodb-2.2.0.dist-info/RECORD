@@ -1,0 +1,11 @@
+pytest_dynamodb/__init__.py,sha256=Z6kxEeBSha8Eeg9ucOd0UhvIvb1G5UMCQqHEQb9cX1E,876
+pytest_dynamodb/factories.py,sha256=0GtLaWiHClhN2Uj4qY6_eIx3W1WMzK97-3hPNj5gP-c,6255
+pytest_dynamodb/plugin.py,sha256=wZ5v4_x9DWk1bBhmjpJy--OLtTEZDZovoN_U0h7ddKM,3230
+pytest_dynamodb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_dynamodb-2.2.0.dist-info/AUTHORS.rst,sha256=LYl2J_7aiQ2ARIQSlVT3lWNFuoJID6eTj-G3Qn7m110,220
+pytest_dynamodb-2.2.0.dist-info/METADATA,sha256=BeS0meUwfu3V-evsu2VGlDTRkfrRPDU99tqGzTGM5Fw,5936
+pytest_dynamodb-2.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pytest_dynamodb-2.2.0.dist-info/entry_points.txt,sha256=LAyoMPFbLAyWJR3tE2tC3FTz7jBCWFHos0gwweAlNL8,51
+pytest_dynamodb-2.2.0.dist-info/top_level.txt,sha256=l5KVuUnes7kPhpkbvZQuQqkglEV1uHT_VoQxfW2erWc,16
+pytest_dynamodb-2.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pytest_dynamodb-2.2.0.dist-info/RECORD,,
