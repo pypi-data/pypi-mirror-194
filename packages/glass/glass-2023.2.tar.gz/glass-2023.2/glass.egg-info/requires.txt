@@ -1,0 +1,15 @@
+numpy
+healpix>=2022.11.1
+healpy>=1.15.0
+cosmology>=2022.10.9
+gaussiancl>=2022.10.21
+
+[docs]
+sphinx
+furo
+sphinxcontrib-katex
+numpydoc
+matplotlib
+
+[test]
+pytest
