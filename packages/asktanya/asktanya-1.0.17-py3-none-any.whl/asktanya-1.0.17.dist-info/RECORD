@@ -1,0 +1,11 @@
+asktanya/__init__.py,sha256=7qPN26j74fKe5gqd3Ri2jSUK6aw4Qubxr1NHGBgrg3I,235
+asktanya/clean.py,sha256=I-F0alugaNNGtmDNhVQtAWn7nGn-YldjCtcArIyGKeU,859
+asktanya/func.py,sha256=5gvfeuT7RI93MxbnNE5YpkmFIxP9bMjBJxkQQIFE2bM,6593
+asktanya/main.py,sha256=4j4063UD4izq3u44uPLYbRZtOnbVq26MC5FviGkJRZE,2140
+asktanya/data/.keep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asktanya-1.0.17.data/scripts/ask-tanya,sha256=MBaTwnd7A2p80ta4FaUXrU1y_iUgjHiWUtUAeKJ6jxU,146
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asktanya-1.0.17.dist-info/METADATA,sha256=yHerfhwdy4jvyYb_WDzFPxmrwVoZBGCGafomx66VkHU,1797
+asktanya-1.0.17.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+asktanya-1.0.17.dist-info/top_level.txt,sha256=2qffHrsZq7hFulTl7_S84-Cogem-JjNlDCr7O-MeUPY,15
+asktanya-1.0.17.dist-info/RECORD,,

@@ -1,0 +1,6 @@
+#!python
+# -*- coding: utf-8 -*-
+
+from asktanya.main import ask_tanya
+
+print(ask_tanya(input("Ask Tanya anything! \nType your question here: ")))
