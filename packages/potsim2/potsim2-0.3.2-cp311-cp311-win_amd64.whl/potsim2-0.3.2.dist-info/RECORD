@@ -1,0 +1,9 @@
+potsim2/PotGrid.py,sha256=hcXeQn4kPNOdKqPub4i_akqFa17zNL6K4iUg9T4V8M4,6049
+potsim2/__init__.py,sha256=uOGR9bTJFW21nD-XUkLpZHrJWR2IiuABRwGEEE1xxco,28
+potsim2/potsimlib.cp311-win_amd64.pyd,sha256=4pdhF9kXapepbDknHyOUQaJF9OcalUCyGI68bqAo-hk,115200
+potsim2/vdw.py,sha256=B8d_0hFSs7nI4ecJiCI2THvncKMdkHWfzOASugK70PA,2143
+potsim2-0.3.2.dist-info/LICENSE,sha256=JomxUcOuxyU9tE06FBGJS0OJRqbdi-II5Mdyr_JJCUI,1100
+potsim2-0.3.2.dist-info/METADATA,sha256=sXiTSH5juA_0xT3rd5hA4FI6JtahwUra8E2s2TtSb34,1771
+potsim2-0.3.2.dist-info/WHEEL,sha256=wklNeoByNLhdCl-oEQTdaHIeDl4q9zaQVqAlPxUEgLU,102
+potsim2-0.3.2.dist-info/top_level.txt,sha256=aj4INptOAnfgCnI7iuGcRXbcD_invWSEPtPWRwcxlc4,8
+potsim2-0.3.2.dist-info/RECORD,,
