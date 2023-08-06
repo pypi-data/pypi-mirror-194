@@ -1,0 +1,8 @@
+lightning_horovod/__about__.py,sha256=7V6NqCspjQH5w45cLuzNw4LC4GJPPHqOwoVmEkQTc6Y,458
+lightning_horovod/__init__.py,sha256=FSwh8aeeYJH8pfd5woEikzXBvMa3TEMpgEeiFSe3EX8,188
+lightning_horovod/strategy.py,sha256=1dx-3qTRVCPY52yh8_wZ7DWOoDNMwOA66GrdgNQm4qc,10797
+lightning_Horovod-0.1.0.dev0.dist-info/LICENSE,sha256=60BS1E1_65V-Uq1kMDWDTtn_Bam8HhFX0Vnm4bOVweg,11347
+lightning_Horovod-0.1.0.dev0.dist-info/METADATA,sha256=M-QyqdNljpAcXn-UfQ6DbQvhqE55X_PmQXAgPHEYuPI,4143
+lightning_Horovod-0.1.0.dev0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+lightning_Horovod-0.1.0.dev0.dist-info/top_level.txt,sha256=M-01zkUogxF-aYo8DEHZRjBpqPlxlo2KkXHl7rQu6u0,18
+lightning_Horovod-0.1.0.dev0.dist-info/RECORD,,
