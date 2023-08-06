@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block main %}
+    <div class="splash-container">
+        <div class="splash-preview">
+            <div class="header">
+                <h1>{{ name }}</h1>
+                <h2> 产品: <span style="color:red;">{{ product_name }}</span> / 用例: {{ testcases | length }}
+                    {% if zantao_api %}  /
+                        模块缺失:
+                        <span {% if catagory_nomatch %} style="color:red;" {% endif %}>{{ catagory_nomatch }}</span>
+
+                        / <a href="{{ url_for("create_catalogs",filename=name,product=selected_product) }}">创建模块</a>
+                        </h2>
+                    {% endif %}
+            </div>
+
+
+            <ul class="domtree">
+                {% for node in tree_data %}
+                    {% if node.wtype=='liin' %}
+                        <li>
+                            {% elif node.wtype=='liout' %}
+                        </li>
+                    {% elif node.wtype=='ulin' %}
+                        <ul>
+                            {% elif node.wtype=='ulout' %}
+                        </ul>
+                    {% elif node.content %}
+                        <span {% if not node.exist and zantao_api %}
+                            style="color:red;" {% endif %}>{{ node.content }}</span>
+
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
