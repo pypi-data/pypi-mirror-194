@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: seismolab
+Version: 1.0.3
+Summary: Open-source python framework for downloading, analyzing, and visualizing data of variable stars from space-based surveys.
+Home-page: https://github.com/konkolyseismolab/
+Author: Attila Bodi
+Author-email: bodi.attila@csfk.org
+License: UNKNOWN
+Description: <div align="center">
+        
+        # **Seismolab**
+        
+        Open-source python framework for downloading, analyzing, and visualizing data of variable stars from space-based surveys.
+        
+        [![pip](https://img.shields.io/badge/pip-install%20seismolab-blue.svg)](https://pypi.org/project/seismolab/)
+        [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
+        [![](https://img.shields.io/badge/Homepage-Seismolab-brightgreen)](https://konkoly.hu/staff/lmolnar/seismolab/)
+        <a href="https://seismolab.readthedocs.io/en/latest/index.html"><img src="https://img.shields.io/badge/read-the_docs-4D827F.svg?style=flat"/></a>
+        [![Tests](https://github.com/konkolyseismolab/seismolab/actions/workflows/main.yml/badge.svg)](https://github.com/konkolyseismolab/seismolab/actions/workflows/main.yml)
+        
+        </div>
+        
+        --------------------------------------------------------------------------------
+        
+        ## Install seismolab with pip:
+        
+        ```bash
+        pip install seismolab
+        ```
+        
+        For more information on how to install and use seismolab, please refer to the [documentation](https://seismolab.readthedocs.io/en/latest/index.html).
+        
+        ## Contributing
+        Feel free to open PR / Issue, or contact me [here](bodi.attila@csfk.org).
+        
+        ## Acknowledgements
+        This project has been supported by the KKP-137523 'SeismoLab' Élvonal grant of the Hungarian Research, Development and Innovation Office (NKFIH) and the Lendület Program of the Hungarian Academy of Sciences under project No. LP2018-7.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
