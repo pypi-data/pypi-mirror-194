@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: proxystore
+Version: 0.4.1
+Summary: Python lazy object proxy interface for distributed stores.
+Author: Globus Labs
+Author-email: Greg Pauloski <jgpauloski@uchicago.edu>
+Maintainer-email: Greg Pauloski <jgpauloski@uchicago.edu>, Valerie Hayot-Sasson <vhayot@uchicago.edu>
+License: FILE
+Project-URL: homepage, https://github.com/proxystore/proxystore
+Project-URL: documentation, https://proxystore.readthedocs.io
+Project-URL: repository, https://github.com/proxystore/proxystore
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: endpoints
+License-File: LICENSE
+
+# ProxyStore
+
+[![docs](https://github.com/proxystore/proxystore/actions/workflows/docs.yml/badge.svg)](https://github.com/proxystore/proxystore/actions/workflows/docs.yml)
+[![tests](https://github.com/proxystore/proxystore/actions/workflows/tests.yml/badge.svg?label=tests)](https://github.com/proxystore/proxystore/actions)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/proxystore/proxystore/main.svg)](https://results.pre-commit.ci/latest/github/proxystore/proxystore/main)
+
+ProxyStore provides a unique interface to object stores through transparent
+object proxies that is designed to simplify the use of object stores for
+transferring large objects in distributed applications.
+ProxyStore's goals are to:
+
+* **Improve productivity.** ProxyStore enables easy decoupling of
+  communication from the rest of the code, allowing developers to focus
+  on functionality and performance.
+* **Improve compatibility.** Consumers of data can be agnostic to the
+  communication method because object proxies handle the communication
+  behind the scenes.
+* **Improve performance.** Transport methods and object stores can be changed
+  at runtime to optimal choices for the given data without the consumers
+  being aware of the change.
+
+## Installation
+
+Install via pip:
+```bash
+# Base install
+pip install proxystore
+# Extras install for serving Endpoints
+pip install proxystore[endpoints]
+```
+
+More details are available on the [Get Started](https://docs.proxystore.dev/getstarted) guide.
+For local development, see the [Contributing](https://docs.proxystore.dev/contributing) guide.
+
+## Documentation
+
+Complete documentation for ProxyStore at https://proxystore.dev.
