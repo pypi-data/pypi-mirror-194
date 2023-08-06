@@ -1,0 +1,11 @@
+pandas
+pyyaml
+requests
+requests-cache
+
+[export]
+openpyxl
+defusedxml
+
+[security]
+keyring
