@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: bdilab-detect
+Version: 0.1.2.dev0
+Summary: Algorithms for outlier detection, concept drift and metrics.
+Home-page: https://github.com/YFollowSun/bdilab_detect.git
+Author: YJX.
+Author-email: 1339225017@qq.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: matplotlib (<4.0.0,>=3.0.0)
+Requires-Dist: numpy (==1.21.3)
+Requires-Dist: pandas (<2.0.0,>=0.23.3)
+Requires-Dist: Pillow (<10.0.0,>=5.4.1)
+Requires-Dist: opencv-python (<5.0.0,>=3.2.0)
+Requires-Dist: scipy (<2.0.0,>=1.3.0)
+Requires-Dist: scikit-image (!=0.17.1,<0.20,>=0.14.2)
+Requires-Dist: scikit-learn (<2.0.0,>=0.20.2)
+Requires-Dist: transformers (<5.0.0,>=4.0.0)
+Requires-Dist: dill (<0.4.0,>=0.3.0)
+Requires-Dist: tqdm (<5.0.0,>=4.28.1)
+Requires-Dist: requests (<3.0.0,>=2.21.0)
+Requires-Dist: pydantic (<2.0.0,>=1.8.0)
+Requires-Dist: toml (<1.0.0,>=0.10.1)
+Requires-Dist: catalogue (<3.0.0,>=2.0.0)
+Requires-Dist: numba (!=0.54.0,<0.57.0,>=0.50.0)
+Requires-Dist: typing-extensions (>=3.7.4.3)
+Requires-Dist: shap (~=0.41.0)
+Provides-Extra: all
+Requires-Dist: prophet (<2.0.0,>=1.1.0) ; extra == 'all'
+Requires-Dist: tensorflow (==2.7.0) ; extra == 'all'
+Requires-Dist: pykeops (<2.2.0,>=2.0.0) ; extra == 'all'
+Requires-Dist: torch (<1.14.0,>=1.7.0) ; extra == 'all'
+Provides-Extra: keops
+Requires-Dist: pykeops (<2.2.0,>=2.0.0) ; extra == 'keops'
+Requires-Dist: torch (<1.14.0,>=1.7.0) ; extra == 'keops'
+Provides-Extra: prophet
+Requires-Dist: prophet (<2.0.0,>=1.1.0) ; extra == 'prophet'
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow (==2.7.0) ; extra == 'tensorflow'
+Provides-Extra: torch
+Requires-Dist: torch (<1.14.0,>=1.7.0) ; extra == 'torch'
+
+bdilab_detect_xdu
+
+集成完新算法，打包、上传至Pypi。
+1. 注册Pypi账号
+2. 与setup.py处于同一目录
+3. python setup.py sdist bdist_wheel (在dist目录下生成一个tar.gz的源码包和一个.whl的Wheel包)
+4. python install twine (可选)
+5. twine upload dist/* (此步骤要求输入Pypi账号、密码)
+
