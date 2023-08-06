@@ -1,0 +1,9 @@
+geopandas
+matplotlib
+numpy
+pandas>=1.0.0
+pooch
+regionmask
+seaborn
+tqdm
+xarray
