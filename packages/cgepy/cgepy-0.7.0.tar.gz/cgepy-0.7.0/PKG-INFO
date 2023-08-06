@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cgepy
+Version: 0.7.0
+Summary: Tools for developing graphical programs inside the console.
+License: MIT
+Author: catbox305
+Author-email: lion712yt@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+### cgepy // 0.7.0
+###### A simple graphics engine with no dependencies.
+***
+cgePy, or cge, is a text-based graphics engine that can operate in the console or terminal.\
+Currently with zero dependencies, a simple system that can suit many needs, and easily tweaked settings, cgePy will allow you to turn ideas into reality.
+
