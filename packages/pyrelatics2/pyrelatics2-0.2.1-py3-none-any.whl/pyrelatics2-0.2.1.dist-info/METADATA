@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pyrelatics2
+Version: 0.2.1
+Summary: Python package to interact with Relatics webservices
+Home-page: https://github.com/rense-k/pyrelatics2
+Author: Rense Klinkenberg
+Author-email: r@klinkenberg.ws
+License: Apache-2.0
+Keywords: Relatics,webservice,soap-client,oauth2
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: suds-community (>=1.1.2)
+Requires-Dist: colorama
+Provides-Extra: development
+Requires-Dist: black ; extra == 'development'
+Requires-Dist: isort ; extra == 'development'
+Requires-Dist: pylint ; extra == 'development'
+Requires-Dist: wheel ; extra == 'development'
+Requires-Dist: twine ; extra == 'development'
+
+
+Python package to interact with Relatics webservices.
+
+This package allows you to interact with Relatics webservices in two
+ways:
+
+* Get data from a "Servers for providing data" webservice.
+* Submit data to a "Servers for receiving data" webservice.
+
+Three authentication methods are supported: "_OAuth 2.0 - Client
+credentials_", "_Entry code_" and "_Unauthenticated_".
