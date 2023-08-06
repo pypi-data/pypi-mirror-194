@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vsb-text
+Version: 0.1.0
+Summary: Simple demo project
+License: MIT
+Author: vsbd
+Author-email: vsagar19@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pyfiglet (>=0.8.post1,<0.9)
+Requires-Dist: termcolor (>=2.2.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+Simple Demo Package
+
