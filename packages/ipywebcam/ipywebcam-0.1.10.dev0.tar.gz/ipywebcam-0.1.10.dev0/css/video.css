@@ -1,0 +1,405 @@
+/* ==========================================================================
+   #Custom HTML5 Video Player
+   ========================================================================== */
+
+:root {
+  --youtube-red: rgb(254, 9, 0);
+}
+
+.ipywebcam.video-container {
+  width: 800px;
+  border-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ipywebcam.video-container .video {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.ipywebcam.video-container .video-controls {
+  right: 0;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.2s ease;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+
+.ipywebcam.video-container .video-controls.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ipywebcam.video-container .video-progress {
+  position: relative;
+  height: 8.4px;
+  margin-bottom: 10px;
+}
+
+.ipywebcam.video-container progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+  width: 100%;
+  height: 8.4px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+}
+
+.ipywebcam.video-container progress::-webkit-progress-bar {
+  background-color: #474545;
+  border-radius: 2px;
+}
+
+.ipywebcam.video-container progress::-webkit-progress-value {
+  background: var(--youtube-red);
+  border-radius: 2px;
+}
+
+.ipywebcam.video-container progress::-moz-progress-bar {
+  border: 1px solid var(--youtube-red);
+  background: var(--youtube-red);
+}
+
+.ipywebcam.video-container .seek {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+}
+
+.ipywebcam.video-container .seek:hover+.seek-tooltip {
+  display: block;
+}
+
+.ipywebcam.video-container .seek-tooltip {
+  display: none;
+  position: absolute;
+  top: -30px;
+  margin-left: -20px;
+  font-size: 12px;
+  padding: 3px;
+  content: attr(data-title);
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ipywebcam.video-container .range-bar {
+  position: absolute;
+  top: 12px;
+  width: 100%;
+  height: 8.4px;
+  background-color: #474545;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: visible;
+}
+
+.ipywebcam.video-container .range-bar .marker {
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  top: -0.8px;
+  background-color: rgb(254, 9, 0);
+  border-radius: 1px;
+}
+
+.ipywebcam.video-container .range-bar .marker.floating {
+  background-color: rgba(254, 9, 0, 0.7);
+}
+
+.ipywebcam.video-container .range-bar .marker.selected {
+  background-color: rgba(254, 0, 120, 0.7);
+}
+
+.ipywebcam.video-container .range-bar .range-mask {
+  position: absolute;
+  height: 8.4px;
+  background-color: #00c569;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.ipywebcam.video-container .statistics-container {
+  position: relative;
+}
+
+.ipywebcam.video-container .statistics-container svg {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+
+.ipywebcam.video-container .statistics-container.unused svg {
+  display: none;
+}
+
+.ipywebcam.video-container .bottom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ipywebcam.video-container .left-controls {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.ipywebcam.video-container .volume-controls {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.ipywebcam.video-container .volume-controls input {
+  width: 100px;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.ipywebcam.video-container .volume-controls:hover input, .volume-controls input:focus {
+  width: 100px;
+  opacity: 1;
+}
+
+.ipywebcam.video-container button {
+  cursor: pointer;
+  position: relative;
+  margin-right: 7px;
+  font-size: 12px;
+  padding: 3px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.ipywebcam.video-container button * {
+  pointer-events: none;
+}
+
+.ipywebcam.video-container button:not(.no-tooltip)::before {
+  content: attr(data-title);
+  position: absolute;
+  display: none;
+  right: 0;
+  top: -50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 6px;
+  word-break: keep-all;
+  white-space: pre;
+}
+
+.ipywebcam.video-container button:not(.no-tooltip):hover::before {
+  display: inline-block;
+}
+
+.ipywebcam.video-container .fullscreen-button {
+  margin-right: 0;
+}
+
+.ipywebcam.video-container .stats-selector svg.icon {
+  display: inline;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+.ipywebcam.video-container .stats-selector div.text {
+  display: inline;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.ipywebcam.video-container .index-selector {
+  min-width: 26px;
+  height: 26px;
+}
+
+.ipywebcam.video-container .text-button {
+  color: #fff;
+}
+
+.ipywebcam.video-container .selector-panel {
+  position: absolute;
+  border: none;
+  border-radius: 4px;
+  background: rgba(21, 21, 21, .9);
+  padding: 6px 12px;
+}
+
+.ipywebcam.video-container .selector-options {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.ipywebcam.video-container .selector-options.grid {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.ipywebcam.video-container .selector-pager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ipywebcam.video-container .selector-pager svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ipywebcam.video-container .selector-pager button.disabled svg {
+  fill: #999;
+  stroke: #999;
+}
+
+.ipywebcam.video-container .selector-pager button {
+  pointer-events: auto;
+}
+
+.ipywebcam.video-container button.selector-option {
+  color: #fff;
+  min-width: 26px;
+  height: 26px;
+  margin: 3px;
+  pointer-events: auto;
+}
+
+.ipywebcam.video-container button.selector-option .text {
+  display: inline-block;
+}
+
+.ipywebcam.video-container button.selector-option:hover {
+  background: rgba(120, 120, 120, 0.9);
+}
+
+.ipywebcam.video-container button.selector-option.selected {
+  background: rgba(81, 81, 81, 0.9);
+}
+
+.ipywebcam.video-container .pip-button svg {
+  width: 26px;
+  height: 26px;
+}
+
+.ipywebcam.video-container .playback-animation {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.ipywebcam.video-container input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 8.4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.ipywebcam.video-container input[type=range]:focus {
+  outline: none;
+}
+
+.ipywebcam.video-container input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 1.3px;
+  -webkit-appearance: none;
+  transition: all 0.4s ease;
+}
+
+.ipywebcam.video-container input[type=range]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  background: var(--youtube-red);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-left: -1px;
+}
+
+.ipywebcam.video-container input[type=range]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+.ipywebcam.video-container input[type=range].volume {
+  height: 5px;
+  background-color: #fff;
+}
+
+.ipywebcam.video-container input[type=range].volume::-webkit-slider-runnable-track {
+  background-color: transparent;
+}
+
+.ipywebcam.video-container input[type=range].volume::-webkit-slider-thumb {
+  margin-left: 0;
+  height: 14px;
+  width: 14px;
+  background: #fff;
+}
+
+.ipywebcam.video-container input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 1.3px;
+}
+
+.ipywebcam.video-container input[type=range]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  border: 1px solid var(--youtube-red);
+  background: var(--youtube-red);
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.ipywebcam.video-container input[type=range]:focus::-moz-range-track {
+  outline: none;
+}
+
+.ipywebcam.video-container input[type=range].volume::-moz-range-thumb {
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.ipywebcam.video-container .hidden {
+  display: none;
+}
+
+.ipywebcam.video-container svg {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+  stroke: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+}
