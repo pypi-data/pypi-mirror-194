@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: quantify-fluorescent-nucleus
+Version: 0.0.2
+Summary: A python package for segmentation of fluorescent nucleus, and measure the area of nucleus and the mean intensity per nucleus.
+Home-page: https://github.com/pganes/quantify-fluorescent-nucleus
+Author: Ganesh Pandey
+Author-email: gpande3@uic.edu
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: stardist
+Requires-Dist: napari
+Requires-Dist: scikit-image
+Requires-Dist: tensorflow
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# quantify-fluorescent-nucleus
+A python package for segmentation of fluorescent nucleus, and measure the area of nucleus and the mean intensity per nucleus.
+
+## Installation
+Run the follwinf to install:
+```python
+pip install quantify-fluorescence-nucleus
+```
+## Usage
+
+```python
+from quantify_fluorescence_nucleus import ReferenceImage
+
+# Load image and make ReferenceImage object
+
+
+# Run smooting
+
+# Run segmentation
+
+# Extract data
+
+
+```
+
+
+
