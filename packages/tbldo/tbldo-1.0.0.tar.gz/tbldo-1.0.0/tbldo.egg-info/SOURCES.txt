@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tbldo/__init__.py
+tbldo/__main__.py
+tbldo.egg-info/PKG-INFO
+tbldo.egg-info/SOURCES.txt
+tbldo.egg-info/dependency_links.txt
+tbldo.egg-info/entry_points.txt
+tbldo.egg-info/requires.txt
+tbldo.egg-info/top_level.txt

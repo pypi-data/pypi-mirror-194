@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "tbldo"
+version = "1.0.0"
+description = "Run a linux command with varying inputs according to tabular data"
+readme = "README.md"
+authors = [{ name = "thecodedog", email = "elcodedog@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["tabular", "linux", "command", "configuration"]
+dependencies = [
+    "pandas",
+    "SQLAlchemy",
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+tbldo = "tbldo.__main__:main"
