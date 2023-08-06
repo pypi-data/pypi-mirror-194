@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yjt
+Version: 0.1.0
+Summary: yjt内部使用包
+Author-email: grj <guanrenjia@yangjuntech.com>
+License-File: LICENSE
+Requires-Python: >=3.6

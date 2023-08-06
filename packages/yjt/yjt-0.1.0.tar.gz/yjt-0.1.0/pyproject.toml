@@ -1,0 +1,13 @@
+[project]
+name = "yjt"
+version = "0.1.0"
+description = "yjt内部使用包"
+authors = [{ name="grj", email="guanrenjia@yangjuntech.com" }]
+readme = "README.md"
+
+requires-python = ">=3.6"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
