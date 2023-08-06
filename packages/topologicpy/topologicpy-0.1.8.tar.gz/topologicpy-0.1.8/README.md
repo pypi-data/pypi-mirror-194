@@ -1,0 +1,16 @@
+<img src="https://topologic.app/wp-content/uploads/2023/02/topologicpy-logo-no-loop.gif" alt="topologicpy logo" width="250" loop="1">
+
+# Topologic - A Hierarchical and Topological Modelling Library for Architecture
+
+## Introduction
+Welcome to Topologic, the powerful software modelling library that revolutionizes the way you design architectural spaces, buildings, and artefacts. Topologic's advanced features enable you to create hierarchical and topological 3D representations that offer unprecedented flexibility and control in your design process. With Topologic, you can achieve your design vision faster and more efficiently than ever before.
+
+Topologic is built on unparalleled topological consistency and robustness, with the integration of artificial intelligence technologies. By replacing Building Information Models (BIM) with Building Intelligence Models, Topologic is a game-changer in the architecture industry.
+
+One of Topologic's main strengths is its support for a critical process called "defeaturing." By simplifying the geometry of a model and removing small or unnecessary details not needed for analysis, defeaturing allows for faster and more accurate analysis while maintaining topological consistency. This feature enables you to transform low-quality, heavy BIM models into high-quality, lightweight representations ready for rigorous analysis effortlessly.
+
+Topologic's versatility extends to entities with mixed dimensionalities, enabling structural models to be represented coherently. Lines can represent columns and beams, surfaces can represent walls and slabs, and volumes can represent solids. Even non-building entities like structural loads can be efficiently attached to the structure. This approach creates a lightweight model that is well-suited for input data requirements for structural analysis simulation software.
+
+Experience Topologic's comprehensive and well-documented Application Protocol Interface (API) and enjoy the freedom and flexibility that Topologic offers in your architectural design process. Topologic uses cutting-edge C++-based non-manifold topology (NMT) core technology, python bindings, and optional visual data flow programming (VDFP) plugins for popular BIM software. With Topologic, you can easily interact with the software in various ways to perform design and analysis tasks.
+
+Join the revolution in architectural design with Topologic. Try it today and see the difference for yourself.
