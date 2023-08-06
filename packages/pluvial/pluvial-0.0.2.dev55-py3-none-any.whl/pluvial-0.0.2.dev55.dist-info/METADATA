@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pluvial
+Version: 0.0.2.dev55
+Summary: Markdown-based static site generator
+Author: Maxwell Mullin
+Author-email: inbox@max-was-here.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: waitress
+Requires-Dist: markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: pygments
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: ruff ; extra == 'test'
+
+# pluvial
+named after the rare gemstone: https://en.wikipedia.org/wiki/pluvial
+
+
+## Local Setup
+
+### Install Miniconda
+
+For installers for operating systems other than linux see https://docs.conda.io/en/latest/miniconda.html
+
+    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -s --output miniconda.sh
+    chmod +x miniconda.sh
+    ./miniconda.sh -u
+    rm miniconda.sh
+
+### Create conda enviroment
+
+You may need to reopen your shell after installing miniconda
+
+    conda create -n pluvial python=3.10
+    conda activate pluvial
+    conda install --file requirements.txt
+
+### Run the project
+
+The default port is 5000
+
+    python ./app/main.py
+
+## Docker
+
+### Building the Docker container
+
+With your working directory in the root of the repository
+
+    docker build --tag pluvial .
+
+### Running the Docker container
+
+    docker run -p 5000:5000 pluvial
+
+or for detached mode
+
+    docker run -d -p 5000:5000 pluvial    
+
+
+### Publishing to docker
+
+    docker login
+    docker build --tag mullinmax/pluvial:latest .
+    docker push mullinmax/pluvial:latest
