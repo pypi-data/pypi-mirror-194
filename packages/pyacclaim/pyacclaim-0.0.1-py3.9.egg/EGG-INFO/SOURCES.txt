@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pyacclaim/__init__.py
+src/pyacclaim/bone.py
+src/pyacclaim/parser.py
+src/pyacclaim.egg-info/PKG-INFO
+src/pyacclaim.egg-info/SOURCES.txt
+src/pyacclaim.egg-info/dependency_links.txt
+src/pyacclaim.egg-info/top_level.txt
