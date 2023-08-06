@@ -1,0 +1,16 @@
+AUTHORS.rst
+CHANGELOG.rst
+CONTRIBUTING.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+src/dvg_ringbuffer.py
+src/dvg_ringbuffer.egg-info/PKG-INFO
+src/dvg_ringbuffer.egg-info/SOURCES.txt
+src/dvg_ringbuffer.egg-info/dependency_links.txt
+src/dvg_ringbuffer.egg-info/not-zip-safe
+src/dvg_ringbuffer.egg-info/requires.txt
+src/dvg_ringbuffer.egg-info/top_level.txt
+tests/test_dvg_ringbuffer.py
+timeit/timeit_ringbuffers.py
