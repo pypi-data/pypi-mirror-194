@@ -1,0 +1,4 @@
+include adbdevicechanger/requirements.txt
+include adbdevicechanger/thirdparty.json
+include adbdevicechanger/README.MD
+include adbdevicechanger/LICENSE
