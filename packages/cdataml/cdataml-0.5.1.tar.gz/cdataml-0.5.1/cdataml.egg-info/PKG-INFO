@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cdataml
+Version: 0.5.1
+Summary: Cell Death Area Data Collection for Machine Learning
+Home-page: https://github.com/joshuandwilliams/cdataml
+Author: Joshua Williams
+Author-email: <jowillia@nbi.ac.uk>
+License: LICENSE.txt
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Home of Python package CDA Data for Machine Learning
