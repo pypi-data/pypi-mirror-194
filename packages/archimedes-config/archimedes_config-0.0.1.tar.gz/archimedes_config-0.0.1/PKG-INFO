@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: archimedes-config
+Version: 0.0.1
+Summary: 
+Author: BigyaPradhan
+Author-email: bigya.pradhan@optimeering.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cryptography (>=39.0.1,<40.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# archimedes-config
+
+This library handles config files for services used by Optimeering AS.
+
