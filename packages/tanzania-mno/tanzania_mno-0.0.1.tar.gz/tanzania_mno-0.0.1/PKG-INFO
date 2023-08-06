@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tanzania_mno
+Version: 0.0.1
+Summary: A package for checking the Mobile Network Operator (MNO) for a given phone number in Tanzania, can also be used to validate Tanzania phone number and generate random valid phone numbers
+Author: HERMES GIDO
+Author-email: hermessgido@gmail.com
+License: MIT
+License-File: LICENSE.txt

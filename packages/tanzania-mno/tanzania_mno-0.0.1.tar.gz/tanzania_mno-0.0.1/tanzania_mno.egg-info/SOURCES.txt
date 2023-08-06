@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+tanzania_mno/__init__.py
+tanzania_mno.egg-info/PKG-INFO
+tanzania_mno.egg-info/SOURCES.txt
+tanzania_mno.egg-info/dependency_links.txt
+tanzania_mno.egg-info/requires.txt
+tanzania_mno.egg-info/top_level.txt
