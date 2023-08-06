@@ -1,0 +1,4 @@
+transformers
+pytorch-helper
+torchtext
+konlpy
