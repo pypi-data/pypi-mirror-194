@@ -1,0 +1,7 @@
+pipelinewise-singer-python==1.*
+slack-sdk==3.20.0
+
+[test]
+pylint==2.8.*
+pytest==6.2.*
+pytest-cov==2.12.*
