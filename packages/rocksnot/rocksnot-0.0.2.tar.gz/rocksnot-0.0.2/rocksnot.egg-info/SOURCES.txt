@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+rocksnot/__init__.py
+rocksnot/rocksnot.py
+rocksnot.egg-info/PKG-INFO
+rocksnot.egg-info/SOURCES.txt
+rocksnot.egg-info/dependency_links.txt
+rocksnot.egg-info/not-zip-safe
+rocksnot.egg-info/top_level.txt
