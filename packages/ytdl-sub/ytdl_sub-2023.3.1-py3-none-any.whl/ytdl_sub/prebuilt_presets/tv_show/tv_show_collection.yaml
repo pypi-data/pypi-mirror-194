@@ -1,0 +1,118 @@
+presets:
+
+
+  kodi_tv_show_collection:
+    preset:
+      - "_kodi_tv_show"
+      - "_tv_show_collection"
+
+  jellyfin_tv_show_collection:
+    preset:
+      - "_jellyfin_tv_show"
+      - "_tv_show_collection"
+
+  plex_tv_show_collection:
+    preset:
+      - "_plex_tv_show"
+      - "_tv_show_collection"
+
+  collection_season_1:
+    download:
+      download_strategy: "multi_url"
+      urls:
+        - url: "{collection_season_1_url}"
+          variables:
+            collection_season_number: "1"
+            collection_season_number_padded: "01"
+          playlist_thumbnails:
+            # Use latest_entry first, then see if YT channel artwork exists
+            # ONLY FOR SEASON 1!
+            - name: "{season_poster_file_name}"
+              uid: "latest_entry"
+            - name: "{tv_show_poster_file_name}"
+              uid: "avatar_uncropped"
+            - name: "{tv_show_fanart_file_name}"
+              uid: "banner_uncropped"
+
+    output_directory_nfo_tags:
+      tags:
+        namedseason:
+          - tag: "{collection_season_1_name}"
+            attributes:
+              number: "1"
+
+  collection_season_2:
+    download:
+      download_strategy: "multi_url"
+      urls:
+        - url: "{collection_season_2_url}"
+          variables:
+            collection_season_number: "2"
+            collection_season_number_padded: "02"
+          playlist_thumbnails:
+            - name: "{season_poster_file_name}"
+              uid: "latest_entry"
+
+    output_directory_nfo_tags:
+      tags:
+        namedseason:
+          - tag: "{collection_season_2_name}"
+            attributes:
+              number: "2"
+
+  collection_season_3:
+    download:
+      download_strategy: "multi_url"
+      urls:
+        - url: "{collection_season_3_url}"
+          variables:
+            collection_season_number: "3"
+            collection_season_number_padded: "03"
+          playlist_thumbnails:
+            - name: "{season_poster_file_name}"
+              uid: "latest_entry"
+
+    output_directory_nfo_tags:
+      tags:
+        namedseason:
+          - tag: "{collection_season_3_name}"
+            attributes:
+              number: "3"
+
+  collection_season_4:
+    download:
+      download_strategy: "multi_url"
+      urls:
+        - url: "{collection_season_4_url}"
+          variables:
+            collection_season_number: "4"
+            collection_season_number_padded: "04"
+          playlist_thumbnails:
+            - name: "{season_poster_file_name}"
+              uid: "latest_entry"
+
+    output_directory_nfo_tags:
+      tags:
+        namedseason:
+          - tag: "{collection_season_4_name}"
+            attributes:
+              number: "4"
+
+  collection_season_5:
+    download:
+      download_strategy: "multi_url"
+      urls:
+        - url: "{collection_season_5_url}"
+          variables:
+            collection_season_number: "5"
+            collection_season_number_padded: "05"
+          playlist_thumbnails:
+            - name: "{season_poster_file_name}"
+              uid: "latest_entry"
+
+    output_directory_nfo_tags:
+      tags:
+        namedseason:
+          - tag: "{collection_season_5_name}"
+            attributes:
+              number: "5"
