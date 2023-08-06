@@ -1,0 +1,2 @@
+[console_scripts]
+umi_tools = umi_tools.umi_tools:main
