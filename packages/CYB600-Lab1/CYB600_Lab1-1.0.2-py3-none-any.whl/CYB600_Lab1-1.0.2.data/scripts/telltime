@@ -1,0 +1,9 @@
+#!/bin/env python3
+# Jacob Smith
+# CYB600 - Secure Software Engineering
+# Lab 1 - Python Webserver
+
+from src.cyb600_lab1 import main
+
+main.createServer()
+
