@@ -1,0 +1,11 @@
+zorge/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+zorge/contracts.py,sha256=xUmbSTNRqBDGKcaiQ2lGGowg6h3PkeFlP8e8ATdcVr4,2602
+zorge/di/__init__.py,sha256=OJQMxsMFpVAMtRsEF-re7PBt6EuTICWmRM3c_Li0Smg,84
+zorge/di/container.py,sha256=HvrpvGSAX18Z_LjNInJNq6Tx-Zy_DwTvRIpLtOr9hPQ,4422
+zorge/di/generic.py,sha256=A-xS5-s-VgSzuRRXRm5BF9c8QQ57n30NTuMtOwqm2-U,2073
+zorge/di/provider.py,sha256=mOXOpIfEUcmOxVUykrEHE7Gkyenb-fOYW96tUf0zpAQ,4684
+zorge/exceptions.py,sha256=yQuyKgTy9pYIwYGMiKq8M1upRAGp7raPY7XdCq2ixwM,2755
+zorge-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+zorge-1.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+zorge-1.0.0.dist-info/METADATA,sha256=MJuP6_HSLKXD2mzl3DfyNBSvvpXxkZZcswknkKQtw88,283
+zorge-1.0.0.dist-info/RECORD,,
