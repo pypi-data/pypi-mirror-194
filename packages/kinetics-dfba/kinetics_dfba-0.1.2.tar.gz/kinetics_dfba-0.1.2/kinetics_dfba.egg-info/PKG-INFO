@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: kinetics-dfba
+Version: 0.1.2
+Summary: dfba algorithm with kinetics to simulate metabolic activities of microbiota
+Home-page: https://gitee.com/Xu_Billy/d-fba-package
+Author: Xu Billy
+Author-email: xu_tian@stu.scu.edu.cn
+License: MIT License
+Description: UNKNOWN
+Keywords: dfba with kinetics
+Platform: any
