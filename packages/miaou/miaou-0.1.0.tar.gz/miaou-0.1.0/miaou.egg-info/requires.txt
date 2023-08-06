@@ -1,0 +1,8 @@
+PyYAML
+click
+selenium>=4.8.0
+
+[dev]
+tox
+check-manifest
+flake8
