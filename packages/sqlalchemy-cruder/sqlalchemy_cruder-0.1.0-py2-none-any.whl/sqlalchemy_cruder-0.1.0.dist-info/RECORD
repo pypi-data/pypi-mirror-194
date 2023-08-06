@@ -1,0 +1,10 @@
+sqlalchemy_cruder/__init__.py,sha256=rGyNYe6In-72xT0umqXKgA_pAD76q3FIIPACPsoFgOI,168
+sqlalchemy_cruder/cli.py,sha256=nk2phf1dDzQ-8TtQ4IfllOl_V6nwt_OB_75fzOZvIcM,293
+sqlalchemy_cruder/sqlalchemy_cruder.py,sha256=vvrWBWRXwDtCNy0u0YCbBir31PbpogrcA39_09hj-Zg,2068
+sqlalchemy_cruder-0.1.0.dist-info/DESCRIPTION.rst,sha256=rwWVcTo-WrCkS9qkjaG2KQCk1iws4H3SXoZ7z2vpjs4,1127
+sqlalchemy_cruder-0.1.0.dist-info/METADATA,sha256=IfC7DUwFo5vUTuqtxujDOBAk9ULdQJLMATkxfEho8j4,1861
+sqlalchemy_cruder-0.1.0.dist-info/RECORD,,
+sqlalchemy_cruder-0.1.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+sqlalchemy_cruder-0.1.0.dist-info/entry_points.txt,sha256=AQStd8JgLWSSNFkXPkPK8oaPmQg1uiH4V5oK21S8Dxg,66
+sqlalchemy_cruder-0.1.0.dist-info/metadata.json,sha256=S-zKrr0MtUA6rkvLdSFyPXQzLUlluW2cZpS_aAqLRuM,1146
+sqlalchemy_cruder-0.1.0.dist-info/top_level.txt,sha256=Bbipczj6lsXwbBOkbscyMB7cB2lx4PCnkMDcrAVOrjo,18
