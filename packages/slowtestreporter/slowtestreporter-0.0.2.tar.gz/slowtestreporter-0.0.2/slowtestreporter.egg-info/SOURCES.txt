@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+slowtestreporter/__init__.py
+slowtestreporter/cli.py
+slowtestreporter/slowtestreporter.py
+slowtestreporter.egg-info/PKG-INFO
+slowtestreporter.egg-info/SOURCES.txt
+slowtestreporter.egg-info/dependency_links.txt
+slowtestreporter.egg-info/entry_points.txt
+slowtestreporter.egg-info/requires.txt
+slowtestreporter.egg-info/top_level.txt
+tests/test_slow_test_reporter.py
