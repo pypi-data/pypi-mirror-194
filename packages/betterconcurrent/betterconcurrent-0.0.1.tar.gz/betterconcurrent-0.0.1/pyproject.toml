@@ -1,0 +1,42 @@
+
+
+[project]
+name = "betterconcurrent"
+version = "0.0.1"
+description = "Better concurrent.futures for modern Python 3"
+readme = "README.md"
+requires-python = ">=3.0"
+license = {file = "LICENSE"}
+keywords = ["concurrent", "threading", "futures"]
+authors = [
+  {name = "Nickolas Stathas", email = "nickstathas@outlook.com" }
+]
+maintainers = [
+  {name = "Nickolas Stathas", email = "nickstathas@outlook.com" }
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: Python Software Foundation License",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/nistath/betterconcurrent"
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
