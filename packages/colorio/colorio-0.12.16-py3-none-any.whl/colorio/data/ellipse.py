@@ -1,0 +1,1 @@
+from .._agg import _TBUvw as EllipseDataset, _alaEm as ColorCoordinates, _D10gh as ColorSpace, _g9L2B as convert, _E7PHx as string_to_cs

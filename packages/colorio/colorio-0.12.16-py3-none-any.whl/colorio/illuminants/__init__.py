@@ -1,0 +1,1 @@
+from .._agg import _ybvB5 as this_dir, _Qcd5k as whitepoints_cie1931, _PjZeT as whitepoints_cie1964, _KBkdo as spectrum_to_xyz100, _iX08P as compute_whitepoint, _dRr4W as planckian_radiator, _003sH as a, _4MH6i as c, _xFkhm as d, _VNAMm as d50, _iFkqD as d55, _xtqow as d65, _ra79l as d75, _foEru as e, _Bv50z as f2, _YEFHQ as f7, _mUl3R as f11, _WT0Cb as SpectralData
