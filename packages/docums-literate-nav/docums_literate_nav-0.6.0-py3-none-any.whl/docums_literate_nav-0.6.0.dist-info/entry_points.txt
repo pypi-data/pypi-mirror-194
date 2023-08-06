@@ -1,0 +1,2 @@
+[docums.plugins]
+literate-nav = docums_literate_nav.plugin:LiterateNavPlugin
