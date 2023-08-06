@@ -1,0 +1,10 @@
+aiofiles
+aiohttp
+aioconsole
+pyperclip
+nest-asyncio
+tzdata
+typer
+qiniu
+orjson
+colorama
