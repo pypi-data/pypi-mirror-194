@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: artfornormies
+Version: 0.0.1
+Summary: For generating personal reminders as data visualizations (venn, bar, heatmap, scatter, etc)
+Home-page: https://github.com/jamescalam/artfornormies
+Author: Jonathan Chan
+Author-email: jonathan.chan41@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Artfornormies
+Generate data visualizations - Pypi version
+
+## Instructions:
+
+1. Install: 
+```
+pip install artfornormies
+```
+
+2. Generate a visual using one of the listed functions:
+```
+from artfornormies import functions as art
+
+#
+out_name = "example_venn.png"
+fig = art.create_venn_2()
+fig.write_image(out_name)
+```
