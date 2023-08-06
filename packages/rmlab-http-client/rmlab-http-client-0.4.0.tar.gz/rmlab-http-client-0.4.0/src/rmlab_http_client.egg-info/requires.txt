@@ -1,0 +1,4 @@
+aiodns==3.0.0
+aiohttp==3.8.4
+Brotli==1.0.9
+rmlab-errors==0.1.6
