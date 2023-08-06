@@ -1,0 +1,10 @@
+pyakeneo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyakeneo/auth.py,sha256=Yu0HbF9rVu-0f9eIRZv4DQCQYbRG_7E4srEFZPnafcI,3609
+pyakeneo/client.py,sha256=zkYw9z8nExRstfKn-CggA2whsm3u21iMtNhHzhvxsE8,5817
+pyakeneo/interfaces.py,sha256=dBlyKIC6LP71N7THe97q52qFl0wszVZSWfSYyvckp4k,888
+pyakeneo/resources.py,sha256=tcQuODVqOhE0xIqV1MMG438knXGSYp-KEVW-a4W2Cas,10550
+pyakeneo/result.py,sha256=WxgnjvmnHjY7pg7HYtrUW1DLGd_2RHafIO6c0nz5xjA,3125
+pyakeneo/utils.py,sha256=O_kfz45axL1eyvsAtt1fCy9P1IxHIMEcJ3SYunP6GLo,772
+pyakeneo-0.4.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pyakeneo-0.4.7.dist-info/METADATA,sha256=5RlxLkhdU8IHuI9SHLbudGnHht_68BTOunyoCEDQe6A,2587
+pyakeneo-0.4.7.dist-info/RECORD,,
