@@ -1,0 +1,14 @@
+aiohttp>=3.7
+aiodns>=3.0.0
+charset-normalizer>=3.0.1
+pick
+termcolor
+
+[dev]
+pytest
+pytest-asyncio
+myst-parser
+furo
+sphinxcontrib-trio
+sphinx-copybutton
+sphinxext-opengraph

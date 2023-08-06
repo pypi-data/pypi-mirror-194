@@ -1,0 +1,44 @@
+[project]
+name = "SlyAPI"
+version = "0.4.3"
+description = "No-boilerplate, async and typed web api access with oauth1/2."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file="LICENSE" }
+authors = [{name="Dunkyl 🔣🔣"}]
+classifiers = [
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    'aiohttp >= 3.7',
+    'aiodns >= 3.0.0',
+    'charset-normalizer >= 3.0.1',
+    'pick',
+    'termcolor'
+]
+[project.optional-dependencies]
+dev = [
+    # testing
+    'pytest',
+    'pytest-asyncio',
+
+    # docs
+    'myst-parser',
+    'furo',
+    'sphinxcontrib-trio',
+    'sphinx-copybutton',
+    'sphinxext-opengraph'
+]
+
+[project.urls]
+Homepage = "https://docs.dunkyl.net/SlyAPI-Python/"
+Repository = "https://github.com/dunkyl/SlyAPI-Python"
+Documentation = "https://docs.dunkyl.net/SlyAPI-Python/"
+"Bug Tracker" = "https://github.com/dunkyl/SlyAPI-Python/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["test"] 
