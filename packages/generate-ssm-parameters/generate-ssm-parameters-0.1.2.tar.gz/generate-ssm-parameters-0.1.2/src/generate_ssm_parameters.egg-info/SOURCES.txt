@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/generate-ssm-parameters/__init__.py
+src/generate-ssm-parameters/generate_ssm_parameters.py
+src/generate_ssm_parameters.egg-info/PKG-INFO
+src/generate_ssm_parameters.egg-info/SOURCES.txt
+src/generate_ssm_parameters.egg-info/dependency_links.txt
+src/generate_ssm_parameters.egg-info/entry_points.txt
+src/generate_ssm_parameters.egg-info/requires.txt
+src/generate_ssm_parameters.egg-info/top_level.txt
