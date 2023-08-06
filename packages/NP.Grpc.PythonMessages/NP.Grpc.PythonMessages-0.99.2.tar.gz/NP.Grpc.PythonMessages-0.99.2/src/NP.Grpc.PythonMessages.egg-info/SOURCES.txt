@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/Messages_pb2.py
+src/Messages_pb2_grpc.py
+src/NP.Grpc.PythonMessages.egg-info/PKG-INFO
+src/NP.Grpc.PythonMessages.egg-info/SOURCES.txt
+src/NP.Grpc.PythonMessages.egg-info/dependency_links.txt
+src/NP.Grpc.PythonMessages.egg-info/top_level.txt
