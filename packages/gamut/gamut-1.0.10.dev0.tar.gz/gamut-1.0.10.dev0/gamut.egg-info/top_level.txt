@@ -1,0 +1,5 @@
+docs
+gamut
+images
+shell
+venv
