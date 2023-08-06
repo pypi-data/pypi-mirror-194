@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/tests/__init__.py
+src/tests/test_connection.py
+src/tests/test_connection_details.py
+src/tinyproto/__init__.py
+src/tinyproto/client.py
+src/tinyproto/connection.py
+src/tinyproto/connection_details.py
+src/tinyproto/errors.py
+src/tinyproto/plugins.py
+src/tinyproto/server.py
+src/tinyproto.egg-info/PKG-INFO
+src/tinyproto.egg-info/SOURCES.txt
+src/tinyproto.egg-info/dependency_links.txt
+src/tinyproto.egg-info/top_level.txt
