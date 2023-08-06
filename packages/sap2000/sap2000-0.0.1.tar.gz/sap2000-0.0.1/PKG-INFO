@@ -1,0 +1,200 @@
+Metadata-Version: 2.1
+Name: sap2000
+Version: 0.0.1
+Summary: Python App to control and manipulate SAP2000 Model
+Author-email: Arun Kishore <rpakishore@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: ipywidgets>=8.0.3
+Requires-Dist: rich>=12.6.0
+Requires-Dist: ipykernel>=6.15.2
+Requires-Dist: typer[all]
+Requires-Dist: pandas>=1.5.2
+Requires-Dist: comtypes>=1.1.14
+Requires-Dist: forallpeople
+Requires-Dist: pytest>=7.2.0 ; extra == "test"
+Requires-Dist: pytest-cov>=4.0.0 ; extra == "test"
+Project-URL: Home, https://github.com/rpakishore/sap-analysis
+Provides-Extra: test
+
+<!--- Heading --->
+<div align="center">
+  <img src="assets/banner.png" alt="banner" width="auto" height="auto" />
+  <p>
+    Python app to aid in SAP analysis.
+  </p>
+<h4>
+    <a href="https://github.com/rpakishore/sap-analysis/">View Demo</a>
+  <span> · </span>
+    <a href="https://github.com/rpakishore/sap-analysis">Documentation</a>
+  <span> · </span>
+    <a href="https://github.com/rpakishore/sap-analysis/issues/">Report Bug</a>
+  <span> · </span>
+    <a href="https://github.com/rpakishore/sap-analysis/issues/">Request Feature</a>
+  </h4>
+</div>
+<br />
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/rpakishore/sap-analysis)
+![GitHub last commit](https://img.shields.io/github/last-commit/rpakishore/sap-analysis)
+[![tests](https://github.com/rpakishore/sap-analysis/actions/workflows/tests.yml/badge.svg)](https://github.com/rpakishore/sap-analysis/actions/workflows/tests.yml)
+
+<!-- Table of Contents -->
+<h2>Table of Contents</h2>
+
+- [1. About the Project](#1-about-the-project)
+  - [1.1. Features](#11-features)
+- [2. Getting Started](#2-getting-started)
+  - [2.1. Prerequisites](#21-prerequisites)
+  - [2.2. Dependencies](#22-dependencies)
+  - [2.3. Installation](#23-installation)
+- [3. Usage](#3-usage)
+  - [3.1. Interact with database tables](#31-interact-with-database-tables)
+  - [3.2. Units](#32-units)
+- [4. Roadmap](#4-roadmap)
+- [5. License](#5-license)
+- [6. Contact](#6-contact)
+- [7. Acknowledgements](#7-acknowledgements)
+
+<!-- About the Project -->
+## 1. About the Project
+
+Python wrapper for SAP2000 application
+
+<!-- Features -->
+### 1.1. Features
+
+- Modal Analysis
+  - Can run modal analysis to capture the required modal participation, per CSA
+- Response Spectrum
+  - Can setup, solve and run response spectrum analysis on SAP
+- Template Setup
+  - Can quickly and consistently deploy Template SAP settings to any open SAP model.
+
+<!-- Getting Started -->
+## 2. Getting Started
+
+<!-- Prerequisites -->
+### 2.1. Prerequisites
+
+Requires `Python 3.10+`
+
+### 2.2. Dependencies
+
+Create the virutual environment and install dependencies
+
+```powershell
+  python -m venv .venv
+  .venv\Scripts\activate.bat
+  pip install flit
+```
+
+<!-- Installation -->
+### 2.3. Installation
+
+Install `sap2000` and dependencies with `flit`
+
+```powershell
+  flit install
+```
+<!-- Usage -->
+## 3. Usage
+
+Ensure the SAP file you would like to manipulate is already open.
+
+A script to run analysis and save the model to a new location.
+
+```python
+  import sap2000
+  sap = sap2000.attach()
+  sap.analyze(all_cases=True)
+  sap.save_model(savepath=r"\path\to\save\file.sdb")
+```
+
+### 3.1. Interact with database tables
+
+**List available tables**
+
+```python
+  sap.Table.available
+```
+
+**Get Table values**
+
+```python
+  sap.Table.get("Project Information")
+```
+
+**Show table information and column descriptions**
+
+```python
+  sap.Table.col_description('Area Loads - Uniform')
+```
+
+### 3.2. Units
+
+You can use this module to get the current active units in the model or set a specific unit system.
+
+**Get Units**
+Returns a tuple of `forallpeople` instance for the force and distance, and a string for the temperature (`C`/`F`). The force and distance can be directly multiplied with the numerical values to get consistent units and ease of calculation or presentation.
+
+```python
+  $ sap.Units.get()
+  (1.000 kN, 1.000 m, 'C')
+```
+
+**Set Units**
+
+| Number | Force | Distance | Temperature |
+| ------ | ----- | -------- | ----------- |
+| 1 | lbf | in | F |
+| 2 | lbf | ft | F |
+| 3 | kip | in | F |
+| 4 | kip | ft | F |
+| 5 | kN | mm | C |
+| 6 | kN | m | C |
+| 7 | kgf | mm | C |
+| 8 | kgf | m | C |
+| 9 | N | mm | C |
+| 10 | N | m | C |
+| 11 | Ton | mm | C |
+| 12 | Ton | m | C |
+| 13 | kN | cm | C |
+| 14 | kgf | cm | C |
+| 15 | N | cm | C |
+| 16 | Ton | cm | C |
+
+```python
+  sap.Units.set(5)
+```
+
+<!-- Roadmap -->
+## 4. Roadmap
+
+- [ ] Beam Design
+  - [ ] Generate S-Concrete files with correct loadcases for any/all beams in project.
+  - [ ] Get beam/column design summary.
+
+<!-- License -->
+## 5. License
+
+Distributed under the no License. See LICENSE.txt for more information.
+
+<!-- Contact -->
+## 6. Contact
+
+Arun Kishore - [@rpakishore](mailto:pypi@rpakishore.co.in)
+
+Project Link: [https://github.com/rpakishore/sap-analysis](https://github.com/rpakishore/sap-analysis)
+
+<!-- Acknowledgments -->
+## 7. Acknowledgements
+
+Use this section to mention useful resources and libraries that you have used in your projects.
+
+- [Awesome README Template](https://github.com/Louis3797/awesome-readme-template/blob/main/README-WITHOUT-EMOJI.md)
+- [Banner Maker](https://banner.godori.dev/)
+- [Shields.io](https://shields.io/)
+- [Carbon](https://carbon.now.sh/)
+- [forallpeople](https://github.com/connorferster/forallpeople)
+

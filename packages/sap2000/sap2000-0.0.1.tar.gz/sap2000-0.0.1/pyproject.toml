@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sap2000"
+authors = [{name = "Arun Kishore", email = "rpakishore@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+dynamic = ["version", "description"]
+
+dependencies = [
+    "ipywidgets>=8.0.3",
+    "rich>=12.6.0",
+    "ipykernel>=6.15.2",
+    "typer[all]",
+    "pandas>=1.5.2",
+    "comtypes>=1.1.14",
+    "forallpeople"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.2.0",
+    "pytest-cov>=4.0.0",
+]
+
+
+[project.urls]
+Home = "https://github.com/rpakishore/sap-analysis"
