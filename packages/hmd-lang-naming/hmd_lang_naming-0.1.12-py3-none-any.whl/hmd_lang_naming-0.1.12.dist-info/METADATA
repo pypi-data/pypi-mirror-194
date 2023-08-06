@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hmd-lang-naming
+Version: 0.1.12
+Summary: Naming service language pack
+Home-page: UNKNOWN
+Author: Alex Burgoon
+Author-email: alex.burgoon@hmdlabs.io
+License: unlicensed
+Platform: UNKNOWN
+Requires-Dist: hmd-meta-types
+Requires-Dist: hmd-schema-loader
+
+UNKNOWN
+
