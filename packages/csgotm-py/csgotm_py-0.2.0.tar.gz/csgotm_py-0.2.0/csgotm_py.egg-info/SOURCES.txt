@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+csgotm/__init__.py
+csgotm/exceptions.py
+csgotm/market.py
+csgotm_py.egg-info/PKG-INFO
+csgotm_py.egg-info/SOURCES.txt
+csgotm_py.egg-info/dependency_links.txt
+csgotm_py.egg-info/requires.txt
+csgotm_py.egg-info/top_level.txt
