@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+autobote.egg-info/PKG-INFO
+autobote.egg-info/SOURCES.txt
+autobote.egg-info/dependency_links.txt
+autobote.egg-info/top_level.txt
