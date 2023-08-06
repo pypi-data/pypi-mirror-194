@@ -1,0 +1,15 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispozitivul a fost configurat deja",
+            "no_devices_found": "Nu s-au descoperit dispozitive in re\u021bea"
+        },
+        "step": {
+            "init": {
+                "few": "Pu\u021bine",
+                "one": "Unul",
+                "other": "Altele"
+            }
+        }
+    }
+}

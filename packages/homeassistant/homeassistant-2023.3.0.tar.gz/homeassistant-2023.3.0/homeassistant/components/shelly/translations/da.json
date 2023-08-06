@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheden er allerede konfigureret",
+            "reauth_successful": "Genautentificering lykkedes",
+            "unsupported_firmware": "Enheden bruger en version af firmware, der ikke underst\u00f8ttes."
+        },
+        "error": {
+            "cannot_connect": "Forbindelse mislykkedes",
+            "invalid_auth": "Ugyldig godkendelse",
+            "unknown": "Uventet fejl"
+        },
+        "step": {
+            "credentials": {
+                "data": {
+                    "password": "Adgangskode",
+                    "username": "Brugernavn"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Adgangskode",
+                    "username": "Brugernavn"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "V\u00e6rt"
+                },
+                "description": "F\u00f8r ops\u00e6tning skal batteridrevne enheder v\u00e6kkes. Du kan nu v\u00e6kke enheden ved hj\u00e6lp af en knap p\u00e5 den."
+            }
+        }
+    },
+    "device_automation": {
+        "trigger_subtype": {
+            "button": "Knap",
+            "button1": "F\u00f8rste knap",
+            "button2": "Anden knap",
+            "button3": "Tredje knap"
+        },
+        "trigger_type": {
+            "double": "{subtype} dobbelt klik",
+            "long": "{subtype} langt klik",
+            "long_single": "{subtype} langt klik og derefter enkelt klik",
+            "single": "{subtype} enkelt klik",
+            "single_long": "{subtype} enkelt klik og derefter langt klik"
+        }
+    }
+}

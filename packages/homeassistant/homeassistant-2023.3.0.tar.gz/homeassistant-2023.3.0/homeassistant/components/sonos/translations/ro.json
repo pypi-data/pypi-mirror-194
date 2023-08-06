@@ -1,0 +1,13 @@
+{
+    "config": {
+        "abort": {
+            "no_devices_found": "Nu s-au descoperit dispozitive in re\u021bea",
+            "single_instance_allowed": "A fost deja configurat. Doar o singura configurare este posibila."
+        },
+        "step": {
+            "confirm": {
+                "description": "Dore\u0219ti s\u0103 configurezi Sonos?"
+            }
+        }
+    }
+}
