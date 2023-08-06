@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: knock-knock
+Version: 0.4.2
+Summary: Exploring, categorizing, and quantifying the sequence outcomes produced by genome editing experiments
+Home-page: https://pypi.org/projects/knock-knock
+Author: Jeff Hussmann
+Author-email: jeff.hussmann@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+License-File: LICENSE
