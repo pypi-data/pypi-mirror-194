@@ -1,0 +1,2 @@
+graft pytket/circuit/offline_display/static
+graft pytket/circuit/offline_display/dist
