@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+glitch_python_hcl2.egg-info/PKG-INFO
+glitch_python_hcl2.egg-info/SOURCES.txt
+glitch_python_hcl2.egg-info/dependency_links.txt
+glitch_python_hcl2.egg-info/requires.txt
+glitch_python_hcl2.egg-info/top_level.txt
+hcl2/__init__.py
+hcl2/__main__.py
+hcl2/api.py
+hcl2/hcl2.lark
+hcl2/parser.py
+hcl2/py.typed
+hcl2/transformer.py
