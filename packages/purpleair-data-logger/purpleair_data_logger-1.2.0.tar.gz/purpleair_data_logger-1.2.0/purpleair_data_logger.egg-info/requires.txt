@@ -1,0 +1,3 @@
+pg8000==1.29.4
+requests
+purpleair_api==1.0.1
