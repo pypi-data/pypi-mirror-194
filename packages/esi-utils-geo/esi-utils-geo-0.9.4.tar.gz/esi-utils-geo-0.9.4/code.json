@@ -1,0 +1,38 @@
+[
+    {
+        "name": "esi-utils-geo",
+        "description": "Geographic utility library",
+        "version": "0.9.2",
+        "status": "Development",
+        "organization": "U.S. Geological Survey",
+        "vcs": "git",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/esi-utils-geo.git",
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/esi-utils-geo",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/esi-utils-geo/-/archive/0.9.2/esi-utils-geo-0.9.2.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/esi-utils-geo/-/raw/0.9.2/DISCLAIMER.md",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/esi-utils-geo/-/raw/0.9.2/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource",
+            "exemptionText": null
+        },
+        "laborHours": 20,
+        "languages": [
+            "python"
+        ],
+        "tags": [
+            "geo"
+        ],
+        "contact": {
+            "name": "Mike Hearne",
+            "email": "mhearne@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2022-11-10"
+        }
+    }
+]
