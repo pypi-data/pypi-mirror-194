@@ -1,0 +1,2 @@
+[console_scripts]
+webtorrent_checker_scraper = webtorrent_checker_scraper.webtorrent_checker_scraper:main
