@@ -1,0 +1,16 @@
+{
+    "config": {
+        "error": {
+            "app_setup_error": "Nu s-a putut configura SmartApp. Te rug\u0103m s\u0103 re\u00eencerci.",
+            "token_forbidden": "Token-ul nu are domeniile (scopes) OAuth necesare.",
+            "token_invalid_format": "Token-ul trebuie s\u0103 fie \u00een format UID/GUID.",
+            "token_unauthorized": "Token-ul este nevalid sau nu mai este autorizat."
+        },
+        "step": {
+            "user": {
+                "description": "SmartThings va fi configurat s\u0103 trimit\u0103 actualiz\u0103ri push c\u0103tre Home Assistant la:\n> {webhook_url}\n\nDac\u0103 acest lucru nu este corect, te rug\u0103m s\u0103 \u00ee\u021bi actualizezi configura\u021bia, s\u0103 reporne\u0219ti Home Assistant \u0219i s\u0103 \u00eencerci din nou.",
+                "title": "Confirmare URL callback"
+            }
+        }
+    }
+}
