@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: gituptools
+Version: 25
+Summary: Python setuptools helper for Gitlab pipelines.
+Author: Sol Courtney
+Author-email: sol.courtney@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Documentation, https://sol-courtney.gitlab.io/python-packages/gituptools
+Project-URL: Source, https://gitlab.com/sol-courtney/python-packages/gituptools
+Project-URL: Tracker, https://gitlab.com/sol-courtney/python-packages/gituptools/-/issues
+Keywords: Gitlab,DevOps,CICD,Packaging
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Welcome to Gituptools
+
+[![Build](https://gitlab.com/sol-courtney/python-packages/gituptools/badges/main/pipeline.svg)](https://gitlab.com/sol-courtney/python-packages/gituptools)
+[![Tests](https://gitlab.com/sol-courtney/python-packages/gituptools/badges/develop/coverage.svg)](https://gitlab.com/sol-courtney/python-packages/gituptools)
+[![PyPi](https://badge.fury.io/py/gituptools.svg)](https://pypi.org/project/gituptools/)
+[![PyVersions](https://img.shields.io/pypi/pyversions/gituptools.svg)](https://pypi.org/project/gituptools/)
+
+Gituptools is a helper for packing Python on Gitlab CICD runners.  It basically gets as much from the runtime environment as it can to fill in all the packaging metadata that a typical `setup.py` file needs.
+
+Gituptools is 100% standard library.  No 3rd party dependencies.
+
+## Installation
+
+From [PyPI](https://pypi.org/project/gituptools/) directly:
+
+```
+pip install gituptools
+```
+
+## Examples
+
+```py
+import gituptools
+
+if __name__ == '__main__':
+    gituptools.setup()
+```
