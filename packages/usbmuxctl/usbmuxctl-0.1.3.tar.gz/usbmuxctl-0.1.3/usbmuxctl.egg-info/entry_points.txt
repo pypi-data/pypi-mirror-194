@@ -1,0 +1,3 @@
+[console_scripts]
+usbmuxctl = usbmuxctl.__main__:main
+
