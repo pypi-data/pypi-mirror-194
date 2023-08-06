@@ -1,0 +1,4 @@
+[console_scripts]
+LoveCourse20162019 = LoveCourse20162019.__main__:main
+love-course-2016-2019 = LoveCourse20162019.__main__:main
+
