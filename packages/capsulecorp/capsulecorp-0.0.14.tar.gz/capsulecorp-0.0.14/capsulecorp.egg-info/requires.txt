@@ -1,0 +1,6 @@
+PyYAML
+numpy
+pandas
+boto3
+psycopg2-binary==2.9.3
+PyMySQL
