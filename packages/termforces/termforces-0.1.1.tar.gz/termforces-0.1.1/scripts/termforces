@@ -1,0 +1,103 @@
+#!/usr/bin/env bash
+# Minimalistic script to interact with Codeforces
+# Written by thematdev in 2023
+
+load_rc() {
+    [[ -e $1 ]] && source $1
+}
+
+die() {
+    echo "$@" >&2
+    exit 1
+}
+
+TF_PROBLEM_PREFIX=problem
+
+# Load .rc files
+load_rc ~/.config/termforces/termforces.rc
+load_rc ../termforces.rc
+load_rc termforces.rc
+
+login() {
+    if [[ $TF_PASS_CMD ]]
+    then
+        python3 -m termforces login "$1" --session-file "~/.config/termforces/termforces_cookies.json" --no-getpass <<< "$($TF_PASS_CMD)"
+    else
+        python3 -m termforces login "$1" --session-file "~/.config/termforces/termforces_cookies.json"
+    fi
+}
+
+whoami() {
+    python3 -m termforces whoami
+}
+
+submit() {
+    source_file=$1
+    # Calling from either parent or child directory
+    if [[ $(dirname $1) == "." ]]; then
+        p=$(basename $(pwd))
+    else
+        p=$(dirname $1)
+    fi
+    [[ -n $contest_id ]] || die "Unable to determine contest id, specify it manually"
+    if [ -z $problem_index ]; then
+        [[ $p == "$TF_PROBLEM_PREFIX"* ]] || die "Unable to determine problem index, specify it manually"
+    fi
+    problem_index=${p#"$TF_PROBLEM_PREFIX"}
+    python3 -m termforces submit --contest-id $contest_id $problem_index $source_file
+}
+
+results() {
+    [[ -n $contest_id ]] || die "Unable to determine contest id, specify it manually"
+    python3 -m termforces results-my --contest-id $contest_id
+}
+
+strap() {
+    while [[ $# -gt 0 ]]
+    do
+        key="$1"
+        case $key in
+            -c|--contest-id)
+                contest_id="$2"
+                shift
+                shift
+                ;;
+            -i|--indices)
+                indices="$2"
+                shift
+                shift
+                ;;
+            -t|--template)
+                template="$2"
+                shift
+                shift
+                ;;
+            *)
+                POSITIONAL+=("$1")
+                shift
+                ;;
+        esac
+    done
+    read -a indices_arr <<< $indices
+    if [[ ! -d $template ]]; then echo "Template directory not found or not specified, will create empty"; fi;
+    for index in "${indices_arr[@]}"
+    do
+        if [[ -d $template ]]
+        then
+            cp -r $template "$TF_PROBLEM_PREFIX"$index
+        else
+            mkdir "$TF_PROBLEM_PREFIX"$index
+        fi
+    done
+    echo "contest_id=$contest_id" >> termforces.rc
+}
+
+version() {
+    tf_version=$(python3 -c "from importlib.metadata import version; print(version('termforces'))")
+    scraper_version=$(python3 -c "from importlib.metadata import version; print(version('codeforces_scraper'))")
+    echo "Termforces version $tf_version by thematdev"
+    echo "Using scraper version $scraper_version"
+    echo "Contact author: thematdev [at] thematdev [dot] org"
+}
+
+"$@"

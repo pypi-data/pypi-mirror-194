@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+scripts/termforces
+termforces/__main__.py
+termforces/session_manager.py
+termforces/termforces_shell.py
+termforces/utils.py
+termforces.egg-info/PKG-INFO
+termforces.egg-info/SOURCES.txt
+termforces.egg-info/dependency_links.txt
+termforces.egg-info/requires.txt
+termforces.egg-info/top_level.txt
+termforces.egg-info/zip-safe
+termforces/cmds/__init__.py
+termforces/cmds/session_manager.py
+termforces/cmds/submit_interface.py
