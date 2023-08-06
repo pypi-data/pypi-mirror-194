@@ -1,0 +1,15 @@
+geometry/__init__.py,sha256=QtKSjg9P7WE-dQeixqKwJuZ-vMBhoDYNveAmOmJg9xw,1179
+geometry/base.py,sha256=zXAe0SRJn7XcP1ZrIGVm6ANtSnuVeIC8He5EcYy9liY,8619
+geometry/circle.py,sha256=LBaW_K5zzZw2hslgohYHCeMicNz3EBq1WqQC-Ss7KS8,1126
+geometry/coordinate_frame.py,sha256=_1JQMDq4qmXEHLPQZwCT-LqLSirg9AxIGceQ4ff-DaU,2956
+geometry/gps.py,sha256=Ki_Sdn10opbDUmb8fBwA4VqRFTYjRVZ0GBoOX_VZi94,3573
+geometry/mass.py,sha256=bxinroqFUmWnYEGDUD-PRIy4DpAVG4sVB2eKWWnNNMU,1271
+geometry/point.py,sha256=nrA4dMucdPCWmfyy8-IPcBS7Q5B0jeRpMyLtGaF4Leo,5150
+geometry/quaternion.py,sha256=t6k3RaN_pTl4M2lT_-r3gaVwWPje4KOOE1yMZ4JbKGY,8238
+geometry/testing.py,sha256=o8yMBAdU5Vy0EspBYaof4fPGgRSFZhRDhzBjRPsLd0M,375
+geometry/transformation.py,sha256=KF-uSwP27Fv5VDB-vbbJDzwU0edKerIeJBFwXeOcPZI,3870
+pfc_geometry-0.1.0.dist-info/COPYING,sha256=L8vFn9ZHT3RRpTtzuzhkgDTutx_NNhMzCw_9YpbZR4Q,35129
+pfc_geometry-0.1.0.dist-info/METADATA,sha256=l6FtCJuvRmUZ4tZiO5vKivqgaMEdVPxJXlJcmIZsqmA,322
+pfc_geometry-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pfc_geometry-0.1.0.dist-info/top_level.txt,sha256=RWbWhWYclEM-OFtXLCB4eLv-jxNnlJB-NPC2YM587Fo,9
+pfc_geometry-0.1.0.dist-info/RECORD,,
