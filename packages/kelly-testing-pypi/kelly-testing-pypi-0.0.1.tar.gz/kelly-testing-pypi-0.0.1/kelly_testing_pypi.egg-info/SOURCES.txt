@@ -1,0 +1,9 @@
+README.md
+setup.py
+kelly-testing-pypi/__init__.py
+kelly-testing-pypi/audio.py
+kelly-testing-pypi/streaming.py
+kelly_testing_pypi.egg-info/PKG-INFO
+kelly_testing_pypi.egg-info/SOURCES.txt
+kelly_testing_pypi.egg-info/dependency_links.txt
+kelly_testing_pypi.egg-info/top_level.txt
