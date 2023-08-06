@@ -1,0 +1,7 @@
+LICENSE.md
+README.md
+setup.py
+modular_json.egg-info/PKG-INFO
+modular_json.egg-info/SOURCES.txt
+modular_json.egg-info/dependency_links.txt
+modular_json.egg-info/top_level.txt
