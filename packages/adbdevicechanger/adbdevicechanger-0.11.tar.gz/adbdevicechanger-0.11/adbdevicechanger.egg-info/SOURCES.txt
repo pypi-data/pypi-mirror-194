@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+adbdevicechanger/LICENSE
+adbdevicechanger/README.MD
+adbdevicechanger/__init__.py
+adbdevicechanger/requirements.txt
+adbdevicechanger/thirdparty.json
+adbdevicechanger.egg-info/PKG-INFO
+adbdevicechanger.egg-info/SOURCES.txt
+adbdevicechanger.egg-info/dependency_links.txt
+adbdevicechanger.egg-info/requires.txt
+adbdevicechanger.egg-info/top_level.txt
