@@ -1,0 +1,4 @@
+click
+inquirerpy
+python-vlc
+requests
