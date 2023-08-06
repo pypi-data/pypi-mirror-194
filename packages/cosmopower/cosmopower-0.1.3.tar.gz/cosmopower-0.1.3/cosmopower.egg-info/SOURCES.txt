@@ -1,0 +1,16 @@
+LICENSE
+LICENSE_EXT
+README.md
+setup.py
+cosmopower/__init__.py
+cosmopower/cosmopower_NN.py
+cosmopower/cosmopower_PCA.py
+cosmopower/cosmopower_PCAplusNN.py
+cosmopower.egg-info/PKG-INFO
+cosmopower.egg-info/SOURCES.txt
+cosmopower.egg-info/dependency_links.txt
+cosmopower.egg-info/requires.txt
+cosmopower.egg-info/top_level.txt
+cosmopower/likelihoods/__init__.py
+cosmopower/likelihoods/tf_planck2018_lite/__init__.py
+cosmopower/likelihoods/tf_planck2018_lite/tf_planck2018_lite.py
