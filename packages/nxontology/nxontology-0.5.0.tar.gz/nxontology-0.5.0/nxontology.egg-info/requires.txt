@@ -1,0 +1,12 @@
+fsspec[http]
+networkx>=2
+pronto>=2.4.0
+
+[dev]
+fire
+pandas
+pre-commit
+pytest
+
+[viz]
+pygraphviz
