@@ -1,0 +1,9 @@
+oknpatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oknpatch/gazefilters.json,sha256=gvyzGOMU4gMJxIwuW6itPAYZyaq18f2YallGtkhlxFY,5925
+oknpatch/oknpatch.py,sha256=jW14lLZYjYz7xcX-cvXYSvlsNcyU96rayrMvwTelFKk,23313
+oknpatch-1.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+oknpatch-1.0.1.dist-info/METADATA,sha256=ePAvdoGcdcqh42BnEyhVbh49COK1I-Hr7qEjOrug8KA,604
+oknpatch-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+oknpatch-1.0.1.dist-info/entry_points.txt,sha256=5hH4V6miXS9kdWnljGXZq5d9wmPm_90Y8mGgE9GrUP8,52
+oknpatch-1.0.1.dist-info/top_level.txt,sha256=bAA4rNrcER22_4aqzYtLmyYkIz42Vtxx4nm4_y14YDs,9
+oknpatch-1.0.1.dist-info/RECORD,,
