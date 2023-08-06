@@ -1,0 +1,12 @@
+photfdtd/__init__.py,sha256=JmohdGC1KOeN4N1aBtfZ8NuQh38CiQkWk0TBHVMqfBM,208
+photfdtd/arc.py,sha256=tvdr59eI7PffPMyN0xqb0_3Me6tu3PBAtC5PLojzYoo,2479
+photfdtd/directional_coupler.py,sha256=Zr0JoGyZ34w19Bd7_CUcijtyCPPpPs8L1ujjkEcY3P4,5139
+photfdtd/mmi.py,sha256=eOM0YKNEs81nUh2cjxCCRN61xg3ON0xLRI9CWTNjbXM,9984
+photfdtd/ring.py,sha256=PETTCB63A5NbhqlAdkerwurZ1DCLYG-fY1VyiIe-MoA,5615
+photfdtd/sbend.py,sha256=iRM5JinXhDObO79TOakP56exsNX6c2VmBn-RLV4QPOs,3310
+photfdtd/waveguide.py,sha256=dB-3U-IacsJSkXNUSY8hIm0SVdMunqLiJkyalh_qHuM,3743
+photfdtd/ysplitter.py,sha256=ZO-K1plrze75Mg_uw8AxI4IgJpghHqlfbRwpAQ53sdc,9325
+photfdtd-0.0.5.dist-info/LICENSE,sha256=cgBc5z-o2FjNV5tM0yE4hqu3mlb9XwxFp8QBfU-PVCE,1114
+photfdtd-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+photfdtd-0.0.5.dist-info/METADATA,sha256=7slPrzoB9zuBc7mklpWT4u-qVeSCkyUUDhle_sSsiHA,2202
+photfdtd-0.0.5.dist-info/RECORD,,
