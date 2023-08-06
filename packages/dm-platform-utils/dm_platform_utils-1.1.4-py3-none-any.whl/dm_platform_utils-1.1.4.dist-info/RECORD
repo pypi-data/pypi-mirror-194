@@ -1,0 +1,12 @@
+dm_platform_utils/DataLoader.py,sha256=ACNfejG5MYsytoufLEZCFrZqLkZWxgfF8ErN1G6Y0UY,2917
+dm_platform_utils/DataWriter.py,sha256=yW0k_tpYftv3ceT3L8uoxluTuq4HlC1dkYd9wPE-XI4,16723
+dm_platform_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dm_platform_utils/utils.py,sha256=0TLLwKqpIaxf8D7B8mmIIZnNISeS4WaJBizP3yJbmyQ,2040
+dm_platform_utils/conf/process_dtypes.yml,sha256=vuK5-ILZdU9aWb1mm3shfFcYqSpbqZ69WXOIpN4zjc0,121
+dm_platform_utils/conf/raw_sql.yml,sha256=_RtsHzvTEPsAcqDQWaPcoFg9NNLEjkQLMfrmeTPHs8w,11504
+dm_platform_utils/conf/sql.yml,sha256=XiJH4VvvRnDUYtbzGqiRMibM2fICZDEaJwlcfHYKjv8,8348
+dm_platform_utils-1.1.4.dist-info/LICENSE.md,sha256=nj4YRBXV2kr3Hbf_kHWvVZKidLs1TqpOg6L5mOUBWww,1070
+dm_platform_utils-1.1.4.dist-info/METADATA,sha256=mTsMq3mgROLh3lAf9uSxjdOuBDuPNg-OH3a-wStl3vM,10135
+dm_platform_utils-1.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dm_platform_utils-1.1.4.dist-info/top_level.txt,sha256=x4dT2gnq16hZPgHsM7FZe8j8TeWhMjFmSERC_kb4TNc,18
+dm_platform_utils-1.1.4.dist-info/RECORD,,
