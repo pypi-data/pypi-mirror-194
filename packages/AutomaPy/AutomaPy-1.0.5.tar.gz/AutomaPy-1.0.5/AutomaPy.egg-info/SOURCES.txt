@@ -1,0 +1,8 @@
+README.md
+setup.py
+AutomaPy/__init__.py
+AutomaPy/main.py
+AutomaPy.egg-info/PKG-INFO
+AutomaPy.egg-info/SOURCES.txt
+AutomaPy.egg-info/dependency_links.txt
+AutomaPy.egg-info/top_level.txt
