@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+azure_synapse_ml_predict.egg-info/PKG-INFO
+azure_synapse_ml_predict.egg-info/SOURCES.txt
+azure_synapse_ml_predict.egg-info/dependency_links.txt
+azure_synapse_ml_predict.egg-info/top_level.txt
