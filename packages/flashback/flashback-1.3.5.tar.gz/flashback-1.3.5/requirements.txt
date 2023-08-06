@@ -1,0 +1,9 @@
+# Caching
+redis==4.3.5
+pymemcache==3.5.2
+
+# Utils
+regex==2022.10.31
+Unidecode==1.3.6
+pygments==2.14.0
+cryptography==39.0.1
