@@ -1,0 +1,135 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri"
+        },
+        "worlds": {
+            "type": "object",
+            "properties": {
+                "Great Temple": { "$ref": "#/$defs/world" },
+                "Temple Grounds": { "$ref": "#/$defs/world" },
+                "Agon Wastes": { "$ref": "#/$defs/world" },
+                "Torvus Bog": { "$ref": "#/$defs/world" },
+                "Sanctuary Fortress": { "$ref": "#/$defs/world" }
+            },
+            "default": {},
+            "additionalProperties": false,
+            "$comment": "The list of properties is replaced in runtime with all worlds in the provided ISO."
+        },
+        "small_randomizations": {
+            "properties": {
+                "seed": {
+                    "type": "number",
+                    "description": "Number to use as seed for the small randomizations"
+                },
+                "echo_locks": {
+                    "type": "boolean",
+                    "description": "Randomize the solution of the Annihilator+Echo Visor puzzles sound puzzles.",
+                    "default": true
+                },
+                "minigyro_chamber": {
+                    "type": "boolean",
+                    "description": "Randomize the solution of the puzzle in Minigyro Chamber.",
+                    "default": true
+                },
+                "rubiks": {
+                    "type": "boolean",
+                    "description": "Randomize the solution of the color puzzles in Main Gyro Chamber.",
+                    "default": true
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "seed"
+            ]
+        },
+        "area_patches": {
+            "type": "object",
+            "properties": {
+                "torvus_temple": {
+                    "type": "boolean",
+                    "description": "Remove objects to minimize the chance of alloc failure",
+                    "default": false
+                }
+            },
+            "description": "Pre-written patches for specific areas",
+            "default": {}
+        },
+        "inverted": {
+            "type": "boolean",
+            "description": "Inverts Light and Dark Aether",
+            "default": false
+        }
+    },
+    "required": [
+        "small_randomizations"
+    ],
+    "additionalProperties": false,
+    "$defs": {
+        "world": {
+            "type": "object",
+            "properties": {
+                "areas": {
+                    "type": "object",
+                    "patternProperties": {
+                        ".*": {
+                            "$ref": "#/$defs/area"
+                        }
+                    }
+                }
+            },
+            "required": ["areas"],
+            "additionalProperties": false,
+            "$comment": "The list of areas is replaced in runtime with the existing areas of each specific world."
+        },
+        "area": {
+            "type": "object",
+            "properties": {
+                "docks": {
+                    "type": "object",
+                    "patternProperties": {
+                        ".*": {
+                            "$ref": "#/$defs/dock"
+                        }
+                    },
+                    "default": {},
+                    "$comment": "The list of docks is replaced in runtime with the existing docks of each specific area."
+                },
+                "layers": {
+                    "type": "object",
+                    "patternProperties": {
+                        ".*": {
+                            "type": "boolean"
+                        }
+                    },
+                    "default": {},
+                    "$comment": "The list of layers is replaced in runtime with the existing layers of each specific area."
+                }
+            },
+            "additionalProperties": false
+        },
+        "dock": {
+            "type": "object",
+            "properties": {
+                "connect_to": {
+                    "type": "object",
+                    "properties": {
+                        "area": {
+                            "type": "string"
+                        },
+                        "dock": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["area", "dock"],
+                    "additionalProperties": false
+                }
+            },
+            "default": {},
+            "additionalProperties": false
+        }
+    }
+}
