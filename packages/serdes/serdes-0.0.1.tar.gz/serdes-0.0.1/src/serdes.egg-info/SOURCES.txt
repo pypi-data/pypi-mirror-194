@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+src/serdes/__init__.py
+src/serdes.egg-info/PKG-INFO
+src/serdes.egg-info/SOURCES.txt
+src/serdes.egg-info/dependency_links.txt
+src/serdes.egg-info/requires.txt
+src/serdes.egg-info/top_level.txt
