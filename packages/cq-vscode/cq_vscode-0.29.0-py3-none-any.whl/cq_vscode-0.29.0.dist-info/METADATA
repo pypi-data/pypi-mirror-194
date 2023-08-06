@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cq-vscode
+Version: 0.29.0
+Summary: CadQuery Viewer for VSCode
+Home-page: https://github.com/bernhard-42/vscode-cadquery-viewer
+Author: Bernhard Walter
+Author-email: b_walter@arcor.de
+Keywords: vscode,widgets,CAD,cadquery
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: ocp-tessellate (>=1.0.0rc7)
+Requires-Dist: requests
+
+An extension to show cadquery objects in VSCode via pythreejs
