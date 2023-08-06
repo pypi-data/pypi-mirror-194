@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lushalytics
+Version: 1.0.7
+Summary: a small package with quality of life unilities to data analysis with pyspark
+Author: Moran Reznik
+Keywords: python,first package
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+a small package with quality of life unilities to data analysis with pyspark
