@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: school_mosreg_api
+Version: 0.9.1
+Summary: SchoolMosregAPI by DSOP
+Home-page: https://github.com/Den4ikSuperOstryyPer4ik/SchoolMosregRuAPI
+Download-URL: https://github.com/Den4ikSuperOstryyPer4ik/SchoolMosregRuAPI/releases/latest
+Author: Den4ikSuperOstryyPer4ik
+License: GNU GPLv3
+Project-URL: Source, https://github.com/Den4ikSuperOstryyPer4ik/SchoolMosregRuAPI
+Keywords: school mosreg api ru python school-mosreg-api school-mosreg-ru-api
+Requires: pydantic
+Requires: aiohttp
+Requires: requests
+License-File: LICENSE
