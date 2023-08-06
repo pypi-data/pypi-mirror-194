@@ -1,0 +1,11 @@
+LICENSE
+README.md
+binjai.py
+ghidrai.py
+idai.py
+server.py
+setup.py
+Sekiryu.egg-info/PKG-INFO
+Sekiryu.egg-info/SOURCES.txt
+Sekiryu.egg-info/dependency_links.txt
+Sekiryu.egg-info/top_level.txt
