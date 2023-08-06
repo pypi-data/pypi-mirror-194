@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: bandplot
+Version: 0.1.1.1
+Summary: bandplot: band structure plot from vaspkit result.
+Home-page: https://github.com/lkccrr/bandplot
+Author: kan
+Author-email: luokan@hrbeu.edu.cn
+License: MIT
+Description: .. image:: https://img.shields.io/pypi/v/bandplot.svg
+           :target: https://pypi.org/project/bandplot/
+        
+        .. image:: https://img.shields.io/pypi/pyversions/bandplot.svg
+           :target: https://pypi.org/project/bandplot/
+        
+        bandplot
+        ========
+        
+        bandplot: Plot the band structure from vaspkit result.
+        
+        * To execute ``bandplot -h`` for the parameters to use.
+        * Example::
+        
+            pbandplot -i band.dat -o band.png -l g m k g -d PDOS*
+            pbandplot -b -l g m k g -y -5 2
+        
+        
+Keywords: VASP band structure plot
+Platform: Unix
+Platform: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
