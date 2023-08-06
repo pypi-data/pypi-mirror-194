@@ -1,0 +1,10 @@
+setup.py
+querylm/__init__.py
+querylm/config.py
+querylm/querylm.py
+querylm/utils.py
+querylm.egg-info/PKG-INFO
+querylm.egg-info/SOURCES.txt
+querylm.egg-info/dependency_links.txt
+querylm.egg-info/not-zip-safe
+querylm.egg-info/top_level.txt

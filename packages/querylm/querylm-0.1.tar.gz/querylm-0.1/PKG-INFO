@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: querylm
+Version: 0.1
+Summary: an efficient tool to query large models
+Home-page: http://github.com/dasepli/querylm
+Author: Peng Li
+Author-email: ruhao9805@gmail.com
+License: MIT
