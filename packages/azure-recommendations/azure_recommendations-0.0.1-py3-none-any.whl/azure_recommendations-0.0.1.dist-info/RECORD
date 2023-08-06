@@ -1,0 +1,9 @@
+azure_recommendations/__init__.py,sha256=veKqR-bodo2XLU4hmjrhjW2k4uwLii_HK5cCxyVazU8,602
+azure_recommendations/recommendation/__init__.py,sha256=QAu8L7VjacVOhDSoBvCWNMleWY3Fgk_cgatXkWi3MY4,1607
+azure_recommendations/recommendation/utils.py,sha256=RLmiCBJaEmkzFaiP9tCW31FpbmW2dixPlufpb2qRJ6Q,2938
+azure_recommendations/recommendation/vm_recommendations.py,sha256=Ty5GTFN_Vo-bsUxITWIpKOAaTM_hTk1-OmapQG-7mso,8992
+azure_recommendations-0.0.1.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure_recommendations-0.0.1.dist-info/METADATA,sha256=bEkH_UDY-xJPHbDnLCRbFV8Pm_u7KtyvsqATBhP0axY,466
+azure_recommendations-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+azure_recommendations-0.0.1.dist-info/top_level.txt,sha256=_bh071VZb28X2hIbFSkmQ1_BjIMz72vYWRZh0fFrzm4,22
+azure_recommendations-0.0.1.dist-info/RECORD,,
