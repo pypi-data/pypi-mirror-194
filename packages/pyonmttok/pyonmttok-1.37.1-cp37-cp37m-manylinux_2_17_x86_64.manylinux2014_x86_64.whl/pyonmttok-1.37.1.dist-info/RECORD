@@ -1,0 +1,8 @@
+pyonmttok/__init__.py,sha256=3IxP46gtv_Umz3eOaiMWIW9IioZpouA_xUOUzQqh8GI,1413
+pyonmttok/version.py,sha256=vkNLvk0SIEyZGddH2FsXa2axesqaGWSiM4bSJDT0ZOg,51
+pyonmttok/_ext.cpython-37m-x86_64-linux-gnu.so,sha256=83z99HSC2vEW7uBmWAk-cHSNa5izAsGjZIB3-r4RpxI,13401560
+pyonmttok-1.37.1.dist-info/top_level.txt,sha256=wuxOdfXNXj98ECi-4TSLRm_bpRYIccmePnOKlVvxvfY,10
+pyonmttok-1.37.1.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
+pyonmttok-1.37.1.dist-info/METADATA,sha256=8ba8gybKdfOuKVXALuibBqMc5eCvieNFCBe82wlpwac,12642
+pyonmttok-1.37.1.dist-info/RECORD,,
+pyonmttok.libs/libOpenNMTTokenizer-f0789a52.so,sha256=ar7Pa--25IxbgN921pwPsGZByU91tThp6P8-iesTfmw,36518808
