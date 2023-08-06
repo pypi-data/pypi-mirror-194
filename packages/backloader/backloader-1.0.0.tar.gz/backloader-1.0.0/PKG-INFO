@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: backloader
+Version: 1.0.0
+Summary: If you have something that requires importing lots of packages (5,000): baS.
+Home-page: https://replit.com/@-jpg/backloader#setup.py
+Author: Aiden Kundert
+Author-email: aidenkundert060@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# baS: the package initializer
+
+Get it:
+
+`pip install backloader`
+
+Use it:
+```
+from backloader import bl_init
+bl_init()
+```
+
+It loads the top 5,000 packages in python. Yay, no more annoying scrolling up to import a package: it probably already is.
+
