@@ -1,0 +1,14 @@
+sodas/__init__.py,sha256=wCwK0dI5niVtP_gZz-yCleFNHhar5Bw5TCwjTrntxN8,262
+sodas/devtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sodas/devtools/datalake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sodas/devtools/datalake/credential.py,sha256=HaCgeUQhR-XREiMbZuMwB-nZV2PFWqB0n42qxzjA1tM,1113
+sodas/devtools/datalake/object_storage.py,sha256=xyodkGseM1dvFIoUJWfdyHefdYfRY569Ky5k8f1kn24,9743
+sodas/devtools/distribution/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sodas/devtools/distribution/dataset.py,sha256=7jccwT7MJUh5JlOVLz02YlM9IrMVYu0xONkg1g5rfXw,842
+sodas/devtools/distribution/distribution.py,sha256=HHqHHLkQJ-Rp5-6utahytLp84Z4jDo6vczX3mkpAv-E,2138
+sodas/devtools/gateway/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sodas/devtools/gateway/auth.py,sha256=KQuMYGdAlZxzLE_e1Ja64h_MKVa6v4T7rsD0v9Vf8sw,1569
+sodas-0.2.1.dist-info/METADATA,sha256=U21nQo5YVrSqZXAZ2XKVRWQclb4z_KaVTpkrE2XtHHg,321
+sodas-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sodas-0.2.1.dist-info/top_level.txt,sha256=uOEaT_wBshsq94PSr639Rb8MZ2Erz12tXH8lnZuQGUo,6
+sodas-0.2.1.dist-info/RECORD,,
