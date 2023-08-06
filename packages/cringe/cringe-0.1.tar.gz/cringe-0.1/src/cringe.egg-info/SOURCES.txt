@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/cringe/__init__.py
+src/cringe/cringe.py
+src/cringe.egg-info/PKG-INFO
+src/cringe.egg-info/SOURCES.txt
+src/cringe.egg-info/dependency_links.txt
+src/cringe.egg-info/top_level.txt
