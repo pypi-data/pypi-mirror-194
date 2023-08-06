@@ -1,0 +1,10 @@
+django_bootstrap_input_group/__init__.py,sha256=wWzLo28r2Ss9Eu3PTS6t5FyXkfL0X_5zmpxnAbuqBPk,112
+django_bootstrap_input_group/renderers.py,sha256=25Yz2pV3xQUy-r8BvoqmRXUrexKTZlz79Zu8xB1Izxg,7507
+django_bootstrap_input_group/static/django_bootstrap_input_group/css/bootstrap_input_group.css,sha256=qDjkf3KfsLzyQGf5E5sFC1mragZz4YrImeN4xIV2yNw,649
+django_bootstrap_input_group/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_bootstrap_input_group/templatetags/django_bootstrap_input_group.py,sha256=XUKhMddTR1c06YMwyzbz0Cext3gsBl7x2HiwOgte_RM,1083
+django_bootstrap_input_group-1.0.0.dist-info/LICENSE,sha256=bL_JjhO4tkmPVFNWunLORMlmRKWIQoYv66tP0Ne9Yv0,1064
+django_bootstrap_input_group-1.0.0.dist-info/METADATA,sha256=plaonQIvuUSzHOqMbA-0ZBvcUx36s_9DXpo90eifgLc,5851
+django_bootstrap_input_group-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_bootstrap_input_group-1.0.0.dist-info/top_level.txt,sha256=uVCgubU93dMp3uaYYzIEUMGynw_yKwSCt0UC5ek_1y4,29
+django_bootstrap_input_group-1.0.0.dist-info/RECORD,,
