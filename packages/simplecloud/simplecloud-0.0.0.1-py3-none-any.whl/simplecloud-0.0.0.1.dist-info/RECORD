@@ -1,0 +1,11 @@
+cloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/cloud_api.py,sha256=r4_f67sLe_3cNESgyMByHyEKTiTU_FtFo4YTvMg3QwQ,1774
+cloud/cloud_cli.py,sha256=DakpQuerzY9J6PU4CcNUK3ClcfHXt9uhoja-ziba73E,4550
+cloud/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/service/cloud.py,sha256=6H4ME8wH7PoQ9ObgNzaBWnOQugYYKgxFwyEeHokkEGc,3401
+cloud/service/path_manipulation.py,sha256=_Qf9SdrrXxNw8Sp2KSfN2khCiOtBjXPsE3S6Ta_Tyb8,619
+simplecloud-0.0.0.1.dist-info/METADATA,sha256=cl7jelnkj0HvNaIGmelTjJ7QUnSGaXd6B_Q7qYuprLE,330
+simplecloud-0.0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+simplecloud-0.0.0.1.dist-info/entry_points.txt,sha256=cseKcKU0P6w6FXEvHxglvVt56Zcw-MvfEwrkvcXwKC8,83
+simplecloud-0.0.0.1.dist-info/top_level.txt,sha256=lBiHHi76sKOBY-DmE0iDypxZxv-TTCnvHeiFleC_PuA,6
+simplecloud-0.0.0.1.dist-info/RECORD,,
