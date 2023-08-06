@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: lhilxPy
+Version: 0.6
+Requires-Dist: conan
+Requires-Dist: click
+Requires-Dist: codec
+Requires-Dist: chardet
+
