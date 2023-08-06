@@ -1,0 +1,27 @@
+[project]
+name = "gradescope_auto_py"
+version = "0.0.18"
+authors = [
+    { name = "Matt Higger", email = "matt.higger@gmail.com" },
+]
+description = "a gradescope autograder for python"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pipreqs"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["gradescope_auto_py", "gradescope_auto_py.gradescope"]
+
+[project.urls]
+"Homepage" = "https://github.com/matthigger/gradescope_auto_py"
