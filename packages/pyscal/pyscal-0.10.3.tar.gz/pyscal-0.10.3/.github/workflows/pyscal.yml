@@ -1,0 +1,116 @@
+name: pyscal
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  release:
+    types:
+      - published
+  schedule:
+    # Run CI every night and check that tests are working with latest dependencies
+    - cron:  '0 0 * * *'
+
+jobs:
+
+  pyscal:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: 'ubuntu-latest'
+            python-version: '3.8'
+          - os: 'ubuntu-latest'
+            python-version: '3.9'
+          - os: 'macos-latest'
+            python-version: '3.9'
+          - os: 'windows-latest'
+            python-version: '3.9'
+
+    steps:
+      - name: Checkout commit locally
+        uses: actions/checkout@v2
+
+      - name: Checkout tags
+        # This seems necessary for setuptools_scm to be able to infer
+        # the correct version.
+        run: git fetch --unshallow --tags
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install pyscal with dependencies
+        run: |
+          pip install --upgrade pip
+          pip install .[tests]
+
+      - name: List all installed packages
+        run: pip freeze
+
+      - name: Check code style and typing
+        run: |
+          black --check --force-exclude="pyscal/version.py" pyscal/*py tests/test_*py setup.py docs/conf.py
+          flake8 pyscal tests
+          isort --check-only --profile black pyscal tests
+          mypy pyscal
+
+      - name: Run tests
+        run: |
+          python -c "import pyscal"
+          pytest --strict-markers --hypothesis-profile ci tests/
+
+      - name: Syntax check documentation
+        run: |
+          rstcheck -r docs
+
+      - name: Install font (xkcd) for documentation
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.8'
+        run: |
+          sudo apt-get install -y fonts-humor-sans
+
+      - name: Build documentation
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          export SETUPTOOLS_SCM_PRETEND_VERSION=${GITHUB_REF//refs\/tags\//}
+          python docs/make_plots.py
+          python setup.py build_sphinx
+
+      - name: Build python package and publish to pypi
+        if: github.event_name == 'release' && matrix.python-version == '3.8' && matrix.os == 'ubuntu-latest'
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.pyscal_pypi_token }}
+        run: |
+          export SETUPTOOLS_SCM_PRETEND_VERSION=${GITHUB_REF//refs\/tags\//}
+          python -m pip install --upgrade setuptools wheel twine
+          python setup.py sdist bdist_wheel
+          twine upload dist/*
+
+      - name: Update GitHub pages
+        if: github.event_name == 'release' && matrix.python-version == '3.8' && matrix.os == 'ubuntu-latest'
+        run: |
+            cp -R ./build/sphinx/html ../html
+
+            git config --local user.email "pyscal-github-action"
+            git config --local user.name "pyscal-github-action"
+            git fetch origin gh-pages
+            git stash  # Due to make_plots.py above maybe having modified png files
+            git checkout --track origin/gh-pages
+            git clean -f -f -d -x  # Double -f is intentional
+            git rm -r *
+
+            cp -R ../html/* .
+
+            git add .
+
+            if git diff-index --quiet HEAD; then
+              echo "No changes in documentation. Skip documentation deploy."
+            else
+              git commit -m "Update Github Pages"
+              git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages
+            fi

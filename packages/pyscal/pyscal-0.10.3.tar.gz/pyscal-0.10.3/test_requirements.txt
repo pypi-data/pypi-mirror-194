@@ -1,0 +1,15 @@
+autoapi
+black
+flake8
+hypothesis
+isort
+mypy
+pre-commit
+pytest
+pytest-cov
+pytest-mock
+rstcheck
+sphinx
+sphinx-argparse
+sphinx-autodoc-typehints
+sphinx_rtd_theme
