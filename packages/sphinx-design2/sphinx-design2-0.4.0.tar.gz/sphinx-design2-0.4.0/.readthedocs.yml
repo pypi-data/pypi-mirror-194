@@ -1,0 +1,14 @@
+version: 2
+
+python:
+  version: "3.8"
+  install:
+      - method: pip
+        path: .
+        extra_requirements:
+          - rtd
+          - theme_furo
+
+sphinx:
+  builder: html
+  fail_on_warning: true
