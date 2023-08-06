@@ -1,0 +1,16 @@
+anndata
+attrs>=22.1
+numpy
+pandas
+pyarrow>=9.0.0
+scanpy>=1.9.2
+scipy
+somacore==1.0.0rc3
+tiledb==0.20.*
+typing-extensions
+
+[dev]
+black
+pytest
+ruff
+typeguard
