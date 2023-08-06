@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: python-dotenv-1.0.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/python-dotenv-1.0.0-7dea723a-5425-dcda-5846-a330345e0a1a
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Person: Saurabh Kumar (me+github@saurabh-kumar.com)
+Creator: Tool: mbed-spdx-generator
+Created: 2023-03-01T14:30:28Z
+
+
+# Package
+
+PackageName: python-dotenv
+SPDXID: SPDXRef-python-dotenv
+PackageVersion: 1.0.0
+PackageDownloadLocation: NONE
+PackageSummary: <text>Read key-value pairs from a .env file and set them as environment variables</text>
+PackageFileName: python-dotenv
+PackageOriginator: Person: Saurabh Kumar (me+github@saurabh-kumar.com)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: BSD-3-Clause
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseInfoFromFiles: BSD-3-Clause
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://github.com/theskumar/python-dotenv
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: BSD-3-Clause
+LicenseInfoInFile: BSD-3-Clause
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+
