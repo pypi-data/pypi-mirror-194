@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+restDbApi/__init__.py
+restDbApi/db_engine_specs.py
+restDbApi/rest_api_adapter.py
+restDbApi/rest_api_dialect.py
+restDbApi/utils.py
+rest_db_api.egg-info/PKG-INFO
+rest_db_api.egg-info/SOURCES.txt
+rest_db_api.egg-info/dependency_links.txt
+rest_db_api.egg-info/entry_points.txt
+rest_db_api.egg-info/requires.txt
+rest_db_api.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_rest_dbapi.py
