@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/test/__init__.py
+src/test/term_info_queries_test.py
+src/vfb_queries.egg-info/PKG-INFO
+src/vfb_queries.egg-info/SOURCES.txt
+src/vfb_queries.egg-info/dependency_links.txt
+src/vfb_queries.egg-info/requires.txt
+src/vfb_queries.egg-info/top_level.txt
