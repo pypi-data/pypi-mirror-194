@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kmmate"
+version = "0.1.0"
+description = "The awesome tool for creating KMM projects."
+authors = ["Artem Skopincev <sckopincev.artyom@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+kmmate = "kmmate.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
