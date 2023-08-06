@@ -1,0 +1,4 @@
+wheel
+boto3
+requests
+dnspython
