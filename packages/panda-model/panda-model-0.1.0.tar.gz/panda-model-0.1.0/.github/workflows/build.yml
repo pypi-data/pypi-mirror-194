@@ -1,0 +1,57 @@
+name: build
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: quay.io/pypa/manylinux2014_x86_64
+    strategy:
+      matrix:
+        python-version: ["cp37-cp37m", "cp38-cp38", "cp39-cp39", "cp310-cp310", "cp311-cp311"]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build package with Python ${{ matrix.python-version }}
+      run: |
+        /opt/python/${{ matrix.python-version }}/bin/python -m build .
+        /opt/python/${{ matrix.python-version }}/bin/pip install `ls -t dist/*.whl | head -n1`[test]
+    - name: Test package with Python ${{ matrix.python-version }}
+      run: /opt/python/${{ matrix.python-version }}/bin/python -m pytest ./tests/test_without_fci.py
+    - name: Build C++
+      run: >
+        mkdir build &&
+        cd build &&
+        cmake .. -DBUILD_CPP=ON &&
+        cmake --build . &&
+        cpack -G DEB
+        sudo dpkg -i ./*.deb
+    - name: Upload distributions
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: dist/*
+
+  deploy:
+    needs: build
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download distributions
+        uses: actions/download-artifact@v2
+        with:
+          name: dist
+          path: dist
+      - name: Deploy to pypi
+        uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
