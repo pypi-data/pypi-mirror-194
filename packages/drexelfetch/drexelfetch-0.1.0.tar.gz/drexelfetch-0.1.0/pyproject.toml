@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "drexelfetch"
+version = "0.1.0"
+description = "A fetch tool for drexel courses"
+authors = ["dotzenith <contact@danshu.co>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+polars = "^0.16.8"
+typer = "^0.7.0"
+kolorz = "^0.2.5"
+
+[tool.poetry.scripts]
+dfetch = "drexelfetch.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
