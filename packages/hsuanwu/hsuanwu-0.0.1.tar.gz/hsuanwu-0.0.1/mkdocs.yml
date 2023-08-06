@@ -1,0 +1,64 @@
+site_name: "Hsuanwu"
+site_url: https://docs.hsuanwu.dev/
+copyright: Copyright &copy; 2023 Bellman Project
+theme:
+  name: material
+  logo: assets/images/icon.svg
+  favicon: assets/images/icon.svg
+  # custom_dir: docs/theme_override_home/
+  palette:
+    - scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+        
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+repo_url: https://github.com/BellmanProject/Hsuanwu
+repo_name: BellmanProject/Hsuanwu
+
+extra:
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/BellmanProject/Hsuanwu
+    - icon: fontawesome/solid/paper-plane
+      link: friedrichyuan19990827@gmail.com
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/hsuanwu/
+  
+nav:
+
+  - Overview: 
+    - Overview: index.md
+    - License: license.md
+    - Changelog: changelog.md
+  - Getting stared:
+    - Installation: getting_started.md
+  - API:
+    - xploit:
+      - learner: 
+        - discrete_learner: sources/api/xploit/encoder/base.md
+    - xplore:
+      - reward:
+        - RE3: API/xplore.md
