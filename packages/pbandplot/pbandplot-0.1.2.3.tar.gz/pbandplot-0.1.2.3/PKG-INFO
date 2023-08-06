@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pbandplot
+Version: 0.1.2.3
+Summary: pbandplot: phonon band structure plot from phonopy result.
+Home-page: https://github.com/lkccrr/pbandplot
+Author: kan
+Author-email: luokan@hrbeu.edu.cn
+License: MIT
+Description: .. image:: https://img.shields.io/pypi/v/pbandplot.svg
+           :target: https://pypi.org/project/pbandplot/
+        
+        .. image:: https://img.shields.io/pypi/pyversions/pbandplot.svg
+           :target: https://pypi.org/project/pbandplot/
+        
+        pbandplot
+        =========
+        
+        pbandplot: Plot the phonon band structure plot from phonopy result.
+        
+        * To execute ``pbandplot -h`` for the parameters to use.
+        * Example::
+        
+            pbandplot -i band.dat -o pband.png -l g m k g -d projected_dos.dat
+            pbandplot -b 23 100 -l g m k g -y -2 110
+        
+        
+Keywords: phonopy band structure plot
+Platform: Unix
+Platform: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
