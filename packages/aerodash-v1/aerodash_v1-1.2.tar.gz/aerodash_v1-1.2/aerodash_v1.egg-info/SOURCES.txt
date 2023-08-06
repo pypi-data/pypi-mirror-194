@@ -1,0 +1,10 @@
+README.md
+setup.py
+aerodash_v1/__init__.py
+aerodash_v1/cli.py
+aerodash_v1.egg-info/PKG-INFO
+aerodash_v1.egg-info/SOURCES.txt
+aerodash_v1.egg-info/dependency_links.txt
+aerodash_v1.egg-info/entry_points.txt
+aerodash_v1.egg-info/requires.txt
+aerodash_v1.egg-info/top_level.txt
