@@ -1,0 +1,9 @@
+waterfall_logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+waterfall_logging/context_manager.py,sha256=PXePibL-K3v74ZSDbxdtuyUEMjE7TOmUk2UD8DnluSo,3040
+waterfall_logging/decorator.py,sha256=wIBIacuBRJ_55GJrw0t5RUShbdsDQzDn9BaW-ECSN90,635
+waterfall_logging/log.py,sha256=ruE5nI2JWpT7rp97K6qNwZ0_NV5S8HBcSLY2_COGuSw,13920
+waterfall_logging/utils.py,sha256=MRqgLJ6CB66jpzLeqVQzoLkH82XmqP4baboM9V7HD5s,658
+waterfall_logging-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+waterfall_logging-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+waterfall_logging-0.1.0.dist-info/METADATA,sha256=QZrKoi8QFtX2jDnhASvLqaq9RqBrPWCCfqdBINjvjdM,4119
+waterfall_logging-0.1.0.dist-info/RECORD,,
