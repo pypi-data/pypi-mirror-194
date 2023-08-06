@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ezdownloader
+Version: 0.1.1
+Summary: A simple file downloading tool 
+Home-page: https://github.com/codemilo-ui/ezdownloader
+Author: codemilo
+Author-email: milomurthy@gmail.com
+Keywords: downloader,wget
+License-File: LICENSE.txt
