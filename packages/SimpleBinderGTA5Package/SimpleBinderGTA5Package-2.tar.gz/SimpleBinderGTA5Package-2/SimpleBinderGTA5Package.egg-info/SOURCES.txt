@@ -1,0 +1,9 @@
+README.md
+setup.py
+SimpleBinderGTA5Package/__init__.py
+SimpleBinderGTA5Package/binds.py
+SimpleBinderGTA5Package.egg-info/PKG-INFO
+SimpleBinderGTA5Package.egg-info/SOURCES.txt
+SimpleBinderGTA5Package.egg-info/dependency_links.txt
+SimpleBinderGTA5Package.egg-info/requires.txt
+SimpleBinderGTA5Package.egg-info/top_level.txt
