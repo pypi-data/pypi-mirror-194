@@ -1,0 +1,8 @@
+whispercpp-0.0.5.dist-info/METADATA,sha256=gdM1izH-tfpneToW8Fhwz91X8cjvqiinkSJdA15eb5w,5522
+whispercpp-0.0.5.dist-info/RECORD,,
+whispercpp-0.0.5.dist-info/WHEEL,sha256=yr-B9J_zpRn0_uiENl4fbgyE1rxYL5r5bHvb2qkTl6w,110
+whispercpp/__init__.py,sha256=AkERM-c55c-IVA4iPNCYERxUXrEjx54xYmr9zlz3EDQ,1139
+whispercpp/__init__.pyi,sha256=Q_Pepmfln-kYTfLSlux6heHn9_twLgzocNYP4v3EYe8,427
+whispercpp/api.pyi,sha256=vysLywgGCEVQFLydL3hnDhccx00vF6fX_TJC1eAKOtE,2346
+whispercpp/api.so,sha256=Rf3W_f2AdMrVPSExGORi55rX3qkcFB1ux-m5R_0VeTI,3394976
+whispercpp/utils.py,sha256=x8aqR-FvmZawMOltgAZTV8IsXAAKU2IAjAv_ea83liw,3599
