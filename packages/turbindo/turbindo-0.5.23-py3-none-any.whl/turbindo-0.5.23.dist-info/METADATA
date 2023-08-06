@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: turbindo
+Version: 0.5.23
+Summary: Asynchronous Python Framework
+Author: Grant Haywood, Moshe Rosten
+Author-email: grant@iowntheinter.net
+License: MIT
+Requires-Dist: charset-normalizer (==2.1.1)
+Requires-Dist: semantic-version
+Requires-Dist: setuptools-rust
+Requires-Dist: asyncssh
+Requires-Dist: imaplib2
+Requires-Dist: aiocron
+Requires-Dist: transitions
+Requires-Dist: aiosqlite
+Requires-Dist: aiojobs
+Requires-Dist: jinja2
+Requires-Dist: aiodocker
+Requires-Dist: docker
+Requires-Dist: aiohttp (==3.8.1)
+Requires-Dist: python-box
+Requires-Dist: pyjwt
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: PyYaml
+Requires-Dist: croniter
+Requires-Dist: cryptography
+Requires-Dist: setuptools
+Requires-Dist: gremlinpython
+
