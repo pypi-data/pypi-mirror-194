@@ -1,0 +1,9 @@
+hello.py,sha256=h31vW68oQSJ0XIIm4Rg1rWoVEcbFNfScGKXlcYANawg,535
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/messages.py,sha256=_UzGWE3vtDrfE7dR_3C3v8836qSEfitRpb4SuKlJIUs,178
+cli_msg-2.1.0.dist-info/LICENSE,sha256=WhtdwlT1q5xYtNXp3XZXDb9NGKnT444ActMe74ehD8c,1050
+cli_msg-2.1.0.dist-info/METADATA,sha256=urZuefCLzzZEATGjEbfer0TlvCHNq5xo8xkvx8lltlA,644
+cli_msg-2.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cli_msg-2.1.0.dist-info/entry_points.txt,sha256=jVbTOE56FFwxZLsWvlH15qT7MZvE1U-VN5WeESfZb_c,42
+cli_msg-2.1.0.dist-info/top_level.txt,sha256=OHdJmHxmKZINtci7GLrCCZ6-BYD3tEzn2GoJM92DN7s,12
+cli_msg-2.1.0.dist-info/RECORD,,
