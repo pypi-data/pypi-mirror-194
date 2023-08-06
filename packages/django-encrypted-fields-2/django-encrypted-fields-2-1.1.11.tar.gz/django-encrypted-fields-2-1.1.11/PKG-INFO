@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: django-encrypted-fields-2
+Version: 1.1.11
+Summary: This is a collection of Django Model Field classes that are encrypted using Keyczar.
+Home-page: https://github.com/edmon1024/django-encrypted-fields-2
+Author: Aron Jones
+Author-email: aron.jones@gmail.com
+License: BSD
+License-File: LICENCE.txt
