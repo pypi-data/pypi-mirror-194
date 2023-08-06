@@ -1,0 +1,9 @@
+requestXpath/__init__.py,sha256=vzY1pQsc8omJ7i1RAwIETZySnBhTcAPU4xdkJyGzDFA,456
+requestXpath/pxpath.py,sha256=DXhQzhET1ITvkYifY8tSAr5DxiqNUWSJS5lDbMGyTIk,6882
+requestXpath/requestXpath.py,sha256=f9jm_fWUQFZKDN5C7PgJU2y5arGuyMiFlzIwrZTFVwk,3522
+requestXpath/useragent.py,sha256=Jm4sQPiqkDALhCQmQlezqKL7BqUmt4Ip_AesXlenGsg,11789
+requestXpath-0.1.8.dist-info/LICENSE.txt,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+requestXpath-0.1.8.dist-info/METADATA,sha256=L1thv9MiSf_Ygh4NSXH6TGGDZKl0-9HgW2v_XB34gAE,2002
+requestXpath-0.1.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+requestXpath-0.1.8.dist-info/top_level.txt,sha256=F14msrelBI5n-ivMOaIgXQ-_BAxB47sZ6nBsnmLJs9M,13
+requestXpath-0.1.8.dist-info/RECORD,,
