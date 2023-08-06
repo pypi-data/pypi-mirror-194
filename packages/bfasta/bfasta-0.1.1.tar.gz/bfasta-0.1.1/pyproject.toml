@@ -1,0 +1,27 @@
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "bfasta"
+authors = ["Reto Stamm", "Dr. B."]
+description = "Simple fasta reader with no dependencies"
+readme = "README.md"
+version = "0.1.1"
+keywords = ["fasta", "genomics", "bioinformatics", "bio"]
+license = "GPL-3"
+classifiers = [ "Programming Language :: Python", ]
+homepage="https://github.com/retospect/bfasta"
+
+[tool.bumpver]
+current_version = "0.1.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/bfasta/__init__.py" = ["{version}"]
+
