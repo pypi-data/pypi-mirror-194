@@ -1,0 +1,8 @@
+README.md
+setup.py
+fybrik_python_transformation/__init__.py
+fybrik_python_transformation.egg-info/PKG-INFO
+fybrik_python_transformation.egg-info/SOURCES.txt
+fybrik_python_transformation.egg-info/dependency_links.txt
+fybrik_python_transformation.egg-info/requires.txt
+fybrik_python_transformation.egg-info/top_level.txt
