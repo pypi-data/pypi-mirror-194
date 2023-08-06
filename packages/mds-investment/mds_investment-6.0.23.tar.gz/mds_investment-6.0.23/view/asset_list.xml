@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tree>
+    <field name="name" expand="1"/>
+    <field name="change_day1" symbol="change_symbol"/>
+    <field name="change_month1" symbol="change_symbol"/>
+    <field name="change_month3" symbol="change_symbol"/>
+    <field name="change_month6" symbol="change_symbol"/>
+    <field name="date"/>
+    <field name="rate" symbol="asset_symbol"/>
+    <field name="isin"/>
+    <field name="wkn" />
+</tree>

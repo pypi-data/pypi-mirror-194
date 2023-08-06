@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- This file is part of the investment-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/separator[@name='currency']" position="before">
+        <separator name="asset" colspan="6" string="Asset"/>
+        <label name="asset"/>
+        <field name="asset"/>
+        <newline/>
+    </xpath>
+
+</data>
