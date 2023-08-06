@@ -1,0 +1,1 @@
+from logmixin.logmixin import LogMixin

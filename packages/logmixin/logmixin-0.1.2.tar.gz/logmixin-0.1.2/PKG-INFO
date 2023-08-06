@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: logmixin
+Version: 0.1.2
+Summary: Defines a mixin class that adds a convenient get_logger method.
+Home-page: https://github.com/sammosummo/logmixin
+License: MIT
+Keywords: logging,mixin,log,logger
+Author: Sam Mathias
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Documentation, https://github.com/sammosummo/logmixin
+Project-URL: Repository, https://github.com/sammosummo/logmixin
+Description-Content-Type: text/markdown
+
+# logmixin
+
+## Description
+
+This is an extremely small Python package (one module, ~40 lines) to enable quick and easy logging within class methods.
+
+## Usage
+
+It defines a mixin class that adds a `get_logger` method to your class. This method returns a logger with the name of
+your module, class, and method that called it. For example, suppose you have a module called `my_module.py` with these
+contents:
+
+```python
+import logging
+from logmixin import LogMixin
+
+
+class MyClass(LogMixin):
+    """A class with logging enabled."""
+    def my_method(self):
+        self.get_logger().info("Hello, world!")
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    MyClass().my_method()
+```
+
+If you run this file, you will see the following output:
+
+```
+INFO:my_module.MyClass.my_method:Hello, world!
+```
+
+## Installation
+
+You can install this package from PyPI:
+
+```bash
+pip install logmixin
+```
+
+## License
+
+MIT
+
+
+
+
