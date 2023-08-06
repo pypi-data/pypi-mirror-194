@@ -1,0 +1,7 @@
+setup.py
+updatafs/__init__.py
+updatafs/test.py
+updatafs.egg-info/PKG-INFO
+updatafs.egg-info/SOURCES.txt
+updatafs.egg-info/dependency_links.txt
+updatafs.egg-info/top_level.txt
