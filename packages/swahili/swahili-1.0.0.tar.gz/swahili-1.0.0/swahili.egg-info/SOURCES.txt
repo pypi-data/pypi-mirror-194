@@ -1,0 +1,7 @@
+setup.py
+swahili/__init__.py
+swahili.egg-info/PKG-INFO
+swahili.egg-info/SOURCES.txt
+swahili.egg-info/dependency_links.txt
+swahili.egg-info/requires.txt
+swahili.egg-info/top_level.txt
