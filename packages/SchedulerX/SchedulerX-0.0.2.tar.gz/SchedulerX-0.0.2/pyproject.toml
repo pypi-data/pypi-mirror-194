@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SchedulerX"
+version = "0.0.2"
+authors = [
+  { name="Khabir Abdelhakim", email="hakim1khabir2@gmail.com" },
+]
+description = "Schedule a task using systemd services and timer"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hakkm/service-timer"
+"Bug Tracker" = "https://github.com/hakkm/service-timer/issues"
