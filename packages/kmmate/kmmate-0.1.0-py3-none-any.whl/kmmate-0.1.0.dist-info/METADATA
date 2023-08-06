@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: kmmate
+Version: 0.1.0
+Summary: The awesome tool for creating KMM projects.
+Author: Artem Skopincev
+Author-email: sckopincev.artyom@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Awesome tool for working on KMM projects
+
+## Features
+
+1. Creating new project with template
+2. Fast rename shared module
+3. Fast rename package
+4. Generating components (Decompose)
+5. Generating empty features (components, data layer, domain entities)
+
