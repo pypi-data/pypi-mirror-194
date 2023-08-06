@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+charbychar/__init__.py
+charbychar/charbychar.py
+charbychar.egg-info/PKG-INFO
+charbychar.egg-info/SOURCES.txt
+charbychar.egg-info/dependency_links.txt
+charbychar.egg-info/top_level.txt
