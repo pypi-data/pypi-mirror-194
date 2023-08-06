@@ -1,0 +1,5 @@
+Py3DNS
+PyNaCl
+authres>=1.1.0
+dkimpy>=1.1.0
+pymilter>=1.0.5
