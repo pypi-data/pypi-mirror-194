@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+matplotlib>=3.0.0
+shapely
+configobj
+netcdf4
+xarray>=0.16
+sentinelsat
+salem
