@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+colortree/f__init__.py
+colortree.egg-info/PKG-INFO
+colortree.egg-info/SOURCES.txt
+colortree.egg-info/dependency_links.txt
+colortree.egg-info/requires.txt
+colortree.egg-info/top_level.txt
