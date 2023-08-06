@@ -1,0 +1,4 @@
+PySide6
+keyring
+psycopg2-binary
+SQLAlchemy

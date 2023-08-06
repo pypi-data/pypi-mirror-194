@@ -1,0 +1,14 @@
+stages:
+  - style
+
+style:
+  stage: style
+  image: python:3.10
+  script:
+    - python -m pip install --upgrade pip
+    - pip install flake8
+    - pip install flake8-class-attributes-order
+    - flake8
+    - pip install black
+    - black iocbio --check
+

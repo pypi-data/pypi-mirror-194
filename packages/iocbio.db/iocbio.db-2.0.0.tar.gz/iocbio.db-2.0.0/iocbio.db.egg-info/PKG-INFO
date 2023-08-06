@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: iocbio.db
+Version: 2.0.0
+Summary: IOCBio Db
+Home-page: https://sysbio.ioc.ee
+Author: IOCBio team
+Author-email: iocbio@sysbio.ioc.ee
+License: GPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Database access API used by IOCBIO projects
+
+This is used internally by IOCBIO Sparks and IOCBIO Kinetics to access
+databases. It is based on SQLAlchemy Python package. In addition,
+`iocbio.db` has some other components making integration into Sparks
+and Kinetics simple to use.
+
