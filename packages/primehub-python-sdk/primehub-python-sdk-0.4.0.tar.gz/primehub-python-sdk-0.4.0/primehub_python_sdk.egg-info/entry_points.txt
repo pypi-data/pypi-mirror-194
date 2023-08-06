@@ -1,0 +1,4 @@
+[console_scripts]
+auto-primehub = primehub.utils.completion:auto_complete
+doc-primehub = primehub.extras.doc_generator:main
+primehub = primehub.cli:main
