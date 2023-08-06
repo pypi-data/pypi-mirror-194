@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fairpy
+Version: 0.1.0
+Summary: FairPy is a comprehensive Python Library for Machine Learning Fairness
+Home-page: https://github.com/brandeis-machine-learning/FairPy
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
