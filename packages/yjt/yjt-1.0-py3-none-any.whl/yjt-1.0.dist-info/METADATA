@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: yjt
+Version: 1.0
+Summary: Yjt internal use package
+Author-email: grj <guanrenjia@yangjuntech.com>
+License-File: LICENSE
+Requires-Python: >=3.6
+Requires-Dist: cx-oracle>=8.3.0
+Requires-Dist: sqlalchemy>=1.4.0
