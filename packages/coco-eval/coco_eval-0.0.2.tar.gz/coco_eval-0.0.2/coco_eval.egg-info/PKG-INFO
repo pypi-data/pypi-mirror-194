@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: coco-eval
+Version: 0.0.2
+Summary: A tiny package containing a COCO evaluator that works in distributed environments.
+Home-page: UNKNOWN
+Author: Niels Rogge
+Author-email: niels.rogge1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
