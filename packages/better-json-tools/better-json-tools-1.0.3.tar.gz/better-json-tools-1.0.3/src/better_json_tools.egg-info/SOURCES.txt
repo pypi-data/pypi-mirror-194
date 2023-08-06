@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/better_json_tools/__init__.py
+src/better_json_tools/compact_encoder.py
+src/better_json_tools/json_walker.py
+src/better_json_tools/jsonc.py
+src/better_json_tools/py.typed
+src/better_json_tools.egg-info/PKG-INFO
+src/better_json_tools.egg-info/SOURCES.txt
+src/better_json_tools.egg-info/dependency_links.txt
+src/better_json_tools.egg-info/top_level.txt
+tests/test_module.py
