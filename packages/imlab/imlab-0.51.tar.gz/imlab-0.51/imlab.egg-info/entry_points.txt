@@ -1,0 +1,2 @@
+[console_scripts]
+imlab = imlab.__main__:script
