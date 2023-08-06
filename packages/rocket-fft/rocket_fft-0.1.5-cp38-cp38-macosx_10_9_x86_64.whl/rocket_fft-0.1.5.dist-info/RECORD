@@ -1,0 +1,15 @@
+rocket_fft-0.1.5.dist-info/RECORD,,
+rocket_fft-0.1.5.dist-info/LICENSE,sha256=y0xVch8i7YtkvxCSbyehEgply0_Oq8Xz9Z75zXZarQg,1521
+rocket_fft-0.1.5.dist-info/WHEEL,sha256=I1bcPHHR6tn3lGqH6h9j_EhkVKjU_znt4i8IyWREJLE,109
+rocket_fft-0.1.5.dist-info/entry_points.txt,sha256=4VmUBxeI0ovNOy7IuTWkvPUeriqD4odx9mvQlWrBCzQ,53
+rocket_fft-0.1.5.dist-info/top_level.txt,sha256=HTfMT4_AOO5M2NDW4k2I5Yiu-Ndq4zk0xkKmzmD1zqc,39
+rocket_fft-0.1.5.dist-info/METADATA,sha256=-l2j530oFvc-WWizSMZV1mz9ke8HDZ5xWAhI2y3H2lk,7263
+rocket_fft/__init__.pyi,sha256=nVjdfQWUeWqepwik9KI6SMCzrNryq6W34YeZmTzpIAU,4016
+rocket_fft/_version.py,sha256=Nmswip0IUvJenHIhdfSyTYurDcwWTvOQ8mPDREtwE1o,21
+rocket_fft/imputils.py,sha256=3q6z77-Is5ljYetgY07F6UHDKBBFRwtzRUhB3BoeBTU,2779
+rocket_fft/_pocketfft_numba.cpython-38-darwin.so,sha256=hGcelyJwaKRPaAeLCeTTNAGIXZT5xng6V-BZEv1dxGY,851648
+rocket_fft/__init__.py,sha256=Z4wZC13HM2ZAiiLoVgUS1uFjMF-6wt4-17KAmeOJ5FA,743
+rocket_fft/typutils.py,sha256=rOUZr5AsRTQ3KoZ2aOKT8goWyImq9KUdUDEXTTinIh8,2629
+rocket_fft/overloads.py,sha256=fwjXZwfKauSol7jwvPh0hzJ_RmvEdOieGjsreyCOoZw,28342
+rocket_fft/_pocketfft_numba.cpp,sha256=N35YnX9YyZFWPgTewdePwKh2KT-rUP0Xl1mkcs-m9uc,10820
+rocket_fft/pocketfft.py,sha256=hnZCQNQmlTHcTHIq7hE9csv5bsLW5G6axS7BFpQEmhU,8054
