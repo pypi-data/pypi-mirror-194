@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+asst.egg-info/PKG-INFO
+asst.egg-info/SOURCES.txt
+asst.egg-info/dependency_links.txt
+asst.egg-info/entry_points.txt
+asst.egg-info/requires.txt
+asst.egg-info/top_level.txt
+chatgpt/__init__.py
+chatgpt/main.py
