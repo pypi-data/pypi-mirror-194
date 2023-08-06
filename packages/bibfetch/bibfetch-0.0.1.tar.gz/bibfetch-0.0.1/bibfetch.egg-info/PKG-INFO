@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bibfetch
+Version: 0.0.1
+Summary: Fetch bibtex information from academic search engines.
+Home-page: https://github.com/yzh119/bibfetch
+Author: Zihao Ye
+Author-email: expye@outlook.com

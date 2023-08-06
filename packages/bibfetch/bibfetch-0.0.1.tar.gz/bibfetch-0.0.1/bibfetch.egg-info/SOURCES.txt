@@ -1,0 +1,13 @@
+setup.py
+bibfetch/__init__.py
+bibfetch/__main__.py
+bibfetch/dblp_fetcher.py
+bibfetch/paper.py
+bibfetch/semanticscholar_fetcher.py
+bibfetch/utils.py
+bibfetch.egg-info/PKG-INFO
+bibfetch.egg-info/SOURCES.txt
+bibfetch.egg-info/dependency_links.txt
+bibfetch.egg-info/entry_points.txt
+bibfetch.egg-info/requires.txt
+bibfetch.egg-info/top_level.txt
