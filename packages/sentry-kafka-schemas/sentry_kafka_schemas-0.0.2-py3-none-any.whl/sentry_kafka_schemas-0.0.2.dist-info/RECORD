@@ -1,0 +1,16 @@
+sentry_kafka_schemas/__init__.py,sha256=C4iFbKDitqoVcDh5HlCo9Pgl_Nmq1xYTkPMyEZfZZZA,125
+sentry_kafka_schemas/sentry_kafka_schemas.py,sha256=sQ9uHe32p6t-HHpd0OzqgtmsDaucT9E2GrRLdZVD8h8,2713
+sentry_kafka_schemas/types.py,sha256=oB02NYTwOQR-9e2jN8nZmDp-GbGwWCBsqmPtdUS4604,601
+sentry_kafka_schemas/schemas/events.v1.schema.json,sha256=cg9vqoL9kol21pHIB0tSm4V1Dow8AiNQpaqSvK9vA4s,97649
+sentry_kafka_schemas/schemas/generic_metrics.v1.schema.json,sha256=VCV0BlVyGqpD24YRf9xFZlOo-5rtT6WAKzVVpaxLG-4,2026
+sentry_kafka_schemas/schemas/metrics.v1.schema.json,sha256=R3I0G9g5Robt6RWhsmgPYyx59Wrw89aaEFaon0WoWDE,1941
+sentry_kafka_schemas/schemas/querylog.v1.schema.json,sha256=GnDBgCIQPycaQMxEQlB-Br-8d16gN-obVYsqSoXMS6E,5080
+sentry_kafka_schemas/topics/events.yaml,sha256=FZPqHhOy_Vwl1Pksr4Wj9G_s3Gdxy1RpvOahH-q9D_g,150
+sentry_kafka_schemas/topics/generic_metrics.yaml,sha256=XYAAYVjqJLTbi15FfCWPVJrUN3oIL5OAAqtBPQrBrFo,177
+sentry_kafka_schemas/topics/metrics.yaml,sha256=26G-zeuRP98i9OHiSb85le1QUdSaaDBgFmTjbAEWCHE,153
+sentry_kafka_schemas/topics/querylog.yaml,sha256=ShJUYuZltNZ0NqtjsDOiDmdZR-PCdWhRJjF4WveFwa4,156
+sentry_kafka_schemas-0.0.2.dist-info/LICENSE,sha256=HGElazOlRIkNMGkV2kFke6m7uGWRh7AcIzfODMiiS1k,4732
+sentry_kafka_schemas-0.0.2.dist-info/METADATA,sha256=eTCXZGvIy3iEJNksvPM8F36-_9uTy3yPkTG-QbLVaFg,329
+sentry_kafka_schemas-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sentry_kafka_schemas-0.0.2.dist-info/top_level.txt,sha256=0K0iYWeaQXsL3PMIhDDNW5Z46uLUr6NeAScbgBDX6X4,21
+sentry_kafka_schemas-0.0.2.dist-info/RECORD,,
