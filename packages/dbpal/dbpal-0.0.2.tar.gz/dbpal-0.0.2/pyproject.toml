@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["dbpal"]
+namespaces = true
+
+[project]
+name = "dbpal"
+authors = [
+  {name = "Michael Chow", email = "mc_al_github@fastmail.com"}
+]
+description = "A utility package for pushing around data"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+keywords = ["data"]
+dependencies = [
+  "plum-dispatch",
+  "fsspec",
+  "gcsfs",
+  "importlib_resources",
+  "pandas",
+  "sqlalchemy",
+  "sqlalchemy-bigquery",
+  "siuba",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-dotenv",
+  "duckdb_engine",
+  "pandas-gbq"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["dbpal"]
+
+[tool.setuptools_scm]
