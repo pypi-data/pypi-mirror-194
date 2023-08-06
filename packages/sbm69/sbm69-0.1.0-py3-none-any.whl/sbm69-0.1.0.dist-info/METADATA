@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sbm69
+Version: 0.1.0
+Summary: A library to retrieve blood pressure measurements from the Hans Dinslage GmbH/Silvercrest SBM69 Bluetooth Blood Pressure Monitor
+Author-email: Petko Bordjukov <bordjukov+p@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bleak >=0.19.5
+Requires-Dist: bleak-retry-connector >=3.0.0
+Requires-Dist: construct >=2.10.68
+Requires-Dist: inflection >=0.5.1
+Requires-Dist: bandit[toml]>=1.7.4 ; extra == "test"
+Requires-Dist: black>=22.1.0 ; extra == "test"
+Requires-Dist: check-manifest>=0.48 ; extra == "test"
+Requires-Dist: flake8-bugbear>=22.1.11 ; extra == "test"
+Requires-Dist: flake8-docstrings ; extra == "test"
+Requires-Dist: flake8-formatter_junit_xml ; extra == "test"
+Requires-Dist: flake8>=4.0.1 ; extra == "test"
+Requires-Dist: pre-commit>=2.17.0 ; extra == "test"
+Requires-Dist: pylint>=2.16.2 ; extra == "test"
+Requires-Dist: pylint_junit ; extra == "test"
+Requires-Dist: shellcheck-py>=0.8.0.4 ; extra == "test"
+Project-URL: Documentation, https://github.com/ignisf/sbm69/tree/main#readme
+Project-URL: Source, https://github.com/ignisf/sbm69
+Project-URL: Tracker, https://github.com/ignisf/sbm69/issues
+Provides-Extra: test
+
+

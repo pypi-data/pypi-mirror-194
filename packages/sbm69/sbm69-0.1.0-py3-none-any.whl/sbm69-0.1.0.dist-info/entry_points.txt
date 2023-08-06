@@ -1,0 +1,3 @@
+[console_scripts]
+sbm69=sbm69.cli:main
+
