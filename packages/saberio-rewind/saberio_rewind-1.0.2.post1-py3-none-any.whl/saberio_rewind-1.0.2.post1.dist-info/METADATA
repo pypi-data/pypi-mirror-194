@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: saberio-rewind
+Version: 1.0.2.post1
+Summary: Python script to download custom song from BSaber and add bookmark to it. 
+Author-email: Moris Doratiotto <moris.doratiotto@gmail.com>, Felicia Wen <i@feli.cf>
+Project-URL: Homepage, https://github.com/wmyfelix/PySaber
+Project-URL: Bug Tracker, https://github.com/wmyfelix/PySaber/issues
+Keywords: beat saber,bsaber,beat saver,spotify
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.11.1)
+Requires-Dist: colorifix (==2.0.4)
+Requires-Dist: pymortafix (==0.2.2)
+Requires-Dist: halo (==0.0.31)
+Requires-Dist: tabulate (==0.8.10)
+Requires-Dist: wcwidth (==0.2.6)
+Requires-Dist: spotipy (==2.22.1)
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=8130F7&width=435&lines=Replay+your+favorites+on+BeatSaber!)](https://git.io/typing-svg)
+![CLI](./misc/cli.png)
+![Spotify](./misc/spotify.png)
+
+
+```
+pip3 install saberio-rewind
+```
+
+Using the interactive prompt is suggested for this fork, especially for syncing the playlist from Spotify.
+
+Your cookie and token will be stored locally once the program is initiated.
