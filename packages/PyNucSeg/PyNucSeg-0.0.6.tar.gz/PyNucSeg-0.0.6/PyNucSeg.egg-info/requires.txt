@@ -1,0 +1,9 @@
+numpy
+stardist
+napari
+scikit-image
+tensorflow
+
+[dev]
+pytest>=3.7
+twine
