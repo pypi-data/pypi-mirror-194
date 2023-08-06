@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cognite-logger
+Version: 0.6.0
+Summary: Library for configuring logger
+Author: Erlend Vollset
+Author-email: erlend.vollset@cognite.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-json-logger (>=2.0.7,<3.0.0)
