@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nucliadb-models
+Version: 0.0.0.post2
+Summary: UNKNOWN
+Home-page: https://nuclia.com
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: nucliadb-protos (==0.0.0-post2)
+
+# NucliaDB models
+
+
