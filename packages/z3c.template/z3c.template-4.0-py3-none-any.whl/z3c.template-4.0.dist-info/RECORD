@@ -1,0 +1,15 @@
+z3c.template-4.0-py3.9-nspkg.pth,sha256=Ou9y0X2aSJC-56yWL7VjITZxnfX6slYJCSxhMSKad6I,524
+z3c/template/README.rst,sha256=3k_cHtY1TpzZ2MryHnHmL-14xxgxVfZg4aPMRGaOySA,19362
+z3c/template/__init__.py,sha256=2VMPieMXJl7MyyxCu7TQNo4RbMHTwCB4jR3i9tEkZaE,720
+z3c/template/interfaces.py,sha256=-kAI8zHGdsrxTvEPc68_0xbUF3VI-FnG_UQvML400ak,885
+z3c/template/meta.zcml,sha256=iZqc59EqcplAubMBlQPpnUcfRBeSOdOj-BWLDLDSXQ0,496
+z3c/template/template.py,sha256=2uZSCpz1yGq0p2R9bX40ujSmlH9gW-mcrN5N51hXE9c,4132
+z3c/template/tests.py,sha256=_u1fRFH-Oak0MDdRXITnKbngl4GVD7PxNJp7Ll_7u7s,4258
+z3c/template/zcml.py,sha256=otG8YzhFEXkRr55VNTc0p8C1hkdfMVX78vTmGkAh7gs,4874
+z3c/template/zcml.rst,sha256=yDI1va_gsUKXrETbp5_yMLSULCpwKZ9M0HmK2UheXWU,7496
+z3c.template-4.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+z3c.template-4.0.dist-info/METADATA,sha256=Hk-j3gtuI3a8aGDMA6rKfVRWi1GhF16ROOFy2Rw0EM8,34506
+z3c.template-4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+z3c.template-4.0.dist-info/namespace_packages.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.template-4.0.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.template-4.0.dist-info/RECORD,,
