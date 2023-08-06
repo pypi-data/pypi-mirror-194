@@ -1,0 +1,8 @@
+TypeEnforcement/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TypeEnforcement/exceptions.py,sha256=kjsUcsdDB9cV6FwbDP1PhJ1Ti9gu2Vxnfk6Z8CW1aa8,779
+TypeEnforcement/type_enforcer.py,sha256=aykcRMpvEuFiJXVPXxo9XAVIRC64xl8tA-oE7jxGClw,3143
+TypeEnforcer-1.0.0.dist-info/LICENSE,sha256=YwxAWTdkSyhi0MHINMNIQ2InPg2iw55zwzscqd286e4,1064
+TypeEnforcer-1.0.0.dist-info/METADATA,sha256=6glb55Al9Tou1_2DZAWlljPgKxcdQ29A7EMn_gRWLA8,1916
+TypeEnforcer-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+TypeEnforcer-1.0.0.dist-info/top_level.txt,sha256=OZTMPE1Q276C9M71nIDR-6hkDD85aGaF9FaBKXInfcA,16
+TypeEnforcer-1.0.0.dist-info/RECORD,,
