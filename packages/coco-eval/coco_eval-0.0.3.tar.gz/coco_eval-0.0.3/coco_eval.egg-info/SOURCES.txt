@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+coco_eval/__init__.py
+coco_eval/coco_eval.py
+coco_eval/utils.py
+coco_eval.egg-info/PKG-INFO
+coco_eval.egg-info/SOURCES.txt
+coco_eval.egg-info/dependency_links.txt
+coco_eval.egg-info/requires.txt
+coco_eval.egg-info/top_level.txt
