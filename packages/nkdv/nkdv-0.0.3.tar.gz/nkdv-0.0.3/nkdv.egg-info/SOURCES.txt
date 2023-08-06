@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+nkdv/__init__.py
+nkdv/compute_nkdv.py
+nkdv/nkdv.dll
+nkdv/nkdv.py
+nkdv.egg-info/PKG-INFO
+nkdv.egg-info/SOURCES.txt
+nkdv.egg-info/dependency_links.txt
+nkdv.egg-info/top_level.txt

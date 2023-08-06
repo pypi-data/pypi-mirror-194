@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nkdv
+Version: 0.0.3
+Summary: A library of feature heatmap algorithm
+Home-page: https://github.com/edisonchan2013928/Network-K-function
+Author: Tsz Nam Chan,PakLon Ip, Ryan Leong Hou U
+Author-email: paklonip@um.edu.mo
+License: MIT Licence
+Keywords: pip,KDE,heatmap,KDV,KeplerGL
+Platform: any
+License-File: LICENSE.txt
