@@ -1,0 +1,17 @@
+quickstatements_client/__init__.py,sha256=c6kMOmKdA0ttKbTd_CdVogTauJaMU8iA1PhZqCkwvt0,644
+quickstatements_client/__main__.py,sha256=SgEEmO6dxvSkEwPDElAtBnfUGss8xvcHDV3v8-LlCgU,339
+quickstatements_client/cli.py,sha256=RsWzgVkUIUtnrQ3YwnOvRXvNBfxBAn5j5LexowRtcSA,939
+quickstatements_client/client.py,sha256=LgFxPm_SDe4BI7MREk2yZ5GaUtFxhr84qA_6YUEX1e0,2871
+quickstatements_client/model.py,sha256=d3DA7JFsVZjbM9596B40Z4e70D_q6tby8XYI6yOVoOs,6985
+quickstatements_client/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+quickstatements_client/version.py,sha256=r_lzbsBKvry7MQGoo67wvHJYW5C4a7Xh7TelGMDZn58,1064
+quickstatements_client/sources/__init__.py,sha256=JRFugeovmVoru53V4YtYP1k-A8Qu7zxU_3OA_Rq3qTQ,77
+quickstatements_client/sources/licenses.json,sha256=Iw7ZqnT57JjrSIq3e3aB9kKXtrPloho4KjZUppe-ns8,9870
+quickstatements_client/sources/pypi.py,sha256=Z1bUJAmfpY0ChZ5uPxN9Aqakckk7nhpWAuZHsC2himg,7518
+quickstatements_client/sources/utils.py,sha256=i5kRuLFZt2bOD9pRxSNadb5T99pff1VGODoVouv9iRc,1122
+quickstatements_client-0.0.2.dist-info/LICENSE,sha256=V2QvCSXVRoRifz9OL3vFmQVAgqxsi69rFIbEDBp73Do,1076
+quickstatements_client-0.0.2.dist-info/METADATA,sha256=xb_Kib530hA4SAZd56VzUlDHO5lKkJ3VIJH6ngSYWKE,10224
+quickstatements_client-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+quickstatements_client-0.0.2.dist-info/entry_points.txt,sha256=9XANBSnEw7LfiyiU_hhr3L6vdcMkt_F-tiaCu67UMNw,75
+quickstatements_client-0.0.2.dist-info/top_level.txt,sha256=MWbtWzGz0qyNsogWX5ztqdtb6mVKiDrvKxEMNhXRVrU,23
+quickstatements_client-0.0.2.dist-info/RECORD,,
