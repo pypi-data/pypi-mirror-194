@@ -1,0 +1,11 @@
+requests
+fake_useragent
+xmltodict
+bs4
+pandas
+arelle
+lxml
+isodate
+openpyxl
+
+[unicode_backport]
