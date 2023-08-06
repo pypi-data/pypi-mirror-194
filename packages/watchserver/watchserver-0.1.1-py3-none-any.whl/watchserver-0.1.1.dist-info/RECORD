@@ -1,0 +1,10 @@
+watchserver/__init__.py,sha256=jAvJf_jHl-KURk-r_4sulormRh55_5MZ05OiIyzk5h8,78
+watchserver/__main__.py,sha256=LW7CQdhrbaUHCKBzwd2eeJMJWdEBMpSmbJjnCzReVU8,2400
+watchserver/live.py,sha256=SvDPTixkFxo8LBZ6PSmr62Z0p2wO93gVInF32jr28vw,8367
+watchserver/server.py,sha256=X_PtA7fo0PdUbu-w5t3toLwwrohHxxwft5pCPkEVDHk,8392
+watchserver/util.py,sha256=-c0HsX8yjogv9CsGh7rqqwn0NVGydJDdSvFgLgh7NlU,8729
+watchserver/watch.py,sha256=-ITkg9ER9PJPv7AO3TzuswV1ThPUOfCVVEZeUpjGN3k,2913
+watchserver-0.1.1.dist-info/METADATA,sha256=Qg8B7B9KLqG-tct7-30vJv3P135s-r2_3TKpdqDAdLQ,1624
+watchserver-0.1.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+watchserver-0.1.1.dist-info/entry_points.txt,sha256=NGCs8GwHFQK2zoXbjk2wEJToDHgw6nGm1M9SjUov6r4,59
+watchserver-0.1.1.dist-info/RECORD,,
