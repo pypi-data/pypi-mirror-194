@@ -1,0 +1,25 @@
+{
+    "created": 1677693132.083531,
+    "duration": 0.6537597179412842,
+    "exitcode": 0,
+    "root": "C:\\Users\\HectorLopez\\Documents\\GitHub\\dbcontroller",
+    "environment": {
+        "Python": "3.11.0",
+        "Platform": "Windows-10-10.0.22621-SP0",
+        "Packages": {
+            "pytest": "7.2.1",
+            "pluggy": "1.0.0"
+        },
+        "Plugins": {
+            "anyio": "3.6.2",
+            "asyncio": "0.20.3",
+            "json-report": "1.5.0",
+            "metadata": "2.0.4"
+        }
+    },
+    "summary": {
+        "passed": 23,
+        "total": 23,
+        "collected": 23
+    }
+}
