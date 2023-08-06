@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: Copyright © 2022 Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+recursive-include src/auto_intersphinx *.json
+recursive-include doc *.rst
+recursive-include tests *.py *.json *.txt
+
+include LICENSES/*.txt
