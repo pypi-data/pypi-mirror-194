@@ -1,0 +1,11 @@
+setup.py
+hackprank/PyHack.py
+hackprank/TerminalHack.py
+hackprank/__init__.py
+hackprank/hackWeb.py
+hackprank/matrix.py
+hackprank.egg-info/PKG-INFO
+hackprank.egg-info/SOURCES.txt
+hackprank.egg-info/dependency_links.txt
+hackprank.egg-info/requires.txt
+hackprank.egg-info/top_level.txt
