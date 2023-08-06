@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a98da183-21bc-4380-a0c7-34dcf9042225" name="Changes" comment="Rsync now copy folder content&#10;&#10;&#10;- Fix password file rights detection (test group permissions)&#10;- Add '/' at the end of source folder for rsync command&#10;TODO add a test for owner of password files">
+      <change beforePath="$PROJECT_DIR$/bashckup/actuators/post_backup.py" beforeDir="false" afterPath="$PROJECT_DIR$/bashckup/actuators/post_backup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bashckup/actuators/transformers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bashckup/actuators/transformers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/scenarios/backup/test_rsync.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/scenarios/backup/test_rsync.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/main" />
+    <option name="OPTIONS">
+      <set>
+        <option value="INTERACTIVE" />
+      </set>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="features/multi-distrib" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Improve tests&#10;&#10;- Add crypt in tests&#10;- Fix bug with act&#10;- Improve rsync error message when password file is public&#10;- Share test mixture" />
+        <option name="rewordedMessage" value="Improve tests&#10;&#10;- Add crypt in tests&#10;- Fix bug with act&#10;- Improve rsync error message when password file is public&#10;- Share test mixture&#10;- Test cleanFolder module&#10;- Improve Rsync documentation (add warning)" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="7206cea0ffe23e9eb078eb423bf0feb79b5066d1" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Jwl0lJUrdzI6vqqKB4Px3PyOQf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/remi/PycharmProjects/bashckup/tests/scenarios/backup&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  }
+}</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="bashckup" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="bashckup" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/scenarios/backup" />
+      <recent name="$PROJECT_DIR$/tests/scenarios/restore" />
+      <recent name="$PROJECT_DIR$/tests/resources/tar" />
+      <recent name="$PROJECT_DIR$/tests/confs" />
+      <recent name="$PROJECT_DIR$/tests/scenarios" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/resources/mariadb" />
+      <recent name="$PROJECT_DIR$/tests/resources/tar" />
+      <recent name="$PROJECT_DIR$/tests/resources" />
+      <recent name="$PROJECT_DIR$/tests/testFolder" />
+      <recent name="$PROJECT_DIR$/tests/files" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for test_rsync.test_tar_rsync">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="bashckup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for scenarios.backup.test_output_file.test_output_file_file_already_exists" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="bashckup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/scenarios/backup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;scenarios.backup.test_output_file.test_output_file_file_already_exists&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for scenarios.backup.test_output_file.test_output_file_permission" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="bashckup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/scenarios/backup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;scenarios.backup.test_output_file.test_output_file_permission&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_output_file.test_incremental_tar" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="bashckup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/scenarios/backup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_output_file.test_incremental_tar&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_output_file.test_output_file_file_already_exists" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="bashckup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/scenarios/backup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_output_file.test_output_file_file_already_exists&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_rsync.test_tar_rsync" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="bashckup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/scenarios/backup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_rsync.test_tar_rsync&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.pytest for test_rsync.test_tar_rsync" />
+      <item itemvalue="Python tests.pytest for scenarios.backup.test_output_file.test_output_file_file_already_exists" />
+      <item itemvalue="Python tests.pytest for scenarios.backup.test_output_file.test_output_file_permission" />
+      <item itemvalue="Python tests.pytest for test_output_file.test_incremental_tar" />
+      <item itemvalue="Python tests.pytest for test_output_file.test_output_file_file_already_exists" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_rsync.test_tar_rsync" />
+        <item itemvalue="Python tests.pytest for test_output_file.test_incremental_tar" />
+        <item itemvalue="Python tests.pytest for scenarios.backup.test_output_file.test_output_file_file_already_exists" />
+        <item itemvalue="Python tests.pytest for test_output_file.test_output_file_file_already_exists" />
+        <item itemvalue="Python tests.pytest for scenarios.backup.test_output_file.test_output_file_permission" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a98da183-21bc-4380-a0c7-34dcf9042225" name="Changes" comment="" />
+      <created>1672996805519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672996805519</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1673012672204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673012672204</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Some fixes and&#10;&#10;&#10;- Tar : Fix incremental file name generation&#10;- Remove useless files&#10;- Add bash scripts for pypi&#10;- Add tests scenario&#10;- Close all fd">
+      <created>1673170429381</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673170429381</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Some fixes and&#10;&#10;&#10;- Add verbose mode (only for readers and post-backup)&#10;- Add quiet mode&#10;- If a backups fails, the other backups will be executed&#10;- Displays the time it took to run all backups&#10;- Now FileWriter.path is directly use, no sub folder are now created&#10;- Add module's parameters in README">
+      <created>1673385013341</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673385013341</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test github Actions&#10;&#10;&#10;- Switch from unittest to pytest&#10;- Switch from setuptools (not compatible with pytest) to hatchling">
+      <created>1673600596943</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673600596943</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test github Actions&#10;&#10;&#10;- Switch from unittest to pytest&#10;- Switch from setuptools (not compatible with pytest) to hatchling">
+      <created>1673614362117</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673614362117</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add working tests&#10;&#10;&#10;- Switch from unittest to pytest&#10;- Switch from setuptools (not compatible with pytest) to hatchling&#10;- Change project structure (remove src folder)&#10;- Fix docstring">
+      <created>1673889897621</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673889897621</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix github action">
+      <created>1673892095587</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673892095587</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fix github action">
+      <created>1673892295883</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673892295883</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fix github action">
+      <created>1673892307250</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673892307250</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix github action">
+      <created>1673892697424</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673892697424</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Split github action into 2 workflows">
+      <created>1673893643426</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673893643426</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Create v0.0.2">
+      <created>1673896001983</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673896001983</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Manage Debian 10 and Debian 11&#10;&#10;&#10;- Add code coverage&#10;- Change typing 'dict' to 'Dict' and 'list' to 'List' to be python &lt;3.9 compatible&#10;- Test based on multiple distributions">
+      <created>1673974559334</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673974559334</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Manage Debian 10 and Debian 11&#10;&#10;&#10;- Add code coverage&#10;- Change typing 'dict' to 'Dict' and 'list' to 'List' to be python &lt;3.9 compatible&#10;- Test based on multiple distributions">
+      <created>1673974636105</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673974636105</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Manage Debian 10 and Debian 11&#10;&#10;&#10;- Add code coverage&#10;- Change typing 'dict' to 'Dict' and 'list' to 'List' to be python &lt;3.9 compatible&#10;- Test based on multiple distributions">
+      <created>1673974654806</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673974654806</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Manage Debian 10 and Debian 11&#10;&#10;&#10;- Add code coverage&#10;- Change typing 'dict' to 'Dict' and 'list' to 'List' to be python &lt;3.9 compatible&#10;- Test based on multiple distributions">
+      <created>1673975427546</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673975427546</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Manage Debian 10 and Debian 11&#10;&#10;&#10;- Add code coverage&#10;- Change typing 'dict' to 'Dict' and 'list' to 'List' to be python &lt;3.9 compatible&#10;- Test based on multiple distributions">
+      <created>1673978965652</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673978965652</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Manage Debian 10 and Debian 11&#10;&#10;&#10;- Add code coverage&#10;- Change typing 'dict' to 'Dict' and 'list' to 'List' to be python &lt;3.9 compatible&#10;- Test based on multiple distributions">
+      <created>1675954487087</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675954487087</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Improve tests&#10;&#10;&#10;- Add crypt in tests&#10;- Fix bug with act&#10;- Improve rsync error message when password file is public&#10;- Share test mixture">
+      <created>1675958317390</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675958317390</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Improve tests&#10;&#10;&#10;- Add crypt in tests&#10;- Fix bug with act&#10;- Improve rsync error message when password file is public&#10;- Share test mixture&#10;- Test cleanFolder module">
+      <created>1675961311776</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675961311776</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Improve tests&#10;&#10;&#10;- Add crypt in tests&#10;- Fix bug with act&#10;- Improve rsync error message when password file is public&#10;- Share test mixture&#10;- Test cleanFolder module&#10;- Improve Rsync documentation (add warning)">
+      <created>1676021228991</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1676021228991</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add restore actions to every actuator&#10;&#10;&#10;- Fix previous bugs (I didn't run the tests, shame on me)&#10;- Add global documentation">
+      <created>1676046236145</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676046236145</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Improve tar tests&#10;&#10;&#10;- Add a test for incremental backups&#10;- Fix dry run bug with incremental backups">
+      <created>1676048672030</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1676048672030</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Move tests files">
+      <created>1676049413998</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1676049413998</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fix restoration, restoration of differential backup is broken&#10;&#10;- In tests rename 'output' folder to 'backup'&#10;- Now tests back up a new folder 'dataServer', filled with resources before each test&#10;- Fix typo in reader (restoration called backup function)&#10;- Improve back up when restoring (fileReader actuator)">
+      <created>1676486166311</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676486166311</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Rename differential to incremental&#10;&#10;&#10;Because only incremental backup is configured with tar">
+      <created>1676486350150</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1676486350150</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Fix MariaDB restoration&#10;&#10;&#10;- Add maria db restoration tests&#10;- Fix unit test">
+      <created>1676974549083</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676974549083</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Change config file structure&#10;&#10;&#10;- Skip 'test_restore_incremental_tar_incremental_backup' test&#10;- Now Readers and Writers have the same structure as Transformers and Post backups">
+      <created>1676975954359</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676975954359</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Release 0.1.0 version">
+      <created>1676976878270</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676976878270</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Change permission of backup&#10;&#10;&#10;- Now backups are not readable from group and other&#10;- Add backup-id to ParameterException's error message">
+      <created>1677060588635</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1677060588635</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <MESSAGE value="Some fixes and&#10;&#10;&#10;- Tar : Fix incremental file name generation&#10;- Remove useless files&#10;- Add bash scripts for pypi&#10;- Add tests scenario&#10;- Close all fd" />
+    <MESSAGE value="Some fixes and&#10;&#10;&#10;- Add verbose mode (only for readers and post-backup)&#10;- Add quiet mode&#10;- If a backups fails, the other backups will be executed&#10;- Displays the time it took to run all backups&#10;- Now FileWriter.path is directly use, no sub folder are now created&#10;- Add module's parameters in README" />
+    <MESSAGE value="Test github Actions&#10;&#10;&#10;- Switch from unittest to pytest&#10;- Switch from setuptools (not compatible with pytest) to hatchling" />
+    <MESSAGE value="Add working tests&#10;&#10;&#10;- Switch from unittest to pytest&#10;- Switch from setuptools (not compatible with pytest) to hatchling&#10;- Change project structure (remove src folder)&#10;- Fix docstring" />
+    <MESSAGE value="Fix github action" />
+    <MESSAGE value="Split github action into 2 workflows" />
+    <MESSAGE value="Create v0.0.2" />
+    <MESSAGE value="Manage Debian 10 and Debian 11&#10;&#10;&#10;- Add code coverage&#10;- Change typing 'dict' to 'Dict' and 'list' to 'List' to be python &lt;3.9 compatible&#10;- Test based on multiple distributions" />
+    <MESSAGE value="Improve tests&#10;&#10;&#10;- Add crypt in tests&#10;- Fix bug with act&#10;- Improve rsync error message when password file is public&#10;- Share test mixture" />
+    <MESSAGE value="Improve tests&#10;&#10;&#10;- Add crypt in tests&#10;- Fix bug with act&#10;- Improve rsync error message when password file is public&#10;- Share test mixture&#10;- Test cleanFolder module" />
+    <MESSAGE value="Improve tests&#10;&#10;&#10;- Add crypt in tests&#10;- Fix bug with act&#10;- Improve rsync error message when password file is public&#10;- Share test mixture&#10;- Test cleanFolder module&#10;- Improve Rsync documentation (add warning)" />
+    <MESSAGE value="Add restore actions to every actuator&#10;&#10;&#10;- Fix previous bugs (I didn't run the tests, shame on me)&#10;- Add global documentation" />
+    <MESSAGE value="Improve tar tests&#10;&#10;&#10;- Add a test for incremental backups&#10;- Fix dry run bug with incremental backups" />
+    <MESSAGE value="Move tests files" />
+    <MESSAGE value="Fix restoration, restoration of differential backup is broken&#10;&#10;- In tests rename 'output' folder to 'backup'&#10;- Now tests back up a new folder 'dataServer', filled with resources before each test&#10;- Fix typo in reader (restoration called backup function)&#10;- Improve back up when restoring (fileReader actuator)" />
+    <MESSAGE value="Rename differential to incremental&#10;&#10;&#10;Because only incremental backup is configured with tar" />
+    <MESSAGE value="Fix MariaDB restoration&#10;&#10;&#10;- Add maria db restoration tests&#10;- Fix unit test" />
+    <MESSAGE value="Change config file structure&#10;&#10;&#10;- Skip 'test_restore_incremental_tar_incremental_backup' test&#10;- Now Readers and Writers have the same structure as Transformers and Post backups" />
+    <MESSAGE value="Release 0.1.0 version" />
+    <MESSAGE value="Change permission of backup&#10;&#10;&#10;- Now backups are not readable from group and other&#10;- Add backup-id to ParameterException's error message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change permission of backup&#10;&#10;&#10;- Now backups are not readable from group and other&#10;- Add backup-id to ParameterException's error message" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/scenarios/backup/test_output_file.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bashckup/actuators/writers.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bashckup/actuators/post_backup.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="python-exception">
+          <properties notifyOnlyOnFirst="true" notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+            <option name="notifyOnlyOnFirst" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

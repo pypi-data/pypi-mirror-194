@@ -1,0 +1,16 @@
+---
+- name: Tar gzip
+  id: tar-gz
+  reader:
+    files:
+      args:
+        path: serverData/
+  transformers:
+    - gzip:
+        args:
+          level: 9
+  writer:
+    outputFile:
+      args:
+        path: backup/tar-gz/
+        file-name: tar-gz.tar.gz

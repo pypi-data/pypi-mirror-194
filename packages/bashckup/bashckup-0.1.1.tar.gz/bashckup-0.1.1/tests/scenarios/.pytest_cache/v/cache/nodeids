@@ -1,0 +1,5 @@
+[
+  "test_clean.py::test_tar_clean",
+  "test_clean.py::test_tar_diff_clean_retention_less_than_level0_frequency",
+  "test_tar.py::test_tar"
+]

@@ -1,0 +1,14 @@
+---
+- name: Tar diff
+  id: tar-diff
+  reader:
+    files:
+      args:
+        path: serverData/
+        incremental-metadata-file-prefix: tar-snap
+        level-0-frequency: 'weekly'
+  writer:
+    outputFile:
+      args:
+        path: backup/tar-diff/
+        file-name: tar-diff.tar

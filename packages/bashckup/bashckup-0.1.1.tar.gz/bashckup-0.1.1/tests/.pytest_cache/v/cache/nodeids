@@ -1,0 +1,15 @@
+[
+  "scenarios/backup/test_clean.py::test_tar_clean",
+  "scenarios/backup/test_mariadb.py::test_mariadb",
+  "scenarios/backup/test_output_file.py::test_incremental_tar",
+  "scenarios/backup/test_output_file.py::test_output_file_file_already_exists",
+  "scenarios/backup/test_output_file.py::test_output_file_permission",
+  "scenarios/backup/test_rsync.py::test_tar_rsync",
+  "scenarios/backup/test_tar.py::test_differential_tar",
+  "scenarios/backup/test_tar.py::test_differential_tar_incremental_backup",
+  "scenarios/backup/test_tar.py::test_tar",
+  "scenarios/restore/test_tar.py::test_restore_tar",
+  "scenarios/restore/test_tar.py::test_restore_tar_backup_folder_not_empty",
+  "test_scenarios.py::test_cli_process",
+  "test_scenarios.py::test_tar"
+]

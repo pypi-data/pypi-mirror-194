@@ -1,0 +1,12 @@
+---
+- name: Tar
+  id: tar
+  reader:
+    files:
+      args:
+        path: serverData/
+  writer:
+    outputFile:
+      args:
+        path: backup/tar/
+        file-name: tar.tar

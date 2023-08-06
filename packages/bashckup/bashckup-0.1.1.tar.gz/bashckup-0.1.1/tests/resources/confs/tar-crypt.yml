@@ -1,0 +1,16 @@
+---
+- name: Tar crypt
+  id: tar-crypt
+  reader:
+    files:
+      args:
+        path: serverData/
+  transformers:
+    - crypt:
+        args:
+          password-file: resources/confs/crypt-password.pwd
+  writer:
+    outputFile:
+      args:
+        path: backup/tar-crypt/
+        file-name: tar-crypt.tar.crypt
