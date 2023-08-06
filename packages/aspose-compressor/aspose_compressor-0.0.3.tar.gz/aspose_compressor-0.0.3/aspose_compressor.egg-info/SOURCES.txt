@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aspose_compressor/__init__.py
+aspose_compressor/aspose_compressor.py
+aspose_compressor.egg-info/PKG-INFO
+aspose_compressor.egg-info/SOURCES.txt
+aspose_compressor.egg-info/dependency_links.txt
+aspose_compressor.egg-info/requires.txt
+aspose_compressor.egg-info/top_level.txt
