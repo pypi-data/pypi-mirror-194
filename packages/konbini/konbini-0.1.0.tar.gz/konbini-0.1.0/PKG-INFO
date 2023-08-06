@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: konbini
+Version: 0.1.0
+Summary: Analytics one-stop shop, open 24/7
+Home-page: https://github.com/hyperplane-data
+License: Apache-2.0
+Author: Hyperplane
+Author-email: hyperplane.dev@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: SQL
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: duckdb (>=0.7.0,<0.8.0)
+Requires-Dist: ibis (>=3.2.0,<4.0.0)
+Requires-Dist: pyarrow (>=11.0.0,<12.0.0)
+Requires-Dist: sqlglot (>=11.2.3,<12.0.0)
+Project-URL: Repository, https://github.com/hyperplane-data/konbini
+Description-Content-Type: text/markdown
+
+<br/>
+<div align="center">
+    <img src="assets/logo.svg" height="150px" />
+</div>
+
+# Konbini
+An intelligent analytics store, open 24/7. Konbini unifies different data management frameworks to power fast and accurate analytic workloads at any scale.
+
+# Documentation
+Awaiting soft opening.
+
+# Installation
+The package can be installed from PyPi with the following command:
+```
+pip install konbini
+```
+
+# Contributions
+We always welcome contributions! Please read our [guide](https://github.com/hyperplane-data/konbini/CONTRIBUTING.md) to get started.
+
