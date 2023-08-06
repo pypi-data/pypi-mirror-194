@@ -1,0 +1,3 @@
+[console_scripts]
+dogpt = dogpt:command
+

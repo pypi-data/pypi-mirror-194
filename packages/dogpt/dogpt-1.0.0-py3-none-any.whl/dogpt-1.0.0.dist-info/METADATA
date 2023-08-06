@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: dogpt
+Version: 1.0.0
+Summary: Advanced AI, but for dogs. 🐶
+Home-page: https://github.com/ntoll/dogpt
+Author: Nicholas H.Tollervey
+Author-email: ntoll@ntoll.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Internationalization
+Description-Content-Type: text/markdown
+
+# doGPT 🐶
+
+Advanced AI, but for dogs. 
+
+## Animal welfare statement
+
+No animals were harmed during the development of this advanced AI.
+
+## Installation
+
+Ensure you have Python installed, then:
+
+```
+$ pip install dogpt
+```
+
+## Usage
+
+Simply call the `dogpt` command from the terminal with some prompt text:
+
+```
+$ dogpt in your considered opinion, what is the meaning of life?
+```
+
+The output will display, with pauses (this is advanced AI that requires
+significant computational resources), to the terminal:
+
+```
+woof play woof arf woof tummy rub sniff grrr
+```
+
+## API usage
+
+From within your code:
+
+```python
+from dogpt import text
+
+prompt = input("What do you want to say to the dog? ")
+text(prompt)
+```
+
+This fragment will pipe out the response to `STDOUT`.
+
+## Contributing
+
+We welcome contributions from advanced AI researchers, funding in the order of
+millions of dollars from billionaires, and canine related training skills via
+our [GitHub page](https://github.com/ntoll/doGPT).
+
+
+# Change log
+
+## 1.0.0
+
+* Initial release.
+
+
