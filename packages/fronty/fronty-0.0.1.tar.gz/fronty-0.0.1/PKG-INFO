@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fronty
+Version: 0.0.1
+Summary: A frontend web framework
+Home-page: https://github.com/Almas-Ali/fronty
+Author: Almas Ali
+Author-email: almaspr3@gmail.com
+Keywords: web framework
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Fronty - A frontend web framework
+
+Created by [**@Almas-Ali**](https://github.com/Almas-Ali)
+
+Documentation [Website](https://almas-ali.github.io/fronty/)
+
+## Installation
+
+```bash
+pip install fronty
+```
+
+## Example
+
+[**`Bootstrap Integration`**](https://github.com/Almas-Ali/fronty/tree/master/examples/Bootstrap%20integration)
