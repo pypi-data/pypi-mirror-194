@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cq_vscode/__init__.py
+cq_vscode/animation.py
+cq_vscode/show.py
+cq_vscode.egg-info/PKG-INFO
+cq_vscode.egg-info/SOURCES.txt
+cq_vscode.egg-info/dependency_links.txt
+cq_vscode.egg-info/not-zip-safe
+cq_vscode.egg-info/requires.txt
+cq_vscode.egg-info/top_level.txt
