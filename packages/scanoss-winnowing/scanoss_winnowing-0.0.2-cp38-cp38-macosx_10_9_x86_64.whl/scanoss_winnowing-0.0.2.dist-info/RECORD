@@ -1,0 +1,9 @@
+_winnowing.cpython-38-darwin.so,sha256=bu1UvwYQ34NKUZMFuzIPf2S-tj1uP0x1-2t6AAcJCto,35464
+scanoss_winnowing-0.0.2.dist-info/RECORD,,
+scanoss_winnowing-0.0.2.dist-info/LICENSE,sha256=miMP9C7FhrGy19ClXgShigqjk2nUOQLNgr8bc_itAB4,1074
+scanoss_winnowing-0.0.2.dist-info/WHEEL,sha256=I1bcPHHR6tn3lGqH6h9j_EhkVKjU_znt4i8IyWREJLE,109
+scanoss_winnowing-0.0.2.dist-info/top_level.txt,sha256=TsHmUGoRd0ByvugCUJg0vbA8UsbY2btjvaFHAtHBxHQ,29
+scanoss_winnowing-0.0.2.dist-info/METADATA,sha256=SPuUsDGiDX8XGizyRYcux5N6tGoSAHmCPOBvpbXvEWs,2056
+scanoss_winnowing/winnowing.py,sha256=oR399As5ssQKz0t8Ej2ZXmRQuFcJFejWEQJEjH3u5LA,13660
+scanoss_winnowing/_winnowing.c,sha256=xKnujLkVPKdkvdd21k9FFpdmxQxhoOsnlYnHg5u-YcI,6178
+scanoss_winnowing/__init__.py,sha256=h9Kf7LxIKPUj4-W2s6FtS9PjXMYf_JZNWfMerQcshxg,1162
