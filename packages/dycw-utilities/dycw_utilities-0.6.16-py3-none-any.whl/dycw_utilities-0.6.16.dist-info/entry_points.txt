@@ -1,0 +1,4 @@
+[console_scripts]
+clean-dir = utilities.clean_dir:main
+monitor-memory = utilities.monitor_memory:main
+start-pypi-server = utilities.pypi_server:main
