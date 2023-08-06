@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: django2go
+Version: 0.1.3
+Summary: Translate django model to go struct.
+Home-page: UNKNOWN
+Author: treeoph
+Author-email: treeoph@gmail.com
+License: UNKNOWN
+Description: # Django Model 2 Go Struct
+        
+        for gorm or other ORM operation.
+        
+        Depends in go code:
+        
+        https://github.com/jinzhu/gorm
+        
+        https://github.com/guregu/null
+        
+        ## Install
+        
+        ```bash
+        git clone /django2go.git
+        cd django2go
+        python setup.py install .
+        ```
+        
+        ## Usage:
+        
+        settings.py
+        
+        ```python
+        INSTALLED_APPS = [
+            ...
+            'django2go',
+            ...
+        ]
+        
+        ```
+        
+        run CMD:
+        
+        `python manage.py model2go app_name`
+        
+        Example generated go code: [testapp.go](./test_project/testapp.go)
+        
+        `python manage.py model2go app_name --use_column_name` To use database column name.
+        
+        Django model:
+        
+        ```python
+        
+        class Model1(models.Model):
+            field1 = models.CharField(max_length=200)
+            field_with_under_score = models.IntegerField()
+            fieldWithUpperCase = models.IntegerField()
+            fieldWith_Case = models.IntegerField()
+        
+        ```
+        
+        Generated go struct:
+        
+        ```go
+        
+        type Model2 struct {
+            Id              int64       `json:"id" gorm:"primary_key"`
+            Field1          string      `json:"field1"`
+            FieldWithUnderScore int64       `json:"field_with_under_score"`
+            Fieldwithuppercase int64       `json:"fieldWithUpperCase"`
+            FieldwithCase   int64       `json:"fieldWith_Case"`
+        }
+        
+        // TableName 使用指定的数据库表名
+        func (Model2) TableName() string {
+            
+            return TABLE_PREFIX + "model2"
+            
+        }
+        
+        ```
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
