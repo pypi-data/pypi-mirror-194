@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+footymap/__init__.py
+footymap/footymap.py
+footymap.egg-info/PKG-INFO
+footymap.egg-info/SOURCES.txt
+footymap.egg-info/dependency_links.txt
+footymap.egg-info/not-zip-safe
+footymap.egg-info/top_level.txt
