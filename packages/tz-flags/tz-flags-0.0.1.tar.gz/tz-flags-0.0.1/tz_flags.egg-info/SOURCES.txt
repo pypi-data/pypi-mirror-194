@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+tests/test_tz_flags.py
+tz_flags/__init__.py
+tz_flags/tz_flags.py
+tz_flags.egg-info/PKG-INFO
+tz_flags.egg-info/SOURCES.txt
+tz_flags.egg-info/dependency_links.txt
+tz_flags.egg-info/not-zip-safe
+tz_flags.egg-info/top_level.txt
