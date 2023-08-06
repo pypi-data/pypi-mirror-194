@@ -1,0 +1,3 @@
+[console_scripts]
+report-dh = report._config:config
+
