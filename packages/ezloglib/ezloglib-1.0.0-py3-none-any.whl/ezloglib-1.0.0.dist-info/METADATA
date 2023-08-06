@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: ezloglib
+Version: 1.0.0
+Summary: Small modern colored logging library
+Author-email: ftdot <ftdoot@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 ftdot
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/ftdot/ezlog
+Project-URL: Documentation, https://ezlog.readthedocs.io/
+Keywords: easy,colored,color,library,logging,logs
+Classifier: Environment :: Plugins
+Classifier: Framework :: Sphinx
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: System :: Logging
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+
+
+<p align="center">
+  <img src="https://github.com/ftdot/ezlog/blob/master/docs/source/present.png" />
+</p>
+
+# ezlog
+
+[![Documentation](https://img.shields.io/readthedocs/ezlog?style=for-the-badge)](https://ezlog.readthedocs.io/)
+[![Issues](https://img.shields.io/github/issues/ftdot/ezlog?style=for-the-badge)](https://github.com/ftdot/ezlog/issues)
+[![Latest tag](https://img.shields.io/github/v/tag/ftdot/ezlog?style=for-the-badge)](https://github.com/ftdot/ezlog/tags)
+[![PyPI](https://img.shields.io/pypi/v/ezloglib?style=for-the-badge)](https://pypi.org/project/ezloglib)
+  
+Modern, simple in use, colored logging library for python.
+
+* Formatting support
+* Stdout\\Stderr\\File handlers
+* Easy to use & add custom handlers
+* Colored and customizable
+
+
+## Installation
+
+You can install this via **pip** (Windows):
+
+```sh
+pip install ezloglib
+```
+
+And also for linux systems:
+
+```sh
+pip3 install ezloglib
+```
+
+Read more about this on the [documentation](https://ezlog.readthedocs.io/)
+
+
+## Examples
+
+Example from the [documentation](https://ezlog.readthedocs.io/).
+
+File: [examples/presentation.py](examples/presentation.py)
+
+```py
+
+import ezlog
+import math
+
+# declare stdout handler with log level - debug
+sout_handler = ezlog.StdoutHandler(log_level='debug')
+
+# initialize main logger
+main_logger = ezlog.Logger('Main', handlers=[sout_handler])
+
+# examples of the default log levels
+main_logger.debug('This is {} message', 'debug')
+main_logger.exception('This is {} message', 'exception')
+main_logger.info('This is {} message', 'info')
+main_logger.warning('This is {} message', 'warning')
+main_logger.error('This is {} message', 'error')
+main_logger.critical('This is critical message')
+
+# pretty formatting + colored types
+main_logger.debug('Int: {} List: {} Dict: {}', 13, [1, 2, 3], {'hello': 'world'})
+main_logger.exception('Tuple: {} Bool: {} Bytes: {}', ('hello', 'world'), True, b'whois?')
+main_logger.info('Float: {}', math.pi)
+main_logger.warning('Exception (color): {}', NameError("name 'abc' is not defined"))
+
+# example of the formatting
+main_logger.info('{:<20}--{:>19}', 'pi is', f'{math.pi:.2f}')
+
+# example exception logging
+try:
+    printt('Hello, world!')
+except Exception as e:
+    # NOTE: You can use also debug, critical and other log levels to print exception
+    main_logger.exception('Exception example', exception=e)
+
+main_logger.info('It is continue work')
+```
+
+File: [examples/presentation.py](examples/groups_filelogging.py)
+
+```py
+
+import ezlog
+
+# declare stdout handler with log level - debug
+file_handler = ezlog.FileHandler('example.log', log_level='debug')
+sout_handler = ezlog.StdoutHandler(log_level='info')  # recommended: exception log level as default
+
+# initialize example groups
+example_group = ezlog.LoggerGroup('Example', handlers=[sout_handler, file_handler])
+groups_group = ezlog.LoggerGroup('Groups', parent=example_group)
+
+main_logger = ezlog.Logger('Main', group=groups_group)
+
+# examples of the default log levels
+main_logger.debug('This is {} message', 'debug')
+main_logger.exception('This is {} message', 'exception')
+main_logger.info('This is {} message', 'info')
+main_logger.warning('This is {} message', 'warning')
+main_logger.error('This is {} message', 'error')
+main_logger.critical('This is critical message')
+```
