@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: yt-xarray
+Version: 0.1.2
+Summary: interface between yt and xarray
+Home-page: https://github.com/data-exp-lab/yt_xarray
+Author: Chris Havlin
+Author-email: chris.havlin@gmail.com
+License: MIT license
+Keywords: yt_xarray
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: yt (>=4.1.0)
+Requires-Dist: h5py (>=3.4.0)
+Requires-Dist: pooch (>=1.5.1)
+Requires-Dist: xarray
+
+tools for connecting yt and xarray
