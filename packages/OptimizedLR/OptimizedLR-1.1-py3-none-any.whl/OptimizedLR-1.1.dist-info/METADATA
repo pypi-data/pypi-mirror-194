@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: OptimizedLR
+Version: 1.1
+Summary: Learning Rate Finder
+Author: Aymane Harkati
+Author-email: <aymaneharkati@gmail.com>
+Keywords: python,deep learning,AI,Optimization,tensor flow,keras
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: plotly
+
+A package for findinf the learning rate for your deep learning model
