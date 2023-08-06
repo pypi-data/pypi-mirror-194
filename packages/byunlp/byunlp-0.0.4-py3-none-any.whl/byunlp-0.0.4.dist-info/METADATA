@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: byunlp
+Version: 0.0.4
+Summary: Automatic conjugation of Korean verbs
+Author: SungJoo Byun
+Author-email: byunsj@snu.ac.kr
+License: MIT
+Keywords: present,present_progressive,past,future,passive,causative,subj_honorific,sangdae_honorific,Korean verb,conjugation
+
