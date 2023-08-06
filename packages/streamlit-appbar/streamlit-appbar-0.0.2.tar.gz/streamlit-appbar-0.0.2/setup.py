@@ -1,0 +1,23 @@
+import setuptools
+
+setuptools.setup(
+    name="streamlit-appbar",
+    version="0.0.2",
+    author="victorC97",
+    author_email="victor.cour@telecomnancy.net",
+    description="Streamlit appbar with button options",
+    long_description="Streamlit appbar design with images, button options",
+    long_description_content_type="text/plain",
+    url="https://github.com/victorC97/streamlit_appbar",
+    packages=setuptools.find_packages(),
+    include_package_data=True,
+    classifiers=[],
+    python_requires=">=3.6",
+    install_requires=[
+        # By definition, a Custom Component depends on Streamlit.
+        # If your component has other Python dependencies, list
+        # them here.
+        "streamlit >= 0.63",
+    ],
+    setup_requires=['wheel'],
+)
