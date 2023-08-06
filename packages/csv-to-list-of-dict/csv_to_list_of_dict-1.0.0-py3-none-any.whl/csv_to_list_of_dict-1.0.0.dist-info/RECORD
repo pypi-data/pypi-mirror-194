@@ -1,0 +1,9 @@
+convert_csv_to_json/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convert_csv_to_json/convert_csv_to_json.py,sha256=LenNOVB6hboLNak3vAGKgh-NgJtuk2Z4ZSfPzQWc86Y,287
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_convert_csv_to_json.py,sha256=1pFK1CvxWeJKb0LsRxN-20MHCzsF3dI0HxMdMmt-yko,983
+csv_to_list_of_dict-1.0.0.dist-info/LICENSE.txt,sha256=ob7qRMIipvwbO_ZBrSvFOoI3EZOCzqPg50WQn_wYW4s,1072
+csv_to_list_of_dict-1.0.0.dist-info/METADATA,sha256=AQNv33J7zTueGvP4x2oxRp3lpEkZJUtnO0O_WYsgwdk,1874
+csv_to_list_of_dict-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+csv_to_list_of_dict-1.0.0.dist-info/top_level.txt,sha256=oTNNbX1x0DFGODaHF-8w2FYH1VvnTD6kWFJF08_CdWM,26
+csv_to_list_of_dict-1.0.0.dist-info/RECORD,,
