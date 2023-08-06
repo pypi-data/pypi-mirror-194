@@ -1,0 +1,8 @@
+wheel
+pytest
+aiohttp
+aiohttp-retry
+pydantic
+pytest-asyncio
+requests
+dataclasses

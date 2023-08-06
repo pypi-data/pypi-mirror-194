@@ -1,0 +1,8 @@
+build/
+*.egg-info/
+dist/
+.idea/
+__pycache__/
+.pytest_cache/
+.env
+test_env.toml
