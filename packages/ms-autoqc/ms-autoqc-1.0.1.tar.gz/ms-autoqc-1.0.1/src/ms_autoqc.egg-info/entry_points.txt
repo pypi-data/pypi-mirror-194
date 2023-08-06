@@ -1,0 +1,2 @@
+[console_scripts]
+ms_autoqc = ms_autoqc.__main__:main
