@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.cfg
+strstyle/__init__.py
+strstyle/ansi.py
+strstyle/styled_string.py
+strstyle/styled_string_builder.py
+strstyle.egg-info/PKG-INFO
+strstyle.egg-info/SOURCES.txt
+strstyle.egg-info/dependency_links.txt
+strstyle.egg-info/top_level.txt
