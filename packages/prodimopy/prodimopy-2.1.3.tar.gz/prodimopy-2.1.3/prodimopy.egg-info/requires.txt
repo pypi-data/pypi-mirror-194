@@ -1,0 +1,6 @@
+astropy<5.2,>4.0
+matplotlib>3
+numpy>=1.17
+scipy>1
+pandas>1.4
+adjustText<0.8
