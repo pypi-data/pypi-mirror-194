@@ -1,0 +1,10 @@
+keyboard
+pandas
+win32com
+smtplib
+
+[dev]
+setuptools
+wheel
+twine
+Sphinx
