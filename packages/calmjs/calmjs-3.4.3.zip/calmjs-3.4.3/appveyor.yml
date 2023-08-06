@@ -1,0 +1,29 @@
+environment:
+  matrix:
+    - PYTHON: "C:\\Python36"
+      nodejs_version: "8"
+    - PYTHON: "C:\\Python37"
+      nodejs_version: "10"
+
+# adding an uppercase element in the path to test #54
+clone_folder: c:\projects\SomeLONGPath\calmjs
+
+install:
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - ps: Install-Product node $env:nodejs_version
+  - "%PYTHON%\\python.exe -m pip install virtualenv"
+  - "%PYTHON%\\python.exe -m virtualenv Venv"
+  - "Venv\\Scripts\\activate"
+  - "pip install coverage"
+  - "pip install -e ."
+
+test_script:
+  # piping empty echo to disable the tty test which is reported as
+  # working but actually non-working on appveyor.
+  - echo | coverage run setup.py test
+  - coverage report -m
+
+artifacts:
+  - path: dist\*
+
+build: off
