@@ -1,0 +1,5 @@
+setup.py
+ocrCommonApi.egg-info/PKG-INFO
+ocrCommonApi.egg-info/SOURCES.txt
+ocrCommonApi.egg-info/dependency_links.txt
+ocrCommonApi.egg-info/top_level.txt
