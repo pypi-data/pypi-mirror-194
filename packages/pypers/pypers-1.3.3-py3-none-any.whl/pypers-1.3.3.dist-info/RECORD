@@ -1,0 +1,11 @@
+LICENSE,sha256=pOcgQFw4qAVHGQzPRPhYoNJEakecmD3xXJqAw_wcUiU,1063
+pypers/formatters.py,sha256=d7ShJcv0-M8jZ4_rFeDT0TGl143TDi2G-YtlhWkUTEw,2088
+pypers/image_tools.py,sha256=lUeP61ATe3A0t9EWlZUGaEbuvHh5TnkYEDHJLtsnuFg,828
+pypers/mongo_helpers.py,sha256=IbV0Qs7E3zf6JdNnPHplZzy-ve0vjcwDDW5t89Ebj3U,4604
+pypers/namespace.py,sha256=J30JLK_L4DNq7ZEhMJxb-M2akNgZfZAS4h6Ub-tHm-4,2811
+pypers/url_helpers.py,sha256=-oy1-oT14-K5cgTbIxuGLHBHy1QqU1E8xPLYPrZOu2c,2803
+pypers/video_tools.py,sha256=G43FOa3AASFc0Hxn2jd1t6uFZdh1YZS2WwP-4p_ePl8,500
+pypers-1.3.3.dist-info/LICENSE,sha256=pOcgQFw4qAVHGQzPRPhYoNJEakecmD3xXJqAw_wcUiU,1063
+pypers-1.3.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pypers-1.3.3.dist-info/METADATA,sha256=4uCqJj1otOg3hAKS3O49ZJLHfzl4IKcv1CsvmD3H4do,2391
+pypers-1.3.3.dist-info/RECORD,,
