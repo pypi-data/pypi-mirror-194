@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: steamsync
+Version: 0.4.0
+Summary: Tool to automatically add games from the Epic Games Launcher to Steam
+Home-page: https://github.com/jaydenmilne/steamsync
+License: AGPL-3.0-or-later
+Keywords: Steam,Epic Games Store,Big Picture Mode,EGS
+Author: Jayden Milne
+Author-email: jaydenmilne@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: vdf (>=3.3,<4.0)
+Project-URL: Repository, https://github.com/jaydenmilne/steamsync
+Description-Content-Type: text/markdown
+
+See root readme.
