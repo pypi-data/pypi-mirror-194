@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nthBday
+Version: 0.2.4
+Summary: Find the "n-th" working day of a month.
+Author: u77w41 (Ujjwal Chowdhury)
+Author-email: <u77w41@gmail.com>
+Keywords: python,date,Business Day,Working Day,Holiday,calender
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: datetime
+
+
+# Testing
+
+
+
+##### Version alpha
