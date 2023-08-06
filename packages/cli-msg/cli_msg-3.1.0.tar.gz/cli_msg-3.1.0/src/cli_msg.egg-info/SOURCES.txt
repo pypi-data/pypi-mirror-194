@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/hello.py
+src/cli_msg.egg-info/PKG-INFO
+src/cli_msg.egg-info/SOURCES.txt
+src/cli_msg.egg-info/dependency_links.txt
+src/cli_msg.egg-info/entry_points.txt
+src/cli_msg.egg-info/requires.txt
+src/cli_msg.egg-info/top_level.txt
+src/utils/__init__.py
+src/utils/messages.py
