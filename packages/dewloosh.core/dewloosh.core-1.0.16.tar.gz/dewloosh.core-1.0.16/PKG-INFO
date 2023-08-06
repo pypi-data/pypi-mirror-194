@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dewloosh.core
+Version: 1.0.16
+Summary: Common developer utilities and base classes to support other dewloosh packages.
+Home-page: https://github.com/dewloosh/dewloosh-core
+Author: Bence Balogh
+Author-email: dewloosh@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/dewloosh/dewloosh-core/archive/refs/tags/1.0.16.zip
+Description: # **dewloosh.core**
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7, <3.11
+Description-Content-Type: text/markdown
