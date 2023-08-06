@@ -1,0 +1,6 @@
+[zc.buildout]
+app = zc.zope3recipes.recipes:App
+application = zc.zope3recipes.recipes:Application
+instance = zc.zope3recipes.recipes:Instance
+offline = zc.zope3recipes.recipes:Offline
+zopeconf = zc.zope3recipes.recipes:ZopeConf
