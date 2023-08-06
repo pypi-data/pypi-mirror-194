@@ -1,0 +1,10 @@
+alacorder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alacorder/__main__.py,sha256=9HHLBVn9eQH3lWj_OYtejoFDDPMq8Xyg5AczwghuNR4,10209
+alacorder/alac.py,sha256=bUG_eYucJol9VN7ArQGye2_6Vb_v0DeEk0VVgbcKKts,81358
+alacorder/cal.py,sha256=WUvmfGNWYA3CsBgyVrJ5XsVyLCQpHyBmtHs0XJqJTEE,81390
+alacorder/scrape.py,sha256=xWKPHC_QhXN4qtfJIFyAcwzHnZ1AGKeE-trKmp1OTGo,8503
+alacorder-75.9.9.dist-info/LICENSE,sha256=ANhTokIcqsS_ltXVHn_bpHVIhmUrrG2OTCZX91m9_80,1066
+alacorder-75.9.9.dist-info/METADATA,sha256=rK5pyksoLZP551s96CIyetOD7JVLPRPvUJHP-f2ob6I,12331
+alacorder-75.9.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+alacorder-75.9.9.dist-info/top_level.txt,sha256=SvBoMJWQYC6yFZy9U9jZHYK_TyPPODTNXI4_sMpC0xU,10
+alacorder-75.9.9.dist-info/RECORD,,
