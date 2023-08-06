@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyPatchouli.egg-info/PKG-INFO
+pyPatchouli.egg-info/SOURCES.txt
+pyPatchouli.egg-info/dependency_links.txt
+pyPatchouli.egg-info/top_level.txt
+pypatchouli/Parse.py
+pypatchouli/__init__.py
+pypatchouli/event.py
+pypatchouli/modes.py
+pypatchouli/seq.py
