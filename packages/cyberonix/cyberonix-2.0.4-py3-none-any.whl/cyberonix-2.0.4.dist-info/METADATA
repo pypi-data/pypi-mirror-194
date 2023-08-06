@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cyberonix
+Version: 2.0.4
+Summary: Cyberonix is a complete resource hub for Cyber Security Community.
+Home-page: https://github.com/TeamMetaxone/Cyberonix
+Author: Metaxone
+Author-email: admin@metaxonesolution.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Security
+Requires-Dist: beautifulsoup4 (==4.11.1)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: ipwhois
+Requires-Dist: dnspython (==2.3.0)
+Requires-Dist: selenium (==4.7.2)
+
