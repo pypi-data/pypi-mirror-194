@@ -1,0 +1,9 @@
+env2installer/README.MD,sha256=nOs1q7SGyi_yvGkgVydYaqJmbPTAcWqAsyoBlID_Ang,2117
+env2installer/__init__.py,sha256=ugR2Z8e-RTGrmsWmMdT_QzRT6lXyqHviTdxaoMI2mok,14650
+env2installer/requirements.txt,sha256=qC7n6c3xGV5iXLZ9YgB0OzPxkeDFaC_LIpbl96YZhww,36
+env2installer/thirdparty.json,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+env2installer-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+env2installer-0.10.dist-info/METADATA,sha256=wXR3MLwB5X0BPUShGrXZTGIiyNYiy6so-m5mAtCIIyI,3107
+env2installer-0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+env2installer-0.10.dist-info/top_level.txt,sha256=KEABS1cr6vv61_gI1WLnXeoshkB9m6-sYbPXPMq479Q,14
+env2installer-0.10.dist-info/RECORD,,
