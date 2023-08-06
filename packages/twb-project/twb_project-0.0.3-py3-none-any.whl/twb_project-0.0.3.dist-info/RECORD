@@ -1,0 +1,9 @@
+twb/__init__.py,sha256=7_VsHc3vwyxPl8FTynrStcU98QgM9rHXnaTvY0mP3lU,10862
+twb/bip.py,sha256=KpvO24EusxJlYox3fIZO56fqA41wq8sAwnEBUa6tqfA,788
+twb/parallelization.py,sha256=qiCt0sON0sYT-ItVjqb7f8dGZdbSpvaDVErYd29ozig,5459
+twb/reader.py,sha256=c8TjGq0DCn4T-TgtKI_4MA2U9S26fPVVflDJh_g7Ll4,465
+twb/utils.py,sha256=LlFAozoCfYUpRYcsR_fvgELDKpTtj6as3W95VrYV3_4,2257
+twb_project-0.0.3.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+twb_project-0.0.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+twb_project-0.0.3.dist-info/METADATA,sha256=5PYlabYJDCdcbPZPsUm6F8S2h97NHm3Qv4dLexgq32g,2204
+twb_project-0.0.3.dist-info/RECORD,,
