@@ -1,0 +1,7 @@
+elasticsearch==7.10.1
+argparse==1.4.0
+dataclasses-json==0.5.7
+zipstream-ng==1.4.0
+tqdm==4.64.1
+stream_unzip==0.0.83
+ijson~=3.2.0.post0
