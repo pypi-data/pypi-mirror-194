@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+azureml_data.egg-info/PKG-INFO
+azureml_data.egg-info/SOURCES.txt
+azureml_data.egg-info/dependency_links.txt
+azureml_data.egg-info/top_level.txt
