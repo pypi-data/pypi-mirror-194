@@ -1,0 +1,6 @@
+dtnt4emailsend.py
+setup.py
+dtnt4mailsender.egg-info/PKG-INFO
+dtnt4mailsender.egg-info/SOURCES.txt
+dtnt4mailsender.egg-info/dependency_links.txt
+dtnt4mailsender.egg-info/top_level.txt
