@@ -1,0 +1,9 @@
+bkw_python/__init__.py,sha256=xCCC8lXXXp8HRO5lgq32nLwJpDsIhJqPWcx8kZzRIcM,97
+bkw_python/data_models.py,sha256=VI_3tzx5n_ynx0FTcz_yng7OZXYY-VjgC3maTQhrwXc,9163
+bkw_python/exceptions.py,sha256=9s0cGtfpjv5dnxGz2vB6EsvhPQhLqff1xoRdlJOEMbA,39
+bkw_python/operation_models.py,sha256=fxwjG0bWxw484T51AuGGfmILMF9Uplk0DbqTDL2SFkg,9940
+bkw_python/rest_adapter.py,sha256=XKSv9msJ7yr0pQdTRQVf7N9rH7maQjUN7_ysf0iqiJ8,6164
+bkw_python-0.0.2.dist-info/METADATA,sha256=AZO5-FIzjjodquZQ8--ETl-_6dGhw34OEh3sDRHPzfA,1399
+bkw_python-0.0.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+bkw_python-0.0.2.dist-info/licenses/LICENSE,sha256=xpxxu_aAgM2kuITsO4708QLMXQI0dg9MDWdJybImmn4,1106
+bkw_python-0.0.2.dist-info/RECORD,,
