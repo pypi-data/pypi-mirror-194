@@ -1,0 +1,14 @@
+flightdata/__init__.py,sha256=7FvAXmDVXyqg7JNdGgBLOW82w-7Hh6CzlPwa7uKPVuI,62
+flightdata/data.py,sha256=5_qApnQMvZ9L3jtAo_nAKUgORpZ_HQwkOkiW3CDLaGY,8826
+flightdata/fields.py,sha256=k3IOe9tLHW3H8WsDmWpO79kMDlcoPjW6l_iyACUpHPo,6127
+flightdata/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flightdata/config/ardupilot.py,sha256=5VaJkjgLU0jEcRNn82rjDHM3liEcWW6RXk4rrctYI9w,1034
+flightdata/field_mapping/__init__.py,sha256=ayVVWY2smEUH5RsaqoHEoUYLf-BF_86WP_7_GAuYPi0,309
+flightdata/field_mapping/ardupilot_ekfv2.py,sha256=7tQ55FdasoyHMIxWaoAWBvP0oTAMhw75byJnPh81Mpo,4776
+flightdata/field_mapping/ardupilot_ekfv3.py,sha256=jIe85y4xbP8Pm173OIkZwO4aQuQssD48wpTDCdd09LA,4426
+flightdata/field_mapping/fc_json_2_1.py,sha256=s8XBO4O26rVUVV_mRCISBw82hJhwa76xYz_jdotUYTQ,1968
+flightdata-0.1.0.dist-info/LICENSE,sha256=z72U6pv-bQgJ_Svr4uCXnMjemsp38aSerhHEdEAOMJ4,7632
+flightdata-0.1.0.dist-info/METADATA,sha256=hnerTC2Qn0hHSHgfzJErD5OAUlDskK1xX91qqpyULao,4382
+flightdata-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flightdata-0.1.0.dist-info/top_level.txt,sha256=_J25_6UHBEucszOGH4DH8dM8BV88zAKb0aE759jeWiY,11
+flightdata-0.1.0.dist-info/RECORD,,
