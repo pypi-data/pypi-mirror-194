@@ -1,0 +1,8 @@
+LICENSE.TXT
+setup.py
+archivkompakt/__init__.py
+archivkompakt.egg-info/PKG-INFO
+archivkompakt.egg-info/SOURCES.txt
+archivkompakt.egg-info/dependency_links.txt
+archivkompakt.egg-info/requires.txt
+archivkompakt.egg-info/top_level.txt
