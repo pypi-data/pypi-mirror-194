@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mkdocs-autolinks-posix-plugin
+Version: 0.6.1
+Summary: MkDocs Autolinks POSIX plugin
+Home-page: https://github.com/arterm-sedov/mkdocs-autolinks-plugin
+Download-URL: https://github.com/arterm-sedov/mkdocs-autolinks-plugin/archive/v_061.tar.gz
+Author: Artem Sedov, forked from Zach Hannum
+License: MIT
+Keywords: mkdocs
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7
+License-File: LICENSE
+Requires-Dist: mkdocs (>=1.2.3)
+
+An MkDocs plugin that automagically generates relative links between markdown pages
