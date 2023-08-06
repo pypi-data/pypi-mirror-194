@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: semilattices
+Version: 1.0.1
+Summary: This package implements a lightweight library for semilattices in python.
+Author-email: Joshua Chen <joshuawchen@utexas.edu>, Daniele Bigoni <dabi@limitcycle.it>
+Maintainer-email: Daniele Bigoni <dabi@limitcycle.it>, Joshua Chen <joshuawchen@utexas.edu>
+License: LGPL
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: sortedcontainers
+Requires-Dist: importlib-metadata
+Provides-Extra: plotting
+Requires-Dist: matplotlib ; extra == 'plotting'
+Requires-Dist: networkx ; extra == 'plotting'
+Provides-Extra: sphinx
+Requires-Dist: Sphinx ; extra == 'sphinx'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'sphinx'
+Requires-Dist: sphinx-prompt ; extra == 'sphinx'
+Requires-Dist: robpol86-sphinxcontrib-googleanalytics ; extra == 'sphinx'
+Requires-Dist: sphinxcontrib-contentui ; extra == 'sphinx'
+Requires-Dist: nbsphinx ; extra == 'sphinx'
+Requires-Dist: ipython ; extra == 'sphinx'
+Requires-Dist: sphinx-rtd-theme ; extra == 'sphinx'
+Requires-Dist: tabulate ; extra == 'sphinx'
+Requires-Dist: pandoc ; extra == 'sphinx'
+
+# README #
+
+This package implements a lightweight library for semilattices in python.
+
+See the [documentation](https://semilattices.readthedocs.io/en/latest/) for more details.
+
+Submit issues [here](https://bitbucket.org/joshuawchen/semilattices/issues)
