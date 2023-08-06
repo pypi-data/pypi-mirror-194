@@ -1,0 +1,10 @@
+[project]
+name = "ign-terra-gpao"
+version = "0.0.0"
+description = "Project use to launch Terra Slave client"
+readme = "README.md"
+authors = [
+    { name = "Guillaume Liegard", email = "guillaume.liegard@ign.fr" }
+]
+[tool.setuptools]
+packages = [ "terragpao" ]
