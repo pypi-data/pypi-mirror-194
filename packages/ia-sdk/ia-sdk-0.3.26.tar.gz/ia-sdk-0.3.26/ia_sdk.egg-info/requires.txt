@@ -1,0 +1,7 @@
+requests
+pymongo
+plotly
+numpy
+pandas
+matplotlib
+scikit-learn
