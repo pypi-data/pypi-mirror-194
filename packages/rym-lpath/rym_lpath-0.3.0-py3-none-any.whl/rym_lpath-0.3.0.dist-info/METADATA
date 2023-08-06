@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rym-lpath
+Version: 0.3.0
+Summary: A python library for accessing mappings and objects.
+Project-URL: Homepage, https://github.com/muppetjones/rym-py/rym-lpath
+Project-URL: Bug Tracker, https://github.com/muppetjones/rym-py/issues
+Author-email: Stephen Bush <muppetjones@gmail.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Provides-Extra: lint
+Requires-Dist: black>=20.8b1; extra == 'lint'
+Requires-Dist: flake8>=3.8; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: coverage[toml]>=7.1.0; extra == 'test'
+Requires-Dist: pytest-cov>=4.0.0; extra == 'test'
+Requires-Dist: pytest>=6.2; extra == 'test'
+Description-Content-Type: text/markdown
+
+# rym-lpath
+
+[![PyPI - Version](https://img.shields.io/pypi/v/rym-lpath.svg)](https://pypi.org/project/rym-lpath)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rym-lpath.svg)](https://pypi.org/project/rym-lpath)
+[![License: MIT](https://img.shields.io/badge/license-MIT-C06524)](https://github.com/muppetjones/rym-py/blob/main/LICENSE.txt)
+
+
+A python library for accessing mappings and objects.
