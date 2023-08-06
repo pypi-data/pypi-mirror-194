@@ -1,0 +1,2 @@
+[console_scripts]
+b3d = barrier3d.cli:barrier3d

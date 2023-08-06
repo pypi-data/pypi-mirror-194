@@ -1,0 +1,8 @@
+bmipy
+click
+distfit
+matplotlib
+numpy
+pandas
+pydantic
+pyyaml
