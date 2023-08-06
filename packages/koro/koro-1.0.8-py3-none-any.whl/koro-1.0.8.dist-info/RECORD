@@ -1,0 +1,14 @@
+koro/__init__.py,sha256=clmcgzd33gY_tOC3U5U-010NYVZZrC-9Og6AYAovIjo,176
+koro/file/__init__.py,sha256=_UIx5h1YBoheqQeorBV5XrbZXusAOipbFsesqUeLJwk,948
+koro/file/dir.py,sha256=sxNM_COlADES3oVnlutApXPd2SvWuANRnxMC6RdQ448,6348
+koro/file/lvl.py,sha256=cxOJGuzzs3yVTAdi-clhXPn1A7-TU3p-FJW3JLZBTyY,752
+koro/file/zip.py,sha256=hK8XemvmM3dhyNPevCt9lXm0p24HYbzyHp40yA5O5cg,5472
+koro/item/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koro/item/group.py,sha256=TfiC2okh-fIVPics7VxOWEIP3-8K0ixDBIOl9yTjBkE,1515
+koro/item/level.py,sha256=opGy-JnytnsXGYEZDQky9bTwAr_oJFq1mrQsOAr6pOs,2723
+koro/item/save.py,sha256=vwI2b1iUs976ZgTIt3hFxpJajGrGZugDhUxkS7Zl4SE,577
+koro-1.0.8.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+koro-1.0.8.dist-info/METADATA,sha256=Vg519VHrxWxDCrFoTmEnBLtQbTXeflX7UvIvmmS-qfA,628
+koro-1.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+koro-1.0.8.dist-info/top_level.txt,sha256=Msq6ssMwv56hnBQqwaTdJJkxM7x7BZ-3JfQbkepQAEY,5
+koro-1.0.8.dist-info/RECORD,,
