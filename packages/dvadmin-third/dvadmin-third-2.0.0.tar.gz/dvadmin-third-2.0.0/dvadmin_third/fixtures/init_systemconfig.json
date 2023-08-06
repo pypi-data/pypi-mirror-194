@@ -1,0 +1,57 @@
+[
+  {
+    "parent": null,
+    "title": "第三方登录配置",
+    "key": "third",
+    "value": null,
+    "sort": 9,
+    "status": true,
+    "data_options": null,
+    "form_item_type": 0,
+    "rule": null,
+    "placeholder": null,
+    "setting": null,
+    "children": [
+      {
+        "title": "微信校验文件",
+        "key": "wx_check_file",
+        "value": [
+          {
+            "id": null,
+            "key": "oeKstaTGZv",
+            "title": "微信小程序校验",
+            "value": "81afbe3644dd7748dae999eefb55c84b",
+            "_X_ROW_KEY": "row_63"
+          }
+        ],
+        "sort": 1,
+        "status": true,
+        "data_options": null,
+        "form_item_type": 11,
+        "rule": [
+          {
+            "message": "必填项不能为空",
+            "required": true
+          }
+        ],
+        "placeholder": "请输入微信校验文件",
+        "setting": null,
+        "children": [
+          {
+            "title": "微信小程序校验",
+            "key": "oeKstaTGZv",
+            "value": "81afbe3644dd7748dae999eefb55c84b",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

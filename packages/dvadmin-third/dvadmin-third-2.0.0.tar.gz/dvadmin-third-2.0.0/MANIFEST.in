@@ -1,0 +1,2 @@
+recursive-include dvadmin_third/templates/h5 *.*
+include dvadmin_third/fixtures/*.json

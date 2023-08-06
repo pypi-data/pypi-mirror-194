@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>三方登录</title><script>var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+			document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')</script><link rel=stylesheet href=./static/index.5841170f.css></head><body><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id=app></div><script>var userAgent = navigator.userAgent;
+			if (userAgent.indexOf('AlipayClient') > -1) {
+				// 支付宝小程序的 JS-SDK 防止 404 需要动态加载，如果不需要兼容支付宝小程序，则无需引用此 JS 文件。
+				document.writeln('<script src="https://appx/web-view.min.js"' + '>' + '<' + '/' + 'script>');
+			} else if (/QQ/i.test(userAgent) && /miniProgram/i.test(userAgent)) {
+				// QQ 小程序
+				document.write(
+					'<script type="text/javascript" src="https://qqq.gtimg.cn/miniprogram/webview_jssdk/qqjssdk-1.0.0.js"><\/script>'
+				);
+			} else if (/miniProgram/i.test(userAgent) && /micromessenger/i.test(userAgent)) {
+				// 微信小程序 JS-SDK 如果不需要兼容微信小程序，则无需引用此 JS 文件。
+				document.write('<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"><\/script>');
+			} else if (/toutiaomicroapp/i.test(userAgent)) {
+				// 头条小程序 JS-SDK 如果不需要兼容头条小程序，则无需引用此 JS 文件。
+				document.write(
+					'<script type="text/javascript" src="https://s3.pstatp.com/toutiao/tmajssdk/jssdk-1.0.1.js"><\/script>');
+			} else if (/swan/i.test(userAgent)) {
+				// 百度小程序 JS-SDK 如果不需要兼容百度小程序，则无需引用此 JS 文件。
+				document.write(
+					'<script type="text/javascript" src="https://b.bdstatic.com/searchbox/icms/searchbox/js/swan-2.0.18.js"><\/script>'
+				);
+			} else if (/quickapp/i.test(userAgent)) {
+				// quickapp
+				document.write('<script type="text/javascript" src="https://quickapp/jssdk.webview.min.js"><\/script>');
+			}</script><script src=./static/uni.webview.js></script><script>// 待触发 `UniAppJSBridgeReady` 事件后，即可调用 uni 的 API。
+			document.addEventListener('UniAppJSBridgeReady', function() {
+				console.log('UniAppJSBridgeReady');
+				webUni.getEnv(function(res) {
+					console.log('当前环境：' + JSON.stringify(res));
+				});
+			});</script><script src=./static/js/chunk-vendors.eca14bfe.js></script><script src=./static/js/index.5bcd04b7.js></script></body></html>
