@@ -1,0 +1,15 @@
+cdataml_coordinates/__init__.py,sha256=C1mlYFac4v9BALTUW0GSZ25CWOqlOz8JdTO8xQoePd8,9840
+cdataml_coordinates/__main__.py,sha256=sIBE_Rt_C3ziWyapWJrf5KfO6TNnWRIVEHoOKBf28-8,976
+cdataml_fitscores/__init__.py,sha256=7Jf88ZxKjc8tBOJ1TczhciXXWCjd_8bg7wsx5xLAh0I,813
+cdataml_fitscores/__main__.py,sha256=Fu9XCUnFoCmd5E7gFX81HfUPjpi6WMA1TBZ3gqzi2Ww,858
+cdataml_generate/__init__.py,sha256=XzZfrtAosBZiplp38WUFYytC4WIuN1KRzLBwI9-cBv4,3648
+cdataml_generate/__main__.py,sha256=FYSGn8Zjivu5yGf5LpFTbLpFW_sCCPcS6JdL3_33-WI,1080
+cdataml_query/__init__.py,sha256=sCqV2CC6hhyVrzttG0t2L2-9F5qcgN1IjD8wfZcBgXw,5868
+cdataml_query/__main__.py,sha256=IEd6b6IdZAlVGvcS7f3Bp4r5WGKz6adP0ZoO9q_jsSo,955
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/lesion_score_key.tif,sha256=4aMc5yvRW-j8-pVzMnu_0lunupOhlpEcTrB9qa_ZXwU,9371224
+cdataml-0.4.2.dist-info/LICENSE,sha256=n8s2n9a6KZHzyIrogwYktjuJQT8VmO-OuwYV1m5LUvo,1072
+cdataml-0.4.2.dist-info/METADATA,sha256=g9LVhkCR6oWBlrNnXJBfiqhBk4TOItSrHzi-2JhjUyw,768
+cdataml-0.4.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cdataml-0.4.2.dist-info/top_level.txt,sha256=70y8Jf0imTCaqJ8-tkvLQDPFZE2D0VJ78pllhNuviFg,74
+cdataml-0.4.2.dist-info/RECORD,,
