@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.10.0
+-------
+
+* Add a sub prefix (the environment) by default (#371)
