@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: echosys
+Version: 0.2.0
+Summary: A python library for modeling and solving epistemic multi agents planning problems
+Home-page: https://github.com/DavideSolda/echosys
+Author: Davide Solda'
+Author-email: davide.solda@tuwien.ac.at
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
