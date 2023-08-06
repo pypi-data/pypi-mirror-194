@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pyatp"
+version = "1.1.1"
+description = "an sdk for iflytek atp"
+authors = ["ybyang <ybyang7@iflytek.com>"]
+packages = [
+    {include = "atp", from="src"}
+]
+[tool.poetry.dependencies]
+python = ">=3.6"
+jsonpath_rw = ">=1.4.0"
+requests = ">=2.26.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+python = ">=3.6"
+jsonpath_rw = ">=1.4.0"
+requests = ">=2.26.0"
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
