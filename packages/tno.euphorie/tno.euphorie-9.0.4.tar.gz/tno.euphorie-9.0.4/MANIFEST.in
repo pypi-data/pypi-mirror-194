@@ -1,0 +1,26 @@
+include *.rst
+include *.zcml
+recursive-include src/tno/euphorie *.ini
+recursive-include src/tno/euphorie *.zcml
+recursive-include src/tno/euphorie *.py
+recursive-include src/tno/euphorie *.mako
+recursive-include src/tno/euphorie *.docx
+recursive-include src/tno/euphorie *.po
+recursive-include src/tno/euphorie *.xml
+include Makefile
+include buildout.cfg
+include devel.cfg
+include bootstrap.py
+graft docs
+prune docs/build
+graft src/tno/euphorie/profiles
+graft src/tno/euphorie/templates
+graft src/tno/euphorie/assets
+prune src/Euphorie
+prune src/NuPlone
+recursive-include etc *.ini
+recursive-include src *.pt
+include *.txt
+include base.cfg
+include picked-versions.cfg
+recursive-include templates *.ini

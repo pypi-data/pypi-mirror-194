@@ -1,0 +1,16 @@
+Euphorie>=12.0.0
+NuPlone>=2.0.0
+Pillow
+alembic
+Products.statusmessages
+htmllaundry
+plone.autoform
+plone.tiles
+requests
+setuptools
+zope.publisher
+plone.api
+z3c.jbot
+
+[tests]
+Euphorie[tests]

@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:meta="http://xml.zope.org/namespaces/meta"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      class="no-js"
+      lang="${language}"
+      meta:interpolation="true"
+      tal:define="
+        client nocall:request/client;
+        webhelpers nocall:context/@@webhelpers;
+        portal_state context/plone_portal_state;
+        language portal_state/language;
+        portal_url portal_state/portal_url;
+        dummy_header python:request.RESPONSE.appendHeader('cache-control', 'no-cache');
+      "
+      i18n:domain="euphorie"
+>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8"
+    />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=Edge"
+    />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"
+    />
+    <meta http-equiv="pragma"
+          content="no-cache"
+    />
+    <meta http-equiv="expires"
+          content="-1"
+    />
+
+    <title>OiRA -
+      <tal:translate i18n:translate="">Overview of measures</tal:translate></title>
+    <style type="text/css">
+ @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400,300,700&amp;subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,latin-ext);
+@import url(${portal_url}/++resource++euphorie.resources/oira/style/fontello-010/css/fontello.css);
+#osc {
+	background: #333332
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol,
+li,
+table,
+tr,
+th,
+td,
+form,
+fieldset,
+legend,
+button,
+div,
+object,
+figure,
+img {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left
+}
+
+input,
+select,
+textarea,
+button {
+	padding: 0;
+	font-size: 1em;
+	background-color: #FFF
+}
+
+button {
+	background-color: transparent;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none
+}
+
+article:after,
+.pat-rich:after {
+	content: ' ';
+	display: table;
+	clear: both
+}
+
+article a:hover,
+.pat-rich a:hover {
+	text-decoration: underline
+}
+
+article h1,
+article h2,
+article p,
+article ul,
+article ol,
+article table,
+article dl,
+article pre,
+.pat-rich h1,
+.pat-rich h2,
+.pat-rich p,
+.pat-rich ul,
+.pat-rich ol,
+.pat-rich table,
+.pat-rich dl,
+.pat-rich pre {
+	margin-bottom: 2rem
+}
+
+article ul,
+article ol,
+.pat-rich ul,
+.pat-rich ol {
+	counter-reset: oli
+}
+
+article ul li,
+article ol li,
+.pat-rich ul li,
+.pat-rich ol li {
+	margin-left: 0;
+	padding-left: 1.5em
+}
+
+article ul li:before,
+article ol li:before,
+.pat-rich ul li:before,
+.pat-rich ol li:before {
+	content: "&bull;";
+	float: left;
+	margin-left: -1.4em
+}
+
+article ul li[class^="icon-"]:before,
+article ul li[class*=" icon-"]:before,
+article ol li[class^="icon-"]:before,
+article ol li[class*=" icon-"]:before,
+.pat-rich ul li[class^="icon-"]:before,
+.pat-rich ul li[class*=" icon-"]:before,
+.pat-rich ol li[class^="icon-"]:before,
+.pat-rich ol li[class*=" icon-"]:before {
+	line-height: inherit;
+	margin-left: -1.5em
+}
+
+article ol li,
+.pat-rich ol li {
+	counter-increment: oli
+}
+
+article ol li:before,
+.pat-rich ol li:before {
+	content: counter(oli) "."
+}
+
+article h1,
+.pat-rich h1 {
+	font-weight: 600;
+	font-size: 2em;
+	line-height: 130%;
+	margin-bottom: 0.7em;
+	letter-spacing: 0.05em
+}
+
+@media only screen and (max-width: 768px) {
+	article h1,
+	.pat-rich h1 {
+		font-size: 1.5em
+	}
+}
+
+article h2,
+.pat-rich h2 {
+	font-size: 1.5em;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	margin-bottom: 0.7em;
+	letter-spacing: 0.05em
+}
+
+@media only screen and (max-width: 768px) {
+	article h2,
+	.pat-rich h2 {
+		font-size: 1.2em
+	}
+}
+
+article h3,
+.pat-rich h3 {
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	margin-bottom: 1em
+}
+
+article img,
+.pat-rich img {
+	max-width: 100%;
+	margin: 0 auto;
+	display: block
+}
+
+article img.float-before,
+.pat-rich img.float-before {
+	margin-right: 1em;
+	float: left;
+	top: 0.2em;
+	position: relative
+}
+
+article img.float-after,
+.pat-rich img.float-after {
+	margin-left: 1em;
+	float: right;
+	top: 0.2em;
+	position: relative
+}
+
+@media only screen and (min-width: 1280px) {
+	article img.medium,
+	.pat-rich img.medium {
+		width: 33%
+	}
+}
+
+article figure,
+.pat-rich figure {
+	margin-bottom: 2em
+}
+
+.row,
+.columns {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.row {
+	margin: 0 -15px
+}
+
+.row .row {
+	width: auto;
+	max-width: none;
+	min-width: 0;
+	margin: 0 -15px
+}
+
+.row.collapse .column,
+.row.collapse .columns {
+	padding: 0
+}
+
+.row .row {
+	width: auto;
+	max-width: none;
+	min-width: 0;
+	margin: 0 -15px
+}
+
+.row .row.collapse {
+	margin: 0
+}
+
+.column,
+.columns {
+	float: left;
+	min-height: 1px;
+	padding: 0 15px;
+	position: relative
+}
+
+.column.centered,
+.columns.centered {
+	float: none;
+	margin: 0 auto
+}
+
+[class*="column"]+[class*="column"]:last-child {
+	float: right
+}
+
+[class*="column"]+[class*="column"].end {
+	float: left
+}
+
+.one,
+.row .one {
+	width: 8.33333%
+}
+
+.two,
+.row .two {
+	width: 16.66667%
+}
+
+.three,
+.row .three {
+	width: 25%
+}
+
+.four,
+.row .four {
+	width: 33.33333%
+}
+
+.five,
+.row .five {
+	width: 41.66667%
+}
+
+.six,
+.row .six {
+	width: 50%
+}
+
+.seven,
+.row .seven {
+	width: 58.33333%
+}
+
+.eight,
+.row .eight {
+	width: 66.66667%
+}
+
+.nine,
+.row .nine {
+	width: 75%
+}
+
+.ten,
+.row .ten {
+	width: 83.33333%
+}
+
+.eleven,
+.row .eleven {
+	width: 91.66667%
+}
+
+.twelve,
+.row .twelve {
+	width: 100%
+}
+
+.row .offset-by-one {
+	margin-left: 8.33333%
+}
+
+.row .offset-by-two {
+	margin-left: 16.66667%
+}
+
+.row .offset-by-three {
+	margin-left: 25%
+}
+
+.row .offset-by-four {
+	margin-left: 33.33333%
+}
+
+.row .offset-by-five {
+	margin-left: 41.66667%
+}
+
+.row .offset-by-six {
+	margin-left: 50%
+}
+
+.row .offset-by-seven {
+	margin-left: 58.33333%
+}
+
+.row .offset-by-eight {
+	margin-left: 66.66667%
+}
+
+.row .offset-by-nine {
+	margin-left: 75%
+}
+
+.row .offset-by-ten {
+	margin-left: 83.33333%
+}
+
+.push-one {
+	left: 8.33335%
+}
+
+.pull-one {
+	right: 8.33335%
+}
+
+.push-two {
+	left: 16.66667%
+}
+
+.pull-two {
+	right: 16.66667%
+}
+
+.push-three {
+	left: 25%
+}
+
+.pull-three {
+	right: 25%
+}
+
+.push-four {
+	left: 33.33333%
+}
+
+.pull-four {
+	right: 33.33333%
+}
+
+.push-five {
+	left: 41.66667%
+}
+
+.pull-five {
+	right: 41.66667%
+}
+
+.push-six {
+	left: 50%
+}
+
+.pull-six {
+	right: 50%
+}
+
+.push-seven {
+	left: 58.33333%
+}
+
+.pull-seven {
+	right: 58.33333%
+}
+
+.push-eight {
+	left: 66.66667%
+}
+
+.pull-eight {
+	right: 66.66667%
+}
+
+.push-nine {
+	left: 75%
+}
+
+.pull-nine {
+	right: 75%
+}
+
+.push-ten {
+	left: 83.33333%
+}
+
+.pull-ten {
+	right: 83.33333%
+}
+
+.row {
+	*zoom: 1
+}
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table
+}
+
+.row:after {
+	clear: both
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		-webkit-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0
+	}
+	.row {
+		width: auto;
+		min-width: 0
+	}
+	.column,
+	.columns {
+		width: auto !important;
+		float: none
+	}
+	.column:last-child,
+	.columns:last-child {
+		float: none
+	}
+	[class*="column"]+[class*="column"]:last-child {
+		float: none
+	}
+	.column:before,
+	.columns:before,
+	.column:after,
+	.columns:after {
+		content: "";
+		display: table
+	}
+	.column:after,
+	.columns:after {
+		clear: both
+	}
+	.offset-by-one,
+	.offset-by-two,
+	.offset-by-three,
+	.offset-by-four,
+	.offset-by-five,
+	.offset-by-six,
+	.offset-by-seven,
+	.offset-by-eight,
+	.offset-by-nine,
+	.offset-by-ten {
+		margin-left: 0 !important
+	}
+	.push-two,
+	.push-three,
+	.push-four,
+	.push-five,
+	.push-six,
+	.push-seven,
+	.push-eight,
+	.push-nine,
+	.push-ten {
+		left: auto
+	}
+	.pull-two,
+	.pull-three,
+	.pull-four,
+	.pull-five,
+	.pull-six,
+	.pull-seven,
+	.pull-eight,
+	.pull-nine,
+	.pull-ten {
+		right: auto
+	}
+	.row .mobile-one {
+		width: 25% !important;
+		float: left;
+		padding: 0 15px
+	}
+	.row .mobile-one:last-child {
+		float: right
+	}
+	.row .mobile-one.end {
+		float: left
+	}
+	.row.collapse .mobile-one {
+		padding: 0
+	}
+	.row .mobile-two {
+		width: 50% !important;
+		float: left;
+		padding: 0 15px
+	}
+	.row .mobile-two:last-child {
+		float: right
+	}
+	.row .mobile-two.end {
+		float: left
+	}
+	.row.collapse .mobile-two {
+		padding: 0
+	}
+	.row .mobile-three {
+		width: 75% !important;
+		float: left;
+		padding: 0 15px
+	}
+	.row .mobile-three:last-child {
+		float: right
+	}
+	.row .mobile-three.end {
+		float: left
+	}
+	.row.collapse .mobile-three {
+		padding: 0
+	}
+	.row .mobile-four {
+		width: 100% !important;
+		float: left;
+		padding: 0 15px
+	}
+	.row .mobile-four:last-child {
+		float: right
+	}
+	.row .mobile-four.end {
+		float: left
+	}
+	.row.collapse .mobile-four {
+		padding: 0
+	}
+	.push-one-mobile {
+		left: 25%
+	}
+	.pull-one-mobile {
+		right: 25%
+	}
+	.push-two-mobile {
+		left: 50%
+	}
+	.pull-two-mobile {
+		right: 50%
+	}
+	.push-three-mobile {
+		left: 75%
+	}
+	.pull-three-mobile {
+		right: 75%
+	}
+	.block-grid.mobile&gt;
+	li {
+		float: none;
+		width: 100%;
+		margin-left: 0
+	}
+	.block-grid&gt;
+	li {
+		clear: none
+	}
+	.block-grid.mobile-one-up&gt;
+	li {
+		width: 100%
+	}
+	.block-grid.mobile-two-up&gt;
+	li {
+		width: 50%
+	}
+	.block-grid.mobile-two-up&gt;
+	li:nth-child(2n+1) {
+		clear: both
+	}
+	.block-grid.mobile-three-up&gt;
+	li {
+		width: 33.33333%
+	}
+	.block-grid.mobile-three-up&gt;
+	li:nth-child(3n+1) {
+		clear: both
+	}
+	.block-grid.mobile-four-up&gt;
+	li {
+		width: 25%
+	}
+	.block-grid.mobile-four-up&gt;
+	li:nth-child(4n+1) {
+		clear: both
+	}
+	.block-grid.mobile-five-up&gt;
+	li {
+		width: 20%
+	}
+	.block-grid.mobile-five-up&gt;
+	li:nth-child(5n+1) {
+		clear: both
+	}
+	.block-grid.mobile-six-up&gt;
+	li {
+		width: 16.66667%
+	}
+	.block-grid.mobile-six-up&gt;
+	li:nth-child(6n+1) {
+		clear: both
+	}
+	.block-grid.mobile-seven-up&gt;
+	li {
+		width: 14.28571%
+	}
+	.block-grid.mobile-seven-up&gt;
+	li:nth-child(7n+1) {
+		clear: both
+	}
+	.block-grid.mobile-eight-up&gt;
+	li {
+		width: 12.5%
+	}
+	.block-grid.mobile-eight-up&gt;
+	li:nth-child(8n+1) {
+		clear: both
+	}
+	.block-grid.mobile-nine-up&gt;
+	li {
+		width: 11.11111%
+	}
+	.block-grid.mobile-nine-up&gt;
+	li:nth-child(9n+1) {
+		clear: both
+	}
+	.block-grid.mobile-ten-up&gt;
+	li {
+		width: 10%
+	}
+	.block-grid.mobile-ten-up&gt;
+	li:nth-child(10n+1) {
+		clear: both
+	}
+	.block-grid.mobile-eleven-up&gt;
+	li {
+		width: 9.09091%
+	}
+	.block-grid.mobile-eleven-up&gt;
+	li:nth-child(11n+1) {
+		clear: both
+	}
+	.block-grid.mobile-twelve-up&gt;
+	li {
+		width: 8.33333%
+	}
+	.block-grid.mobile-twelve-up&gt;
+	li:nth-child(12n+1) {
+		clear: both
+	}
+	.tabs.mobile {
+		width: auto;
+		margin: 20px -20px 40px;
+		border-bottom: solid 1px #ccc;
+		height: auto;
+		margin: 20px -15px 0px -15px
+	}
+	.tabs.mobile dt,
+	.tabs.mobile li,
+	.tabs.mobile dd {
+		float: none;
+		height: auto
+	}
+	.tabs.mobile dd a,
+	.tabs.mobile li a {
+		font-size: 15px;
+		display: block;
+		width: auto;
+		height: auto;
+		padding: 18px 20px;
+		margin: 0;
+		color: #555;
+		line-height: 1;
+		border: none;
+		border-left: none;
+		border-right: none;
+		border-top: 1px solid #ccc;
+		background: #fff
+	}
+	.tabs.mobile dd a.active,
+	.tabs.mobile li a.active {
+		border: none;
+		background: #2ba6cb;
+		color: #fff;
+		margin: 0;
+		position: static;
+		top: 0;
+		height: auto
+	}
+	.tabs.mobile dd:first-child a.active,
+	.tabs.mobile li:first-child a.active {
+		margin: 0
+	}
+	.tabs.mobile+.tabs-content.contained {
+		margin-left: -15px;
+		margin-right: -15px
+	}
+	.tabs.mobile .section-title {
+		padding-left: 20px !important
+	}
+	.contained.mobile {
+		margin-bottom: 0
+	}
+	.contained.tabs.mobile dd a,
+	.contained.tabs.mobile li a {
+		padding: 18px 20px
+	}
+	.tabs.mobile+ul.contained {
+		margin-left: -20px;
+		margin-right: -20px;
+		border-width: 0 0 1px 0
+	}
+}
+
+body {
+	padding: 20px;
+	line-height: 1.7;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s
+}
+
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	color: #222;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 150%;
+	font-size: 18px;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body [hidden="hidden"],
+body [hidden],
+body [type="hidden"] {
+	display: none !important
+}
+
+.container {
+	display: block;
+	margin: 0 auto;
+	max-width: 1080px;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+
+.page-actions {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem
+}
+
+.page-actions a {
+	color: gray
+}
+
+.page-actions a:hover {
+	color: black
+}
+
+.page-toc {
+	margin-bottom: 2em
+}
+
+.page-toc ul {
+	padding-left: 1em
+}
+
+body.report {
+	margin: 0;
+	padding: 12% 10%;
+	width: auto;
+	height: auto;
+	font-size: 80%
+}
+
+body.report article.report section.module {
+	margin-bottom: 5em
+}
+
+body.report article.report p.date {
+	font-size: 0.6em;
+	color: gray;
+	float: right;
+	padding-left: 2em
+}
+
+body.report article.report h1 {
+	margin-bottom: 0.3em
+}
+
+body.report article.report h1+.byline {
+	margin-bottom: 4em
+}
+
+body.report article.report .title-line td,
+body.report article.report .title-line th {
+	padding: 2em 0 1em 0
+}
+
+body.report article.report .title-line h3 {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 1.3em
+}
+
+body.report article.report .prio-high .risk-title {
+	color: red
+}
+
+body.report article.report .prio-high td:before {
+	background-color: red
+}
+
+body.report article.report .prio-medium .risk-title {
+	color: orange
+}
+
+body.report article.report .prio-medium td:before {
+	background-color: orange
+}
+
+body.report article.report .prio-low .risk-title {
+	color: green
+}
+
+body.report article.report .prio-low td:before {
+	background-color: green
+}
+
+body.report article.report table {
+	border-collapse: collapse
+}
+
+body.report article.report table th,
+body.report article.report table td {
+	border-bottom: 1px solid silver;
+	padding: 0.5em 1em 0.5em 0
+}
+
+body.report article.report table td {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	position: relative
+}
+
+body.report article.report table td.start,
+body.report article.report table td.ongoing,
+body.report article.report table td.end,
+body.report article.report table td.start-end {
+	color: transparent
+}
+
+body.report article.report table td.start:before,
+body.report article.report table td.ongoing:before,
+body.report article.report table td.end:before,
+body.report article.report table td.start-end:before {
+	display: block;
+	position: absolute;
+	content: ' ';
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%)
+}
+
+body.report article.report table td.ongoing:before {
+	width: 100%;
+	left: 0;
+	right: 0
+}
+
+body.report article.report table td.start:before {
+	width: 73%;
+	left: auto;
+	right: 0;
+	border-radius: 10px 0 0 10px
+}
+
+body.report article.report table td.end:before {
+	width: 73%;
+	left: 0;
+	right: auto;
+	border-radius: 0 10px 10px 0
+}
+
+body.report article.report table td.start-end:before {
+	width: 20px;
+	left: auto;
+	right: 50%;
+	margin-right: -10px;
+	border-radius: 50%
+}
+
+body.report article.report table thead th {
+	text-align: center
+}
+
+body.report article.report table tbody td {
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3em
+}
+
+body.report article.report table tbody td:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.06)
+}
+
+body.report article.report .risk-title {
+	margin-bottom: 0;
+	font-weight: bold
+}
+
+body.report article.report .description {
+	font-weight: normal;
+	margin-bottom: 0
+}
+
+table {
+	width: 100%;
+	font-size: 0.8em
+}
+
+table td.actions {
+	text-align: right
+}
+
+table td.actions form {
+	display: inline
+}
+
+table td.actions a,
+table td.actions button {
+	color: #666
+}
+
+table th,
+table td {
+	border-bottom: 1px solid #0081be;
+	padding: 0.2em 0.8em;
+	line-height: 1.5
+}
+
+table thead th,
+table thead td {
+	vertical-align: bottom;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background: white
+}
+
+table tbody tr td,
+table tbody tr th {
+	vertical-align: top
+}
+
+table tbody tr:first-child th {
+	padding-top: 1.5em;
+	font-style: italic
+}
+
+@page {
+	size: A4 portrait;
+	margin: 0.5cm 0.5cm 2cm 0.5cm;
+	@bottom-right {
+		content: "${view/label_page} " counter(page) " ${view/label_page_of} " counter(pages);
+		font-size: 8pt;
+		font-family: sans-serif;
+	}
+	@bottom-left {
+		font-size: 8pt;
+		content: flow(footer);
+		text-align: left;
+		font-family: sans-serif;
+	}
+}
+
+div.print-footer {
+	flow: static(footer);
+}
+
+html {
+	height: initial;
+	width: auto;
+}
+    </style>
+  </head>
+
+  <body class="report" id="body">
+
+    <article class="pat-rich report"
+             tal:define="
+               session_title view/session_title;
+             "
+    >
+      <p class="date">
+                ${view/date}
+      </p>
+      <h1>${session_title}</h1>
+      <p class="byline"
+         i18n:translate=""
+      >Maatregelen ge&iuml;mplementeerd in de komende 3 maanden</p>
+
+      <section class="module"
+               tal:repeat="module view/modules"
+      >
+        <h2 class="module-name">
+                    ${module/number} ${module/name}
+        </h2>
+        <table class="risk-measures-plan"
+               border="1"
+        >
+          <thead>
+            <tr>
+              <th class="legend"></th>
+              <th tal:repeat="month view/months"
+                  i18n:domain="plone"
+                  i18n:translate=""
+              >
+                                ${month}
+              </th>
+            </tr>
+          </thead>
+          <tbody class="prio-high"
+                 tal:condition="module/risks/high"
+          >
+            <tr class="title-line">
+              <th colspan="4">
+                <h3 i18n:translate="heading_high_prio_risks">
+                                    High priority risks
+                </h3>
+              </th>
+            </tr>
+            <tr class="risk-row"
+                tal:repeat="risk module/risks/high"
+            >
+              <metal:macro define-macro="risk-row">
+                <th>
+                  <h4 class="risk-title">
+                                    ${risk/title}
+                  </h4>
+                  <p class="description">
+                                    ${risk/description}
+                  </p>
+                </th>
+                <tal:block tal:repeat="month risk/classes">
+                  <td class="${month}"
+                      tal:condition="month"
+                  >
+                                &bull;
+                  </td>
+                  <td tal:condition="not:month">
+                  </td>
+                </tal:block>
+              </metal:macro>
+            </tr>
+          </tbody>
+          <tbody class="prio-medium"
+                 tal:condition="module/risks/medium"
+          >
+            <tr class="title-line">
+              <th colspan="4">
+                <h3 i18n:translate="heading_medium_prio_risks">
+                                    Medium priority risks
+                </h3>
+              </th>
+            </tr>
+            <tr class="risk-row"
+                tal:repeat="risk module/risks/medium"
+            >
+              <metal:macro use-macro="view/risk-row" />
+            </tr>
+          </tbody>
+          <tbody class="prio-low"
+                 tal:condition="module/risks/low"
+          >
+            <tr class="title-line">
+              <th colspan="4">
+                <h3 i18n:translate="heading_low_prio_risks">
+                                    Low priority risks
+                </h3>
+              </th>
+            </tr>
+            <tr class="risk-row"
+                tal:repeat="risk module/risks/low"
+            >
+              <metal:macro use-macro="view/risk-row" />
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

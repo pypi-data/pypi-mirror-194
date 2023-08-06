@@ -1,0 +1,37 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+           xmlns:i18n="http://namespaces.zope.org/i18n"
+           i18n_domain="tno.euphorie">
+
+
+  <i18n:registerTranslations directory="locales" />
+  <include package="plone.browserlayer" />
+
+  <include package=".content" />
+  <include package=".client" />
+
+  <include package=".upgrade" />
+  <include package=".nuplone" />
+
+  <browser:resourceDirectory
+    name="tno.euphorie"
+    directory="assets"
+    />
+
+  <interface
+    interface=".interfaces.ITnoContentSkinLayer"
+    type="zope.publisher.interfaces.browser.IBrowserSkinType"
+    name="tno.euphorie"
+    />
+
+  <genericsetup:registerProfile
+       name="default"
+       title="TNO/Euphorie website"
+       directory="profiles/default"
+       description="Setup a TNO/Euphorie website"
+       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+
+</configure>
