@@ -1,0 +1,14 @@
+osc_sdk_python/VERSION,sha256=2_gdN1QmT23OIkRNVR7zCRPDlZouzHhKeGFi3waNVDU,7
+osc_sdk_python/__init__.py,sha256=0ZkOwp8JiQqh6aYsbTT3gITpXQIR-qiv7fZRQe4QRgA,586
+osc_sdk_python/authentication.py,sha256=HFoKiBuzCMAvGBB-7upyBbbpxuzUofpbyTT2f7v2EFQ,6184
+osc_sdk_python/call.py,sha256=99iO8lZKak2YrrbXnoEAnG6fT9_moh1cYlnDggg10gQ,2105
+osc_sdk_python/credentials.py,sha256=IhbyooDMfRWArRaPgtA90Y-A-f2Mb_OtIh99RUO_hOs,3432
+osc_sdk_python/outscale_gateway.py,sha256=PkeS3kd-nHes3eqQN5YoyvkdQ8hP14ZZHvlm4QZ6DWg,8477
+osc_sdk_python/requester.py,sha256=einjUBejlcrL3p9Bsp6dgijO6QFWbuIKJlhxmCIXMc4,536
+osc_sdk_python/osc-api/outscale.yaml,sha256=fhPxnfOjNX0R9baAVGYp13hezyoWbHUmLh7N-6m0N-s,508025
+osc_sdk_python/resources/gateway_errors.yaml,sha256=7RbhfR_u_VCN9gln-_OxIoOve3nI31M94glycMb8b3M,24496
+osc_sdk_python-0.24.0.dist-info/LICENSE,sha256=eAtKefmWuj4G96ORsmNbY1PqGZj2sx5SkgiNYL5LocU,1512
+osc_sdk_python-0.24.0.dist-info/METADATA,sha256=KYnSUk8rdk1p2OCUMncy4GWcp1pIauc1O3cNJtyer78,4651
+osc_sdk_python-0.24.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+osc_sdk_python-0.24.0.dist-info/top_level.txt,sha256=0uUGZTyZGub6gnuMX2Ry1tvHgA0-B4esl9JgQopl5og,15
+osc_sdk_python-0.24.0.dist-info/RECORD,,
