@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: SlyYTAAPI
+Version: 0.2.0
+Summary: No-boilerplate, async and typed YouTube Analytics API access.
+Author: Dunkyl 🔣🔣
+License: MIT License
+        
+        Copyright (c) 2021 dunkyl
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://docs.dunkyl.net/SlyYTAAPI-Python/
+Project-URL: Repository, https://github.com/dunkyl/SlyYTAAPI-Python
+Project-URL: Documentation, https://docs.dunkyl.net/SlyYTAAPI-Python/
+Project-URL: Bug Tracker, https://github.com/dunkyl/SlyYTAAPI-Python/issues
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SlyAPI (>=0.4.3)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: sphinxcontrib-trio ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinxext-opengraph ; extra == 'dev'
+
+# ![sly logo](https://raw.githubusercontent.com/dunkyl/SlyMeta/main/sly%20logo.svg) Sly YTAAPI for Python
+
+<!-- elevator begin -->
+
+> 🐍 For Python 3.10+
+
+## No boilerplate, *async* and *typed* Youtube Analytics API access. 😋
+
+```shell
+pip install slyytaapi
+```
+
+This library does not have full coverage.
+Currently, the following topics are supported:
+
+* Targeted queries for channels and videos
+
+You can directly grant user tokens using the command line, covering the whole OAuth 2 grant process.
+
+<!-- elevator end -->
+
+---
+
+Example usage:
+
+```python
+import asyncio
+from datetime import date
+from SlyYTAAPI import *
+
+async def main():
+
+    auth = OAuth2('test/app.json', 'test/user.json')
+    analytics = YouTubeAnalytics('UCxATMl-Cv8BEF0FtZMRvRgA', auth)
+
+    result = await analytics.query(
+        since=date(2020, 1, 1),
+        end_date=date(2021, 1, 1),
+        metrics=Metrics.SubsGained+Metrics.SubsLost+Metrics.WatchTime,
+        dims=Dimensions.Day
+        )
+
+    result.saveCSV('test/test.csv')
+
+asyncio.run(main())
+```
+
+---
+
+Example CLI usage for getting authorized:
+
+```sh
+# WINDOWS
+py -m SlyYTAAPI grant
+# MacOS or Linux
+python3 -m SlyYTAAPI grant
+```
+
+Granting credentials requires a Google Cloud Console account and JSON file.
+Please see https://docs.dunkyl.net/SlyAPI-Python/tutorial/oauth2.html for more information.
+
