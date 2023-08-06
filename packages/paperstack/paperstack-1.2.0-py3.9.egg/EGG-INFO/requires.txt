@@ -1,0 +1,7 @@
+requests
+bibtexparser
+urwid
+pyperclip
+pymupdf
+beautifulsoup4
+citeproc-py
