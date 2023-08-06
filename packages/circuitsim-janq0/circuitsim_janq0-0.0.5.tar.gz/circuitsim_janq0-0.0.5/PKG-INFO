@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: circuitsim_janq0
+Version: 0.0.5
+Summary: A small example package
+Author-email: janq0 <janq0@tuta.io>
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: bidict
+Requires-Dist: numpy
+Requires-Dist: si-prefix
+Requires-Dist: tabulate
+Description-Content-Type: text/markdown
+
+# circuitsim
+
+A simple CLI electronic circuit simulator for AC and DC linear circuits.
+
+## Installation
+
+```shell
+mkdir circuitsim-janq0
+cd circuitsim-janq0
+python -m venv venv
+source venv/bin/activate
+pip install circuitsim_janq0
+```
+
+## Usage
+
+```shell
+circuitsim -h
+```
