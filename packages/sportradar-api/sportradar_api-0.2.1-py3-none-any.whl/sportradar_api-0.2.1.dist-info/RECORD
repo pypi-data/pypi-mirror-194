@@ -1,0 +1,11 @@
+sportradar_api/__init__.py,sha256=umoyxsPP0fLP9FTv0lL35Iw84R6U9B9v0knyhyGybqU,187
+sportradar_api/main.py,sha256=tZN9AyD_xhQS8s93fc4qGjyYlCWhmwGcnuFyWQhKm_Q,3398
+sportradar_api/soccer_extended/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sportradar_api/soccer_extended/soccer_extended.py,sha256=1jBzZrFihmrlnXbXsmwmKoJt74yqULy7y6vJZvCD2-g,1875
+sportradar_api/soccer_extended/soccer_extended_pandas.py,sha256=cKG3iU1vGhQsEmOZtCoM4Xka5M8FC9t5OyVPqK68usU,4291
+sportradar_api/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sportradar_api/utils/utils.py,sha256=N8frICDHpUCetpwKCsHQc5LjsnN2GYfCfXT5PN2jI8E,856
+sportradar_api-0.2.1.dist-info/LICENSE,sha256=hYj--nzqW11y-Z1aR22QzTzvIezoJ-aVoc8HeMp-lFQ,1074
+sportradar_api-0.2.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sportradar_api-0.2.1.dist-info/METADATA,sha256=aJuoyEH6ia3iC7FhIA1lHESiF1RYs37vOhyyt8ptBGw,1137
+sportradar_api-0.2.1.dist-info/RECORD,,
