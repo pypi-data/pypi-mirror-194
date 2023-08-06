@@ -1,0 +1,13 @@
+valorantClientAPI/__init__.py,sha256=J0c3n9d8NLtzD3Rm5iKrGYPhh8nzzOc4-RJVfRCgCYo,75
+valorantClientAPI/client.py,sha256=QViepiWgUT4_UG5eVNPjcSBT6VHi6kHIJMiATYhcGW4,28989
+valorantClientAPI/riot_auth.py,sha256=ImVaFL8ZSLNKDHBti6baz1IvJZD52AtWXMzO4erI6vE,12868
+valorantClientAPI/response/core_game.py,sha256=8dcEiNC-0uRwd5AkAL84AXZW06ny4cvAT9Q8pzDLD5o,2136
+valorantClientAPI/response/mmr.py,sha256=-V6rWNjDueF8-lsBbQXZjBhH-OGPWGJYifWtYxHKRlA,3736
+valorantClientAPI/response/pre_game.py,sha256=hkE75S0h5LZLN6318Qe8na0UZaekHREXvtD-q3NRgpU,1613
+valorantClientAPI/utils/helper.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+valorantClientAPI/utils/limiter.py,sha256=D6aEmtbWHpaZgWuNvwsxI75eGWgUoSe7Qra1Qqioq0g,1124
+valorantClientAPI-0.1.9.dist-info/LICENSE,sha256=q94Lf2eKRUXHbh8CYFacza1FdUzCH6iN7lpQoN0Nu_Y,1084
+valorantClientAPI-0.1.9.dist-info/METADATA,sha256=RrHaZZETQkZrNuADdA04uIcFeOPbOjEnvTe8TQojfIY,2048
+valorantClientAPI-0.1.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+valorantClientAPI-0.1.9.dist-info/top_level.txt,sha256=6YXuiGzd4c9wUaex9_SVuzCE_kuIcaIXHe_NAjulixo,18
+valorantClientAPI-0.1.9.dist-info/RECORD,,
