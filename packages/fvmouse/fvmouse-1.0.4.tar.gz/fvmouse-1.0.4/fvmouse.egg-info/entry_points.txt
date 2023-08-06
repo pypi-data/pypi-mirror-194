@@ -1,0 +1,3 @@
+[console_scripts]
+fvmouse = detection.full_detection:main
+

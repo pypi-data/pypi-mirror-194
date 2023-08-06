@@ -1,0 +1,14 @@
+README.md
+setup.py
+detection/__init__.py
+detection/face_detection.py
+detection/full_detection.py
+detection/voice_detection.py
+detection/data/optimized_model.eim
+detection/data/shape_predictor_68_face_landmarks.dat
+fvmouse.egg-info/PKG-INFO
+fvmouse.egg-info/SOURCES.txt
+fvmouse.egg-info/dependency_links.txt
+fvmouse.egg-info/entry_points.txt
+fvmouse.egg-info/requires.txt
+fvmouse.egg-info/top_level.txt
