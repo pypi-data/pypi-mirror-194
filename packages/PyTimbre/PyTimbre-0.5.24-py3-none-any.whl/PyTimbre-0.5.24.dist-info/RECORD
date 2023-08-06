@@ -1,0 +1,16 @@
+pytimbre/__init__.py,sha256=iucfsRejfTvwCRERwkNvQjV4wi9GIhlAMDh1d50cXLs,75
+pytimbre/waveform.py,sha256=72nZOQg0EPU3BVi1rmm8K-owPldMuo1VuAyQ-hnDul4,75383
+pytimbre/audio_files/__init__.py,sha256=q9zPcTLuETEEBZQvQRyR7Mbp6-EdhVGJyz7rdp6XF6Y,69
+pytimbre/audio_files/ansi_standard_formatted_files.py,sha256=aLWCDFH_QDswvSCukUG6YVFkCTtyqAtjFQF-t80CGRI,23103
+pytimbre/audio_files/wavefile.py,sha256=eurwTepaYlRGz7aunnNz0JafSGa-gCVPi9vA26LTh6o,69380
+pytimbre/spectral/__init__.py,sha256=6lSfsS6NJqYd2V7ZNREV7tH_NdjgF3_REWhykZ-4aZ8,150
+pytimbre/spectral/acoustic_weights.py,sha256=Z3aLh5kCYsvIKrhXzftPcJznvkLVBnHz-tEEPng1mzE,16013
+pytimbre/spectral/fractional_octave_band.py,sha256=VZPbpWYiJl5PqyMiqKzTGvysiGfhlXbhcTZ4oQKfZIk,15571
+pytimbre/spectral/spectra.py,sha256=oWiHF8o9frA-jyrEC1MYyUYxB7SEzDe7xSD0M74qK0c,38974
+pytimbre/spectral/spectrogram.py,sha256=1OwHEooD5AoxNxvn-D1ZHQU7_rMnqZyc46mmU0Y8gWA,5989
+pytimbre/spectral/time_histories.py,sha256=_0xLH0ejLHRkHFpDQ1iO4mJgWDYc9eyNArbn-pPYgQs,26136
+PyTimbre-0.5.24.dist-info/LICENSE.txt,sha256=sg94MoAYSpss0PUcURDc5zaHoHJDzAytulujYHKcyXw,1106
+PyTimbre-0.5.24.dist-info/METADATA,sha256=d9xD2OKOcs5FJc5OdfGmaYn7jPpRsWiGFcTeNK1VjOY,10569
+PyTimbre-0.5.24.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyTimbre-0.5.24.dist-info/top_level.txt,sha256=ZW-pQQJItPnVAdkRb4upGtQa40naZzcTEBvlhRyvNRs,9
+PyTimbre-0.5.24.dist-info/RECORD,,
