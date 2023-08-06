@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+colors_cli.egg-info/PKG-INFO
+colors_cli.egg-info/SOURCES.txt
+colors_cli.egg-info/dependency_links.txt
+colors_cli.egg-info/not-zip-safe
+colors_cli.egg-info/top_level.txt
+src/__init__.py
