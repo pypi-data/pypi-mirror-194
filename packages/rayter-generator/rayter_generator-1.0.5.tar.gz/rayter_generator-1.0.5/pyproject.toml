@@ -1,0 +1,21 @@
+[project]
+name = "rayter_generator"
+version = "1.0.5"
+readme = "README.md"
+
+dependencies = [
+    "rayter",
+    "jinja2",
+    "tomli",
+]
+
+[project.scripts]
+rayter-generate-website = "rayter_generator.main:main"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["rayter_generator"]
+
+[tool.setuptools.package-data]
+rayter_generator = ["static/**", "templates/**"]
+
