@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/linkedinputs/__init__.py
+src/linkedinputs/input_types.py
+src/linkedinputs/linkedinputs.py
+src/linkedinputs.egg-info/PKG-INFO
+src/linkedinputs.egg-info/SOURCES.txt
+src/linkedinputs.egg-info/dependency_links.txt
+src/linkedinputs.egg-info/requires.txt
+src/linkedinputs.egg-info/top_level.txt
