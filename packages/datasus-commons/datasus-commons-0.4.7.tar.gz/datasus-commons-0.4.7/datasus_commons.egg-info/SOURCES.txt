@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+datasus_commons.egg-info/PKG-INFO
+datasus_commons.egg-info/SOURCES.txt
+datasus_commons.egg-info/dependency_links.txt
+datasus_commons.egg-info/top_level.txt
+datasuscommons/__init__.py
+datasuscommons/commons.py
+datasuscommons/converter.py
+datasuscommons/copier.py
+datasuscommons/ftpdownload.py
+datasuscommons/ftpinfo.py
+datasuscommons/ftpinfocollect.py
