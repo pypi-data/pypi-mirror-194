@@ -1,0 +1,145 @@
+load("@rules_python//python:versions.bzl", "gen_python_config_settings")
+load("@com_github_bazelbuild_buildtools//buildifier:def.bzl", "buildifier")
+load("@pybind11_bazel//:build_defs.bzl", "pybind_extension")
+load("@rules_cc//cc:defs.bzl", "cc_library")
+load("@bazel_skylib//rules:write_file.bzl", "write_file")
+load("@rules_python//python:packaging.bzl", "py_wheel")
+load("@com_github_bentoml_plugins//rules/py:packaging.bzl", "py_package")
+load("@python_abi//:abi.bzl", "python_abi")
+
+package(default_visibility = ["//visibility:public"])
+
+gen_python_config_settings()
+
+filegroup(
+    name = "pyproject",
+    srcs = ["pyproject.toml"],
+)
+
+exports_files([
+    "LICENSE",
+    "README.md",
+    "README.rst",
+])
+
+buildifier(
+    name = "buildifier",
+)
+
+cc_library(
+    name = "context",
+    srcs = [
+        "//src/whispercpp:context.cc",
+        "//src/whispercpp:context.h",
+    ],
+    hdrs = [
+        "//src/whispercpp:context.h",
+        "@com_github_ggerganov_whisper//:whisper.h",
+    ],
+    defines = ["BAZEL_BUILD"],
+    deps = [
+        "@com_github_ggerganov_whisper//:whisper",
+        "@pybind11",
+    ],
+)
+
+pybind_extension(
+    name = "api",
+    srcs = [
+        "//src/whispercpp:api_export.cc",
+        "//src/whispercpp:context.h",
+        "@com_github_ggerganov_whisper//:whisper.h",
+    ],
+    copts = [
+        "-O3",
+        "-pthread",
+        "-std=c++11",
+        "-fPIC",
+        "-Wall",
+    ],
+    defines = ["BAZEL_BUILD"],
+    deps = [":context"],
+)
+
+write_file(
+    name = "gen_extensions",
+    out = "extensions.sh",
+    content = [
+        "#!/usr/bin/env bash",
+        "cd $BUILD_WORKSPACE_DIRECTORY",
+        "cp -fv bazel-bin/api.so src/whispercpp/api.so",
+    ],
+)
+
+sh_binary(
+    name = "extensions",
+    srcs = [":gen_extensions"],
+    data = [":api.so"],
+)
+
+# public exports
+alias(
+    name = "whispercpp_lib",
+    actual = "//src/whispercpp:whispercpp_lib",
+)
+
+py_package(
+    name = "whispercpp_pkg",
+    layout = "src",
+    packages = ["src.whispercpp"],
+    deps = [":whispercpp_lib"],
+)
+
+config_setting(
+    name = "ci",
+    values = {
+        "define": "ci=true",
+        "compilation_mode": "dbg",
+    },
+)
+
+py_wheel(
+    name = "whispercpp_wheel",
+    abi = python_abi(),
+    author = "Aaron Pham",
+    author_email = "aarnphm@bentoml.com",
+    classifiers = [
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: POSIX :: Linux",
+        "Topic :: Scientific/Engineering",
+        "Topic :: Scientific/Engineering :: Mathematics",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Software Development",
+        "Topic :: Software Development :: Libraries",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+    ],
+    description_file = "README.rst",
+    distribution = "whispercpp",
+    homepage = "https://github.com/aarnphm/whispercpp",
+    license = "Apache 2.0",
+    platform = select({
+        "//:aarch64-apple-darwin": "macosx_11_0_arm64",
+        "//:aarch64-unknown-linux-gnu": "manylinux2014_aarch64",
+        "//:x86_64-apple-darwin": "macosx_11_0_x86_64",  # this is typically macosx_10_9_x86_64?
+        "//:x86_64-pc-windows-msvc": "win_amd64",
+        "//:x86_64-unknown-linux-gnu": "manylinux2014_x86_64",
+    }),
+    python_tag = python_abi(),
+    strip_path_prefixes = ["src"],
+    twine = "@pypi_twine//:pkg",
+    # NOTE: This can be replaced by building with --stamp --embed_label=1.2.3
+    version = select({
+        "//conditions:default": "0.0.8.dev0",
+        ":ci": "{BUILD_EMBED_LABEL}",
+    }),
+    visibility = ["//:__subpackages__"],
+    deps = [":whispercpp_pkg"],
+)
