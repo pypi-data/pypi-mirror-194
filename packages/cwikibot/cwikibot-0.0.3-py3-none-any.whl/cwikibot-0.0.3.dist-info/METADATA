@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: cwikibot
+Version: 0.0.3
+Summary: simple mediawiki bot
+Home-page: https://gitlab.com/caeruleum/cwikibot
+Author: caeruleum
+Author-email: ceruleanxyz@gmail.com
+License: MIT
+Project-URL: Documentation, https://gitlab.com/caeruleum/cwikibot
+Project-URL: Source, https://gitlab.com/caeruleum/cwikibot
+Platform: any
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: typing-extensions
+Requires-Dist: python-dateutil
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/cwikibot.svg)](https://pypi.python.org/pypi/cwikibot)
+[![PyPI version](https://img.shields.io/pypi/v/cwikibot.svg)](https://pypi.python.org/pypi/cwikibot)
+
+# cerulean wikibot
+
+light bot package for mediawiki
+
+## Getting started
+
+## Installation
+### with pip
+just type pip
+```
+pip install cwikibot
+```
+
+### with git
+for developer, forking
+```
+git clone https://gitlab.com/caeruleum/cwikibot.git
+```
+
+## License
+MIT License
