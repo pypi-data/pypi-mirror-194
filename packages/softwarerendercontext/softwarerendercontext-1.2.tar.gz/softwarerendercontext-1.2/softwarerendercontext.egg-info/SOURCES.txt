@@ -1,0 +1,7 @@
+pythonsoftwarerendercontext.cpp
+setup.py
+softwarerendercontext.egg-info/PKG-INFO
+softwarerendercontext.egg-info/SOURCES.txt
+softwarerendercontext.egg-info/dependency_links.txt
+softwarerendercontext.egg-info/not-zip-safe
+softwarerendercontext.egg-info/top_level.txt
