@@ -1,0 +1,95 @@
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+
+stages:
+  - static analysis
+  - test
+  - publish
+
+.debug_script: &debug_script
+  - |
+    echo "${CI_JOB_NAME}"
+    echo "${CI_COMMIT_BRANCH}" "${CI_COMMIT_SHORT_SHA}" "${CI_COMMIT_TAG}"
+    python --version
+    ls -lAh
+
+.tox_template: &tox_template
+  before_script:
+    - *debug_script
+    - python -m pip install --upgrade tox
+  script:
+    - python -m tox -e "${CI_JOB_NAME}"
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_TAG
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - ".gitlab-ci.yml"
+        - "src/**/*.py"
+        - "tests/**/*.py"
+
+.static-analysis: &static-analysis
+  stage: static analysis
+  image: python:3.11
+  <<: *tox_template
+
+.test: &test
+  stage: test
+  <<: *tox_template
+  coverage: '/^TOTAL.*\s+(\d+\%)$/'
+
+black:
+  <<: *static-analysis
+
+flake8:
+  <<: *static-analysis
+
+isort:
+  <<: *static-analysis
+
+mypy:
+  <<: *static-analysis
+
+py37:
+  image: python:3.7
+  <<: *test
+
+py38:
+  image: python:3.8
+  <<: *test
+
+py39:
+  image: python:3.9
+  <<: *test
+
+py310:
+  image: python:3.10
+  <<: *test
+
+py311:
+  image: python:3.11
+  <<: *test
+
+pypi:
+  image: python:latest
+  stage: publish
+  artifacts:
+    paths:
+      - dist/*
+    expire_in: 1 week
+  variables:
+    TWINE_NON_INTERACTIVE: 1
+    TWINE_USERNAME: __token__
+    TWINE_PASSWORD: $PYPI_TOKEN
+  before_script:
+    - *debug_script
+    - python -m pip install --upgrade build twine
+  script:
+    - python -m build
+    - python -m twine upload dist/*
+  rules:
+    - if: $CI_COMMIT_TAG

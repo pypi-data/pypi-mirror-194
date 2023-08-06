@@ -1,0 +1,106 @@
+[project]
+name = "boto_endpoint_url_shim"
+description = "A SHIM to allow boto3 and botocore endpoint URL control from env var and config file."
+authors = [{name = "Louis Cochen", email = "louis.cochen@protonmail.ch"}]
+maintainers = [{name = "Louis Cochen", email = "louis.cochen@protonmail.ch"}]
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+readme = "README.md"
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Developers",
+	"Intended Audience :: System Administrators",
+	"License :: OSI Approved :: Apache Software License",
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/ljmc/boto-endpoint-url-shim"
+"Bug Tracker" = "https://gitlab.com/ljmc/boto-endpoint-url-shim/-/issues"
+
+[build-system]
+requires = ["setuptools >= 61.0.0", "setuptools_scm[toml] >= 6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 79
+
+[tool.coverage.run]
+source = ["boto_endpoint_url_shim"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+	"pragma: no cover",
+	"if (typing.)?TYPE_CHECKING:",
+]
+fail_under = 100
+show_missing = true
+
+[tool.isort]
+line_length = 79
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = "tests"
+
+[tool.setuptools_scm]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = black,flake8,isort,mypy,py37,py38,py39,py310,py311
+isolated_build = true
+
+[testenv:black]
+no_package = true
+skip_install = true
+deps =
+	black
+commands =
+	black --check --diff src tests
+
+[testenv:flake8]
+no_package = true
+skip_install = true
+deps =
+	flake8
+commands =
+	flake8 src tests
+
+[testenv:isort]
+no_package = true
+skip_install = true
+deps =
+	isort
+commands =
+	isort --check --diff src tests
+
+[testenv:mypy]
+no_package = true
+skip_install = true
+deps =
+	mypy
+commands =
+	mypy --install-types --non-interactive src
+
+[testenv]
+deps =
+	boto3
+	botocore
+	pytest
+	pytest-cov
+	pytest-mock
+commands =
+	pytest --cov -s
+"""
