@@ -1,0 +1,177 @@
+:root {
+    --scenes-color: rgba(129, 68, 129, 1);
+}
+
+.scene-cell .CodeMirror:after {
+    height: 10px;
+    width: 10px;
+    display: block;
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: var(--scenes-color);
+}
+
+.scene-cell .jp-InputPrompt {
+    border-right-style: solid;
+    border-right-color: var(--scenes-color);
+    border-right-width: 5px;
+}
+
+.scenes-ScenesSidebar {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: var(--jp-layout-color1);
+    color: var(--jp-ui-font-color1);
+    font-size: var(--jp-ui-font-size1);
+    height: 100%;
+  }
+
+.scenes-ScenesSidebar .scenes-Header {
+    flex: 0 0 auto;
+    margin: 0px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    font-size: var(--jp-ui-font-size0);
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: var(--jp-border-width) solid var(--jp-border-color2);
+}
+
+/* *****************************************************************
+ * Toolbar
+ * *****************************************************************/
+
+ .scenes-Toolbar {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 4px;
+    margin: 0px;
+    border-bottom: var(--jp-border-width) solid var(--jp-border-color2);
+}
+
+.scenes-ToolbarButton {
+    height: 24px;
+    width: 24px;
+    background-color: inherit;
+
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    border: none;
+    margin: 0px;
+    outline: none;
+    padding: 2px;
+}
+
+.scenes-ToolbarButton:hover {
+    background-color: var(--jp-layout-color2);
+    cursor: pointer;
+}
+
+
+/* *****************************************************************
+ * Scene List
+ * *****************************************************************/
+
+.scenes-ScenesSidebar .scenes-SceneItem {
+    padding: 7px;
+    margin: 5px;
+    height: 28px;
+    background: var(--jp-layout-color2);
+    border-style: solid;
+    border-color: var(--jp-layout-color2);
+
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.scenes-ScenesSidebar .scenes-SceneItem:hover {
+    border-style: outset;
+    cursor: pointer;
+}
+
+.scenes-active {
+    background: var(--jp-layout-color3);
+    font-weight: bold;
+}
+
+/* **** Buttons ***************** */
+
+.scenes-ItemButton {
+    height: 26px;
+    width: 26px;
+    background-color: inherit;
+    border-style: solid;
+    border-color: var(--jp-layout-color2);
+
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0px;
+    outline: none;
+    padding: 2px;
+}
+
+.scenes-ItemButton:hover  {
+    border-style: outset;
+    cursor: pointer;
+}
+
+.scenes-ItemButton:hover:active {
+    border-style: inset;
+    cursor: pointer;
+}
+
+/* **** Init button ************* */
+
+.scenes-InitSceneButton {
+    border-radius: 8px;
+    margin: 0px;
+    outline: none;
+    display: inline-block;
+
+    color: var(--jp-ui-font-color3);
+    border-color: var(--jp-ui-font-color3);
+    border-style: solid;
+    background-color: inherit;
+}
+
+.scenes-InitSceneButton:hover {
+    color: var(--jp-ui-font-color1);
+    border-color: var(--jp-ui-font-color1);
+    border-style: outset;
+    cursor: pointer;
+}
+
+.scenes-InitSceneButtonActive {
+    border-radius: 8px;
+    color: var(--scenes-color);
+    border-color: var(--scenes-color);
+    float: right;
+    border-style: solid;
+    background-color: inherit;
+    border-width: 2px;
+}
+
+.scenes-InitSceneButtonActive:hover {
+    border-style: outset;
+    cursor: pointer;
+}
+
+/* **** Various elements ******** */
+.scenes-SceneItemSpacer {
+    flex-grow: 1;
+    flex-shrink: 1;
+}  
+.scenes-ItemText {
+    padding-left: 6px;
+}

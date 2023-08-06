@@ -1,0 +1,14 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "Scenes",
+  "type": "object",
+  "properties": {
+    "legacyInit": {
+      "title": "Activate Legacy Init Cells",
+      "description": "Setup a legacy init scene if a notebook with active initialization cells from jupyter notebook is encountered.",
+      "type": "boolean",
+      "default": false
+      }
+    },
+  "additionalProperties": false
+}
