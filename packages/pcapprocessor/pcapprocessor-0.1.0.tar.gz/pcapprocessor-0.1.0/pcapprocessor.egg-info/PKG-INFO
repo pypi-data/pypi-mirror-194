@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pcapprocessor
+Version: 0.1.0
+Summary: A simple PCAP processor
+Home-page: UNKNOWN
+Author: Siddharth Gangadhar, Truc Anh N Nguyen, Santosh Gondi
+Author-email: lordlabakdas.code@gmail.com
+Maintainer: Siddharth Gangadhar
+Maintainer-email: lordlabakdas.code@gmail.com
+License: UNKNOWN
+Keywords: pcap,python,network,security,metrics,analysis
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
