@@ -1,0 +1,8 @@
+aiohttp-retry
+asyncio
+google_cloud_bigquery
+pandas
+pyarrow
+firebase-admin
+google-cloud-secret-manager
+google-cloud-pubsub
