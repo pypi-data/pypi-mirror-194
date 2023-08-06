@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nucliadb-protos
+Version: 0.0.0.post2
+Summary: protos for nucliadb
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: protobuf
+Requires-Dist: grpcio (>=1.44.0)
+Requires-Dist: grpcio-tools (>=1.44.0)
+Requires-Dist: mypy-protobuf (>=3.2.0)
+
+NucliaDB Protobuf definition
+----------------------------
+
+NucliaDB generated Protobuf types.
+
