@@ -1,0 +1,77 @@
+
+columns-use = ['SystemTov',
+               'Latitude', 'Longitude','AltitudeAboveEllipsoid',
+               'StdvNED[0]', 'StdvNED[1]', 'StdvNED[2]',
+               'VelocityNED[0]', 'VelocityNED[1]', 'VelocityNED[2]',
+               'VelocityStdvNED[0]', 'VelocityStdvNED[1]', 'VelocityStdvNED[2]',
+               'EulerAttitude[0]', 'EulerAttitude[1]', 'EulerAttitude[2]',
+               'EulerAttitudeStdv[0]', 'EulerAttitudeStdv[1]', 'EulerAttitudeStdv[2]',
+               'InsGnssBIT.InsMode',
+               'DeltaTheta[0]', 'DeltaTheta[1]', 'DeltaTheta[2]',
+               'DeltaVelocity[0]', 'DeltaVelocity[1]', 'DeltaVelocity[2]',
+               'GnssLatitude', 'GnssLongitude', 'GnssAltitudeAboveEllipsoid',
+               'GnssVelocityN', 'GnssVelocityE', 'GnssVelocityD',
+               'GnssStdvLat', 'GnssStdvLon', 'GnssStdvAlt',
+               'GnssStdvN', 'GnssStdvE', 'GnssStdvD',
+               'GnssRxClkBias'
+               ]
+
+[drop-rows-where]
+"SystemTov" = [-1.0]
+
+[keep-rows-where]
+"InsGnssBIT.InsMode" = [4]
+
+[columns-round-decimals]
+# Round time to 0.01 to align GNSS data to closest row.
+"SystemTov" = 2
+
+[columns-rename]
+"SystemTov" = "TimeFromStart (s)"
+"Latitude" = "PosLat (rad)"
+"Longitude" = "PosLon (rad)"
+"AltitudeAboveEllipsoid" = "PosAlt (m)"
+"GnssLatitude" = "GNSSPosLat (rad)"
+"GnssLongitude" = "GNSSPosLon (rad)"
+"GnssAltitudeAboveEllipsoid" = "GNSSPosAlt (m)"
+"StdvNED[0]" = "STD PosNorth (m)"
+"StdvNED[1]" = "STD PosEast (m)"
+"StdvNED[2]" = "STD PosDown (m)"
+"GnssStdvLat" = "STD GNSSPosNorth (m)"
+"GnssStdvLon" = "STD GNSSPosEast (m)"
+"GnssStdvAlt" = "STD GNSSPosDown (m)"
+"VelocityNED[0]" = "VelNorth (m/s)"
+"VelocityNED[1]" = "VelEast (m/s)"
+"VelocityNED[2]" = "VelDown (m/s)"
+"GnssVelocityN" = "GNSSVelNorth (m/s)"
+"GnssVelocityE" = "GNSSVelEast (m/s)"
+"GnssVelocityD" = "GNSSVelDown (m/s)"
+"VelocityStdvNED[0]" = "STD VelNorth (m/s)"
+"VelocityStdvNED[1]" = "STD VelEast (m/s)"
+"VelocityStdvNED[2]" = "STD VelDown (m/s)"
+"GnssStdvN" = "STD GNSSVelNorth (m/s)"
+"GnssStdvE" = "STD GNSSVelEast (m/s)"
+"GnssStdvD" = "STD GNSSVelDown (m/s)"
+"EulerAttitude[0]" = "AngleRoll (rad)"
+"EulerAttitude[1]" = "AnglePitch (rad)"
+"EulerAttitude[2]" = "AngleHeading (rad)"
+"EulerAttitudeStdv[0]" = "STD AngleRoll (rad)"
+"EulerAttitudeStdv[1]" = "STD AnglePitch (rad)"
+"EulerAttitudeStdv[2]" = "STD AngleHeading (rad)"
+"InsGnssBIT.InsMode" = "InsMode"
+"DeltaTheta[0]" = "DeltaAngleX (rad)"
+"DeltaTheta[1]" = "DeltaAngleY (rad)"
+"DeltaTheta[2]" = "DeltaAngleZ (rad)"
+"DeltaVelocity[0]" = "DeltaVelX (m/s)"
+"DeltaVelocity[1]" = "DeltaVelY (m/s)"
+"DeltaVelocity[2]" = "DeltaVelZ (m/s)"
+"GnssRxClkBias" = "GNSSRxClkBias (m)"
+
+[Rsensor2body]
+# Convert from n380 IMU frame to n380 case frame
+"DeltaAngle" = [[0,  0, -1],
+                [0,  1,  0],
+                [1,  0,  0]]
+"DeltaVel" = [[0,  0, -1],
+              [0,  1,  0],
+              [1,  0,  0]]
