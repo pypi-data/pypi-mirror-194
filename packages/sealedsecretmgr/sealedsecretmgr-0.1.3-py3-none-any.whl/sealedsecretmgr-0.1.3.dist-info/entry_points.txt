@@ -1,0 +1,3 @@
+[console_scripts]
+sealedsecret=sealedsecretmgr.cli:__main__
+
