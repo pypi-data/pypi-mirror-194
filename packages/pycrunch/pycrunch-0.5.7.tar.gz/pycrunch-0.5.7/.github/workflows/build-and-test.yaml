@@ -1,0 +1,66 @@
+name: Pycrunch package test
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version:
+          - 2.7
+          - 3.5
+          - 3.6
+          - 3.7
+          - 3.8
+          - 3.9
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install tox tox-gh-actions
+
+    - name: Test with tox ${{env.TOXENV}}
+      if: matrix.python-version == '3.6'
+      env:
+        TOXENV: py27,py36,coverage
+      run: tox
+
+    - name: Test with tox Python 3.7
+      if: matrix.python-version == '3.7'
+      env:
+        TOXENV: py37
+      run: tox
+
+    - name: Test with tox Python 3.8
+      if: matrix.python-version == '3.8'
+      env:
+        TOXENV: py38
+      run: tox
+
+    - name: Test with tox Python 3.9
+      if: matrix.python-version == '3.9'
+      env:
+        TOXENV: py39
+      run: tox
+
+    - name: Lint Test with tox Python 3.6
+      if: matrix.python-version == '3.6'
+      env:
+        TOXENV: lint
+      run: tox
+      continue-on-error: true
