@@ -1,0 +1,1 @@
+from main import getNumber, getBool, getString,getStringRegex
