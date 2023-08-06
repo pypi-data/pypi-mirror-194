@@ -1,0 +1,11 @@
+keyframed/__init__.py,sha256=dtSilV81N0XkphFT6Yp01uBIqAjRaGmiQ42d6f30oIk,550
+keyframed/curve.py,sha256=hWLBSNfdnaHpJuKz6fSOSBP4p9HY3uEm89BhE9x1RaM,29377
+keyframed/dsl.py,sha256=t0bxUAkaw4Xhua6s2CGWQuIYJWWc8o87r-tV6aMR_BA,1098
+keyframed/interpolation.py,sha256=cEF_hSrhZV_zYImyeyU6jHYxXh-OL8QzYM6rFVce3ZI,3809
+keyframed/misc.py,sha256=Z8hcqjI4FWoZOz-ljzUoioYYtzV_XR0pjujzxdLlutA,2314
+keyframed/serialization.py,sha256=kLatjQCXrBXz0dqhGd21EoqMF6EWhirR6Ev0IsipZjM,3357
+keyframed/utils.py,sha256=sJEn2vYEdNndE8h_6us_u8hb2c6aub_WfsO9KdtUiac,1563
+keyframed-0.3.7.dist-info/METADATA,sha256=GXhhFzX8LuBZk_M6k_xE9-et87gSclG8wqddbV68HoU,19697
+keyframed-0.3.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+keyframed-0.3.7.dist-info/top_level.txt,sha256=DjVJwpw2pFCYw0Q-6BihYUHdRSc-ta1QGUoU_mrYAIw,10
+keyframed-0.3.7.dist-info/RECORD,,
