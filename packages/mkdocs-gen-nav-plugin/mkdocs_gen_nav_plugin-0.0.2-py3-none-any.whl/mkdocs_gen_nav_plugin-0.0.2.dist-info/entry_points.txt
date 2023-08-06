@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+gen_nav = mkdocs_gen_nav_plugin.plugin:GenNavPlugin
