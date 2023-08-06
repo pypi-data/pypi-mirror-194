@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: AutomaPy
+Version: 1.0.5
+Summary: This package refers to the topic of automata theory, which includes DFA, NDFA, Mealy machines, and Moore machines.
+Author: Mohammed Varaliya
+Author-email: <mohammedvaraliya2661392@gmail.com>
+Keywords: python,DFA,NDFA,Mealy machines,Moore machines,Automata,Theory of Computation
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+## AutomaPy
+
+
+
+The package contains a set of tools and algorithms for theoretical computer science, which could include automata theory as well as other topics.
+
+
+
+
+
+## Examples of How To Use (AutomaPy)
+
+
+
+1. Design a program for accepting decimal number divisible by 2.
+
+
+
+```py
+
+
+
+from AutomaPy import DFA
+
+result = DFA()
+
+result.addState("A", {"0": "A", "1": "B"}, initial_state=True, final_state=True)
+
+result.addState("B", {"0": "A", "1": "B"})
+
+print(result.decimalNumberDivisibleByTwo("10")) # Decimal number of "10" is 2
+
+print(result.decimalNumberDivisibleByTwo("110")) # Decimal number of "10" is 6
+
+print(result.decimalNumberDivisibleByTwo("101")) # Decimal number of "10" is 5
+
+
+
+```
