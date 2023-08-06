@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: flask-moreshell
+Version: 0.0.1
+Summary: flask shell with IPython, BPython, PTPython!
+Author-email: twicegoddessana1229@gmail.com
+Maintainer-email: twicegoddessana1229@gmail.com
+License: MIT License
+        
+        Copyright (c) 2023, flask-moreshell
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: repository, https://github.com/TGoddessana/flask-moreshell
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: Flask
+Classifier: Framework :: IPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+
+# Flask-Moreshell
+
+Flask-Moreshell is a flask extension which supports ipython, bpython, ptpython shells in `flask shell` command.
+inspired
+by [flask-shell-ipython](https://github.com/ei-grad/flask-shell-ipython), [flask-shell-bpython](https://github.com/jacquerie/flask-shell-bpython), [flask-shell-ptpython](https://github.com/jacquerie/flask-shell-ptpython).
+
+## Installation
+
+you can install `flask-moreshell` via `pip` command.
+
+```bash
+pip install flask-moreshell
+```
+
+## Usage
+
+you can just use this command:
+
+```shell
+flask shell
+```
+
+and flask-moreshell tries to find this python REPL alternatives:
+
+1. `ipython`
+2. `bpython`
+3. `ptpython`
+
+if none of them are installed, just default python shell will be executed.
+
+or you can choose specific shell type, via `--shelltype` option.  
+`ipython`, `bpython`, `ptpython` are supported.
+
+ipython usage:
+
+```shell
+flask shell --shelltype ipython
+```
+![ipython-example.png](docs%2Fipython-example.png)
+
+bpython usage:
+```shell
+flask shell --shelltype bpython
+```
+![bpython-example.png](docs%2Fbpython-example.png)
+
+ptpython usage:
+```shell
+flask shell --shelltype ptpython
+```
+![ptpython-example.png](docs%2Fptpython-example.png)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
