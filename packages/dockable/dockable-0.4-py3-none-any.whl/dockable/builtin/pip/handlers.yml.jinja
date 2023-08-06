@@ -1,0 +1,11 @@
+name: pip-internal
+steps:
+- run:
+  -
+    - pip install
+    {% for x in pkg | sort %}
+    - {{ x }}
+    {% endfor %}
+    {% for x in requirements | sort %}
+    - -r {{ x }}
+    {% endfor %}

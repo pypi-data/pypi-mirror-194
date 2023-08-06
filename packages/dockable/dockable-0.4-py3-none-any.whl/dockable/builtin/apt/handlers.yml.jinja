@@ -1,0 +1,10 @@
+name: apt
+steps:
+- run:
+  - apt-get update
+  -
+    - DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends
+    {% for x in pkg | sort %}
+    - {{ x }}
+    {% endfor %}
+  - rm -rf /var/lib/apt/lists/*

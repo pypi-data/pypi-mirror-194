@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: dockable
+Version: 0.4
+Summary: ansible for dockerfiles
+Home-page: https://gitlab.com/dockable/dockable.git
+Author: Martin Zihlmann
+Author-email: martizih@outlook.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyaml
+Requires-Dist: jinja2
+Requires-Dist: pip-api
+Requires-Dist: networkx
+
+# dockable
+
+dockable is a Python library that makes it easier to reuse Dockerfile snippets without having to copy and paste. With dockable, you can share your Dockerfile snippets as pip packages, keeping your Dockerfiles clean and organized.
+
+## Example
+
+Here's an example of how you can use dockable to install Python on Ubuntu:
+
+```yml
+# python-ubuntu.yml
+dependencies:
+- dockable.raw
+- dockable.builtin
+images:
+- name: python
+  from: ubuntu:latest
+  steps:
+  - dockable.builtin.apt:
+      pkg:
+      - python3
+      - python3-pip
+```
+
+You can run the above YAML file through the dockable CLI to generate a Dockerfile:
+
+```bash
+python -m dockable python-ubuntu.yml Dockerfile
+```
+
+And here's the generated Dockerfile:
+
+```Dockerfile
+# Dockerfile
+FROM ubuntu:latest
+RUN apt-get update \
+  && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    python3 \
+    python3-pip \
+  && rm -rf /var/lib/apt/lists/*
+```
+
+dockable uses YAML and Jinja templates to generate the Dockerfile, making it easy to write and share your own snippets. This is the actual code in the builtin library to make this work.
+
+```jinja
+# builtin/handlers.yml.jinja
+name: apt
+steps:
+- run:
+  - apt-get update
+  -
+    - DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends
+    {% for x in pkg | sort %}
+    - {{ x }}
+    {% endfor %}
+  - rm -rf /var/lib/apt/lists/*
+```
+
+Yes, you saw that right, it's also just yaml, but with some jinja on top.
+
+The power of dockable lies in its extensibility. You can write snippets like these yourself and reuse them accross all of your projects - you can version and share them via from a central location via pip packages.
+
+## Deep dive - dockable as a preprocessor
+
+Here's another example that shows how you can use dockable to install dependencies from a requirements.txt file:
+
+```bash
+# requirements.txt
+toolz
+azip
+```
+
+```Dockerfile
+# Dockerfile
+FROM python
+COPY requirements.txt /tmp/pip
+RUN python -m pip install -r /tmp/pip/requirements.txt
+RUN rm -rf /tmp/pip
+```
+
+We can argue whether we want to include that last step or not, but we need at least two steps. This grows especially painful if we have requirements.txt that include other files and so on. What we can do with dockable is to parse the files and directly write the content out to the Dockerfile.
+
+```yml
+# awesome-python.yml
+dependencies:
+- dockable.raw
+- dockable.builtin
+images:
+- name: awesome
+  from: python:latest
+  steps:
+  - dockable.builtin.pip:
+      from_requirements:
+      - requirements.txt
+```
+
+which results in this Dockerfile:
+
+```Dockerfile
+# Dockerfile
+FROM python
+RUN python -m pip install \
+    azip \
+    toolz
+```
+
+But how did this work. Well the `builtin` library does not only register a simple render script as shown above for the `apt`, but a full python function instead:
+
+```python
+import pip_api
+
+
+def load_requirements(file: str) -> list[str]:
+    res = pip_api.parse_requirements(file)
+    return [str(x) for x in res.values()]
+
+
+def pip(**kwargs) -> list[dict]:
+    pkg = kwargs["pkg"] if "pkg" in kwargs else []
+    from_requirements = kwargs["from_requirements"] if "from_requirements" in kwargs else []
+    reqs_pkgs = [load_requirements(x) for x in from_requirements]
+    reqs_pkg = [y for x in reqs_pkgs for y in x]
+    return [
+        {
+            ".pip-internal": {
+                **kwargs,
+                "pkg": pkg + reqs_pkg,
+            }
+        }
+    ]
+```
+
+this python function will parse all requirements files configured in `from_requirements` on the host computer, merge the results together with whatever was passed in the `pkg` field and delegate rendering to `pip-internal` handler. `pip-internal` is again a simple yaml render snippet that prints the packages and requirements files in order into a single `run` step. Careful observers might also have noticed that it also reordered the packages in alphabetical order, that is also done inside the render step directly.
+
+```jinja
+name: pip-internal
+steps:
+- run:
+  -
+    - pip install
+    {% for x in pkg | sort %}
+    - {{ x }}
+    {% endfor %}
+    {% for x in requirements | sort %}
+    - -r {{ x }}
+    {% endfor %}
+```
+
+This kind of pre-processing allows us to do all kinds of magic in the background. Do you care about reproducible builds? How about you freeze the versions on-the-fly with whatever is currently available. Do you care about keeping your secrets secret? How about downloading assets on the host system and copying them into the Docker image instead?

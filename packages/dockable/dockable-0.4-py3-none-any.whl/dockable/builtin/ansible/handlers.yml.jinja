@@ -1,0 +1,26 @@
+name: ansible-galaxy-internal
+steps:
+- run:
+  {% if collections | length > 0 %}
+  -
+    - ansible-galaxy collection install
+    {% for x in collections | sort(attribute='name') %}
+    - {{ x.name }}{% if 'version' in x %}:{{ x.version }}{% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if roles | length > 0 %}
+  -
+    - ansible-galaxy role install
+    {% for x in roles | sort(attribute='src') %}
+    - {{ x.src }}{% if 'version' in x %}:{{ x.version }}{% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if requirements | length > 0 %}
+  -
+    - ansible-galaxy install
+    {% for x in requirements | sort %}
+    - -r {{ x }}
+    {% endfor %}
+  {% endif %}

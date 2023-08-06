@@ -1,0 +1,21 @@
+name: copy
+steps:
+- raw:
+  - COPY {{ from }} {{ to }}
+---
+name: entrypoint
+steps:
+- raw:
+  - ENTRYPOINT ["{{ args[0] }}"]
+---
+name: env
+steps:
+- raw:
+  {% for k,v in kwargs.items() %}
+  - ENV {{ k }}="{{ v }}"
+  {% endfor %}
+---
+name: workdir
+steps:
+- raw:
+  - WORKDIR "{{ args[0] }}"

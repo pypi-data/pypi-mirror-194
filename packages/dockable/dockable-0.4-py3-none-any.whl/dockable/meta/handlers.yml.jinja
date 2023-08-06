@@ -1,0 +1,11 @@
+name: from
+steps:
+- dockable.raw.raw:
+  - FROM {{ args[0] }}
+---
+name: label
+steps:
+- dockable.raw.raw:
+  {% for k,v in kwargs.items() %}
+  - LABEL {{ k }}="{{ v }}"
+  {% endfor %}
