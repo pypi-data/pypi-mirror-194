@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+"""Collection of useful tools to be used in `pyABC.core.solver` module.
+
+"""
+import torch
+from torch import Tensor
+
+from pyapes.core.variables import Field
+
+
+def default_A_ops(var: Field, order: int) -> list[list[Tensor]]:
+    """Construct A_ops for the given order of the spatial discretization (the second order central difference scheme).
+
+    Example:
+
+    - Below returned results are simplified for the sake of readability.
+    The actual results are the list of the tensor that has the same shape as the given `var`.
+
+    >>> App, Ap, Ac, Am, Amm = default_A_ops(var, order=1)
+    [0, ...], [1, ...], [-2, ...], [1, ...], [0, ...]
+    >>> App, Ap, Ac, Am, Amm = default_A_ops(var, order=2)
+    [0, ...], [1, ...], [0, ...], [-1, ...], [0, ...]
+
+    Args:
+        var (Field): The field to be discretized.
+        order (int): The order of the spatial discretization. Should be either 1 or 2.
+
+    Returns:
+        list[list[Tensor]]: A_ops for the given order of the spatial discretization. The coefficients are for `i+2`, `i+1`, `i`, `i-1`, `i-2` respectively.
+    """
+
+    if order == 1:
+        App = [torch.zeros_like(var()) for _ in range(var.mesh.dim)]
+        Ap = [torch.ones_like(var()) for _ in range(var.mesh.dim)]
+        Ac = [torch.zeros_like(var()) for _ in range(var.mesh.dim)]
+        Am = [-1.0 * torch.ones_like(var()) for _ in range(var.mesh.dim)]
+        Amm = [torch.zeros_like(var()) for _ in range(var.mesh.dim)]
+    elif order == 2:
+        App = [torch.zeros_like(var()) for _ in range(var.mesh.dim)]
+        Ap = [torch.ones_like(var()) for _ in range(var.mesh.dim)]
+        Ac = [-2.0 * torch.ones_like(var()) for _ in range(var.mesh.dim)]
+        Am = [torch.ones_like(var()) for _ in range(var.mesh.dim)]
+        Amm = [torch.zeros_like(var()) for _ in range(var.mesh.dim)]
+    else:
+        raise RuntimeError(f"Given {order=} should be either 1 or 2.")
+
+    return [App, Ap, Ac, Am, Amm]
