@@ -1,0 +1,6 @@
+include pvcheetah/LICENSE
+include pvcheetah/__init__.py
+include pvcheetah/_cheetah.py
+include pvcheetah/_factory.py
+include pvcheetah/_util.py
+recursive-include pvcheetah/lib/ *
