@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: codemaze
+Version: 0.0.1
+Summary: Python Client for Codemaze
+Home-page: https://github.com/codemaze-fun/codemaze-python
+Author: Robert Wen
+Author-email: Robert <robert@codemaze.fun>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# lawson-python
+
+lawson pypi package
