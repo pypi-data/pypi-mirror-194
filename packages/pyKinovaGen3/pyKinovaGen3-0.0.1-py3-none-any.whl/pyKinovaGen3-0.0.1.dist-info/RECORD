@@ -1,0 +1,14 @@
+kinova_gen3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kinova_gen3/coriolis.py,sha256=dXuW39ox30BzmlZqj2he5GymEAjb0IO2ioYW9Ecgw40,108851
+kinova_gen3/forward_kinematics.py,sha256=FslsGA660C9_4knYBa5NoTW0XlxPO3-HwRxN6s1bBEg,3078
+kinova_gen3/gravity.py,sha256=vz8wJumi4x7o_VOQlkNCRagwRq5b7v6UyLzR0neUsb0,11399
+kinova_gen3/inverse_kinematics.py,sha256=AjgOcpya-3QFgQWalvIShKneAQCvgBl9PwC6Ds58uLI,4394
+kinova_gen3/jacobian.py,sha256=vtYnECn6raiR8NIErVw24RUQe7TFZEc7UyYLgAxEGyg,6202
+kinova_gen3/joint_limits.py,sha256=1iDA5Mu9NlKxd7rLt8dPHI7Nuu71p6trHTm5lZds3tA,1634
+kinova_gen3/manipulability.py,sha256=QLp_0lUPneHqv3A4KnmGd1M3mYRLBUHEWY2YoOdnePo,1104
+kinova_gen3/mass_matrix.py,sha256=uSPiA8De5TeY0US8vHsC_EP_5qBt5ckqJz9GdfHq41Y,130721
+pyKinovaGen3-0.0.1.dist-info/LICENSE,sha256=FecZFYyzrjGV1q9U4RuKvexTYBmr5yLkQgCLd4DlPm0,1069
+pyKinovaGen3-0.0.1.dist-info/METADATA,sha256=w5wb5ybPXqqb9eRdO0nIhJcK3qjIL1lrVgYo3bL_6EU,805
+pyKinovaGen3-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyKinovaGen3-0.0.1.dist-info/top_level.txt,sha256=I6SeXBwgADcx_TROg0wu17wpEqpOqL97zR4wJ0XZn9o,12
+pyKinovaGen3-0.0.1.dist-info/RECORD,,
