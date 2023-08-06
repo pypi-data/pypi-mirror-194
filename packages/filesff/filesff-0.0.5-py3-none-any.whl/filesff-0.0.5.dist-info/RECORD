@@ -1,0 +1,15 @@
+filesff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filesff/caps.py,sha256=EWQ12kg2Ty5VWU4GF3HoY0lLKUbIPwNq41vN-q7xwWA,1405
+filesff/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filesff/core/accessors.py,sha256=axuUtjfnSlarCyOOY8qarS9tyS7fw7QfxENf9k49lAg,2376
+filesff/core/formatters.py,sha256=TzDO_D_D64I1OcldG87Zuq99GlMZKOLGtgF0lr3Nod0,1015
+filesff/core/handlers.py,sha256=UvAoTCrdxMEJdd58FWOGSZIiM9vLcVwjNjrH5-l0lWA,1550
+filesff/core/pointers.py,sha256=2tb6-gXZ7LwU-pQwXqcoSkUSju1vCQYF1JCkS-h8UqQ,1361
+filesff/csvs.py,sha256=dEVj0Qub60LgYHBAr9MnbaY5mYetPAFZNTAkF3d3xe8,4287
+filesff/jsons.py,sha256=zap8RdkmbRM0Jv-woCqilUr4GSO_F5QrEAKbENqcgSA,2449
+filesff/msgpacks.py,sha256=EzwPIUk1mQyz0PXmX9c0M_Og8JIJD_dp-_J9aGYQrTE,444
+filesff/protobufs.py,sha256=SAdi3_LzxG_aTy34JiEt-HusjSQI5jb3D4BLDN5EffQ,3408
+filesff-0.0.5.dist-info/LICENSE,sha256=d6vEaMq0ZISxGxJ-gyehSVVN6GGbA87P9_mKvcq1Vt0,1090
+filesff-0.0.5.dist-info/METADATA,sha256=6RyeE2xwgqyxc5pUkyaljRvd9ezBRZoVxhlu53rMZoI,2113
+filesff-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+filesff-0.0.5.dist-info/RECORD,,
