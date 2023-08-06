@@ -1,0 +1,4 @@
+include src/dataengtoolbox/VERSION
+include requirements.txt
+include README.md
+include LICENSE
