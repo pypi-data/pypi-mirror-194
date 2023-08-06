@@ -1,0 +1,2 @@
+[console_scripts]
+astreviewer = astreviewer.__main__:main

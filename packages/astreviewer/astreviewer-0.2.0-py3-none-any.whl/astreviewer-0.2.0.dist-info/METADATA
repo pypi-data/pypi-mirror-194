@@ -1,0 +1,240 @@
+Metadata-Version: 2.1
+Name: astreviewer
+Version: 0.2.0
+Summary: astreviewer is a command-line integrator for tools like Application Security Testing tools (AST)
+Home-page: https://github.com/VolvoGroup-Internal/devsecops-112511-astreviewer
+Author: Paulo Roberto Brandão
+Author-email: paulo.brandao@consultant.volvo.com
+Project-URL: GitHub, https://github.com/VolvoGroup-Internal/devsecops-112511-astreviewer
+Project-URL: Gerrit, https://git.it.volvo.net/plugins/gitiles/Astreviewer
+Keywords: ast integration middleware scm security appsec github fortify
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Environment :: Console
+Classifier: Topic :: Education
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Classifier: Topic :: Terminals
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: deprecated (==1.2.13)
+Requires-Dist: fortifyapi (==3.1.99)
+Requires-Dist: idna (==3.4)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pygithub (==1.57)
+Requires-Dist: pyjwt (==2.6.0)
+Requires-Dist: pynacl (==1.5.0)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: urllib3 (==1.26.14)
+Requires-Dist: wrapt (==1.14.1)
+Provides-Extra: dev
+Requires-Dist: asttokens (==2.2.1) ; extra == 'dev'
+Requires-Dist: attrs (==22.2.0) ; extra == 'dev'
+Requires-Dist: backcall (==0.2.0) ; extra == 'dev'
+Requires-Dist: bandit (==1.7.4) ; extra == 'dev'
+Requires-Dist: black (==22.12.0) ; extra == 'dev'
+Requires-Dist: build (==0.10.0) ; extra == 'dev'
+Requires-Dist: certifi (==2022.12.7) ; extra == 'dev'
+Requires-Dist: cffi (==1.15.1) ; extra == 'dev'
+Requires-Dist: charset-normalizer (==3.0.1) ; extra == 'dev'
+Requires-Dist: click (==8.1.3) ; extra == 'dev'
+Requires-Dist: coverage[toml] (==7.0.5) ; extra == 'dev'
+Requires-Dist: decorator (==5.1.1) ; extra == 'dev'
+Requires-Dist: defusedxml (==0.7.1) ; extra == 'dev'
+Requires-Dist: deprecated (==1.2.13) ; extra == 'dev'
+Requires-Dist: exceptiongroup (==1.1.0) ; extra == 'dev'
+Requires-Dist: executing (==1.2.0) ; extra == 'dev'
+Requires-Dist: factory-boy (==3.2.1) ; extra == 'dev'
+Requires-Dist: faker (==16.6.0) ; extra == 'dev'
+Requires-Dist: flake8 (==6.0.0) ; extra == 'dev'
+Requires-Dist: fortifyapi (==3.1.99) ; extra == 'dev'
+Requires-Dist: git-review (==2.3.1) ; extra == 'dev'
+Requires-Dist: gitdb (==4.0.10) ; extra == 'dev'
+Requires-Dist: gitpython (==3.1.30) ; extra == 'dev'
+Requires-Dist: httpie (==3.2.1) ; extra == 'dev'
+Requires-Dist: idna (==3.4) ; extra == 'dev'
+Requires-Dist: iniconfig (==2.0.0) ; extra == 'dev'
+Requires-Dist: invoke (==2.0.0) ; extra == 'dev'
+Requires-Dist: ipython (==8.8.0) ; extra == 'dev'
+Requires-Dist: isort (==5.11.4) ; extra == 'dev'
+Requires-Dist: jedi (==0.18.2) ; extra == 'dev'
+Requires-Dist: markdown-it-py (==2.1.0) ; extra == 'dev'
+Requires-Dist: markupsafe (==2.1.2) ; extra == 'dev'
+Requires-Dist: matplotlib-inline (==0.1.6) ; extra == 'dev'
+Requires-Dist: mccabe (==0.7.0) ; extra == 'dev'
+Requires-Dist: mdurl (==0.1.2) ; extra == 'dev'
+Requires-Dist: multidict (==6.0.4) ; extra == 'dev'
+Requires-Dist: mypy-extensions (==0.4.3) ; extra == 'dev'
+Requires-Dist: packaging (==23.0) ; extra == 'dev'
+Requires-Dist: parso (==0.8.3) ; extra == 'dev'
+Requires-Dist: pathspec (==0.10.3) ; extra == 'dev'
+Requires-Dist: pbr (==5.11.1) ; extra == 'dev'
+Requires-Dist: pexpect (==4.8.0) ; extra == 'dev'
+Requires-Dist: pickleshare (==0.7.5) ; extra == 'dev'
+Requires-Dist: pip-tools (==6.12.1) ; extra == 'dev'
+Requires-Dist: platformdirs (==2.6.2) ; extra == 'dev'
+Requires-Dist: pluggy (==1.0.0) ; extra == 'dev'
+Requires-Dist: prompt-toolkit (==3.0.36) ; extra == 'dev'
+Requires-Dist: ptyprocess (==0.7.0) ; extra == 'dev'
+Requires-Dist: pure-eval (==0.2.2) ; extra == 'dev'
+Requires-Dist: pycodestyle (==2.10.0) ; extra == 'dev'
+Requires-Dist: pycparser (==2.21) ; extra == 'dev'
+Requires-Dist: pyflakes (==3.0.1) ; extra == 'dev'
+Requires-Dist: pygithub (==1.57) ; extra == 'dev'
+Requires-Dist: pygments (==2.14.0) ; extra == 'dev'
+Requires-Dist: pyjwt (==2.6.0) ; extra == 'dev'
+Requires-Dist: pynacl (==1.5.0) ; extra == 'dev'
+Requires-Dist: pyproject-hooks (==1.0.0) ; extra == 'dev'
+Requires-Dist: pysocks (==1.7.1) ; extra == 'dev'
+Requires-Dist: pytest (==7.2.1) ; extra == 'dev'
+Requires-Dist: pytest-cov (==4.0.0) ; extra == 'dev'
+Requires-Dist: pytest-httpserver (==1.0.6) ; extra == 'dev'
+Requires-Dist: python-dateutil (==2.8.2) ; extra == 'dev'
+Requires-Dist: pyyaml (==6.0) ; extra == 'dev'
+Requires-Dist: requests[socks] (==2.28.2) ; extra == 'dev'
+Requires-Dist: requests-toolbelt (==0.10.1) ; extra == 'dev'
+Requires-Dist: rich (==13.2.0) ; extra == 'dev'
+Requires-Dist: six (==1.16.0) ; extra == 'dev'
+Requires-Dist: smmap (==5.0.0) ; extra == 'dev'
+Requires-Dist: stack-data (==0.6.2) ; extra == 'dev'
+Requires-Dist: stevedore (==4.1.1) ; extra == 'dev'
+Requires-Dist: tomli (==2.0.1) ; extra == 'dev'
+Requires-Dist: traitlets (==5.8.1) ; extra == 'dev'
+Requires-Dist: urllib3 (==1.26.14) ; extra == 'dev'
+Requires-Dist: wcwidth (==0.2.6) ; extra == 'dev'
+Requires-Dist: werkzeug (==2.2.2) ; extra == 'dev'
+Requires-Dist: wheel (==0.38.4) ; extra == 'dev'
+Requires-Dist: wrapt (==1.14.1) ; extra == 'dev'
+
+# ASTReviewer
+
+**ASTReviewer** is a command-line integrator between _Application Security Testing tools_ (_AST_)
+and _Source Control Management systems_ (SCM), _CI platforms_, _Ticket Systems_, etc.
+Its main goal is to publish _AST_ findings (issues) as reviews in _SCM_ changes (or _PR_ reviews).
+
+The base use case is running ASTs on build pipelines, making available their scan results 
+in the developer's tool of choice with instructions on how to mitigate the issues.
+To accomplish that, **ASTReviewer** retrieves data from _ASTs_, parses, processes, modifies them, and
+publishes the results to the chosen destination, usually the code review tool.
+
+**Simple Scenario example**: 
+
+The team's _SCM_ is _Github_. The engineers make use of _Pull Requests_ (_PR_) for code
+reviewing and triggering their build and test pipelines.
+As part of the CI, they also run security scans using couple of tools.
+As the PR is their tool for reviewing code and discussing issues, they want reviews from the _ASTs_ showing issues and mitigation as they would have from a peer.
+
+The security tools can be, for example, a [SAST](https://en.wikipedia.org/wiki/Static_application_security_testing) tool such
+[Fortify Source Code Analyzer](https://www.microfocus.com/en-us/support/Fortify%20Static%20Code%20Analyzer) and an 
+[SCA](https://en.wikipedia.org/wiki/Software_Composition_Analysis) tool like 
+[Nexus Lifecycle](https://www.sonatype.com/products/open-source-security-dependency-management).
+
+When a developer creates a PR with a new feature, this will trigger the CI pipeline that will perform the build and test of the code with different tools. At some point, the pipeline will run the two security tools. The team will also configure **ASTReviewer** with its proper modules for each one of the tools.
+
+For each one of the _ASTs_, **ASTReviewer** will retrieve both the scan results related to the _PR_ 
+as the ones from its destination branch. It then compares both results.
+If new issues exist in the _PR_ scan that are not present in the destination branch scan, it creates a 
+_review_ for the _PR_. After that, for each one of the new issues, it will add a comment under that _review_.
+
+While processing the issues, **ASTReviewer** can retrieve information from other sources (_Knowledge Bases_) and add them to the review or comments. A good example is adding links to security training, ASVS requirements, OWASP Cheat Sheet pages, etc, related to the specific issue.
+
+![Basic ASTReviewer flow](doc/astreviewer_basic_flow.png)
+
+Depending on the tools and user configuration, the review can contain details such as specific location in the code where the issue was found, snippets of the code, images, etc. **ASTReviewer** uses templates to determine the format of the reviews and comments.
+
+![Github PR review example](doc/github_pr_review_example.png)
+
+
+**ASTReviewer** is written in Python and is highly modular and extensible. Supporting a new AST, or SCM, or even 
+parsing data from another format or location (Key vault for example), it's a matter of writing a small 
+Python file (module) and reference it in the configuration file.
+
+
+
+## Getting started
+
+For instructions on setting up different production environments see: [Installing into Production](docs/install_production.md)
+
+For development, the easiest way to get up and running is by creating a Python virtual environment and install the dependencies and the `astreviewer` package on it.
+
+First step is to clone the repository:
+
+```bash
+$ git clone ssh://<youruser>@git.it.volvo.net:29418/Astreviewer astreviewer
+```
+
+Setting up the environment:
+
+```bash
+$ cd astreviewer
+$ python3 -m venv env
+$ . .env/bin/activate
+(env) $ pip install -U pip
+(env) $ pip install -e .
+```
+
+This will install only dependencies for a production environment.
+Package management is done in the `requirements` directory and is explained in [Package Management](doc/astreviewer_pkg_mgt.md).
+
+For installing useful tools for testing and development do:
+
+```bash
+(env) $ cd requirements
+(env) $ make install_dev
+```
+
+## Testing
+
+The tool is developed utilizing [TDD](https://en.wikipedia.org/wiki/Test-driven_development). Said so, both _Acceptance Tests_ and _Unit tests_ are provided and contributors are required to provide both.
+Clean code is expected, including the test code.
+
+Tests are implemented and run with [Pytest](https://docs.pytest.org/).
+To test the application, run from the project root directory:
+
+```bash
+(env) $ pytest
+```
+
+If you want to run only the unit tests:
+
+```bash
+(env) $ pytest astreviewer
+```
+
+If you want to run only the acceptance ones:
+
+```bash
+(env) $ pytest tests
+```
+
+## Currently Supported Tools
+
+- **AST**
+  - **SAST**
+    - Microfocus Fortify Scan Central 
+  - **SCA**
+    - Nexus IQ Server
+- **SCM**
+  - Github
+
+## Contributing
+
+[See contribution guide](CONTRIBUTING.md)
