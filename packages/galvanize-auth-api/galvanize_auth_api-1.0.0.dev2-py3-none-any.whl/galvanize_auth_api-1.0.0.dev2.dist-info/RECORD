@@ -1,0 +1,10 @@
+galvanize_auth_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galvanize_auth_api/clients.py,sha256=-pXPMTK8vLzvBJZ1JTp--nQ7OBo9UrHBFXgP8DnsGKs,2891
+galvanize_auth_api/connections.py,sha256=ws3yx4u2PcOgvurGFs9NJnZ2Kq8E8QBuXBZ-wFD3uYE,4403
+galvanize_auth_api/errors.py,sha256=xfUsr6takj0_g37Pc5KdbHycV2j79Ps4PlkJf-CXxS0,277
+galvanize_auth_api/info_utils.py,sha256=PwyTiNJYef7_wE_GyM813hcMHUeSYntfrTGs_u-CFKE,2936
+galvanize_auth_api/models.py,sha256=kgXAdEUbHzvGcwlFXjxm_3wNmIYWOBxytX4PFnvpqNE,4430
+galvanize_auth_api-1.0.0.dev2.dist-info/LICENSE,sha256=mPotOmupkG0aW-SxcBcJvMOTDjtHYAw7pJGHJyxVQas,1103
+galvanize_auth_api-1.0.0.dev2.dist-info/METADATA,sha256=oYuZvCawG4mOeejnFCWDaTvHnm1eNo8If0EbYM1WAjo,1332
+galvanize_auth_api-1.0.0.dev2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+galvanize_auth_api-1.0.0.dev2.dist-info/RECORD,,
