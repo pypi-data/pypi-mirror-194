@@ -1,0 +1,8 @@
+sqs_launcher/__init__.py,sha256=cQlO4Tq7yAEdfHDEBhHnFB3ycaQUu3yYzeBRbz3P078,3824
+sqs_listener/__init__.py,sha256=QUS5A7L_Vg6N9E3FiI5CCwRoTZVgKgFpm9Zv8OYxzoo,9054
+sqs_listener/daemon.py,sha256=_75v0HnAn439j1KAn-DBBnFKZ0xywn3OEEyUW6V44cM,4341
+pyAsyncSqsListener-0.10.0.dist-info/LICENSE,sha256=kLIqw7XHuNjrehhru3uHZssdOPJARw9liSPRDNR-OOE,577
+pyAsyncSqsListener-0.10.0.dist-info/METADATA,sha256=idLgueiY49Dbv3-UAGaFB_lMlJYifXneP5cAYDSp4pE,8263
+pyAsyncSqsListener-0.10.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyAsyncSqsListener-0.10.0.dist-info/top_level.txt,sha256=QxeUIRtLXmM7yWKfRf53_mjJFYveH7qybs9ekyhjKOM,26
+pyAsyncSqsListener-0.10.0.dist-info/RECORD,,
