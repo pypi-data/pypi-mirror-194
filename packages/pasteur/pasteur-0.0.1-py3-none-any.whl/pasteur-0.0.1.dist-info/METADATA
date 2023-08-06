@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pasteur
+Version: 0.0.1
+Summary: A system for reproducible and scalable data synthesis.
+Author-email: Kapenekakis Antheas <antheas@cs.aau.dk>
+Project-URL: Homepage, https://pasteur.dev
+Project-URL: Bug Tracker, https://github.com/pasteur-dev/pasteur/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1 align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./res/logo/logo_text_dark.svg" width="90%">
+        <source media="(prefers-color-scheme: light)" srcset="./res/logo/logo_text_light.svg" width="90%">
+        <img alt="Pasteur Logo with text. Tagline reads: 'Sanitize Your Data'" src="./res/logo/logo_text_light.svg" width="90%">
+    </picture>
+</h1>
+
+Pasteur is a system for data synthesis.
+This readme will contain relevant information soon.
+For now, head to the link below to reproduce the experiments.
+
+## Reproducibility
+[Reproducibility Readme](notebooks/paper)
