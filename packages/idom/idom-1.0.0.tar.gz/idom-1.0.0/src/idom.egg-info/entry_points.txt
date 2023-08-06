@@ -1,0 +1,2 @@
+[console_scripts]
+idom = idom.__main__:app
