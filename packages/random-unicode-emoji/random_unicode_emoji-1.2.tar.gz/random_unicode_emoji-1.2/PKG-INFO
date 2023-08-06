@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: random_unicode_emoji
+Version: 1.2
+Summary: A simple Python package to retrieve a random Unicode emoji. 😄
+Home-page: https://github.com/NicPWNs/random-unicode-emoji
+Download-URL: https://github.com/NicPWNs/random-unicode-emoji/releases
+Author: Nic Jones
+Author-email: nic@nicpjones.com
+License: MIT
+Keywords: random unicode emoji
+Requires-Python: >=3
+License-File: LICENSE.rst
+
+Random Unicode Emoji
+====================
+
+Description
+-----------
+
+A simple Python package to retrieve a random Unicode emoji. ðŸ˜„
+
+
+Usage
+-----
+
+>>> # Import the Library
+>>> import random_unicode_emoji
+>>> # Use the Function
+>>> emoji = random_emoji()
