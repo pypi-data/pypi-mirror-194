@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bbo-svidreader
+Version: 0.1.1
+Summary: Video reader on top of imageio that compares returned frames to a list of hashes
+Home-page: https://github.com/bbo-lab/videoreader
+Author: BBO-lab @ caesar
+Author-email: kay-michael.voit@caesar.de
+License: BSD
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: imageio
+Requires-Dist: bbo-ccvtools
+
+# videoreader
+Workaround for save random access of frames in compressed videos
