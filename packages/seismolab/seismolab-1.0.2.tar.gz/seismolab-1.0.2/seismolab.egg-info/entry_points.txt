@@ -1,0 +1,3 @@
+[console_scripts]
+query_gaia = seismolab.gaia:query_from_commandline
+
