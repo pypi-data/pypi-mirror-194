@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: lhilxPy
+Version: 0.9
+Requires-Dist: click
+Requires-Dist: chardet
+Requires-Dist: rich
+Requires-Dist: typing
+
