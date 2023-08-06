@@ -1,0 +1,11 @@
+common_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_tools/common_tools.py,sha256=Oe48mUAWnVmgb9oQyn8gjEuL-gE1bOqbEqOq2YFqAB0,9159
+common_tools/auto_compression/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_tools/auto_compression/fd_auto_compress/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common_tools/auto_compression/fd_auto_compress/dataset.py,sha256=Llmd663vCDqYRsTNR2Hxl3OZkh6LYkLmNiXkWzBCYS4,11314
+common_tools/auto_compression/fd_auto_compress/fd_auto_compress.py,sha256=ofhUe2i7Q9fVgwNxghS0ejcizXpWEeiquZbLDmz9f8w,6379
+fastdeploy_tools-0.0.4.dist-info/METADATA,sha256=MveKmbHGIp0JYXf5B8KwFY0_IlSmNdxgHEBsv3q-f1Q,581
+fastdeploy_tools-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastdeploy_tools-0.0.4.dist-info/entry_points.txt,sha256=EOJElsWtZctnqMvPj15wmAuarMn9V5_HISJ56SmAnnM,62
+fastdeploy_tools-0.0.4.dist-info/top_level.txt,sha256=tY7DotVQxHo0YA_1VynbJMYCPTV22U9zJO89p5CXS8k,13
+fastdeploy_tools-0.0.4.dist-info/RECORD,,

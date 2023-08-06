@@ -1,0 +1,2 @@
+[console_scripts]
+fastdeploy = common_tools.common_tools:main

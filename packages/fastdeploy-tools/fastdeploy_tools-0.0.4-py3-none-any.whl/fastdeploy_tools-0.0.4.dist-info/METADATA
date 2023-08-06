@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fastdeploy-tools
+Version: 0.0.4
+Summary: A toolkit for FastDeploy.
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+Requires-Dist: uvicorn (==0.16.0)
+
+fastdeploy-tools is a toolkit for FastDeploy, including auto compression .etc.
+
+Usage of auto compression: fastdeploy compress --config_path=./yolov7_tiny_qat_dis.yaml --method='QAT' --save_dir='./v7_qat_outmodel/' 
+
+
