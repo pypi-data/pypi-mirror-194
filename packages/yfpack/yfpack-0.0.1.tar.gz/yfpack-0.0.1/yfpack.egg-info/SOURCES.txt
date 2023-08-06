@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+yfpack/__init__.py
+yfpack/yfpack.py
+yfpack.egg-info/PKG-INFO
+yfpack.egg-info/SOURCES.txt
+yfpack.egg-info/dependency_links.txt
+yfpack.egg-info/not-zip-safe
+yfpack.egg-info/top_level.txt
