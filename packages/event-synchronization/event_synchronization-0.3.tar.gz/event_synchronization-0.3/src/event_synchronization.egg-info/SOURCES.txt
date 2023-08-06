@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+src/event_synchronization/PiecewiseCteFct.py
+src/event_synchronization/PiecewiseCteFct1D.py
+src/event_synchronization/__init__.py
+src/event_synchronization/synchronization.py
+src/event_synchronization/synchronization_base.py
+src/event_synchronization.egg-info/PKG-INFO
+src/event_synchronization.egg-info/SOURCES.txt
+src/event_synchronization.egg-info/dependency_links.txt
+src/event_synchronization.egg-info/requires.txt
+src/event_synchronization.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: event_synchronization
+Version: 0.3
+Summary: A synchronization API for two event channels not based on Dynamic Time Warping. 
+Home-page: https://github.com/JulienBrn/EventSynchronization
+Download-URL: https://github.com/JulienBrn/EventSynchronization.git
+Author: Julien Braine
+Author-email: julienbraine@yahoo.fr
+License: MIT
+Keywords: python,event,synchronization
+Requires-Python: >=3.10
+License-File: LICENSE.txt
