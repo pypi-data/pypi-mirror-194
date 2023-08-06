@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mypythonlib-israellandes
+Version: 1.0.0
+Summary: A small demo package
+Home-page: https://github.com/username/demopackage
+Author: demo_author
+Author-email: demo@email.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Yo
