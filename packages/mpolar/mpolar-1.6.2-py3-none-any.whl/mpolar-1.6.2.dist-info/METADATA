@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mpolar
+Version: 1.6.2
+Summary: A package to parse and evaluate polar tables for marine navigation
+Author: D-ICE Engineering Developers
+Author-email: support@dice-engineeing.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: xarray
+Requires-Dist: xarray-schema
+Requires-Dist: pint-xarray
+Requires-Dist: cf-xarray
+
