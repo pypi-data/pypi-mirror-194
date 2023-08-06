@@ -1,0 +1,21 @@
+{
+  "tests/sanmgmt.py::test_load_san_config": true,
+  "tests/host/dt.py::test_dt": true,
+  "tests/host/iscsi.py::test_set_iscsid_parameter": true,
+  "tests/host/linux.py::test_using_scsi_debug": true,
+  "tests/host/linux.py::test_rpm_repo": true,
+  "tests/sanmgmt_test.py::test_load_san_config": true,
+  "tests/host/dt_test.py::test_dt": true,
+  "tests/host/fio_test.py::test_fio": true,
+  "tests/host/iscsi_test.py::test_set_iscsid_parameter": true,
+  "tests/host/linux_test.py::test_using_scsi_debug": true,
+  "tests/host/linux_test.py::test_rpm_repo": true,
+  "tests/host/net_test.py::TestNet::test_get_ip_address_of_nic": true,
+  "tests/host/net_test.py::TestNet::test_get_ipv6_address_of_nic": true,
+  "tests/host/ssh_test.py::TestSSH::test_command": true,
+  "tests/host/ssh_test.py::TestSSH::test_command_invoke_shell": true,
+  "tests/host/ssh_test.py::TestSSH::test_command_output": true,
+  "tests/host/ssh_test.py::TestSSH::test_connect": true,
+  "tests/host/ssh_test.py::TestSSH::test_disconnect": true,
+  "tests/host/ssh_test.py::TestSSH::test_disconnect_none": true
+}
