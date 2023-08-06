@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: applepy-ui
+Version: 0.0.1
+Summary: Applepy is a UI library inspired by Swift UI that leverages AppKit and UIKit (soon) to create native MacOS, iOS and iPadOS user interfaces in the Python programming language with a declarative syntax.
+Author-email: Eduardo Henrique <eduardohleite@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Eduardo Henrique Leite
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/eduardohleite/applepy
+Keywords: MacOS,iOS,gui
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rubicon-objc (>=0.4.5)
+Requires-Dist: PyDispatcher (>=2.0.7)
+
+# applepy
+
+Applepy is a UI library inspired by Swift UI that leverages AppKit and UIKit (soon) to create native MacOS, iOS and iPadOS user interfaces in the Python programming language with a declarative syntax.
+
+*This project is at proof of concept stage and is not feature complete. Please do not use it in production.* 
+
+## Dependencies
+
+* [rubicon-objc](https://github.com/beeware/rubicon-objc)
+* [pydispatcher](https://github.com/mcfletch/pydispatcher)
+
+## Installation
+
+The latest version is available for installation in PyPI:
+>pip install applepy-ui
+
+## Usage
+
+```python
+class Sample(App):
+    def body(self) -> Scene:
+        with Window(title='Applepy example', size=Size(640, 100)) as w:
+            with VerticalStack():
+                with HorizontalStack():
+                    Label(text='Hello')
+                    Label(text='World')
+                
+            return w.center()
+Sample().run()
+```
+
+![image](./screenshot.png)
+
+For a more complete example, please check [example.py](example.py)
