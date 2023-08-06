@@ -1,0 +1,15 @@
+README.md
+setup.py
+jaspice/__init__.py
+jaspice/api.py
+jaspice/graph_parser.py
+jaspice/knp_wrapper.py
+jaspice/lang_parser.py
+jaspice/metrics.py
+jaspice/server.py
+jaspice/wordnet.py
+jaspice.egg-info/PKG-INFO
+jaspice.egg-info/SOURCES.txt
+jaspice.egg-info/dependency_links.txt
+jaspice.egg-info/requires.txt
+jaspice.egg-info/top_level.txt
