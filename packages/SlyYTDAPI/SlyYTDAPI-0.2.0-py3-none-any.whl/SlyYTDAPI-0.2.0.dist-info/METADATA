@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: SlyYTDAPI
+Version: 0.2.0
+Summary: No-boilerplate, async and typed YouTube Data API access.
+Author: Dunkyl 🔣🔣
+License: The MIT License
+        
+        Copyright © 2021 Maroue Reus
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://docs.dunkyl.net/SlyYTDAPI-Python/
+Project-URL: Repository, https://github.com/dunkyl/SlyYTDAPI-Python
+Project-URL: Documentation, https://docs.dunkyl.net/SlyYTDAPI-Python/
+Project-URL: Bug Tracker, https://github.com/dunkyl/SlyYTDAPI-Python/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SlyAPI (>=0.4.3)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: sphinxcontrib-trio ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinxext-opengraph ; extra == 'dev'
+
+# ![sly logo](https://raw.githubusercontent.com/dunkyl/SlyMeta/main/sly%20logo.svg) Sly YouTube Data API for Python
+
+<!-- elevator begin -->
+
+> 🚧 **This library is an early work in progress! Breaking changes may be frequent.**
+
+> 🐍 For Python 3.10+
+
+No-boilerplate, async and typed YouTube Data API access. 😋
+
+```shell
+pip install slyytdapi
+```
+
+This library does not have full coverage.
+All methods are read-only.
+Currently, the following topics are supported:
+
+* Videos
+* Channels
+* Comment threads
+* Video search
+* Channel members (requires approval from YouTube)
+
+For collecting statistics about your own channel using the YouTube analytics API, see [YTAAPI](https://github.com/dunkyl/SlyYTAAPI-Python).
+
+<!-- elevator end -->
+
+---
+
+Example usage:
+
+```python
+import asyncio
+from SlyYTDAPI import *
+
+async def main():
+    # don't forget to keep your secrets secret!
+    yt = YouTubeData(open('api_key.txt').read())
+
+    my_video = await yt.video('dQw4w9WgXcQ')
+    print(F"Check this out!\n{my_video.link()}")
+
+    # keep it simple
+    _ = await my_video.comments(limit=10) # list[Comment]
+
+    # or opt in to generators
+    print('\n---\n'.join([
+        F"{c.author_name} > {c.body}"
+        async for c in my_video.comments(limit=10)
+    ]))
+    
+asyncio.run(main())
+```
+
+---
+
+Example CLI usage for getting authorized:
+
+```sh
+# WINDOWS
+py -m SlyYTDAPI grant
+# MacOS or Linux
+python3 -m SlyYTDAPI grant
+```
+
+Granting credentials requires a Google Cloud Console account and JSON file.
+Please see https://docs.dunkyl.net/SlyAPI-Python/tutorial/oauth2.html for more information.
