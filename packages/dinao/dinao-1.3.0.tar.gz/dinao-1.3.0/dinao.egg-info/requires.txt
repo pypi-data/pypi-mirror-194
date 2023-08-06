@@ -1,0 +1,7 @@
+pyparsing==3.0.9
+
+[tests]
+pytest
+pytest-cov
+psycopg2-binary
+mariadb
