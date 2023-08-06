@@ -1,0 +1,10 @@
+setup.py
+funke-enrichment-core/__init__.py
+funke-enrichment-core/control.py
+funke-enrichment-core/helper.py
+funke-enrichment-core/io.py
+funke_enrichment_core.egg-info/PKG-INFO
+funke_enrichment_core.egg-info/SOURCES.txt
+funke_enrichment_core.egg-info/dependency_links.txt
+funke_enrichment_core.egg-info/requires.txt
+funke_enrichment_core.egg-info/top_level.txt
