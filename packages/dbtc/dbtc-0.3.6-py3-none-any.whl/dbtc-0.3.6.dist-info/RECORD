@@ -1,0 +1,16 @@
+dbtc/__init__.py,sha256=CTILFU8GYjKJVCSHGSjCiYTPOdC2Sk51IwV6_XyT4Jc,124
+dbtc/_version.py,sha256=EptYWB4vmy2J8e2vmqb4NqLJhNPAiPzUcbQU_V76sXE,22
+dbtc/cli.py,sha256=2t7QdzTJBeZNyYwtAA_342zpvb-8M1QU6Npkqi2jSK8,35708
+dbtc/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbtc/client/admin.py,sha256=CWSMsnGX74VNLY7O_Nfi0V86jQKQuG-qWWJPkXz_c7c,61926
+dbtc/client/artifacts/metadata_schema.json,sha256=AhqRjo1pbxuCnz6V-AtVyjn6gcfLgDfq_cp36yKxfY8,86338
+dbtc/client/base.py,sha256=j5QYSb5va7aOwsGCQdMrE7futJUXuuX5aeGgSKwBwts,1717
+dbtc/client/main.py,sha256=972mNyjvWz0BL7Yc4VY02TkzrCEcn8_38uhWmpDpp34,258
+dbtc/client/metadata.py,sha256=zaQQ8lzpExph87sl-C5bOt2H39i7vn4fVcrFgAuGetc,24591
+dbtc/client/schema.py,sha256=uuPiZ2dgpeDFUABjDS4r_TFs7OCO6BhwkxlMI1U5t4Q,33972
+dbtc/console.py,sha256=F1wAPAFb91MOdSUiv5VHOEa1ghMv6KiPeo5Gf59G_zI,103
+dbtc/utils.py,sha256=IQdoLySdKBQ4bUAyxZiFjXzU-jfmb1vtK1A1NwVwhlI,428
+dbtc-0.3.6.dist-info/METADATA,sha256=xSZIvEFR5-kq6_sMEBvgndNgMAXUHTIZnSahNKlkE4o,4662
+dbtc-0.3.6.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+dbtc-0.3.6.dist-info/entry_points.txt,sha256=JWVlAZvWC5IE1aA5Ac5w5pOJhvApnpOz4zU4-ceR5UY,38
+dbtc-0.3.6.dist-info/RECORD,,
