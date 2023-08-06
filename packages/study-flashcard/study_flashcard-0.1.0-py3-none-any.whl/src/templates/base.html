@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flashcard App</title>
+        <style>
+          /* Add some basic styles */
+          body {
+            font-family: sans-serif;
+          }
+
+          h1 {
+            text-align: center;
+          }
+
+          #flashcard {
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 1rem;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          #question {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+
+          #answer {
+            font-size: 1.5rem;
+            color: gray;
+          }
+        </style>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>
