@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: nais
+Version: 1.0
+Summary: NORSAR AI System.
+Home-page: https://github.com/NorwegianSeismicArray/nais
+Author: Erik B. Myklebust
+Author-email: erik@norsar.no
+License: UNKNOWN
+Download-URL: https://github.com/NorwegianSeismicArray/nais/archive/refs/tags/1.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
