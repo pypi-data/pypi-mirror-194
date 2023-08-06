@@ -1,0 +1,15 @@
+nucliadb_dataset/__init__.py,sha256=Ompvky4cjy8gRafFvhaPTQaqHzP1g4iZiV-2hqNBjPk,1330
+nucliadb_dataset/api.py,sha256=PbOwmD_ZP6jO78cOwyaSoONxCYKG5C-AFHD4uOcAcMY,3040
+nucliadb_dataset/dataset.py,sha256=Z2hykqjl99J1DCIho94uExUgvdiq79TjvD9tUnxcA3k,16286
+nucliadb_dataset/export.py,sha256=Y0vvLs8c7Wou70_hs51QgMIUfcIxVxng9PWSafvF9yg,2837
+nucliadb_dataset/mapping.py,sha256=QXWqNiM23UrIufNmoCJLBbsqLR5ZPUHK7utHQac3OeE,2842
+nucliadb_dataset/nuclia.py,sha256=U47IZuaDEtpDtAE_4-C3ChsOG8NDJ55MVDTyXaJZI8M,3969
+nucliadb_dataset/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nucliadb_dataset/run.py,sha256=Rqxn4PeE9p8eev8HMtuli7l_ZYXGOWzV1yzh3Oqdr_4,3454
+nucliadb_dataset/settings.py,sha256=2cBWjTf6LnJ9TSHcalpRPcS_P5ofGmYiirdCqJl28go,2325
+nucliadb_dataset/streamer.py,sha256=ufa-crVmfLiW123JQQBi7UGusOdB_2lgL0YzVXqbzP4,2410
+nucliadb_dataset-2.3.0.post11.dist-info/METADATA,sha256=f5VMQHmD8SgqWrskXB0uiLTo2yMzIWc_AbcN7mIxOok,1271
+nucliadb_dataset-2.3.0.post11.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nucliadb_dataset-2.3.0.post11.dist-info/entry_points.txt,sha256=Sxj3LTMMj6lcS_C3I3Ke4R2vFTngQUL7opC0RQJ1qIc,61
+nucliadb_dataset-2.3.0.post11.dist-info/top_level.txt,sha256=aJtDe54tz6060E0uyk1rdTRAU4FPWo5if1fYFQGvdqU,17
+nucliadb_dataset-2.3.0.post11.dist-info/RECORD,,
