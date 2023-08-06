@@ -1,0 +1,7 @@
+versioneer
+
+[jsonutil]
+simplejson>=2.1.0
+
+[randcookie]
+zbase32>=1.0
