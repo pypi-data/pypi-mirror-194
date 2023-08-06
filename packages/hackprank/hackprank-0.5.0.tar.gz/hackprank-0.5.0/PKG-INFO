@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hackprank
+Version: 0.5.0
+Summary: A Python Package Full Of Fake Hacking Programs To Prank Your Friends
+Author: Aarav Goel
+Keywords: python,hack,prank,cool,pyhacks,pyhack,pranks,hackprank,hackpranks
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A Package That Lets You Easily Trick Your Friends And Prank Them With Fake Hacking Programs
+ Version 0.3.3 Adds Matrix Fall Witch You Can Use With The New hackprank.matrix module
+ Version 0.4.7 Adds New Matrix Fall hackprank.matrix 
