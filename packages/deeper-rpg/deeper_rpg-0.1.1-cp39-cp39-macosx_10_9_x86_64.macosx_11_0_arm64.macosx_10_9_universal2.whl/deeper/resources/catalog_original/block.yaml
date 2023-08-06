@@ -1,0 +1,5 @@
+Block:
+  _abstract: true
+  category: Block
+  components:
+    Block: {}
