@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+tiktoktts/__init__.py
+tiktoktts.egg-info/PKG-INFO
+tiktoktts.egg-info/SOURCES.txt
+tiktoktts.egg-info/dependency_links.txt
+tiktoktts.egg-info/not-zip-safe
+tiktoktts.egg-info/top_level.txt
