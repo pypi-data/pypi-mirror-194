@@ -1,0 +1,2 @@
+[console_scripts]
+chrome-driver-exe-update = src.cli:main
