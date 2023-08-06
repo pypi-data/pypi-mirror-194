@@ -1,0 +1,2 @@
+[console_scripts]
+nawah = nawah.__main__:main
