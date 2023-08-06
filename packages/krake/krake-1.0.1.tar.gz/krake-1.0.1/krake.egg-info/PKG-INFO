@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: krake
+Version: 1.0.1
+Home-page: https://gitlab.com/rak-n-rok/krake
+Maintainer: Krake Development Team
+Maintainer-email: krake@cloudandheat.com
+Requires-Python: >=3.7
+Provides-Extra: dev
+Provides-Extra: api_generator
+License-File: LICENSE
