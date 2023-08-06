@@ -1,0 +1,9 @@
+// Set all headers the same color since jupyter orange is a bit "strong"
+h1, h2, h3, h4, h5 {
+  color: var(--pst-color-text-muted);
+}
+
+// First two headers are bolded to be more distinguishable
+h1, h2 {
+  font-weight: bold;
+}

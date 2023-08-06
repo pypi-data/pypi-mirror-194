@@ -1,0 +1,50 @@
+[build-system]
+requires = ["sphinx-theme-builder"]
+build-backend = "sphinx_theme_builder"
+
+[tool.sphinx-theme-builder]
+node-version = "16.13.0"
+
+[project]
+name = "jupyterhub-sphinx-theme"
+description = "JupyterHub's Documentation Theme."
+dynamic = ["version"]
+readme = "README.md"
+urls = { Organization = "https://jupyter.org" }
+
+requires-python = ">=3.8"
+dependencies = [
+  "myst-parser",
+  "pydata-sphinx-theme>=0.13.0rc4",
+  "sphinx-copybutton",
+  "sphinxext-opengraph"
+]
+
+license = { file = "LICENSE"}
+authors = [
+    {name = "JupyterHub", email = "hello@jupyter.org"},
+]
+classifiers = [
+  "Framework :: Sphinx",
+  "Framework :: Sphinx :: Theme",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.5",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Operating System :: OS Independent",
+  "Topic :: Documentation",
+  "Topic :: Software Development :: Documentation",
+]
+
+[project.optional-dependencies]
+dev = [
+  'sphinx-theme-builder[cli]',
+]
+
+[project.entry-points]
+"sphinx.html_themes" = {jupyterhub_sphinx_theme = "jupyterhub_sphinx_theme"}

@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "sass src/jupyterhub_sphinx_theme/assets/styles/jupyterhub-sphinx-theme.scss src/jupyterhub_sphinx_theme/theme/jupyterhub-sphinx-theme/static/styles/jupyterhub-sphinx-theme.css"
+  },
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}
