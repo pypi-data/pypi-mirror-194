@@ -1,0 +1,47 @@
+Value Required INTERFACE (\w+(\d+\/){1,6}\d+)
+Value Required TRANSCEIVER_TYPE (\S+)
+Value CONNECTOR_TYPE (\S+)
+Value WAVELENGTH (\S+)
+Value VENDOR (\w+)
+Value VENDOR_PN (\w+)
+Value MANU_SN (\w+)
+Value MANU_DATE (\d+-\d+-\d+)
+Value DISTANCE ([\S\s]+)
+Value TEMPERATURE (\S+)
+Value VOLTAGE (\S+)
+Value BIAS_CURRENT (\S+)
+Value BIAS_HIGH (\S+)
+Value BIAS_LOW (\S+)
+Value RX_POWER (\S+)
+Value DEF_RX_POWER_HIGH (\S+)
+Value DEF_RX_POWER_LOW (\S+)
+Value TX_POWER (\S+)
+Value DEF_TX_POWER_HIGH (\S+)
+Value DEF_TX_POWER_LOW (\S+)
+
+Start
+  ^\s*${INTERFACE}\s+.*\s*information:
+  ^\s+Transceiver\s+Type\s+:${TRANSCEIVER_TYPE}
+  ^\s*Connector\s+Type\s+:${CONNECTOR_TYPE}
+  ^\s*Wavelength\s*\(nm\)\s*:${WAVELENGTH}
+  ^\s*Transfer\s+Distance.*:${DISTANCE} 
+  ^\s*Vendor\s+Name\s+:${VENDOR}
+  ^\s*Vendor\s+Part\s+Number\s+:${VENDOR_PN}
+  ^\s*Manu\.\s+Serial\s+Number\s+:${MANU_SN}
+  ^\s+Description\s+:${CONNECTOR_TYPE}
+  ^\s+Type\s+:${TRANSCEIVER_TYPE}
+  ^\s*Manufacturer\s+:${VENDOR}
+  ^\s*HuaweiPartNumber\s+:${VENDOR_PN}
+  ^\s*VendorSN\s+:${MANU_SN}
+  ^\s*Manufacturing\s+Date\s+:${MANU_DATE}
+  ^\s*Temperature\S+\s+:${TEMPERATURE}
+  ^\s*Voltage\S+\s+:${VOLTAGE}
+  ^\s*Bias\s+Current\S+\s+:${BIAS_CURRENT}
+  ^\s*Bias\sHigh\sThreshold\S+\s+:${BIAS_HIGH}
+  ^\s*Bias\sLow\s\sThreshold\S+\s+:${BIAS_LOW}
+  ^\s*\S*\s*[Rr][Xx]\s+Power\S+\s+:${RX_POWER}
+  ^\s*\S*\s*[Rr][Xx]\s+Power\s+High\s+Threshold\S+\s+:${DEF_RX_POWER_HIGH}
+  ^\s*\S*\s*[Rr][Xx]\s+Power\s+Low\s+Threshold\S+\s+:${DEF_RX_POWER_LOW}
+  ^\s*\S*\s*[Tt][Xx]\sPower\S+\s+:${TX_POWER}
+  ^\s*\S*\s*[Tt][Xx]\s+Power\s+High\s+Threshold\S+\s+:${DEF_TX_POWER_HIGH}
+  ^\s*\S*\s*[Tt][Xx]\s+Power\s+Low\s+Threshold\(\w+\)\s+:${DEF_TX_POWER_LOW} -> Record
