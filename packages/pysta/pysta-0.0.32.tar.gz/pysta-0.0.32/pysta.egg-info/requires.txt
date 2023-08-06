@@ -1,0 +1,4 @@
+Click
+requests
+jsonschema==3
+pyyaml
