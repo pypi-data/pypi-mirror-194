@@ -1,0 +1,57 @@
+Changelog
+=========
+
+1.0.3 (2023-02-27)
+------------------
+
+- Depend only on Products.CMFPlone not on Plone package
+
+
+1.0.2 (2022-11-04)
+------------------
+
+- Fix manifest file
+
+
+1.0.1 (2022-11-04)
+------------------
+
+- hide upgrade steps in quickinstaller
+  [MrTango]
+
+
+1.0 (2022-11-04)
+----------------
+
+- Overhaul to the most recent pdfjs release including its recent viewer.js
+  [jensens, benniboy]
+
+- make it compatiple with Plone 6
+  [MrTango]
+
+0.4.2
+-----
+
+- Tests: added a test on availableLayouts
+  This fails because the view is not present,
+  no idea why. Must recheck.
+
+- Added human name for the view, after a suggestion by
+  Marcel
+
+0.4.0
+-----
+
+- Tests: basic code coverage
+- Reasonably minified pdf.js
+
+0.3.6
+-----
+
+- Minified pdf.min.js
+- Tested on Chrome and Firefox
+
+0.2.2
+-----
+
+- Renders the Tracemonkey PDF
