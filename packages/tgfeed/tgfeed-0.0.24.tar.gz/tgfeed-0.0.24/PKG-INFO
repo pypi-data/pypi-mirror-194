@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tgfeed
+Version: 0.0.24
+Summary: Create feeds in Telegram easily
+Author: Nikolai
+Author-email: magnickolas@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Telethon (>=1.27.0,<2.0.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: jsonpickle (>=3.0.1,<4.0.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
