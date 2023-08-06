@@ -1,0 +1,11 @@
+{
+  "csv": {
+    "menu_title": "Імпорт CSV",
+    "import_template": {
+      "menu_title": "Імпортувати шаблони"
+    },
+    "import": {
+      "menu_title": "Імпорт файлу CSV"
+    }
+  }
+}
