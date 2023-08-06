@@ -1,0 +1,315 @@
+Metadata-Version: 2.1
+Name: contamxpy
+Version: 0.0.7
+Summary: Python wrapper for the CONTAM Simulation Engine, ContamX
+Author: W. Stuart Dols, Brian Polidoro, NIST
+Author-email: william.dols@nist.gov
+License: Public Domain
+Project-URL: Web Page, https://www.nist.gov/el/energy-and-environment-division-73200/nist-multizone-modeling/
+Project-URL: Source, https://pypi.org/project/contamxpy/
+Classifier: License :: Public Domain
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: cffi (>=1)
+
+# Python Bindings for ContamX 
+
+This is the initial implementation of a Python wrapper for `contamx-lib.lib` which is a statically linked library with an API wrapper around ContamX. `contamx-lib` enables control of CONTAM simulations via C-language API. This Python package, `contamxpy`, provides another layer of access, i.e., Python bindings, to `contamx-lib`.  
+
+[Driver Modules](#DriverModules) are provided that demonstrate the use of `contamxpy.py`. These drivers import `contamxpy`, obtain a `state`, get properties of the simulation necessary to run from beginning to end, then step through all the time steps.  
+
+## Usage
+
+Typically, one would work within a Python virtual environment which can be created and activated using the following commands.  
+```
+$ python -m venv .venv
+$ .venv\Scripts\activate  (on Windows)
+```   
+Install `contamxpy` from PyPI.  
+```
+$(.venv) python -m pip install contamxpy
+```   
+Get help for the test module from the command line.
+```
+test_cxcffi.py -h
+
+Usage: test_cxcffi.py [options] arg1  
+    arg1=PRJ filename
+
+Options:
+  -h, --help    show this help message and exit
+  -v VERBOSE, --verbose=VERBOSE
+                define verbose output level: 0=Min, 1=Medium,
+                2=Max
+```
+
+## <a name="DriverModules"></a>Driver Modules
+
+Demonstration cases are provided with the downloadable source distribution. Example drivers and test cases, i.e., CONTAM PRJ and associated input files (WTH, CTM), will be in the `demo_files` folder. This example command line runs the `test_OneZoneWthCtm.py` module with `test_GetPrjInfo.prj` using the `--verbose=2` command line option and redirects it to a text file named `out.txt`. Review `out.txt` for detailed information obtained from the PRJ file via the `contamxpy` module.  
+
+```
+test_OneZoneWthCtm.py test_GetPrjInfo.prj --verbose=2 > out.txt
+```
+Some driver modules (listed below) are case-specific and provide boundary conditions (WTH and CTM-like) for their respective PRJ files.
+
+* test_OneZoneWthCtm.py
+
+    - test_OneZoneWthCtm-UseApi.prj
+    - test_OneZoneWthCtmStack-UseApi.prj
+    - valThreeZonesWthCtm-UseApi.prj
+    - testGetPrjInfo.prj
+
+* test_cxcffi.py
+
+    - test_OneZoneWthCtm.prj
+    - test_OneZoneWthCtmStack.prj
+    - valThreeZonesWthCtm.prj
+
+* test_OneFloorWpcAddMf.py
+
+    - test_OneFloorWpcAddMf-UseApi.prj
+
+ `contamxpy` is thread safe, and the `test_Multirun.py` driver demonstrates this capability by running multiple PRJ files provided in a list file using the Python `threading` module. **NOTE**: At the time of this release, `contamxpy` cannot be used with Python's multiprocessing capabilities due to pickling limitation of CFFI-based modules.
+ 
+ * test_MultiRun.py (Use --help option for details)
+
+    - prjFile.lst
+    - reg_solverContTrace-mz-MH-trans-3day.prj, test_GetPrjInfo.prj, test_OneFloorWpcAddMfYear.prj, test_OneZoneWthCtmStackYear.prj, test_OneZoneWthCtmYear.prj, valThreeZonesWthCtmYear.prj
+
+# Documentation
+
+The *docs* folder in the source distribution file (e.g., *contamxpy-#.#.#.zip*) contains a PDF with detailed documentation of the API.
+
+# Developer Notes
+
+These bindings were developed using the **C Foreign Function Interface (CFFI)**. CFFI utilizes C header files that define the `contamx-lib` API. `contamx-lib.lib` is a statically linked build of ContamX with an API, i.e., `contamx-lib`. A dynamic Python module (.pyd) is built that incorporates the static build.  
+
+**NIST Developer NOTE:** The static build of `contamx-lib.lib` must include the following dependencies: `WSock32.lib`, `WS2_32.lib`, and `user32.lib`.  
+
+## Steps to Develop Python Bindings
+
+### 1. Create directory for *contamxpy*  
+- Either clone the repo (NIST developers only) OR
+- Download the source distribution from https://pypi.org/project/contamxpy/  
+#### Source files:  
+
+```
+contamxpy\  
+|
+| setup.py
+| setup.cfg
+| MANIFEST.in 
+| LICENSE.txt
+| README.md
+| contamxpy_build.py
+| contamxpy.py
+| contamx-lib.lib
+|
+├── include\
+|   └── contam-x-cosim.h
+|       string-len-max.h
+|       types.h
+|
+└── demo_files\
+    └── cxResults.py
+        cxRun.py
+        test_cxcffi.py
+          test_OneZoneWthCtm.prj/.wth/.ctm
+          test_OneZoneWthCtmStack.prj/.wth/.ctm
+          valThreeZonesWth.prj/.wth/.ctm
+          test_OneFloorWpcAddMf.prj
+          test_OneFloor.wpc
+        test_OneZoneWthCtm.py
+          test_OneZoneWthCtm-UseApi.prj
+          test_OneZoneWthCtmStack-UseApi.prj
+          test_GetPrjInfo.prj
+        test_OneFloorWpcAddMf.py
+          test_OneFloorWpcAddMf-UseApi.prj
+        test_MultiRun.py
+          prjFile.lst
+          reg_solverContTrace-mz-MH-trans-3day.prj
+          MD-Balt-EPW.wth
+          test_OneFloorWpcAddMfYear.prj 
+          test_OneFloorYear.wpc
+          test_OneZoneWthCtmStackYear.prj/.wth/.ctm
+          test_OneZoneWthCtmYear.prj/.wth/.ctm
+          valThreeZonesWthCtmYear.prj/.wth/.ctm
+```
+### 2. Create virtual environment
+   `python -m venv .venv`  
+   
+### 3. Activate virtual environment
+   + Windows => `.venv\Scripts\activate.bat`
+   
+### 4. Install required packages:  
+
+   `$ python -m pip install cffi, wheel, numpy`
+
+* *cffi* and *wheel* are required for development
+* *cffi* and *numpy* are required to run example driver modules  
+
+### 5. Generate *contamxpy* 
+
+Run the build module.
+```
+contamxpy_build.py
+```   
+This should generate *_contamxpy.c*, etc.
+```
+contamxpy\  
+|
+├── Release\
+|   └── ... *.exp/.lib/.obj
+|
+└── _contamxpy.c
+    _contamxpy.cp310-win_amd64.pyd
+```
+
+Most importantly it will generate a dynamic python module, e.g., 
+`_contamxpy-cp310-win_amd64.pyd` that provides a wrapper to `contamx-lib.lib`.
+
+### 6. Install the development version locally
+```
+$(.venv) pip install .
+```
+### 7. Generate Files for Distribution
+Built distribution, i.e., wheel file:
+```
+$(.venv) python -m setup bdist_wheel
+```
+Source distribution, i.e., compressed archive (.zip, .gz):
+```
+$(.venv) python -m setup sdist --format=zip
+AND/OR
+$(.venv) python -m setup sdist
+```
+
+## Development Files  
+
+### cxcffi_build.py
+
+This module is used to produce the dynamic python module using CFFI to wrap the static library, `contamx-lib`.  
+
+```python
+from __future__ import annotations
+
+# Using the "out-of-line", "API mode"
+from cffi import FFI
+
+
+CDEF = '''\
+    // NOT SHOWN: typedef and function prototypes for contamx-lib.lib
+'''
+
+SRC = '''\
+    #include "include//contam-x-cosim.h"
+'''
+
+ffibuilder = FFI()
+ffibuilder.cdef(CDEF)
+ffibuilder.set_source(
+    "_contamxpy", SRC,
+    include_dirs=['.','include'],  # C header files for contam-x-lib
+    libraries=['contamx-lib'],     # Library to link with (.lib, .dll)
+)
+
+if __name__ == "__main__":
+    ffibuilder.compile(verbose=True)
+```
+### contamxpy
+`contamxpy` implements the `cxLib` class that provides the wrapper to `contamx-lib`. This module is imported for use by driver programs listed above. 
+
+NOTE: Code not shown here.
+
+### setup.py  
+
+```python
+from __future__ import annotations
+
+import platform
+import sys
+
+from setuptools import setup
+
+if platform.python_implementation() == 'CPython':
+    try:
+        import wheel.bdist_wheel
+    except ImportError:
+        cmdclass = {}
+    else:
+        class bdist_wheel(wheel.bdist_wheel.bdist_wheel):
+            def finalize_options(self) -> None:
+                self.py_limited_api = f'cp3{sys.version_info[1]}'
+                super().finalize_options()
+
+        cmdclass = {'bdist_wheel': bdist_wheel}
+else:
+    cmdclass = {}
+
+setup(
+    cffi_modules=['contamxpy_build.py:ffibuilder'], cmdclass=cmdclass
+    )
+```
+
+### setup.cfg
+
+```ini
+[metadata]
+name = contamxpy
+version = 0.0.5
+description = Python wrapper for the CONTAM Simulation Engine, ContamX
+long_description = file: README.md
+long_description_content_type = text/markdown
+author = W. Stuart Dols, Brian Polidoro, NIST
+author_email = william.dols@nist.gov
+license = Public Domain
+license_files = LICENSE.txt
+classifiers =
+    License :: Public Domain 
+    License :: OSI Approved :: BSD License
+    Programming Language :: Python :: 3
+    Programming Language :: Python :: 3 :: Only
+    Programming Language :: Python :: Implementation :: CPython
+    Programming Language :: Python :: Implementation :: PyPy
+    Topic :: Scientific/Engineering
+project_urls=
+    Web Page= https://www.nist.gov/el/energy-and-environment-division-73200/nist-multizone-modeling/
+    Source  = https://pypi.org/project/contamxpy/
+[options]
+py_modules = contamxpy
+python_requires = >=3.7
+install_requires =
+    cffi>=1
+setup_requires =
+    cffi>=1
+```
+
+### MANIFEST.in
+The manifest file is used to add files to the source builds.  
+
+```
+include include\*.h
+include contamx-lib.*
+include demo_files\*.py
+include demo_files\*.prj
+include demo_files\*.wth
+include demo_files\*.ctm
+```
+
+# REFERENCES
+1. https://www.youtube.com/watch?v=X5irxO5VCHw
+2. https://github.com/asottile/ukkonen
+3. https://cffi.readthedocs.io/en/latest/index.html
+4. https://docs.python.org/3.10/distutils/index.html
+5. https://setuptools.pypa.io/en/latest/setuptools.html
+6. https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+# TODO  
+- Test on Linux  
