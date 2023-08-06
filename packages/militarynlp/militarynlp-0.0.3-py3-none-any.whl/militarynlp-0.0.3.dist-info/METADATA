@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: militarynlp
+Version: 0.0.3
+Summary: Narrating Military Using Python.
+Home-page: https://cpanlp.com
+Author: Draco Deng
+Author-email: dracodeng6@gmail.com
+License: MIT
+Keywords: python,military,intelligent military,linguistic turn,linguistic
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Chinese (Simplified)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+
+# Python Narrative packages
+- [politicsnlp](https://pypi.org/project/politicsnlp/) for Politics
+- [religionnlp](https://pypi.org/project/religionnlp/) for Religion
+- [lawnlp](https://pypi.org/project/lawnlp/) for Law
+- [economynlp](https://pypi.org/project/economynlp/) for Economy
+- [cpanlp](https://pypi.org/project/cpanlp/) for Business
+- [militarynlp](https://pypi.org/project/militarynlp/) for Military
+
+## Communicate effectively within a common Military framework
+  
+
+<img src="https://raw.githubusercontent.com/python-narrative/militarynlp/main/militarynlp.jpg" width = "220" height = "100" 
+alt="logo" align=center />
+
+## Install & Import
+#### Dependencies
+- numpy
+- pandas
+  
+For detailed installation instructions, see the
+[documentation](https://cpanlp.com/documentation).
+```python
+pip install militarynlp
+import militarynlp as mp
+```
+
+
+Check out: https://cpanlp.com
