@@ -1,0 +1,7 @@
+jax==0.4.1
+jaxlib==0.4.1
+flax==0.6.3
+flowMC
+ripplegw
+gwpy
+corner

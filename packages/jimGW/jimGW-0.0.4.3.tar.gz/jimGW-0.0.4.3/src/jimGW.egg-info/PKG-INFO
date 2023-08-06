@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jimGW
+Version: 0.0.4.3
+Summary: Gravitatioanl wave data analysis tool in Jax
+Home-page: https://github.com/kazewong/jim
+Author: Kaze Wong
+Author-email: kazewong.physics@gmail.com
+License: MIT
+Keywords: sampling,inference,machine learning,normalizing,autodiff,jax
+Requires-Python: <3.11,>=3.10
+License-File: LICENSE
