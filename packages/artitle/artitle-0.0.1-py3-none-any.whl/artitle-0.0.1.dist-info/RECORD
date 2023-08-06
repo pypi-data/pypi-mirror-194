@@ -1,0 +1,11 @@
+src/__init__.py,sha256=IY7x5hb_NOsuxcx_TdRnWAz4pzpRYn1DJ_ZnU-lcto4,61
+src/client.py,sha256=crvUiVnnkn6tFwO4lKQg2cTxAHZxCBAmeNSVtuL4ZA0,6009
+src/config.json,sha256=M9Kkd-HQB_OJN96W6RvKYjYDppKws0DF9H79yhcGLXY,195
+src/grobid_client.py,sha256=5stprroEf0nuspwuflpCfjmYsWzZ67oMB1kd3XHfBe8,16617
+src/main.py,sha256=_qoT4vlEiRNQKWRYjBOUgzIEzggM6FtpH-47B8dHgU4,5244
+artitle-0.0.1.dist-info/LICENSE,sha256=e7YGu7sf_EV16HEjbMxxBtYF_agrvcMI08dEfK6ho-o,1044
+artitle-0.0.1.dist-info/METADATA,sha256=iPAuvlAqzhAUx2vbkkQ6wI75FnspG4sj_jKgD1ftYGg,122
+artitle-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+artitle-0.0.1.dist-info/entry_points.txt,sha256=bfk6k4_BDambricZO87gpw3ElL2QfP1OzZ1G5xgA9NY,42
+artitle-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+artitle-0.0.1.dist-info/RECORD,,
