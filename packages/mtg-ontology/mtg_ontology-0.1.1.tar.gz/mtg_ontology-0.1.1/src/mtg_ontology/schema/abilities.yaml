@@ -1,0 +1,422 @@
+id: https://w3id.org/cmdoret/mtg-ontology/abilities/
+name: mtgo-abilities
+title: Magic The Gathering Ontology for Abilities
+description: |-
+  An ontology describing Magic: The Gathering abilities.
+  It aims to formalize the freetext description of card
+  abilities and effects.
+license: GNU GPL v3.0
+see_also:
+  - https://cmdoret.github.io/mtg-ontology
+
+prefixes:
+  mtg: https://mtg.fandom.com/wiki/
+  mtgo: https://w3id.org/cmdoret/mtg-ontology/
+  mtgoa: https://w3id.org/cmdoret/mtg-ontology/abilities/
+  mtgoc: https://w3id.org/cmdoret/mtg-ontology/cards/
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  wiki: http://en.wikipedia.org/wiki/
+  example: http://www.example.org/rdf#
+default_prefix: mtgoa
+default_range: string
+
+imports:
+  - linkml:types
+  - cards
+  - mtg_ontology
+
+classes:
+
+  Ability:
+    is_a: Thing
+    class_uri: mtg:Ability
+    abstract: true
+    description: >-
+      A card ability, activated, triggered or static.
+    slots:
+      - rules_text
+      - effect
+  ActivatedAbility:
+    is_a: Ability
+    class_uri: mtg:Activated_ability
+    description: >-
+      A card ability which can be activated for a cost.
+    slots:
+      - cost
+      - condition
+  KeywordAbility:
+    is_a: Ability
+    class_uri: mtg:Keyword_ability
+    description: >-
+      A passive ability represented by word that substitutes for a piece of rules text, such as deathtouch or flying.
+    slots:
+      - name
+      - value
+  StaticAbility:
+    is_a: Ability
+    class_uri: mtg:Static_ability
+    description: >-
+      A card ability which remains active until endgame once put into effect.
+  TriggeredAbility:
+    is_a: Ability
+    class_uri: mtg:Triggered_ability
+    description: >-
+      A card ability, triggered by an event.
+    slots:
+      - condition
+
+  Condition:
+    is_a: Thing
+    description: A condition expressed as constraints.
+    slots:
+      - source
+      - target
+      - action_spec
+      - value_spec
+      - time_spec
+  
+  AbilityCollection:
+    tree_root: true
+    description: >-
+      A collection of abilities and associated concepts.
+    attributes:
+      activated_abilities:
+        description: Activated abilities in the collection.
+        range: ActivatedAbility
+        multivalued: true
+        inlined: true
+      conditions:
+        description: Conditions in the collection.
+        range: Condition
+        multivalued: true
+        inlined: true
+      mana_costs:
+        description: Mana costs in the collection.
+        range: ManaCost
+        multivalued: true
+        inlined: true
+      value_specifications:
+        description: Values in the collection.
+        range: ValueSpecification
+        multivalued: true
+        inlined: true
+      action_specifications:
+        description: Action specifications in the collection.
+        range: ActionSpecification
+        multivalued: true
+        inlined: true
+      time_specifications:
+        description: Time specifications in the collection.
+        range: TimeSpecification
+        multivalued: true
+        inlined: true
+
+  Specification:
+    is_a: Thing
+    description: A specification for a thing. 
+    abstract: true
+    slots:
+      - constraint
+      - intersection 
+      - union
+
+  ActionSpecification:
+    is_a: Specification
+    description: A specification for an action.
+    slots:
+    - action
+    slot_usage:
+      intersection:
+        range: ActionSpecification
+      union:
+        range: ActionSpecification
+      constraint:
+        range: ActionConstraint
+
+  ValueSpecification:
+    is_a: Specification
+    description: A specification for a quantitative value.
+    slots:
+    - value
+    - unit
+    slot_usage:
+      intersection:
+        range: ValueSpecification
+      union:
+        range: ValueSpecification
+      constraint:
+        range: ValueConstraint
+
+  TimeSpecification:
+    is_a: Thing
+    description: A specification for a time.
+    slots:
+      - turn_phase
+      - player
+    slot_usage:
+      intersection:
+        range: TimeSpecification
+      union:
+        range: TimeSpecification
+      constraint:
+        range: TimeConstraint
+
+
+slots:
+  rules_text:
+    range: string
+    description: The text describing what an ability does.
+  cost:
+    description: A cost to play a card or ability.
+    any_of:
+      - range: Cost
+      - range: Condition
+    multivalued: true
+  effect:
+    range: Condition
+    description: The effect of an ability.
+  action:
+    range: Action
+    required: true
+    description: An action taken by a player or card.
+  source:
+    any_of:
+      - range: Player
+      - range: Card
+    description: The entity responsible for an action.
+  target:
+    any_of:
+      - range: Player
+      - range: Card
+    description: The entity targeted by an action or constraint.
+  condition:
+    range: Condition
+    description: A condition required for an activation.
+  value_spec:
+    range: ValueSpecification
+    description: A specification for the value of a property.
+    multivalued: true
+  time_spec:
+    range: TimeSpecification
+    description: A specification of the time of an event.
+    multivalued: true
+  action_spec:
+    range: ActionSpecification
+    description: A specification of an action.
+    multivalued: true
+  player:
+    range: Player
+    description: A player.
+  turn_phase:
+    range: TurnPhase
+    description: A phase of the game.
+  unit:
+    any_of:
+      - range: linkml:ClassDefinition
+      - range: NamedThing
+    description: The type of quantity described by a value.
+  constraint:
+    any_of:
+      - range: ActionConstraint
+      - range: TimeConstraint
+      - range: ValueConstraint
+    description: A constraint on a time, quantity or action.
+  
+
+    
+enums:
+
+  Player:
+    description: One or more human players.
+    permissible_values:
+      you:
+        description: The focal player.
+      active_player:
+        description: The player who is currently taking their turn.
+      non_active_player:
+        description: Any player who is not currently taking their turn.
+      defending_player:
+        description: The player who is currently defending.
+      attacking_player:
+        description: The player who is currently attacking.
+      owner:
+        description: The player who owns a card.
+      controller:
+        description: The player who controls an object on the stack.
+      opponent:
+        description: A player playing against the focal player.
+      opponents:
+        description: All players playing against the focal player.
+      players:
+        description: All players taking part in the game.
+
+  Action:
+    description: An action taken by a player or card.
+    enum_uri: mtg:keyword_action
+    permissible_values:
+      discard:
+        description: Transfer one or more cards from the hand to the graveyard.
+        meaning: mtg:discard
+      draw:
+        description: Transfer one or more cards from the library to the hand.
+        meaning: mtg:draw
+      sacrifice:
+        description: Transfer one or more permanents you control from the battlefield to their owner's graveyard.
+        meaning: mtg:sacrifice
+      exile:
+        description: Remove one or more cards from game.
+        meaning: mtg:exile
+      fight:
+        description: Two cards fight each other.
+        meaning: mtg:fight
+      destroy:
+        description: Transfer one or more permanents from the battlefield to their owner's graveyard.
+        meaning: mtg:destroy
+      deal_damage:
+        description: Something deals damage to something else.
+      cast:
+        description: A spell is cast.
+        meaning: mtg:cast
+      activate:
+        description: An ability is activated.
+        meaning: mtg:activate
+      attach:
+        description: An equipment, aura or fortification is moved onto another object or player.
+        meaning: mtg:attach
+      play:
+        description: A card is played as a land or cast as a spell, whichever is appropriate.
+        meaning: mtg:play
+      tap:
+        description: A card is tapped.
+        meaning: mtg:tap
+      untap:
+        description: A card is untapped
+        meaning: mtg:untap
+      search:
+        description: A player searches their library.
+        meaning: mtg:search
+      shuffle:
+        description: A player shuffles their library.
+        meaning: mtg:shuffle
+      reveal:
+        description: A player reveals a card or cards to other players.
+        meaning: mtg:reveal
+      scry:
+        description: >-
+          A player looks at a certain number of cards from the top of their library,
+          and puts them back at the top or bottom of the library in any order.
+        meaning: mtg:scry
+      add_mana:
+        description: A player adds mana to their mana pool.
+      control:
+        description: A player controls a card.
+        meaning: mtg:control_and_ownership
+
+  ActionConstraint:
+    permissible_values:
+      must:
+        description: The constraint must be met.
+      may:
+        description: The constraint may be met.
+      must_not:
+        description: The constraint must not be met.
+      may_not:
+        description: The constraint may not be met.
+  
+  ValueConstraint:
+    permissible_values:
+      equal:
+        description: The value must be equal to the target.
+      greater_than:
+        description: The value must be greater than the target.
+      less_than:
+        description: The value must be less than the target.
+      greater_than_or_equal:
+        description: The value must be greater than or equal to the target.
+      less_than_or_equal:
+        description: The value must be less than or equal to the target.
+      not_equal:
+        description: The value must not be equal to the target.
+      between:
+        description: The value must be between the target and the target2.
+      not_between:
+        description: The value must not be between the target and the target2.
+      is:
+        description: The value must be equivalent to the target.
+      is_not:
+        description: The value must not be equivalent to the target.
+      is_one_of:
+        description: The value must be one of the target list.
+      is_not_one_of:
+        description: The value must not be one of the target list.
+
+  TurnPhase:
+    description: A time during the turn.
+    permissible_values:
+      beginning_phase:
+        description: The beginning of the turn.
+        meaning: mtg:beggining_phase
+      untap_step:
+        description: The untap step.
+        meaning: mtg:untap_step
+      upkeep_step:
+        description: The upkeep step.
+        meaning: mtg:upkeep_step
+      draw_step:
+        description: The draw step.
+        meaning: mtg:draw_step
+      main_phase:
+        description: Either main phase.
+        meaning: mtg:main_phase
+      pre_combat_main_phase:
+        description: The first main phase.
+        meaning: mtg:main_phase
+      post_combat_main_phase:
+        description: The second main phase.
+        meaning: mtg:main_phase
+      combat_phase:
+        description: The combat phase.
+        meaning: mtg:combat_phase
+      beginning_of_combat_step:
+        description: The first step of the combat phase.
+        meaning: mtg:beginning_of_combat_step
+      declare_attackers_step:
+        description: The declare attackers step.
+        meaning: mtg:declare_attackers_step
+      declare_blockers_step:
+        description: The declare blockers step.
+        meaning: mtg:declare_blockers_step
+      combat_damage_step:
+        description: The combat damage step.
+        meaning: mtg:combat_damage_step
+      end_of_combat_step:
+        description: The end of combat step.
+        meaning: mtg:end_of_combat_step
+      ending_phase:
+        description: The end step.
+        meaning: mtg:ending_phase
+      cleanup_step:
+        description: The cleanup step.
+        meaning: mtg:cleanup_step
+      turn:
+        description: A player turn.
+        meaning: mtg:turn
+  
+  TimeConstraint:
+    description: A constraint on the time of an event.
+    permissible_values:
+      before:
+        description: The event must occur before the target.
+      after:
+        description: The event must occur after the target.
+      during:
+        description: The event must occur during the target.
+      next:
+        description: The event must occur next.
+      previous:
+        description: The event must have occurred previously.
+      this:
+        description: The event must occur this time.
+      each:
+        description: The event must occur each time.

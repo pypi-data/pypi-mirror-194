@@ -1,0 +1,343 @@
+BASE <https://w3id.org/cmdoret/mtg-ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mtgoa: <https://w3id.org/cmdoret/mtg-ontology/abilities/>
+PREFIX mtgoc: <https://w3id.org/cmdoret/mtg-ontology/cards/>
+PREFIX linkml: <https://w3id.org/linkml/>
+PREFIX schema: <http://schema.org/>
+PREFIX mtg: <https://mtg.fandom.com/wiki/>
+
+
+linkml:String xsd:string
+
+linkml:Integer xsd:integer
+
+linkml:Boolean xsd:boolean
+
+linkml:Float xsd:float
+
+linkml:Double xsd:double
+
+linkml:Decimal xsd:decimal
+
+linkml:Time xsd:dateTime
+
+linkml:Date xsd:date
+
+linkml:Datetime xsd:dateTime
+
+linkml:DateOrDatetime linkml:DateOrDatetime
+
+linkml:Uriorcurie IRI
+
+linkml:Curie xsd:string
+
+linkml:Uri IRI
+
+linkml:Ncname xsd:string
+
+linkml:Objectidentifier IRI
+
+linkml:Nodeidentifier NONLITERAL
+
+mtgoa:Ability  (
+    @mtgoa:ActivatedAbility OR @mtgoa:KeywordAbility OR @mtgoa:StaticAbility OR @mtgoa:TriggeredAbility
+)
+
+mtgoa:Ability_struct {
+    (  $mtgoa:Ability_tes (  &<Thing_tes> ;
+          rdf:type [ schema:Thing ] ? ;
+          mtgoa:rules_text @linkml:String ? ;
+          mtgoa:effect @mtgoa:Condition ?
+       ) ;
+       rdf:type [ mtg:Ability ]
+    )
+}
+
+mtgoa:AbilityCollection CLOSED {
+    (  $mtgoa:AbilityCollection_tes (  mtgoa:activated_abilities @mtgoa:ActivatedAbility * ;
+          mtgoa:conditions @mtgoa:Condition * ;
+          mtgoa:mana_costs @mtgoc:ManaCost * ;
+          mtgoa:value_specifications @mtgoa:ValueSpecification * ;
+          mtgoa:action_specifications @mtgoa:ActionSpecification * ;
+          mtgoa:time_specifications @mtgoa:TimeSpecification *
+       ) ;
+       rdf:type [ mtgoa:AbilityCollection ] ?
+    )
+}
+
+mtgoa:ActionSpecification CLOSED {
+    (  $mtgoa:ActionSpecification_tes (  &mtgoa:Specification_tes ;
+          rdf:type [ mtgoa:Specification ] ? ;
+          mtgoa:action @mtgoa:Action ;
+          <intersection> @mtgoa:ActionSpecification ? ;
+          <union> @mtgoa:ActionSpecification ? ;
+          mtgoa:constraint @mtgoa:ActionConstraint ?
+       ) ;
+       rdf:type [ mtgoa:ActionSpecification ]
+    )
+}
+
+mtgoa:ActivatedAbility CLOSED {
+    (  $mtgoa:ActivatedAbility_tes (  &mtgoa:Ability_tes ;
+          rdf:type [ mtg:Ability ] ? ;
+          mtgoa:cost @linkml:String * ;
+          mtgoa:condition @mtgoa:Condition ?
+       ) ;
+       rdf:type [ mtg:Activated_ability ]
+    )
+}
+
+mtgoc:Artifact CLOSED {
+    (  $mtgoc:Artifact_tes (  &mtgoc:Permanent_tes ;
+          rdf:type [ mtg:Permanent ] ?
+       ) ;
+       rdf:type [ mtg:Artifact ]
+    )
+}
+
+mtgoc:Card  (
+    @mtgoc:Instant OR @mtgoc:Permanent OR @mtgoc:Sorcery OR @mtgoc:Token
+)
+
+mtgoc:Card_struct {
+    (  $mtgoc:Card_tes (  &<NamedThing_tes> ;
+          rdf:type [ schema:Thing ] ? ;
+          mtgoc:mana_cost @mtgoc:ManaCost * ;
+          mtgoc:converted_mana_cost @linkml:Integer ? ;
+          mtgoc:color @mtgoc:Color + ;
+          mtgoc:card_set @linkml:String ? ;
+          mtgoc:ability @mtgoa:Ability * ;
+          mtgoc:artist @linkml:String ? ;
+          mtgoc:flavor_text @linkml:String ? ;
+          mtgoc:type_line @linkml:String ;
+          mtgoc:card_type @linkml:String ;
+          mtgoc:card_subtype @linkml:String * ;
+          mtgoc:card_supertype @linkml:String * ;
+          mtgoc:rarity @mtgoc:Rarity ? ;
+          mtgoc:oracle_text @linkml:String ?
+       ) ;
+       rdf:type [ mtg:Card ]
+    )
+}
+
+mtgoc:CardCollection CLOSED {
+    (  $mtgoc:CardCollection_tes (  mtgoc:cards @mtgoc:Card * ;
+          mtgoc:costs @mtgoc:Cost *
+       ) ;
+       rdf:type [ mtgoc:CardCollection ] ?
+    )
+}
+
+mtgoa:Condition CLOSED {
+    (  $mtgoa:Condition_tes (  &<Thing_tes> ;
+          rdf:type [ schema:Thing ] ? ;
+          mtgoa:source @linkml:String ? ;
+          mtgoa:target @linkml:String ? ;
+          mtgoa:action_spec @mtgoa:ActionSpecification * ;
+          mtgoa:value_spec @mtgoa:ValueSpecification * ;
+          mtgoa:time_spec @mtgoa:TimeSpecification *
+       ) ;
+       rdf:type [ mtgoa:Condition ]
+    )
+}
+
+mtgoc:Cost  (
+    CLOSED {
+       (  $mtgoc:Cost_tes (  &<Thing_tes> ;
+             rdf:type [ schema:Thing ] ? ;
+             mtgoc:value @linkml:Integer ? ;
+             <intersection> @mtgoc:Cost ? ;
+             <union> @mtgoc:Cost ?
+          ) ;
+          rdf:type [ mtg:Cost ]
+       )
+    } OR @mtgoc:LifeCost OR @mtgoc:ManaCost
+)
+
+mtgoc:Creature CLOSED {
+    (  $mtgoc:Creature_tes (  &mtgoc:Permanent_tes ;
+          rdf:type [ mtg:Permanent ] ? ;
+          mtgoc:power @linkml:Integer ;
+          mtgoc:toughness @linkml:Integer
+       ) ;
+       rdf:type [ mtg:Creature ]
+    )
+}
+
+mtgoc:Enchantment CLOSED {
+    (  $mtgoc:Enchantment_tes (  &mtgoc:Permanent_tes ;
+          rdf:type [ mtg:Permanent ] ?
+       ) ;
+       rdf:type [ mtg:Enchantment ]
+    )
+}
+
+mtgoc:Instant CLOSED {
+    (  $mtgoc:Instant_tes (  &mtgoc:Card_tes ;
+          rdf:type [ mtg:Card ] ?
+       ) ;
+       rdf:type [ mtg:Instant ]
+    )
+}
+
+mtgoa:KeywordAbility CLOSED {
+    (  $mtgoa:KeywordAbility_tes (  &mtgoa:Ability_tes ;
+          rdf:type [ mtg:Ability ] ? ;
+          schema:name @linkml:String ;
+          mtgoc:value @linkml:Integer ?
+       ) ;
+       rdf:type [ mtg:Keyword_ability ]
+    )
+}
+
+mtgoc:Land CLOSED {
+    (  $mtgoc:Land_tes (  &mtgoc:Permanent_tes ;
+          rdf:type [ mtg:Permanent ] ?
+       ) ;
+       rdf:type [ mtg:Land ]
+    )
+}
+
+mtgoc:LifeCost CLOSED {
+    (  $mtgoc:LifeCost_tes (  &mtgoc:Cost_tes ;
+          rdf:type [ mtg:Cost ] ?
+       ) ;
+       rdf:type [ mtg:Life ]
+    )
+}
+
+mtgoc:Mana CLOSED {
+    (  $mtgoc:Mana_tes (  &<Thing_tes> ;
+          rdf:type [ schema:Thing ] ? ;
+          mtgoc:color @mtgoc:Color + ;
+          mtgoc:snow @linkml:Boolean ?
+       ) ;
+       rdf:type [ mtg:Mana ]
+    )
+}
+
+mtgoc:ManaCost CLOSED {
+    (  $mtgoc:ManaCost_tes (  &mtgoc:Cost_tes ;
+          rdf:type [ mtg:Cost ] ? ;
+          mtgoc:color @mtgoc:Color + ;
+          mtgoc:snow @linkml:Boolean ?
+       ) ;
+       rdf:type [ mtg:Mana_cost ]
+    )
+}
+
+<NamedThing>  (
+    CLOSED {
+       (  $<NamedThing_tes> (  schema:name @linkml:String ;
+             schema:description @linkml:String ?
+          ) ;
+          rdf:type [ schema:Thing ]
+       )
+    } OR @mtgoc:Card
+)
+
+mtgoc:Permanent  (
+    @mtgoc:Artifact OR @mtgoc:Creature OR @mtgoc:Enchantment OR @mtgoc:Land
+)
+
+mtgoc:Permanent_struct {
+    (  $mtgoc:Permanent_tes (  &mtgoc:Card_tes ;
+          rdf:type [ mtg:Card ] ?
+       ) ;
+       rdf:type [ mtg:Permanent ]
+    )
+}
+
+mtgoc:Sorcery CLOSED {
+    (  $mtgoc:Sorcery_tes (  &mtgoc:Card_tes ;
+          rdf:type [ mtg:Card ] ?
+       ) ;
+       rdf:type [ mtg:Sorcery ]
+    )
+}
+
+mtgoa:Specification  (
+    @mtgoa:ActionSpecification OR @mtgoa:ValueSpecification
+)
+
+mtgoa:Specification_struct {
+    (  $mtgoa:Specification_tes (  &<Thing_tes> ;
+          rdf:type [ schema:Thing ] ? ;
+          mtgoa:constraint @linkml:String ? ;
+          <intersection> @<NamedThing> ? ;
+          <union> @<NamedThing> ?
+       ) ;
+       rdf:type [ mtgoa:Specification ]
+    )
+}
+
+mtgoc:Spell CLOSED {
+    (  $mtgoc:Spell_tes (  &<Thing_tes> ;
+          rdf:type [ schema:Thing ] ?
+       ) ;
+       rdf:type [ mtg:Spell ]
+    )
+}
+
+mtgoa:StaticAbility CLOSED {
+    (  $mtgoa:StaticAbility_tes (  &mtgoa:Ability_tes ;
+          rdf:type [ mtg:Ability ] ?
+       ) ;
+       rdf:type [ mtg:Static_ability ]
+    )
+}
+
+<Thing>  (
+    CLOSED {
+       (  $<Thing_tes> rdf:type . * ;
+          rdf:type [ schema:Thing ]
+       )
+    } OR @mtgoa:Ability OR @mtgoa:Condition OR @mtgoc:Cost OR @mtgoc:Mana OR @mtgoa:Specification OR @mtgoc:Spell OR
+    @mtgoa:TimeSpecification
+)
+
+mtgoa:TimeSpecification CLOSED {
+    (  $mtgoa:TimeSpecification_tes (  &<Thing_tes> ;
+          rdf:type [ schema:Thing ] ? ;
+          mtgoa:turn_phase @mtgoa:TurnPhase ? ;
+          mtgoa:player @mtgoa:Player ? ;
+          <intersection> @mtgoa:TimeSpecification ? ;
+          <union> @mtgoa:TimeSpecification ? ;
+          mtgoa:constraint @mtgoa:TimeConstraint ?
+       ) ;
+       rdf:type [ mtgoa:TimeSpecification ]
+    )
+}
+
+mtgoc:Token CLOSED {
+    (  $mtgoc:Token_tes (  &mtgoc:Card_tes ;
+          rdf:type [ mtg:Card ] ?
+       ) ;
+       rdf:type [ mtg:Token ]
+    )
+}
+
+mtgoa:TriggeredAbility CLOSED {
+    (  $mtgoa:TriggeredAbility_tes (  &mtgoa:Ability_tes ;
+          rdf:type [ mtg:Ability ] ? ;
+          mtgoa:condition @mtgoa:Condition ?
+       ) ;
+       rdf:type [ mtg:Triggered_ability ]
+    )
+}
+
+mtgoa:ValueSpecification CLOSED {
+    (  $mtgoa:ValueSpecification_tes (  &mtgoa:Specification_tes ;
+          rdf:type [ mtgoa:Specification ] ? ;
+          mtgoc:value @linkml:Integer ? ;
+          mtgoa:unit @linkml:String ? ;
+          <intersection> @mtgoa:ValueSpecification ? ;
+          <union> @mtgoa:ValueSpecification ? ;
+          mtgoa:constraint @mtgoa:ValueConstraint ?
+       ) ;
+       rdf:type [ mtgoa:ValueSpecification ]
+    )
+}
+
+

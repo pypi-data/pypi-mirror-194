@@ -1,0 +1,335 @@
+interface Ability
+  {
+    id: Uriorcurie!
+    rulesText: String
+    effect: Condition
+  }
+
+type AbilityCollection
+  {
+    activatedAbilities: [ActivatedAbility]
+    conditions: [Condition]
+    manaCosts: [ManaCost]
+    valueSpecifications: [ValueSpecification]
+    actionSpecifications: [ActionSpecification]
+    timeSpecifications: [TimeSpecification]
+  }
+
+type ActionSpecification
+  {
+    id: Uriorcurie!
+    action: Action!
+    intersection: ActionSpecification
+    union: ActionSpecification
+    constraint: ActionConstraint
+  }
+
+type ActivatedAbility
+  {
+    id: Uriorcurie!
+    rulesText: String
+    effect: Condition
+    cost: [String]
+    condition: Condition
+  }
+
+type Artifact
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+  }
+
+interface Card
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+  }
+
+type CardCollection
+  {
+    cards: [Card]
+    costs: [Cost]
+  }
+
+type Condition
+  {
+    id: Uriorcurie!
+    source: String
+    target: String
+    actionSpec: [ActionSpecification]
+    valueSpec: [ValueSpecification]
+    timeSpec: [TimeSpecification]
+  }
+
+type Cost
+  {
+    id: Uriorcurie!
+    value: Integer
+    intersection: Cost
+    union: Cost
+  }
+
+type Creature
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+    power: Integer!
+    toughness: Integer!
+  }
+
+type Enchantment
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+  }
+
+type Instant
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+  }
+
+type KeywordAbility
+  {
+    id: Uriorcurie!
+    rulesText: String
+    effect: Condition
+    name: String!
+    value: Integer
+  }
+
+type Land
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+  }
+
+type LifeCost
+  {
+    id: Uriorcurie!
+    value: Integer
+    intersection: Cost
+    union: Cost
+  }
+
+type Mana
+  {
+    id: Uriorcurie!
+    color: [Color]!
+    snow: Boolean
+  }
+
+type ManaCost
+  {
+    id: Uriorcurie!
+    value: Integer
+    intersection: Cost
+    union: Cost
+    color: [Color]!
+    snow: Boolean
+  }
+
+type NamedThing
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+  }
+
+interface Permanent
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+  }
+
+type Sorcery
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+  }
+
+interface Specification
+  {
+    id: Uriorcurie!
+    constraint: String
+    intersection: NamedThing
+    union: NamedThing
+  }
+
+type Spell
+  {
+    id: Uriorcurie!
+  }
+
+type StaticAbility
+  {
+    id: Uriorcurie!
+    rulesText: String
+    effect: Condition
+  }
+
+type Thing
+  {
+    id: Uriorcurie!
+  }
+
+type TimeSpecification
+  {
+    id: Uriorcurie!
+    turnPhase: TurnPhase
+    player: Player
+    intersection: TimeSpecification
+    union: TimeSpecification
+    constraint: TimeConstraint
+  }
+
+type Token
+  {
+    id: Uriorcurie!
+    name: String!
+    description: String
+    manaCost: [ManaCost]
+    convertedManaCost: Integer
+    color: [Color]!
+    cardSet: String
+    ability: [Ability]
+    artist: String
+    flavorText: String
+    typeLine: String!
+    cardType: String!
+    cardSubtype: [String]
+    cardSupertype: [String]
+    rarity: Rarity
+    oracleText: String
+  }
+
+type TriggeredAbility
+  {
+    id: Uriorcurie!
+    rulesText: String
+    effect: Condition
+    condition: Condition
+  }
+
+type ValueSpecification
+  {
+    id: Uriorcurie!
+    value: Integer
+    unit: String
+    intersection: ValueSpecification
+    union: ValueSpecification
+    constraint: ValueConstraint
+  }
+
