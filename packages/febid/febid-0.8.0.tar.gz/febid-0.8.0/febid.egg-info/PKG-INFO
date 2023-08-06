@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: febid
+Version: 0.8.0
+Summary: FEBID process simulator
+Home-page: https://github.com/MrCheatak/FEBID_py
+Author: Alexander Kuprava, Michael Huth
+Author-email: sandro1742@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+Direct-write nano- and microscale chemical vapor deposition method using a beam of accelerated electrons.
