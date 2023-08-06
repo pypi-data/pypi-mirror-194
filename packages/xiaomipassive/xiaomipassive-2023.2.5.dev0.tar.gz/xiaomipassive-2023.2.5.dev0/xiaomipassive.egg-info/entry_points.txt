@@ -1,0 +1,3 @@
+[console_scripts]
+mqttautodiscov = xiaomipassive.scripts.tools:main
+xiaomipassivec = xiaomipassive.xiaomipassive:main
