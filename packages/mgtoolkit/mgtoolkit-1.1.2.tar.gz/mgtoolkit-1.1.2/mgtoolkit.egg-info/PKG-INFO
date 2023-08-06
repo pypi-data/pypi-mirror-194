@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mgtoolkit
+Version: 1.1.2
+Summary: This is a Python package for implementing metagraphs.
+Home-page: https://github.com/lamestllama/mgtoolkit
+Download-URL: http://pypi.python.org/pypi/mgtoolkit
+Author: Eric Parsonage
+Author-email: Eric Parsonage <eric@eparsonage.com>, Dinesha Ranathunga <mgtkhelp@gmail.com>
+License: MIT license
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/lamestllama/mgtoolkit/issues
+Keywords: mgtoolkit,metagraph implementation,policy analysis
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Natural Language :: English
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
