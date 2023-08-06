@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+_awsDc/__init__.py
+_awsDc/aws.py
+awsDc.egg-info/PKG-INFO
+awsDc.egg-info/SOURCES.txt
+awsDc.egg-info/dependency_links.txt
+awsDc.egg-info/requires.txt
+awsDc.egg-info/top_level.txt
