@@ -1,0 +1,2 @@
+brainpy>=2.2.0
+requests
