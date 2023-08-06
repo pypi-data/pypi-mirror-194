@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: carlagodinholistalbumsbeatles
+Version: 0.0.1
+Summary: Shows the list of The Beatles Albums
+Home-page: 
+Author: Carla Sónia Godinho
+Author-email: carlasoniagodinho4@gmail.com
+License: MIT
+Keywords: list albums
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
+
+# Beatles-albums
+This package is a demo for my Python students and so I decided to give a tribute to The Beatles band, providing a list of their published Albums.
+Enjoy this packge and listen to their masterpieces! 
+
+Change log
+==========
+
+0.0.1 (27/2/2023)
+-----------------
+First Release

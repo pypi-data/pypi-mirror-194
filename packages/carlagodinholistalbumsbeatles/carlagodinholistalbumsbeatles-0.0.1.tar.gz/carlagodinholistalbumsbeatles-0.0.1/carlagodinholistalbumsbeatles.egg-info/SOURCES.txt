@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+setup.py
+beatlesalbumslib/__init__.py
+beatlesalbumslib/beatles_store.py
+carlagodinholistalbumsbeatles.egg-info/PKG-INFO
+carlagodinholistalbumsbeatles.egg-info/SOURCES.txt
+carlagodinholistalbumsbeatles.egg-info/dependency_links.txt
+carlagodinholistalbumsbeatles.egg-info/top_level.txt
