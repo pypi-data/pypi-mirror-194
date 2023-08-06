@@ -1,0 +1,10 @@
+shortscale/__init__.py,sha256=1KRHxCDWCLRMJUbMw-w3B-Kp0lbklFOZUjFCtYiIOT8,130
+shortscale/shortscale.py,sha256=G6fvam9kPiC-NwulGvBrcPjW_j2hgF3BgXtP3jdKXqk,3213
+shortscale/tests/bench_shortscale.py,sha256=uCfgF9U3Q2XG0MQ7wznu3cmx7uYz1RbSE2EX9KM1tqc,458
+shortscale/tests/test_shortscale.py,sha256=52QcIt8oJCDyhFBFvfsNE-RlmyC1A0vTSCsNZnyb7E4,4760
+shortscale-1.3.1.dist-info/LICENSE,sha256=pJShjpU_Pqq3Oak_Hqblz8fGPV6dTT6fr4pY_qFnQtc,1099
+shortscale-1.3.1.dist-info/METADATA,sha256=XQvVPwcaSJ50IV_NmDH397D32wSR7C5AYef78oeV-j0,4195
+shortscale-1.3.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shortscale-1.3.1.dist-info/entry_points.txt,sha256=Z4OvnAjS2zL0boQbEmSIxl6jdpjx2y7R1jdBc4kCQS0,47
+shortscale-1.3.1.dist-info/top_level.txt,sha256=EeXdgooDvXPu9fNYLMZcLzCIOZwkQjJy_FJ3B6WCU4U,11
+shortscale-1.3.1.dist-info/RECORD,,
