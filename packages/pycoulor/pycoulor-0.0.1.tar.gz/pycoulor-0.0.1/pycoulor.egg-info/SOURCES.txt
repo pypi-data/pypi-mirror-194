@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pycoulor/__init__.py
+pycoulor/color.py
+pycoulor.egg-info/PKG-INFO
+pycoulor.egg-info/SOURCES.txt
+pycoulor.egg-info/dependency_links.txt
+pycoulor.egg-info/top_level.txt
