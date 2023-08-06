@@ -1,0 +1,13 @@
+o3r_algo_utilities/__init__.py,sha256=2k4tkihqC0tf69Sn417v9_BlHLVnPgYMP_vpg0CIbLo,152
+o3r_algo_utilities/o3r_uncompress_di.py,sha256=RVdM-O-BMqmeK_RrfnaKOAouBFr90Yt8-ZeKGySgX9A,9623
+o3r_algo_utilities/calib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+o3r_algo_utilities/calib/calibration.py,sha256=nvQ003YrKkU3V7qbas8FxwXpRCcWqNFqR72fJuBHXiY,26875
+o3r_algo_utilities/calib/point_correspondences.py,sha256=Nr203fpR6UgqCDA9XryG9YfJmDU8SmCHUMIyvDVrsPM,11458
+o3r_algo_utilities/calib/sources.py,sha256=UZg39VI5o_xFmLAyejvvNfGj7mBTrVDCNqJJ3LxCdQ8,8891
+o3r_algo_utilities-1.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+o3r_algo_utilities-1.0.8.dist-info/METADATA,sha256=t1uG1ba0d5LyYPB03VyR_JeonGvFaR75Rm2K-417QsI,778
+o3r_algo_utilities-1.0.8.dist-info/NOTICE,sha256=mdGXqTKd7o-xo6e52DIQacCMJL3FfuWNDyhzqJsYgc8,57
+o3r_algo_utilities-1.0.8.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+o3r_algo_utilities-1.0.8.dist-info/entry_points.txt,sha256=ihB-3lBpYWnzuqFYltpJfq6q6i1UPg4JQsIQoJnC_k4,83
+o3r_algo_utilities-1.0.8.dist-info/top_level.txt,sha256=x4DaYgM4OdJWjjNY5EB3x9fEv7ZwPkNsRxeTMwCYYh0,19
+o3r_algo_utilities-1.0.8.dist-info/RECORD,,
