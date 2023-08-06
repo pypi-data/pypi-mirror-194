@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: KiwiCoder
+Version: 0.2.3.1
+Summary: A biology framework for biological experiments.
+Author: Qian Bowen
+License: Apache-2.0 license
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# KiwiCoder
+A biology framework for biological experiments.
