@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+surfy/__init__.py
+surfy/__main__.py
+surfy/surfy.py
+surfy.egg-info/PKG-INFO
+surfy.egg-info/SOURCES.txt
+surfy.egg-info/dependency_links.txt
+surfy.egg-info/top_level.txt
+surfy/sqlite/__init__.py
+surfy/sqlite/__main__.py
+surfy/sqlite/db.py
+surfy/wiki/__init__.py
+surfy/wiki/__main__.py
+surfy/wiki/main.py
+tests/test.py
