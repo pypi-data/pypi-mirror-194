@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: tooler
+Version: 0.1.4
+Summary: Tooler: Create friendly devops tools in minutes
+Home-page: http://qix.github.io/tooler
+Author: Josh Yudaken
+Author-email: j@yud.co.za
+License: MIT
+Platform: Any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+License-File: LICENSE
+
+Tooler: Python-based command line tools
+=======================================
+
+
+
+Thanks required:
+----------------
+
+* [fabric](https://github.com/fabric/fabric) & [baker](https://bitbucket.org/mchaput/baker) as inspiration
+* [pyinvoke](https://www.pyinvoke.org/) is a similar approach
+
