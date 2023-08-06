@@ -1,0 +1,5 @@
+sphinxcontrib-django
+
+[doc]
+sphinx-last-updated-by-git
+sphinx-rtd-theme
