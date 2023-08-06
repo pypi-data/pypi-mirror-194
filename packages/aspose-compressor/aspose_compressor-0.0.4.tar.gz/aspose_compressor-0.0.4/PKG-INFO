@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: aspose_compressor
+Version: 0.0.4
+Summary: Compress video with 100% compress size and no quality loss with only 3 lines of code.
+Home-page: https://github.com/CantCode023/aspose_compressor
+Author: CantCode023
+Author-email: cantcode023@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Aspose Compressor
+```py
+from aspose_compressor import AsposeCompressor
+
+ac = AsposeCompressor()
+file = ac.compress_video("./aspose-demo.mp4")
+file.save("./output.mp4")
+```
