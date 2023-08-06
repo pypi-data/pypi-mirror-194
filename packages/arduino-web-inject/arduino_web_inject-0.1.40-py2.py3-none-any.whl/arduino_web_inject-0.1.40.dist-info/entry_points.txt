@@ -1,0 +1,2 @@
+[console_scripts]
+arduino-web-inject = arduino_web_inject.main:main
