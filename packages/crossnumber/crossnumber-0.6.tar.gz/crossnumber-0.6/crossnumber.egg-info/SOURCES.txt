@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+crossnumber/__init__.py
+crossnumber/cn.py
+crossnumber.egg-info/PKG-INFO
+crossnumber.egg-info/SOURCES.txt
+crossnumber.egg-info/dependency_links.txt
+crossnumber.egg-info/requires.txt
+crossnumber.egg-info/top_level.txt
