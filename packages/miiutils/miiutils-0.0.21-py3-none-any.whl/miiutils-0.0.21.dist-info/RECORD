@@ -1,0 +1,9 @@
+colorprint/__init__.py,sha256=ibVKqsdOXBtp5bIq2H3cNPMiXWAiLr7vXZ1gIacSW1A,36
+colorprint/colorprint.py,sha256=IRVjGb1B4M7NY7COAaXOcKZ9S8hBrQjYOwzSi9clBWQ,1265
+fileutils/__init__.py,sha256=_tehNN8MD6amN2REbrGwex0-zaghJzIQwQC8dgodi7o,34
+fileutils/fileutils.py,sha256=reH7_Fl9NzQSuUsN8s87k2XZFflODD-FB_RAnf1XEWo,736
+miiutils-0.0.21.dist-info/LICENSE,sha256=pV-NlWRSegB0ZBS71KaGL7oP4D_H9T3hyo1SN8QcKpE,1074
+miiutils-0.0.21.dist-info/METADATA,sha256=F2ZTyaz6HyYixDyWSuJpF9I4sTo0gJf0W0tPjb0mKQk,197
+miiutils-0.0.21.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+miiutils-0.0.21.dist-info/top_level.txt,sha256=G9Fx9n3m6cO8CAVe279tiYhe8LgpRlVTCsgqXMAzAqA,21
+miiutils-0.0.21.dist-info/RECORD,,
