@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: clickuptoexcel
+Version: 1.0.0
+Summary: Replicate ClickUp Database using Excel.
+Home-page: https://github.com/themagicalmammal/clickuptoexcel
+Author: Dipan Nanda
+Author-email: d19cyber@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/themagicalmammal/clickuptoexcel/blob/main/README.md
+Project-URL: Bug tracker, https://github.com/themagicalmammal/clickuptoexcel/issues
+Keywords: python,ClickUp,Excel,pandas
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# ClickUp to Excel
+[![DeepSource](https://deepsource.io/gh/themagicalmammal/clickuptoexcel.svg/?label=active+issues&show_trend=true&token=opRzze8gP9JJbKX_SR5u4zfF)](https://deepsource.io/gh/themagicalmammal/clickuptoexcel/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/themagicalmammal/clickuptoexcel.svg/?label=resolved+issues&show_trend=true&token=opRzze8gP9JJbKX_SR5u4zfF)](https://deepsource.io/gh/themagicalmammal/clickuptoexcel/?ref=repository-badge)
+
+Replicate ClickUp Database using Excel.
+
+Developed by [Dipan Nanda](https://github.com/themagicalmammal) (c) 2023
+
+## Example of Usage
+
+```python
+from clickuptoexcel import Migrate2Excel
+
+location = 'C:/Data/'
+attributes = None
+api_key = """<YOUR_API_KEY>"""
+helper = Migrate2Excel(location=location, clickup_api_token=api_key, attribute_values=attributes)
+"""
+:param string location: specify where you would want the database to be replicated
+:param list attributes: list of attributes that you want in your excel files
+:param string api_key: your Clickup API Token
+"""
+helper.start()
+```
+
+## Changelog
+Go [here](CHANGELOG.md) to checkout the complete changelog.
+
+## License
+#### This is under GNU GPL v3.0 License
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)

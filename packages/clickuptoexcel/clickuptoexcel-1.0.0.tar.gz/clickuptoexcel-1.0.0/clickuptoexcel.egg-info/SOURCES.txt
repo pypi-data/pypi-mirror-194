@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+clickuptoexcel/__init__.py
+clickuptoexcel.egg-info/PKG-INFO
+clickuptoexcel.egg-info/SOURCES.txt
+clickuptoexcel.egg-info/dependency_links.txt
+clickuptoexcel.egg-info/requires.txt
+clickuptoexcel.egg-info/top_level.txt
