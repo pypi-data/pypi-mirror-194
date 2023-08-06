@@ -1,0 +1,3 @@
+[console_scripts]
+cmdtrix=cmdtrix.__main__:entry_point
+
