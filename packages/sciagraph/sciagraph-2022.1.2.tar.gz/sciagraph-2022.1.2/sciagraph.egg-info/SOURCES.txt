@@ -1,0 +1,6 @@
+README.md
+setup.py
+sciagraph.egg-info/PKG-INFO
+sciagraph.egg-info/SOURCES.txt
+sciagraph.egg-info/dependency_links.txt
+sciagraph.egg-info/top_level.txt
