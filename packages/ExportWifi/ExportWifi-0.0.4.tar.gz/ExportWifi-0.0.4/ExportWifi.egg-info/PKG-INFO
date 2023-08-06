@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: ExportWifi
+Version: 0.0.4
+Summary: Getting Wifi Files of the target
+Home-page: 
+Author: Fawaz Bashiru
+Author-email: fawazbashiru@gmail.com
+License: MIT
+Keywords: Wifi
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+ExportWifi
+==========
+
+Created by: Fawaz Bashiru
+
+This a module which imports WI-FI files and detects the current WI-FI name and the current WI-FI password of the target. Every imported file is going to be saved in the directory where your server is located.
+
+To install ExportWifi simply type:
+
+`git clone https://github.com/Kill0geR/ExportWifi`
+
+In your Terminal
+
+HOW DOES ExportWifi WORK?
+-------------------------
+The ip address and the port number should be the same so the connection will work
+
+HOW TO USE ExportWifi?
+---------------------
+Change the directory
+
+`cd ExportWifi`
+
+Start "wifi.py" with
+ `python wifi.py -aip 127.0.0.1`
+ 
+ -aip stands for ip of attacker
+ -cf stands for create file
+ -ds stands for demon server and means to have the server in your directory
+ -p stands for ports and displays the port of the attacker
+ 
+ If you need help simply type:
+ `python wifi.py -help`
+
+Output of Server
+---------------
+````commandline
+Waiting for connection....
+Connection with ('127.0.0.1', 53343)
+
+Connection has been established
+6 Wifi files have been saved to your directory
+The current WI-FI and Password of the target is 
+
+WI-FI: ********* The Wi-Fi of the target will be here 
+Password: ******* The password of the target will be here
+````
+
+
+Additional
+----------
+* You can send "client.py" as an exe file to the target with "auto-py-to-exe"
+
+* ExportWifi is very easy to use.
+
+* The server can be used for any OS. The target can only have a Windows OS
+
+* DO NOT USE THIS TO ATTACK SOMEONE FOREIGN. I BUILD IT FOR EDUCATIONAL PURPOSES.
+
+
+Change Log
+==========
+
+0.0.1 (14/10/2022)
+-----------------
+- First Release
+
+0.0.2 (15/10/2022)
+-----------------
+- Bug Fixes
+
+0.0.3 (16/02/2023)
+-----------------
+- New Gui in the server code
+
+0.0.4 (28/02/2023
+-----------------
+- Xml files will be stored in a directory
+- Passwords of wifi will be stored in a directory as well
+- New move system with "shutil"
+- New system that detects encrypted passwords
+- Better Documentation

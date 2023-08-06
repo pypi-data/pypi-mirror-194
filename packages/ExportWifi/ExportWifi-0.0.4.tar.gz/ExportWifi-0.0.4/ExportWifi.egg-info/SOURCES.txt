@@ -1,0 +1,24 @@
+CHANGELOG.txt
+LISCENCE.txt
+MANIFEST.in
+README.md
+demon_server.py
+kali.png
+main.py
+setup.py
+target.py
+test.md
+test.py
+wifi.py
+ExportWifi/__init__.py
+ExportWifi.egg-info/PKG-INFO
+ExportWifi.egg-info/SOURCES.txt
+ExportWifi.egg-info/dependency_links.txt
+ExportWifi.egg-info/requires.txt
+ExportWifi.egg-info/top_level.txt
+FOUND_PASSWORDS/BORG-WLAN.txt
+FOUND_PASSWORDS/Iphone.txt
+FOUND_PASSWORDS/Kini_2.4Ghz.txt
+FOUND_PASSWORDS/Samsung Galaxy S20.txt
+FOUND_PASSWORDS/UPC0293901.txt
+FOUND_PASSWORDS/bashiru-secret.txt
