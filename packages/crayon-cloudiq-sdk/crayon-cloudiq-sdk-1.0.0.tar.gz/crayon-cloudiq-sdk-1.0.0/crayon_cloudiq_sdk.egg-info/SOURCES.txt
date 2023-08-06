@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+readme.md
+cloudiq/__init__.py
+cloudiq/cloudiq.py
+crayon_cloudiq_sdk.egg-info/PKG-INFO
+crayon_cloudiq_sdk.egg-info/SOURCES.txt
+crayon_cloudiq_sdk.egg-info/dependency_links.txt
+crayon_cloudiq_sdk.egg-info/requires.txt
+crayon_cloudiq_sdk.egg-info/top_level.txt
