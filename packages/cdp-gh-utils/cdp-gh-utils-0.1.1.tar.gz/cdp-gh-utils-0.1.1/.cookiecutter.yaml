@@ -1,0 +1,10 @@
+default_context:
+    author_name: "Eva Maxfield Brown"
+    author_email: "evamaxfieldbrown@gmail.com"
+    hosting_github_username_or_org: "CouncilDataProject"
+    project_name: "CDP GitHub Utilities"
+    project_slug: "cdp-gh-utils"
+    python_slug: "cdp_gh_utils"
+    project_short_description: "Utility functions and scripts to manage CDP GitHub repositories."
+    hosting_pypi_username: "CouncilDataProject"
+    license: "MIT License"
