@@ -1,0 +1,8 @@
+README.md
+setup.py
+theorytoolkit/__init__.py
+theorytoolkit/main.py
+theorytoolkit.egg-info/PKG-INFO
+theorytoolkit.egg-info/SOURCES.txt
+theorytoolkit.egg-info/dependency_links.txt
+theorytoolkit.egg-info/top_level.txt
