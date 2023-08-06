@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "IPAM-PACMan"
+version = "0.9.7"
+
+authors = [{name = "Olle Pontén",email="olle.ponten@gmail.com"}]
+description = "PACMan: An chlorophyll-a fluorometry automation software designed for Walz (GMBH) Microscopy IPAM."
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: Microsoft :: Windows :: Windows 7",
+	"Operating System :: Microsoft :: Windows :: Windows 10"
+]
+dependencies= [
+"numpy>=1.20",
+"opencv-python>=4.2",
+"scipy>=1.8",
+"tifffile>=2021",
+"scikit-image>=0.18",
+"matplotlib>=3.5",
+"comtypes>=1.1",
+"psutil>=5.0.0",
+"pyserial>=3.5",
+]
+[project.urls]
+"Homepage" = "https://pypi.org/project/IPAM-PACMan"
+"Github" = "https://github.com/OllePonten/IPAM-PACMan"
+"Bug Tracker" = "https://github.com/OllePonten/PACMan/issues"
+
+[tool.hatch.build]
+include = [
+"pacman",
+"*.ini",
+]
+exclude =[
+"*.bak",
+"/tests",
+"/.github",
+]
+
+[tool.hatch.build.targets.sdist.force-include]
+"pacman/managers/PerPosScript.txt" = "pacman/managers/PerPosScript.txt"
+"pacman/managers/StartPosScript.txt" = "pacman/managers/StartPosScript.txt"
+"pacman/Command List.txt" = "Command List.txt"
+[tool.hatch.build.targets.wheel.force-include]
+"pacman/managers/PerPosScript.txt" = "pacman/managers/PerPosScript.txt"
+"pacman/managers/StartPosScript.txt" = "pacman/managers/StartPosScript.txt"
+"pacman/Command List.txt" = "Command List.txt"
