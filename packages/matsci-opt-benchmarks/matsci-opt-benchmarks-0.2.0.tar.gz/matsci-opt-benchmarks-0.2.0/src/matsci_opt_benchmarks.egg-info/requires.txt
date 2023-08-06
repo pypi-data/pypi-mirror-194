@@ -1,0 +1,19 @@
+numpy
+pandas
+scipy
+cloudpickle
+requests
+crabnet==2.0.8
+matbench
+torch
+zenodo-client
+ray[tune]
+kaleido
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov

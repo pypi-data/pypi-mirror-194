@@ -1,0 +1,65 @@
+# Temporary and binary files
+*~
+*.py[cod]
+*.so
+*.cfg
+!.isort.cfg
+!setup.cfg
+*.orig
+*.log
+*.pot
+__pycache__/*
+.cache/*
+.*.swp
+*/.ipynb_checkpoints/*
+.DS_Store
+
+# Project files
+.ropeproject
+.project
+.pydevproject
+.settings
+.idea
+.vscode
+tags
+
+# Package files
+*.egg
+*.eggs/
+.installed.cfg
+*.egg-info
+
+# Unittest and coverage
+htmlcov/*
+.coverage
+.coverage.*
+.tox
+junit*.xml
+coverage.xml
+.pytest_cache/
+
+# Build and docs folder/files
+build/*
+dist/*
+sdist/*
+docs/api/*
+docs/_rst/*
+docs/_build/*
+cover/*
+MANIFEST
+
+# Per-project virtualenvs
+.venv*/
+.conda*/
+.python-version
+scripts/particle_packing/my_secrets.py
+notebooks/particle_packing/my_secrets.py
+reports/~WRL1838.tmp
+scripts/crabnet_hyperparameter/my_secrets.py
+**/my_secrets.json
+**/my_secrets.py
+**/secrets.py
+notebooks/particle_packing/sobol_reg_fba_time_s.pkl
+notebooks/particle_packing/spf_fba_isna_prob.pkl
+reports/particle_packing/~$tainbrief.docx
+figures/lc_data/UnnamedModel_lc.csv
