@@ -1,0 +1,3 @@
+[console_scripts]
+sgraph = sgraph:cli_main
+
