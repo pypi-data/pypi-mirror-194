@@ -1,0 +1,4 @@
+pytube>=12.1.2
+setuptools>=65.5.0
+fast-youtube-search>=0.0.8
+customtkinter>=5.1.2

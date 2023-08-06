@@ -1,0 +1,6 @@
+setup.py
+YISYKS.egg-info/PKG-INFO
+YISYKS.egg-info/SOURCES.txt
+YISYKS.egg-info/dependency_links.txt
+YISYKS.egg-info/requires.txt
+YISYKS.egg-info/top_level.txt
