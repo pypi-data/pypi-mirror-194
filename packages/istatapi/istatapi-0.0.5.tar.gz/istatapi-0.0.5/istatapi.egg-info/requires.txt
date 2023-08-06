@@ -1,0 +1,7 @@
+fastcore
+pandas
+requests
+matplotlib
+xml
+
+[dev]
