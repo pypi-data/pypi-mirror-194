@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: fastberry
+Version: 0.0.77
+Summary: GraphQL Made Easy
+Author-email: hlop3z <23062270+hlop3z@users.noreply.github.com>
+Requires-Python: >=3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: click>=8.1.3
+Requires-Dist: fastapi>=0.88.0
+Requires-Dist: spoc>=0.1.5
+Requires-Dist: strawberry-graphql>=0.146.0
+Requires-Dist: uvicorn[standard]>=0.18.3
+Provides-Extra: mongo
+Requires-Dist: dbcontroller[mongo]>=0.1.50; extra == "mongo"
+Provides-Extra: sql
+Requires-Dist: dbcontroller[sql]>=0.1.50; extra == "sql"
+Provides-Extra: testing
+Requires-Dist: dbcontroller[testing]>=0.1.50; extra == "testing"
+Project-URL: Documentation, https://hlop3z.github.io/fastberry/
+Project-URL: Homepage, https://github.com/hlop3z/fastberry/
+Description-Content-Type: text/markdown
+
+<h1 style="font-size: 5em; letter-spacing: -2px; font-family: Georgia, sans-serif;" align="center">
+   Welcome to <strong>Fastberry</strong>
+</h1>
+
+<p align="center">
+   <img alt="PyPI - Python Version" src="https://raw.githubusercontent.com/hlop3z/fastberry/main/docs/img/fastberry.png" />
+</p>
+
+<p align="center">
+   <a href="https://pypi.org/project/fastberry/" target="_blank"><img 
+      src="https://img.shields.io/pypi/v/fastberry" 
+      alt="Python Package Index"
+      /></a>
+   <a href="https://pypi.org/project/fastberry/" target="_blank">
+   <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/fastberry" />
+   </a>
+   <a href="https://pypistats.org/packages/fastberry" target="_blank">
+   <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/fastberry" />
+   </a>
+   <img alt="License" src = "https://img.shields.io/badge/License-MIT-yellow.svg">
+</p>
+
+<p align="center" style="font-size: 3em; letter-spacing: -2px; font-family: Georgia, sans-serif;">
+   <strong>GraphQL</strong> — Made Easy
+</p>
+
+<p align="center" style="font-size: 2.5em; letter-spacing: -2px; font-family: Georgia, sans-serif;" >
+   Links 
+   <br>
+   <a href="https://pypi.org/project/fastberry" target="_blank">
+   PyPi
+   </a>
+   <br>
+   <a href="https://github.com/hlop3z/fastberry" target="_blank">
+   Github
+   </a>
+   <br>
+   <a href="https://hlop3z.github.io/fastberry/" target="_blank">
+   Docs
+   <img alt="PyPI - Downloads" src="https://raw.githubusercontent.com/hlop3z/fastberry/main/docs/img/docs.png" />
+   </a>
+</p>
+
