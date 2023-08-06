@@ -1,0 +1,6 @@
+_build
+dist
+__pycache__
+node_modules
+src/ou_book_theme/theme/ou_book_theme/static/scripts
+src/ou_book_theme/theme/ou_book_theme/static/styles
