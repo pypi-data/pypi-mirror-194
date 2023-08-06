@@ -1,0 +1,15 @@
+radicli/__init__.py,sha256=Qz1uQsu31Fd7XDf0ZvDkWfUPaXTSJsXnZBkShLFf18c,983
+radicli/cli.py,sha256=qIaV-kM_rUZOqwJ2InuUSY6gmX5iWFoEgFUr41crtbc,16705
+radicli/parser.py,sha256=11K8OGP_sF2cxpQb8A1CvMDGplaiWp-o4I_PR6v4eT0,2282
+radicli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+radicli/static.py,sha256=EMPlR0ZxT-PzUJ9XLquLZ0AZGJEPpF_LjKnFyMYGnGY,2010
+radicli/util.py,sha256=e5ZzoiRoIfWRBuDIaGYNt94uqg42tR1KJ0TgpEKoUic,13963
+radicli/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+radicli/tests/test_cli.py,sha256=rhNR2ynrJ4qh_QU94635h_odVXtiAwWF5jbnU0hsD7k,22404
+radicli/tests/test_parser.py,sha256=qA25TaQ2robuIns5hlWsCcvCJDPBRkeUnNVwcLGBVho,5663
+radicli-0.0.13.dist-info/LICENSE,sha256=OXzXYJYcVrWn-utCmU3bJutWn-WPZS2MtQS1C0U5_fQ,1073
+radicli-0.0.13.dist-info/METADATA,sha256=d22_BHlO5YQPgjc8-dBpITOulbqeG_gByhj8RT5KMRE,37739
+radicli-0.0.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+radicli-0.0.13.dist-info/top_level.txt,sha256=8pKMJymP09dF2LmwIGBd5aqMgy0s0Yk9G002-Kl5ip0,8
+radicli-0.0.13.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+radicli-0.0.13.dist-info/RECORD,,
