@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mladocs
+Version: 0.0.35
+Author: Ramcharan Kakarla, Vibhu Aditya Thirukonda, Anunay Sanganal
+Author-email: ikrc1729@gmail.com
+License: MIT
+Keywords: Auto ML Documentation
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
