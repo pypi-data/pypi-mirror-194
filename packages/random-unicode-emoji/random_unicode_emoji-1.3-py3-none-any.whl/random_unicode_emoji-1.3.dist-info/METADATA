@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: random-unicode-emoji
+Version: 1.3
+Summary: A simple Python package to retrieve a random Unicode emoji. 😄
+Home-page: https://github.com/NicPWNs/random-unicode-emoji
+Download-URL: https://github.com/NicPWNs/random-unicode-emoji/releases
+Author: Nic Jones
+Author-email: nic@nicpjones.com
+License: MIT
+Keywords: random unicode emoji
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+# Random Unicode Emoji
+
+[![Python](https://img.shields.io/pypi/pyversions/random-unicode-emoji)](https://img.shields.io/pypi/pyversions/random-unicode-emoji)
+[![PyPI Version](https://img.shields.io/pypi/v/random-unicode-emoji)](https://pypi.org/project/random-unicode-emoji/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/NicPWNs/random_unicode_emoji/blob/main/LICENSE.rst)
+[![Forks](https://img.shields.io/github/forks/NicPWNs/random-unicode-emoji.svg)](https://github.com/NicPWNs/random-unicode-emoji/forks)
+[![Open Issues](https://img.shields.io/github/issues/NicPWNs/random-unicode-emoji.svg)](https://github.com/NicPWNs/random-unicode-emoji/issues)
+[![Project Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Downloads](https://pepy.tech/badge/random-unicode-emoji)](https://pepy.tech/project/random-unicode-emoji)
+![GitHub repo size](https://img.shields.io/github/repo-size/NicPWNs/random-unicode-emoji)
+[![GitHub Repo stars](https://img.shields.io/github/stars/NicPWNs/random-unicode-emoji)](https://github.com/NicPWNs/random_unicode_emoji/stargazers)
+
+A simple Python package to retrieve a random Unicode emoji. ðŸ˜„
+
+## Install
+
+```bash
+pip install random-unicode-emoji
+```
+
+## Usage
+
+```py
+# Import the Library
+from random_unicode_emoji import random_unicode_emoji
+# Use the Function
+emoji = random_emoji()
+```
