@@ -1,0 +1,15 @@
+vsexprtools/__init__.py,sha256=gOmXX9zAl19Yd3rwLOHRzeYlFIcShQNAY0HvbpotWZg,256
+vsexprtools/_metadata.py,sha256=H_Ss-ntI1n8UfeUN8utslzJc9jH-gr6S0yRyQ8MF4xQ,393
+vsexprtools/exprop.py,sha256=BG9TPhznlk1Lrydpb039jrZ2NnPc42kTTgKJGgbcKuU,10828
+vsexprtools/funcs.py,sha256=cEh_xugI9130x4DDUto6PLnXBRDqv6K6kQ61ZOu4isI,4693
+vsexprtools/manager.py,sha256=D-MPsfbHNSFZc59vdsc-rTpsGXKwQd1DrJeRuZFkCw0,2656
+vsexprtools/operators.py,sha256=FdfgxxEMuKF5gIjIL6CLlPFlWOnoA1XE7AD2nSDMh2w,6378
+vsexprtools/polyfills.py,sha256=gW4Px-JZD_Ujguoy96YApjrp5dYBVvWHmf2iuJ0P9N0,893
+vsexprtools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsexprtools/util.py,sha256=Gm7f5xZJfcF1lFmcz3fFrrNeVZeZBsxgsG9HpqKLa_8,7919
+vsexprtools/variables.py,sha256=Ta0AbuKkP2M2DAMofD2Ud5kyzwMK402J1a7Kz7_-ulY,11311
+vsexprtools-1.4.1.dist-info/LICENSE,sha256=5RjlHF8gmwvOIb-XRF3E1C6U_lL1RjedcdtkuqZWRwQ,1085
+vsexprtools-1.4.1.dist-info/METADATA,sha256=Qgo3eJqcWbkE9KjWuq1lAaWEx8IS7AUxItSNhn0s7Hw,841
+vsexprtools-1.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vsexprtools-1.4.1.dist-info/top_level.txt,sha256=OJ6WbooMxy-oLkAC_J9eTRrA7KfiEL5ahx9cxBfibaQ,12
+vsexprtools-1.4.1.dist-info/RECORD,,
