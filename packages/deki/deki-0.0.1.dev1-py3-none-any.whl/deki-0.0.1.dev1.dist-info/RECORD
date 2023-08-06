@@ -1,0 +1,9 @@
+deki/__init__.py,sha256=tZMAz8BXdbUMvJ1JEkdyxbrbuvHJR1JsFpaF1Gqvm5s,362
+deki/rosenbrock.py,sha256=pWAQ_qI0oLbrxO3pTV4VSbw2UaMkv-KCtz06lT3SltI,491
+deki/sphere.py,sha256=SYR8XiZeZZfRmCwmilCw3t158KMEqprt9T8Trf86kBg,400
+deki/visualizer.py,sha256=AAtYan2K_tlQUZ70dVri2hpf429iJBKSvp8YvknxfEY,5338
+deki-0.0.1.dev1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+deki-0.0.1.dev1.dist-info/METADATA,sha256=nNHaPGefTTZGZF2ytirHJ-VIvtYEaZZKg2LoutUIdHk,1347
+deki-0.0.1.dev1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+deki-0.0.1.dev1.dist-info/top_level.txt,sha256=T6S8yM-wP_AGsZUzZkQOyZXd_06WKCaBWFPvLM_g45Y,5
+deki-0.0.1.dev1.dist-info/RECORD,,
