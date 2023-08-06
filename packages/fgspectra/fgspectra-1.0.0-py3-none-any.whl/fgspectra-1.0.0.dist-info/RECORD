@@ -1,0 +1,14 @@
+fgspectra/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+fgspectra/cross.py,sha256=MhIZ_-Gs59pLN98yn1m5nHCwuqiAjHJBIzArv9vKNZA,7972
+fgspectra/frequency.py,sha256=38lemIsDjdDlMVoG-iX40EEsih3WITAmRVdHy9FZD6s,10800
+fgspectra/model.py,sha256=605jme5mXvaf2S0SY9ZdMP3iDCki4wdyyYoBFm08gnc,7350
+fgspectra/power.py,sha256=9xfH6zyO7bkd2s92hc7D_zEa9hovAC9rSNI5lM1a2Ks,11401
+fgspectra/data/cl_cib_Choi2020.dat,sha256=SMaLZVJ_dro8hUtaENtwOIaRQ3qcws2kiav9R8HSUH4,480963
+fgspectra/data/cl_ksz_bat.dat,sha256=tcpQEMkYCyyXpfE0qWzvaWAcqomk5XU1Ebtf-D8y-II,269973
+fgspectra/data/cl_sz_x_cib.dat,sha256=PX-ECMWTE1TZuTfl3m0wiQoElTf2dIYAkUPzLaenrwA,178860
+fgspectra/data/cl_tsz_150_bat.dat,sha256=CGdgK9tVxn91279mlh-doWuenotQ_vuIsXhEHbaOejA,269973
+fgspectra-1.0.0.dist-info/LICENSE,sha256=5AkOpABLKPS4lTEXJAs4IxnkU_jyUxW-hzPBPtukVig,1512
+fgspectra-1.0.0.dist-info/METADATA,sha256=sOwYEK0wD7kT4-oar0X2djyPZVsXpJjAEiF61wtj2F4,2418
+fgspectra-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fgspectra-1.0.0.dist-info/top_level.txt,sha256=cYyU9keNgrjoscUIG1vzh7RV2P2QbN3jWV7bxrrfD1g,10
+fgspectra-1.0.0.dist-info/RECORD,,
