@@ -1,0 +1,10 @@
+README.md
+licence.txt
+setup.cfg
+setup.py
+JFQ/__init__.py
+JFQ.egg-info/PKG-INFO
+JFQ.egg-info/SOURCES.txt
+JFQ.egg-info/dependency_links.txt
+JFQ.egg-info/requires.txt
+JFQ.egg-info/top_level.txt
