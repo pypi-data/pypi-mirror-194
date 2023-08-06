@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ssh_key_maker
+Version: 0.1.5
+Summary: Package to generate SSH keys
+Home-page: UNKNOWN
+Author: Pranav Chandran
+Author-email: pranav.chandran@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
