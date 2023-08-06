@@ -1,0 +1,22 @@
+{
+  "name": "environment",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "type": {
+      "type": "string",
+      "description": "The environment type, e.g., dev, prod, etc.",
+      "required": true,
+      "business_id": true
+    },
+    "account_number": {
+      "type": "string",
+      "description": "the account number",
+      "required": true
+    },
+    "hmd_region": {
+        "type": "string",
+        "required": true
+    }
+  }
+}

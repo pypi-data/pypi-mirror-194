@@ -1,0 +1,13 @@
+{
+  "name": "environment_action",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "action_name": {
+      "type": "string",
+      "description": "The common name of the repository.",
+      "business_id": true,
+      "required": true
+    }
+  }
+}

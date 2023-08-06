@@ -1,0 +1,11 @@
+{
+  "name": "change_set",
+  "namespace": "hmd_lang_deployment",
+  "editors": {
+    "form": {
+      "widgets": {
+        "definition": "change_set_definition"
+      }
+    }
+  }
+}

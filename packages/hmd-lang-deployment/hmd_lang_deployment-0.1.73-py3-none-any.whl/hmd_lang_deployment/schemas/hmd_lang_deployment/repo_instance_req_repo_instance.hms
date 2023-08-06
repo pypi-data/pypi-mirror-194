@@ -1,0 +1,24 @@
+{
+  "name": "repo_instance_req_repo_instance",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "relationship",
+  "ref_from": "hmd_lang_deployment.repo_instance",
+  "ref_to": "hmd_lang_deployment.repo_instance",
+  "attributes": {
+    "role": {
+      "description": "The role the referenced repo_class assumes relative to the referring repo_class.",
+      "type": "string",
+      "required": true
+    }
+  },
+  "adornments": {
+    "ref_from": {
+      "arrow": false,
+      "cardinality": "1"
+    },
+    "ref_to": {
+      "arrow": true,
+      "cardinality": "0..*"
+    }
+  }
+}

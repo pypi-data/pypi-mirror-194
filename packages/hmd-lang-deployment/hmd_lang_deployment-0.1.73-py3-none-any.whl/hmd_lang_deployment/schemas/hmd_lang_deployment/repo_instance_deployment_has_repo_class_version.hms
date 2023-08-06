@@ -1,0 +1,19 @@
+{
+  "name": "repo_instance_deployment_has_repo_class_version",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "relationship",
+  "ref_from": "hmd_lang_deployment.repo_instance_deployment",
+  "ref_to": "hmd_lang_deployment.repo_class_version",
+  "attributes": {
+  },
+  "adornments": {
+    "ref_from": {
+      "arrow": false,
+      "cardinality": "*"
+    },
+    "ref_to": {
+      "arrow": true,
+      "cardinality": "1"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "name": "change_set",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "description": "The name of the test set.",
+      "required": true,
+      "business_id": true
+    },
+    "definition": {
+      "type": "collection",
+      "description": "The contents of the change set.",
+      "required": true,
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "http://hmd_lang_deployment/change_set",
+        "title": "definition",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "oneOf": [
+            {
+              "properties": {
+                "deployment_id": {
+                  "type": "string"
+                },
+                "hmd_region": {
+                  "type": "string"
+                },
+                "repo_instance_name": {
+                  "type": "string"
+                },
+                "repo_class_name": {
+                  "type": "string"
+                },
+                "repo_class_version": {
+                  "type": "string"
+                },
+                "auto_deploy": {
+                  "type": "string"
+                },
+                "image_only": {
+                  "const": true
+                }
+              },
+              "required": [
+                "deployment_id",
+                "repo_instance_name",
+                "repo_class_name",
+                "repo_class_version",
+                "image_only"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "properties": {
+                "deployment_id": {
+                  "type": "string"
+                },
+                "hmd_region": {
+                  "type": "string"
+                },
+                "repo_instance_name": {
+                  "type": "string"
+                },
+                "repo_class_name": {
+                  "type": "string"
+                },
+                "repo_class_version": {
+                  "type": "string"
+                },
+                "auto_deploy": {
+                  "type": "string"
+                },
+                "config_spec": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "deployment_id",
+                "repo_instance_name",
+                "repo_class_name",
+                "repo_class_version",
+                "config_spec"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "properties": {
+                "deployment_id": {
+                  "type": "string"
+                },
+                "hmd_region": {
+                  "type": "string"
+                },
+                "repo_instance_name": {
+                  "type": "string"
+                },
+                "repo_class_name": {
+                  "type": "string"
+                },
+                "repo_class_version": {
+                  "type": "string"
+                },
+                "auto_deploy": {
+                  "type": "string"
+                },
+                "instance_configuration": {
+                  "type": "object"
+                },
+                "dependencies": {
+                  "type": "object",
+                  "patternProperties": {
+                    ".*": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "required": [
+                "deployment_id",
+                "repo_instance_name",
+                "repo_class_name",
+                "repo_class_version",
+                "instance_configuration",
+                "dependencies"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      }
+    }
+  }
+}

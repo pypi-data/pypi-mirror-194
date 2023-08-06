@@ -1,0 +1,16 @@
+{
+  "name": "change_set_env_deployment",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "deploy_time": {
+        "type": "timestamp",
+        "description": "The time that the ChangeSet was deployed.",
+        "required": true
+    },
+    "csed_status": {
+      "type": "enum",
+      "enum_def": ["CREATED", "STARTED", "COMPLETED", "FAILED", "SKIPPED","DESTROYED"]
+    }
+  }
+}

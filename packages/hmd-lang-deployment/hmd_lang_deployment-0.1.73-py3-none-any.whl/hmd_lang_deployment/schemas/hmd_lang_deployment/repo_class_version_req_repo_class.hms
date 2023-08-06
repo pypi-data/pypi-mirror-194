@@ -1,0 +1,34 @@
+{
+  "name": "repo_class_version_req_repo_class",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "relationship",
+  "ref_from": "hmd_lang_deployment.repo_class_version",
+  "ref_to": "hmd_lang_deployment.repo_class",
+  "attributes": {
+    "required": {
+      "description": "flag indicating that the repo class dependency is required",
+      "type": "string",
+      "required": false
+    },
+    "version_spec": {
+        "description": "A specification of the acceptable version of the repo class to which the relationship points.",
+        "type": "string",
+        "required": false
+    },
+    "role": {
+        "description": "The role the target repo class plays relative to the origin repo class.",
+        "type": "string",
+        "required": false
+    }
+  },
+  "adornments": {
+    "ref_from": {
+      "arrow": false,
+      "cardinality": "*"
+    },
+    "ref_to": {
+      "arrow": true,
+      "cardinality": "0..*"
+    }
+  }
+}

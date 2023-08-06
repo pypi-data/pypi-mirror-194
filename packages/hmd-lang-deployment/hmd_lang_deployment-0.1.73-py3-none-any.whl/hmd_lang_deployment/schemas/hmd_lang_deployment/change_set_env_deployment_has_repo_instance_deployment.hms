@@ -1,0 +1,19 @@
+{
+  "name": "change_set_env_deployment_has_repo_instance_deployment",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "relationship",
+  "ref_from": "hmd_lang_deployment.change_set_env_deployment",
+  "ref_to": "hmd_lang_deployment.repo_instance_deployment",
+  "attributes": {
+  },
+  "adornments": {
+    "ref_from": {
+      "arrow": false,
+      "cardinality": "1"
+    },
+    "ref_to": {
+      "arrow": true,
+      "cardinality": "*"
+    }
+  }
+}

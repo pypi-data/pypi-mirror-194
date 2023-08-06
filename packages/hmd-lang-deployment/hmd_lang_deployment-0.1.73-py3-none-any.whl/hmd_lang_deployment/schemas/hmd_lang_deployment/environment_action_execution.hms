@@ -1,0 +1,22 @@
+{
+  "name": "environment_action_execution",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "execute_time": {
+      "type": "timestamp",
+      "description": "The time that the EnvironmentAction was executed.",
+      "required": true
+    },
+    "ea_status": {
+        "type": "enum",
+        "enum_def": ["FAILED","SUCCEEDED"],
+        "description": "The status of the action execution.",
+        "required": true
+    },
+    "message": {
+        "type": "string",
+        "description": "A result message of the action, if available."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "repo_instance_deployment",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "hmd_region": {
+      "type": "string",
+      "description": "an hmd region identifier if different from the default",
+      "required": false
+    },
+    "deployment_id": {
+      "type": "string",
+      "description": "The deployment id.",
+      "required": true,
+      "business_id": true
+    },
+    "instance_configuration": {
+        "type": "mapping",
+        "description": "The instance configuration used for this deployment.",
+        "required": false
+    },
+    "config_artifact_spec": {
+        "type": "string",
+        "description": "The configuration artifact ref used.",
+        "required": false
+    },
+    "status": {
+      "type": "enum",
+      "description": "The status of the instance deployment.",
+      "required": false,
+      "enum_def": ["NOT_DEPLOYED","DEPLOYED","DEPLOY_NEXT","DESTROY_NEXT", "DESTROYED", "FAILED","SKIPPED"]
+    },
+    "start": {
+      "type": "timestamp",
+      "description": "The time the deployment was done.",
+      "required": false
+    },
+    "end": {
+      "type": "timestamp",
+      "description": "The time the deployment was removed or a new version was deployed.",
+      "required": false
+    },
+    "image_only": {
+      "type": "string",
+      "description": "Present if the instance deployment is for the docker image only.",
+      "required": false
+    }
+  }
+}

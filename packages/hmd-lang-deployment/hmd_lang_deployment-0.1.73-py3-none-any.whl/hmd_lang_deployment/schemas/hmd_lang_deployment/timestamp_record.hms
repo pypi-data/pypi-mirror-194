@@ -1,0 +1,18 @@
+{
+  "name": "timestamp_record",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "description": "A labeled timestamp for monitoring purposes.",
+  "attributes": {
+    "type": {
+      "type": "string",
+      "description": "A label.",
+      "required": true
+    },
+    "timestamp": {
+      "type": "timestamp",
+      "description": "The timestamp.",
+      "required": true
+    }
+  }
+}

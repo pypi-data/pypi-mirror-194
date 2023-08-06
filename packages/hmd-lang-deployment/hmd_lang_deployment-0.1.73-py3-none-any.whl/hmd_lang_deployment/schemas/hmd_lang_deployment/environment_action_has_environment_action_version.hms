@@ -1,0 +1,19 @@
+{
+  "name": "environment_action_has_environment_action_version",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "relationship",
+  "ref_from": "hmd_lang_deployment.environment_action",
+  "ref_to": "hmd_lang_deployment.environment_action_version",
+  "attributes": {
+  },
+  "adornments": {
+    "ref_from": {
+      "arrow": false,
+      "cardinality": "1"
+    },
+    "ref_to": {
+      "arrow": true,
+      "cardinality": "*"
+    }
+  }
+}

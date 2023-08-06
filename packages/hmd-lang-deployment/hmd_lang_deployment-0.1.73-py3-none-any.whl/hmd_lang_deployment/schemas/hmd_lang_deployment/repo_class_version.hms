@@ -1,0 +1,18 @@
+{
+  "name": "repo_class_version",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "version": {
+      "type": "string",
+      "description": "The version specifier.",
+      "required": true,
+      "business_id": true
+    },
+    "default_configuration": {
+      "type": "mapping",
+      "description": "the default configuration for the repo class version",
+      "required": false
+    }
+  }
+}

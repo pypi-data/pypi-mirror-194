@@ -1,0 +1,19 @@
+{
+  "name": "change_set_deployment_has_change_set",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "relationship",
+  "ref_from": "hmd_lang_deployment.change_set_deployment",
+  "ref_to": "hmd_lang_deployment.change_set",
+  "attributes": {
+  },
+  "adornments": {
+    "ref_from": {
+      "arrow": false,
+      "cardinality": "1"
+    },
+    "ref_to": {
+      "arrow": true,
+      "cardinality": "1"
+    }
+  }
+}

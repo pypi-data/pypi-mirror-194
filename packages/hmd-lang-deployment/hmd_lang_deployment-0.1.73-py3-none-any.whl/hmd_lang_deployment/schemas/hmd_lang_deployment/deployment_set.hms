@@ -1,0 +1,77 @@
+{
+  "name": "deployment_set",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "description": "The name of the DeploymentSet",
+      "required": true
+    },
+    "definition": {
+      "type": "collection",
+      "description": "The contents of the DeploymentSet when the deployment occurred.",
+      "required": true,
+      "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "http://hmd_lang_deployment/change_set",
+        "title": "definition",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "environment": {
+              "type": "string"
+            },
+            "deployment_gate": {
+              "type": "object",
+              "properties": {
+                "transforms": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "apply_to": {
+                        "type": "string"
+                      },
+                      "transform": {
+                        "type": "object",
+                        "properties": {
+                          "image_name": {
+                            "type": "string"
+                          },
+                          "tag": {
+                            "type": "string"
+                          }
+                        },
+                        "required": ["image_name", "tag"],
+                        "additionalProperties": false
+                      },
+                      "artifact_ref": {
+                        "type": "string",
+                        "required": ["artifact_ref"],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": ["apply_to", "transform"],
+                    "additionalProperties": false
+                  }
+                },
+                "approval": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["transforms", "approval"]
+            }
+          },
+          "required": ["environment", "deployment_gate"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "auto_deploy": {
+        "type": "string",
+        "description": "A flag indicating whether auto-deploy is supported by the deployment set. Expects [\"true\",\"false\"]"
+    }
+  }
+}

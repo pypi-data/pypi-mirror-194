@@ -1,0 +1,17 @@
+{
+  "name": "repo_instance",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "description": "The instance name.",
+      "required": true,
+      "business_id": true
+    },
+    "auto_deploy": {
+        "type": "string",
+        "description": "A flag indicating whether auto-deploy is supported by the deployment set. Expects [\"true\",\"false\"]"
+    }
+  }
+}

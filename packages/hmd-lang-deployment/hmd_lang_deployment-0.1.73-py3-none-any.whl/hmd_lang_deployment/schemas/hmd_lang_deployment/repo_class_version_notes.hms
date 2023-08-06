@@ -1,0 +1,17 @@
+{
+  "name": "repo_class_version_notes",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "version_notes": {
+        "type": "string",
+        "description": "release notes for the version",
+        "required": true
+    },
+    "requirement_identifiers": {
+        "type": "collection",
+        "description": "a list of identifiers for related requirements records",
+        "required": false
+    }
+  }
+}

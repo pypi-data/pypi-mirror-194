@@ -1,0 +1,22 @@
+{
+  "name": "external_artifact",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "description": "the name of the artifact",
+      "required": true
+    },
+    "tool": {
+      "type": "string",
+      "description": "the CLI tool used to create the artifact",
+      "required": true
+    },
+    "external_location": {
+      "type": "string",
+      "description": "location of external registry",
+      "required": true
+    }
+  }
+}

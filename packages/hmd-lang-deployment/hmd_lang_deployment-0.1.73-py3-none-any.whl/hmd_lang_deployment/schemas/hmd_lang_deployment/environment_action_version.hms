@@ -1,0 +1,12 @@
+{
+  "name": "environment_action_version",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "noun",
+  "attributes": {
+    "version": {
+      "type": "string",
+      "description": "The version number of the associated EnvironmentAction",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "repo_instance_has_repo_instance_deployment",
+  "namespace": "hmd_lang_deployment",
+  "metatype": "relationship",
+  "ref_from": "hmd_lang_deployment.repo_instance",
+  "ref_to": "hmd_lang_deployment.repo_instance_deployment",
+  "attributes": {
+    "current": {
+      "type": "string",
+      "description": "Contains a value of \"true\" if this is the current deployment",
+      "required": true
+    }
+  },
+  "adornments": {
+    "ref_from": {
+      "arrow": false,
+      "cardinality": "1"
+    },
+    "ref_to": {
+      "arrow": true,
+      "cardinality": "*"
+    }
+  }
+}

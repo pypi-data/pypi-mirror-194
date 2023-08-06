@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hmd-lang-deployment
+Version: 0.1.73
+Summary: Language pack for deployment model.
+Home-page: UNKNOWN
+Author: Jim Majure
+Author-email: jim.majure@hmdlabs.io
+License: unlicensed
+Platform: UNKNOWN
+Requires-Dist: hmd-meta-types
+Requires-Dist: hmd-schema-loader
+
+UNKNOWN
+
