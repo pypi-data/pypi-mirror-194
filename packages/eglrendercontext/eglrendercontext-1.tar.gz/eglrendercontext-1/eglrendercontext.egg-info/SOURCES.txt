@@ -1,0 +1,7 @@
+pythoneglrendercontext.cpp
+setup.py
+eglrendercontext.egg-info/PKG-INFO
+eglrendercontext.egg-info/SOURCES.txt
+eglrendercontext.egg-info/dependency_links.txt
+eglrendercontext.egg-info/not-zip-safe
+eglrendercontext.egg-info/top_level.txt
