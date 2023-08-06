@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ddtank
+Version: 0.1.1
+Summary: A package used for writing ddtank game scripts.
+Author-email: zx <jugking6688@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DDTank
+
+A package used for writing ddtank game scripts.
+
+Contact the author: jugking6688@gmail.com 
+
+Video tutorial in bilibili: https://space.bilibili.com/3493127383943735
+
+Examples are as follows：
+```python
+from ddtank import Status, get_game
+
+class ScriptStatus(Status):
+    def task(self):
+        while True:
+            self.press('B')
+
+if __name__ == '__main__':
+    handle_list = get_game()
+    handle = handle_list[0]
+    my_status = ScriptStatus(handle)
+    my_status.start()
+    my_status.stop()
+```
+
+Note: ver 0.1 is incompatible with previous version! But the general idea is the same.
