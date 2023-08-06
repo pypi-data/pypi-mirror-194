@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "serval-ml-commons"
+packages = [
+    {include = "mlc"}
+]
+version = "0.1.4"
+description = "SerVal Machine learning commons is a tools box that ease the development of ML experiments at SerVal."
+authors = ["Thibault Simonetto <thibault.simonetto.001@student.uni.lu>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = ">=1.21.0"
+pandas = ">=1.1.5"
+scikit-learn = ">=0.24.0"
+h5py = ">=2.0.0"
+requests = ">=2.27"
+uuid = "^1.30"
+
+torch = { version = "~1.12.1", optional = true }
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^3.0.0"
+pre-commit = "^2.17.0"
+flake8 = "^4.0.1"
+mypy = "^0.942"
+isort = "^5.10.1"
+black = "^22.3.0"
+
+[tool.poetry.extras]
+torch = ["torch"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 79
