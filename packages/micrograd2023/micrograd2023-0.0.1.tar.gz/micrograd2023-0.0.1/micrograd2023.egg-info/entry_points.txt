@@ -1,0 +1,5 @@
+[mkdocs.plugins]
+rm_num_prefix = nbdev.mkdocs:RmNumPrefix
+
+[nbdev]
+micrograd2023 = micrograd2023._modidx:d

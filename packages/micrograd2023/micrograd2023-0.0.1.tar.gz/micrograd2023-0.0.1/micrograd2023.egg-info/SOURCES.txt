@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+micrograd2023/__init__.py
+micrograd2023/_modidx.py
+micrograd2023/engine.py
+micrograd2023/nn.py
+micrograd2023/utils.py
+micrograd2023.egg-info/PKG-INFO
+micrograd2023.egg-info/SOURCES.txt
+micrograd2023.egg-info/dependency_links.txt
+micrograd2023.egg-info/entry_points.txt
+micrograd2023.egg-info/not-zip-safe
+micrograd2023.egg-info/requires.txt
+micrograd2023.egg-info/top_level.txt
