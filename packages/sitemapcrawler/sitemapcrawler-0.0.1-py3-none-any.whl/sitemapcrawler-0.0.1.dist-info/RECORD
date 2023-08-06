@@ -1,0 +1,7 @@
+sitemapcrawler/__init__.py,sha256=uiugyoxjuaQP9q9kE7jjpcc9C6rEjpx5TzSFn7CMlWk,60
+sitemapcrawler/crawler.py,sha256=MuOqqwLVcqBQkV19ElOZP7hjVrQrkmQojjqu2qZLwaQ,3508
+sitemapcrawler/requirements.txt,sha256=Nb4_H9MXueUHAXupWx04yay_MYJuNqQKUBpUe6dm6sI,164
+sitemapcrawler/test.py,sha256=_ZindeB6q6KpiZ7p9Sy4qRFXHUrR0uMO4GjrzzWxy1A,32
+sitemapcrawler-0.0.1.dist-info/METADATA,sha256=9edMMqj1C6URlE172EJhwZo3rBRwu9fVn_cRwyHtbq8,1521
+sitemapcrawler-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+sitemapcrawler-0.0.1.dist-info/RECORD,,
