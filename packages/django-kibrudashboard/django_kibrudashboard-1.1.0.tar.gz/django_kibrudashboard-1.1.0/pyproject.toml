@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "django_kibrudashboard_kibru"
+version = "1.1.0"
+authors = [
+  { name="Kibru", email="kibrug474@gmail.com" },
+]
+description = "A Django Dashboard"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kibrug/Django-kibru_V1"
+"Bug Tracker" = "https://github.com/kibrug/Django-kibru_V1/issues"
