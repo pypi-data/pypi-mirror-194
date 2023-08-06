@@ -1,0 +1,7 @@
+chemcloud
+tcpb-trio
+trio
+
+[dev]
+black
+pre-commit
