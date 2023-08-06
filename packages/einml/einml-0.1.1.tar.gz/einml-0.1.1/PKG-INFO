@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: einml
+Version: 0.1.1
+Summary: Tensorflow utility library
+License: None
+Author: Max Clarke
+Author-email: maxeonyx@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: datasets (>=2.8,<3.0)
+Requires-Dist: einops (>=0.6,<0.7)
+Requires-Dist: enlighten (>=1.11,<2.0)
+Requires-Dist: icecream (>=2.1,<3.0)
+Requires-Dist: keras-nlp (>=0.4,<0.5)
+Requires-Dist: matplotlib (>=3.6,<4.0)
+Requires-Dist: numpy (>=1.24,<2.0)
+Requires-Dist: nvsmi (>=0.4,<0.5)
+Requires-Dist: plotly (>=5.11,<6.0)
+Requires-Dist: python-box (>=6.1,<7.0)
+Requires-Dist: randomname (>=0.1,<0.2)
+Requires-Dist: seqio (>=0.0.14,<0.0.15)
+Requires-Dist: tensorflow (>=2.11,<3.0)
+Requires-Dist: tensorflow-datasets (>=4.8.1,<5.0.0)
+Requires-Dist: tensorflow-probability (>=0.19,<0.20)
+Requires-Dist: tf-models-official (>=2.11,<3.0)
+Requires-Dist: wandb (>=0.13,<0.14)
+Description-Content-Type: text/markdown
+
+# EinML Tensorflow
+
+This helper library includes:
+- Utility functions
+- Re-exports for Einops
+- Tensorflow type annotations
+- A progress bar for training.
+
