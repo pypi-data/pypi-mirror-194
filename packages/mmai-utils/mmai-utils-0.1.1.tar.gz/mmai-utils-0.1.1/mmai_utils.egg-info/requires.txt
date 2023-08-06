@@ -1,0 +1,11 @@
+datasets
+matplotlib
+numpy
+pandas
+pydicom
+pylibjpeg
+python-gdcm
+scikit-learn
+torch
+torchvision
+transformers
