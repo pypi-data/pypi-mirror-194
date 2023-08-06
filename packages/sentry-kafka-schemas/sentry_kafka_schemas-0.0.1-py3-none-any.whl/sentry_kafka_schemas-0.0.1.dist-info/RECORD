@@ -1,0 +1,10 @@
+sentry_kafka_schemas/__init__.py,sha256=C4iFbKDitqoVcDh5HlCo9Pgl_Nmq1xYTkPMyEZfZZZA,125
+sentry_kafka_schemas/sentry_kafka_schemas.py,sha256=UU8TaIyAjmClBZ5bD8oR5gOzfgQrqTf-qbi1vUDScQ8,1762
+sentry_kafka_schemas/types.py,sha256=oB02NYTwOQR-9e2jN8nZmDp-GbGwWCBsqmPtdUS4604,601
+sentry_kafka_schemas/schemas/querylog.v1.schema.json,sha256=tq1h_9IpubMb3qsBZ4f0dw3647L5gPTWCjBn4oA1F7I,1673
+sentry_kafka_schemas/topics/querylog.yaml,sha256=G6p3KeRMTP-75JFFL9AUOObOGmagPZdNwmSle0apJMg,154
+sentry_kafka_schemas-0.0.1.dist-info/LICENSE,sha256=HGElazOlRIkNMGkV2kFke6m7uGWRh7AcIzfODMiiS1k,4732
+sentry_kafka_schemas-0.0.1.dist-info/METADATA,sha256=iSwPnR7jE5xEOmZ5ltzNS6BfK_p7slDFBFoYRK-qZzM,329
+sentry_kafka_schemas-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sentry_kafka_schemas-0.0.1.dist-info/top_level.txt,sha256=0K0iYWeaQXsL3PMIhDDNW5Z46uLUr6NeAScbgBDX6X4,21
+sentry_kafka_schemas-0.0.1.dist-info/RECORD,,
