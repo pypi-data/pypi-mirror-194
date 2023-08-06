@@ -1,0 +1,12 @@
+foe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foe/evaluator.py,sha256=8oCXFAAdu7k6PEzilnQBWiHSniKjk_08vg9_JtL2gYQ,7127
+foe/logic.py,sha256=ALrQEKPOyct0fUYOEr4-kb6PcMBJ821cQ9636Zg39JM,19921
+foe/prover.py,sha256=YL38d7UWzivr4T3R9BooN9lEk3faDq2y2uNCgRA1cmE,17169
+foe/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foe/parser/tptp.py,sha256=HoHYzWASiTC-I6JSmChFMPJ7ny2s872W1JGtzoo6brU,17765
+foe/parser/tptp_grammar.lark,sha256=vxxajpKs8djq2dWhv_0PucpLbIsvPo8zYMCegF_d7GQ,15604
+foe-0.0.9.dist-info/LICENSE,sha256=soDBTljAnWLOGI_3ANPNRiQJhpAXQR0kfz9fouta_JQ,1061
+foe-0.0.9.dist-info/METADATA,sha256=O4e45cmOrQoMe7PRdXMulk0pfUu4LH8dZv_Ssg17Zds,706
+foe-0.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+foe-0.0.9.dist-info/top_level.txt,sha256=24v4NC9w3KiRbnfdM4Hl7C1zg7OHQuMs4b6uBg375IA,4
+foe-0.0.9.dist-info/RECORD,,
