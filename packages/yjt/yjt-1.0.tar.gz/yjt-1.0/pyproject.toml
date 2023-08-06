@@ -1,0 +1,16 @@
+[project]
+name = "yjt"
+version = "1.0"
+description = "Yjt internal use package"
+authors = [{ name = "grj", email = "guanrenjia@yangjuntech.com" }]
+readme = "README.md"
+
+requires-python = ">=3.6"
+dependencies = [
+    "cx_Oracle>=8.3.0",
+    "sqlalchemy>=1.4.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
