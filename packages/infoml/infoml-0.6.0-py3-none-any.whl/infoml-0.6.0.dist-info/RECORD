@@ -1,0 +1,11 @@
+infoml/__init__.py,sha256=CxlQFejj2rnHhyvDFOVk0hKdUFTipBZpUqChL-pWHEA,3857
+infoml/data/GSE50499_GEO_Ceman_counts.txt.gz,sha256=7hg7Zm1_hUP3bUuyl8K4-nf4BEqIy_23qSYd9Zhu2yA,327885
+infoml/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infoml/data/boston-housing.txt.gz,sha256=tpWc5MIeUk2z4HfYsLGuZuJEW4k8Op_OOWwpQveLqQg,12338
+infoml/datasets.py,sha256=mEPwwKajCTDrAQUoXASsLGTGR5aQS_Rp6BPRFXrj50w,2521
+infoml/pkg.py,sha256=3sH51rwcaZt_asl_gNdO_BCzf-tRr8vBILH-O6lvgvw,4323
+infoml/utils.py,sha256=QMmPGoOKiyqdWPHnM2KB5T-g_j70DXhJ7K3-qcimnsg,17096
+infoml-0.6.0.dist-info/LICENSE,sha256=9AUuRyI3TEpF8CQd_i7BK3Hu3hgVe_P61mQuH9Lw8Qw,1077
+infoml-0.6.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+infoml-0.6.0.dist-info/METADATA,sha256=cHVc1tzgE2bUSnZvvZM2v-vfGYWO00AbABQRceVH3dw,2485
+infoml-0.6.0.dist-info/RECORD,,
