@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: sleakops
+Version: 0.0.4
+Summary: A CLI tool to build and deploy projects with Sleakops
+Project-URL: Documentation, https://docs.sleakops.com
+Project-URL: App page, https://sleakops.com
+Keywords: Sleakops
+Description-Content-Type: text/markdown
+
+# How to install
+
+Generate environment file
+
+`
+cp local.env .env
+`
+
+## Run a build
+
+`
+docker compose run cli python sleakops.py build --project core --branch qa --wait
+`
+
+## Run a deployment
+
+`
+docker compose run cli python sleakops.py deployment --project core --branch qa --wait
+`
+
+### Run help
+
+`
+docker compose run cli python sleakops.py --help 
+`
