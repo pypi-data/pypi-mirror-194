@@ -1,0 +1,2 @@
+mkdocs>=1.2
+pygments>=2.9.0
