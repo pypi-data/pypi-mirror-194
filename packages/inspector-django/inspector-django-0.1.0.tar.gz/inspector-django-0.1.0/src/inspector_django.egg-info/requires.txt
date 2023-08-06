@@ -1,0 +1,5 @@
+Django>=3
+inspector-python
+
+[tests]
+pytest
