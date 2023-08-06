@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: portfolio-performance
+Version: 1.0.0
+Author: Siddharth Nand
+Author-email: snand233@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: qpsolvers
+
