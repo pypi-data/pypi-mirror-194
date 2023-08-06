@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: krake
+Version: 1.0.1
+Home-page: https://gitlab.com/rak-n-rok/krake
+Maintainer: Krake Development Team
+Maintainer-email: krake@cloudandheat.com
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: aiohttp (==3.*)
+Requires-Dist: aiohttp-cors (==0.7.*)
+Requires-Dist: dnspython (==2.2.1)
+Requires-Dist: etcd3-py (==0.1.*)
+Requires-Dist: keystoneauth1 (==4.*)
+Requires-Dist: kubernetes-asyncio (==22.*)
+Requires-Dist: lark-parser (==0.11.*)
+Requires-Dist: makefun (==1.*)
+Requires-Dist: marshmallow (==3.*)
+Requires-Dist: marshmallow-enum
+Requires-Dist: marshmallow-oneofschema
+Requires-Dist: marshmallow-union
+Requires-Dist: pyOpenSSL
+Requires-Dist: python-magnumclient (==3.*)
+Requires-Dist: PyYAML (==5.*)
+Requires-Dist: requests (==2.*)
+Requires-Dist: SQLAlchemy (==1.4.46)
+Requires-Dist: tosca-parser (==2.6.*)
+Requires-Dist: deepdiff (==6.2.*)
+Requires-Dist: webargs (==6.*)
+Provides-Extra: api_generator
+Requires-Dist: black (==21.11b1) ; extra == 'api_generator'
+Requires-Dist: jinja2 (==3.*) ; extra == 'api_generator'
+Provides-Extra: dev
+Requires-Dist: pytest-aiohttp (==0.3.*) ; extra == 'dev'
+Requires-Dist: pytz (==2021.*) ; extra == 'dev'
+Requires-Dist: prometheus-client (==0.7.*) ; extra == 'dev'
+Requires-Dist: prometheus-async (==19.*) ; extra == 'dev'
+Requires-Dist: factory-boy (==2.*) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.*) ; extra == 'dev'
+Requires-Dist: mock (==4.*) ; extra == 'dev'
+Requires-Dist: pytest (==6.*) ; extra == 'dev'
+Requires-Dist: keystone (==20.*) ; extra == 'dev'
+Requires-Dist: pytest-cov (==3.*) ; extra == 'dev'
+Requires-Dist: pytest-httpserver (==1.*) ; extra == 'dev'
+Requires-Dist: tox (==3.*) ; extra == 'dev'
+
