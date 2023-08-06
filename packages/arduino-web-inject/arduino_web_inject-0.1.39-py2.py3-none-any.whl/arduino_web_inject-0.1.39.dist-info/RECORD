@@ -1,0 +1,11 @@
+arduino_web_inject/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arduino_web_inject/main.py,sha256=quc8PxtO2T9PVZu48YLcLRiSQW4_Cr3CqdCDkguOHvY,7784
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/minify_html_test.py,sha256=lbqqDSHL7477vyF4HmRTO3ljIQds9CwKHjjz50XmfK0,234
+arduino_web_inject-0.1.39.dist-info/LICENSE,sha256=jKgUBWtI3EDjRBrpz9gXINIA4g4nQ3Rs2Xj1wALof7E,1066
+arduino_web_inject-0.1.39.dist-info/METADATA,sha256=FQxkCocBOWD6H3Vk4soIOh7UXNfKgGwqwUFQeWetSaY,1536
+arduino_web_inject-0.1.39.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+arduino_web_inject-0.1.39.dist-info/entry_points.txt,sha256=wwslKL9wW9jTfju-dPpHeWMyiTAFlhwgNeR2gndomtg,68
+arduino_web_inject-0.1.39.dist-info/top_level.txt,sha256=-lpKhPCWIn-Z30fAmeTN8dJ4SbkCnduLMMPMUWbaQIY,25
+arduino_web_inject-0.1.39.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arduino_web_inject-0.1.39.dist-info/RECORD,,
