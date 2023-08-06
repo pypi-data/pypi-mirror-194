@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+minimocas/__init__.py
+minimocas/minimocas.py
+minimocas.egg-info/PKG-INFO
+minimocas.egg-info/SOURCES.txt
+minimocas.egg-info/dependency_links.txt
+minimocas.egg-info/top_level.txt
