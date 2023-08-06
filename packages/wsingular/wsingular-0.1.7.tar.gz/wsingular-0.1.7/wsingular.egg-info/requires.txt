@@ -1,0 +1,10 @@
+torch
+pandas
+scikit-learn
+seaborn
+matplotlib
+scipy
+tqdm
+numpy
+pot>=0.8
+networkx
