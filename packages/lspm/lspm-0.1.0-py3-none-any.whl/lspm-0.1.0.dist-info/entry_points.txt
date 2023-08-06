@@ -1,0 +1,2 @@
+[console_scripts]
+lspm = lspm.cli:lspm_command
