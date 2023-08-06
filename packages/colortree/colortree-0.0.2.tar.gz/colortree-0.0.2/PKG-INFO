@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: colortree
+Version: 0.0.2
+Summary: colortree is a library that makes it easier to use colors in a terminal!
+Home-page: UNKNOWN
+Author: DevTree Studios
+Author-email: devtreestudios@gmail.com
+License: MIT
+Keywords: colortree
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+colortree is a library that makes it easier to use colors in a terminal.
+
+    --- Developed by DevTree Studios
+    --- Programmed in Python 3.9
+    --- 2023
+    --- May not work in all terminals
+
+CHANGELOG
+=========
+
+0.0.1 (2/26/2023)
+-----------------
+
+
+- Released colortree
+
+
+0.0.2 (2/26/2023)
+-----------------
+
+
+- Bux fixes
+
