@@ -1,0 +1,14 @@
+
+[project]
+name = "Conditor"
+description = "Conditor Package"
+version = "0.0.3"
+authors = [
+    { name = "Sophia Roger Hürzeler" , email = "srh@srhuerzeler.net" }
+]
+dependencies = [
+]
+
+[tool.setuptools]
+[project.scripts]
+conditor = "conditor.__main__:main"
