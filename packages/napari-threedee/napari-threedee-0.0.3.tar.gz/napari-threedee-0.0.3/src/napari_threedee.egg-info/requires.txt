@@ -1,0 +1,16 @@
+einops
+imageio!=2.11.0,!=2.22.1,>=2.5.0
+npe2
+napari
+numpy
+qtpy
+zarr
+morphosamplers
+
+[dev]
+mkdocs
+mkdocs-material
+mkdocstrings[python]
+mkdocs-video
+pytest
+pytest-qt

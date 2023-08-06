@@ -1,0 +1,86 @@
+name: napari-threedee
+schema_version: 0.1.0
+contributions:
+  commands:
+    # Annotators
+    - id: napari-threedee.QtPointAnnotatorWidget
+      title: Create point annotator
+      python_name: napari_threedee.dock_widgets:QtPointAnnotatorWidget
+
+    - id: napari-threedee.QtSplineAnnotatorWidget
+      title: Create filament annotator
+      python_name: napari_threedee.dock_widgets:QtSplineAnnotatorWidget
+
+    # Manipulators
+    - id: napari-threedee.QtRenderPlaneManipulatorWidget
+      title: Create render plane manipulator
+      python_name: napari_threedee.dock_widgets:QtRenderPlaneManipulatorWidget
+
+    - id: napari-threedee.QtPointManipulatorWidget
+      title: Create point manipulator
+      python_name: napari_threedee.dock_widgets:QtPointManipulatorWidget
+
+    - id: napari-threedee.QtLayerManipulatorWidget
+      title: Create layer manipulator
+      python_name: napari_threedee.dock_widgets:QtLayerManipulatorWidget
+
+    # Lighting
+    - id: napari-threedee.QtLightingControlWidget
+      title: Create mesh lighting control
+      python_name: napari_threedee.dock_widgets:QtLightingControlWidget
+
+    # Visualisation
+    - id: napari-threedee.QtCameraSplineWidget
+      title: Create camera spline control widget
+      python_name: napari_threedee.dock_widgets:QtCameraSpline
+
+    # Reader
+    - id: napari-threedee.read_n3d
+      title: Read ".n3d" files
+      python_name: napari_threedee.annotators.io._napari:read_n3d_zarr
+
+    # Writers
+    - id: napari-threedee.write_n3d
+      title: Save points layer to n3d
+      python_name: napari_threedee.annotators.io._napari:write_n3d_zarr
+
+
+  widgets:
+    # Annotators
+    - command: napari-threedee.QtPointAnnotatorWidget
+      display_name: point annotator
+
+    - command: napari-threedee.QtSplineAnnotatorWidget
+      display_name: spline annotator
+
+    # Manipulators
+    - command: napari-threedee.QtRenderPlaneManipulatorWidget
+      display_name: render plane manipulator
+
+    - command: napari-threedee.QtPointManipulatorWidget
+      display_name: point manipulator
+
+    - command: napari-threedee.QtLayerManipulatorWidget
+      display_name: layer manipulator
+
+    # Lighting
+    - command: napari-threedee.QtLightingControlWidget
+      display_name: mesh lighting controls
+
+    # Visualisation
+    - command: napari-threedee.QtCameraSplineWidget
+      display_name: camera spline control
+
+
+  writers:
+    - command: napari-threedee.write_n3d
+      layer_types:
+        - points
+      filename_extensions:
+        - .n3d
+
+  readers:
+    - command: napari-threedee.read_n3d
+      filename_patterns:
+        - '*.n3d'
+      accepts_directories: true
