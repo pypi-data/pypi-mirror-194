@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: dbpal
+Version: 0.0.1
+Author-email: Michael Chow <mc_al_github@fastmail.com>
+Requires-Python: >=3.8
+Provides-Extra: dev
+License-File: LICENSE
