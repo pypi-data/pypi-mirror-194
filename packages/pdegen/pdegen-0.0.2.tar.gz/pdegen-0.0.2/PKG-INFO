@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pdegen
+Version: 0.0.2
+Summary: Partial Differential Equations Dataset Generation Library
+Home-page: https://github.com/farenga/pdegen
+Author: Nicola Farenga
+Author-email: nicola.farenga@mail.polimi.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.7
+License-File: LICENSE
+
+UNKNOWN
+

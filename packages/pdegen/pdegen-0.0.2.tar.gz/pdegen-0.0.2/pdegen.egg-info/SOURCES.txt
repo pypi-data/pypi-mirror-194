@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pdegen/__init__.py
+pdegen/generate.py
+pdegen/interface.py
+pdegen.egg-info/PKG-INFO
+pdegen.egg-info/SOURCES.txt
+pdegen.egg-info/dependency_links.txt
+pdegen.egg-info/requires.txt
+pdegen.egg-info/top_level.txt
+pdegen/problems/__init__.py
+pdegen/problems/adr.py
+pdegen/problems/burgers.py
+pdegen/problems/heat.py
+pdegen/problems/navierstokes.py
+pdegen/problems/utils.py
