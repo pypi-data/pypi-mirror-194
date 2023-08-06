@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "picsellia-yolov5"
+version = "0.2.6.3"
+description = "'Picsellia wrapper for pytorch implementation of Yolov5'"
+authors = ["PN-picsell <pierre-nicolas@picsellia.com>"]
+packages = [{include = "picsellia_yolov5"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <=3.10"
+torch = "^1.8.0"
+torchvision = "^0.9.0"
+tqdm = "^4.64.0"
+Pillow = "^9.2.0"
+matplotlib = "^3.2.2"
+pycocotools = "^2.0.6"
+scipy = "^1.10.0"
+pandas = "^1.1.4"
+opencv-python = "^4.1.1"
+PyYAML = "^5.3.1"
+thop = "^0.1.1"
+seaborn = "^0.11.0"
+numpy = "^1.23.5"
+ipython = "^8.10.0"
+psutil = "^5.9.4"
+tensorboard = "^2.12.0"
+gitpython = "^3.1.30"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
