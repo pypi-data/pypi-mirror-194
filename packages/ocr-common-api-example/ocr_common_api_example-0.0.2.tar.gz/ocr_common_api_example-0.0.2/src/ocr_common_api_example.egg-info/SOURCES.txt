@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/ocr_common_api_example/__init__.py
+src/ocr_common_api_example/example.py
+src/ocr_common_api_example.egg-info/PKG-INFO
+src/ocr_common_api_example.egg-info/SOURCES.txt
+src/ocr_common_api_example.egg-info/dependency_links.txt
+src/ocr_common_api_example.egg-info/top_level.txt
