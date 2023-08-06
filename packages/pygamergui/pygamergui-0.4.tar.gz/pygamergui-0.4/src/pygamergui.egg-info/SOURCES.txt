@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pygamergui/__init__.py
+src/pygamergui/tools.py
+src/pygamergui/window.py
+src/pygamergui.egg-info/PKG-INFO
+src/pygamergui.egg-info/SOURCES.txt
+src/pygamergui.egg-info/dependency_links.txt
+src/pygamergui.egg-info/top_level.txt
+tests/test.py

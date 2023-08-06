@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pygamergui
+Version: 0.4
+Summary: A pakage to create easy gui in Python
+Home-page: https://github.com/Bishnu-coder/pygamergui
+Author: vishnu01
+Author-email: koharrupesh@gmail.com
+Project-URL: Bug Tracker, https://github.com/Bishnu-coder/pygamergui
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Hello from pygamer.{the creator of this module}
+
+#-- project discription--
+    it's an simple project that can help you create awsome gui.
+#-------------------------
+
+#-- contains --
+    Two files -_
+                |
+                V
+        1) window.py
+        2) tools.py
+description obout files is contained within them as comment
+#-------------------
+
+#----------support -------------------
+consider supporting by suscribing my channel on youtube:->https://www.youtube.com/channel/UCNj9jZBVxRWm7TA5g2K7XtA
+#--------------------------------------
+
+#------This version contains---------------
+
+@featurs-
+        |
+        V
+1)Now functions can be called with arguments through buttons
+2)importing module gives an Hello message from developer
+
+#---------------------------------------------
+
