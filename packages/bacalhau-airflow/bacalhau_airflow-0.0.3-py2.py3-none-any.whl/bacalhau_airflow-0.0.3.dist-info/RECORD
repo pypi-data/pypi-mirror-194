@@ -1,0 +1,8 @@
+bacalhau_airflow/__init__.py,sha256=SDZ83tpN2rUiq4bjGDPJgb5pqyClBO6GAWKgJzvWPgQ,142
+bacalhau_airflow/hooks.py,sha256=W7AUm4p4BaFpKa-9wEg9ugnW5BCMJKnhb5SwWGrgvjw,2246
+bacalhau_airflow/operators.py,sha256=pm5MYcDAosa1NTJtOPhWygSK895MUPI8ecs8yHIUh4o,6116
+bacalhau_airflow-0.0.3.dist-info/LICENSE,sha256=QFchhCg0ioWaGFxByqQpop3NlqE3tWmSPRRlYHew8H0,10247
+bacalhau_airflow-0.0.3.dist-info/METADATA,sha256=_AMNReYYzqm5xtem1rRzpbBCIs0D1yrYiyk4ltuYwUE,2222
+bacalhau_airflow-0.0.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+bacalhau_airflow-0.0.3.dist-info/top_level.txt,sha256=uVSiSLsKiWl69nf9hcCmrRkiHPPy9uptIJNnYF5ArnQ,17
+bacalhau_airflow-0.0.3.dist-info/RECORD,,
