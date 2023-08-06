@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gero-nlp-workbench"
+version = "0.0.2"
+description = "A simple NLP workbench."
+#readme = "README.md"
+authors = [{ name = "Gerome Meyer", email = "meyerger@students.zhaw.ch" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["nlp", "natural language processing", "example", "workbench", "toolkit"]
+dependencies = [
+    "nltk >= 3.8.0",
+]
+requires-python = ">=3.10"
+
+#[project.optional-dependencies]
+#dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/GeroVanMi/NLP_Project_Workbench"
+
