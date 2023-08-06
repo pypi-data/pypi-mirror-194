@@ -1,0 +1,14 @@
+ibis_extensions/__init__.py,sha256=x1HybJu_Lm8D9-t3S7V8Dak_H2c4rwjpZJOxIzxoGdQ,156
+ibis_extensions/dedup.py,sha256=ObPFb8FDp60GL073Q4chxPaOk7BGHvh7pPVMEUdoxqs,839
+ibis_extensions/dummies.py,sha256=C6FPWxd6pFyi5KsKWpgdSbUVbXvGw2f6LkgtAFpmE_E,1897
+ibis_extensions/pivot.py,sha256=mtpZiq3l-YAYs30N_Q2JSrHZGr1w29eEctSSAslqfY4,1361
+ibis_extensions/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ibis_extensions/tests/test_dedup.py,sha256=E5Ynj7pnm7uApyL9cfEN4Blyk8ftVd9Bdd9EtUfjNcE,1495
+ibis_extensions/tests/test_dummies.py,sha256=UBi17q3CFq4Pc8ijdE7hvtOdc7AkizL5m-hXchyQhHg,1744
+ibis_extensions/tests/test_pivot.py,sha256=FsaIFJ5fgt8ate6240FZj7zix9VW4oUvitfNSlj9VTQ,1400
+ibis_extensions/tests/test_timeseries.py,sha256=tsCP7C4FuLzF5y_Lb_2KREO8sFVl38d2QQ68lX85ix0,5228
+ibis_extensions/time_series.py,sha256=LLGDRv6iIhV7cKWpDyt0dKoDwiuQ875-NDQ2ocS141k,1500
+ibis_extensions-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ibis_extensions-0.1.2.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+ibis_extensions-0.1.2.dist-info/METADATA,sha256=XFERplvHY2xKq1azYHFIWJc8-5ALlGpkoh9yYKsCkIU,329
+ibis_extensions-0.1.2.dist-info/RECORD,,

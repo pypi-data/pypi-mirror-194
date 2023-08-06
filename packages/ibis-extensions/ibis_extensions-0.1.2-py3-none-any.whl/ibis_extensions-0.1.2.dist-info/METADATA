@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ibis-extensions
+Version: 0.1.2
+Summary: 
+License: Apache 2.0
+Author: Omri Fima
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ibis-framework (>=4.1.0,<5.0.0)
