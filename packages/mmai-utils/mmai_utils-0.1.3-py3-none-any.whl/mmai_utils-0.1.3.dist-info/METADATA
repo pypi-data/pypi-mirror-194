@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mmai-utils
+Version: 0.1.3
+Summary: MMAI helper functions and classes
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: datasets
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pydicom
+Requires-Dist: pylibjpeg
+Requires-Dist: python-gdcm
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: transformers
+
+UNKNOWN
+
