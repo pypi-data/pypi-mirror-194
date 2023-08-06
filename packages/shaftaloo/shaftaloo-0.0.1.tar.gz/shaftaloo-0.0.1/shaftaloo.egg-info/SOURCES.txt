@@ -1,0 +1,12 @@
+.gitignore
+requirements.txt
+setup.py
+.github/workflows/python-publish-pypi.yml
+.github/workflows/python-pypi-test.yml
+shaftaloo/__init__.py
+shaftaloo/runner.py
+shaftaloo.egg-info/PKG-INFO
+shaftaloo.egg-info/SOURCES.txt
+shaftaloo.egg-info/dependency_links.txt
+shaftaloo.egg-info/requires.txt
+shaftaloo.egg-info/top_level.txt
