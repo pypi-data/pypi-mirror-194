@@ -1,0 +1,7 @@
+README.md
+setup.py
+gluesnake.egg-info/PKG-INFO
+gluesnake.egg-info/SOURCES.txt
+gluesnake.egg-info/dependency_links.txt
+gluesnake.egg-info/not-zip-safe
+gluesnake.egg-info/top_level.txt
