@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ALifeStdDev/__init__.py
+ALifeStdDev.egg-info/PKG-INFO
+ALifeStdDev.egg-info/SOURCES.txt
+ALifeStdDev.egg-info/dependency_links.txt
+ALifeStdDev.egg-info/not-zip-safe
+ALifeStdDev.egg-info/requires.txt
+ALifeStdDev.egg-info/top_level.txt
