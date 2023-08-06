@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: altron
+Version: 0.0.1
+Summary: TheAltron
+Author: Axen
+Author-email: thexboy131@gmail.com
+Keywords: python,pyrogram,altron
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+A Package to use Gcast, Stats and Must Join on telegram
