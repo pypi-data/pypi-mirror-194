@@ -1,0 +1,12 @@
+Image_stitching.py
+LICENSE
+README.md
+main.py
+setup.py
+url.json
+copymanga_dl.egg-info/PKG-INFO
+copymanga_dl.egg-info/SOURCES.txt
+copymanga_dl.egg-info/dependency_links.txt
+copymanga_dl.egg-info/entry_points.txt
+copymanga_dl.egg-info/requires.txt
+copymanga_dl.egg-info/top_level.txt
