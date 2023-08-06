@@ -1,0 +1,8 @@
+README.md
+setup.py
+mypythonlib-israellandes/__init__.py
+mypythonlib-israellandes/test.py
+mypythonlib_israellandes.egg-info/PKG-INFO
+mypythonlib_israellandes.egg-info/SOURCES.txt
+mypythonlib_israellandes.egg-info/dependency_links.txt
+mypythonlib_israellandes.egg-info/top_level.txt
