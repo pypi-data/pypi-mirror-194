@@ -1,0 +1,14 @@
+azure-ai-ml
+azure-identity
+azure-storage-blob<=12.13.0
+hydra-core
+opencensus-ext-azure
+PyYAML
+pyfiglet
+pandas
+pickle5
+pyyaml
+
+[test]
+pytest
+coverage
