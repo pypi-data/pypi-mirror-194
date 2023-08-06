@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: FiniteDiffX
+Version: 0.0.1
+Summary: Finite difference tools in JAX.
+Home-page: https://github.com/ASEM000/FiniteDiffX
+Author: Mahmoud Asem
+Author-email: asem00@kaist.ac.kr
+License: MIT
+Keywords: python jax
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
