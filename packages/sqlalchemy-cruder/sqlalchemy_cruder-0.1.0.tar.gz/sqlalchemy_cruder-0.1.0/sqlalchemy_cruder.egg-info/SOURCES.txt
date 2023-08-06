@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sqlalchemy_cruder/__init__.py
+sqlalchemy_cruder/cli.py
+sqlalchemy_cruder/sqlalchemy_cruder.py
+sqlalchemy_cruder.egg-info/PKG-INFO
+sqlalchemy_cruder.egg-info/SOURCES.txt
+sqlalchemy_cruder.egg-info/dependency_links.txt
+sqlalchemy_cruder.egg-info/entry_points.txt
+sqlalchemy_cruder.egg-info/not-zip-safe
+sqlalchemy_cruder.egg-info/requires.txt
+sqlalchemy_cruder.egg-info/top_level.txt
