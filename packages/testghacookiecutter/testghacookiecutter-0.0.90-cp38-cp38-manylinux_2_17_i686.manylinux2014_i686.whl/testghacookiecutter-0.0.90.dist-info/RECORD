@@ -1,0 +1,9 @@
+testghacookiecutter/_testghacookiecutter.cpython-38-i386-linux-gnu.so,sha256=bpkgsFm4ZfmerzaobzAZKjeFXRRAyD2Mj79T9yjlFbI,170236
+testghacookiecutter/__init__.py,sha256=cGghOFAaeJ-0betUgsyeh6vECqV1L5aQ7qKBxkyIDNM,242
+testghacookiecutter/include/test-gha-cookiecutter/test-gha-cookiecutter.hpp,sha256=QkYaOQzKEU76ZE6EZ1OhMuKqDiHXg1eCZt7AKnazcYE,434
+testghacookiecutter/lib/cmake/test-gha-cookiecutter/test-gha-cookiecutter-config.cmake,sha256=DbMCTEUsQR5sFyQuJLZNsn4xuEexV_CPNiXi7R3IT_k,4167
+testghacookiecutter-0.0.90.dist-info/top_level.txt,sha256=IswgbSrIopzF6Lm7sluyuTfnHzFtW7dBRGigD5EsE00,20
+testghacookiecutter-0.0.90.dist-info/LICENSE.md,sha256=-SOLz10Z9XqyAycrqCJQXY0ad-TzDrjh-FeR_AtWTdg,1086
+testghacookiecutter-0.0.90.dist-info/RECORD,,
+testghacookiecutter-0.0.90.dist-info/WHEEL,sha256=9zQ17iFxxvsFAOrnkSFZkfpVwd6H6odqfZyXHqPKIGw,138
+testghacookiecutter-0.0.90.dist-info/METADATA,sha256=nzDKW9pK3HGWGZ-nsMNbCK1lDqQWbrDzx3Pfx_WftfI,3473
