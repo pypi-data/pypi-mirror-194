@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: consumer-api-telegram-bot
+Version: 0.0.1
+Summary: Implementacao da api de um bot para telegram
+Home-page: UNKNOWN
+Author: Lucas Alves
+Author-email: lucasal072@gmail.com
+License: MIT License
+Description: telegram bot shop api consumer :D
+Keywords: consumer_api_lucas
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
