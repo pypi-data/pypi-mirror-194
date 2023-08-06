@@ -1,0 +1,8 @@
+sqlalchemy
+sqlparse
+pandas
+
+[dev]
+black
+build
+twine

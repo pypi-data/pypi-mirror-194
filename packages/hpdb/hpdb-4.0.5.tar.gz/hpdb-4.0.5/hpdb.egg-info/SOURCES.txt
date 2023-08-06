@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+hpdb/__init__.py
+hpdb/dbclass.py
+hpdb.egg-info/PKG-INFO
+hpdb.egg-info/SOURCES.txt
+hpdb.egg-info/dependency_links.txt
+hpdb.egg-info/requires.txt
+hpdb.egg-info/top_level.txt

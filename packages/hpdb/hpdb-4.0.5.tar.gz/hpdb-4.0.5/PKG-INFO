@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: hpdb
+Version: 4.0.5
+Summary: Makes working with existing sql databases super easy
+Author-email: HP Harmsen <hp@harmsen.nl>
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <https://unlicense.org>
+        
+Project-URL: Homepage, https://github.com/hpharmsen/hpdb
+Keywords: mysql,postgresql
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# HPDB
+
+Current version: 4.0.5
+## dbClass
+### installation
+python -m pip install hpdb
+
+### usage
+
+#### settings.ini
+~~~~inifile
+[database]
+dbhost = myhost.mydomain.com
+dbname = database_name
+dbuser = database_user
+dbpass = secret123
+~~~~
+
+#### Initializing from ini file
+~~~~python
+from hpdb import dbClass
+db = dbClass.from_inifile('settings.ini')
+~~~~
+
+#### Initializing directly
+~~~~python
+db = dbClass(  host, dbname, user, passwd )
+~~~~
+
+
+#### SELECT
+~~~~sql
+db.select('users',{'isactive':1} )
+~~~~
+
+#### LOOKUP SPECIFIC VALUES
+~~~~sql
+db.lookup('users',{'id':15}, ['name', 'active] )
+~~~~
+
+#### INSERT
+~~~~sql
+db.insert('users', {'name':'john', 'isactive':1})
+id = db.last_insert_id()
+~~~~
+
+#### UPDATE
+~~~~sql
+db.update( 'users', {'name':'john'}, {'active':0})
+~~~~
+
+#### DELETE
+~~~~sql
+db.delete( 'users', {'name':'john'})
+~~~~
+
+#### QUERY
+~~~~sql
+db.execute( 'SELECT * FROM users' )
+~~~~
+
+
+_Don't forget to commit when you have an innodb table_
+~~~~sql
+db.commit()
+~~~~
