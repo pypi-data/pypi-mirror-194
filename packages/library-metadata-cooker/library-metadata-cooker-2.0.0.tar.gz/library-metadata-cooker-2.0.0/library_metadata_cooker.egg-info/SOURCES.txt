@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+library_metadata_cooker.egg-info/PKG-INFO
+library_metadata_cooker.egg-info/SOURCES.txt
+library_metadata_cooker.egg-info/dependency_links.txt
+library_metadata_cooker.egg-info/top_level.txt
