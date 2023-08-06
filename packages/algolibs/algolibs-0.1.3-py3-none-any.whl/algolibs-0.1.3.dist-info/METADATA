@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: algolibs
+Version: 0.1.3
+Summary: 
+Author: CodeMax
+Author-email: istommao@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# algolibs
+python algo libs
+
+## TODO
+
+- [x] Linked List
+    - [x] Remove nth from end
+    - [x] Linked list has cycle
+    - [x] Detect linked list cycle entry point
+- [x] Stack
+    - [x] MinStack
+- [ ] Queue
+- [ ] Binary Tree
+
