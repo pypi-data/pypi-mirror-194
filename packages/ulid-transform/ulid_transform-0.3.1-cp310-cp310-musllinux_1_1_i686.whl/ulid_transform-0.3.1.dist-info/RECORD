@@ -1,0 +1,17 @@
+ulid_transform.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+ulid_transform.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+ulid_transform-0.3.1.dist-info/LICENSE,sha256=gieJjxNidEKH1VXLqbV9tuqnmcnqvMqt5xcmktkn5I4,1072
+ulid_transform-0.3.1.dist-info/WHEEL,sha256=RrC33IotyKlfhEMzO2qLNW0CN_SbaUcE9y2bB2TyFd8,107
+ulid_transform-0.3.1.dist-info/METADATA,sha256=sQcCEaW6AzkyVLYTtV0Lw6AssFZJR_JSefD_5-WOXlY,4874
+ulid_transform-0.3.1.dist-info/RECORD,,
+ulid_transform/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ulid_transform/ulid_wrapper.cpp,sha256=bQxiD5QxgcHrExm3pvP2KAwSvo_2BxhPcrW1LOHnMRA,673
+ulid_transform/_ulid_impl.cpython-310-i386-linux-gnu.so,sha256=jI0Kn1zF0Lyg08nlveqFIKchNlkFQV8KyV9TziTIoR8,282025
+ulid_transform/ulid_impl.py,sha256=ESc1uEOAVmE5s_suhXCgmG81pQ1-RDv9fmPOuFb6e2o,9209
+ulid_transform/__init__.py,sha256=NhIgKJDakGNIKAoE82qqjEmOSkL9UIBZmgyYP3arWgo,163
+ulid_transform/ulid_wrapper.h,sha256=hImpfqrrFRf63Z357e1-FSowb_l0q8Vgv84Crm_S4y0,205
+ulid_transform/_ulid_impl.cpp,sha256=n532jxjz--VMPDvd7JxMLgQME8iR1zvB_j5qDgzGksQ,147478
+ulid_transform/_ulid_impl.pyx,sha256=puUFXzJHI1u2e_U4CF_ydGPhE7CbbBFtHwRVH4HElaE,567
+ulid_transform/ulid.hh,sha256=cCMqxiPh9iw5hOxvu4czd2I6Rgnl7z9hc9c5a78qLLI,295
+ulid_transform/ulid_uint128.hh,sha256=_3lg-wBs9M_t3BRgb4GYWgpdAl9I4iOMxH0iXJ_4m5k,14365
+ulid_transform/ulid_struct.hh,sha256=8dlx8HbOU_54PkvqBIdTmGVG6Wl_ZYPsZcn5bAaxNd4,18677
