@@ -1,0 +1,4 @@
+[console_scripts]
+parse_test=scripts:parse_test
+test=scripts:test
+
