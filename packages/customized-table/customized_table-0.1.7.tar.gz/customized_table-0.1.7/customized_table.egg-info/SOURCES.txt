@@ -1,0 +1,14 @@
+.gitignore
+Docs.ipynb
+Examples.ipynb
+LICENSE
+README.md
+setup.py
+customized_table/__init__.py
+customized_table/customized_table.py
+customized_table/docs.py
+customized_table.egg-info/PKG-INFO
+customized_table.egg-info/SOURCES.txt
+customized_table.egg-info/dependency_links.txt
+customized_table.egg-info/requires.txt
+customized_table.egg-info/top_level.txt
