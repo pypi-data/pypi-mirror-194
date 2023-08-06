@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: letters-font
+Version: 0.0.1
+Summary: A small example package that can help you to have cool big letters font
+Author-email: Example Author <author@example.com>
+License-File: LICENSE
+Requires-Python: >=3.7
