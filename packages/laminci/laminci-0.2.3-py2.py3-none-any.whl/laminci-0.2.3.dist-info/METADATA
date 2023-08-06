@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: laminci
+Version: 0.2.3
+Summary: Internal CI tools.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: nbproject
+Requires-Dist: lamindb
+Requires-Dist: nox
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: Home, https://github.com/laminlabs/laminci
+Provides-Extra: dev
+Provides-Extra: test
+
+# laminci: Internal CI tools
+
