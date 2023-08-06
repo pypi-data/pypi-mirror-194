@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ssd-scheduler
+Version: 1.2
+Summary: Testing installation of Package
+Home-page: https://murathanov-stepan.ru/gitea/sa/ssd-scheduler.git
+Download-URL: https://murathanov-stepan.ru/gitea/sa/ssd-scheduler/archive/v1.2.tar.gz
+Author: Test user
+Author-email: test@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://murathanov-stepan.ru/gitea/sa/ssd-scheduler.git
+Keywords: pypi,ssd-scheduler,test
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+[metadata]
+description-file = README.md
