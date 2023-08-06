@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+synapseml_vw.egg-info/PKG-INFO
+synapseml_vw.egg-info/SOURCES.txt
+synapseml_vw.egg-info/dependency_links.txt
+synapseml_vw.egg-info/top_level.txt
