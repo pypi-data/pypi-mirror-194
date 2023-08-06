@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nextrade
+Version: 0.1.5
+Summary: Trade volume analysis tool
+Home-page: https://github.com/nextrade/library
+Author: nxt
+Author-email: nxt@nextrade.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Nextrade
+
+**Nextrade** is a Python toolkit for quantitative analysis for market management.
