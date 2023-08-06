@@ -1,0 +1,3 @@
+[console_scripts]
+pydwt=pydwt.app:app
+
