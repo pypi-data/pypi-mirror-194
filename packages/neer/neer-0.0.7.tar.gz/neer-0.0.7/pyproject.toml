@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neer"
+version = "0.0.7"
+authors = []
+description = ""
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies=[
+    "sqlalchemy >= 1.4.23",
+    "loguru >= 0.5.3",
+    "python-dotenv >= 0.21.1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/neerinc/pyoneer"
+"Bug Tracker" = "https://github.com/neerinc/pyoneer/issues"
