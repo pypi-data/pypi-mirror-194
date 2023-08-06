@@ -1,0 +1,8 @@
+LICENCE.txt
+setup.py
+srj_basic_calculator3.egg-info/PKG-INFO
+srj_basic_calculator3.egg-info/SOURCES.txt
+srj_basic_calculator3.egg-info/dependency_links.txt
+srj_basic_calculator3.egg-info/top_level.txt
+srjbasiccalc/__init__.py
+srjbasiccalc/calc.py
