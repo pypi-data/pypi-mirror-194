@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hpinterp"
+version = "0.1.0"
+description = ""
+authors = ["lap1dem <vadym.bidula@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8, <3.12"
+numba = "^0.56.4"
+matplotlib = "^3.7.0"
+tqdm = "^4.64.1"
+scipy = "^1.10.1"
+healpy = "^1.16.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
