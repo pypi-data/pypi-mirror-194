@@ -1,0 +1,7 @@
+rym/alias/__init__.py,sha256=73wUz_y9G5ZeKZx3OD3belhVsLHETA2nfxybfJ39oCs,242
+rym/alias/_alias.py,sha256=4ojThWCT-9Ne9GL2qeN8VtClf8eoeP85_GpFSpsmr9Q,6275
+rym/alias/_aliasresolver.py,sha256=lK4hwh7AwDrfNosQ9XkP-iCR5tpGdYamwyqfbwvNB2k,8332
+rym/alias/variation.py,sha256=0SgKHu_hcBY4kkAzlhsnWNh1sQNYAZtBYp-uU2G0wYE,1277
+rym_alias-0.1.0.dist-info/METADATA,sha256=Jkeu-vQEGUavwYeNSVNxMifa_yCLlaFx-wEomJd9IdI,929
+rym_alias-0.1.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+rym_alias-0.1.0.dist-info/RECORD,,
