@@ -1,0 +1,11 @@
+README.md
+setup.py
+talktokitty/__init__.py
+talktokitty/cat.py
+talktokitty/main.py
+talktokitty/wait.py
+talktokitty.egg-info/PKG-INFO
+talktokitty.egg-info/SOURCES.txt
+talktokitty.egg-info/dependency_links.txt
+talktokitty.egg-info/entry_points.txt
+talktokitty.egg-info/top_level.txt
