@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gee_zonal
+Version: 0.1.0
+Summary: Wrapper function to request temporal and zonal statistics from Google Earth Engine
+Home-page: https://worldbank.github.io/GEE_Zonal/
+Author: Andres Chamorro
+Author-email: github@worldbank.org
+Maintainer: Andres Chamorro
+Maintainer-email: achamorroelizond@worldbank.org
+License: MIT
+Project-URL: Bug Tracker, https://github.com/worldbank/GEE_Zonal/issues
+Project-URL: Documentation, https://worldbank.github.io/GEE_Zonal/
+Project-URL: Source Code, https://github.com/worldbank/GEE_Zonal/gee_zonal
+Keywords: gee zonal statistics earth engine
+License-File: LICENSE.md
