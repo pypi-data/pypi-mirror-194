@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "excel_exporter_bms"
+version = "0.2.1"
+description = "An excel exporter based on YAML configuration files"
+authors = ["Bruno Santiago <not_a_real_email_13124123@gmail.com>"]
+license = "MIT"
+packages = [
+    { include = "excel_exporter" },
+]
+readme = "readme.md"
+homepage = "https://github.com/brunomsantiago/excel_exporter"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openpyxl = "^3.1.1"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+blue = "^0.9.1"
+pandas = "^1.5.3"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+example = "example:example"
