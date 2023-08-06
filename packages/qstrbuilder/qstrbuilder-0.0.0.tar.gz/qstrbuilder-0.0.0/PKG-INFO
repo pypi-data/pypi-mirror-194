@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qstrbuilder
+Version: 0.0.0
+Summary: qstrbuilder
+Home-page: http://github.com/qstrbuilder/qstrbuilder/
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+qstrbuilder: convert Python objects to a KDB+q string
+=======================
+
+Usage Example:
+
+```
+import datetime as dt
+from qstrbuilder import build
+build("Hello", 3., [3., dt.date(2000, 1, 1)], [], {"A": 3, "B": 4})
+```
+
+

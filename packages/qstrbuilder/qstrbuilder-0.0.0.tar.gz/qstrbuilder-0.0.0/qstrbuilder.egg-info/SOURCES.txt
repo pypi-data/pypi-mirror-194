@@ -1,0 +1,8 @@
+README.md
+setup.py
+qstrbuilder/__init__.py
+qstrbuilder/version.py
+qstrbuilder.egg-info/PKG-INFO
+qstrbuilder.egg-info/SOURCES.txt
+qstrbuilder.egg-info/dependency_links.txt
+qstrbuilder.egg-info/top_level.txt
