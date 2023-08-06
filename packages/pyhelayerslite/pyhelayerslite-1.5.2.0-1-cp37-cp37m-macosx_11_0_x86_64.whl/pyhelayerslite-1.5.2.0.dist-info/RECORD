@@ -1,0 +1,15 @@
+pyhelayerslite/__init__.py,sha256=B94yRP4qAsKRHTAgjQirfZKR-xjoodkxhYbp7co_OO8,569
+pyhelayerslite/resources/optimizer/lattigo.json,sha256=pA6H6x1YmE3Of18hWEFwcQWs7yLB0xnLk2Hw_jtgXOc,141661
+pyhelayerslite/resources/optimizer/seal.json,sha256=99bP4-3puFUnpWQ2p-_RuFmNNqIFw_-H_ERPIUhuL-U,120685
+pyhelayerslite/resources/optimizer/palisade.json,sha256=NoygeIy0cLRl1O7iygvzEkv7mEeT3GYttWqRLy9qVHI,61670
+pyhelayerslite/resources/er/nick_to_name.csv,sha256=j5QmpatJMomvWb80msSBtrCVxrqs3aUA0oG_ZWfPwqE,5157
+pyhelayerslite/resources/er/README.md,sha256=daAL5u8i7vxlp39ig3eJwCbx70Cw-PnejoaKkXVS9_I,618
+pyhelayerslite/.dylibs/libomp.dylib,sha256=4ajEJ37DnSxIO2ub7tWj7pLKz1T3GwssoApA_kOuPpw,702928
+pyhelayerslite/.dylibs/libboost_filesystem.dylib,sha256=MvAu1Mj1kAe1FJwV76VKNEjONacz_OX4eTqxOvbHXVM,170704
+pyhelayerslite/libs/pyhelayerslite_cppwrappers.cpython-37m-darwin.so,sha256=WVoa2kyhyxx6J_snZOgVwUcyDyLaQNy8Ficp9vwHBXA,3978640
+pyhelayerslite/libs/_dummy.cpython-37m-darwin.so,sha256=duw0KnJ4ReDa6mX0lTEjYBlexvx1nHoUproAi6lK8As,16888
+pyhelayerslite-1.5.2.0.dist-info/RECORD,,
+pyhelayerslite-1.5.2.0.dist-info/LICENSE,sha256=mSFrFBc-lB3OK5ydfCy2r7uvpdfRoKCQfi6tmDeOoWE,9734
+pyhelayerslite-1.5.2.0.dist-info/WHEEL,sha256=Vd6OM1SE62GfbugO28Ct_a6q7buWSyjb3rN6Z8xOzoc,110
+pyhelayerslite-1.5.2.0.dist-info/top_level.txt,sha256=A7j0qjG02uYbIx-P_pEPKoQ5dT-jsHxL4GoHp6dBK0k,15
+pyhelayerslite-1.5.2.0.dist-info/METADATA,sha256=7jV611PkK_LlIszzxZbMxYQuf3Xk88_a06OC5R0kW40,1507
