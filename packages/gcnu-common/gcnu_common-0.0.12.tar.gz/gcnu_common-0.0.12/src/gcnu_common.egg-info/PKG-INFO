@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gcnu-common
+Version: 0.0.12
+Summary: Common functionality for GCNU libraries
+Home-page: https://github.com/joacorapela/gcnu_common
+Author: Joaquin Rapela
+Author-email: j.rapela@ucl.ac.uk
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+README
