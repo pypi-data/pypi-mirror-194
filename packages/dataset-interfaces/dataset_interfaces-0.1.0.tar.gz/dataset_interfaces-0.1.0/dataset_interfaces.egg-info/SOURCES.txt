@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+dataset_interfaces/__init__.py
+dataset_interfaces/generate.py
+dataset_interfaces/imagenet_utils.py
+dataset_interfaces/inference_utils.py
+dataset_interfaces/templates.py
+dataset_interfaces/textual_inversion.py
+dataset_interfaces/utils.py
+dataset_interfaces.egg-info/PKG-INFO
+dataset_interfaces.egg-info/SOURCES.txt
+dataset_interfaces.egg-info/dependency_links.txt
+dataset_interfaces.egg-info/requires.txt
+dataset_interfaces.egg-info/top_level.txt
