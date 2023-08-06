@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bechdel-corpus
+Version: 0.0.1
+Summary: An annotated corpus of classic literature.
+Project-URL: Homepage, https://github.ubc.ca/ssaramir/COLX_523_group2
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.0
+Description-Content-Type: text/markdown
+Requires-Dist: chapterize
+Requires-Dist: nltk
+Requires-Dist: time
+Requires-Dist: bs4
+Requires-Dist: urllib
+Requires-Dist: json
+Requires-Dist: os
+Requires-Dist: pathlib
+
