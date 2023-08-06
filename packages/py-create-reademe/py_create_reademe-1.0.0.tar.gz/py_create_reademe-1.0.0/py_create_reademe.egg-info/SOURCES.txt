@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+py_create_reademe/__init__.py
+py_create_reademe/py_create_reademe.py
+py_create_reademe.egg-info/PKG-INFO
+py_create_reademe.egg-info/SOURCES.txt
+py_create_reademe.egg-info/dependency_links.txt
+py_create_reademe.egg-info/top_level.txt
