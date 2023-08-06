@@ -1,0 +1,10 @@
+numpy>=1.9.0
+
+[dist]
+build
+cibuildwheel
+setuptools_scm
+twine
+
+[test]
+pytest
