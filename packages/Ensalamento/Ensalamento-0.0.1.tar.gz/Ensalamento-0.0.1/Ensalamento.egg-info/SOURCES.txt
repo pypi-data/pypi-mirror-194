@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+Ensalamento.egg-info/PKG-INFO
+Ensalamento.egg-info/SOURCES.txt
+Ensalamento.egg-info/dependency_links.txt
+Ensalamento.egg-info/top_level.txt
+Relatorio_Ensalamento/Relatorio_Ensalamento.py
+Relatorio_Ensalamento/__init__.py
+Sugestao/Sugestao.py
+Sugestao/__init__.py
+Unificar_XML/Unificar_XML.py
+Unificar_XML/__init__.py
