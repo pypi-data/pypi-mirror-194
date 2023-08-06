@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nbinspector/__init__.py
+nbinspector/inspectors.py
+nbinspector.egg-info/PKG-INFO
+nbinspector.egg-info/SOURCES.txt
+nbinspector.egg-info/dependency_links.txt
+nbinspector.egg-info/not-zip-safe
+nbinspector.egg-info/requires.txt
+nbinspector.egg-info/top_level.txt
