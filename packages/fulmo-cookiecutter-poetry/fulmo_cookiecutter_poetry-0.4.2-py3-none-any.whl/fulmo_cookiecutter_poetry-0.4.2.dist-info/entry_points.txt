@@ -1,0 +1,3 @@
+[console_scripts]
+fcp=fulmo_cookiecutter_poetry.cli:main
+
