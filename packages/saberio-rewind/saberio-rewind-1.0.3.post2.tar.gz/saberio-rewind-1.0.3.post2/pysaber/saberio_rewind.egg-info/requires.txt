@@ -1,0 +1,7 @@
+beautifulsoup4==4.11.1
+colorifix==2.0.4
+pymortafix==0.2.2
+halo==0.0.31
+tabulate==0.8.10
+wcwidth==0.2.6
+spotipy==2.22.1
