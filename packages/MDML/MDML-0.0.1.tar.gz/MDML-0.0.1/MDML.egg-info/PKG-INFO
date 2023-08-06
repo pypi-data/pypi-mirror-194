@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: MDML
+Version: 0.0.1
+Summary: Application of Deep learning on molecular dymanamics trajectories
+Home-page: https://github.com/StevetheGreek97/MD_ML.git
+Author: Stylianos Mavrianos
+Author-email: stylianosmavrianos@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+License-File: LICENSE
