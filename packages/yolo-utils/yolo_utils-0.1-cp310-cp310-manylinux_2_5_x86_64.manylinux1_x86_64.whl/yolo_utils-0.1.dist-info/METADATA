@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: yolo-utils
+Version: 0.1
+Summary: Extension providing some basic utilities required for training, evaluating and using a YOLO model in C.
+
