@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+cutthelog.py
+setup.py
+cutthelog.egg-info/PKG-INFO
+cutthelog.egg-info/SOURCES.txt
+cutthelog.egg-info/dependency_links.txt
+cutthelog.egg-info/entry_points.txt
+cutthelog.egg-info/top_level.txt
