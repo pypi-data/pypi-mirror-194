@@ -1,0 +1,14 @@
+texoid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+texoid/__main__.py,sha256=ksNyQxe7OTg9h5wOETxFxASxLtE5fvjkzX5WfWZZgJw,69
+texoid/main.py,sha256=nJPNyiKE8sP84vKRA4qxRmnDMOA3Ny7ShncYapOXVbc,1065
+texoid/server.py,sha256=bSb5GyeWW1TfUBg1D9N8suX8X9VB3VpdviTHqyWrntI,1092
+texoid/utils.py,sha256=N_xVgZcYwbTSDahRNUM_Giq11I6VwJoUO9fvmbWpApU,381
+texoid/backends/__init__.py,sha256=CPWzbQ-ESyg1gDFbuejtZGztRHJfsCQ0B1eWJFox7lE,108
+texoid/backends/direct.py,sha256=UBGnqF8HA43umYHlNvwBEznEktV8pm4jMlydAw2Xkqc,3444
+texoid/backends/docker.py,sha256=du9CMqXrOybbUaUTnnH8bgSVZ9ubLEc0eZQcge5RPtw,2018
+texoid-0.2.1.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+texoid-0.2.1.dist-info/METADATA,sha256=EuxYZNhkcB2GTsg17WGGFyqpoAZhM1L5XkHnw17hb8w,4587
+texoid-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+texoid-0.2.1.dist-info/entry_points.txt,sha256=sNnOH7bCKJhkOZ07BuPrlCUXM746RGULZpY-rAHKoac,45
+texoid-0.2.1.dist-info/top_level.txt,sha256=Nw8j_QX6t8PPT_8OjYUKJrWOpC7hKFNJtn_Z-EdTVVY,7
+texoid-0.2.1.dist-info/RECORD,,
