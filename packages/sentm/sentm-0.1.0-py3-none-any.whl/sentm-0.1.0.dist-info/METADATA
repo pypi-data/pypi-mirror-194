@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sentm
+Version: 0.1.0
+Summary: Lexical Sentiment Analysis in Danish
+Home-page: https://github.com/MadsLang/senTM
+Author: MadsLang
+Author-email: madslangs@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: da-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/da_core_news_sm-3.5.0/da_core_news_sm-3.5.0-py3-none-any.whl
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Requires-Dist: spacy (>=3.5.0,<4.0.0)
+Project-URL: Repository, https://github.com/MadsLang/senTM
+Description-Content-Type: text/markdown
+
+
+# senTM
+
+Pronounced "sen-T-M". 
+
+senTM is a lexical approach to sentiment analysis in Danish. The approach is inspired by the [afinn](https://github.com/fnielsen/afinn) package, but using the [Danish Sentiment Lexicon version 0.2 (2022-12-20)](https://github.com/dsldk/danish-sentiment-lexicon). 
+
+The approach use the part-of-speech (POS) model from Spacy and then matches any tokens from the Danish Sentiment Lexicon. 
+
+License: Same as [Danish Sentiment Lexicon version 0.2 (2022-12-20)](https://github.com/dsldk/danish-sentiment-lexicon): CC-BY-SA 4.0 International https://creativecommons.org/licenses/by-sa/4.0/
