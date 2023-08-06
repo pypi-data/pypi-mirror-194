@@ -1,0 +1,24 @@
+kiam_astro/FKIAMToolbox.cp39-win_amd64.pyd,sha256=a9jXbQbCfO5XVhDc3fgh46n5icsDsJsUqtQJ_UWjhVk,798208
+kiam_astro/FKIAMToolbox.cpython-39-darwin.so,sha256=iGswwk2HtQXWrt1qAbirt1zffLA2rp2aeNFQWvrbKBA,748528
+kiam_astro/FKIAMToolbox.cpython-39-x86_64-linux-gnu.so,sha256=X4NDCd2X41FcItynignhuDSYyzYjb4ZZh3bQIp-n5QI,1148584
+kiam_astro/JPLEPH,sha256=aB_-XyPHuwyVjtH-a_E0KRL9aQxG5IKdbTBV0yQ_s2g,74468736
+kiam_astro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiam_astro/kiam.py,sha256=z5lndiVGqFPuV4pqVHJC5tAE5EI225U2MydZIJ7W5gY,146989
+kiam_astro/kiam_examples.py,sha256=XZ4U4GzOlni9fn375MCuJ9f-emC0xD9Cr1ZpkI80lTM,4827
+kiam_astro/libifcoremd.dll,sha256=RNdTMxoqeqzIXplAvHCj3zf1gdKCe7d0YvFwkxX3VqM,1865120
+kiam_astro/libmmd.dll,sha256=bEJ4JvJEDXwUaXeq-Q1pcrcQ_4f77a7RqeGl8ICU7gI,4515240
+kiam_astro/svml_dispmd.dll,sha256=Cgeaxm8JWsWj1nLs02xot_UmWBPA3ZI7yAVSmsAolpg,18838744
+kiam_astro/trajectory.py,sha256=QTUPil6-CTSeKBaIsQNzvqDsa1V5vAsLfh4Xl5_kL9g,69516
+kiam_astro/__pycache__/__init__.cpython-39.pyc,sha256=iqKuyPd1At2SYtRP6UrpBjnjD4vuYdpYJ9U096SDgwc,146
+kiam_astro/__pycache__/kiam.cpython-39.pyc,sha256=_BMxZHmBof3UevjG3E50y6YecfTvp4NCW3QVX8xs1Jg,129619
+kiam_astro/__pycache__/trajectory.cpython-39.pyc,sha256=VHhIa0FiG50p6pTrZeyVzNKUDCu0sJUkVNenE0ezskE,42933
+kiam_astro/images/Earth.jpg,sha256=kpalQJ5CV7K6Ch5kOAisL-QdcXNxwwgyoQaDFutEdKs,109661
+kiam_astro/images/Earth2.jpg,sha256=W1TMWGxsvysodi701AEfbPQieouTpje4GKDFQJDObCw,238676
+kiam_astro/images/Moon - Plate Caree Projection.jpg,sha256=rJ347Lqza2Ya4dzJGGg0xqi89qbBhcIbllXp78zAczY,151314
+kiam_astro/images/Moon1.jpg,sha256=eWyMqBjGonmhVYqU4weAd-n4Nsw3cywScLQxtCFSjcc,541900
+kiam_astro/images/Moon2.jpg,sha256=fv03jz1mpcmlRK4Y7-AayyC6m-wtEIIpDUddORGhhyE,245713
+kiam_astro-2.0.4.dist-info/LICENSE,sha256=TNt0uBZUfmpbzWvF7I4SRueIBab1NJEUYF7rLqxw-HM,1095
+kiam_astro-2.0.4.dist-info/METADATA,sha256=2FP_G15K-AxTxz9AgW6cJPOpbGc8KatJHjPAFCfhqzM,1241
+kiam_astro-2.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kiam_astro-2.0.4.dist-info/top_level.txt,sha256=vwSXuD9i_opf3T_KJFoirBMWRR-elu3-11Sijy8Ytao,11
+kiam_astro-2.0.4.dist-info/RECORD,,
