@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: lil-nocap
+Version: 0.2.3
+Summary: A package for downloading bulk files from courtlistener
+License: MIT
+Author: sabzo
+Author-email: sabelo@sabelo.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Easy Bulk export, no cap
+This repository provides scripts and notebooks that make it easy to export data in bulk from CourtListener's freely available downloads.
+
+##
+* [x] Create first version of notebook suitable for Data Scientists
+  * [x] Create the appropriate _dtypes_ to optimize panda storage
+  * [x] Select necessary cols _usecols_, for example 'created_by' date field indicating a database _insert_ isn't necessary
+  * [x] Read the _opinions.csv_ (190+gb) chunk at a time from disk while converting into JSON
+* [ ] Create a standalone script that can be piped to other tools
+  * [*] Create PyPi library using [Poetry](https://python-poetry.org/): [package](https://pypi.org/project/lil-nocap)
+  * [ ] Output script using [json lines](https://jsonlines.org/examples/) format
+* [ ] Improve speed by using [DASK DataFrame](https://docs.dask.org/en/stable/dataframe.html)
+
+
