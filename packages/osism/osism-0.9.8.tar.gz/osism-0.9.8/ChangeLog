@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.9.8
+------
+
+* Support sub environments on the workers (#370)
