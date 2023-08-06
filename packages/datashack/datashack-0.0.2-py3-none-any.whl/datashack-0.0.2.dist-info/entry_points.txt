@@ -1,0 +1,2 @@
+[console_scripts]
+datashack = datashack.cli:main
