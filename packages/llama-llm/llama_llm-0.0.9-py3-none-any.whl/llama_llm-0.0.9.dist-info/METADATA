@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: llama-llm
+Version: 0.0.9
+Summary: Build on large language models faster
+Author-email: PowerML <info@powerml.co>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.11,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: python-configuration[yaml]
+Requires-Dist: requests
+Requires-Dist: tokenizers
+Requires-Dist: tqdm
+
+# Llama
+
+Stop prompt tuning. Create your own Generative AI.
+
+## Installation
+
+```
+    pip install llama-llm
+```
+
+## Setup your keys
+
+Go to [powerml.co](https://powerml.co).  Log in to get you API key and purchase credits.
+
+Create `~/.powerml/configure_llama.yaml` and put a key in it.
+
+```
+production:
+    key: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+```
+
+## Define the LLM interface
+
+Define the input and output types.  Don't forget the context.  They help
+the LLM understand the data.
+
+```
+class Tweet(Type):
+    tweet: str = Context("a viral tweet")
+    likes: int = Context("likes the tweet gets")
+    retweets: int = Context("retweets the tweet gets")
+
+
+class User(Type):
+    username: str = Context("a user's handle on twitter")
+```
+
+## Instantiate an LLM engine
+
+```
+from llama import LLM
+
+llm = LLM(name="feedback")
+```
+
+## Use the LLM to generate something new
+
+user = User(username="llamas4sale")
+example_tweet = llm(user, output_type=Tweet)
+
+print("tweet before training", example_tweet)
+
+## Train the LLM on your data
+
+```
+data = [
+    [User(username="i_heart_llamas"), Tweet(tweet="I like llamas", likes=5, retweets=3)],
+    [User(username="llamas4ever"), Tweet(tweet="I like llamas so much", likes=8, retweets=5)]
+    ]
+llm.add_data(data)
+
+example_tweet = llm(user, output_type=Tweet)
+
+print("Tweet after adding data", example_tweet)
+```
+
+## Look at the results, and add your feedback to improve the LLM
+
+```
+llm.improve(on="tweet", to="have more {likes}")
+llm.improve(on="tweet", to="have over 100 {retweets}")
+llm.improve(
+    on="tweet",
+    to="make it shorter",
+    good_examples=[
+        Tweet(
+            tweet="Move over cats and dogs, llamas are the new internet sensation! These furry and friendly creatures have captured our hearts and become the most adorable animals on the planet! From their soft wool to their quirky personalities, llamas are simply irresistible! #llamalove #cuteoverload 🦙💕🌟",
+            likes=13452,
+            retweets=9724,
+        )
+    ],
+    bad_examples=[
+        Tweet(
+            tweet="Good evening everyone, I hope you're all having a lovely day. I was taking a walk in the countryside earlier and happened to come across a group of llamas. Llamas are interesting animals with a long history of domestication by indigenous people in South America. They're known for their wool, which is used to make various textiles, and also for their use as pack animals. Although some people may find llamas cute and quirky, they can also be quite stubborn and difficult to train. Anyway, that was my llama encounter for the day. Hope you found it mildly interesting. #llamas #naturewalk #animalencounter",
+            likes=14,
+            retweets=3,
+        )
+    ],
+)
+llm.improve(on="tweet", to="have no hashtags")
+
+tweet_after_feedback = llm(user, output_type=Tweet)
+
+print("tweet after feedback", tweet_after_feedback)
+```
+
+## Build complex programs
+
