@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: regmodel
+Version: 0.1
+Requires-Dist: awscli
+Requires-Dist: gto
+Requires-Dist: dvc[s3]
+
