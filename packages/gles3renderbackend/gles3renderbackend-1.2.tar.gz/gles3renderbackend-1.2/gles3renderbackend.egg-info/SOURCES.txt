@@ -1,0 +1,7 @@
+pythongles3renderbackend.cpp
+setup.py
+gles3renderbackend.egg-info/PKG-INFO
+gles3renderbackend.egg-info/SOURCES.txt
+gles3renderbackend.egg-info/dependency_links.txt
+gles3renderbackend.egg-info/not-zip-safe
+gles3renderbackend.egg-info/top_level.txt
