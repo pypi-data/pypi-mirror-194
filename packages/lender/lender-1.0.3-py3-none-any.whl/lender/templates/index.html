@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link href="{{static_url('assets/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{static_url('assets/bootstrap/css/bootstrap-icons.css')}}" rel="stylesheet">
+    <script src="{{static_url('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{static_url('assets/bootstrap/js/jquery-3.5.1.min.js')}}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script> -->
+
+    <!-- Medium-editor -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+    <link rel="stylesheet" href="{{static_url('assets/medium-editor/dist/css/medium-editor.css')}}">
+    <link rel="stylesheet" href="{{static_url('assets/medium-editor/dist/css/themes/default.css')}}" id="medium-editor-theme">
+    <script src="{{static_url('assets/medium-editor/dist/js/medium-editor.js')}}"></script>
+    <script src="{{static_url('assets/moment/moment-with-locales.js')}}"></script>
+
+    <!-- MDUI CSS https://www.mdui.org/docs/color -->
+    <link rel="stylesheet" href="{{static_url('assets/mdui-v1.0.1/css/mdui.css')}}" />
+    <script src="{{static_url('assets/mdui-v1.0.1/js/mdui.js')}}"></script>
+
+    <!-- Dropzone https://www.dropzone.dev/ -->
+    <script src="{{static_url('assets/dropzone/dropzone.js')}}"></script>
+    <link rel="stylesheet" href="{{static_url('assets/dropzone/dropzone.css')}}" type="text/css" />
+
+    <!-- medium-editor-insert-plugin https://github.com/linkesch/medium-editor-insert-plugin -->
+    <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+    <!-- <script src="assets/handlebars/handlebars-v4.7.7.js"></script> -->
+    <!-- <script src="assets/jquery-sortable/jquery-sortable.js"></script> -->
+
+    <!-- Unfortunately, jQuery File Upload Plugin has a few more dependencies itself -->
+    <!-- <script src="assets/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script> -->
+    <!-- <script src="assets/blueimp-file-upload/js/jquery.iframe-transport.js"></script> -->
+    <!-- <script src="assets/blueimp-file-upload/js/jquery.fileupload.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="assets/medium-editor-insert-plugin/dist/css/medium-editor-insert-plugin.min.css"> -->
+    <!-- <script src="assets/medium-editor-insert-plugin/dist/js/medium-editor-insert-plugin.min.js"></script> -->
+
+    <!-- our style -->
+    <link href="{{static_url('style.css')}}" rel="stylesheet">
+
+    <title>lender</title>
+</head>
+
+<!-- <body class="mdui-theme-primary-indigo"> -->
+
+<body class="mdui-theme-layout-auto1 mdui-theme-primary-blue-grey">
+    <div class="my-dropzone"></div>
+
+    <script>
+        // Dropzone has been added as a global variable.
+        // const dropzone = new Dropzone("div.my-dropzone", {
+        //     url: "/file/post"
+        // });
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-lg mdui-color-theme mdui-text-color-theme">
+            <div class="container mdui-text-color-theme-50">
+                <a class="mdui-typo-title mdui-text-color-theme-50" href="#">Lender</a>
+                <!-- <div class="mdui-text-color-theme-icon mdui-btn-group">
+                    <button type="button" class="mdui-btn ">
+                      <i class="mdui-icon material-icons mdui-text-color-theme-50">format_align_left</i>
+                    </button>
+                    <button type="button" class="mdui-btn mdui-text-color-red mdui-btn-active">
+                      <i class="mdui-icon material-icons mdui-text-color-theme-50">format_align_center</i>
+                    </button>
+                    <button type="button" class="mdui-btn">
+                      <i class="mdui-icon material-icons mdui-text-color-theme-50">format_align_right</i>
+                    </button>
+                    <button type="button" class="mdui-btn">
+                      <i class="mdui-icon material-icons mdui-text-color-theme-50">format_align_justify</i>
+                    </button>
+                </div> -->
+                <select onchange="changetheme(this.options[this.options.selectedIndex].value)" class="mdui-text-color-theme-50 mdui-select">
+                    <option value="blue-grey">blue-grey</option>
+                    <option value="cyan">cyan</option>
+                    <option value="indigo">indigo</option>
+                    <option value="purple">purple </option>
+                    <option value="5" disabled>State 5</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main class="mdui-color-theme-50">
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-8 col-md-8 mx-auto">
+                    <h1 class="fw-light mdui-text-color-theme-text">Lender Memo</h1>
+                    <p class="lead text-muted mdui-text-color-theme-secondary">记录成长，随时随地👋</p>
+                </div>
+                <!-- <div class="mdui-typo" style="text-align: left;margin: 15px auto;">
+                    <blockquote>
+                      <p>无论走到哪里，都应该记住，过去都是假的，回忆是一条没有尽头的路，一切以往的春天都不复存在，就连那最坚韧而又狂乱的爱情归根结底也不过是一种转瞬即逝的现实。</p>
+                      <footer>马尔克斯 ——《百年孤独》</footer>
+                    </blockquote>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="mdui-textfield mdui-textfield-expandable">
+                        <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
+                          <i class="mdui-icon material-icons">search</i>
+                        </button>
+                        <input class="mdui-textfield-input" type="text" placeholder="Search"/>
+                        <button onclick="search_run(this)" class="mdui-textfield-search mdui-btn mdui-btn-icon">
+                            <i class="mdui-icon material-icons">check</i>
+                        </button>
+                        <button onclick="search_close(this)" class="mdui-textfield-close mdui-btn mdui-btn-icon">
+                          <i class="mdui-icon material-icons">close</i>
+                        </button>
+                    </div>
+                    <div id="search-result"></div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="blank-10px"></div>
+            <div class="row">
+                <div class="col-md-9 ms-auto">
+                    <div class="__main-container mdui-color-white">
+                        <div class="mdui-color-theme-900" style="height: 4px;"></div>
+                        <div class="row ld-header-toolbar">
+                            <div class="col-md-4" style="margin: auto;">
+                                <div class="input-group btn-group-sm">
+                                    <button type="button" class="btn btn-outline-danger" onclick="InitWeek(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                                      </svg></button>
+                                    <!-- <button type="button" class="btn btn-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                                      </svg></button> -->
+                                    <button type="button" class="btn btn-outline-warning" onclick="InitWeek(0)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                      </svg></button>
+                                    <button type="button" class="btn btn-outline-success" onclick="InitWeek(1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                      </svg></button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 class="fc-toolbar-title">May 1 – 7, 2022</h2>
+                            </div>
+                            <div class="col-md-4" style="text-align: left;">
+                                <div class="input-group">
+                                    <input id="query" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="button-addon2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ld-harness"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="">
+                        <form action="/file-upload" class="dropzone mdui-text-color-theme">
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                            </div>
+                        </form>
+                        <div class="ld-images">
+
+                        </div>
+                        <!-- <div class="dz-preview dz-file-preview">
+                            <div class="dz-details">
+                                <div class="dz-filename"><span data-dz-name></span></div>
+                                <div class="dz-size" data-dz-size></div>
+                                <img data-dz-thumbnail />
+                            </div>
+                            <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+                            <div class="dz-success-mark"><span>✔</span></div>
+                            <div class="dz-error-mark"><span>✘</span></div>
+                            <div class="dz-error-message"><span data-dz-errormessage></span></div>
+                        </div> -->
+                    </div>
+                    <!-- <figure class="figure">
+                        <img src="./img/格蕾修.png" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-end mdui-text-color-theme-secondary">逐火十三英桀第十一位，背负「繁星」之铭。</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="./img/科斯魔.png" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-end mdui-text-color-theme-secondary">逐火十三英桀第九位，背负「旭光」之铭。</figcaption>
+                    </figure> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@2.7.0/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/image@2.8.1/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/link@2.5.0/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/paragraph@2.9.0/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@1.8.0/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/code@2.8.0/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@2.5.0/dist/bundle.min.js"></script>
+    <script src="{{static_url('notifications.js')}}"></script>
+    <script src="{{static_url('commonexp.js')}}"></script>
+    <script src="{{static_url('app.js')}}"></script>
+</body>
+
+</html>
