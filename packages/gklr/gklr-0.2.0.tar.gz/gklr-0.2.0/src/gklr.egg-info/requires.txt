@@ -1,0 +1,10 @@
+importlib-metadata
+numpy>=1.15.0
+scipy
+pandas>=0.16.2
+pympler
+
+[testing]
+setuptools
+pytest
+pytest-cov

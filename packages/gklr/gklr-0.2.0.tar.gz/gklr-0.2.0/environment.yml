@@ -1,0 +1,40 @@
+name: gklr
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python>=3.7
+  # BASICS
+  - numpy>=1.15.0
+  - scipy
+  - pandas
+  - tqdm
+  - ipython
+  # VISUALIZATION
+  - matplotlib
+  # ML, STATS & DEEP LEARNING
+  - scikit-learn
+  # OTHER TOOLS
+  - pympler
+  - pip
+  - pip:
+      - pyscaffold
+      - sphinx_rtd_theme  # to build docs locally
+      - -e .  # install git checkout of gklr in editable mode
+
+  # DEVELOPMENT ONLY PACKAGES (could also be kept in a separate environment file)
+  - jupyterlab
+  - pylint
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - pytest-virtualenv
+  - pytest-fixture-config
+  - pytest-shutil
+  - twine
+  - pre_commit
+  - tox
+  - nbdime
+  - nbstripout
+  - sphinx
+  - recommonmark
