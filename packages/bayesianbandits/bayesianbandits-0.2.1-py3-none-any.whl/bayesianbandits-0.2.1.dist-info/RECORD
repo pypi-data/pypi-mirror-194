@@ -1,0 +1,10 @@
+bayesianbandits/__init__.py,sha256=RbffrA_H4phjF7TP56QmhxrkdJRhDY9cWOzBTVXW7ss,2432
+bayesianbandits/_arm.py,sha256=0Amxk0Uczkr8D0xxxNDjGt3iICSR-4PN8T7NndRDcCg,3949
+bayesianbandits/_basebandit.py,sha256=61-ciKHakrvD-a2i5y9jJo_VqyGSQCN_-JZch42j3yE,15424
+bayesianbandits/_estimators.py,sha256=7MP2DKrukW1Zkd6WUeBloHOqPHDdagmbg9OrUCy9CEA,27842
+bayesianbandits/_policy_decorators.py,sha256=yjB1V4Db0OzB8v5NRp8hWvY-BHbDjiwC3QY9s2_wDS0,4294
+bayesianbandits/_typing.py,sha256=yjhivZXZHXAhuSKhCXUeb2DXuuyeSPkf6_kmkkqpnYI,2410
+bayesianbandits-0.2.1.dist-info/METADATA,sha256=SZRwcaKP8iC0JryL0xp5Bp8JpDqV5IQqX0lfhi3G_4A,1738
+bayesianbandits-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bayesianbandits-0.2.1.dist-info/LICENSE,sha256=XRiQ3AEEg67W4_O7H1kxzGDkZu-FG-N3qpjXRd_avPA,1074
+bayesianbandits-0.2.1.dist-info/RECORD,,
