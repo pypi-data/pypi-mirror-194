@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fastadmin
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/vsdudakov/fastadmin
+License: MIT
+Keywords: fastapi,admin
+Author: Seva D
+Author-email: vsdudakov@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Environment :: Console
+Classifier: Framework :: FastAPI
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Widget Sets
+Requires-Dist: fastapi (>=0.92.0,<0.93.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: pyjwt (>=2.6.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Project-URL: Repository, https://github.com/vsdudakov/fastadmin
+Description-Content-Type: text/markdown
+
+
