@@ -1,0 +1,3 @@
+
+[:sys_platform == "linux"]
+jeepney>=0.7.1
