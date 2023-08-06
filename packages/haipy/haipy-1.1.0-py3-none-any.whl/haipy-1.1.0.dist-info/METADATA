@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: haipy
+Version: 1.1.0
+Summary: Hash Identifier for Python (derived from haiti)
+Home-page: https://github.com/gcarmix/haipy
+Download-URL: https://github.com/gcarmix/haipy/archive/master.zip
+Author: gcarmix
+Author-email: gcarmix <carmixdev@gmail.com>
+Maintainer: gcarmix
+Maintainer-email: carmixdev@gmail.com
+License: MIT
+Project-URL: Homepage, https://github.com/gcarmix/haipy
+Project-URL: Bug Tracker, https://github.com/gcarmix/haipy/issues
+Platform: LINUX
+Platform: MAC
+Platform: WINDOWS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: importlib-resources
+
+# Haipy
+![pylint](https://github.com/gcarmix/haipy/actions/workflows/pylint.yml/badge.svg)
+## What is it?
+
+A CLI tool to identify hash types (hash type identifier).
+
+This project is a Python porting of "haiti" https://github.com/noraj/haiti written in Ruby.
+
+## Features
+
+- 500+ hash types detected
+- Modern algorithms supported (SHA3, Keccak, Blake2, etc.)
+- Hashcat and John the Ripper references
+- CLI tool
+- Hackable
+## Usage
+```
+haipy [hash code to guess]
+```
+
+![terminal view](haipycli.png)
+
+## Installation
+
+To install from pypi:
+```
+pip install haipy
+```
+
+To install from the source directory:
+```
+pip install .
+```
+
+## Author
+
+Ported by @gcarmix, derived from haiti by @noraj
+
