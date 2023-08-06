@@ -1,0 +1,16 @@
+README.md
+setup.py
+dota2gsipy/__init__.py
+dota2gsipy/gamestate.py
+dota2gsipy/map.py
+dota2gsipy/player.py
+dota2gsipy/provider.py
+dota2gsipy/server.py
+dota2gsipy.egg-info/PKG-INFO
+dota2gsipy.egg-info/SOURCES.txt
+dota2gsipy.egg-info/dependency_links.txt
+dota2gsipy.egg-info/top_level.txt
+dota2gsipy/hero/__init__.py
+dota2gsipy/hero/ability.py
+dota2gsipy/hero/hero.py
+dota2gsipy/hero/item.py
