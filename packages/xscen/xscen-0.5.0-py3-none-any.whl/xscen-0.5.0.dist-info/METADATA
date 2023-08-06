@@ -1,0 +1,267 @@
+Metadata-Version: 2.1
+Name: xscen
+Version: 0.5.0
+Summary: A climate change scenario-building analysis framework, built with xclim/xarray.
+Home-page: https://github.com/Ouranosinc/xscen
+Author: Gabriel Rondeau-Genesse
+Author-email: rondeau-genesse.gabriel@ouranos.ca
+License: UNKNOWN
+Project-URL: About Ouranos, https://www.ouranos.ca/en/
+Project-URL: Changelog, https://xscen.readthedocs.io/en/stable/history.html
+Project-URL: Issue tracker, https://github.com/Ouranosinc/xscen/issues
+Keywords: xscen
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: cartopy
+Requires-Dist: cftime
+Requires-Dist: clisops
+Requires-Dist: dask
+Requires-Dist: flox
+Requires-Dist: fsspec
+Requires-Dist: geopandas
+Requires-Dist: h5netcdf
+Requires-Dist: intake
+Requires-Dist: intake-esm (>=2022.9.18)
+Requires-Dist: matplotlib
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: rechunker
+Requires-Dist: shapely
+Requires-Dist: xarray
+Requires-Dist: xclim (>=0.37)
+Requires-Dist: xesmf (>=0.7)
+Requires-Dist: zarr
+
+============
+xscen |logo|
+============
+
+|build| |docs| |black| |pre-commit|
+
+A climate change scenario-building analysis framework, built with Intake-esm catalogs and xarray-based packages such as xclim and xESMF.
+
+For documentation concerning `xscen`, see: https://xscen.readthedocs.io/en/latest/
+
+Features
+--------
+* Supports workflows with YAML configuration files for better transparency, reproducibility, and long-term backups.
+* Intake_esm-based catalog to find and manage climate data.
+* Climate dataset extraction, subsetting, and temporal aggregation.
+* Calculate missing variables through Intake-esm's DerivedVariableRegistry.
+* Regridding with xESMF.
+* Bias adjustment with xclim.
+
+Acknowledgments
+---------------
+This package was created with Cookiecutter_ and the `Ouranosinc/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyfeldroy/cookiecutter-pypackage
+.. _`Ouranosinc/cookiecutter-pypackage`: https://github.com/Ouranosinc/cookiecutter-pypackage
+
+.. |logo| image:: https://raw.githubusercontent.com/Ouranosinc/xscen/main/docs/_static/_images/xscen-logo-small.png
+        :target: https://github.com/Ouranosinc/xscen
+
+.. |build| image:: https://github.com/Ouranosinc/xscen/actions/workflows/main.yml/badge.svg
+        :target: https://github.com/Ouranosinc/xscen/actions/workflows/main.yml
+        :alt: Build Status
+
+.. |docs| image:: https://readthedocs.org/projects/xscen/badge/?version=latest
+        :target: https://xscen.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+        :target: https://github.com/psf/black
+        :alt: Python Black
+
+.. |pre-commit| image:: https://results.pre-commit.ci/badge/github/Ouranosinc/xscen/main.svg
+        :target: https://results.pre-commit.ci/latest/github/Ouranosinc/xscen/main
+        :alt: pre-commit.ci status
+
+
+=======
+History
+=======
+
+v0.5.0 (2023-02-28)
+-------------------
+Contributors to this version: Gabriel Rondeau-Genesse (`@RondeauG <https://github.com/RondeauG>`_), Juliette Lavoie (`@juliettelavoie <https://github.com/juliettelavoie>`_), Trevor James Smith (`@Zeitsperre <https://github.com/Zeitsperre>`_), Sarah Gammon (`@sg2475962 <https://github.com/sg2475962>`_) and Pascal Bourgault (`@aulemahal <https://github.com/aulemahal>`_).
+
+New features and enhancements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* Possibility of excluding variables read from file from the catalog produced by ``parse_directory``. (`PR/107 <https://github.com/Ouranosinc/xscen/pull/107>`_).
+* New functions ``extract.subset_warming_level`` and ``aggregate.produce_horizon``. (`PR/93 <https://github.com/Ouranosinc/xscen/pull/93>`_).
+* add `round_var` to `xs.clean_up`. (`PR/93 <https://github.com/Ouranosinc/xscen/pull/93>`_).
+* New "timeout_cleanup" option for ``save_to_zarr``, which removes variables that were in the process of being written when receiving a ``TimeoutException``. (`PR/106 <https://github.com/Ouranosinc/xscen/pull/106>`_).
+* New ``scripting.skippable`` context, allowing the use of CTRL-C to skip code sections. (`PR/106 <https://github.com/Ouranosinc/xscen/pull/106>`_).
+* Possibility of fields with underscores in the patterns of ``parse_directory``. (`PR/111 <https://github.com/Ouranosinc/xscen/pull/111>`_).
+* New ``utils.show_versions`` function for printing or writing to file the dependency versions of `xscen`. (`GH/109 <https://github.com/Ouranosinc/xscen/issues/109>`_, `PR/112 <https://github.com/Ouranosinc/xscen/pull/112>`_).
+* Added previously private notebooks to the documentation. (`PR/108 <https://github.com/Ouranosinc/xscen/pull/108>`_).
+* Notebooks are now tested using `pytest` with `nbval`. (`PR/108 <https://github.com/Ouranosinc/xscen/pull/108>`_).
+* New ``restrict_warming_level`` argument for ``extract.search_data_catalogs`` to filter dataset that are not in the warming level csv. (`GH/105 <https://github.com/Ouranosinc/xscen/issues/105>`_, `PR/138 <https://github.com/Ouranosinc/xscen/pull/138>`_).
+* Set configuration value programmatically through ``CONFIG.set``. (`PR/144 <https://github.com/Ouranosinc/xscen/pull/144>`_).
+* New ``to_dataset`` method on ``DataCatalog``. The same as ``to_dask``, but exposing more aggregation options. (`PR/147 <https://github.com/Ouranosinc/xscen/pull/147>`_).
+* New templates folder with one general template. (`GH/151 <https://github.com/Ouranosinc/xscen/issues/151>`_, `PR/158 <https://github.com/Ouranosinc/xscen/pull/158>`_).
+
+Breaking changes
+^^^^^^^^^^^^^^^^
+* Functions that are called internally can no longer parse the configuration. (`PR/133 <https://github.com/Ouranosinc/xscen/pull/133>`_).
+
+Bug fixes
+^^^^^^^^^
+* ``clean_up`` now converts the calendar of variables that use "interpolate" in "missing_by_var" at the same time.
+    - Hence, when it is a conversion from a 360_day calendar, the random dates are the same for all of the these variables. (`GH/102 <https://github.com/Ouranosinc/xscen/issues/102>`_, `PR/104 <https://github.com/Ouranosinc/xscen/pull/104>`_).
+* ``properties_and_measures`` no longer casts month coordinates to string. (`PR/106 <https://github.com/Ouranosinc/xscen/pull/106>`_).
+* `search_data_catalogs` no longer crashes if it finds nothing. (`GH/42 <https://github.com/Ouranosinc/xscen/issues/42>`_, `PR/92 <https://github.com/Ouranosinc/xscen/pull/92>`_).
+* Prevented fixed fields from being duplicated during `_dispatch_historical_to_future` (`GH/81 <https://github.com/Ouranosinc/xscen/issues/81>`_, `PR/92 <https://github.com/Ouranosinc/xscen/pull/92>`_).
+* Added missing `parse_config` to functions in `reduce.py` (`PR/92 <https://github.com/Ouranosinc/xscen/pull/92>`_).
+* Added deepcopy before `skipna` is popped in `spatial_mean` (`PR/92 <https://github.com/Ouranosinc/xscen/pull/92>`_).
+* `subset_warming_level` now validates that the data exists in the dataset provided (`GH/117 <https://github.com/Ouranosinc/xscen/issues/117>`_, `PR/119 <https://github.com/Ouranosinc/xscen/pull/119>`_).
+* Adapt `stack_drop_nan` for the newest version of xarray (2022.12.0). (`GH/122 <https://github.com/Ouranosinc/xscen/issues/122>`_, `PR/126 <https://github.com/Ouranosinc/xscen/pull/126>`_).
+* Fix `stack_drop_nan` not working if intermediate directories don't exist (`GH/128 <https://github.com/Ouranosinc/xscen/issues/128>`_).
+* Fixed a crash when `compute_indicators` produced fixed fields (`PR/139 <https://github.com/Ouranosinc/xscen/pull/139>`_).
+
+Internal changes
+^^^^^^^^^^^^^^^^
+* ``compute_deltas`` skips the unstacking step if there is no time dimension and cast object dimensions to string. (`PR/9 <https://github.com/Ouranosinc/xscen/pull/9>`_)
+* Added the "2sem" frequency to the translations CVs. (`PR/111 <https://github.com/Ouranosinc/xscen/pull/111>`_).
+* Skip files we can't read in ``parse_directory``. (`PR/111 <https://github.com/Ouranosinc/xscen/pull/111>`_).
+* Fixed non-numpy-standard Docstrings. (`PR/108 <https://github.com/Ouranosinc/xscen/pull/108>`_).
+* Added more metadata to package description on PyPI. (`PR/108 <https://github.com/Ouranosinc/xscen/pull/108>`_).
+* Faster ``search_data_catalogs`` and ``extract_dataset`` through a faster ``DataCatalog.unique``, date parsing and a rewrite of the ``ensure_correct_time`` logic. (`PR/127 <https://github.com/Ouranosinc/xscen/pull/127>`_).
+* The ``search_data_catalogs`` function now accepts `str` or `pathlib.Path` variables (in addition to lists of either data type) for performing catalog lookups. (`PR/121 <https://github.com/Ouranosinc/xscen/pull/121>`_).
+* `produce_horizons` now supports fixed fields (pull:`139`).
+* Rewrite of ``unstack_dates`` for better performance with dask arrays. (`PR/144 <https://github.com/Ouranosinc/xscen/pull/144>`_).
+
+v0.4.0 (2022-09-28)
+-------------------
+Contributors to this version: Gabriel Rondeau-Genesse (`@RondeauG <https://github.com/RondeauG>`_), Juliette Lavoie (`@juliettelavoie <https://github.com/juliettelavoie>`_), Trevor James Smith (`@Zeitsperre <https://github.com/Zeitsperre>`_) and Pascal Bourgault (`@aulemahal <https://github.com/aulemahal>`_).
+
+New features and enhancements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* New functions ``diagnostics.properties_and_measures``, ``diagnostics.measures_heatmap`` and ``diagnostics.measures_improvement``. (`GH/5 <https://github.com/Ouranosinc/xscen/issues/5>`_, `PR/54 <https://github.com/Ouranosinc/xscen/pull/54>`_).
+* Add argument `resample_methods` to `xs.extract.resample`. (`GH/57 <https://github.com/Ouranosinc/xscen/issues/57>`_, `PR/57 <https://github.com/Ouranosinc/xscen/pull/57>`_)
+* Added a ReadTheDocs configuration to expose public documentation. (`GH/65 <https://github.com/Ouranosinc/xscen/issues/65>`_, `PR/66 <https://github.com/Ouranosinc/xscen/pull/66>`_).
+* ``xs.utils.stack_drop_nans``/ ``xs.utils.unstack_fill_nan`` will now format the `to_file`/`coords` string to add the domain and the shape. (`GH/59 <https://github.com/Ouranosinc/xscen/issues/59>`_, `PR/67 <https://github.com/Ouranosinc/xscen/pull/67>`_).
+* New unstack_dates function to "extract" seasons or months from a timeseries. (`PR/68 <https://github.com/Ouranosinc/xscen/pull/68>`_).
+* Better spatial_mean for cases using xESMF and a shapefile with multiple polygons. (`PR/68 <https://github.com/Ouranosinc/xscen/pull/68>`_).
+* Yet more changes to parse_directory: (`PR/68 <https://github.com/Ouranosinc/xscen/pull/68>`_).
+    - Better parallelization by merging the finding and name-parsing step in the same dask tree.
+    - Allow cvs for the variable columns.
+    - Fix parsing the variable names from datasets.
+    - Sort the variables in the tuples (for a more consistent output)
+* In extract_dataset, add option ``ensure_correct_time`` to ensure the time coordinate matches the expected freq. Ex: monthly values given on the 15th day are moved to the 1st, as expected when asking for "MS". (:issue: `53`).
+* In regrid_dataset: (`PR/68 <https://github.com/Ouranosinc/xscen/pull/68>`_).
+    * Allow passing skipna to the regridder kwargs.
+    * Do not fail for any grid mapping problem, includin if a grid_mapping attribute mentions a variable that doesn't exist.
+* Default email sent to the local user. (`PR/68 <https://github.com/Ouranosinc/xscen/pull/68>`_).
+* Special accelerated pathway for parsing catalogs with all dates within the datetime64[ns] range. (`PR/75 <https://github.com/Ouranosinc/xscen/pull/75>`_).
+* New functions ``reduce_ensemble`` and ``build_reduction_data`` to support kkz and kmeans clustering. (`GH/4 <https://github.com/Ouranosinc/xscen/issues/4>`_, `PR/63 <https://github.com/Ouranosinc/xscen/pull/63>`_).
+* `ensemble_stats` can now loop through multiple statistics, support functions located in `xclim.ensembles._robustness`, and supports weighted realizations. (`PR/63 <https://github.com/Ouranosinc/xscen/pull/63>`_).
+* New function `ensemble_stats.generate_weights` that estimates weights based on simulation metadata. (`PR/63 <https://github.com/Ouranosinc/xscen/pull/63>`_).
+* New function `catalog.unstack_id` to reverse-engineer IDs. (`PR/63 <https://github.com/Ouranosinc/xscen/pull/63>`_).
+* `generate_id` now accepts Datasets. (`PR/63 <https://github.com/Ouranosinc/xscen/pull/63>`_).
+* Add `rechunk` option to `properties_and_measures` (`PR/76 <https://github.com/Ouranosinc/xscen/pull/76>`_).
+* Add `create` argument to `ProjectCatalog` (`GH/11 <https://github.com/Ouranosinc/xscen/issues/11>`_, `PR/77 <https://github.com/Ouranosinc/xscen/pull/77>`_).
+* Add percentage deltas to `compute_deltas` (`GH/82 <https://github.com/Ouranosinc/xscen/issues/82>`_, `PR/90 <https://github.com/Ouranosinc/xscen/pull/90>`_).
+
+Breaking changes
+^^^^^^^^^^^^^^^^
+* `statistics / stats_kwargs` have been changed/eliminated in `ensemble_stats`, respectively. (`PR/63 <https://github.com/Ouranosinc/xscen/pull/63>`_).
+
+Bug fixes
+^^^^^^^^^
+* Add a missing dependencies to the env (`pyarrow`, for faster string handling in catalogs). (`PR/68 <https://github.com/Ouranosinc/xscen/pull/68>`_).
+* Allow passing ``compute=False`` to `save_to_zarr`. (`PR/68 <https://github.com/Ouranosinc/xscen/pull/68>`_).
+
+Internal changes
+^^^^^^^^^^^^^^^^
+* Small bugfixes in `aggregate.py`. (`PR/55 <https://github.com/Ouranosinc/xscen/pull/55>`_, `PR/56 <https://github.com/Ouranosinc/xscen/pull/56>`_).
+* Default method of `xs.extract.resample` now depends on frequency. (`GH/57 <https://github.com/Ouranosinc/xscen/issues/57>`_, `PR/58 <https://github.com/Ouranosinc/xscen/pull/58>`_).
+* Bugfix for `_restrict_by_resolution` with CMIP6 datasets (`PR/71 <https://github.com/Ouranosinc/xscen/pull/71>`_).
+* More complete check of coverage in ``_subset_file_coverage``. (`GH/70 <https://github.com/Ouranosinc/xscen/issues/70>`_, `PR/72 <https://github.com/Ouranosinc/xscen/pull/72>`_)
+* The code that performs ``common_attrs_only`` in `ensemble_stats` has been moved to `clean_up`. (`PR/63 <https://github.com/Ouranosinc/xscen/pull/63>`_).
+* Removed the default ``to_level`` in `clean_up`. (`PR/63 <https://github.com/Ouranosinc/xscen/pull/63>`_).
+* `xscen` now has an official logo. (`PR/69 <https://github.com/Ouranosinc/xscen/pull/69>`_).
+* Use numpy max and min in `properties_and_measures` (`PR/76 <https://github.com/Ouranosinc/xscen/pull/76>`_).
+* Cast catalog date_start and date_end to "%4Y-%m-%d %H:00" when writing to disk. (`GH/83 <https://github.com/Ouranosinc/xscen/issues/83>`_, `PR/79 <https://github.com/Ouranosinc/xscen/pull/79>`_)
+* Skip test of coverage on the sum if the list of select files is empty. (`PR/79 <https://github.com/Ouranosinc/xscen/pull/79>`_)
+* Added missing CMIP variable names in conversions.yml and added the ability to provide a custom file instead (`GH/86 <https://github.com/Ouranosinc/xscen/issues/86>`_, `PR/88 <https://github.com/Ouranosinc/xscen/pull/88>`_)
+* Changed 'allow_conversion' and 'allow_resample' default to False in search_data_catalogs (`GH/86 <https://github.com/Ouranosinc/xscen/issues/86>`_, `PR/88 <https://github.com/Ouranosinc/xscen/pull/88>`_)
+
+v0.3.0 (2022-08-23)
+-------------------
+Contributors to this version: Gabriel Rondeau-Genesse (`@RondeauG <https://github.com/RondeauG>`_), Juliette Lavoie (`@juliettelavoie <https://github.com/juliettelavoie>`_), Trevor James Smith (`@Zeitsperre <https://github.com/Zeitsperre>`_) and Pascal Bourgault (`@aulemahal <https://github.com/aulemahal>`_).
+
+New features and enhancements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* New function ``clean_up`` added. (`GH/22 <https://github.com/Ouranosinc/xscen/issues/22>`_, `PR/25 <https://github.com/Ouranosinc/xscen/pull/25>`_).
+* `parse_directory`: Fixes to `xr_open_kwargs` and support for wildcards (*) in the directories. (`PR/19 <https://github.com/Ouranosinc/xscen/pull/19>`_).
+* New function ``xscen.ensemble.ensemble_stats`` added. (`GH/3 <https://github.com/Ouranosinc/xscen/issues/3>`_, `PR/28 <https://github.com/Ouranosinc/xscen/pull/28>`_).
+* New functions ``spatial_mean``, ``climatological_mean`` and ``deltas`` added. (`GH/4 <https://github.com/Ouranosinc/xscen/issues/4>`_, `PR/35 <https://github.com/Ouranosinc/xscen/pull/35>`_).
+* Add argument ``intermediate_reg_grids`` to ``xscen.regridding.regrid``. (`GH/34 <https://github.com/Ouranosinc/xscen/issues/34>`_, `PR/39 <https://github.com/Ouranosinc/xscen/pull/39>`_).
+* Add argument ``moving_yearly_window`` to ``xscen.biasadjust.adjust``. (`PR/39 <https://github.com/Ouranosinc/xscen/pull/39>`_).
+* Many adjustments to ``parse_directory``: better wildcards (`GH/24 <https://github.com/Ouranosinc/xscen/issues/24>`_), allow custom columns, fastpaths for ``parse_from_ds``, and more (`PR/30 <https://github.com/Ouranosinc/xscen/pull/30>`_).
+* Documentation now makes better use of autodoc to generate package index. (`PR/41 <https://github.com/Ouranosinc/xscen/pull/41>`_).
+* `periods` argument added to `compute_indicators` to support datasets with jumps in time (`PR/35 <https://github.com/Ouranosinc/xscen/pull/35>`_).
+
+Breaking changes
+^^^^^^^^^^^^^^^^
+* Patterns in ``parse_directory`` start at the end of the paths in ``directories``. (`PR/30 <https://github.com/Ouranosinc/xscen/pull/30>`_).
+* Argument ``extension`` of ``parse_directory`` has been renamed ``globpattern``. (`PR/30 <https://github.com/Ouranosinc/xscen/pull/30>`_).
+* The ``xscen`` API and filestructure have been significantly refactored. (`GH/40 <https://github.com/Ouranosinc/xscen/issues/40>`_, `PR/41 <https://github.com/Ouranosinc/xscen/pull/41>`_). The following functions are available from the top-level:
+    - ``adjust``, ``train``, ``ensemble_stats``, ``clisops_subset``, ``dispatch_historical_to_future``, ``extract_dataset``, ``resample``, ``restrict_by_resolution``, ``restrict_multimembers``, ``search_data_catalogs``, ``save_to_netcdf``, ``save_to_zarr``, ``rechunk``, ``compute_indicators``, ``regrid_dataset``, and ``create_mask``.
+* xscen now requires geopandas and shapely (`PR/35 <https://github.com/Ouranosinc/xscen/pull/35>`_).
+* Following a change in intake-esm xscen now uses "cat:" to prefix the dataset attributes extracted from the catalog. All catalog-generated attributes should now be valid when saving to netCDF. (`GH/13 <https://github.com/Ouranosinc/xscen/issues/13>`_, `PR/51 <https://github.com/Ouranosinc/xscen/pull/51>`_).
+
+Internal changes
+^^^^^^^^^^^^^^^^
+* `parse_directory`: Fixes to `xr_open_kwargs`. (`PR/19 <https://github.com/Ouranosinc/xscen/pull/19>`_).
+* Fix for indicators removing the 'time' dimension. (`PR/23 <https://github.com/Ouranosinc/xscen/pull/23>`_).
+* Security scanning using CodeQL and GitHub Actions is now configured for the repository. (`PR/21 <https://github.com/Ouranosinc/xscen/pull/21>`_).
+* Bumpversion action now configured to automatically augment the version number on each merged pull request. (`PR/21 <https://github.com/Ouranosinc/xscen/pull/21>`_).
+* Add ``align_on = 'year'`` argument in bias adjustment converting of calendars. (`PR/39 <https://github.com/Ouranosinc/xscen/pull/39>`_).
+* GitHub Actions using Ubuntu-22.04 images are now configured for running testing ensemble using `tox-conda`. (`PR/44 <https://github.com/Ouranosinc/xscen/pull/44>`_).
+* `import xscen` smoke test is now run on all pull requests. (`PR/44 <https://github.com/Ouranosinc/xscen/pull/44>`_).
+* Fix for `create_mask` removing attributes (`PR/35 <https://github.com/Ouranosinc/xscen/pull/35>`_).
+
+v0.2.0 (first official release)
+-------------------------------
+Contributors to this version: Gabriel Rondeau-Genesse (`@RondeauG <https://github.com/RondeauG>`_), Pascal Bourgault (`@aulemahal <https://github.com/aulemahal>`_), Trevor James Smith (`@Zeitsperre <https://github.com/Zeitsperre>`_), Juliette Lavoie (`@juliettelavoie <https://github.com/juliettelavoie>`_).
+
+Announcements
+^^^^^^^^^^^^^
+* This is the first official release for xscen!
+
+New features and enhancements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* Supports workflows with YAML configuration files for better transparency, reproducibility, and long-term backups.
+* Intake_esm-based catalog to find and manage climate data.
+* Climate dataset extraction, subsetting, and temporal aggregation.
+* Calculate missing variables through Intake-esm's DerivedVariableRegistry.
+* Regridding with xESMF.
+* Bias adjustment with xclim.
+
+Breaking changes
+^^^^^^^^^^^^^^^^
+* N/A
+
+Internal changes
+^^^^^^^^^^^^^^^^
+* N/A
+
+
