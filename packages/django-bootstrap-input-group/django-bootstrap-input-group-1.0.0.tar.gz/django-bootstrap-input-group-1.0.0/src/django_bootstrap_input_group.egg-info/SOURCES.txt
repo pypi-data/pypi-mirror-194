@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/django_bootstrap_input_group/__init__.py
+src/django_bootstrap_input_group/renderers.py
+src/django_bootstrap_input_group.egg-info/PKG-INFO
+src/django_bootstrap_input_group.egg-info/SOURCES.txt
+src/django_bootstrap_input_group.egg-info/dependency_links.txt
+src/django_bootstrap_input_group.egg-info/top_level.txt
+src/django_bootstrap_input_group/static/django_bootstrap_input_group/css/bootstrap_input_group.css
+src/django_bootstrap_input_group/templatetags/__init__.py
+src/django_bootstrap_input_group/templatetags/django_bootstrap_input_group.py
+tests/test_group_renderer.py
+tests/test_grouped_form.py
+tests/test_grouped_formset.py
