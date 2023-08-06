@@ -1,0 +1,171 @@
+Metadata-Version: 2.1
+Name: pydra
+Version: 0.22
+Summary: Pydra dataflow engine
+Keywords: brainweb,dataflow,neuroimaging,pydra
+Author-email: Nipype developers <neuroimaging@python.org>
+Maintainer-email: Nipype developers <neuroimaging@python.org>
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: attrs >=19.1.0
+Requires-Dist: cloudpickle >=2.0.0
+Requires-Dist: etelemetry >=0.2.2
+Requires-Dist: filelock >=3.0.0
+Requires-Dist: pydra[doc,dev] ; extra == "all"
+Requires-Dist: dask ; extra == "dask"
+Requires-Dist: distributed ; extra == "dask"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: pydra[test] ; extra == "dev"
+Requires-Dist: packaging ; extra == "doc"
+Requires-Dist: sphinx >=2.1.2 ; extra == "doc"
+Requires-Dist: sphinx_rtd_theme ; extra == "doc"
+Requires-Dist: sphinxcontrib-apidoc ~=0.3.0 ; extra == "doc"
+Requires-Dist: sphinxcontrib-versioning ; extra == "doc"
+Requires-Dist: pydra[doc] ; extra == "docs"
+Requires-Dist: pytest >=6.2.5 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-env ; extra == "test"
+Requires-Dist: pytest-xdist <2.0 ; extra == "test"
+Requires-Dist: pytest-rerunfailures ; extra == "test"
+Requires-Dist: pytest-timeout ; extra == "test"
+Requires-Dist: codecov ; extra == "test"
+Requires-Dist: numpy ; extra == "test"
+Requires-Dist: pyld ; extra == "test"
+Requires-Dist: psutil ; extra == "test"
+Requires-Dist: python-dateutil ; extra == "test"
+Requires-Dist: tornado ; extra == "test"
+Requires-Dist: boutiques ; extra == "test"
+Requires-Dist: pympler ; extra == "test"
+Requires-Dist: pydra[test] ; extra == "tests"
+Project-URL: documentation, https://nipype.github.io/pydra/
+Project-URL: homepage, https://nipype.github.io/pydra/
+Project-URL: repository, https://github.com/nipype/pydra.git
+Provides-Extra: all
+Provides-Extra: dask
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: tests
+
+|GHAction| |CircleCI| |codecov|
+
+|Pydralogo|
+
+.. |Pydralogo| image:: https://raw.githubusercontent.com/nipype/pydra/master/docs/logo/pydra_logo.jpg
+   :width: 200px
+   :alt: pydra logo
+
+.. |GHAction| image:: https://github.com/nipype/pydra/workflows/Pydra/badge.svg
+   :alt: GitHub Actions CI
+   :target: https://github.com/nipype/Pydra/actions
+
+.. |CircleCI| image:: https://circleci.com/gh/nipype/pydra.svg?style=svg
+   :alt: CircleCI
+
+.. |codecov| image:: https://codecov.io/gh/nipype/pydra/branch/master/graph/badge.svg
+   :alt: codecov
+
+======================
+Pydra: Dataflow Engine
+======================
+
+A simple dataflow engine with scalable semantics.
+
+Pydra is a rewrite of the Nipype engine with mapping and joining as
+first-class operations. It forms the core of the Nipype 2.0 ecosystem.
+
+The goal of pydra is to provide a lightweight Python dataflow engine for DAG
+construction, manipulation, and distributed execution.
+
+Feature list:
+=============
+1. Python 3.7+ using type annotation and `attrs <https://www.attrs.org/en/stable/>`_
+2. Composable dataflows with simple node semantics. A dataflow can be a node of another dataflow.
+3. `splitter` and `combiner` provides many ways of compressing complex loop semantics
+4. Cached execution with support for a global cache across dataflows and users
+5. Distributed execution, presently via ConcurrentFutures, SLURM, and Dask (this is an experimental implementation with limited testing)
+
+`API Documentation <https://nipype.github.io/pydra/>`_
+
+Learn more about Pydra
+======================
+
+* `SciPy 2020 Proceedings <http://conference.scipy.org/proceedings/scipy2020/pydra.html>`_
+* `PyCon 2020 Poster <https://docs.google.com/presentation/d/10tS2I34rS0G9qz6v29qVd77OUydjP_FdBklrgAGmYSw/edit?usp=sharing>`_
+* `Explore Pydra interactively <https://github.com/nipype/pydra-tutorial>`_ (the tutorial can be also run using Binder service)
+
+|Binder|
+
+.. |Binder| image:: https://mybinder.org/badge_logo.svg
+   :alt: Binder
+
+
+Please note that mybinder times out after an hour.
+
+Installation
+============
+
+::
+
+    pip install pydra
+
+
+Note that installation fails with older versions of pip on Windows. Upgrade pip before installing:
+
+::
+
+   pip install –upgrade pip
+   pip install pydra
+
+
+Developer installation
+======================
+
+Pydra requires Python 3.7+. To install in developer mode:
+
+::
+
+    git clone git@github.com:nipype/pydra.git
+    cd pydra
+    pip install -e ".[dev]"
+
+
+In order to run pydra's test locally:
+
+::
+
+    pytest -vs pydra
+
+
+If you want to test execution with Dask:
+
+::
+
+    git clone git@github.com:nipype/pydra.git
+    cd pydra
+    pip install -e ".[dask]"
+
+
+
+It is also useful to install pre-commit:
+
+::
+
+    pip install pre-commit
+    pre-commit
+
