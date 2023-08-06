@@ -1,0 +1,3 @@
+[console_scripts]
+upsilon=upsilon_workshop_client.__main__:main
+
