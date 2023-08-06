@@ -1,0 +1,8 @@
+pathlib
+typing
+PyGithub
+python-dateutil
+
+[test]
+pytest
+pytest-cov
