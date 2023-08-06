@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pipmore/__init__.py
+pipmore/cli.py
+pipmore/package.py
+pipmore/pyversion.py
+pipmore.egg-info/PKG-INFO
+pipmore.egg-info/SOURCES.txt
+pipmore.egg-info/dependency_links.txt
+pipmore.egg-info/entry_points.txt
+pipmore.egg-info/requires.txt
+pipmore.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_pyversion.py

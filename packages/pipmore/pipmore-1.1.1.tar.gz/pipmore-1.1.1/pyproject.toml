@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipmore"
+version = "1.1.1"
+description = "Find the latest package version supported by a specific python version"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["version", "package", "pypi"]
+authors = [
+  {email = "andrea.grillo96@live.com"},
+  {name = "Andrea Grillo"}
+]
+maintainers = [
+  {name = "Andrea Grillo", email = "andrea.grillo96@live.com"}
+]
+classifiers = [
+  "Programming Language :: Python"
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/andregri/pipmore"
+"Issue Tracker" = "https://github.com/andregri/pipmore/issues"
