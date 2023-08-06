@@ -1,0 +1,111 @@
+USB-Imager
+==========
+
+`USB-Imager`_ is a GUI tool to write bootable disk images to USB keys.
+
+:License:
+    `GPLv3+`_
+:Copyright:
+    © 2021-2022 by Secu-Design®
+
+
+.. image:: Screenshot.webp
+    :target: https://gitlab.com/secu-design/usb-imager/-/blob/2.2.0/Screenshot.webp
+    :width: 300pt
+
+
+1. Features
+-----------
+
+* Very fast writing by using linux system call ``sendfile()`` and large write buffers
+* Writing an image to multiple USB sticks at once
+* Optional validation after writing
+* Adjustable write buffer between 4 KiB and 8 MiB
+* Automatic device detection
+* Detection and elimination of the following states of a device before writing:
+
+  - Mounted
+
+* Writing support for hybrid ISOs by checking the MBR signature
+* Shows stats about writing time and overall speed
+
+Planned:
+
+* Deactivation of LVM2 volumes before writing
+* Multilanguage support
+* Redesign with own dark/light theme
+* Distribution package support (DEB, RPM, Arch-Linux PKG)
+
+
+2. Installation
+---------------
+
+* **Debian based linux:**
+
+  You can download a `debian package`_ until ``USB-Imager`` is released in official debian repositories.
+
+..
+
+* **pip / pipenv:**
+
+  If the distribution's own package manager is not supported yet, the ``USB-Imager`` can alternatively be installed via the Python package manager ``pip``.
+
+  .. code-block:: bash
+
+    $ pip install usb-imager
+    $ pip uninstall usb-imager
+
+  or `pipenv`_:
+
+  .. code-block:: bash
+
+    $ pipenv install usb-imager
+    $ pipenv run usb-imager
+    $ pipenv uninstall usb-imager
+
+
+3. Usage
+--------
+
+Start USB-Imager via the desktop icon or just type ``usb-imager`` in your terminal window.
+
+
+4. Troubleshooting:
+-------------------
+
+On some Linux distributions ``USB-Imager`` cannot be started from the command line or from a desktop icon after installation via ``pip``.
+
+* Suggested solution for command line:
+
+  ~/.local/bin may not be included in the executable search path due to a `bug`_, you have to manually add the directory to the PATH environment variable by adding it to ~/.profile in this case.
+
+  .. code-block:: bash
+
+    $ PATH=~/.local/bin:$PATH
+
+
+5. Support
+----------
+
+If you want to report a bug or request a feature, you can do so `here`_.
+You can also write an email to `Secu-Design®`_.
+
+
+6. Acknowledgements
+-------------------
+
+Thanks to:
+
+* My loved ones for their almost infinite patience.
+
+
+
+.. _USB-Imager: https://pypi.org/project/usb-imager
+.. _GPLv3+: https://www.gnu.org/licenses/gpl-3.0-standalone.html
+.. _Secu-Design®: mailto:mailto.devel@secu-design.com
+
+.. _pipenv: https://pypi.org/project/pipenv/
+.. _debian package: https://gitlab.com/secu-design/usb-imager/-/tree/master/release_packages/debian
+.. _here: https://gitlab.com/secu-design/usb-imager/issues
+
+.. _bug: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=820856

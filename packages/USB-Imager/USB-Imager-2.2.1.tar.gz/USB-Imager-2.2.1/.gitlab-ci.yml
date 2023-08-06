@@ -1,0 +1,26 @@
+image: python:3.9
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python --version  # For debugging
+  - echo ".cache/" >> .gitignore
+  - echo ".gitignore" >> .gitignore
+  - pip install --upgrade pip setuptools wheel flit virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+
+stages:
+  - build
+
+build-flit:
+  stage:
+    build
+  script:
+    - flit build
