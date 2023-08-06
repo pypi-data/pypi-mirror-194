@@ -1,0 +1,10 @@
+tap_exact/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_exact/client.py,sha256=nxizbcpRLjqvne8yrKqSsNSvOIsZg34QX_2vJzeSvcw,842
+tap_exact/streams.py,sha256=Rpg9yf4QqD9H7Wo_9p6usMrH2Bz9eGelKszE6Ig8HDo,3156
+tap_exact/tap.py,sha256=xRS2Jn9Dm37hxr_lALCa_dfmXsXmmqfUwkfsZvi61ac,1233
+tap_exact/tests/__init__.py,sha256=EBvJ1Nh7_YfO2qaoDlZ8yA-ZWWxIYu2j4eCCmLsnXqc,32
+tap_exact/tests/test_core.py,sha256=fYH-y4Uf0AiWpdqEHig-h-pBhzJUHthfn1JSJFamuN8,657
+tap_exact-0.0.8.dist-info/entry_points.txt,sha256=0keMCdCm02Rd4JZoU-ROGZDpMn5HgnUvfIWSb8OUexo,62
+tap_exact-0.0.8.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+tap_exact-0.0.8.dist-info/METADATA,sha256=dokt-JkUd2G0RD0ZFULH6xbLoU6Okd0FnC2Bubo-khc,695
+tap_exact-0.0.8.dist-info/RECORD,,
