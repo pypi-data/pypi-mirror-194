@@ -1,0 +1,9 @@
+llama/__init__.py,sha256=GxPSoaPSRD9LPZv0xv4-CMNKCg4DzHK6T77ha-pG-ZI,271
+llama/generation.py,sha256=0Ka_Je3zdXyKRn4p6ybuZ-sRr94dvqK5EMWIA8qSkpk,2818
+llama/model.py,sha256=Qul1dkGGsfPxGWKfrNb4xJTjFP8kDavige-eiBNzB0c,8291
+llama/tokenizer.py,sha256=f8Jem9PaszBknClvDuyILTPyAyBcdSgYxJudrd2EqV8,1345
+pyllama-0.0.1.dev2.dist-info/LICENSE,sha256=hGDSSng8ArXjH6Oz2u5DyV8sSaStQrrZKNzgH7Bri0g,35149
+pyllama-0.0.1.dev2.dist-info/METADATA,sha256=XvadNEds3CYLkZ2GnNOs3rwan0LlF_kyiRQaiHQFS4s,2106
+pyllama-0.0.1.dev2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyllama-0.0.1.dev2.dist-info/top_level.txt,sha256=vXIfhTMeFFl71QrVVrWCJGS0tzlBB5vynlR-iGsCqZ4,6
+pyllama-0.0.1.dev2.dist-info/RECORD,,
