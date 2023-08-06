@@ -1,0 +1,12 @@
+dropboxignore/.dropboxignore,sha256=_rfadDSUA_2G_ba5JF3RfD-qoIiZ0ZfVjeGwrbOdVBI,140
+dropboxignore/__init__.py,sha256=DSacij59nh_TOfCuAWk7-TO2N9Itj84p8UlAu3cg6MY,83
+dropboxignore/__main__.py,sha256=de6k5LUbhjQp7WUaHbnYMjVEvhGLn-hbxbUofkwlw6w,104
+dropboxignore/cli.py,sha256=dgV1BLdehka5P8EQv414LEbGe7P5rEC5C9EE1-zM3VU,1761
+dropboxignore/paths_to_ignore.py,sha256=M-LwyzzU6ryPKYhdCAWl3lIM8SkuvyDWiKX0iqwa8gI,879
+dropboxignore/shell.py,sha256=4Zkmy7_B4bDQtF9kHNtr0MS_6rRcRZePt6tqza_gq74,2723
+dot_dropbox_ignore-0.1.0.dist-info/LICENSE,sha256=ODktPfkMxjQXXDIvNZSf1gLECSZI_YYy7srq2Z3tJ4w,1088
+dot_dropbox_ignore-0.1.0.dist-info/METADATA,sha256=FDWsKW-z4sQ3x5cx_-prixSS5L2Avi_qYRKM_TKkpQU,2679
+dot_dropbox_ignore-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dot_dropbox_ignore-0.1.0.dist-info/entry_points.txt,sha256=p6xlYESaenK2XpmwTBagayqNzaGpktLPhosYIduw9VI,51
+dot_dropbox_ignore-0.1.0.dist-info/top_level.txt,sha256=4ZaPEscK-bHzrPkZV62Og6xHUJ-saAkgUXSuNz4-rlQ,14
+dot_dropbox_ignore-0.1.0.dist-info/RECORD,,
