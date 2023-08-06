@@ -1,0 +1,7 @@
+django_mailersend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mailersend/backend.py,sha256=LEqKBkRM3bpEnjWaNs0cQJym4gFWFI-9D_JmiqYi_tM,3419
+django_mailersend/message.py,sha256=0KtMBlzIA82uTSnk5DWm_2E6G9g1Gr3Hl_t9Z1b18sY,111
+django_mailersend-0.0.1.dist-info/METADATA,sha256=nu7C8GPYQpNjlDaP7fa--UBdlN6jf77rg5MPdm8x5ps,716
+django_mailersend-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+django_mailersend-0.0.1.dist-info/licenses/LICENSE.md,sha256=4QPK8gKMZWFu_yoaY4HsXTZnp5ccY4qoqz66hC79Psc,1071
+django_mailersend-0.0.1.dist-info/RECORD,,
