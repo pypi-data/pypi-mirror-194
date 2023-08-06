@@ -1,0 +1,14 @@
+data_collect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_collect/client.py,sha256=GZzfCpvzGrZ9kk9Aq3M0WZaz2-DxNYGfgDJ4GBf6J9k,13725
+data_collect/constants.py,sha256=-2T_FyL26jB6QXCjLcdegoHErFN3oMNYNcJ_w89-Es8,807
+data_collect/logger.py,sha256=tIOLpLDKMQjfoUAH60drv1fvR868DQ0Aa3DHTmoxL2o,1778
+data_collect/setup.py,sha256=JpPJHcwf4DaWmD0rU4Ek-jcwGLgvfi64x4TdIuntaXs,181
+data_collect/utils.py,sha256=alTMFb7ikQhQIhlnyQS9R61sMLPlpUIy3ojz_-78avY,1200
+data_collect/data_types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_collect/data_types/blob.py,sha256=vTmrC1psMn6iL_Go08llVPEzxx5TFgMMRYvJEeD_1O0,504
+data_collect/data_types/image.py,sha256=bHDP_oT_DjG9o2uYMtqKJBon0UNZt9hrLURFD7npQ5k,622
+data_collect/data_types/text.py,sha256=nFRAIpPqchSLbnL-4LqECujqtpzsQ4PX49W4eARRHdQ,354
+data_collect-0.4.7.dist-info/METADATA,sha256=B1Upg_KXE3fqWFxxRr65SFvnuV_UU0wpy9V8QlrN4mg,772
+data_collect-0.4.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+data_collect-0.4.7.dist-info/top_level.txt,sha256=G8t82SYy63Yvq7C5QNmZhOyCarSqyfuoQAxz44VYyTE,13
+data_collect-0.4.7.dist-info/RECORD,,
