@@ -1,0 +1,1104 @@
+import os
+import glob
+from pathlib import Path
+from snakemake.logging import logger
+from pprint import pprint as pp
+
+from ikiss import IKISS, dico_tool
+
+ikiss_obj = IKISS(dico_tool, workflow=workflow, config=config)
+tools_config = ikiss_obj.tools_config
+cluster_config = ikiss_obj.cluster_config
+# print(ikiss_obj.export_use_yaml)
+# #print for debug:
+# pp(ikiss_obj)
+# #exit()
+# print(tools_config)
+# exit()
+
+###############################################################################
+
+
+# Getting paths on usefully variables
+output_dir = config['DATA']['OUTPUT']
+fastq_dir = config['DATA']['FASTQ']
+reference_file = config['PARAMS']['MAPPING']['REF']
+samples_file = config['PARAMS']['PCADAPT']['SAMPLES']
+basename_reference = Path(reference_file).stem
+
+FASTQ, = glob_wildcards(f"{config['DATA']['FASTQ']}{{fastq}}{ikiss_obj.fastq_files_ext}")
+SAMPLE, = glob_wildcards(f"{config['DATA']['FASTQ']}{{sample}}_R1{ikiss_obj.fastq_files_ext}")
+
+def get_threads(rule, default):
+    """
+    retrieve threads value from cluster_config file avail for SGE and SLURM
+    If local get the --core value
+    if fail return default value define on each rules
+
+    Examples:
+        rule rule_graph:
+            threads: get_threads('rule_graph', 1)
+    """
+    # if cluster mode
+    if cluster_config:
+        if rule in cluster_config:
+            if 'threads' in cluster_config[rule]:
+                return int(cluster_config[rule]['threads'])
+            elif 'cpus-per-task' in cluster_config[rule]:
+                return int(cluster_config[rule]['cpus-per-task'])
+        elif '__default__' in cluster_config:
+            if 'cpus-per-task' in cluster_config['__default__']:
+                return int(cluster_config['__default__']['cpus-per-task'])
+            elif 'threads' in cluster_config['__default__']:
+                return int(cluster_config['__default__']['threads'])
+        # if local
+    elif workflow.global_resources["_cores"]:
+        if default == 1:            # for rule not able threading
+            return default
+        else:
+            return workflow.global_resources["_cores"]
+    # if cluster not rule and not default or local not _cores return value from call
+    return default
+
+
+def output_final(wildcards):
+    dico_final = {
+        "kmer_module": f"{output_dir}3.TABLE2BED/"
+    }
+    if config['WORKFLOW']['PCADAPT']:
+        dico_final.update({
+            "pca_kmers": f"{output_dir}7.MERGED_PCADAPT/merged_pcadapt_pvalues.csv",
+        })
+        if config['WORKFLOW']['MAPPING']:
+            dico_final.update({
+                "pca_outliers_and_mapping" : f"{output_dir}11.OUTLIERS_PCADAPT_POSITION/outliers_with_position.csv",
+            })
+        if config['WORKFLOW']['ASSEMBLY']:
+            dico_final.update({
+                "pcadapt_outliers_assembly": f"{output_dir}12.ASSEMBLY_OUTLIER_PCADAPT/outliers_pcadapt_mergetags.fasta",
+            })
+    if config['WORKFLOW']['LFMM']:
+        dico_final.update({
+            "lfmm_kmers": f"{output_dir}7.MERGED_LFMM/merged_lfmm_pvalues.csv",
+         })
+        if config['WORKFLOW']['MAPPING']:
+            dico_final.update({
+                "lfmm_outliers_and_mapping" : f"{output_dir}11.OUTLIERS_LFMM_POSITION/outliers_with_position.csv",
+            })
+        if config['WORKFLOW']['ASSEMBLY']:
+            dico_final.update({
+                "lfmm_outliers_assembly": f"{output_dir}12.ASSEMBLY_OUTLIER_LFMM/outliers_lfmm_mergetags.fasta",
+            })
+        #dico_final.update({ "ipynb_report" : f"{output_dir}REPORT/iKISS_report.html"})
+    return dico_final
+
+
+rule final:
+    input:
+        f"{output_dir}REPORT/iKISS_report.html"
+
+###################### rules
+rule kmers_gwas_per_sample:
+    """
+    run kmers_gwas_per_sample
+    """
+    threads: get_threads('kmers_gwas_per_sample', 1)
+    input:
+        forw = f"{fastq_dir}{{sample}}_R1{ikiss_obj.fastq_files_ext}"
+    params:
+        rev = f"{fastq_dir}{{sample}}_R2{ikiss_obj.fastq_files_ext}",
+        name = f"{{sample}}",
+        kmer_size = config['PARAMS']['KMERS_MODULE']['KMER_SIZE'],
+        dir = f"{output_dir}1.KMERS_MODULE/{{sample}}"
+    output:
+        kmers_file = f"{output_dir}1.KMERS_MODULE/{{sample}}/{{sample}}_kmers_with_strand"
+    log:
+        output = f"{output_dir}LOGS/1.KMERS_MODULE/{{sample}}/{{sample}}_KMERS_MODULE.o",
+        error = f"{output_dir}LOGS/1.KMERS_MODULE/{{sample}}/{{sample}}_KMERS_MODULE.e"
+    benchmark:
+        f"{output_dir}BENCHMARK/{{sample}}_KMERS_MODULE.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            forward : {input.forw}
+        params:
+            reverse : {params.rev}
+        output:
+            kmers_file: {output.kmers_file}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["KMERS_GWAS"]
+    shell:
+        """
+        cd {params.dir}
+        # creating txt files path
+        realpath {input.forw} {params.rev} > {params.name}_files.txt
+        # calculate canonical and not canonical by each sample
+        kmc_v3 -t{threads} -k{params.kmer_size} -ci2 @{params.name}_files.txt {params.name}_kmc3_canon ./ 1> {log.error} 2> {log.output}
+        kmc_v3 -t{threads} -k{params.kmer_size} -ci0 -b @{params.name}_files.txt {params.name}_kmc3_all ./ 1>> {log.error} 2>> {log.output}
+        #combine 2 runs
+        kmers_add_strand_information -c {params.name}_kmc3_canon -n {params.name}_kmc3_all -k {params.kmer_size} -o {params.name}_kmers_with_strand 1>> {log.error} 2>> {log.output}
+        """
+
+
+rule kmers_to_use:
+    """
+    run kmers_to_use
+    """
+    threads: get_threads('kmers_to_use', 1)
+    input:
+        samples_list = expand({rules.kmers_gwas_per_sample.output.kmers_file}, sample=SAMPLE)
+    params:
+        dir = f"{output_dir}2.KMERS_TABLE/",
+        kmer_size = config['PARAMS']['KMERS_MODULE']['KMER_SIZE'],
+        mac = config['PARAMS']['KMERS_MODULE']['MAC'],
+        p = config['PARAMS']['KMERS_MODULE']['P'],
+        kmers_list_path = f"{output_dir}2.KMERS_TABLE/kmers_list_paths.txt"
+    output:
+        #pheno = f"{output_dir}2.KMERS_TABLE/phenotype.pheno",
+        kmers_to_use = f"{output_dir}2.KMERS_TABLE/kmers_to_use"
+    log:
+        output = f"{output_dir}LOGS/2.KMERS_TABLE/KMERS_TO_USE.o",
+        error = f"{output_dir}LOGS/2.KMERS_TABLE/KMERS_TO_USE.e"
+    benchmark:
+        f"{output_dir}BENCHMARK/KMERS_TO_USE.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            samples_list : {input.samples_list}
+        output:
+            kmers_to_use: {output.kmers_to_use}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        cd {params.dir}
+        # create file with paths to kmers_with_strand before merging
+        realpath {input.samples_list} > samplesTMP.txt;
+        awk -F '/' '{{print $_"\t"$NF"TMP" }}' samplesTMP.txt | sed 's/_kmers_with_strandTMP//g' - > {params.kmers_list_path}
+        rm samplesTMP.txt
+        # calculate kmers to use
+        list_kmers_found_in_multiple_samples -l {params.kmers_list_path} -k {params.kmer_size} --mac {params.mac} -p {params.p} -o {output.kmers_to_use} 1> {log.error} 2> {log.output}
+        """
+
+rule kmers_table:
+    """
+    run create_kmers_table
+    """
+    threads: get_threads('create_kmers_table', 1)
+    input:
+        kmers_to_use = rules.kmers_to_use.output.kmers_to_use
+    params:
+        dir = f"{output_dir}2.KMERS_TABLE/",
+        kmer_size = config['PARAMS']['KMERS_MODULE']['KMER_SIZE'],
+        kmers_list_path = f"{output_dir}2.KMERS_TABLE/kmers_list_paths.txt",
+        kmers_table_name = f"kmers_table"
+    output:
+        kmers_table = f"{output_dir}2.KMERS_TABLE/kmers_table.table"
+    log:
+        output = f"{output_dir}LOGS/2.KMERS_TABLE/KMERS_TABLE.o",
+        error = f"{output_dir}LOGS/2.KMERS_TABLE/KMERS_TABLE.e"
+    benchmark:
+        f"{output_dir}BENCHMARK/KMERS_TABLE.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            kmers_to_use : {input.kmers_to_use}
+        output:
+            kmers_table: {output.kmers_table}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["KMERS_GWAS"],
+    shell:
+        """
+        cd {params.dir}
+        # create the kmer table
+        build_kmers_table -l {params.kmers_list_path} -k {params.kmer_size} -a {input.kmers_to_use} -o {params.kmers_table_name} 1> {log.error} 2> {log.output}
+        """
+
+##### BED WC
+checkpoint kmers_table_to_bed:
+    """
+    run kmers_table_to_bed
+    """
+    threads: get_threads('kmers_table_to_bed', 1)
+    input:
+        kmers_table = rules.kmers_table.output.kmers_table,
+    params:
+        dir = f"{output_dir}3.TABLE2BED/",
+        kmers_table_name = f"{output_dir}2.KMERS_TABLE/kmers_table",
+        #pheno = rules.kmers_to_use.output.pheno,
+        pheno = samples_file,
+        kmer_size = config['PARAMS']['KMERS_MODULE']['KMER_SIZE'],
+        mac = config['PARAMS']['KMERS_MODULE']['MAC'],
+        maf = config['PARAMS']['KMERS_MODULE']['MAF'],
+        nb_kmers_in_bed = config['PARAMS']['KMERS_MODULE']['B'],
+        bed_name = f"output_file",
+    output:
+        bed = directory(f"{output_dir}3.TABLE2BED/"),
+    log:
+        #error detected by rule if {output_dir}/LOGS/3.TABLE2BED/ instead f"{output_dir}/3.TABLE2BED/log/
+        output = f"{output_dir}3.TABLE2BED/log/TABLE2BED.o",
+        error = f"{output_dir}3.TABLE2BED/log/TABLE2BED.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/TABLE2BED.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            kmers_table : {input.kmers_table}
+        output:
+            kmers_table: {output.bed}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["KMERS_GWAS"],
+    shell:
+        """
+        cd {params.dir}
+        # obtain the plink binary files (bed, fam, bim) 
+        kmers_table_to_bed -t {params.kmers_table_name} -k {params.kmer_size} --maf {params.maf} --mac {params.mac} -b {params.nb_kmers_in_bed} -o {params.bed_name} --phentype_file {params.pheno} 1>> {log.error} 2>> {log.output}
+        """
+
+rule extract_kmers_from_bed:
+    """
+    extract_kmers_from_bed
+    """
+    threads: get_threads('extract_kmers_from_bed', 1)
+    input:
+        bed = f"{output_dir}3.TABLE2BED/{{bed}}.bed"
+    params:
+        dir = f"{output_dir}4.EXTRACT_FASTQ/",
+        tmp = f"{output_dir}3.TABLE2BED/{{bed}}.fastq",
+    output:
+        fastq = f"{output_dir}4.EXTRACT_FASTQ/{{bed}}.fastq.gz",
+    log:
+        output = f"{output_dir}LOGS/4.EXTRACT_FASTQ/{{bed}}_EXTRACT_FASTQ.o",
+        error = f"{output_dir}LOGS/4.EXTRACT_FASTQ/{{bed}}_EXTRACT_FASTQ.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/{{bed}}_EXTRACT_FASTQ.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            bed : {input.bed}
+        output:
+            fastq: {output.fastq}
+        log:
+            output: {log.output}
+            error: {log.error} 
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        (cd {params.dir}
+        python3 {ikiss_obj.snakemake_scripts}/kmer-bed2fastq.py -b {input.bed} 
+        gzip {params.tmp} 
+        mv {params.tmp}.gz {output.fastq} ) 1> {log.error} 2> {log.output}
+        """
+
+rule index_ref:
+    """
+    index_ref
+    """
+    threads: get_threads('index_ref', 4)
+    input:
+        ref = reference_file
+    params:
+        ref_dir = f"{output_dir}8.MAPPING/REF",
+        index_options = config['PARAMS']['MAPPING']['INDEX_OPTIONS'],
+        index_type = f"bwa-mem2 " if config['PARAMS']['MAPPING']['MODE'] == "bwa-mem2" else "bwa",
+    output:
+        new_ref = f"{output_dir}8.MAPPING/REF/{basename_reference}.fasta",
+        #index_ref = f"{output_dir}8.MAPPING/REF/{basename_reference}.fasta.pac",
+    log:
+        output = f"{output_dir}LOGS/8.MAPPING/{basename_reference}_INDEXING.o",
+        error = f"{output_dir}LOGS/8.MAPPING/{basename_reference}_INDEXING.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/{basename_reference}_INDEXING.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            ref: {input.ref}
+        output:
+            index : {output.new_ref}
+        log:
+            output: {log.output}
+            error: {log.error} 
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["BWAMEM2"],
+        tools_config["ENVMODULE"]["BWA"],
+    shell:
+        """
+        (mkdir -p {params.ref_dir}
+        cd {params.ref_dir}
+        cp {reference_file} {output.new_ref} 
+        {params.index_type} index {params.index_options} {output.new_ref} ) 1> {log.error} 2> {log.output}
+        """
+
+#bwa index {output.new_ref} ) 1> {log.error} 2> {log.output}
+
+rule mapping_kmers:
+    """
+    mapping_kmers
+    """
+    threads: get_threads('mapping_kmers', 4)
+    input:
+        fastq = f"{output_dir}4.EXTRACT_FASTQ/{{bed}}.fastq.gz",
+        ref = rules.index_ref.output.new_ref,
+    params:
+        dir = f"{output_dir}8.MAPPING/",
+        sai = f"{output_dir}8.MAPPING/{{bed}}_vs_{basename_reference}.sai",
+        bam = f"{output_dir}8.MAPPING/{{bed}}_vs_{basename_reference}.bam",
+        options = config['PARAMS']['MAPPING']['OPTIONS'],
+        mode = config['PARAMS']['MAPPING']['MODE'],
+    output:
+        sortedbam = f"{output_dir}8.MAPPING/{{bed}}_vs_{basename_reference}_sorted.bam",
+    log:
+        output = f"{output_dir}LOGS/8.MAPPING/{{bed}}_vs_{basename_reference}_MAPPING.o",
+        error = f"{output_dir}LOGS/8.MAPPING/{{bed}}_vs_{basename_reference}_MAPPING.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/{{bed}}_vs_{basename_reference}_MAPPING.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            fastq: {input.fastq}
+        output:
+            bam : {output.sortedbam}
+        log:
+            output: {log.output}
+            error: {log.error} 
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["BWAMEM2"],
+        tools_config["ENVMODULE"]["BWA"],
+        tools_config["ENVMODULE"]["SAMTOOLS"]
+    shell:
+        """
+        (cd {params.dir} 
+        if [[ {params.mode} == bwa-mem2 ]]; then 
+             bwa-mem2 mem {params.options} -t {threads} {input.ref} {input.fastq} > {params.bam};
+        fi
+        if [[ {params.mode} == bwa-aln ]]; then
+             bwa aln {params.options} -t {threads} {input.ref} {input.fastq} > {params.sai};
+             bwa samse -f {params.bam} {input.ref} {params.sai} {input.fastq};
+        fi
+        samtools sort {params.bam} -o {output.sortedbam}       
+        samtools index {output.sortedbam}
+        samtools idxstats {output.sortedbam} > {output.sortedbam}.idxstats 
+        samtools stats {output.sortedbam} > {output.sortedbam}.stats) 1> {log.error} 2> {log.output}
+        """
+#bwa-mem2 mem {params.options} -t {threads} {input.ref} {input.fastq} > {params.bam}
+#bwa aln {params.options} -t {threads} {input.ref} {input.fastq} > {params.sai} \n bwa samse -f {params.bam} {input.ref} {params.sai} {input.fastq}
+
+rule filter_bam:
+    """
+    filter_bam
+    """
+    threads: get_threads('filter_bam', 4)
+    input:
+        sortedbam = f"{output_dir}8.MAPPING/{{bed}}_vs_{basename_reference}_sorted.bam",
+    params:
+        dir = f"{output_dir}8.MAPPING/",
+        unmapped = temp(f"{output_dir}8.MAPPING/{{bed}}_vs_{basename_reference}_F4.bam"),
+    output:
+        filterbam = f"{output_dir}8.MAPPING/{{bed}}_vs_{basename_reference}_F4MQ10.bam",
+    log:
+        output = f"{output_dir}LOGS/8.MAPPING/{{bed}}_vs_{basename_reference}_F4MQ10.o",
+        error = f"{output_dir}LOGS/8.MAPPING/{{bed}}_vs_{basename_reference}_F4MQ10.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/{{bed}}_vs_{basename_reference}_F4MQ10.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            sortedbam: {input.sortedbam}
+        output:
+            filterbam : {output.filterbam}
+        log:
+            output: {log.output}
+            error: {log.error} 
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["SAMTOOLS"]
+    shell:
+        """
+        (cd {params.dir}
+        samtools view -bh -F 4 {input.sortedbam} > {params.unmapped}
+        samtools view -bh -q 10 {params.unmapped} > {output.filterbam}) 1> {log.error} 2> {log.output}
+        """
+# TODO : sortir les paramettres de filtrage dans le config
+
+rule kmer_position_from_bam:
+    """
+    kmer_position_from_bam
+    """
+    threads: get_threads('kmer_position_from_bam', 4)
+    input:
+        filterbam = f"{output_dir}8.MAPPING/{{bed}}_vs_{basename_reference}_F4MQ10.bam",
+    params:
+        dir = f"{output_dir}8.MAPPING/",
+        name=f"{{bed}}",
+        tmpposition = temp(f"{output_dir}9.KMERPOSITION/{{bed}}_vs_{basename_reference}_TMPKMERPOSITION.txt"),
+    output:
+        position = f"{output_dir}9.KMERPOSITION/{{bed}}_vs_{basename_reference}_KMERPOSITION.txt",
+    log:
+        output = f"{output_dir}LOGS/9.KMERPOSITION/{{bed}}_vs_{basename_reference}_KMERPOSITION.o",
+        error = f"{output_dir}LOGS/9.KMERPOSITION/{{bed}}_vs_{basename_reference}_KMERPOSITION.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/{{bed}}_vs_{basename_reference}_F4MQ10.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            filterbam: {input.filterbam}
+        output:
+            position : {output.position}
+        log:
+            output: {log.output}
+            error: {log.error} 
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["SAMTOOLS"]
+    shell:
+        """
+        (cd {params.dir}
+        echo {params.name}
+        name={params.name}
+        samtools view {input.filterbam} | cut -f1-4,10 - > {params.tmpposition}
+        awk '{{if ($2=="16") print "{params.name}\t"$1"\t"$5"\t"$3"\t"$4+16; else print "{params.name}\t"$1"\t"$5"\t"$3"\t"$4}}' {params.tmpposition} > {output.position}
+        rm {params.tmpposition}
+        sort -n -k2,2 {output.position} > {params.tmpposition}
+        mv {params.tmpposition} {output.position}
+        ) 1> {log.error} 2> {log.output}   
+        """
+
+###################################### BED WC
+
+def aggregate_bam(wildcards):
+    checkpoint_output = checkpoints.kmers_table_to_bed.get(**wildcards).output[0]
+    bed=glob_wildcards(os.path.join(checkpoint_output,"{bed}.bed")).bed
+    return expand(f"{output_dir}9.KMERPOSITION/{{bed}}_vs_{basename_reference}_KMERPOSITION.txt", bed=bed)
+
+# merge bed wc
+rule merge_kmer_position:
+    """
+    list kmers positions files
+    """
+    threads: get_threads('merge_kmer_position', 1)
+    input:
+        list = aggregate_bam,
+    params:
+        dir = f"{output_dir}9.KMERPOSITION/"
+    output:
+        combined = f"{output_dir}10.MERGE_KMERPOSITION/kmer_position_merged.txt",
+    log:
+        output = f"{output_dir}LOGS/10.MERGE_KMERPOSITION/KMERPOSITION_MERGING.o",
+        error = f"{output_dir}LOGS/10.MERGE_KMERPOSITION/KMERPOSITION_MERGING.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/KMERPOSITION_MERGING.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            list : {input.list}
+        output:
+            combined: {output.combined}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        (cd {params.dir} 
+        echo -e 'bedname\tkmer_number\tsequence\tREF\tposition' > tmp.txt
+        cat *KMERPOSITION.txt >> tmp.txt
+        mv tmp.txt {output.combined} ) 1> {log.error} 2> {log.output}
+        """
+
+###################################################################################"
+###################################################################################"
+
+##### SEGMENT WC
+checkpoint split_bed:
+    """
+    from a bed, random kmers in several list before to PCA
+    """
+    threads: get_threads('split_bed', 1)
+    input:
+        bed = f"{output_dir}3.TABLE2BED/{{bed}}.bed",
+        fastq = f"{output_dir}4.EXTRACT_FASTQ/{{bed}}.fastq.gz",
+        #fastq = rules.extract_kmers_from_bed.output.fastq,
+    params:
+        nb_kmers_in_bed = config['PARAMS']['KMERS_MODULE']['SPLIT_LIST_SIZE'],
+        name = f"{{bed}}",
+        min_lenght =  config['PARAMS']['KMERS_MODULE']['MIN_LIST_SIZE'],
+    output:
+        dir = directory(f"{output_dir}5.RANGES/{{bed}}")
+    log:
+        output = f"{output_dir}LOGS/5.RANGES/{{bed}}_RANGES.o",
+        error = f"{output_dir}LOGS/5.RANGES/{{bed}}_RANGES.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/{{bed}}_RANGES.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            bed : {input.bed}
+            fastq: {input.fastq}
+        params:
+            name : {params.name} 
+        output:
+            dir : {output.dir}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        VAR=`zcat {input.fastq} | wc -l - | cut -d' ' -f1 `;
+        FILE_LENGHT=$((${{VAR}}/4));
+        python3 {ikiss_obj.snakemake_scripts}/split_bed.py --list_length {params.nb_kmers_in_bed} --file_length $FILE_LENGHT --min_length {params.min_lenght} --output-name {params.name} --output-dir {output.dir} 1> {log.error} 2> {log.output}
+        """
+
+rule pcadapt:
+    """
+    pca using a segment
+    """
+    threads: get_threads('pcadapt', 1)
+    input:
+        kmer_list_file = f"{output_dir}5.RANGES/{{bed}}/{{segment}}.txt"
+    params:
+        k = config['PARAMS']['PCADAPT']['K'],
+        correction = config['PARAMS']['PCADAPT']['CORRECTION'],
+        alpha = config['PARAMS']['PCADAPT']['ALPHA'],
+        bed = f"{output_dir}3.TABLE2BED/{{bed}}.bed",
+        bim = f"{output_dir}3.TABLE2BED/{{bed}}.bim",
+        fam = f"{output_dir}3.TABLE2BED/{{bed}}.fam",
+        samples = samples_file,
+        segment_file = f"{{bed}}_{{segment}}"
+    output:
+        outliers = f"{output_dir}6.PCADAPT/{{bed}}_{{segment}}_BH0.05.pcadapt_outliers.csv",
+        pvalues = f"{output_dir}6.PCADAPT/{{bed}}_{{segment}}_BH0.05.pcadapt_pvalues.csv",
+    log:
+        output = f"{output_dir}LOGS/6.PCADAPT/{{bed}}_{{segment}}_PCADAPT.o",
+        error = f"{output_dir}LOGS/6.PCADAPT/{{bed}}_{{segment}}_PCADAPT.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/{{bed}}_{{segment}}_PCADAPT.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            kmer_list_file : {input.kmer_list_file}
+        params:
+            bed : {params.bed}
+            k :  {params.k}
+        output:
+            outliers: {output.outliers}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["R"]
+    shell:
+        """
+        Rscript {ikiss_obj.snakemake_scripts}/pcadapt.R -x {params.k} -e {params.bed} -i {params.bim} -a {params.fam} -o {output.outliers} -k {input.kmer_list_file} -s {params.samples} 1>{log.output} 2>{log.error}
+        sed -i '1d' {output.outliers}
+        sed -i '1d' {output.pvalues}
+        sed -i s'/_0//' {output.outliers}
+        sed -i s'/_0//' {output.pvalues}
+        """
+
+
+# nested wc https://stackoverflow.com/questions/58823881/how-are-nested-checkpoints-resolved-in-snakemake/58859794#58859794
+def aggregate_segments_to_pca(wildcards):
+    outputs_bed = glob.glob(f"{checkpoints.kmers_table_to_bed.get().output}/*.bed")
+    outputs_bed = [output.split('/')[-1].split('.bed')[0] for output in outputs_bed]
+    split_files = []
+    for bed in outputs_bed:
+        outputs_segment = glob.glob(f"{checkpoints.split_bed.get(bed=bed).output}/*.txt")
+        outputs_segment = [output.split('/')[-1].split('.txt')[0] for output in outputs_segment]
+        for segment in outputs_segment:
+            #split_files.append(f'{output_dir}5.RANGES/{bed}/{segment}.txt')
+            split_files.append(f'{output_dir}6.PCADAPT/{bed}_{segment}_BH0.05.pcadapt_pvalues.csv')
+    return split_files
+
+
+rule merge_pcadapt: 
+    """
+    merging under selection kmers detected by pcadapt
+    """
+    threads: get_threads('merge_pcadapt', 1)
+    input:
+        pcas = aggregate_segments_to_pca
+    params:
+        dir = f"{output_dir}6.PCADAPT/"
+    output:
+        pvalues_combined = f"{output_dir}7.MERGED_PCADAPT/merged_pcadapt_pvalues.csv",
+        outliers_combined = f"{output_dir}7.MERGED_PCADAPT/merged_pcadapt_outliers.csv"
+    log:
+        output = f"{output_dir}LOGS/7.MERGED_PCADAPT/MERGED_PCADAPT.o",
+        error = f"{output_dir}LOGS/7.MERGED_PCADAPT/MERGED_PCADAPT.e"
+    benchmark:
+        f"{output_dir}BENCHMARK/MERGED_PCADAPT.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        output:
+            pvalues_combined: {output.pvalues_combined}
+            outliers_combined : {output.outliers_combined}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        (cd {params.dir}
+        echo -e '\tbedname\tsegment_nb\tkmer_number\tsequence\tpvalue.X1\tpvalue.X2' > tmp.csv
+        cat *pvalues.csv >> tmp.csv
+        mv tmp.csv {output.pvalues_combined} 
+        echo -e '\tsequence\tbedname\tsegment_nb\tkmer_number\tpvalue.X1\tpvalue.X2\tkmer_number_index_get.pc\tPC' > tmp.csv
+        cat *outliers.csv >> tmp.csv
+        mv tmp.csv {output.outliers_combined} 
+        ) 1>{log.output} 2>{log.error}
+        """
+
+rule outliers_pcadapt_position:
+    """
+    merging outliers and mapping
+    """
+    threads: get_threads('outliers_pcadapt_position', 1)
+    input:
+        outliers = rules.merge_pcadapt.output.outliers_combined,
+        positions = rules.merge_kmer_position.output.combined
+    params:
+        dir = f"{output_dir}11.OUTLIERS_PCADAPT_POSITION"
+    output:
+        outliers_and_mapping = f"{output_dir}11.OUTLIERS_PCADAPT_POSITION/outliers_with_position.csv"
+    log:
+        output = f"{output_dir}LOGS/11.OUTLIERS_PCADAPT_POSITION/OUTLIERS_POSITION.o",
+        error = f"{output_dir}LOGS/11.OUTLIERS_PCADAPT_POSITION/OUTLIERS_POSITION.e"
+    benchmark:
+        f"{output_dir}BENCHMARK/OUTLIERS_PCADAPT_POSITION.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            outliers : {input.outliers}
+            positions : {input.positions}
+        output:
+            outliers_and_mapping : {output.outliers_and_mapping}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        python3 {ikiss_obj.snakemake_scripts}/outliers_and_position.py --outliers {input.outliers} --kmers_position {input.positions} --output {output.outliers_and_mapping} 1> {log.error} 2> {log.output}
+        """
+
+## =============================== LFMM
+
+rule get_pca_from_phenotype:
+    """
+    doing a pca analysis using phenotype file with variables done by user
+    """
+    threads: get_threads('get_pca_from_phenotype', 6)
+    input:
+        phenotype = config['PARAMS']['LFMM']['PHENOTYPE_FILE'],
+    output:
+        pca_variance = f"{output_dir}6.LFMM/PCA_from_phenotype.csv",
+    params:
+        jupyter = f"{output_dir}6.LFMM/PCA_from_phenotype.ipynb",
+    log:
+        output = f"{output_dir}LOGS/6.LFMM/PCA_FROM_PHENOTYPE_LFMM.o",
+        error = f"{output_dir}LOGS/6.LFMM/PCA_FROM_PHENOTYPE_LFMM.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/PCA_FROM_PHENOTYPE_LFMM.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            phenotype: {input.phenotype}
+        output:
+            pca_variance: {output.pca_variance}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["KMERS_GWAS"]
+    shell:
+        """ 
+        python3 {ikiss_obj.snakemake_scripts}/pca_from_phenotype.py -p {input.phenotype} -o {params.jupyter} 1>{log.output} 2>{log.error}
+        jupyter nbconvert --execute --inplace {params.jupyter} --ExecutePreprocessor.timeout=6000
+        """
+
+
+rule lfmm:
+    """
+    lfmm using a segment
+    """
+    threads: get_threads('lfmm', 4)
+    input:
+        kmer_list_file = f"{output_dir}5.RANGES/{{bed}}/{{segment}}.txt",
+        phenotype = config['PARAMS']['LFMM']['PHENOTYPE_FILE'] if not config['PARAMS']['LFMM']['PHENOTYPE_PCA_ANALYSIS'] else rules.get_pca_from_phenotype.output.pca_variance
+    params:
+        k = config['PARAMS']['LFMM']['K'],
+        correction = config['PARAMS']['LFMM']['CORRECTION'],
+        alpha = config['PARAMS']['LFMM']['ALPHA'],
+        bed = f"{output_dir}3.TABLE2BED/{{bed}}.bed",
+        bim = f"{output_dir}3.TABLE2BED/{{bed}}.bim",
+        fam = f"{output_dir}3.TABLE2BED/{{bed}}.fam",
+        segment_file = f"{{bed}}_{{segment}}",
+
+    output:
+        outliers = f"{output_dir}6.LFMM/{{bed}}_{{segment}}_lfmm_outliers.csv",
+        #pvalues = f"{output_dir}6.LFMM/{{bed}}_{{segment}}_lfmm_pvalues.csv",
+    log:
+        output = f"{output_dir}LOGS/6.LFMM/{{bed}}_{{segment}}_LFMM.o",
+        error = f"{output_dir}LOGS/6.LFMM/{{bed}}_{{segment}}_LFMM.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/{{bed}}_{{segment}}_LFMM.txt"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            kmer_list_file : {input.kmer_list_file}
+            phenotype : {input.phenotype}
+        params:
+            bed : {params.bed}
+            k: {params.k}
+            alpha : {params.alpha}
+            correction : {params.correction}
+        output:
+            outliers: {output.outliers}
+        log:
+            output: {log.output}+
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["ENVMODULE"]["R"]
+    shell:
+        """
+        Rscript {ikiss_obj.snakemake_scripts}/lfmm.R -x {params.k} -e {params.bed} -i {params.bim} -a {params.fam} -o {output.outliers} -k {input.kmer_list_file} -p {input.phenotype} -f {params.alpha} -c {params.correction} 1>{log.output} 2>{log.error}
+        """
+
+
+def aggregate_segments_to_lfmm(wildcards):
+    outputs_bed = glob.glob(f"{checkpoints.kmers_table_to_bed.get().output}/*.bed")
+    outputs_bed = [output.split('/')[-1].split('.bed')[0] for output in outputs_bed]
+    split_files = []
+    for bed in outputs_bed:
+        outputs_segment = glob.glob(f"{checkpoints.split_bed.get(bed=bed).output}/*.txt")
+        outputs_segment = [output.split('/')[-1].split('.txt')[0] for output in outputs_segment]
+        for segment in outputs_segment:
+            #split_files.append(f'{output_dir}5.RANGES/{bed}/{segment}.txt')
+            split_files.append(f'{output_dir}6.LFMM/{bed}_{segment}_lfmm_outliers.csv')
+    return split_files
+
+
+rule merge_lfmm:
+    """
+    merging under selection kmers detected by lfmm
+    """
+    threads: get_threads('merge_lfmm', 1)
+    input:
+        pcas = aggregate_segments_to_lfmm,
+    params:
+        dir = f"{output_dir}6.LFMM/"
+    output:
+        outliers_combined = f"{output_dir}7.MERGED_LFMM/merged_lfmm_pvalues.csv",
+    log:
+        output = f"{output_dir}LOGS/7.MERGED_LFMM/MERGED_LFMM.o",
+        error = f"{output_dir}LOGS/7.MERGED_LFMM/MERGED_LFMM.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/MERGED_LFMM.txt",
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        output:
+            outliers_combined: {output.outliers_combined}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """        
+        (cd {params.dir}
+        echo -e 'sequence\tbedname\tsegment_nb\tpvalue' > tmp.csv
+        cat *_lfmm_outliers.csv >> tmp.csv
+        mv tmp.csv {output.outliers_combined}  
+        ) 1>{log.output} 2>{log.error}
+        """
+
+
+
+rule outliers_lfmm_position:
+    """
+    merging outliers and mapping
+    """
+    threads: get_threads('outliers_lfmm_position', 1)
+    input:
+        outliers = rules.merge_lfmm.output.outliers_combined,
+        positions = rules.merge_kmer_position.output.combined
+    params:
+        dir = f"{output_dir}11.OUTLIERS_LFMM_POSITION"
+    output:
+        outliers_and_mapping = f"{output_dir}11.OUTLIERS_LFMM_POSITION/outliers_with_position.csv",
+    log:
+        output = f"{output_dir}LOGS/11.OUTLIERS_LFMM_POSITION/OUTLIERS_POSITION.o",
+        error = f"{output_dir}LOGS/11.OUTLIERS_LFMM_POSITION/OUTLIERS_POSITION.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/OUTLIERS_LFMM_POSITION.txt",
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            outliers : {input.outliers}
+            positions : {input.positions}
+        output:
+            outliers_and_mapping : {output.outliers_and_mapping}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        python3 {ikiss_obj.snakemake_scripts}/outliers_and_position.py --outliers {input.outliers} --kmers_position {input.positions} --output {output.outliers_and_mapping} 1> {log.error} 2> {log.output}
+        """
+
+
+rule mergetags_lfmm:
+    """
+    assembly significant kmers obtained by lfmm  by mergeTags
+    https://github.com/Transipedia/dekupl-mergeTags
+    """
+    threads: get_threads('mergetags_lfmm', 1)
+    input:
+        merged_pvalues = rules.merge_lfmm.output.outliers_combined,
+    params:
+        dir = f"{output_dir}12.ASSEMBLY_MERGETAGS_LFMM",
+        kmer_size = config['PARAMS']['KMERS_MODULE']['KMER_SIZE'],
+        min_overlap = config['PARAMS']['ASSEMBLY']['OVERLAP_SIZE'],
+        contig_size = config['PARAMS']['ASSEMBLY']['FILTER_CONTIG_SIZE'],
+        tmp4mergetags = temp(f"{output_dir}12.ASSEMBLY_OUTLIER_LFMM/tmp4mergetags.csv"),
+    output:
+        assembled_outliers = f"{output_dir}12.ASSEMBLY_OUTLIER_LFMM/outliers_lfmm_mergetags.fasta",
+        assembled_csv= f"{output_dir}12.ASSEMBLY_OUTLIER_LFMM/outliers_lfmm_mergetags.csv",
+    log:
+        output = f"{output_dir}LOGS/12.ASSEMBLY_OUTLIER_LFMM/OUTLIERS_MERGETAGS.o",
+        error = f"{output_dir}LOGS/12.ASSEMBLY_OUTLIER_LFMM/OUTLIERS_MERGETAGS.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/OUTLIERS_LFMM_MERGETAGS.txt",
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            merged_pvalues : {input.merged_pvalues}
+        output:
+            assembled_outliers : {output.assembled_outliers}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        (awk '{{print $1\"\\t"$4\"\\t"$4\"\\t\"$4\"\\t\"$3}}' {input.merged_pvalues} > {params.tmp4mergetags}
+        mergeTags -k 31 -m 15 -n  {params.tmp4mergetags} > {output.assembled_csv}
+        awk '{{ if (NR>1 && $1>={params.contig_size}) print \">mergeTags_\"$1\"_\"$3\"\\n\"$2}}' {output.assembled_csv} > {output.assembled_outliers}
+        ) 1> {log.error} 2> {log.output}
+        """
+
+rule mergetags_pcadapt:
+    """
+    assembly significant kmers obtained by pcadapt by mergeTags
+    https://github.com/Transipedia/dekupl-mergeTags
+    """
+    threads: get_threads('mergetags_pcadapt', 1)
+    input:
+        merged_pvalues = rules.merge_pcadapt.output.outliers_combined,
+    params:
+        dir = f"{output_dir}12.ASSEMBLY_MERGETAGS_PCADAPT",
+        kmer_size = config['PARAMS']['KMERS_MODULE']['KMER_SIZE'],
+        min_overlap = config['PARAMS']['ASSEMBLY']['OVERLAP_SIZE'],
+        contig_size = config['PARAMS']['ASSEMBLY']['FILTER_CONTIG_SIZE'],
+        tmp4mergetags = temp(f"{output_dir}12.ASSEMBLY_OUTLIER_PCADAPT/tmp4mergetags.csv"),
+    output:
+        assembled_outliers = f"{output_dir}12.ASSEMBLY_OUTLIER_PCADAPT/outliers_pcadapt_mergetags.fasta",
+        assembled_csv= f"{output_dir}12.ASSEMBLY_OUTLIER_PCADAPT/outliers_pcadapt_mergetags.csv",
+    log:
+        output = f"{output_dir}LOGS/12.ASSEMBLY_OUTLIER_PCADAPT/OUTLIERS_PCADAPT_MERGETAGS.o",
+        error = f"{output_dir}LOGS/12.ASSEMBLY_OUTLIER_PCADAPT/OUTLIERS_PCADAPT_MERGETAGS.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/OUTLIERS_PCADAPT_MERGETAGS.txt",
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            merged_pvalues : {input.merged_pvalues}
+        output:
+            assembled_outliers : {output.assembled_outliers}
+        log:
+            output: {log.output}
+            error: {log.error}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        (awk '{{print $2\"\\t"$6\"\\t"$6\"\\t\"$6\"\\t\"$5}}' {input.merged_pvalues} > {params.tmp4mergetags}
+        mergeTags -k 31 -m 15 -n  {params.tmp4mergetags} > {output.assembled_csv}
+        awk '{{ if (NR>1 && $1>={params.contig_size}) print \">mergeTags_\"$1\"_\"$3\"\\n\"$2}}' {output.assembled_csv} > {output.assembled_outliers}
+        ) 1> {log.error} 2> {log.output}
+        """
+
+
+############################ REPORT #######################################################
+# report contains dico_final now
+
+rule report_ikiss:
+    """
+    rule to recovery all files to report
+    """
+    threads: get_threads('report_ikiss',1)
+    input:
+        unpack(output_final),
+    params:
+        list_log_kmer_per_sample = expand(rules.kmers_gwas_per_sample.log.error,sample=SAMPLE),
+        kmer_table_rep = f"{output_dir}3.TABLE2BED/",
+        samples_list = SAMPLE,
+        pvalues_pcadapt = rules.merge_pcadapt.output.pvalues_combined if 'PCADAPT' in ikiss_obj.tools_activated else "",
+        outliers_pcadapt = rules.merge_pcadapt.output.outliers_combined if 'PCADAPT' in ikiss_obj.tools_activated else "",
+        outliers_pcadapt_position = rules.outliers_pcadapt_position.log.error if ('PCADAPT' in ikiss_obj.tools_activated and 'MAPPING' in ikiss_obj.tools_activated)  else "",
+        plots_pcadapt = f"{output_dir}6.PCADAPT",
+        outliers_lfmm = rules.merge_lfmm.output.outliers_combined if 'LFMM' in ikiss_obj.tools_activated else "",
+        outliers_lfmm_position= rules.outliers_lfmm_position.log.error if ('LFMM' in ikiss_obj.tools_activated and 'MAPPING' in ikiss_obj.tools_activated) else "",
+        plots_lfmm = f"{output_dir}6.LFMM",
+        txt_config = f"{output_dir}/config_corrected.yaml",
+        out_dir_report = directory(f"{output_dir}REPORT"),
+        workflow_steps = ikiss_obj.tools_activated,
+        outliers_lfmm_with_position = f"{output_dir}11.OUTLIERS_LFMM_POSITION",
+        ref = reference_file,
+    output:
+        jupyter = f"{output_dir}REPORT/iKISS_report.ipynb"
+    log:
+        output = f"{output_dir}LOGS/REPORT/report.o",
+        error = f"{output_dir}LOGS/REPORT/report.e",
+    benchmark:
+        f"{output_dir}BENCHMARK/Report.txt",
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            list_log_kmer_per_sample : {params.list_log_kmer_per_sample}
+        output:
+            jupyter : {output.jupyter}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    script:
+        f"{ikiss_obj.snakemake_scripts}/report.py"
+
+
+rule html_ikiss:
+    """
+    rule to build jupyter notebook and generate iKISS report 
+    """
+    threads: get_threads('html_ikiss',1)
+    input:
+        notebook = rules.report_ikiss.output.jupyter
+    output:
+        html=f"{output_dir}REPORT/iKISS_report.html"
+    message:
+        """
+        Launching {rule}
+        threads: {threads}
+        input:
+            notebook : {input.notebook}
+        output:
+            html : {output.html}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    shell:
+        """
+        jupyter nbconvert --execute {input.notebook} --no-input --ExecutePreprocessor.timeout=6000 --to=html
+        """
+
+
