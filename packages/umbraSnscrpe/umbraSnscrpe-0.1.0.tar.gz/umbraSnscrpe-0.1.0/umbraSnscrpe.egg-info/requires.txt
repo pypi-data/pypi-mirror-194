@@ -1,0 +1,3 @@
+filelock
+pyaudio
+pyautogui
