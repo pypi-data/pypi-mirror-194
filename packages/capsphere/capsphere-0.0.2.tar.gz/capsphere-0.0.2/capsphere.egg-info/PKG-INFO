@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: capsphere
+Version: 0.0.2
+Summary: Capsphere proprietary libraries
+Author: Andy Lee
+Author-email: andy.mt.lee@gmail.com
+Keywords: python,capsphere,pdf
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Test Python Package
+
