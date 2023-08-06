@@ -1,0 +1,14 @@
+more-itertools
+numpy
+pandas
+rdkit
+install-jdk
+bounded-pool-executor
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+[testing]
+pytest
