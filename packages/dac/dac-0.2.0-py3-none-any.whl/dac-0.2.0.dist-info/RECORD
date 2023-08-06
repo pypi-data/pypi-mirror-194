@@ -1,0 +1,14 @@
+dac/__init__.py,sha256=7k0ZC9BSbhT6VRepkJOsFNNFmMRT8UrjNyIXTjzkLLQ,162
+dac/_cli.py,sha256=p0ZJohEgcHwvhWHUSKbMNjuc0RHTtN2e05dVj-NSOwM,2832
+dac/_file_helper.py,sha256=oCZjQhmdeC8bmtW_c0CA6zT95CcMUHtnDvicw35gir0,374
+dac/_packing.py,sha256=khMw-N3AuMCaPcwPxx99rmnh_kXZ0vqJjbXuSryfTH0,1380
+dac/_pyproject_factory.py,sha256=daqgoPw2-mfx73n2oV5axPtM1N9fjATe1r8br9Yc5RU,2001
+dac/_input/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dac/_input/config.py,sha256=o9cdRlFCIRv2fGjbZ0l9tkxAD6IBJrj0jfG5PF2z-lE,4237
+dac/_input/pyproject.py,sha256=QM5uouoV2vqGHmBYj6cDmhIk3MMxaxlTZcDfwPSQiwk,1155
+dac-0.2.0.dist-info/LICENSE,sha256=6f-Lhpgqn22K6Q7PpPP5Y_55CuUzuC-ajPP2sSTrrzw,1069
+dac-0.2.0.dist-info/METADATA,sha256=EomGNOKFt2dM8jbj9YPKSq33k_InuMXLWjCbmO9rMi8,2378
+dac-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dac-0.2.0.dist-info/entry_points.txt,sha256=zDMAWqkrYFzqvhIamg_UxvCX-CqxK49jic3tUA3JoDI,37
+dac-0.2.0.dist-info/top_level.txt,sha256=yhsefWAzZCSYKwuzZ7PMRpNjjcSJ0yPP_QXhFUf1VMc,4
+dac-0.2.0.dist-info/RECORD,,
