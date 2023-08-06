@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Farama_Notifications.egg-info/PKG-INFO
+Farama_Notifications.egg-info/SOURCES.txt
+Farama_Notifications.egg-info/dependency_links.txt
+Farama_Notifications.egg-info/top_level.txt
+farama_notifications/__init__.py
