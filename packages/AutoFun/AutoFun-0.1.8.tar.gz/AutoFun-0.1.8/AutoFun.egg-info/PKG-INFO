@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AutoFun
+Version: 0.1.8
+Summary: PDF撕裂者单个功能
+Home-page: https://mail.163.com/js6/main.jsp?sid=PAlGWIYldfIQjfQTFYllFVEyKXidwtNk&df=mail163_letter#module=welcome.WelcomeModule%7C%7B%7D
+Author: wangweidong
+Author-email: 17891967090@163.com
+License: Apache
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+这是PDF撕裂者的一个功能
+
