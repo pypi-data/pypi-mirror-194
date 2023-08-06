@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+WordsToPdfs.egg-info/PKG-INFO
+WordsToPdfs.egg-info/SOURCES.txt
+WordsToPdfs.egg-info/dependency_links.txt
+WordsToPdfs.egg-info/top_level.txt
+words_to_pdfs/__init__.py
+words_to_pdfs/msg_words_to_pdfs.py
+words_to_pdfs/Function/__init__.py
+words_to_pdfs/Ui/WordToPdfUi.py
+words_to_pdfs/Ui/__init__.py
