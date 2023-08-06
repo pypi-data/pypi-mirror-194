@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Neo1
+Version: 2.2.0
+Summary: Hoi ther!
+Author: TheTechyKid
+Author-email: thefriendlyhacker44@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: customtkinter (>=5.1.2)
+Requires-Dist: fast-youtube-search (>=0.0.8)
+Requires-Dist: pytube (>=12.1.2)
+
