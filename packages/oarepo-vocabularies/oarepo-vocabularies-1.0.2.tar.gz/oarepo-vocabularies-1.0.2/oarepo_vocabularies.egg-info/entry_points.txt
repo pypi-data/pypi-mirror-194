@@ -1,0 +1,8 @@
+[invenio_base.api_apps]
+oarepo_vocabularies = oarepo_vocabularies.ext:OARepoVocabularies
+
+[invenio_base.apps]
+oarepo_vocabularies = oarepo_vocabularies.ext:OARepoVocabularies
+
+[invenio_jsonschemas.schemas]
+oarepo_vocabularies = oarepo_vocabularies.records.jsonschemas
