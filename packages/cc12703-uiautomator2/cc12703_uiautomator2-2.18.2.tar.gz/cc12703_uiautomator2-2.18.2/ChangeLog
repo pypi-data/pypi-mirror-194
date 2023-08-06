@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+2.18.2
+------
+
+* fix bug of type annotation
+* fix   bug of  pair by wifi
+* add pair\_by\_wifi
+* add disconnect\_adb\_wifi
+* add params to settings
+* add reset by adb wifi support
+* add feature
+* fix gateway init error
+* change reset\_uiautomator raise error from OSError to GatewayError
+* add searching apk from cwd assets directory. (#845)
