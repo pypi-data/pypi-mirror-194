@@ -1,0 +1,12 @@
+absbox/__init__.py,sha256=I_xIqwXvgIreQ5oyxuxsF1RkEu6vDvqCLZ7IDrj-21c,360
+absbox/client.py,sha256=3vUKfBzBqH7e3oA7X0LxogWjb-9OhgpdTP5HJwWBnKs,12355
+absbox/local/base.py,sha256=LXJPgZguk0qfOMq7p5N-npmvE-oUu8_aqnIO7Q4D_us,1810
+absbox/local/china.py,sha256=s6Z1m6rwfhIvjh4WLyEqc0rpjyL8dulMuniM3RBvjYY,14216
+absbox/local/component.py,sha256=e75ACJa6EiKl951gE8v5s2xigb_dbP3zWxk-G17ujLY,43633
+absbox/local/generic.py,sha256=W4bCn8LJVu7yHGzbEleH2UIOAsTm2Vlq9hev1hmfyN8,5886
+absbox/local/util.py,sha256=x8C8eG0ZDgbEXP1BVaHJwXfk08u0IT5sWr0PvDHyAEM,9354
+AbsBox-0.8.9.dist-info/LICENSE,sha256=bs29fxEMupkQNH24x-tjgmOLyY2I38al_4X17xkKXho,11346
+AbsBox-0.8.9.dist-info/METADATA,sha256=DlKNo_mXKogLELlbRbfaqTZM0cn5bzoaDo45-N2ekUU,1782
+AbsBox-0.8.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+AbsBox-0.8.9.dist-info/top_level.txt,sha256=qRm4ez_PCLZNx1jxSfHvNQiar_nhWVrYJm1umvonoL8,7
+AbsBox-0.8.9.dist-info/RECORD,,
