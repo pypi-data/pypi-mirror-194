@@ -1,0 +1,11 @@
+dynamofl/Base.py,sha256=jiMTBtnIRhruyy0bDXjOgEsWIkvyEY8w9GksFu582oE,1334
+dynamofl/Datasource.py,sha256=63TQXz0W8QYp4qXTszGD_nbOljCbol4f3d_P3o8W1F4,1133
+dynamofl/MessageHandler.py,sha256=x5gqDoxze3iKJKuYjYlQhe3sE5sLDrxd0uEgTKOn_0s,11548
+dynamofl/Project.py,sha256=D-xip0ocRKBJ24UALLofb3jL90VP6avD4GnWa8b-8Xg,6108
+dynamofl/State.py,sha256=bR-DMSRVJ3QFYU0U8vUlEEGkm_FIqhK_27LrrYpLdPU,10244
+dynamofl/__init__.py,sha256=qJLEe3btzkRPov_wyNkfHbA53WzgJLaJQFIiPfyJtYU,25
+dynamofl/src.py,sha256=YPLADQgB4n5mvHfffUQ-j2pmuY5RvgJ1b77V8ZFKXYU,1109
+dynamofl-0.0.47.dist-info/METADATA,sha256=H1zwLuRsqVI7BWEsNo56lMxlCDyXVBsSsxZdUp1YFtE,174
+dynamofl-0.0.47.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dynamofl-0.0.47.dist-info/top_level.txt,sha256=lt0ffkYG01BqMj4BuBHKh4shgq0GcDd0gWMOgTtV73s,9
+dynamofl-0.0.47.dist-info/RECORD,,
