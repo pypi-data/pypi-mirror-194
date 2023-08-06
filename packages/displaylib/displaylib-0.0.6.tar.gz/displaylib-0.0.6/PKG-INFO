@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: displaylib
+Version: 0.0.6
+Summary: A collection of frameworks used to display ASCII or Pygame graphics
+Author: FloatingInt
