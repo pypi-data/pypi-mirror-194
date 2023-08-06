@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: starmoth
+Version: 0.2.1
+Summary: A small wrapper library to help test systems using STAR
+Author: Gudjon Magnusson
+Author-email: gmagnusson@fraunhofer.org
+Keywords: Fraunhofer,STAR,testing
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+
+
+# MOdel Test Harness (Moth)
+
+Simple way to interrogate your AI model from a separate testing application
+
+# Quickstart
+
+`moth server <folder path>`
+
+`moth client`
+
+Simplest possible model client
+```
+from moth import Moth
+from moth.message import ImagePromptMsg, PromptResultMsg
+
+moth = Moth("my-ai")
+
+@moth.prompt
+def on_prompt(prompt: ImagePromptMsg):
+    # TODO: Do smart AI here
+    return PromptResultMsg(class_name="cat") # Most pictures are cat pictures 
+
+moth.run()
+```
