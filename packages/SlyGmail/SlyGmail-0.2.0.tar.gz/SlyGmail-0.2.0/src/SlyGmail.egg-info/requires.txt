@@ -1,0 +1,6 @@
+SlyAPI>=0.4.3
+aiofiles
+
+[dev]
+pytest
+pytest-asyncio
