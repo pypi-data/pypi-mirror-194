@@ -1,0 +1,12 @@
+basix/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+basix/files.py,sha256=GcQh-RdIRTu5GVJxfJW2Tp_pcCF1dqbXxdmtBELeZ-4,4327
+basix/functions.py,sha256=_pED8q3xs3AXiTx0-cwdcqxRyrm8ZFrZHWBSWg67sVU,3119
+basix/numbers.py,sha256=v5q3c9viSHQgBKF2GydkwuXcH8CmsEoFvp4n5e7vQOg,389
+basix/parquet.py,sha256=DZtkHb-t8XTzTIbj2rMb8qjBSpxiAL-XDOTDqBT8IIg,876
+basix/viz.py,sha256=vNJL7zXsfPun784-MTh6aQ0e-F6cHrcKiPrAHrw_-dc,1879
+basix/yaml.py,sha256=7ZHf_h32W5zeyzsUvdGjMwFK0zUyydWhwS-FU2J1qUc,223
+basix-0.0.7.dist-info/LICENSE,sha256=sq7QI0_eFpaEn0Bh-osoniRVPeipxcxJ609Dr9yWxhg,1083
+basix-0.0.7.dist-info/METADATA,sha256=N9VXoPRTOPpxLc7iQ0jSsXqOnXN0ld6FPD3-ekBH9C8,1212
+basix-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+basix-0.0.7.dist-info/top_level.txt,sha256=maOwdp7Yzjypo44VJAAt6Hydl7OKJWBDS-KYcD2ZLyw,6
+basix-0.0.7.dist-info/RECORD,,
