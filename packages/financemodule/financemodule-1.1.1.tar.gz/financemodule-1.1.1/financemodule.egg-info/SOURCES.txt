@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+financemodule.egg-info/PKG-INFO
+financemodule.egg-info/SOURCES.txt
+financemodule.egg-info/dependency_links.txt
+financemodule.egg-info/top_level.txt
+migrations/0001_initial.py
+migrations/0002_rename_debit_credit_flag_financeaccounting_type.py
+migrations/__init__.py
