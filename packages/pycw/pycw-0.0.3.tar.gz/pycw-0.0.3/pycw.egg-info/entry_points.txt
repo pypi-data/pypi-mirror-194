@@ -1,0 +1,3 @@
+[console_scripts]
+pycw = pycw.__main__:main
+

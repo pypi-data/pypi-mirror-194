@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pycw/__init__.py
+pycw/__main__.py
+pycw/__version__.py
+pycw/morse.py
+pycw/synth.py
+pycw.egg-info/PKG-INFO
+pycw.egg-info/SOURCES.txt
+pycw.egg-info/dependency_links.txt
+pycw.egg-info/entry_points.txt
+pycw.egg-info/not-zip-safe
+pycw.egg-info/requires.txt
+pycw.egg-info/top_level.txt
