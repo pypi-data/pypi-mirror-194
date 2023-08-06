@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/wgs_est_converter/__init__.py
+src/wgs_est_converter/main.py
+src/wgs_est_converter.egg-info/PKG-INFO
+src/wgs_est_converter.egg-info/SOURCES.txt
+src/wgs_est_converter.egg-info/dependency_links.txt
+src/wgs_est_converter.egg-info/requires.txt
+src/wgs_est_converter.egg-info/top_level.txt
