@@ -1,0 +1,77 @@
+{
+    "url": "stems.csv",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "ID",
+                "required": true,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                "dc:extent": "singlevalued",
+                "datatype": {
+                    "base": "string",
+                    "format": "[a-zA-Z0-9_\\-]+"
+                }
+            },
+            {
+                "name": "Language_ID",
+                "required": true,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#languageReference",
+                "dc:extent": "singlevalued",
+                "dc:description": "A reference to a language (or variety) the stem belongs to",
+                "datatype": "string"
+            },
+            {
+                "name": "Name",
+                "required": true,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                "dc:extent": "singlevalued",
+                "datatype": "string"
+            },
+            {
+                "name": "Lexeme_ID",
+                "required": false,
+                "dc:extent": "singlevalued",
+                "dc:description": "The lexeme this stem belongs to.",
+                "datatype": "string"
+            },
+            {
+                "name": "Parameter_ID",
+                "required": true,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
+                "dc:description": "A reference to the meaning denoted by the stem",
+                "datatype": "string"
+            },
+            {
+                "name": "Morpho_Segments",
+                "required": false,
+                "dc:description": "A representation of the morphologically segmented stem.",
+                "dc:extent": "multivalued",
+                "datatype": "string",
+                "separator": " "
+            },
+            {
+                "name": "Gloss_ID",
+                "required": true,
+                "dc:extent": "multivalued",
+                "separator": ",",
+                "dc:description": "The gloss the morph has in the wordform.",
+                "datatype": "string"
+            },
+            {
+                "name": "Comment",
+                "required": false,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
+                "dc:extent": "singlevalued",
+                "datatype": "string"
+            },
+            {
+                "name": "Source",
+                "required": false,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                "dc:extent": "multivalued",
+                "datatype": "string",
+                "separator": "; "
+            }
+        ]
+    }
+}
