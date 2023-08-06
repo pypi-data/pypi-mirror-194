@@ -1,0 +1,4 @@
+[console_scripts]
+avclass = avclass.labeler:main
+avclass-normalize = avclass.normalize:main
+avclass-update = avclass.update:main
