@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pycw
+Version: 0.0.3
+Summary: Generate Morse Code (CW) audio files in Python.
+Home-page: https://github.com/bigsk05/pycw
+Author: Ian Xia
+Author-email: i@ianxia.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# pycw
+
+![Project Version](https://img.shields.io/pypi/v/pycw) ![Python Version](https://img.shields.io/pypi/pyversions/pycw)
+
+Python Morse Code Generator
+
+Generate Morse Code (CW) audio files in Python.
+
+## Usage
+
+```
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Input text file (defaults to stdin)
+  -t TEXT, --text TEXT  Input text. Overrides --input.
+  -s SPEED, --speed SPEED
+                        Speed, in words per minute (default: 12)
+  -n TONE, --tone TONE  Tone frequency, in Hz (default: 800)
+  -v VOLUME, --volume VOLUME
+                        Volume (default: 1.0)
+  -r SAMPLE_RATE, --sample_rate SAMPLE_RATE
+                        Sample rate (default: 44100)
+  -o OUTPUT, --output OUTPUT
+                        Name of the output file
+```
+
+Or `import pycw` and then use functions in your code, for example:
+
+```
+import pycw
+
+pycw.output_wave("Intro.wav", "CQ CQ CQ DE BG5AWO BG5AWO BG5AWO PSE K", 20)
+```
+
+Then you can get a output file called `Intro.wav` in your working directory.
+
+

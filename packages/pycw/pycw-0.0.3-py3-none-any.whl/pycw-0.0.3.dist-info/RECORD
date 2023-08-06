@@ -1,0 +1,11 @@
+pycw/__init__.py,sha256=sR5DlPiQohzUQ-2n2T1vBOFrkmTTyNLOVLM1S7id7P4,346
+pycw/__main__.py,sha256=A8yhUMZFoe79KmwVe9_nrwuP6dY8EdRI83Giljovku8,1470
+pycw/__version__.py,sha256=CdPi4ThcjTGwt8kw55-kCf5qZxQH0i-eLrdahrOm62k,279
+pycw/morse.py,sha256=dSu7KNe2QVjvBGxZWwWrYi0ScLhSV1I8Ws1_gxB8dGs,4777
+pycw/synth.py,sha256=bGqQoK3f8-jdGhQ3ANVjpn98M0giJIfL6UrhIHLuKag,1736
+pycw-0.0.3.dist-info/LICENSE,sha256=m_Togr3XXo0Q_HiMU9Cnh-8PWc6tH-Hwh4wkCJb8hhA,10353
+pycw-0.0.3.dist-info/METADATA,sha256=Cqb10HKOKSKqSwW7TM9l-7eB5dvpZ2l4-wzTSfUMATY,1819
+pycw-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pycw-0.0.3.dist-info/entry_points.txt,sha256=UmrA-jQ7Kwl8Convjzu13JMoo6JuD8vZ3c8N0c3ZtBU,45
+pycw-0.0.3.dist-info/top_level.txt,sha256=z9Zc_n1iOGQJcg3dmuCUU5t5zGVIav_Zu_kLvDawarE,5
+pycw-0.0.3.dist-info/RECORD,,
