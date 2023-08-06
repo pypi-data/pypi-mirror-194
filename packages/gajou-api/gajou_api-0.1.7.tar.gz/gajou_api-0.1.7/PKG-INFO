@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gajou_api
+Version: 0.1.7
+Summary: Base classes and helpers to make QA autotests for API
+Home-page: https://github.com/ArtyomKomarenko/gajou-api
+Author: Artyom Komarenko
+Author-email: artyom.komarenko@mail.ru
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h2>牙城-API</h2>
+
+<h3>HTTP</h3>
+
+* BaseHTTP - contains all basic HTTP methods with logging. Verifies response status and raises one of errors if status
+  is not 2xx. Allure can be passed for adding attaches to reports.
+* RetrySession - simple implementation of retrying requests for flaky cases.
+* HTTP errors - set of exceptions for typical HTTP error statuses.
+
+<h3>gRPC</h3>
+
+* BaseInterceptor - adds logging and verifies response status. Allure can be passed for adding attaches to reports.
+* BaseStub - simple wrapper which adds BaseInterceptor to channel.
+* GRPCError - base gRPC exception.
