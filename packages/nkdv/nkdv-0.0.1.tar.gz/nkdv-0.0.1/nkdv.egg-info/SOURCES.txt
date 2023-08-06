@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+pyproject.toml
+nkdv.egg-info/PKG-INFO
+nkdv.egg-info/SOURCES.txt
+nkdv.egg-info/dependency_links.txt
+nkdv.egg-info/top_level.txt

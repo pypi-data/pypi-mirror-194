@@ -1,0 +1,21 @@
+[project]
+name = "nkdv"
+version = "0.0.1"
+authors = [
+  { name="paklonip", email="paklonip@um.edu.mo" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.4"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/edisonchan2013928/Network-K-function"
+"Bug Tracker" = "https://github.com/edisonchan2013928/Network-K-function/issues"
+
+[tool.setuptools]
+py-modules = ['nkdv']
