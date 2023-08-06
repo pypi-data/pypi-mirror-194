@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+financemodule.egg-info/PKG-INFO
+financemodule.egg-info/SOURCES.txt
+financemodule.egg-info/dependency_links.txt
+financemodule.egg-info/top_level.txt
+migrations/__init__.py
