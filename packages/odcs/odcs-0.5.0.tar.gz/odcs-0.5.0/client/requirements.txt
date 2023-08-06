@@ -1,0 +1,4 @@
+openidc-client
+pyOpenSSL
+requests
+requests-gssapi
