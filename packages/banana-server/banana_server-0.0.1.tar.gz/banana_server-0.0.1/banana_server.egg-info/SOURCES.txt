@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+banana_server/__init__.py
+banana_server/banana.py
+banana_server.egg-info/PKG-INFO
+banana_server.egg-info/SOURCES.txt
+banana_server.egg-info/dependency_links.txt
+banana_server.egg-info/requires.txt
+banana_server.egg-info/top_level.txt
