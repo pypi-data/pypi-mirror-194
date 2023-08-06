@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xsarslc
+Version: 0.6
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: xarray
+Requires-Dist: numpy
+Requires-Dist: netCDF4
+Requires-Dist: shapely
+Requires-Dist: xrft
+Requires-Dist: xarray-datatree
+Requires-Dist: cartopy
+Requires-Dist: importlib-resources
+Requires-Dist: tqdm
+
