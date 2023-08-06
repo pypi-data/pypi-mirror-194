@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+newmap/__init__.py
+newmap/newmap.py
+newmap.egg-info/PKG-INFO
+newmap.egg-info/SOURCES.txt
+newmap.egg-info/dependency_links.txt
+newmap.egg-info/not-zip-safe
+newmap.egg-info/top_level.txt
