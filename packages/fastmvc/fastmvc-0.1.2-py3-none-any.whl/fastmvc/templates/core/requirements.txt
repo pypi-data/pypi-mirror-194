@@ -1,0 +1,12 @@
+fastapi
+jinja2
+fastmvc
+python-multipart
+python-dotenv
+^% if platform == 'GOOGLE_APP_ENGINE' %^
+google-cloud-firestore
+gunicorn
+uvicorn[standard]
+^% elif platform == 'DETA' %^
+deta
+^% endif %^
