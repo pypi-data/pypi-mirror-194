@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mousejiggler.egg-info/PKG-INFO
+mousejiggler.egg-info/SOURCES.txt
+mousejiggler.egg-info/dependency_links.txt
+mousejiggler.egg-info/requires.txt
+mousejiggler.egg-info/top_level.txt
+src/__init__.py
+src/mousejiggler.py

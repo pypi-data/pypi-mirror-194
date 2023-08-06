@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=58.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "mouse-jiggler"
+version = "0.1.0"
+description = "A program to jiggle the mouse cursor"
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+license = "MIT"
+keywords = ["mouse", "jiggle", "automation"]
+readme = "README.md"
+homepage = "https://github.com/idrisschebak/mousejiggler"
+repository = "https://github.com/idrisschebak/mousejiggler"
+documentation = "https://github.com/idrisschebak/mousejiggler"
+include = ["jiggle.py"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^8.0.1"
+pyautogui = "^0.9.53"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 79
+exclude = ["__init__.py"]
+
+[tool.mypy]
+ignore_missing_imports = true
