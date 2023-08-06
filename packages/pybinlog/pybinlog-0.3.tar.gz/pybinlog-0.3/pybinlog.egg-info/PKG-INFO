@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pybinlog
+Version: 0.3
+Summary: Utility functions to parse Ardupilot's log file in bin format. 
+Home-page: https://github.com/tayyabkhalil-313/pybinlog
+Author: Tayyab Khalil
+Author-email: tayyabkhalilpm@gmail.com
+License: MIT License
+Download-URL: https://github.com/tayyabkhalil-313/pybinlog
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pybinlog
+Utility functions to parse Ardupilot's log file in bin format. 
+
+## bin2csv
+ File converter from Ardupilot's log files in bin format to CSV files. 
+## Usage
+ `python3 bin2csv.py [filepath]`
+## Dependency
+ Requires [pymavlink](https://pypi.org/project/pymavlink/) which can be installed with `pip install pymavlink`.
+
+
