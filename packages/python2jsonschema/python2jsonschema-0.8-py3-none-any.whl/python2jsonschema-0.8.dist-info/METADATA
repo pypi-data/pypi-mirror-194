@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: python2jsonschema
+Version: 0.8
+Summary: Creates a Json Schema File based on Python Types
+License: MIT
+Author: Adrian Ehrsam
+Author-email: adrian.ehrsam@bmsuisse.ch
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typing-extensions (>=4.5.0,<5.0.0) ; python_version < "3.11"
+Description-Content-Type: text/markdown
+
+# python2jsonschema
+Simple generate a Json Schema for your Python Classes
+
