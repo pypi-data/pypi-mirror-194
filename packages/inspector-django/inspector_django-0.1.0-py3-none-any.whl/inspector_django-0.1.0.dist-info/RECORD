@@ -1,0 +1,14 @@
+inspector_django/__init__.py,sha256=x2DcHmMSk_WnMB4fUzmkMeKZq1iXbPNhn9glEJUOMtE,1039
+inspector_django/middleware.py,sha256=0hXsy5BjbHbRSAoo5nW8VKZq6WHE7v5gPHxSwQk6pYQ,1803
+inspector_django/enums/__init__.py,sha256=wmI3WoLObafg9ZVGdEyfq7nE7_M4g8uwdeVVm9fKzjw,39
+inspector_django/enums/settings_enum.py,sha256=2BbfUqOKU1l2nkkfASNfT66kaDTJa9W-NDjfYPl8AMI,268
+inspector_django/lib/__init__.py,sha256=kl0FvQRvMMRY0EAWZRMMBtT2OYgMyja-NmXTJ9iBFBY,99
+inspector_django/lib/app_configurations.py,sha256=l8IbKqwwfdg1t4nJbb25Xx5U73gRR068naXxk4Akd7I,829
+inspector_django/lib/inspector_django.py,sha256=rfZL66LU48RDELJPIuSCTJ_C1VG01cxNWwUcB-P0CXQ,2757
+inspector_django/tracking/__init__.py,sha256=PCK6zYbbTx3e290nnV-pC19L0PR-jn8LPbTLiZ5qBeQ,30
+inspector_django/tracking/sql_hook.py,sha256=HBf8L-j6sALqOrMyhRMVd2vImsZh2nbpCcoNwPgH-p4,2919
+inspector_django-0.1.0.dist-info/LICENSE,sha256=eC9RU3ZwkOxIg8S6bZSgzbbIGl753FB4LrY1keFZ9BY,1072
+inspector_django-0.1.0.dist-info/METADATA,sha256=ZGJ-i1KvryrOpmY3ESYIBvKWm6Bl5ihqZblUaMGacPY,1541
+inspector_django-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+inspector_django-0.1.0.dist-info/top_level.txt,sha256=CgTd15rFD_YSHmonJmR8rBdrEvtezAVBCkcTH-ZxgVQ,17
+inspector_django-0.1.0.dist-info/RECORD,,

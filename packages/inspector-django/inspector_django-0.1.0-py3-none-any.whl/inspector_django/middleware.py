@@ -1,0 +1,44 @@
+from django.db import connection
+import os
+from .lib import GetFieldFromSettings, DjangoInspector
+from .enums import SettingKeys
+from django.utils.deprecation import MiddlewareMixin
+
+
+class InspectorMiddleware(MiddlewareMixin):
+    TYPE_TRANSACTION = 'request'
+    NAME_CONTEXT_DB = 'DB'
+    NAME_OBJ_CONTEXT_DB = 'query'
+
+    # INSPECTOR FOR MIDDLEWARE
+    middleware_inspector = None
+    get_response = None
+    monitoring_request_check = None
+
+    def __init__(self, get_response):
+        super().__init__(get_response)
+        self.get_response = get_response
+        app_settings = GetFieldFromSettings()
+        self.monitoring_request_check = app_settings.get(SettingKeys.MONITORING_REQUEST)
+
+    def process_request(self, request):
+        request.inspector = DjangoInspector()
+        if self.monitoring_request_check:
+            request.inspector_middleware = DjangoInspector()
+            method_request = request.method
+            path_request = request.path_info
+            name_transaction = "{} {}".format(method_request, path_request)
+            request.inspector_middleware.start_transaction(name_transaction, self.TYPE_TRANSACTION)
+
+    def process_response(self, request, response):
+        if self.monitoring_request_check:
+            request.inspector_middleware.set_name_transaction(request)
+            request.inspector_middleware.set_http_request(request)
+            request.inspector_middleware.add_context_response(response)
+            status_code = getattr(response, 'status_code', None)
+            request.inspector_middleware.transaction().set_result(status_code)
+            del request.inspector_middleware
+        return response
+
+    def process_exception(self, request, exception):
+        request.inspector_middleware.report_exception(exception, True, True)
