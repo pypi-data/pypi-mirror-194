@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/flask_restone.py
+src/flask_restone.egg-info/PKG-INFO
+src/flask_restone.egg-info/SOURCES.txt
+src/flask_restone.egg-info/dependency_links.txt
+src/flask_restone.egg-info/top_level.txt

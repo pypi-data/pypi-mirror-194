@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flask_restone
+Version: 0.1.0
+Summary: Restone make you the rest one
+Author-email: Arry Lee <arry_lee@qq.com>
+Project-URL: Homepage, https://github.com/arry-lee/flask_restone
+Project-URL: Bug Tracker, https://github.com/arry-lee/flask_restone/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# flask_restone
+
+restone 是一个单文件的REST规范api框架
+名字有两层含义：
+1. 所有flask框架中最REST的一个
+2. 用这个框架让你成为REST(轻松)的人
