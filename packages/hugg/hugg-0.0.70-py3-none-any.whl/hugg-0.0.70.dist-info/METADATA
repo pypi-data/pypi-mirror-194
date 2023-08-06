@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hugg
+Version: 0.0.70
+Summary: My short description for my project.
+Home-page: https://github.com/franceme/hugg
+Author: Miles Frantz
+Author-email: frantzme@vt.edu
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: datasets
+Requires-Dist: huggingface-hub
+Requires-Dist: PyGithub
+Requires-Dist: python-gitlab
+Requires-Dist: ruamel.std.zipfile
+
+# PythonTemplate
+
+Simple Template
