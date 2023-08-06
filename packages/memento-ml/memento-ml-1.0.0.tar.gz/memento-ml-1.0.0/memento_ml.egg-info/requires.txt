@@ -1,0 +1,16 @@
+cloudpickle<2,>=1.6.0
+networkx<3,>=2.5.1
+pandas<2,>=1.5.3
+pandas-stubs
+
+[dev]
+black
+pylint
+bumpver
+isort
+pip-tools
+pytest
+Sphinx
+mypy
+aiosmtpd
+scikit-learn
