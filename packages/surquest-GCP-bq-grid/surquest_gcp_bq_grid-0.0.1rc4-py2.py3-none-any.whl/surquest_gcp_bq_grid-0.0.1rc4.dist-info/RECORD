@@ -1,0 +1,7 @@
+surquest/GCP/bq/grid/__init__.py,sha256=at809EDQJyi-LRpgkoawVy5vqmORcgzbQPgp5T-1Wnc,76
+surquest/GCP/bq/grid/field.py,sha256=l6T5cVkan05Fr3-yxH8PPi3Abqr1oCaY0h_9l7St_so,1382
+surquest/GCP/bq/grid/grid.py,sha256=moO4Ew_pRBkXF_h7TWLGuxfZS67OmvRvAMKXHlypbsc,7913
+surquest_gcp_bq_grid-0.0.1rc4.dist-info/METADATA,sha256=LUcA5IwMWPQ3rq03y_ws94RwHG1PPwkxaThR0hU33JU,4759
+surquest_gcp_bq_grid-0.0.1rc4.dist-info/WHEEL,sha256=nYNlZuHZ28ui1K118WE5qpb9yEZSMQ3u8pC2H4PftME,105
+surquest_gcp_bq_grid-0.0.1rc4.dist-info/licenses/LICENSE,sha256=LuEVxGCuvhvtEXSwrka43cvWkBrjhUBIRqKXY8cDLAM,1086
+surquest_gcp_bq_grid-0.0.1rc4.dist-info/RECORD,,
