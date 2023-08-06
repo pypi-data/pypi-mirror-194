@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+IpPersian/IpPersian.py
+IpPersian/__init__.py
+IpPersian.egg-info/PKG-INFO
+IpPersian.egg-info/SOURCES.txt
+IpPersian.egg-info/dependency_links.txt
+IpPersian.egg-info/top_level.txt
