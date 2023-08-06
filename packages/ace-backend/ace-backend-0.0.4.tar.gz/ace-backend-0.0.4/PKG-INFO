@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ace-backend
+Version: 0.0.4
+Summary: ace backend
+Home-page: https://github.com/kokokostation/ace-backend
+Author: Alexander Manakov
+Author-email: kokokostation@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

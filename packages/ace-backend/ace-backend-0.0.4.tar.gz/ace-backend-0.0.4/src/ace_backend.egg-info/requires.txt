@@ -1,0 +1,4 @@
+aiohttp==3.8.1
+asyncpg==0.25.0
+marshmallow-dataclass[enum]==8.5.3
+aiohttp_cors==0.7.0

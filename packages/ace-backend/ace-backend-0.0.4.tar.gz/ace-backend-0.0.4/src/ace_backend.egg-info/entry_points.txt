@@ -1,0 +1,3 @@
+[console_scripts]
+ace_server = ace_backend.server.main:main
+ace_sync = ace_backend.sync.main:main
