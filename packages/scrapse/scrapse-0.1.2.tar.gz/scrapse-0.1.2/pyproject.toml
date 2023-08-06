@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "scrapse"
+version = "0.1.2"
+description = "Package for downloading judgments"
+authors = ["zaharia laurentiu jr marius <zaharialorenzo@gmail.com>"]
+maintainers = [
+    "zaharia laurentiu jr marius <zaharialorenzo@gmail.com>"
+]
+homepage = "https://gitlab.di.unito.it/ngupp/ngupp-scrapse"
+repository = "https://gitlab.di.unito.it/ngupp/ngupp-scrapse"
+readme = "README.md"
+keywords = ["scraping", "judgments"]
+
+[tool.poetry.scripts]
+scrapse = "scrapse.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.0"
+typer = {extras = ["all"], version = "^0.7.0"}
+requests = "^2.28.2"
+beautifulsoup4 = "^4.11.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
