@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: sujuster
+Version: 1.1.0
+Summary: The SUbtitle adJUSTER - adjust offsets of a .srt subtitle file
+Home-page: https://github.com/flypenguin/python-sujuster
+Download-URL: https://github.com/flypenguin/python-sujuster/tarball/1.1.0
+Author: Axel Bock
+Author-email: mr.axel.bock@gmail.com
+Keywords: subtitles srt script
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+The SUbtitle adJUSTER
+=====================
+
+If you have an .srt subtitle file which JUST WON'T FIT, then you can adjust
+the timings using the sujuster.
+
+Sorry for the bad name, I have a real skill of picking really really bad names
+for projects.
+
+1.1.0
+-----
+
+- if we move subtitles up (i.e. show earlier), skip indexes which would be "below 0"
+
+
+1.0.3
+-----
+
+- update package categories in PyPI
+
+
+1.0.2 & 1.0.1
+-------------
+
+- change executable name to "sujust" as intended originally
+- took more than one try. it's late.
+
+
+1.0.0
+-----
+
+- first release, just working with absolutely no frills and nothing special.

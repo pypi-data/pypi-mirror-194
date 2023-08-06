@@ -1,0 +1,2 @@
+[console_scripts]
+sujust = sujuster:console_entrypoint
