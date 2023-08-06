@@ -1,0 +1,2 @@
+[console_scripts]
+updatedns = updatedns.updatedns:main
