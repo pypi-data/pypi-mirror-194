@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: indecode
+Version: 1.0
+Summary: Code and decode string
+Author: lolo859
+License: UNKNOWN
+Keywords: code,incode,indecode,decode,incode,indc
+Platform: UNKNOWN
+Classifier: Natural Language :: French
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Dist: docutils (>=0.3)
+
+This module contain two functions. 
+- code(text to code)
+- decode(text return by the code function)
+
