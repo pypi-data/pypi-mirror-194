@@ -1,0 +1,5 @@
+changepoint-0.2.0.dist-info/METADATA,sha256=B_V7FjqrjxkIkFNG3MUPimfx2lOScz3T8NXKhJGHObA,2784
+changepoint-0.2.0.dist-info/WHEEL,sha256=YhO_cE4TIcj8c-UJ3vsqmpilYIyrvNfERo-puxwkHPA,96
+pychangepoint/__init__.py,sha256=ZZ1U7EvCRRdmClMGt_aESbYgsTKiIsU99Q5EYlqu2sk,135
+pychangepoint/pychangepoint.cp38-win_amd64.pyd,sha256=1PswHbMsJP9LZsn_1Rzit2VvFVaqE5rRwFQCbknsVdU,623104
+changepoint-0.2.0.dist-info/RECORD,,
