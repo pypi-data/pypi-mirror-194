@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mercator_logger
+Version: 0.1.0
+Summary: Standardized logging for all mercator packages
+Author: Mercator AI
+Author-email: info@mercator.ai
