@@ -1,0 +1,7 @@
+authbaserepository/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+authbaserepository/auth_middleweare/auth.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+authbaserepository/base_repo/base_repo.py,sha256=YNQHJGisQ9QHfROXV1iEfAhLUMbOPDeIKfTAvlnts_4,1511
+authbaserepository/main.py,sha256=RwOl250mY_SwBQNw0J4rRfuGt8FhwU8QQvmhG_oYGb8,44
+authbaserepository-0.1.0.dist-info/METADATA,sha256=rVyS1jFyUoAB9VWchNF93VmySJMA6-2WX-WJdVJ7_5M,376
+authbaserepository-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+authbaserepository-0.1.0.dist-info/RECORD,,
