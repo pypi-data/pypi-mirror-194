@@ -1,0 +1,4 @@
+[console_scripts]
+elf-caver = makka_pakka.elfcaver:elfcaver
+mkpk = makka_pakka.mkpk:mkpk
+mkpk-transpile = makka_pakka.mkpk_transpile:mkpk_transpile
