@@ -1,0 +1,8 @@
+README.md
+keyword_search.py
+setup.py
+Inverted_Index_Search.egg-info/PKG-INFO
+Inverted_Index_Search.egg-info/SOURCES.txt
+Inverted_Index_Search.egg-info/dependency_links.txt
+Inverted_Index_Search.egg-info/requires.txt
+Inverted_Index_Search.egg-info/top_level.txt
