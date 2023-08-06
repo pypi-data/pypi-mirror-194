@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+foundry_df_interface.py
+setup.cfg
+setup.py
+foundry_df_interface.egg-info/PKG-INFO
+foundry_df_interface.egg-info/SOURCES.txt
+foundry_df_interface.egg-info/dependency_links.txt
+foundry_df_interface.egg-info/requires.txt
+foundry_df_interface.egg-info/top_level.txt
