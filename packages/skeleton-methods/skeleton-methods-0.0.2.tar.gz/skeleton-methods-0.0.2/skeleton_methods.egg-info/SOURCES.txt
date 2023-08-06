@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+skeleton-methods/__init__.py
+skeleton-methods/clustering.py
+skeleton-methods/regression.py
+skeleton-methods/skeleton.py
+skeleton-methods/utils.py
+skeleton_methods.egg-info/PKG-INFO
+skeleton_methods.egg-info/SOURCES.txt
+skeleton_methods.egg-info/dependency_links.txt
+skeleton_methods.egg-info/requires.txt
+skeleton_methods.egg-info/top_level.txt
