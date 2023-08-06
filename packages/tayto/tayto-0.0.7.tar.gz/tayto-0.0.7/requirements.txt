@@ -1,0 +1,13 @@
+pip
+wheel
+setuptools
+tayto
+numpy
+pyyaml
+fastapi
+uvicorn
+pydantic
+starlette
+requests
+jinja2
+graphene
