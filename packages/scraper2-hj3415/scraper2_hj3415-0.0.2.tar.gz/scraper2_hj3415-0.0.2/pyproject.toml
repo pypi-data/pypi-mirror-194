@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scraper2_hj3415"
+version = "0.0.2"
+authors = [
+  { name="Hyungjin Kim", email="hj3415@gmail.com" },
+]
+description = "Gathering the stock data"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "Scrapy",
+    "pymongo",
+    "util_hj3415"
+]
+# https://hatch.pypa.io/latest/config/metadata/
+[project.scripts]
+cli-manager = "scraper2_hj3415.cli:c101_all"
+
+[project.urls]
+"Homepage" = "https://pypi.org/project/scraper2_hj3415/"
+"Bug Tracker" = "https://pypi.org/project/scraper2_hj3415/"
