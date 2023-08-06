@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+setup.py
+azcopy_wrapper/__init__.py
+azcopy_wrapper/azcopy_client.py
+azcopy_wrapper/azcopy_summary.py
+azcopy_wrapper/azcopy_utilities.py
+azcopy_wrapper/sas_token_validation.py
+azcopy_wrapper.egg-info/PKG-INFO
+azcopy_wrapper.egg-info/SOURCES.txt
+azcopy_wrapper.egg-info/dependency_links.txt
+azcopy_wrapper.egg-info/top_level.txt
+azcopy_wrapper/utils/__init__.py
+azcopy_wrapper/utils/constants.py
+azcopy_wrapper/utils/execute_command.py
