@@ -1,0 +1,6 @@
+setup.py
+src/rdvacED.py
+src/rdvacED.egg-info/PKG-INFO
+src/rdvacED.egg-info/SOURCES.txt
+src/rdvacED.egg-info/dependency_links.txt
+src/rdvacED.egg-info/top_level.txt
