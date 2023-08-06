@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lawson
+Version: 0.0.1
+Summary: Python Client for Lawson
+Home-page: https://github.com/codemaze-fun/lawson-python
+Author: Lawson
+Author-email: Lawson <lawson@codemaze.fun>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# lawson-python
+
+lawson pypi package
