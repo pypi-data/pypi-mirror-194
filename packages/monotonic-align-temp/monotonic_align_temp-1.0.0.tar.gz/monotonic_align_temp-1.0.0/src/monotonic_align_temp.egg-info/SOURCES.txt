@@ -1,0 +1,11 @@
+.gitignore
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+src/core.pyx
+src/monotonic_align/__init__.py
+src/monotonic_align_temp.egg-info/PKG-INFO
+src/monotonic_align_temp.egg-info/SOURCES.txt
+src/monotonic_align_temp.egg-info/dependency_links.txt
+src/monotonic_align_temp.egg-info/top_level.txt
