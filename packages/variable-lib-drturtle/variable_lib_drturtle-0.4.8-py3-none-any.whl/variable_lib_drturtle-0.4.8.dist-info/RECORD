@@ -1,0 +1,10 @@
+variable_lib_drturtle/__init__.py,sha256=b8vJVIdV1G8Vfjrm62FNrEJ_O_irR04HyE9FuyfbXUg,119
+variable_lib_drturtle/arrays.py,sha256=nRaoQgg1bRGQbLg_gLCoor_ENH-auDvVczqNiISX0N0,5245
+variable_lib_drturtle/forces.py,sha256=gymYCLQHDq2FznzUvJnNoi7sfpVYBpHafYftWVIhAnA,2675
+variable_lib_drturtle/resource.py,sha256=hKm-7Et1Y5tlAATmxsXz2cD9IXa0ZaM8hoZ-fiG1nlc,5271
+variable_lib_drturtle/utils.py,sha256=WUFcznOwiTXVn-pLeprSvQCjtQBTYN-qKxvFD7x04pI,546
+variable_lib_drturtle/variables.py,sha256=v9qc5p_W7-wkAZuJzS23cvMpt4GwqS9DQpJymTuVIQU,3506
+variable_lib_drturtle-0.4.8.dist-info/METADATA,sha256=zami1N1FXILg-tpClmKD7ETlm5C7ny8AfA0GH6UqQEI,654
+variable_lib_drturtle-0.4.8.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+variable_lib_drturtle-0.4.8.dist-info/licenses/LICENSE,sha256=KZ-pwE1uvs2SbIjpaN2DgsU3K4QmFnjH9eaXlIMZoWM,1087
+variable_lib_drturtle-0.4.8.dist-info/RECORD,,
