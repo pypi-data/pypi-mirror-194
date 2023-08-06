@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: metric_collector
+Version: 0.1.4
+Summary: Tekton pipeline's data collector
+Author-email: Max Leow <maxengiu@outlook.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/maxleow/metric-collector.git
+
+# metric-collector
