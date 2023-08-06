@@ -1,0 +1,149 @@
+[project]
+name = "pysmartmeter"
+version = "0.3.1"
+description = "Collect data from Hichi Smartmeter and expose it via MQTT"
+readme = "README.md"
+authors = [
+    {name = 'Jens Diemer', email = 'pysmartmeter@jensdiemer.de'}
+]
+requires-python = ">=3.9,<4"
+dependencies = [
+    "manageprojects",  # https://github.com/jedie/manageprojects
+    "pyserial",
+    "paho-mqtt",
+
+    # TODO: Use keyring for store MQTT credentials:
+    #"keyring",  # https://github.com/jaraco/keyring
+
+    "bx_py_utils",  # https://github.com/boxine/bx_py_utils
+    "click",  # https://github.com/pallets/click/
+    "rich-click",  # https://github.com/ewels/rich-click
+    "rich",  # https://github.com/Textualize/rich
+]
+[project.optional-dependencies]
+dev = [
+    "pip-tools",  # https://github.com/jazzband/pip-tools/
+    "tox",  # https://github.com/tox-dev/tox
+    "coverage",  # https://github.com/nedbat/coveragepy
+    "darker>=1.7",  # https://github.com/akaihola/darker
+    "autopep8",  # https://github.com/hhatto/autopep8
+    "pyupgrade",  # https://github.com/asottile/pyupgrade
+    "isort",  # https://github.com/pycqa/isort
+    "flynt",  # https://github.com/ikamensh/flynt
+    "flake8",  # https://github.com/pycqa/flake8
+    "pyflakes",  # https://github.com/PyCQA/pyflakes
+    "codespell",  # https://github.com/codespell-project/codespell
+    "EditorConfig",  # https://github.com/editorconfig/editorconfig-core-py
+    "safety",  # https://github.com/pyupio/safety
+    "mypy",  # https://github.com/python/mypy
+    "tomli",  # https://github.com/hukkin/tomli
+    "twine",  # https://github.com/pypa/twine
+    #
+    # Work-a-round for:
+    # https://github.com/jazzband/pip-tools/issues/994#issuecomment-1321226661
+    "typing-extensions>=3.10",
+]
+
+[project.urls]
+Documentation = "https://github.com/jedie/pysmartmeter"
+Source = "https://github.com/jedie/pysmartmeter"
+
+[project.scripts]
+pysmartmeter = "pysmartmeter.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pysmartmeter*"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.darker]
+src = ['.']
+revision = "origin/main..."
+line_length = 119
+verbose = true
+color = true
+skip_string_normalization = true
+diff = false
+check = false
+stdout = false
+isort = true
+flynt = true
+lint = [
+    "flake8",
+]
+log_level = "INFO"
+
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/config_files/#pyprojecttoml-preferred-format
+atomic=true
+profile='black'
+skip_glob=['.*', '*/htmlcov/*']
+known_first_party=['pysmartmeter']
+line_length=119
+lines_after_imports=2
+
+
+[tool.coverage.run]
+branch = true
+source = ['.']
+omit = ['.*', '*/tests/*']
+command_line = '-m unittest --verbose --locals --buffer'
+
+[tool.coverage.report]
+skip_empty = true
+fail_under = 45
+
+
+[tool.mypy]
+warn_unused_configs = true
+ignore_missing_imports = true
+allow_redefinition = true  # https://github.com/python/mypy/issues/7165
+show_error_codes = true
+plugins = []
+exclude = ['.venv', 'tests']
+
+
+[tool.tox]  # https://tox.wiki/en/latest/config.html#pyproject-toml
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist = py{311,310,39}
+skip_missing_interpreters = True
+
+[testenv]
+passenv = *
+skip_install = true
+commands_pre =
+    pip install -U pip-tools
+    pip-sync requirements.dev.txt
+commands =
+    python -m coverage run
+"""
+
+
+[manageprojects] # https://github.com/jedie/manageprojects
+initial_revision = "e826e73"
+initial_date = 2022-11-14T08:20:55+01:00
+cookiecutter_template = "https://github.com/jedie/cookiecutter_templates/"
+cookiecutter_directory = "piptools-python"
+
+[manageprojects.cookiecutter_context.cookiecutter]
+full_name = "Jens Diemer"
+github_username = "jedie"
+author_email = "pysmartmeter@jensdiemer.de"
+package_name = "pysmartmeter"
+package_version = "0.0.1"
+package_description = "Collect data from Hichi Smartmeter and expose it via MQTT"
+package_url = "https://github.com/jedie/pysmartmeter"
+issues_url = "https://github.com/jedie/pysmartmeter/issues"
+license = "GPL-3.0-or-later"
+_template = "https://github.com/jedie/cookiecutter_templates/"
+
+applied_migrations = [
+    "d970456", # 2023-02-20T16:19:35+01:00
+]
