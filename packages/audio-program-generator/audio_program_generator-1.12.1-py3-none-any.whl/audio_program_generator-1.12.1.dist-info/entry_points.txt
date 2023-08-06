@@ -1,0 +1,3 @@
+[console_scripts]
+apg=audio_program_generator.__main__:cli
+
