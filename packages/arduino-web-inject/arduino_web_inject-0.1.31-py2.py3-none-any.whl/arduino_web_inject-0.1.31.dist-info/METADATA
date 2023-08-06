@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: arduino-web-inject
+Version: 0.1.31
+Summary: Inject and build web files into your sketches
+Home-page: https://github.com/fulminati/arduino-web-inject
+Download-URL: https://github.com/fulminati/arduino-web-inject
+Author: Francesco Bianco
+Author-email: bianco@javanile.org
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Topic :: Text Processing :: Markup :: HTML
+License-File: LICENSE
+Requires-Dist: watchfiles
+Requires-Dist: jsmin
+Requires-Dist: csscompressor
+Requires-Dist: htmlmin
+Requires-Dist: binaryornot
+
+# 🕸️ Arduino Web Inject
+
+> Inject and build web files into your sketches.
+
+## 💾 Install
+
+### Windows 
+
+This project require Python on your PC, please visit this page <https://www.python.org/downloads/windows/>, then download and install the "Windows installer (64-bit)". Keep note where Python will be installed.
+
+Open a shell and type the following command (amend path on your PC with the right username)
+
+```
+C:\Users\Sam\AppData\Local\Programs\Python\Python310\Scripts\pip install arduino-web-inject
+```
+
+### macOS
+
+
+### Ubuntu/Debian
+
+```shell
+$ sudo apt install python
+```
+
+```shell
+$ pip install arduino-web-inject
+```
+
+### Linux
+
+Found best Python package fit to your needs here <https://www.python.org/downloads/source/>, then use `pip` to install `arduino-web-inject` on your PC.
+
+```shell
+$ pip install arduino-web-inject
+```
+
+## 🛠️ Usage
+
+Open a shell and type the following command
+
+```shell
+$ arduino-web-inject MY_SKETCHES_DIRECTORY
+```
+
+Replace `MY_SKETCHES_DIRECTORY` with you source code directory. For instances
+
+On Windows (with `cmd.exe`)
+
+```
+C:\Users\Sam\AppData\Local\Programs\Python\Python310\Scripts\arduino-web-inject C:\Users\SamSepiol\OneDrive\Documents\Arduino
+```
