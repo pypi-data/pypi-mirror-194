@@ -1,0 +1,12 @@
+chanfig/__init__.py,sha256=tiT1sL-_EbhBFNFCoSndDO92U1_r35UvLKVmFCORg7Q,1521
+chanfig/_version.py,sha256=zEfXONUpJxbCl-LTL03DO80snAKclYhFdvgizKetZec,162
+chanfig/config.py,sha256=H6mftYB31pdPNcfWqgzMeo_9O40AJOPkslIAtlxSADc,16259
+chanfig/flat_dict.py,sha256=dLCPafJ7SRdFe1TAS_GVMh74LuFp9l8jVliyHwKFzFI,31639
+chanfig/nested_dict.py,sha256=VeZ6XaFNOcc5pZahNXS5wamPP8TY7ptTusU2ibohMsc,17516
+chanfig/utils.py,sha256=EijhKf4RlPfj-rM5GE9mOK_ttjYIdNIQJEGGT_xtBhs,2317
+chanfig/variable.py,sha256=QpjRD2R8Ai8JPtbJ-TksjNsROHIUqa0yecALEEDyCBQ,9553
+chanfig-0.0.0.dist-info/LICENSE,sha256=0w3M2S0pWfeukS8-hx1AhxCtPaFpy2xARUmX-Bt0hx0,83
+chanfig-0.0.0.dist-info/METADATA,sha256=chOdc9lzO1kqRuwBGhjcIy1-Uw3tYgGWsJowbH-c6fM,9384
+chanfig-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chanfig-0.0.0.dist-info/top_level.txt,sha256=9_ELnhjkQxVhnarefJQZIXjDsFH5D0Am5GeKjgI4b5c,8
+chanfig-0.0.0.dist-info/RECORD,,
