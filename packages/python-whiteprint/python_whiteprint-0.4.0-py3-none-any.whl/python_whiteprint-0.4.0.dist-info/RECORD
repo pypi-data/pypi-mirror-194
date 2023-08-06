@@ -1,0 +1,12 @@
+python_whiteprint/__init__.py,sha256=GLqerH323LFwopwfVHdhnSgA1bcWjgKvh2G1-oq5o4k,117
+python_whiteprint/__main__.py,sha256=EoTmim15YlbSPUT2U731WSPzmmFp_mDkvZRml9wxqKg,96
+python_whiteprint/cli.py,sha256=Z4mQ5i2yBo62xm5WgSGjy7Nz1BG8C77Ept47K5eNyCc,2971
+python_whiteprint/console.py,sha256=x1enzEB8_deK6Us5H13O6HhKnK_kiCMdQoXxSxesdaE,215
+python_whiteprint/hello_world.py,sha256=sZOLYWtZo_51kzK1k7JcvSVn0YukV1fJz87VD4qh-hw,329
+python_whiteprint/py.typed,sha256=UaCuPFa3H8UAakbt-5G8SPacldTOGvJv18pPjUJ5gDY,93
+python_whiteprint/version.py,sha256=njWJsy6oqQQJWsMjhehSuiXv7Q0P4jqcxdlGXPGM5ks,187
+python_whiteprint-0.4.0.dist-info/LICENSE.md,sha256=Lpf5zW_21Sm0ZZCNjCTogTkXEhNP_40lIIM1Aec0sgQ,1074
+python_whiteprint-0.4.0.dist-info/METADATA,sha256=IimOpyph0BPi_sn6icktZxH2Gty25vYWdLKSjoj8AO0,19058
+python_whiteprint-0.4.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+python_whiteprint-0.4.0.dist-info/entry_points.txt,sha256=aYCyv5l34y-7RGo4jkuHR3pUv2jctRwLadLj8333dps,56
+python_whiteprint-0.4.0.dist-info/RECORD,,
