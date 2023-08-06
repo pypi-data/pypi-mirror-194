@@ -1,0 +1,12 @@
+matchmeta-16.2.data/data/data/common.bloom,sha256=skJCZ7ucYqeFCCiVW99u6YxSC7rhlfSVuhhi-KDeDEg,8987273
+matchmeta-16.2.data/data/data/gtfo.bloom,sha256=jsRfbFWYS2a-cJYRxonwxj4uRLaPVYkb9_MAuuSlYIA,181000
+matchmeta-16.2.data/data/data/mmi.bloom,sha256=8LXDZoJOjVSVSwuEKcHpXNWkGp62o9rbicUB2FqT124,17973266
+mmi/__init__.py,sha256=DDsOS1EJTYmmcZK0HD0--sRu7r2o4WkIGsp7sBRm6HE,2874
+mmi/__main__.py,sha256=ZnJxGkzXEtZSPRZnIxbFLE01dG5WCha2LSaWRkJ_tC8,247
+mmi/cli.py,sha256=GqzXtCum8hfzrgt57JnQnL0bgsmCsUVJO5Um4XkiaK0,5758
+matchmeta-16.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+matchmeta-16.2.dist-info/METADATA,sha256=1T666mxQgpaChTnJwEjU5hMKQobEO0GvQ_fkPzCOhlw,2586
+matchmeta-16.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+matchmeta-16.2.dist-info/entry_points.txt,sha256=yrce21mMA56-tOiNSUeKaw6tkiIg9YoXSREAZPmZCVc,37
+matchmeta-16.2.dist-info/top_level.txt,sha256=x8zxnK3NHGxUiDh1bflvxS6LHHVvSHw7QQlOlRyCiCk,4
+matchmeta-16.2.dist-info/RECORD,,
