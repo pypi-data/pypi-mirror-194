@@ -1,0 +1,4 @@
+[console_scripts]
+lun=lunni_cli.app:app
+lunni=lunni_cli.app:app
+
