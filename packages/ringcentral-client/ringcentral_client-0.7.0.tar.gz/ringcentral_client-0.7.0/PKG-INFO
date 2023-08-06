@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ringcentral_client
+Version: 0.7.0
+Summary: Python Client for RingCentral API
+Home-page: https://github.com/tylerlong/ringcentral-python
+Author: Tyler Liu
+Author-email: tyler.liu@ringcentral.com
+License: MIT
