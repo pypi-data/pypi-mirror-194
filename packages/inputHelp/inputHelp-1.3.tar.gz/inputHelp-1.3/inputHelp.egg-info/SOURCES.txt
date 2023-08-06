@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+inputHelp/__init__.py
+inputHelp/main_inputHelp.py
+inputHelp.egg-info/PKG-INFO
+inputHelp.egg-info/SOURCES.txt
+inputHelp.egg-info/dependency_links.txt
+inputHelp.egg-info/top_level.txt
