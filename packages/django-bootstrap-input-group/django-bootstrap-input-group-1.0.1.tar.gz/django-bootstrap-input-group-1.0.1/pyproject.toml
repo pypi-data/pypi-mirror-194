@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-bootstrap-input-group"
+version = "1.0.1"
+description = "Render Django form fields as bootstrap input groups."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Actionb", email = "yummytea1@gmail.com"}
+]
+keywords = ["django", "bootstrap"]
+classifiers = [
+  "Framework :: Django",
+  "Programming Language :: Python",
+]
+
+[project.urls]
+Repository = "https://github.com/Actionb/django-bootstrap-input-group"
