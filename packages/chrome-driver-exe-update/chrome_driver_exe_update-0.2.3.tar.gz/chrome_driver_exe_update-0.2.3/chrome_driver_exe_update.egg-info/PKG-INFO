@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: chrome-driver-exe-update
+Version: 0.2.3
+Summary: # Webdriver Package
+Home-page: https://github.com/FredericoIsaac/chrome_driver
+Author: Frederico Gago
+Author-email: fredyisaac@gmail.com
+License: MIT
+Keywords: chrome driver selenium
+Description-Content-Type: text/markdown
+License-File: LICENSE
