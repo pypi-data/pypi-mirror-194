@@ -1,0 +1,3 @@
+from cpanlp.person.directors_supervisors_and_senior_executives.manager import *
+from cpanlp.person.directors_supervisors_and_senior_executives.director import *
+from cpanlp.person.directors_supervisors_and_senior_executives.supervisor import *
