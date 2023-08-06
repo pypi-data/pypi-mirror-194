@@ -1,0 +1,6 @@
+Bastos.py
+setup.py
+Bastos.egg-info/PKG-INFO
+Bastos.egg-info/SOURCES.txt
+Bastos.egg-info/dependency_links.txt
+Bastos.egg-info/top_level.txt
