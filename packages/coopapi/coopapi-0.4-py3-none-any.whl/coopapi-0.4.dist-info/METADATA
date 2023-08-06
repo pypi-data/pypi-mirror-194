@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: coopapi
+Version: 0.4
+Summary: Tools for setting up an API. Built on the FastAPI framework
+Home-page: https://github.com/tylertjburns/coopapi
+Author: tburns
+Author-email: tyler.tj.burns@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >3.5
+Description-Content-Type: text/markdown
+Requires-Dist: anyio (==3.6.2)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: colorama (==0.4.6)
+Requires-Dist: cooptools (==1.2)
+Requires-Dist: fastapi (==0.89.0)
+Requires-Dist: h11 (==0.14.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: numpy (==1.24.1)
+Requires-Dist: pydantic (==1.10.4)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: sniffio (==1.3.0)
+Requires-Dist: starlette (==0.22.0)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: urllib3 (==1.26.14)
+Requires-Dist: uvicorn (==0.20.0)
+
+# coopapi
+ package for setting up a quick API built on the FastAPI framework
+
+# example
+Setup a dummy pydantic dataclass that has some attributes
+```buildoutcfg
+from pydantic.dataclasses import dataclass as pydandataclass, Field
+from cooptools.randoms import a_string, a_phrase
+
+class DummySchemaConfig:
+    allow_population_by_field_name = True
+    schema_extra = {
+        "example": {
+            'id': a_string(10),
+            'desc': a_phrase(10),
+            'active': True,
+        }
+    }
+
+@pydandataclass(config=DummySchemaConfig)
+class DummySchema:
+    id: str = Field(...)
+    desc: str = Field(...)
+    active: bool = Field(...)
+```
+
+
+Using the dummySchema pydantic dataclass, stubb in some callbacks and create the api shell object. This will be used to setup the core funcationality of our API. Create a FastAPI() object that is used to host our router.
+
+Note: multiple routers (shells) can be added to the same FastAPI() object such that you can build out an extensive API.
+
+Finally, serve the app...
+```buildoutcfg
+from examples.dummySchema import DummySchema
+from coopapi import createRequestCallback, ApiShell, deleteRequestCallback
+import uvicorn
+from fastapi import FastAPI
+
+# create the callbacks for what should be done when the various endpoints are called. This is likely a
+# db interaction or a forwarding request.
+create_callback: createRequestCallback = lambda r, t: t
+delete_callback: deleteRequestCallback = lambda r, t: True
+
+# setup the api itself, use a base FastAPI object and then an api_shell which has its router included in the
+# base api
+app = FastAPI()
+api_shell = ApiShell(target_schema=DummySchema,
+                     base_route='/dummy',
+                     on_create_callback=create_callback,
+                     on_delete_callback=delete_callback)
+app.include_router(api_shell.router, tags=["dummy_shell"])
+
+
+# serve the app
+uvicorn.run(app, port=1219)
+```
+
+You can visit the docs site of the created api at http://localhost:1219/docs#/
+
+![img.png](imgs/fastApiDocs_forDummy.png)
+

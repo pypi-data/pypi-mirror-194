@@ -1,0 +1,10 @@
+coopapi/__init__.py,sha256=spkvMnzEL7Wz7vFmly79aTP7M4SKR8gLT5EcExZ9alY,312
+coopapi/apiShell.py,sha256=ZyV9OhdIM7eJ714Q4Al9n-a86lM0jg0lWhAgDyLDNFY,9526
+coopapi/enums.py,sha256=84pn0LM-ACNgBFdgcgPAJE7YmYRmvyOgC_eOpUsJvaE,214
+coopapi/errors.py,sha256=LHDXNO976z0rAZ6sjgLlnUrwFfq6WZO_rA7nZ5Le2ps,185
+coopapi/http_request.py,sha256=tV-xY6Jdm5-ajqAODgAom0Jb4mroxXy69PatCtU3LsA,4536
+coopapi/http_request_handlers.py,sha256=xRWg4TQt_BQzoQ88vgQdwvVGSHYEOk8PVx1IO7Yvq48,4598
+coopapi-0.4.dist-info/METADATA,sha256=E6j-VmModI44SkiRtj-SzSefCCdMcftLTnA9AQqsvXQ,3342
+coopapi-0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+coopapi-0.4.dist-info/top_level.txt,sha256=49d1CaV7j5fRYnWgz6Ym1qlnfSjWRk9JIV50u_ZD4I8,8
+coopapi-0.4.dist-info/RECORD,,
