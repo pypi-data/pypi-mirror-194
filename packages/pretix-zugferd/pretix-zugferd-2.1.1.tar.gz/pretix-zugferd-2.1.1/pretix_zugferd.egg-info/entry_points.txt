@@ -1,0 +1,2 @@
+[pretix.plugin]
+pretix_zugferd = pretix_zugferd:PretixPluginMeta
