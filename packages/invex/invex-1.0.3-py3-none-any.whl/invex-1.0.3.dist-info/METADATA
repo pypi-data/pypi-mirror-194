@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: invex
+Version: 1.0.3
+Summary: A lightweight inventory management system built with python
+Author-email: Alex Curtis <alex@curtises.net>
+Project-URL: Homepage, https://github.com/tripalc/invex
+Project-URL: Bug Tracker, https://github.com/tripalc/invex/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# <img src="invex_ico.png" alt="Invex logo" style="width: 30px; height: 30px;"/> invex
+An inventory manager for keeping track of items.
+
+[Download for Windows](https://github.com/tripalc/invex/releases/download/v1/invex-win.bat)
+
+[Download for Windows (Portable)](https://github.com/tripalc/invex/releases/download/v1/invex-portable.exe)
+
+[Download for Linux/Mac (.py)](https://github.com/tripalc/invex/releases/download/v1/invex.py)
