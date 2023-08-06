@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gituptools
+Version: 0.2
+Summary: Python setuptools helper for Gitlab pipelines.
+Author: Sol Courtney
+Author-email: sol.courtney@gmail.com
+License: GPL
+License-File: LICENSE
+
+# Gitup Tools
