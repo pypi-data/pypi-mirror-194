@@ -1,0 +1,16 @@
+Daug/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Daug/cogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Daug/cogs/authorization.py,sha256=En6kYEzxCxyKr1PnDC3KOEEM49PozsAsfOnG4UzYLcQ,1426
+Daug/cogs/channels.py,sha256=jyrGu2VSkgfgQ7MWauIO2gDDr1IfGuJf5pOTVwRqH2c,1694
+Daug/cogs/favorite.py,sha256=dF0ExhVPQaGu1E-zq_OJaZUGzD-4bCAtCKrxw0kaDRk,1074
+Daug/cogs/join.py,sha256=zTRogys-uiLc4xLKQ7BcbvBPnS9S5VcNB9UiCuqUbBU,1036
+Daug/cogs/leave.py,sha256=oDSjipG96RQ8lIFpGGEvnHWb5AP9-iYQpGgiNM4hotk,676
+Daug/cogs/thread.py,sha256=fVTasCZAYIjNAhTWxS90GQOM9cq9KQ9lCQ-jtXUWIA0,7126
+Daug/extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Daug/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Daug/utils/dpyexcept.py,sha256=yCrvNZXbXHXQTnmx9BFux5S-1X7H3bZwnhXSH80qLpI,515
+Daug/utils/embeds.py,sha256=e8ZYmukSkRGMNbYKeif0JlptylLrSYXpVOtI9nlHKYE,733
+Daug-2023.2.28.1.dist-info/METADATA,sha256=J-1WYqnnivX7bAWDcthTCUBoV3ou_Jo_RI8AzuVthnE,782
+Daug-2023.2.28.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Daug-2023.2.28.1.dist-info/top_level.txt,sha256=2mk3fhiSjGyrGmJC0PI6un7f5vSbP56cSQRBxG6sfkM,5
+Daug-2023.2.28.1.dist-info/RECORD,,
