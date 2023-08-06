@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bin/dataengtoolbox
+src/dataengtoolbox/VERSION
+src/dataengtoolbox/cli.py
+src/dataengtoolbox/settings.py
+src/dataengtoolbox/utils.py
+src/dataengtoolbox/version.py
+src/dataengtoolbox.egg-info/PKG-INFO
+src/dataengtoolbox.egg-info/SOURCES.txt
+src/dataengtoolbox.egg-info/dependency_links.txt
+src/dataengtoolbox.egg-info/requires.txt
+src/dataengtoolbox.egg-info/top_level.txt
