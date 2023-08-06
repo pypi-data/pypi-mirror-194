@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "python-10-40-package-manager-1"
+version = "0.1.0"
+description = ""
+authors = ["Krzysztof <programowanie.krzysiek@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_10_40_package_manager_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pendulum = "^2.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
