@@ -1,0 +1,6 @@
+numpy
+scipy
+statsmodels
+mosqito
+colorednoise
+clipdetect
