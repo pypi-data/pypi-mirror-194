@@ -1,0 +1,10 @@
+obspy
+pyyaml
+IPython
+dill
+pyatoa>=0.2.2
+
+[dev]
+pytest
+ipython
+ipdb
