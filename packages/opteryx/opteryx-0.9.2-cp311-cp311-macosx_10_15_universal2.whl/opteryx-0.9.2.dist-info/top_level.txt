@@ -1,0 +1,6 @@
+cbitarray
+cityhash
+cjoin
+clevenshtein
+csoundex
+opteryx
