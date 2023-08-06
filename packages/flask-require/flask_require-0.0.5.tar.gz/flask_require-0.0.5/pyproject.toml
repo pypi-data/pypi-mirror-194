@@ -1,0 +1,18 @@
+[project]
+authors = [{ name = "Ivar Jönsson", email = "ivajns-9@student.ltu.se" }]
+name = "flask_require"
+version = "0.0.5"
+description = "A simple Flask extension for requiring parameters in a request."
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = ["flask>=0.10.1"]
+
+
+[project.urls]
+repository = "https://github.com/ivario123/flask_require"
+source = "https://github.com/ivario123/flask_require"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
