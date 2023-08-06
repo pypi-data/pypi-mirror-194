@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.9.7
+------
+
+* Add sub argument to the apply command (#368)
