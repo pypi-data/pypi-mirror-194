@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+cloudflow/__init__.py
+cloudflow/cloudflow_model.py
+cloudflow/custom_class_mlflow.py
+cloudflow/init_logger.py
+cloudflow/prepare_env.py
+cloudflow.egg-info/PKG-INFO
+cloudflow.egg-info/SOURCES.txt
+cloudflow.egg-info/dependency_links.txt
+cloudflow.egg-info/not-zip-safe
+cloudflow.egg-info/requires.txt
+cloudflow.egg-info/top_level.txt
