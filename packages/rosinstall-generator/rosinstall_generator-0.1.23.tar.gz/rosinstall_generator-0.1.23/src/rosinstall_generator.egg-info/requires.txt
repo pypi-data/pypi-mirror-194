@@ -1,0 +1,10 @@
+catkin_pkg>=0.1.28
+PyYAML
+rosdistro>=0.7.3
+rospkg
+
+[test]
+pytest
+
+[test:python_version < "3.3"]
+mock
