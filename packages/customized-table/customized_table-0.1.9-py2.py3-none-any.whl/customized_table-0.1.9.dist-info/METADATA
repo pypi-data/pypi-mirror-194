@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: customized-table
+Version: 0.1.9
+Summary: Creates flexible tables in Jupyter Notebooks with lots of formatting options
+Home-page: https://github.com/jhagelback/customized_table
+Author: Johan Hagelbäck
+Author-email: johan.hagelback@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: termcolor
+
+Creates flexible tables in Jupyter Notebooks with lots of formatting options such as changing font, font color, cell background, number formatting and much more. Tables can also be saved to csv or Excel files, or generated from csv data files.
+
