@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.1.6
+------
+
+* Update dependency pydantic to v1.10.5 (#20)
