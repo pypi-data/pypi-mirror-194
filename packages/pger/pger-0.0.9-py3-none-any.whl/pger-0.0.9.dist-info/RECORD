@@ -1,0 +1,17 @@
+pger/__init__.py,sha256=Eeg_uDgDJJuyZRYyIysE3GxqVybfjSI7uG3uhrT3xo4,1386
+pger/__main__.py,sha256=2w3t8qzVwtkTHAe_DiAPziSThI2pGAhY_Uzs5aKa0VQ,61
+pger/const.py,sha256=yLq1pWboZMWgKrAN7AcoMrxxGD2sntuwWtffBPqrxfM,372
+pger/pypi.py,sha256=4eSUEmGpMEdAnO-B9bkoTW_D9JSgA8RpXPyPCp8h6tM,2758
+pger/templates/MANIFEST.in,sha256=PZDluxwORH1nYnzJqwUX7Qx91AuZmXQmSv7oUagooZQ,29
+pger/templates/README.md,sha256=b6zyr3JySc-yeCMZ9pU1XVkIjGgAAAFNxdxj1oBOWR4,184
+pger/templates/pyproject.toml,sha256=_myE82evgGOgiqM_-F2Nlq27xZm696Hz5oXFJfBSzJc,1062
+pger/templates/python-publish.yml,sha256=mDWPk8ZkSrMZVjM1ywSeaAay-c41GlVlDq0VhVeLx5M,1316
+pger/templates/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pger/templates/started-notify.yml,sha256=IGMZCtyBG5P3amxrDNP9mw2swjPe0tZmYj-Up12j0k8,414
+pger/templates/update-version.py,sha256=0ONdA52KQ3LglehPDDZkUH6TrauXJp9B7eLTskWTElA,523
+pger-0.0.9.dist-info/LICENSE,sha256=52zz-JZEhjWXQGs44IXIAmtN3bMUUxlm0Gdyu3UQDeg,1063
+pger-0.0.9.dist-info/METADATA,sha256=iRlWyIgwI5D2FciaT58GdAceoJduXCw6IT2lJBgBe28,2274
+pger-0.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pger-0.0.9.dist-info/entry_points.txt,sha256=qYNr7Fr1kjmYBAVQjDrbe-Y9W1UNCfZ0uQzh1CxrRk4,35
+pger-0.0.9.dist-info/top_level.txt,sha256=Az3xEChKZuFVaqa83rn7X7NjKZPrPR4wkjhi_iU87RA,5
+pger-0.0.9.dist-info/RECORD,,
