@@ -1,0 +1,196 @@
+Metadata-Version: 2.1
+Name: nsg-parts-search
+Version: 0.0.2
+Summary: NSG class for making parts searches in Octopart using the Nexar API v4
+Author: Antonio Arroyave
+Author-email: antonio.arroyave@nsg-engineering.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# NSG Parts Search
+<a href="https://nsg-engineering.com"><img src="https://lh6.googleusercontent.com/CWE0kETCdfJQd4YKOcCZTNCqPTNZxoDBXWLJsrp6-GkJXl-It7OUQ0wxhIHX4N5dHzM=w2400" align="left" width="100" hspace="10" vspace="6"></a>
+
+A class used for querying parts in Octopart using [Nexar API v4.0](https://nexar.com/api).
+
+The following class has all the needed methods required by NSG to create a query to [Octopart](https://octopart.com/).
+
+This package is maintained and used by [NSG](https://nsg-engineering.com/), please refer to the licensing before using.
+
+---
+
+## Table of content
+* [Installation](#Installation)
+* [Prerequisites](#Prerequisites)
+* [Usage](#Usage)
+* [Response](#Response)
+* [License](#License)
+
+---
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install nsg-parts-search.
+
+```bash
+pip install nsg-parts-search
+```
+
+## Prerequisites
+
+Use the application client ID and secret. Refer to the [NSG Documentation](https://github.com/NSG-Engineering/OctopartClient).
+
+Set environment variables *CLIENT_ID* and *CLIENT_SECRET*.
+
+## Usage
+
+General example to get a response from a list of parts search:
+```python
+import nsgsearch
+
+# set credentials
+clientId = os.environ['CLIENT_ID']
+clientSecret = os.environ['CLIENT_SECRET']
+
+# start the client
+search = NSG_OctopartSearch()
+search.setCredentials(clientId, clientSecret)
+search.startClient()
+
+# search for parts
+parts_list = []
+results = search.partsSearch(parts_list)
+
+print(results)
+
+```
+### Filtering
+You can filter your results like this:
+```python
+
+```
+
+## Response
+The response from the search is a dictionary containing all the requested part numbers as keys.
+
+Each key contains another dictionary with the keys **found** and **data** and have the following format:
+```python
+{
+  "PN#": {
+    "found" : True / False,
+    "data" : {...}
+  },
+  {...}
+}
+```
+
+
+The default query response has the following format:
+```Nginx
+part {
+      mpn
+      manufacturer {
+        name
+      }
+      shortDescription
+      specs {
+        attribute {
+          name
+          group
+        }
+        displayValue
+      }
+      octopartUrl
+      similarParts {
+        mpn
+        shortDescription
+        manufacturer {
+          name
+        }
+        octopartUrl
+        category {
+          name
+        }
+      }
+      companionProducts {
+        part {
+          mpn
+          shortDescription
+          manufacturer {
+            name
+          }
+          octopartUrl
+          category {
+            name
+          }
+        }
+      }
+      category {
+        name
+      }
+      bestDatasheet {
+        url
+      }
+      counts
+      medianPrice1000 {
+        price
+      }
+      sellers {
+        company {
+          name
+        }
+        country
+        offers {
+          sku
+          inventoryLevel
+          moq
+          prices {
+            quantity
+            price
+            currency
+          }
+          clickUrl
+          updated
+          factoryLeadDays
+        }
+        isRfq
+      }
+    }
+```
+
+You can change the query response by using the method changeQuery():
+```python
+
+newResponse = 
+'''
+query Search($mpn: String!) {
+    supSearchMpn(q: $mpn, limit: 1) {
+      results {
+        part {
+            mpn
+            shortDescription
+            manufacturer {
+              name
+            }
+        }
+      }
+    }
+}
+'''
+
+search.changeQuery(newResponse)
+
+```
+### API Part Reference
+https://octopart.com/api/v4/reference#part
+
+## License
+
+[GNU LGPL](https://github.com/NSG-Engineering/nsg-parts-search/blob/450fdf3b791683e2b901b6f52517b66c69193bf8/LICENSE)
+
