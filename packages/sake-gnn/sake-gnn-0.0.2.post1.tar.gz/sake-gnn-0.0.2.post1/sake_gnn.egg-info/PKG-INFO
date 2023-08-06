@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sake-gnn
+Version: 0.0.2.post1
+Summary: UNKNOWN
+Author: Yuanqing Wang
+Author-email: wangyq@wangyq.net
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sake
+Spatial Attention Kinetic Networks with E(n)-Equivariance
+
+
