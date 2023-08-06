@@ -1,0 +1,30 @@
+name: Pull request workflow
+run-name: ${{ github.actor }} is running the pull request workflow
+on:
+  pull_request:
+    branches:    
+      - main
+  workflow_dispatch:
+jobs:
+  format-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements_dev.txt
+          pip install -e .
+      - name: Check formatting
+        uses: psf/black@stable
+        with:
+          options: "--check --diff --color"
+          jupyter: true
+      - name: Test with pytest
+        run: |
+          pytest
