@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+mkdocs_revealjs/__init__.py
+mkdocs_revealjs/ci.py
+mkdocs_revealjs/exclude.py
+mkdocs_revealjs/plugin.py
+mkdocs_revealjs/util.py
+mkdocs_revealjs.egg-info/PKG-INFO
+mkdocs_revealjs.egg-info/SOURCES.txt
+mkdocs_revealjs.egg-info/dependency_links.txt
+mkdocs_revealjs.egg-info/entry_points.txt
+mkdocs_revealjs.egg-info/requires.txt
+mkdocs_revealjs.egg-info/top_level.txt
