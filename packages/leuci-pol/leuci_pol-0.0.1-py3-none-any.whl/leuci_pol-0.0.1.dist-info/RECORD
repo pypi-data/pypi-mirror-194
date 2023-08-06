@@ -1,0 +1,9 @@
+leuci_pol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+leuci_pol/interpolator.py,sha256=wQSBYLjipIJ14_q1WU1Y9nSZFSGtgEZZKIe59o_JXV0,49438
+leuci_pol/linear.py,sha256=EcgJTy3iQntghTcUbihSByPrAUCdJiW1GDFkovjkKN0,190
+leuci_pol/nearest.py,sha256=Nv5i2rc3M2t2mk-ZSEuosrDRO6zpD1CNCySHRdr6O0c,420
+leuci_pol-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+leuci_pol-0.0.1.dist-info/METADATA,sha256=o0Pqe174aJ1CvirKDkbamsYEYKwXmomOeEMqW_e28eQ,869
+leuci_pol-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+leuci_pol-0.0.1.dist-info/top_level.txt,sha256=3n6SnVSEbj-7e09yJk8Y-PwdWSp8fP4HHWY7W2ZEvFg,10
+leuci_pol-0.0.1.dist-info/RECORD,,
