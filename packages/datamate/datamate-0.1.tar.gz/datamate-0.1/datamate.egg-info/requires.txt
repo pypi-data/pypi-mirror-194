@@ -1,0 +1,10 @@
+pandas
+toolz
+numpy
+typing_extensions
+h5py>=3.6.0
+notebook
+ipywidgets
+tqdm
+matplotlib
+ruamel.yaml
