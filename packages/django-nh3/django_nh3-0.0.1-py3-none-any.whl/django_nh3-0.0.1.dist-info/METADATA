@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: django-nh3
+Version: 0.0.1
+Summary: Django integration with for nh3, Python binding to Ammonia HTML sanitizer Rust crate.
+Home-page: https://github.com/marksweb/django-nh3
+Author: Mark Walker
+Author-email: theshow@gmail.com
+License: MIT
+Project-URL: Changelog, https://github.com/marksweb/django-nf3/blob/main/CHANGELOG.rst
+Project-URL: Mastodon, https://fosstodon.org/@markwalker
+Project-URL: Twitter, https://twitter.com/markwalker_
+Keywords: Django
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Django (>=3.2)
+Requires-Dist: nh3
+
+==========
+django-nh3
+==========
+
+.. image:: https://img.shields.io/github/actions/workflow/status/marksweb/django-nh3/main.yml?branch=main&style=for-the-badge
+   :target: https://github.com/marksweb/django-nh3/actions?workflow=CI
+
+.. image:: https://img.shields.io/pypi/v/django-nh3.svg?style=for-the-badge
+   :target: https://pypi.org/project/django-nh3/
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge
+   :target: https://github.com/psf/black
+
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white&style=for-the-badge
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+
+Django integration with for nh3, Python binding to Ammonia HTML sanitizer Rust crate.
+
+`nh3 docs`_
+
+Requirements
+------------
+
+Python 3.7 to 3.11 supported.
+
+Django 3.2 to 4.2 supported.
+
+
+.. _nh3 docs: https://nh3.readthedocs.io/en/latest/?badge=latest
