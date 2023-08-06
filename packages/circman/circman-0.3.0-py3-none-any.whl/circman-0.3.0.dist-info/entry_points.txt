@@ -1,0 +1,3 @@
+[console_scripts]
+circman=circman.__main__:main
+
