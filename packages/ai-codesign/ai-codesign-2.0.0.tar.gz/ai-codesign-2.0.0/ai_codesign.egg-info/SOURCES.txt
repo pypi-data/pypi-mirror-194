@@ -1,0 +1,7 @@
+MANIFEST.in
+reporter.py
+setup.py
+ai_codesign.egg-info/PKG-INFO
+ai_codesign.egg-info/SOURCES.txt
+ai_codesign.egg-info/dependency_links.txt
+ai_codesign.egg-info/top_level.txt
