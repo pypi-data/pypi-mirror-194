@@ -1,0 +1,2 @@
+gdown
+onnxruntime-gpu==1.10
