@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: rtm_fast
+Version: 0.0.2
+Summary: A fast unification ds code package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Animesh <animesh.raj@tigeranalytics.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: astroid
+Requires-Dist: asttokens
+Requires-Dist: autopep8
+Requires-Dist: backcall
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: colorama
+Requires-Dist: debugpy
+Requires-Dist: decorator
+Requires-Dist: dill
+Requires-Dist: entrypoints
+Requires-Dist: et-xmlfile
+Requires-Dist: executing
+Requires-Dist: idna
+Requires-Dist: ipykernel
+Requires-Dist: ipython
+Requires-Dist: isort
+Requires-Dist: jedi
+Requires-Dist: joblib
+Requires-Dist: jupyter-client
+Requires-Dist: jupyter-core
+Requires-Dist: lazy-object-proxy
+Requires-Dist: matplotlib-inline
+Requires-Dist: mccabe
+Requires-Dist: nest-asyncio
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: parso
+Requires-Dist: patsy
+Requires-Dist: pickleshare
+Requires-Dist: platformdirs
+Requires-Dist: prompt-toolkit
+Requires-Dist: psutil
+Requires-Dist: pure-eval
+Requires-Dist: pycodestyle
+Requires-Dist: pygments
+Requires-Dist: pylint
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: pywin32
+Requires-Dist: pyzmq
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: sklearn
+Requires-Dist: stack-data
+Requires-Dist: statsmodels
+Requires-Dist: threadpoolctl
+Requires-Dist: tomli
+Requires-Dist: tomlkit
+Requires-Dist: tornado
+Requires-Dist: traitlets
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: wcwidth
+Requires-Dist: wrapt
+Description-Content-Type: text/markdown
+
+# RTM FAST Package
+
+This is a RTM FAST package.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install rtm-fast.
+
+```bash
+pip install rtm-fast==0.0.2
+```
+
+## Usage
+
+```python
+import rtm-fast
+
+from rtm_fast_unification.ds.tool_objects.tool_selection import get_tool_object
+```
+
+## Contributing
+
+Before updating the package, please run these command in Windows cmd.
+```bash
+py -m pip install --upgrade pip
+py -m pip install --upgrade build
+```
+Now to Update the package, please follow these steps.
+
+1. Please change the ds code and update the dependency array in pyproject.toml file if required.
+2. Build the project in the directory where your pyproject.toml file is present using 
+```bash
+py -m build
+```
+3. Now to publish the package to PyPi please use the below command
+```bash
+py -m pip install --upgrade twine
+py -m twine upload --repository testpypi dist/*
+```
+The upload command will ask for username and password. Provide it and your package will be published.
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
