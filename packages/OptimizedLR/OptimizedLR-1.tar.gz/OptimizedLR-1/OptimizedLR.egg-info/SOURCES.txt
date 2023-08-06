@@ -1,0 +1,9 @@
+README.md
+setup.py
+OptimizedLR.egg-info/PKG-INFO
+OptimizedLR.egg-info/SOURCES.txt
+OptimizedLR.egg-info/dependency_links.txt
+OptimizedLR.egg-info/requires.txt
+OptimizedLR.egg-info/top_level.txt
+optimal_LR/__init__.py
+optimal_LR/optimized_lr.py
