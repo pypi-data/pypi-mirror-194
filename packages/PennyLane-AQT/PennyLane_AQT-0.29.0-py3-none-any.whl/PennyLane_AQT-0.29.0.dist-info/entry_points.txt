@@ -1,0 +1,4 @@
+[pennylane.plugins]
+aqt.noisy_sim = pennylane_aqt:AQTNoisySimulatorDevice
+aqt.sim = pennylane_aqt:AQTSimulatorDevice
+
