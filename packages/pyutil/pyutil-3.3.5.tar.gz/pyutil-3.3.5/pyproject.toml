@@ -1,0 +1,57 @@
+[project]
+name = "pyutil"
+version = "3.3.4"
+authors = [
+  { name = "tpltnt", email = "tpltnt+pyutil@nkawtg.net" },
+]
+description = "a collection of utilities for Python programmers"
+readme = "README.rst"
+license = { text = "GPL-2.0-or-later" }
+requires-python = ">=2.7"
+keywords = ["utilities", "twisted"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "License :: DFSG approved",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tpltnt/pyutil"
+"Bug Tracker" = "https://github.com/tpltnt/pyutil/issues"
+
+[project.optional-dependencies]
+jsonutil = ['simplejson >= 2.1.0']
+randcookie = ['zbase32 >= 1.0']
+
+[project.entry-points.'console_scripts']
+randcookie = 'pyutil.scripts.randcookie:main'
+tailx = 'pyutil.scripts.tailx:main'
+lines = 'pyutil.scripts.lines:main'
+randfile = 'pyutil.scripts.randfile:main'
+unsort = 'pyutil.scripts.unsort:main'
+verinfo = 'pyutil.scripts.verinfo:main'
+try_decoding = 'pyutil.scripts.try_decoding:main'
+passphrase = 'pyutil.scripts.passphrase:main'
+
+[build-system]
+requires = ["setuptools", "versioneer[toml]"]
+build-backend = "setuptools.build_meta"
