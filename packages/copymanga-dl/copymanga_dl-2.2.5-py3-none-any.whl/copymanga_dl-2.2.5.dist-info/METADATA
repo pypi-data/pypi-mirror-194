@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: copymanga-dl
+Version: 2.2.5
+Summary: Copymanga Downloader
+Home-page: https://github.com/misaka10843/copymanga-downloader
+Author: misaka10843
+Author-email: misaka10843@outlook.jp
+License: GNU GENERAL PUBLIC LICENSE
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: colorama
+Requires-Dist: idna
+Requires-Dist: PySocks
+Requires-Dist: requests
+Requires-Dist: retrying
+Requires-Dist: six
+Requires-Dist: tqdm
+Requires-Dist: urllib3
+Requires-Dist: typing-extensions
+Requires-Dist: rich
+
+使用Python编译exe/bash来下载copymanga 拷贝漫画中的漫画，支持批量+选话下载和获取您收藏的漫画并下载！
