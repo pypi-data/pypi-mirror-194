@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/Karol_vann/__init__.py
+src/Karol_vann.egg-info/PKG-INFO
+src/Karol_vann.egg-info/SOURCES.txt
+src/Karol_vann.egg-info/dependency_links.txt
+src/Karol_vann.egg-info/top_level.txt
