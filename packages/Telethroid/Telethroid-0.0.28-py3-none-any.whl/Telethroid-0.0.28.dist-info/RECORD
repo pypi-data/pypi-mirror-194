@@ -1,0 +1,14 @@
+Telethroid/__init__.py,sha256=2VG6ZHbyTEZyRxB6Z42XY84Pa-sKRuP85tMAhqO3HNk,463
+Telethroid/client/__init__.py,sha256=33H3RaCJ5PR5gEecaIEY3dO95mfpf0TWtt7QXXyNASc,41
+Telethroid/client/telethroid.py,sha256=vob5BJ0fGHtE3DLrgPMFwfaJ7D4Vjb6tgQiaENlSb4k,3772
+Telethroid/filters/__init__.py,sha256=7dDfRzVpZ9UG-dSMPzqYg8XMIyqG8a_L4u4ioQ1Rk4M,29
+Telethroid/filters/filters.py,sha256=_MqRxBgaHhILnBY_PyFAOO2SiIB7U8scBcVMUk01LJ4,7265
+Telethroid/types/__init__.py,sha256=Uh-Zcbm0SHZR6WDEzFi4pD2ozrOW08_S1rzimF1bGxI,136
+Telethroid/types/inlinebuttons.py,sha256=2laTYaJmD-Syw90VloMrQ5aDhnMmNqFIWXPVANZyYSc,950
+Telethroid/types/message.py,sha256=IvY7IIyFKiwYhDw-S7XdJrVfKHw_SZ8CcQxtf0GMzzw,1215
+Telethroid/types/reply_markup.py,sha256=j1YYVw5J5_Ma2oJAbEDUWBHBC-8O46CMqCuWDLKHfrc,844
+Telethroid-0.0.28.dist-info/COPYING,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+Telethroid-0.0.28.dist-info/METADATA,sha256=tYy2_hGRM-piaoch00bUmXQ_Cf9fBojaA7z0FWtaexc,1578
+Telethroid-0.0.28.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Telethroid-0.0.28.dist-info/top_level.txt,sha256=pKCXOaOrAC1LePrjG3tpVTa72fONTDMK6cgEhyUFeZc,11
+Telethroid-0.0.28.dist-info/RECORD,,
