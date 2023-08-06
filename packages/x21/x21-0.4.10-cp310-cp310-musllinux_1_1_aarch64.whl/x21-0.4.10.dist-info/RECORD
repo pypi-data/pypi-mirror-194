@@ -1,0 +1,9 @@
+_x21.cpython-310-aarch64-linux-gnu.so,sha256=YBTft4eonCDT2ka69A29gPDsTO-_ezluLspT428zcYE,271377
+x21/__init__.py,sha256=wpRXd0ZeEfQ_9oTMIatEwHJp73bVHpyloMwPT6t6P88,243
+x21/_main.py,sha256=KYedPk8QQxNvUvigS4iF6SUqJx_ijkXkOPSFnUyItAU,615
+x21-0.4.10.dist-info/top_level.txt,sha256=c4bSgp9b3BZjBnKAR22xrvJp4H_s8-9Q71Vkd25ix8U,9
+x21-0.4.10.dist-info/RECORD,,
+x21-0.4.10.dist-info/WHEEL,sha256=jM4ed5oayxMA9x_d9Z4yFMNnYMBbJc52pTekmWOnG-s,114
+x21-0.4.10.dist-info/METADATA,sha256=n_gFmUbfu80XxJ-HdicW778GOVtXzNhGqGLsLScJRNM,118
+x21.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+x21.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
