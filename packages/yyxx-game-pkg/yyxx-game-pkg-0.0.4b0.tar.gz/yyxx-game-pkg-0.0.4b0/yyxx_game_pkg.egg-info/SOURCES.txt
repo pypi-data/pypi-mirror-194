@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+test/__init__.py
+yyxx_game_pkg/__init__.py
+yyxx_game_pkg.egg-info/PKG-INFO
+yyxx_game_pkg.egg-info/SOURCES.txt
+yyxx_game_pkg.egg-info/dependency_links.txt
+yyxx_game_pkg.egg-info/requires.txt
+yyxx_game_pkg.egg-info/top_level.txt
+yyxx_game_pkg/xtrace/__init__.py
+yyxx_game_pkg/xtrace/helper.py
