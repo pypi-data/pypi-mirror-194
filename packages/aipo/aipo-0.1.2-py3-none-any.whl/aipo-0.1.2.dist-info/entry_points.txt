@@ -1,0 +1,2 @@
+[console_scripts]
+celery = aipo.__main__:main
