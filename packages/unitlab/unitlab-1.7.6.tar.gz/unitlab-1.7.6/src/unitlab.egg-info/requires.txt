@@ -1,0 +1,4 @@
+aiohttp
+requests
+prettytable
+tqdm
