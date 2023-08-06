@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: westat
+Version: 0.1.13
+Summary: A package for stat and data miner,calculate woe and iv,and plot woe ,plot iv,calculate ks ,plot ks and auc,plot roc
+Project-URL: homepage, http://www.pyminer.com
+Project-URL: documentation, https://gitee.com/py2cn/pyminer/wikis
+Project-URL: repository, https://gitee.com/py2cn/pyminer
+Author-email: statfit <statfit@hotmail.com>
+License-File: LICENSE
+Keywords: auc,iv,ks,psi,roc,stat,woe
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+![westat logo](https://github.com/stat-fit/westat/blob/main/static/logo.jpg)
+
+## Author: statfit@hotmail.com
+
+### Description 
+Westat is a part of pyminer project. 
+
+A package for stat and data miner,calculate woe and iv,and plot woe ,plot iv,calculate ks ,plot ks and auc,plot roc
+
+
+This is a simple stat package. You can see more from 
+[GitHub](https://github.com/stat-fit/westat).
+Or 
+[PyPI](https://pypi.org/project/westat/).
+
+[pyminer](http://www.pyminer.com).
+
+
+#### install
+
+```bash
+pip install westat
+```
+
+#### version
+```bash
+import westat
+westat.version
+```
+
+### AUC and KS
+<p></p>
+
+<img src="static/auc_ks.png" width = "1024" height = "500" alt="auc_ks" align=center />
+
+<p></p>
+
+### decision tree cut bins
+<p></p>
+<img src="https://github.com/stat-fit/westat/blob/main/static/tree_iv.png" width = "1024" height = "500" alt="tree_iv" align=center />
+<img src="static/view_woe_iv.png" width = "1024" height = "500" alt="view_woe_iv" align=center />
+
+<p></p>
+
+
+### qcut bins
+<p></p>
+
+<img src="https://github.com/stat-fit/westat/blob/main/static/qcut_woe_iv.png" width = "1024" height = "500" alt="qcut_woe_iv" align=center />
+
+<p></p>
+
+### custom bins
+<p></p>
+
+<img src="https://github.com/stat-fit/westat/blob/main/static/cut_woe_iv.png" width = "1024" height = "500" alt="cut_woe_iv" align=center />
+
+<p></p>
+
+### Lift
+<p></p>
+
+<img src="https://github.com/stat-fit/westat/blob/main/static/get_lift.png" width = "1024" height = "500" alt="get_lift" align=center />
+
+<p></p>
+
+### PSI
+<p></p>
+
+<img src="https://github.com/stat-fit/westat/blob/main/static/get_psi.png" width = "1024" height = "500" alt="get_psi" align=center />
+
+<p></p>
+
+### scorecard
+<p></p>
+
+<img src="https://github.com/stat-fit/westat/blob/main/static/get_scorecard.png" width = "1024" height = "500" alt="get_scorecard" align=center />
+
+<p></p>
+
+### predict
+<p></p>
+
+<img src="https://github.com/stat-fit/westat/blob/main/static/predict_score.png" width = "1024" height = "500" alt="predict_score" align=center />
+
+<p></p>
