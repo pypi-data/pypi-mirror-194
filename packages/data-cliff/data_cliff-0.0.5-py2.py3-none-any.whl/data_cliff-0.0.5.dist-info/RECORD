@@ -1,0 +1,11 @@
+data_cliff/__init__.py,sha256=ryQIs6KODwfoWDXicAv6o5nTVOMMUvEzeS1_OGn59v0,137
+data_cliff/arg_parse.py,sha256=kt2Kpi828vq6NnhW_plgTUQsnpneVZs2TJcSfme0Uys,1670
+data_cliff/cli.py,sha256=xcVOtre0kUXfPzW6Wk3p-k2fxBZSkkNWovx6Oa3dtl0,484
+data_cliff/data_cliff.py,sha256=dqaZLl9zr4ZqLdoABfXfahDSZzQRU3E337xk-1KR67E,736
+data_cliff-0.0.5.dist-info/AUTHORS.rst,sha256=WknmUzc7RUXmt9Yyp_uV3N0mGDMDU03oRN2wwMIYYkY,165
+data_cliff-0.0.5.dist-info/LICENSE,sha256=jJY_KI5d_P1LeQUPCcXVjnGtpxkWMHFbsAc1T_YkPlg,583
+data_cliff-0.0.5.dist-info/METADATA,sha256=Sxy6-eBTk3JLPYmul3WRG3TVEs9AMZmiEWfSN_vmwtM,2508
+data_cliff-0.0.5.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+data_cliff-0.0.5.dist-info/entry_points.txt,sha256=VCHmVl5IGiqBLGpwgWxjwuI6Pi1IZKMnO9XPzVS3J84,46
+data_cliff-0.0.5.dist-info/top_level.txt,sha256=TyhkIuF21dGUCjHh9-fSB7VyjkuobmlyIUqAjYpj6qw,11
+data_cliff-0.0.5.dist-info/RECORD,,
