@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Artifice"
+version = "0.1.0"
+authors = [
+  { name="William Bidle", email="wkb15@scarletmail.rutgers.edu" },
+  { name="Ilana Zane", email="ilanazane@comcast.net" },
+]
+
+maintainers = [
+     { name="William Bidle", email="wkb15@scarletmail.rutgers.edu" },
+     { name="Ilana Zane", email="ilanazane@comcast.net" },
+]
+
+description = "A homemade machine learning platform modeled after TensorFlow"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/WilliamBidle/Artifice"
+"Bug Tracker" = "https://github.com/WilliamBidle/Artifice/issues"
