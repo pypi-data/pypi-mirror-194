@@ -1,0 +1,3 @@
+[console_scripts]
+panda-model-download = panda_model.download:run
+
