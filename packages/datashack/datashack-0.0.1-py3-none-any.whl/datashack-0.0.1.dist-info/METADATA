@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: datashack
+Version: 0.0.1
+Summary: Datashack
+Author: Datashack
+Author-email: contact@datashack.dev
+Requires-Python: >=3.8
+Requires-Dist: kinesis-python
+Requires-Dist: jsonschema (==4.17.3)
+Requires-Dist: moto (==4.1.0)
+Requires-Dist: dacite
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: inquirer
+Requires-Dist: pyyaml
+Requires-Dist: dataclasses
+Requires-Dist: SQLAlchemy
+Requires-Dist: fastapi
+Requires-Dist: cdktf
+Requires-Dist: cdktf-cdktf-provider-aws
+Requires-Dist: cryptography (==38.0.4)
+Provides-Extra: tests
+Requires-Dist: pytest-runner ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: requests-mock ; extra == 'tests'
+Requires-Dist: mock ; extra == 'tests'
+Requires-Dist: moto (==4.1.0) ; extra == 'tests'
+Requires-Dist: boto3 (==1.26.52) ; extra == 'tests'
+Requires-Dist: freezegun ; extra == 'tests'
+Requires-Dist: aioresponses ; extra == 'tests'
+
