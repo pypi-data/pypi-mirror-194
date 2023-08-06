@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: la-nlp
+Version: 0.5.0
+Summary: NLP tools for learning analytics at the University of British Columbia.
+Author-email: William Strausser <william.e.strausser@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.0
+License-File: LICENSE
