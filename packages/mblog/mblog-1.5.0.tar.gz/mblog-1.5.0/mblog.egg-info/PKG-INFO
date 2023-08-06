@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mblog
+Version: 1.5.0
+Summary: mblog: a minimal markdown blog
+Home-page: https://github.com/guilt/mblog
+Author: Karthik Kumar Viswanathan
+Author-email: karthikkumar@gmail.com
+License: MIT
+Keywords: blog markdown flask minimal mblog
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+mblog/README.md
