@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gptshell/GPTshell.py
+gptshell/__init__.py
+gptshell/lazycmd.py
+lazy_commands.egg-info/PKG-INFO
+lazy_commands.egg-info/SOURCES.txt
+lazy_commands.egg-info/dependency_links.txt
+lazy_commands.egg-info/requires.txt
+lazy_commands.egg-info/top_level.txt
