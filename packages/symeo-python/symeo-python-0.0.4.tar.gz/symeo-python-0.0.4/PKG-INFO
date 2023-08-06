@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: symeo-python
+Version: 0.0.4
+Summary: Symeo python SDK with embedded CLI for conf as code
+Home-page: https://github.com/symeo-io/symeo-python
+Author: Symeo.io
+Author-email: support@symeo.io
+License: Apache-2.0 license
