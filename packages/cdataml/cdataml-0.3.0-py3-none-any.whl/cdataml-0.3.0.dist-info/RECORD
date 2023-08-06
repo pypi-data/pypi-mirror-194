@@ -1,0 +1,15 @@
+coordinates/__init__.py,sha256=Ldk_cfayERMdzw5PVrFn16gk3fGr0e_BeqqXEbWRkDY,9843
+coordinates/__main__.py,sha256=sIBE_Rt_C3ziWyapWJrf5KfO6TNnWRIVEHoOKBf28-8,976
+coordinates/lesion_score_key.tif,sha256=4aMc5yvRW-j8-pVzMnu_0lunupOhlpEcTrB9qa_ZXwU,9371224
+fitscores/__init__.py,sha256=7Jf88ZxKjc8tBOJ1TczhciXXWCjd_8bg7wsx5xLAh0I,813
+fitscores/__main__.py,sha256=Fu9XCUnFoCmd5E7gFX81HfUPjpi6WMA1TBZ3gqzi2Ww,858
+generate/__init__.py,sha256=XzZfrtAosBZiplp38WUFYytC4WIuN1KRzLBwI9-cBv4,3648
+generate/__main__.py,sha256=FYSGn8Zjivu5yGf5LpFTbLpFW_sCCPcS6JdL3_33-WI,1080
+query/__init__.py,sha256=clvz98yD4cb6lu98qF00K4vFJ2Ki9PAlANrTlOEONlQ,5871
+query/__main__.py,sha256=IEd6b6IdZAlVGvcS7f3Bp4r5WGKz6adP0ZoO9q_jsSo,955
+query/lesion_score_key.tif,sha256=4aMc5yvRW-j8-pVzMnu_0lunupOhlpEcTrB9qa_ZXwU,9371224
+cdataml-0.3.0.dist-info/LICENSE,sha256=n8s2n9a6KZHzyIrogwYktjuJQT8VmO-OuwYV1m5LUvo,1072
+cdataml-0.3.0.dist-info/METADATA,sha256=5y-w0Y4r1nI6lo68_JS78T-aYOes0mceMhk-jXoFlWY,768
+cdataml-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cdataml-0.3.0.dist-info/top_level.txt,sha256=l7nBrpZC4-ZeXQl_eI1sJ_gK3yChXnSzhEWjTpV5Th8,37
+cdataml-0.3.0.dist-info/RECORD,,
