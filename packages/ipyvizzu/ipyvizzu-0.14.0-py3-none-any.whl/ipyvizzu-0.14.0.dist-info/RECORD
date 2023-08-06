@@ -1,0 +1,15 @@
+ipyvizzu/__init__.py,sha256=MhW0_gFBRsUIZJsKjOjh_0CzaAfTkMeebvadz81Iijk,900
+ipyvizzu/animation.py,sha256=QuHuDCJ-LNfNkAlZR1pmpxfLKVZOCbt6C0iwubw0m0g,16522
+ipyvizzu/chart.py,sha256=fE5ZCfSHPfS9ili4OTPge2giD-ZyrWvV4Ey2h4FMAaw,9036
+ipyvizzu/event.py,sha256=r3d51b5Uu-g1FRkioOAS1MBbATO0Ed1zHl2yC5XKSk0,1233
+ipyvizzu/json.py,sha256=grsdy7rfbL4D1OXLlxp5torbJ7jl00TE3vG51yjIwgM,2270
+ipyvizzu/method.py,sha256=0lsXAjGpbSs5PeBbsj9rwdJ3YD-RNtR8oLR4Tl7AimY,4531
+ipyvizzu/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipyvizzu/schema.py,sha256=u-NaeoNtPRvOlmz0BjbXQSzkt-3QK7QUAGr-oc-jlnY,1205
+ipyvizzu/template.py,sha256=JX7flY_CWmeAkhxWtXxxdGPTmP4Ussut_2yKoLT9Pts,2352
+ipyvizzu/templates/ipyvizzu.js,sha256=7lSwafMkS9FIhsjum6XWFvgqQbeML7mz-W04BEgtH3w,4414
+ipyvizzu-0.14.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ipyvizzu-0.14.0.dist-info/METADATA,sha256=vE7X8fi_VCf9WHOo5U4isUULxqNqgAHRjaSXSnMhCXQ,7015
+ipyvizzu-0.14.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ipyvizzu-0.14.0.dist-info/top_level.txt,sha256=nrHN2s5qXYV9C6-L51PoraUgC7alTNeMAR1K8gsh2OE,9
+ipyvizzu-0.14.0.dist-info/RECORD,,
