@@ -1,0 +1,7 @@
+README.md
+kidwai.py
+setup.py
+Kidwai.egg-info/PKG-INFO
+Kidwai.egg-info/SOURCES.txt
+Kidwai.egg-info/dependency_links.txt
+Kidwai.egg-info/top_level.txt
