@@ -1,0 +1,3 @@
+[console_scripts]
+kon=konbini.cli.kon:kon
+
