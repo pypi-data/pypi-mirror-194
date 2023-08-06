@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: hmms
+Version: 0.2.1
+Summary: Efficient discrete and continuous-time hidden Markov model library able to handle hundreds of hidden states
+Home-page: https://github.com/lopatovsky/CT-HMM
+Author: Lukas Lopatovsky
+Author-email: lopatovsky@gmail.com
+License: Public Domain
+Keywords: Hidden Markov Model,Continuous-time Hidden Markov Model,HMM,CT-HMM,DT-HMM
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+
+UNKNOWN
+
