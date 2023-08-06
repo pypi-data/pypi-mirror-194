@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/streamnet/__init__.py
+src/streamnet/io.py
+src/streamnet/node.py
+src/streamnet/streamnet.py
+src/streamnet/utils.py
+src/streamnet.egg-info/PKG-INFO
+src/streamnet.egg-info/SOURCES.txt
+src/streamnet.egg-info/dependency_links.txt
+src/streamnet.egg-info/requires.txt
+src/streamnet.egg-info/top_level.txt
