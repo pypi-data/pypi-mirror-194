@@ -1,0 +1,13 @@
+clrc/__init__.py,sha256=NjT5iaQ9Pj5tj_Kxa6hFlKqN3YqBuxqfVZMBZuBG590,83
+clrc/lib.py,sha256=n79uQ_pHqZN095n6LfTlnUQhO8lAUtNDG0vNCQVoiis,1132
+clrc/exceptions/__init__.py,sha256=znLYDSz8sx1J8-q2PHh4jmeRUy5Yutg-qwFJdUwfwqk,62
+clrc/exceptions/invalid_printer_exception.py,sha256=mJ1AX4HwqK68oqrwhcVOSI2efcmU0nf4J8yenOhBX-w,123
+clrc/printers/__init__.py,sha256=cYVikpHmMFxMwb04Fh0G9GY6iJRI4qD7_OFfidB9gNc,139
+clrc/printers/abstract_printer.py,sha256=qjU53AHQQA_ZNVxkhpURWeYDtqjrMmwzxY3VuUOBsPA,368
+clrc/printers/colorama_stdout_printer.py,sha256=FDlp5rpD9alfHDsqXVKPHLWc-d9wr1eruw2vrHX7VUA,655
+clrc/printers/loguru_printer.py,sha256=EhEBJmjaHPaj83fkGaCPFy6d00kzpxb5TX_2gi_nL9k,527
+clrc-0.0.6.dist-info/LICENCE.md,sha256=9nS5941GvXSPI4bO16oT4beRYhRc5Xmtns8MSMmKSLg,1074
+clrc-0.0.6.dist-info/METADATA,sha256=zLm34tzRT7WmTrFQwY_7pUdcjj8WjfYvBawQXa5R8GE,1545
+clrc-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+clrc-0.0.6.dist-info/top_level.txt,sha256=OF89F0ZyjN02sjbQkJF4k8_czRfuvlmpUMJfhloDGVg,5
+clrc-0.0.6.dist-info/RECORD,,
