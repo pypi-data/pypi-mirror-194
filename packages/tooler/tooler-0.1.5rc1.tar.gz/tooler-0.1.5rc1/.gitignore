@@ -1,0 +1,6 @@
+build/
+dist/
+tooler.egg-info/
+__pycache__
+ve/
+.envrc
