@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+src/awModelUpload/__init__.py
+src/awModelUpload/awModelUpload.py
+src/awModelUpload.egg-info/PKG-INFO
+src/awModelUpload.egg-info/SOURCES.txt
+src/awModelUpload.egg-info/dependency_links.txt
+src/awModelUpload.egg-info/requires.txt
+src/awModelUpload.egg-info/top_level.txt
