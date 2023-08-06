@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: mds-investment
+Version: 6.0.23
+Summary: Tryton module to add investment items.
+Home-page: https://www.m-ds.de/
+Author: martin-data services
+Author-email: service@m-ds.de
+License: GPL-3
+Download-URL: https://scmdev.m-ds.de/Tryton/Extra/investment
+Keywords: tryton investment shares commodities
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Natural Language :: German
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: html2text
+Requires-Dist: requests (>=2.26)
+Requires-Dist: trytond (<6.1,>=6.0)
+Requires-Dist: trytond-company (<6.1,>=6.0)
+Requires-Dist: trytond-currency (<6.1,>=6.0)
+Requires-Dist: trytond-product (<6.1,>=6.0)
+
+mds-investment
+==============
+Tryton module to add investment items.
+
+Install
+=======
+
+pip install mds-investment
+
+Requires
+========
+- Tryton 6.0
+
+How to
+======
+
+Store values such as stocks, funds and commodities in Tryton.
+Watch the performance. The Tryton module periodically loads
+quotes of values from one or more price sources.
+You can define the course sources yourself.
+
+Changes
+=======
+
+*6.0.23 - 21.01.2023*
+
+- updt: online-source optimized for external extension
+
+*6.0.22 - 10.01.2023*
+
+- updt: optimze rate, remove caching
+
+*6.0.21 - 08.01.2023*
+
+- add: caching for percentual changes
+
+*6.0.20 - 07.01.2023*
+
+- updt: asset - percent-values optimize for speed
+
+*6.0.19 - 05.01.2023*
+
+- updt: rate - optimize for speed
+
+*6.0.18 - 04.01.2023*
+
+- add: units to lists
+- updt: online-sources
+
+*6.0.17 - 19.12.2022*
+
+- add: import wizard
+
+*6.0.16 - 18.12.2022*
+
+- add: onlinesource - sorting, sources
+
+*6.0.15 - 16.12.2022*
+
+- fix: recoursion
+- add: enable after-update actions
+
+*6.0.14 - 09.12.2022*
+
+- updt: translated symbol of asset-currency
+
+*6.0.13 - 06.12.2022*
+
+- updt: asset-form - units for percent-values, asset-list - day-negative in red-color
+
+*6.0.12 - 05.12.2022*
+
+- import-script - add field-delimter to param-list
+
+*6.0.11 - 03.12.2022*
+
+- add: tabs for asset-list, new icons, queries optimized
+
+*6.0.10 - 01.12.2022*
+
+- updt: optimized asset-list, unit as symbol
+
+*6.0.9 - 30.11.2022*
+
+- add: script to import historical rates
+
+*6.0.8 - 29.11.2022*
+
+- add: online-source as list to allow multiple sources
+       for asset
+
+*6.0.7 - 28.11.2022*
+
+- fix: add diagram-interpolate
+- fix: corrected nextupdate
+
+*6.0.6 - 26.11.2022*
+
+- add: diagram-display
+
+*6.0.5 - 25.11.2022*
+
+- add: sorter for name/nsin/isin/symbol
+- add: columns percentage by day/month/3month/6month/12month
+- fix: online-updater
+
+*6.0.4 - 25.11.2022*
+
+- add: assets - colors for percentual success/loss
+- updt: optimize timestamp for next online-update
+
+*6.0.3 - 23.11.2022*
+
+- fix: bug in searcher
+- add: online-sources
+
+*6.0.2 - 23.11.2022*
+
+- asset: add field 'date', optimized 'rec_name'
+
+*6.0.1 - 22.11.2022*
+
+- works
+
+*6.0.0 - 09.11.2022*
+
+- init
+
+
