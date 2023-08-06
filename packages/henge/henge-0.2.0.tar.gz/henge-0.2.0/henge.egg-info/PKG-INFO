@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: henge
+Version: 0.2.0
+Summary: Storage and retrieval of object-derived, decomposable recursive unique identifiers.
+Home-page: https://databio.org
+Author: Nathan Sheffield
+Author-email: nathan@code.databio.org
+License: BSD2
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+[![Build Status](https://travis-ci.com/databio/henge.svg?branch=master)](https://travis-ci.com/databio/henge)
+
+# Henge 
+
+Henge is a Python package that builds backends for generic decomposable recursive unique identifiers (or, *DRUIDs*). It is intended to be used as a building block for sequence collections (see the [seqcol package](https://github.com/databio/seqcol)), and also for other data types that need content-derived identifiers.
+
+Documentation at [http://henge.databio.org](http://henge.databio.org).
