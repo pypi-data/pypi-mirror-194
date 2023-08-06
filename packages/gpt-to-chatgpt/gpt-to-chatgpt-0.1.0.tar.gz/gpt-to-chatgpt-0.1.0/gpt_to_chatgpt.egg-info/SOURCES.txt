@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gpt_to_chatgpt.egg-info/PKG-INFO
+gpt_to_chatgpt.egg-info/SOURCES.txt
+gpt_to_chatgpt.egg-info/dependency_links.txt
+gpt_to_chatgpt.egg-info/top_level.txt
+src/main.py
+src/test.py

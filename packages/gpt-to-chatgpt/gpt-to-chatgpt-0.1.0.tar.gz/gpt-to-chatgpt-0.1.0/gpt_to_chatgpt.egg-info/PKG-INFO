@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: gpt-to-chatgpt
+Version: 0.1.0
+Summary: Convert GPT Completion style message to a ChatGPT call
+Home-page: https://github.com/bramses/gpt-to-chatgpt-py
+Author: Bram Adams
+Author-email: bram+support@bramadams.dev
+License: MIT
+License-File: LICENSE
