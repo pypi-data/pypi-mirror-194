@@ -1,0 +1,14 @@
+is_human_detected.py,sha256=qtKcyiSsn-VTnGmjuTV5rdDfxCkQBiLQpcuHm0EOcco,672
+light_min_max.py,sha256=RSUQu_RhJz3IXj5z-kwsxqYm7l61rzPgqRgcACWG9vo,2226
+setup.py,sha256=VoRyY9amhUCM3npwDJv6JjTPoqQH8PeHkNqFIyVyVq8,117
+fmdt/__init__.py,sha256=BYsG2-aeqhuQl2j0Me3kpJPxjtmxRG-ak0GqXRwKAlI,371
+fmdt/__test__.py,sha256=FXbpPO1x5EatXgegxcJLGb1iUpWMCz9xuSvOWc0zr8A,1919
+fmdt/api.py,sha256=00nb61Z65f5IGyJuJoX4_3TBHxE7NbsNR4Wd6nZ4tzU,4892
+fmdt/args.py,sha256=Co7D2A6DaREoTf9vdYxVKQQ0pc5d_09dMd2-hb8TFFs,10873
+fmdt/core.py,sha256=mXuNywaRkV7kP-eJBseTzZVoMw63bqGNPtDsLNc4Mjo,11442
+fmdt/truth.py,sha256=31gOklb_ws__0MoG9sKVknqMpBk7dVXKIFsdI-L0w4w,10016
+fmdt/utils.py,sha256=KJ6VLU0HJtfzOljDiWNIM4CKycVJzj8qlYQKOIqzsHg,7058
+fmdt_python-0.0.17.dist-info/METADATA,sha256=ddV0gm1244FQIYm0enNDBnoY34y4DtYNOgT85jGPDLs,1439
+fmdt_python-0.0.17.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+fmdt_python-0.0.17.dist-info/licenses/LICENSE,sha256=7oPhtg5rNNa1IVBDV-A7WY-TVhhBIwuaT4dKmd9sqMY,1068
+fmdt_python-0.0.17.dist-info/RECORD,,
