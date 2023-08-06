@@ -1,0 +1,8 @@
+README.rst
+setup.py
+peanut_sh/__init__.py
+peanut_sh/daemon.py
+peanut_sh.egg-info/PKG-INFO
+peanut_sh.egg-info/SOURCES.txt
+peanut_sh.egg-info/dependency_links.txt
+peanut_sh.egg-info/top_level.txt
