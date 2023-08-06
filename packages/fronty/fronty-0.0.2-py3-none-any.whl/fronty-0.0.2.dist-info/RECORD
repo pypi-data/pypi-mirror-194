@@ -1,0 +1,10 @@
+fronty/__init__.py,sha256=OxKiVOwvhNrsVzoQQ3rBgxnVOFUj2FUZBFGlfLHR2CI,226
+fronty/cli.py,sha256=PjJCiPEmbuaCOjj9UgKC1zYKaGMFeJmewMVwUZycQ4s,558
+fronty/css/__init__.py,sha256=jZSSIQ4of-3iPau5vkKc-VLPf-OaKEBZpiHQ4ovmvCw,3722
+fronty/html/__init__.py,sha256=cxI46HsUGPWSBJBt19NhvkO6ZGW2D1kSVuzUkpjLxpA,5341
+fronty/middlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fronty-0.0.2.dist-info/METADATA,sha256=JWTcnaLzFvFWCxqV2ttoJ6mkkzQoi3DRBOkG3ZVvmcg,4534
+fronty-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fronty-0.0.2.dist-info/entry_points.txt,sha256=hrgVFMq0faqZ8OfNlR3lbRqie_9TxyIUEvpzF6UIpc8,43
+fronty-0.0.2.dist-info/top_level.txt,sha256=NhM6JN0IiucAaWvF170npO5Dy_g88Rli5tDtjXbNpwg,7
+fronty-0.0.2.dist-info/RECORD,,
