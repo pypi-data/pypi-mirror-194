@@ -1,0 +1,2 @@
+sqlite_blaster
+sqlite_blaster_python
