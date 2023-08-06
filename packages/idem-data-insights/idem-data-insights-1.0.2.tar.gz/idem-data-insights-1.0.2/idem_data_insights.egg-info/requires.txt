@@ -1,0 +1,4 @@
+pop>=22.0.1
+idem>=19.4.2
+pandas
+Jinja2
