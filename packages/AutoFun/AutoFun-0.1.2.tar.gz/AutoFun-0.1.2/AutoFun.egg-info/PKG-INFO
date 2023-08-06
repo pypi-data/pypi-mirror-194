@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AutoFun
+Version: 0.1.2
+Summary: Dynamsoft Barcode Reader Python project
+Home-page: https://mail.163.com/js6/main.jsp?sid=PAlGWIYldfIQjfQTFYllFVEyKXidwtNk&df=mail163_letter#module=welcome.WelcomeModule%7C%7B%7D
+Author: wangweidong
+Author-email: 17891967090@163.com
+License: Apache
+Description: 这是PDF撕裂者的一个功能
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
