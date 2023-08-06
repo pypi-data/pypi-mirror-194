@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ooop-wst
+Version: 0.1.0
+Summary: OOOP extension for using web services transactions with ws_transactions module
+Home-page: http://github.com/gisce/ooop_wst
+Author: GISCE-TI, S.L.
+Author-email: devel@gisce.net
+License: BSD
+Description: UNKNOWN
+Keywords: openerp xml-rpc xmlrpc
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
