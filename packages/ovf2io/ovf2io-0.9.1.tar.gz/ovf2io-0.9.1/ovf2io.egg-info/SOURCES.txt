@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ovf2io/__init__.py
+ovf2io/_templates.py
+ovf2io/_utils.py
+ovf2io.egg-info/PKG-INFO
+ovf2io.egg-info/SOURCES.txt
+ovf2io.egg-info/dependency_links.txt
+ovf2io.egg-info/requires.txt
+ovf2io.egg-info/top_level.txt
