@@ -1,0 +1,10 @@
+pygame_particles/__init__.py,sha256=6z50a6bDzsdlGVoRh4IH_MMJ_vLQoVWz1txhh3IgAFk,165
+pygame_particles/container.py,sha256=sYQf4jja0s1jHpH4-C2aTOJYRLuQbc2pbyZYCQwNkM4,1687
+pygame_particles/examples.py,sha256=0oCJlEeTazbGuBcvBt4oepTiou2otQ7PNbFrNiS9dXI,3370
+pygame_particles/particle.py,sha256=mTrBF15mg_GMO-2VIezfs9UrtXmhPPdzr0MyEPiZbcw,4620
+pygame_particles/shape.py,sha256=x_W6bp8WXjRIV5aMUgfxvL5kg2Psc9G9b35Dr9Zb-5A,4567
+pygame_particles-1.0.dist-info/LICENSE,sha256=FBBmPLsnBaT7k1oCf4cAdplkb_x4c55GZvKiNZncvSY,1068
+pygame_particles-1.0.dist-info/METADATA,sha256=-R17y0-WhI5LuvtYYX7RPqPJXsvYSsWTuENPxzPFDlM,5787
+pygame_particles-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pygame_particles-1.0.dist-info/top_level.txt,sha256=6DmTIzLrv2qO8QrjXDqWbJpMz3bus4yMHeIS-c35OI8,17
+pygame_particles-1.0.dist-info/RECORD,,
