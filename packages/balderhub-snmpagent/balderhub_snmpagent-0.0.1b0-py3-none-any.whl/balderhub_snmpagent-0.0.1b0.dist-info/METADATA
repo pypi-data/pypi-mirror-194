@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: balderhub-snmpagent
+Version: 0.0.1b0
+Summary: balderhub-snmpagent: balderhub package for testing snmp agents
+Home-page: https://hub.balder.dev/snmpagent
+Author: Max Stahlschmidt and others
+License: MIT
+Project-URL: Source, https://github.com/balder-dev/balderhub-snmpagent
+Project-URL: Tracker, https://github.com/balder-dev/balderhub-snmpagent/issues
+Keywords: test,systemtest,reusable,scenario,junit,balder
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: baldertest (>=0.1.0b5)
+Requires-Dist: pysnmp (>=4.4.12)
+
+# BalderHub Package `balderhub-snmpagent`
+
+This is a simple BalderHub package, that allows to test snmp agents.
+
+Balder is a python test system that allows you to reuse a once written testcode for different but similar platforms/devices/applications. Check it out here.
+
+## Installation
+
+You can install the latest release with pip:
+
+```
+python -m pip install balderhub-snmpagent
+```
+
+# License
+
+This balderhub package is free and Open-Source
+
+Copyright (c) 2022 Max Stahlschmidt and others
+
+Distributed under the terms of the MIT license
