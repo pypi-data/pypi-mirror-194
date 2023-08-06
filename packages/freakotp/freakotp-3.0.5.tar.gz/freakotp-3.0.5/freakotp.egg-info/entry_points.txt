@@ -1,0 +1,2 @@
+[console_scripts]
+freakotp = freakotp.cli:main

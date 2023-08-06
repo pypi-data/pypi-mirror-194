@@ -1,0 +1,7 @@
+appdirs
+qrcode
+click
+pzp>=0.0.21
+
+[test]
+pytest
