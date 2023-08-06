@@ -1,0 +1,3 @@
+[console_scripts]
+nlpretext=nlpretext.cli.__main__:app
+
