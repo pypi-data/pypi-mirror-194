@@ -1,0 +1,10 @@
+django
+djangorestframework
+firebase_admin
+requests
+django_slack
+fcm_django
+celery
+django-import-export
+django-celery-beat
+django-otp-twilio
