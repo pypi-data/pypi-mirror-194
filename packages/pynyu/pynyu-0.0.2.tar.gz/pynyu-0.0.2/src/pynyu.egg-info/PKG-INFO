@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pynyu
+Version: 0.0.2
+Summary: A python package for Graduate CS students
+Author-email: Daniel Walt <walt@danielwalt.io>
+Project-URL: Homepage, https://github.com/waltage/pynyu
+Project-URL: Bug Tracker, https://github.com/waltage/pynyu/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pynyu
