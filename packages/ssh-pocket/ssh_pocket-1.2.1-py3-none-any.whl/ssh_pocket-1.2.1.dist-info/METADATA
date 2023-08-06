@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ssh-pocket
+Version: 1.2.1
+Summary: Easy peasy ssh choosey
+Home-page: https://github.com/mmmdawn/ssh-pocket
+Author: Dawn
+Author-email: congminh292k@gmail.com
+License: MIT
+Keywords: ssh management tool
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: inquirerpy (~=0.3.4)
+

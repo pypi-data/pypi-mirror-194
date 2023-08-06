@@ -1,0 +1,3 @@
+[console_scripts]
+s = pocket.__main__:main
+si = pocket.import_ssh:main

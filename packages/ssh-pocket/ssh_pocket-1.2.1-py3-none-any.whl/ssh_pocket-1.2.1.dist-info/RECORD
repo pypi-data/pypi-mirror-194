@@ -1,0 +1,10 @@
+pocket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pocket/__main__.py,sha256=l1Y1laxWLhDpenruKMn_yGqpwxQwMGbpXxDYqjCGT00,105
+pocket/app.py,sha256=mYNcR0PvtGOgrbqaMUkmcAPM12BvrD9E7Wop3BXSj1Y,1714
+pocket/import_ssh.py,sha256=aXTsNsDJWzZ1BwHIrnSmgyQZEJHUbOiDyNq12W9HLWQ,949
+ssh_pocket-1.2.1.dist-info/LICENSE,sha256=Gnpj-YJiDAzCu7cdosQqIjEVXbSRt3r8bO3VX6xiwkg,1061
+ssh_pocket-1.2.1.dist-info/METADATA,sha256=H2RHgmCVhmFlKgXCpGcT2nNTi3ptdyjNZuHM9Y4dDGw,482
+ssh_pocket-1.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ssh_pocket-1.2.1.dist-info/entry_points.txt,sha256=BLHlJFswY3vB8yvUbwOGem0yCFxu5ZueU2djj-oP6ig,71
+ssh_pocket-1.2.1.dist-info/top_level.txt,sha256=p-KBxi1ho88oAuttMeVbgtxKLVzt6ZfnyZWtqKI8vl8,7
+ssh_pocket-1.2.1.dist-info/RECORD,,
