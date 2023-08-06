@@ -1,0 +1,8 @@
+setup.py
+shaftaloo/__init__.py
+shaftaloo/runner.py
+shaftaloo.egg-info/PKG-INFO
+shaftaloo.egg-info/SOURCES.txt
+shaftaloo.egg-info/dependency_links.txt
+shaftaloo.egg-info/requires.txt
+shaftaloo.egg-info/top_level.txt
