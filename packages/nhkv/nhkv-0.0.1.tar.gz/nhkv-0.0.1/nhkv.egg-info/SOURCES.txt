@@ -1,0 +1,15 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+nhkv/CompactStorage.py
+nhkv/DbDict.py
+nhkv/DbOffsetStorage.py
+nhkv/KVStore.py
+nhkv/__init__.py
+nhkv.egg-info/PKG-INFO
+nhkv.egg-info/SOURCES.txt
+nhkv.egg-info/dependency_links.txt
+nhkv.egg-info/requires.txt
+nhkv.egg-info/top_level.txt
+tests/test_all.py

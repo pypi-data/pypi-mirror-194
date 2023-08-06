@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nhkv"
+authors = [
+  { name="Vitaly R" },
+]
+description = "Library for simple key-value storage"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = [
+    "dependencies", "version"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/VitalyRomanov/nhkv"
+"Bug Tracker" = "https://github.com/VitalyRomanov/nhkv/issues"
