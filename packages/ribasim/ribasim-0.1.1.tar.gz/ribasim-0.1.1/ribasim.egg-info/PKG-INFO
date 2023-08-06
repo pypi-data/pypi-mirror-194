@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ribasim
+Version: 0.1.1
+Summary: Pre- and post-processs Ribasim.jl
+Author-email: Huite Bootsma <Huite.Bootsma@deltares.nl>, Julian Hofer <Julian.Hofer@deltares.nl>
+License: MIT
+Project-URL: Documentation, https://deltares.github.io/ribasim-python/ribasim.html
+Project-URL: Source, https://github.com/Deltares/ribasim-python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: lint
+Provides-Extra: docs
+License-File: LICENSE
