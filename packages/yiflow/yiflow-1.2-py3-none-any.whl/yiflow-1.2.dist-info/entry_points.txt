@@ -1,0 +1,2 @@
+[console_scripts]
+yiflow = yiflow.bin.cmds:cli

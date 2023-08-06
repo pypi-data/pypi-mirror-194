@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: yiflow
+Version: 1.2
+Summary: Workflow library with configurable modules
+Home-page: https://github.com/Redoblue/yiflow
+Author: baoyuanqing
+Author-email: baoyuanqing@vip.qq.com
+License: MIT
+Keywords: workflow
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama (>=0.4.3)
+
+# YiFlow
+
+`YiFlow`是一个**配置驱动**的**基于模块**的工作流控制库。本库在2020年的下半年初具雏形，先后在多个AI部署项目中得到了使用。实践证明这样一个可配置工作流引擎可以让算法研发人员只关注于算法模块本身的实现，从而大大加速了项目的研发进度。虽然如此，在此之前该库还没有跟业务代码进行分离，整体实现上面耦合程度较高，我觉得有必要将该库从业务代码中抽离出来，以方便和加速后续项目的研发落地。在这一目标驱动下，我抽空重写了该库，并优化了底层逻辑设计，希望能为更多项目的部署贡献一份力量！
+
+`YiFlow`的名字是为了致敬我的前同事`sylvia`，感谢她一直以来对我工作的支持!
+
+> 更多信息请移步[文档](http://invalid_for_now)。
