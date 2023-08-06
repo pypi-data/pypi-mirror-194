@@ -1,0 +1,382 @@
+[
+  {
+    "bail": true,
+    "module": {
+      "rules": [
+        {
+          "test": {},
+          "use": [
+            "style-loader",
+            "css-loader"
+          ]
+        },
+        {
+          "test": {},
+          "use": "raw-loader"
+        },
+        {
+          "test": {},
+          "use": "raw-loader"
+        },
+        {
+          "test": {},
+          "use": "file-loader"
+        },
+        {
+          "test": {},
+          "use": "file-loader"
+        },
+        {
+          "test": {},
+          "use": "url-loader?limit=10000&mimetype=application/font-woff"
+        },
+        {
+          "test": {},
+          "use": "url-loader?limit=10000&mimetype=application/font-woff"
+        },
+        {
+          "test": {},
+          "use": "url-loader?limit=10000&mimetype=application/octet-stream"
+        },
+        {
+          "test": {},
+          "use": "file-loader"
+        },
+        {
+          "test": {},
+          "issuer": {},
+          "use": {
+            "loader": "svg-url-loader",
+            "options": {
+              "encoding": "none",
+              "limit": 10000
+            }
+          }
+        },
+        {
+          "test": {},
+          "issuer": {},
+          "use": {
+            "loader": "raw-loader"
+          }
+        },
+        {
+          "test": {},
+          "type": "javascript/auto"
+        },
+        {
+          "test": {},
+          "resolve": {
+            "fullySpecified": false
+          }
+        },
+        {
+          "test": {},
+          "resolve": {
+            "fullySpecified": false
+          }
+        },
+        {
+          "test": {},
+          "include": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          "use": [
+            "source-map-loader"
+          ],
+          "enforce": "pre"
+        }
+      ]
+    },
+    "resolve": {
+      "fallback": {
+        "url": false,
+        "buffer": false,
+        "path": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/node_modules/path-browserify/index.js",
+        "process": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/node_modules/process/browser.js"
+      }
+    },
+    "watchOptions": {
+      "poll": 500,
+      "aggregateTimeout": 1000
+    },
+    "output": {
+      "hashFunction": "sha256",
+      "path": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/quetz_frontend/app/build",
+      "publicPath": "{{page_config.fullStaticUrl}}/",
+      "filename": "[name].[contenthash].js"
+    },
+    "plugins": [
+      {
+        "definitions": {
+          "process": "process/browser"
+        }
+      },
+      {
+        "options": {
+          "verbose": true,
+          "showHelp": true,
+          "emitError": false,
+          "strict": true
+        }
+      },
+      {
+        "userOptions": {
+          "template": "templates/index.ejs",
+          "inject": false,
+          "filename": "index.html.j2"
+        },
+        "version": 5
+      },
+      {},
+      {
+        "buildDir": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/quetz_frontend/app/build",
+        "staticDir": "./static",
+        "_first": true
+      },
+      {
+        "_options": {
+          "library": {
+            "type": "var",
+            "name": [
+              "_QUETZ",
+              "CORE_LIBRARY_FEDERATION"
+            ]
+          },
+          "name": "CORE_FEDERATION",
+          "shared": {
+            "@jupyterlab/application": {
+              "requiredVersion": "^3.2.0",
+              "singleton": true
+            },
+            "@jupyterlab/apputils": {
+              "requiredVersion": "^3.2.0",
+              "singleton": true
+            },
+            "@jupyterlab/apputils-extension": {
+              "requiredVersion": "^3.2.0"
+            },
+            "@jupyterlab/coreutils": {
+              "requiredVersion": "^5.2.0",
+              "singleton": true
+            },
+            "@jupyterlab/services": {
+              "requiredVersion": "^6.2.0",
+              "singleton": true
+            },
+            "@jupyterlab/translation": {
+              "requiredVersion": "^3.2.0",
+              "singleton": true
+            },
+            "@jupyterlab/ui-components": {
+              "requiredVersion": "^3.2.0",
+              "singleton": true
+            },
+            "@lumino/application": {
+              "requiredVersion": "^1.25.0",
+              "singleton": true
+            },
+            "@lumino/algorithm": {
+              "requiredVersion": "^1.3.3",
+              "singleton": true
+            },
+            "@lumino/coreutils": {
+              "requiredVersion": "^1.5.3",
+              "singleton": true
+            },
+            "@lumino/messaging": {
+              "requiredVersion": "^1.4.3",
+              "singleton": true
+            },
+            "@lumino/widgets": {
+              "requiredVersion": "^1.19.0",
+              "singleton": true
+            },
+            "@quetz-frontend/application": {
+              "requiredVersion": "~0.4.0-alpha.1",
+              "singleton": true
+            },
+            "@quetz-frontend/application-extension": {
+              "requiredVersion": "~0.4.0-alpha.1"
+            },
+            "@quetz-frontend/apputils": {
+              "requiredVersion": "~0.4.0-alpha.1",
+              "singleton": true
+            },
+            "@quetz-frontend/channels-extension": {
+              "requiredVersion": "~0.4.0-alpha.1"
+            },
+            "@quetz-frontend/home-extension": {
+              "requiredVersion": "~0.4.0-alpha.1"
+            },
+            "@quetz-frontend/jobs-extension": {
+              "requiredVersion": "~0.4.0-alpha.1"
+            },
+            "@quetz-frontend/login-extension": {
+              "requiredVersion": "~0.4.0-alpha.1"
+            },
+            "@quetz-frontend/menu": {
+              "requiredVersion": "~0.4.0-alpha.1",
+              "singleton": true
+            },
+            "@quetz-frontend/menu-extension": {
+              "requiredVersion": "~0.4.0-alpha.1"
+            },
+            "@quetz-frontend/search-extension": {
+              "requiredVersion": "~0.4.0-alpha.1"
+            },
+            "@quetz-frontend/table": {
+              "requiredVersion": "~0.4.0-alpha.1",
+              "singleton": true
+            },
+            "@quetz-frontend/user-extension": {
+              "requiredVersion": "~0.4.0-alpha.1"
+            },
+            "react": {
+              "requiredVersion": "^17.0.1",
+              "singleton": true
+            },
+            "react-dom": {
+              "requiredVersion": "^17.0.1",
+              "singleton": true
+            },
+            "quetz-theme": {
+              "requiredVersion": "0.2.1"
+            },
+            "@fortawesome/fontawesome-svg-core": {
+              "requiredVersion": "^1.3.0"
+            },
+            "@fortawesome/free-solid-svg-icons": {
+              "requiredVersion": "^6.0.0"
+            },
+            "@fortawesome/react-fontawesome": {
+              "requiredVersion": "^0.1.17"
+            },
+            "@jupyter-notebook/react-components": {
+              "requiredVersion": "~0.9.1"
+            },
+            "fromnow": {
+              "requiredVersion": "^3.0.1"
+            },
+            "lodash": {
+              "requiredVersion": "^4.17.20"
+            },
+            "react-router-dom": {
+              "requiredVersion": "^5.2.0"
+            },
+            "react-table": {
+              "requiredVersion": "^7.6.3"
+            },
+            "regenerator-runtime": {
+              "requiredVersion": "^0.13.9"
+            },
+            "@lumino/commands": {
+              "requiredVersion": "^1.12.0"
+            },
+            "@lumino/signaling": {
+              "requiredVersion": "^1.4.3"
+            },
+            "moment": {
+              "requiredVersion": "^2.29.1"
+            }
+          }
+        }
+      }
+    ],
+    "mode": "development",
+    "entry": {
+      "main": [
+        "./publicpath",
+        "whatwg-fetch",
+        "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/quetz_frontend/app/build/bootstrap.js"
+      ],
+      "regenerator": [
+        "regenerator-runtime/runtime"
+      ]
+    },
+    "optimization": {
+      "splitChunks": {
+        "chunks": "all",
+        "cacheGroups": {
+          "quetz_core": {
+            "test": {},
+            "name": "quetz_core"
+          }
+        }
+      }
+    },
+    "devtool": "inline-source-map",
+    "externals": [
+      "node-fetch",
+      "ws"
+    ]
+  },
+  {
+    "mode": "production",
+    "entry": {
+      "index": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/node_modules/quetz-theme/style/index.css"
+    },
+    "output": {
+      "path": "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/quetz_frontend/app/themes/quetz-theme",
+      "filename": "[name].js",
+      "hashFunction": "sha256"
+    },
+    "module": {
+      "rules": [
+        {
+          "test": {},
+          "use": [
+            "/home/runner/work/jupyter_releaser/jupyter_releaser/.jupyter_releaser_checkout/node_modules/mini-css-extract-plugin/dist/loader.js",
+            "css-loader"
+          ]
+        },
+        {
+          "test": {},
+          "use": [
+            {
+              "loader": "svg-url-loader",
+              "options": {
+                "encoding": "none"
+              }
+            }
+          ]
+        },
+        {
+          "test": {},
+          "use": [
+            {
+              "loader": "url-loader",
+              "options": {
+                "limit": 10000
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "plugins": [
+      {
+        "_sortedModulesCache": {},
+        "options": {
+          "filename": "[name].css",
+          "ignoreOrder": false,
+          "chunkFilename": "[id].css"
+        },
+        "runtimeOptions": {
+          "linkType": "text/css"
+        }
+      }
+    ]
+  }
+]

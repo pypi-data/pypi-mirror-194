@@ -1,0 +1,5 @@
+[console_scripts]
+quetz-frontend = quetz_frontend.cli:app
+
+[quetz.frontend]
+quetz-frontend = quetz_frontend.backend

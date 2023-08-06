@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunk_quetz_frontend_main_app"]=self["webpackChunk_quetz_frontend_main_app"]||[]).push([[5740],{95740:(e,n,u)=>{u.r(n);u.d(n,{IMenu:()=>_});var t=u(7417);const _=new t.Token("@quetz-frontend/menu:IMenu")}}]);
