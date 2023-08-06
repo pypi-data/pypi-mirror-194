@@ -1,0 +1,2 @@
+[console_scripts]
+cli-manager = scraper2_hj3415.cli:c101_all

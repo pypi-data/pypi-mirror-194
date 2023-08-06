@@ -1,0 +1,17 @@
+scraper2_hj3415/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scraper2_hj3415/cli.py,sha256=y775nRIyBmT3_bjL6FqpXQB5vGu5cKx_KwsMvMB6X2w,139
+scraper2_hj3415/nfscrapy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scraper2_hj3415/nfscrapy/run.py,sha256=G4UVhG0LYEdljiC7hbKCsiFVHSixmU3cOQEI0pM6Xso,5768
+scraper2_hj3415/nfscrapy/scrapy.cfg,sha256=yCkEgpzAwc9NWjYGaEUelGdLg3mUuuQF1Zl0k5vITH8,260
+scraper2_hj3415/nfscrapy/nfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scraper2_hj3415/nfscrapy/nfs/items.py,sha256=zKTQWz-IrA_MLY86oVExFhbFq-bgBEHMFlmfZL_CwGA,1017
+scraper2_hj3415/nfscrapy/nfs/middlewares.py,sha256=F3kL0OJMsUhiw2mPIxQLGvY3wdMxIsQl1BG2uwo_ZHo,3745
+scraper2_hj3415/nfscrapy/nfs/pipelines.py,sha256=gMM_Jfm7dbAfaTux1YvfbJ34vF-BBoIq6QZqX9wN0Uc,989
+scraper2_hj3415/nfscrapy/nfs/settings.py,sha256=UsmKxrDTNboO10CzeFi3IhNiTpiKg-gvNySSIlNiogQ,3426
+scraper2_hj3415/nfscrapy/nfs/spiders/__init__.py,sha256=ULwecZkx3_NTphkz7y_qiazBeUoHFnCCWnKSjoDCZj0,161
+scraper2_hj3415/nfscrapy/nfs/spiders/c101.py,sha256=WKqLQ5EzJTnH1uozyhO7j8Invv4kBy0JCFy4nemd4PI,4233
+scraper2_hj3415-0.0.2.dist-info/METADATA,sha256=yb2niFapV8HTm2j-AkW4BhfMjBPDREwLeUU_ia7E-c4,1154
+scraper2_hj3415-0.0.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+scraper2_hj3415-0.0.2.dist-info/entry_points.txt,sha256=DirPIw4aVW-wTMSCrQWOOBuJLG4OyBKeNXpsdKd4TsA,61
+scraper2_hj3415-0.0.2.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+scraper2_hj3415-0.0.2.dist-info/RECORD,,
