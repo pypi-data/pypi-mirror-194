@@ -1,0 +1,2 @@
+[console_scripts]
+ritdu-slacker = ritdu_slacker.__main__:main

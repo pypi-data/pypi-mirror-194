@@ -1,0 +1,12 @@
+ritdu_slacker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ritdu_slacker/__main__.py,sha256=qpDlc2dFCGRu6HaxquIEeIGQNhZZZzxG0ohD4M1zZdk,635
+ritdu_slacker/api.py,sha256=WbjZtLo74R1AcGoVTiL7Nx7dvnkgVtnUDb4OnaRGHks,2820
+ritdu_slacker/cli.py,sha256=tQkqhFgQKZP4axmOhwfiMtdyea7JwdTbF_ZsTDpc-V4,4810
+ritdu_slacker/version.py,sha256=Mz13R4GXItDjWN1i9zf3_ynKF-Ub8lSirTTSj-nWalw,23
+ritdu_slacker-1.1.0.dist-info/LICENSE,sha256=oGmBdKq0njvinaTPaLS2EtgVzqzuS9V9pus5XZF86gk,1077
+ritdu_slacker-1.1.0.dist-info/METADATA,sha256=J_mcVwro-aEB_Q9a5WaNJouGdT8BsVIJpgIHOCQLDSs,1904
+ritdu_slacker-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ritdu_slacker-1.1.0.dist-info/dependency_links.txt,sha256=VtZuS2XQT1ykbNhyHZ4S_9H1Eyu4De1trmM0wQSTmCY,31
+ritdu_slacker-1.1.0.dist-info/entry_points.txt,sha256=7B14J7WOQ3x_BQapzlNhSqlA-u9h0k7u3rPoz-bN4is,62
+ritdu_slacker-1.1.0.dist-info/top_level.txt,sha256=luwNpdOxJyqfOud586G1A07pfWsWyyw9mzWcdOd6BOw,14
+ritdu_slacker-1.1.0.dist-info/RECORD,,
