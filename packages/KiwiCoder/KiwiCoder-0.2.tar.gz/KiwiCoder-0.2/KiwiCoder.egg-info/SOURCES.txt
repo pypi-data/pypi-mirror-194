@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+KiwiCoder.egg-info/PKG-INFO
+KiwiCoder.egg-info/SOURCES.txt
+KiwiCoder.egg-info/dependency_links.txt
+KiwiCoder.egg-info/requires.txt
+KiwiCoder.egg-info/top_level.txt
+kiwi/__init__.py
