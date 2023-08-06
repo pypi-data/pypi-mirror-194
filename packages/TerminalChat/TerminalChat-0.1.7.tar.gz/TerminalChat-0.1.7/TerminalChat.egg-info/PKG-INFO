@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: TerminalChat
+Version: 0.1.7
+Summary: Terminal chat application
+Home-page: https://github.com/noah-solomon/terminal-chat
+Author: Noah Solomon
+Author-email: hello@noahsolo.com
+License: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Simple terminal chat application.

@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tchat.py
+TerminalChat.egg-info/PKG-INFO
+TerminalChat.egg-info/SOURCES.txt
+TerminalChat.egg-info/dependency_links.txt
+TerminalChat.egg-info/entry_points.txt
+TerminalChat.egg-info/requires.txt
+TerminalChat.egg-info/top_level.txt
