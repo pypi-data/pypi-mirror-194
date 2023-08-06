@@ -1,0 +1,388 @@
+{
+    "pools": {
+        "0xCfCA23cA9CA720B6E98E3Eb9B6aa0fFC4a5C08B9": {
+            "poolId": 0,
+            "token": "0x70751c02db1a5e48eD333c919A7B94e34a4E07E2",
+            "gauge": "0x275dF57d2B23d53e20322b4bb71Bf1dCb21D0A00",
+            "crvRewards": "0x712CC5BeD99aA06fC4D5FB50Aea3750fA5161D0f",
+            "stash": "0xE61df2CE6CC89467bb30f44E0d5cABfCEdc115BE",
+            "shutdown": false
+        },
+        "0x3dd0843A028C86e0b760b1A76929d1C5Ef93a2dd": {
+            "poolId": 1,
+            "token": "0x12e9DA849f12d47707A94e29f781f1cd20A7f49A",
+            "gauge": "0x0312AA8D0BA4a1969Fddb382235870bF55f7f242",
+            "crvRewards": "0xACAdA51C320947E7ed1a0D0F6b939b0FF465E4c2",
+            "stash": "0x7b3307af981F55C8D6cd22350b08C39Ec7Ec481B",
+            "shutdown": false
+        },
+        "0xA13a9247ea42D743238089903570127DdA72fE44": {
+            "poolId": 2,
+            "token": "0x7DeCa3Ff1D7D31A8d2126278809D539798b0f035",
+            "gauge": "0xa6325e799d266632D347e41265a69aF111b05403",
+            "crvRewards": "0xFb6b1c1A1eA5618b3CfC20F81a11A97E930fA46B",
+            "stash": "0xC3b4be84dcb07A5BaeCFf5cA18D5D620d3C013a7",
+            "shutdown": false
+        },
+        "0x92762B42A06dCDDDc5B7362Cfb01E631c4D44B40": {
+            "poolId": 3,
+            "token": "0xEC655Ae9b8477e164E8c0c4A9C2F290b85695ECd",
+            "gauge": "0x57AB3b673878C3fEaB7f8FF434C40Ab004408c4c",
+            "crvRewards": "0x6256518aE9a97C408a03AAF1A244989Ce6B937F6",
+            "stash": "0xc726Cd09542Fc3Ae90c2fd435C53879A014bDDD7",
+            "shutdown": false
+        },
+        "0xde8C195Aa41C11a0c4787372deFBbDdAa31306D2": {
+            "poolId": 4,
+            "token": "0x04E576f7F41fBc0623Ef700D1198a047214c293e",
+            "gauge": "0x7C777eEA1dC264e71E567Fcc9B6DdaA9064Eff51",
+            "crvRewards": "0x228054e9c056F024FC724F515A2a8764Ae175ED6",
+            "stash": "0x01B3F4c8C55eBa193972A70F4DB29feBe8a2FE65",
+            "shutdown": false
+        },
+        "0x3F7C10701b14197E2695dEC6428a2Ca4Cf7FC3B8": {
+            "poolId": 5,
+            "token": "0x1bc2805C0550BB34f7d5CAAEeaE89709d92CFEC3",
+            "gauge": "0x27Fd581E9D0b2690C2f808cd40f7fe667714b575",
+            "crvRewards": "0x8C83370552e6418242594f997306584eABEdef79",
+            "stash": "0xC6800Cd2cfc654E86Cf3039F34F96735f51286b8",
+            "shutdown": false
+        },
+        "0xA7Ff759DBeF9F3EFDD1d59Beee44b966AcAfe214": {
+            "poolId": 6,
+            "token": "0xC7eB4013047e36B80e5511be7a280edaaddFE792",
+            "gauge": "0xe2b680A8d02fbf48C7D9465398C4225d7b7A7f87",
+            "crvRewards": "0x569676f425c1231F8591bBb215dD53A3ee3C8d12",
+            "stash": "0x2E9b267a169343156395C7964B3e04ba02a8E662",
+            "shutdown": false
+        },
+        "0x27C9f71cC31464B906E0006d4FcBC8900F48f15f": {
+            "poolId": 7,
+            "token": "0x4d7caB3ffd6B9A3c07de59B2D6aFE70DD8856E36",
+            "gauge": "0x1249c510e066731FF14422500466A7102603da9e",
+            "crvRewards": "0x07BD9b4a3E364CD4b3bB49035972af70B2E8961f",
+            "stash": "0x040387BF0a90DdB46D4d7C7AB0C7260Cd674Cd6E",
+            "shutdown": false
+        },
+        "0x5b3240B6BE3E7487d61cd1AFdFC7Fe4Fa1D81e64": {
+            "poolId": 8,
+            "token": "0x57f8ff5dB97161D944ed6F97c91c097908C008ae",
+            "gauge": "0x610f1569045041Af6212be048Bc43e8DC6a07b55",
+            "crvRewards": "0xa0E1D9619979f06Ff375251AfE90de2801B009d8",
+            "stash": "0xD50580Ca9275ba74aE30B1280E13BaFFB37515D8",
+            "shutdown": false
+        },
+        "0x25Accb7943Fd73Dda5E23bA6329085a3C24bfb6a": {
+            "poolId": 9,
+            "token": "0x6952A25E5E43E13714D5953E93AD9976b7b50f66",
+            "gauge": "0x651361a042e0573295dd7f6A84dBD1DA56DAc9D5",
+            "crvRewards": "0x8c9E4a04aDb0D543B33cAb644135BFcA523c40C8",
+            "stash": "0x0b7544Bb7F8434AD6588cEa00908065025457a20",
+            "shutdown": false
+        },
+        "0x334C96d792e4b26B841d28f53235281cec1be1F2": {
+            "poolId": 10,
+            "token": "0x7dfF4CD6fbC9FA8dCEB134a1a52864633C79c534",
+            "gauge": "0xF60B8DAF6825c9fBE5eC073D623B9d47cDa592E8",
+            "crvRewards": "0xB0A2fec539Aed6cF01FdfE38F318C1B20742Ca92",
+            "stash": "0x66c608f1392Ca63F7A1cA2De890A5A4521FF4A70",
+            "shutdown": false
+        },
+        "0xe340EBfcAA544da8bB1Ee9005F1a346D50Ec422e": {
+            "poolId": 11,
+            "token": "0xB6ab5cba5445b582420a01125d33F9640d1696EE",
+            "gauge": "0xb32Ae42524d38be7E7eD9E02b5F9330fCEf07f3F",
+            "crvRewards": "0x4E867c6c76173539538B7a9335E89b00434Aec10",
+            "stash": "0x33E8988b5384AF64566E124D3166ACD5386757B3",
+            "shutdown": false
+        },
+        "0x4ce0BD7deBf13434d3ae127430e9BD4291bfB61f": {
+            "poolId": 12,
+            "token": "0x8404DB778bc3C396d699B08EE82745df26d44Dd6",
+            "gauge": "0x9703C0144e8b68280b97d9e30aC6f979Dd6A38d7",
+            "crvRewards": "0xaa8D332531B5B953938AA412730e7536178b4783",
+            "stash": "0xc76Cc400D5903A81b84C840E03BE3b9f21449383",
+            "shutdown": false
+        },
+        "0x8e85e97ed19C0fa13B2549309965291fbbc0048b": {
+            "poolId": 13,
+            "token": "0x6c4aFa47860AAd1Ba39dFA778FEf4EfA5e5ba3b7",
+            "gauge": "0x3F0FB52648Eb3981EA598716b7320081d1c8Ba1a",
+            "crvRewards": "0x60CF485394E83d3879998281faAC6a1c3cf218c7",
+            "stash": "0x6Ac4850ee0a342Dfca6EC042b976A41eD334A853",
+            "shutdown": false
+        },
+        "0xae7bFd6fA54259fC477879712Eebe34164d3A84F": {
+            "poolId": 14,
+            "token": "0xADf1CF028E29Ca91D5b86166d8283284e284BEF4",
+            "gauge": "0x39a9E78c3b9b5B47f1f6632BD74890E2430215Cf",
+            "crvRewards": "0xde6226Bda2f6C516486936D9b19Ec4b0d88BF025",
+            "stash": "0x7f5f48Ff1e52A4A44F5093e92295e1aEb402B5E4",
+            "shutdown": false
+        },
+        "0x1E19CF2D73a72Ef1332C882F20534B6519Be0276": {
+            "poolId": 15,
+            "token": "0x46e7A3C244310590BdFD666692F6CD0566b18B91",
+            "gauge": "0x79eF6103A513951a3b25743DB509E267685726B7",
+            "crvRewards": "0x001B78CEC62DcFdc660E06A91Eb1bC966541d758",
+            "stash": "0xC5a3868f0380453b49670Bd6a7F6d99968A708C8",
+            "shutdown": false
+        },
+        "0x99A14324Cfd525A34BBc93ac7e348929909D57fD": {
+            "poolId": 16,
+            "token": "0xF9A63CcfE1156F2bD4D2eB2f37C5e61139278FB8",
+            "gauge": "0xAf3c3dab54ca15068D09C67D128344916e177cA9",
+            "crvRewards": "0x2c5b78610D69447Ded2A0B60a565c947f17A1668",
+            "stash": "0x01920075944bAf91D1E9c3A7ae37e7C8D82efb3F",
+            "shutdown": false
+        },
+        "0xe8cc7E765647625B95F59C15848379D10B9AB4af": {
+            "poolId": 17,
+            "token": "0xf0b6C52c8D1dF405b5195674Ee639533c77d0681",
+            "gauge": "0x47c56A900295df5224EC5e6751dC31eb900321D5",
+            "crvRewards": "0x330F5e309b0F925e7594E8C9e2E24879e9146DE4",
+            "stash": "0xcd00825eF7bAa19451099c30D85447a86A638E5f",
+            "shutdown": false
+        },
+        "0xb460DAa847c45f1C4a41cb05BFB3b51c92e41B36": {
+            "poolId": 18,
+            "token": "0xf9Ad7c6BAB11d9F483Fd40eE4170bf27F21D4C78",
+            "gauge": "0x3F29e69955E5202759208DD0C5E0BA55ff934814",
+            "crvRewards": "0x4EFc8DED860Bc472FA8d938dc3fD4946Bc1A0a18",
+            "stash": "0x8466A055F2BA28E6cb89E766C0BAA7AcA4194556",
+            "shutdown": false
+        },
+        "0x8eB6c82C3081bBBd45DcAC5afA631aaC53478b7C": {
+            "poolId": 19,
+            "token": "0xb68cFd62DE70b38FDB46FD00Dc84440eF383954E",
+            "gauge": "0xE5f24cD43f77fadF4dB33Dab44EB25774159AC66",
+            "crvRewards": "0xD7c9c6922db15F47EF3131F2830d8E87f7637210",
+            "stash": "0xcb01746cDcb6E8A31402E6ed737f178966594E21",
+            "shutdown": false
+        },
+        "0x6a5EaD5433a50472642Cd268E584dafa5a394490": {
+            "poolId": 20,
+            "token": "0x46fCc16FF800D2B8D2927c292FcC86e7255e8217",
+            "gauge": "0xc2c2304E163e1aB53De2eEB08820a0B592bec20B",
+            "crvRewards": "0x6c3f6C327DE4aE51a2DfAaF3431b3c508ec8D3EB",
+            "stash": "0xc8e4CE634B2228a466F48a87CFDb7A17E0faCF36",
+            "shutdown": false
+        },
+        "0x0fd5663D4893AE0D579D580584806AAdd2dD0B8b": {
+            "poolId": 21,
+            "token": "0xdACB6b8138db32A39970Ba8382a75467889a615b",
+            "gauge": "0x6Eb7CdCd15417ABF120FfE404B9b88141Ca952B7",
+            "crvRewards": "0x21e2DF86658c8ad41a05453Fa5815A0d91273ee9",
+            "stash": "0x8aB2ed764703e76Aab02A72553Fe4d4a69a789A1",
+            "shutdown": false
+        },
+        "0x441b8a1980f2F2E43A9397099d15CC2Fe6D36250": {
+            "poolId": 22,
+            "token": "0x5f7cF99Dc513E283227B8aa11738a4620A36CACD",
+            "gauge": "0x46804462f147fF96e9CAFB20cA35A3B2600656DF",
+            "crvRewards": "0xA5D7A7690B72a89B7b720E43fC9cBda5419d0C71",
+            "stash": "0x88F593Fe8Ad7566781d361806A42448397DdeFB4",
+            "shutdown": false
+        },
+        "0x1b65fe4881800B91d4277ba738b567CbB200A60d": {
+            "poolId": 23,
+            "token": "0x6230b148AFEbA47e89a4A960c4EFaf2E66b51755",
+            "gauge": "0xb0FB3e031224bd449974AB02cae369E81db58Fa6",
+            "crvRewards": "0x33E2AEd4d2Eb6F85495908260554fDbF4ff14583",
+            "stash": "0xb6D2Ae0e01229166618aC08b4cE7452AD937073a",
+            "shutdown": false
+        },
+        "0xf3AeB3aBbA741f0EEcE8a1B1D2F11b85899951CB": {
+            "poolId": 24,
+            "token": "0x1A971bfEF0fA1EFc991655aF55f46E8F66f18500",
+            "gauge": "0x91A75880b07d36672f5C8DFE0F2334f086e29D47",
+            "crvRewards": "0x0C57a7CB838C215fad7ADe13062db956E91F1941",
+            "stash": "0xf7532aEBdedC2306F24eB11277E2A440E7FE30Dc",
+            "shutdown": false
+        },
+        "0x48607651416A943bF5AC71C41BE1420538e78f87": {
+            "poolId": 25,
+            "token": "0x95742fE0470212143f53Ab51CC49e7c29D9cd6F0",
+            "gauge": "0x75cAceBb5b4a73a530EdcdFdE7cFfbfea44c026E",
+            "crvRewards": "0x201D5e6E9b760aE5b2Bc1874b5906DA42f125340",
+            "stash": "0x9Ee7b0Cd57CD26167635088921523B97D38Bd812",
+            "shutdown": false
+        },
+        "0x06Df3b2bbB68adc8B0e302443692037ED9f91b42": {
+            "poolId": 26,
+            "token": "0x1ae6133b2Ccf55b2B8c6609f73E224177F2f0AE7",
+            "gauge": "0x34f33CDaED8ba0E1CEECE80e5f4a73bcf234cfac",
+            "crvRewards": "0xD73638829aEF73BA55f040858cD5E5B9Af66CF2B",
+            "stash": "0x00A8C3EF4f8e1e6A3Ad49D691719e42661A55989",
+            "shutdown": false
+        },
+        "0x072f14B85ADd63488DDaD88f855Fda4A99d6aC9B": {
+            "poolId": 27,
+            "token": "0x3De314703AcF68B8A3D03E8147b60732258f5ef2",
+            "gauge": "0x605eA53472A496c3d483869Fe8F355c12E861e19",
+            "crvRewards": "0xc7c2AF26b1a8A350D2A53cc05604702ec27E228b",
+            "stash": "0xc73cA7A50b7552A62A6328b8d536b16237f98729",
+            "shutdown": false
+        },
+        "0x0b09deA16768f0799065C475bE02919503cB2a35": {
+            "poolId": 28,
+            "token": "0xA137FaBC4cC775Df6e4b6f9E3877f0A6574c1175",
+            "gauge": "0x4ca6AC0509E6381Ca7CD872a6cdC0Fbf00600Fa1",
+            "crvRewards": "0xeD1527FD069465711490bCb3bAfa49AC3F3aF197",
+            "stash": "0xE4A73270a55015332494a6e436B7d0a544c07764",
+            "shutdown": false
+        },
+        "0x32296969Ef14EB0c6d29669C550D4a0449130230": {
+            "poolId": 29,
+            "token": "0x207893b97246481839D97E9dBFEe6672071f1697",
+            "gauge": "0xcD4722B7c24C29e0413BDCd9e51404B4539D14aE",
+            "crvRewards": "0xe4683Fe8F53da14cA5DAc4251EaDFb3aa614d528",
+            "stash": "0x4B50bF720c5754a60dCDeB48be010389CB17f871",
+            "shutdown": false
+        },
+        "0x96646936b91d6B9D7D0c47C496AfBF3D6ec7B6f8": {
+            "poolId": 30,
+            "token": "0xB65ACde9E942e7B522815af621cC7EC7c137c0D1",
+            "gauge": "0x9AB7B0C7b154f626451c9e8a68dC04f58fb6e5Ce",
+            "crvRewards": "0x9a004491d82894e8D52698D5924bDE960530Da37",
+            "stash": "0xb665a02E314772Aff404Ac422178fb6D5CA9774a",
+            "shutdown": false
+        },
+        "0xA6F548DF93de924d73be7D25dC02554c6bD66dB5": {
+            "poolId": 31,
+            "token": "0x7Ee30C6BD4d5E911fbeB0DAF6A8B4597C9a65b2a",
+            "gauge": "0x4E3c048BE671852277Ad6ce29Fd5207aA12fabff",
+            "crvRewards": "0x7663EC8ee5073CdA94A8e1D72b017E22904fD44a",
+            "stash": "0x71a44e541a12B932D8f59Ea1807fCbada6F9ca3A",
+            "shutdown": false
+        },
+        "0xBF96189Eee9357a95C7719f4F5047F76bdE804E5": {
+            "poolId": 32,
+            "token": "0x2bAF22a557B1971C83Bd19b5D7F00955E11c8cDa",
+            "gauge": "0x942CB1Ed80D3FF8028B3DD726e0E2A9671bc6202",
+            "crvRewards": "0x208a62C257550b2eA1E57e4FA7148E2d2C4ba633",
+            "stash": "0x8E00C6845F33d3F460BB7d5f07c22318FDc13ddD",
+            "shutdown": false
+        },
+        "0xF4C0DD9B82DA36C07605df83c8a416F11724d88b": {
+            "poolId": 33,
+            "token": "0x42e2084758A73e8313BC2ca4F3FF3308B717fcE8",
+            "gauge": "0xCB664132622f29943f67FA56CCfD1e24CC8B4995",
+            "crvRewards": "0xD3780729035c5b302f76ced0E7F74cF0Fb7c739a",
+            "stash": "0x84b862E444Cd4c7335a2e3CBb76E3253c0044997",
+            "shutdown": false
+        },
+        "0x186084fF790C65088BA694Df11758faE4943EE9E": {
+            "poolId": 34,
+            "token": "0x0E297F1E557B5DC5E9B2D01fc278D0aB5600C7C4",
+            "gauge": "0x5F4d57fd9Ca75625e4B7520c71c02948A48595d0",
+            "crvRewards": "0x87AFD58d8dd4DEF356189E0930Ba8611B0546Bd9",
+            "stash": "0x2C1687c3D8AE789Ba4BD81a72e28885256e3CA84",
+            "shutdown": false
+        },
+        "0x0578292CB20a443bA1CdE459c985CE14Ca2bDEe5": {
+            "poolId": 35,
+            "token": "0xF8E3EC1e5E476Ac7a4D6659549b5F04727e714be",
+            "gauge": "0x2e79D6f631177F8E7f08Fbd5110e893e1b1D790A",
+            "crvRewards": "0x2F74088d365a66bfbd0c2c55aF3b4977bf637FDD",
+            "stash": "0x12812178dF2Fa1eA62fbeCF71771da8B99CaCffb",
+            "shutdown": false
+        },
+        "0x178E029173417b1F9C8bC16DCeC6f697bC323746": {
+            "poolId": 36,
+            "token": "0xf7e74B21dd82b686f1be81e91609b595A551b784",
+            "gauge": "0xDD4Db3ff8A37FE418dB6FF34fC316655528B6bbC",
+            "crvRewards": "0x4286c1239bC2705f4A1Fd90edb3582F7aF672356",
+            "stash": "0x3da66080d47daA90377bb50C86AFB42Ce8fde1aB",
+            "shutdown": false
+        },
+        "0x4EdcB2B46377530Bc18BB4D2c7Fe46a992c73e10": {
+            "poolId": 37,
+            "token": "0xbddD36656b8220af4DeA3165031b2f1233F652fC",
+            "gauge": "0xe624E9E85A5728072313c4F4720cDF8fD4FFdAFC",
+            "crvRewards": "0x7D67BeB5cF289B015FCA7B3fc408860731d826E1",
+            "stash": "0xDA2CE0B476B3D0Da443Dad9d07E2604038aDcB9D",
+            "shutdown": false
+        },
+        "0x173063A30E095313eEe39411f07E95A8a806014e": {
+            "poolId": 38,
+            "token": "0xaC10009Ed7845897E205FAf7CE25552dF3F928c4",
+            "gauge": "0x973fb174Cdf9b1652e4213125a186f66684D899c",
+            "crvRewards": "0x07A38A3aEa0b25364b1f9c66C8ddFA1FbD1c8fE0",
+            "stash": "0xBd748f6447BF8BEA0314b34AB09979c4D8a09170",
+            "shutdown": false
+        },
+        "0x798b112420AD6391A4129Ac25eF59663a44C88bB": {
+            "poolId": 39,
+            "token": "0xBAcB8889894e03166a4bC893BfD3427D407C4f84",
+            "gauge": "0x89F65570Ac019f86E145c501023e2ef7010D155B",
+            "crvRewards": "0x9AccD370C03a3cc4Bf717a81aD5A46e6c88FA109",
+            "stash": "0x3A01242A72465074EA456c2672396c00D6F5BcAb",
+            "shutdown": false
+        },
+        "0x5512A4bbe7B3051f92324bAcF25C02b9000c4a50": {
+            "poolId": 40,
+            "token": "0xf040f41Be7b9C4468Ca02844bf3EF7e39682182b",
+            "gauge": "0x63E3951212cCCAFE3eDC7588FD4D20Ee5e7Ad73f",
+            "crvRewards": "0x32380a7b485F75cce3b3Dced6a273F11846406FD",
+            "stash": "0x3424381d7e2F565C6A1Aa230f37600c836838abe",
+            "shutdown": false
+        },
+        "0x8167A1117691f39e05e9131cfA88F0e3A620E967": {
+            "poolId": 41,
+            "token": "0x5b0F0c707632Dab4d15AC1e2fF3D7245863845a0",
+            "gauge": "0x7Fc115BF013844D6eF988837F7ae6398af153532",
+            "crvRewards": "0x6F6E1ED8E6807C000248C45693C0abA50cdf0F66",
+            "stash": "0xed416a8406Fa201db8ca327b9b77286bb33C37A5",
+            "shutdown": false
+        },
+        "0xBaeEC99c90E3420Ec6c1e7A769d2A856d2898e4D": {
+            "poolId": 42,
+            "token": "0xeDCb19A41E6d3B68c96f4DD77B39852384aa4D18",
+            "gauge": "0x777C45BD0a2AF1dA5fe4a532AD6B207D3CEd8b2d",
+            "crvRewards": "0x2A577Dc2F09B6baCc075C44912CFeB8065ded3B6",
+            "stash": "0x461666373cdB2dE400F15239339e5820192DA4A0",
+            "shutdown": false
+        },
+        "0x350196326AEAA9b98f1903fb5e8fc2686f85318C": {
+            "poolId": 43,
+            "token": "0x4b3E704c0942619350E7da5e88b0685e03464963",
+            "gauge": "0xc2D343E2C9498E905F53C818B88eB8064B42D036",
+            "crvRewards": "0xcFF0Ce58A624F116faF936C4F8b84affEffE9399",
+            "stash": "0xa4A09BEd63393b487eBc8263b2c09217e2b24A46",
+            "shutdown": false
+        },
+        "0xC9C5Ff67bB2Fae526aE2467C359609D6BCb4c532": {
+            "poolId": 44,
+            "token": "0xa9c7E9a11DEA293C616991F5d60d079b3112ECA3",
+            "gauge": "0xE7ec5216ff485abffd9d390B82A5D742155f3A6f",
+            "crvRewards": "0xb5ACb8C828C7a8Be4eD3BaB6C34d4203c2c17b8f",
+            "stash": "0xb1704f057B65047F836de59D21D54d939EB1Dc36",
+            "shutdown": false
+        },
+        "0xFf4ce5AAAb5a627bf82f4A571AB1cE94Aa365eA6": {
+            "poolId": 45,
+            "token": "0x1AeD05BF3954049170adB38600Bb7C31D20801A6",
+            "gauge": "0xBC02eF87f4E15EF78A571f3B2aDcC726Fee70d8b",
+            "crvRewards": "0x22915f309EC0182c85cD8331C23bD187fd761360",
+            "stash": "0x02a6c2abE10512D0d2821F599E56168921De8E75",
+            "shutdown": false
+        },
+        "0xd590931466cdD6d488A25da1E89dD0539723800c": {
+            "poolId": 46,
+            "token": "0xE6a9cF0CD00EE40694DEe035a66352D5A0778e6F",
+            "gauge": "0x81C452E84B103555C2Dd2DEc0bFABC0c4d6B3065",
+            "crvRewards": "0xcBb7fF4e7c32b86994D1991e6Aeb198184c56554",
+            "stash": "0x3F4b0C4670816eE544cb807dd7B700CB7a17964d",
+            "shutdown": false
+        },
+        "0x9c6d47Ff73e0F5E51BE5FD53236e3F595C5793F2": {
+            "poolId": 47,
+            "token": "0x692F37c3166319F790B0a4A97E23252180B286A8",
+            "gauge": "0x01A9502C11f411b494c62746D37e89d6f7078657",
+            "crvRewards": "0xe35ae62Ff773D518172d4B0b1af293704790B670",
+            "stash": "0xa5546238Af4313C421929acBe7b307c83c7014Fc",
+            "shutdown": false
+        }
+    }
+}
