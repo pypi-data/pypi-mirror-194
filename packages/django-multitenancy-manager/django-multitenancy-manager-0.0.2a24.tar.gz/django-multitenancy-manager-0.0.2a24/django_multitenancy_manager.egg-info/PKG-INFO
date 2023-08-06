@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: django-multitenancy-manager
+Version: 0.0.2a24
+Summary: Django Multitenancy is a Django app that handles user subscriptions for tenant apps.
+Home-page: https://github.com/tekanokhambane/django-multitenancy
+Author: Tekano Khambane
+Author-email: tkhambane@gmail.com
+Maintainer: Tekano Khambane
+Maintainer-email: tkhambane@gmail.com
+License: BSD
+Keywords: django,django-tenants,multitenancy,django-multitenancy,multitenants,django-tenant-users,saas,django-saas,track,support
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Customer Service
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+License-File: LICENSE.3RDPARTY
+
+# django-multitenancy
+Django Multitenancy is a Django app that handles user subscriptions for saas multi tenant apps.
+The aim of this project is to speed up the process of launch your saas app.
+<p align="center">
+    <br>
+    <a href="https://github.com/tekanokhambane/django-multitenancy/actions">
+        <img src="https://github.com/tekanokhambane/django-multitenancy/workflows/Django Multitenancy CI/badge.svg" alt="Build Status" />
+    </a>
+    <a href="https://opensource.org/licenses/BSD-3-Clause">
+        <img src="https://img.shields.io/badge/license-BSD-blue.svg" alt="License" />
+    </a>
+</p>
+
+
+#### :warning: This package is still in its alpha stage and is not ready for production
+
+![django-multitenancy screenshot](https://github.com/tekanokhambane/django-multitenancy/blob/main/.github/dango-multitenancy-screenshot.png)
+
+## Requirements
+- Python 3.6+
+- Django 3.0+
+
+## Installation
+1. Clone the repository:
+```
+git clone git@github.com:tekanokhambane/django-multitenancy.git
+
+```
+
+
+### 🔥 Features
+
+-   Manage Customers and Teams
+-   Helpdesk, Ticket system
+-   Create and manage templates
+-   Automated subscriptions and billing systems
+-   Admin, Staff and Client dashboard
+-   Customizable pricing plans
+-   Manage subscriptions - Activate, suspend, deactivate subscription
+-   Runs on a Raspberry Pi or a multi-datacenter cloud platform
+-   Domain management 
+-   Use for any Saas App
+
+
