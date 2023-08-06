@@ -1,0 +1,2 @@
+[console_scripts]
+geos18-nexrad-package = geos18_nexrad_package.cli:app

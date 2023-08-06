@@ -1,0 +1,9 @@
+numpy
+pandas
+typer
+boto3
+datetime
+python-dotenv
+
+[:python_version < "3.9"]
+typing
