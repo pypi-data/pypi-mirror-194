@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyumdreplace
+Version: 0.1.0
+Summary: Python interface for UMD-replace.
+Home-page: https://github.com/Illidanz/pyumdreplace
+Author: Illidan
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyumdreplace
+Python interface for UMD-replace.
+
+## Installation
+`pip install pyumdreplace`
+
+## Usage
+```
+import pyumdreplace
+
+pyumdreplace.run("imagename", "filename", "newfile")
+```
