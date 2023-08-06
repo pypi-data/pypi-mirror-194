@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: openjson
+Version: 0.1.0
+Summary: A modular approach to handling JSON.
+Home-page: https://pypi.org/project/openjson/
+Download-URL: https://github.com/JordanWelsman/openjson/tags
+Author: Jordan Welsman
+Author-email: jordan.welsman@outlook.com
+License: MIT
+Keywords: python,json,modular,parsing,interpreting,exporting,importing
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: jutl
+
+# modular-json
+
+A modular approach to parsing JSON.
