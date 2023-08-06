@@ -1,0 +1,124 @@
+#!/usr/bin/env python
+import re
+import tarfile
+
+from ilan_dev import lcp, human_bytes, tar_nameset, tar_repack
+
+
+cext_pat = re.compile(r'''
+.*lib/
+python\d\.\d+/
+(site-packages|lib-dynload)/
+(?P<mod>\S+?)                   # actual module name
+\.cp[\w\-]+\.so
+$''', re.VERBOSE)
+
+def show_cext(t):
+    res = []
+    for m in t.getmembers():
+        match = cext_pat.match(m.path)
+        if match is not None:
+            res.append(match.group('mod').replace('/', '.'))
+    for mod in sorted(res):
+        print('import', mod)
+
+
+def tar_common(paths):
+    a = tar_nameset(paths[0])
+    for path in paths[1:]:
+        a &= tar_nameset(path)
+    return a
+
+
+def tar_show_diff(path_a, path_b):
+    a = tar_nameset(path_a)
+    b = tar_nameset(path_b)
+
+    lst = []
+    for c in a - b:
+        lst.append((c, '-'))
+    for c in b - a:
+        lst.append((c, '+'))
+    if not lst:
+        return
+    print('---', path_a)
+    print('+++', path_b)
+    for e, s in sorted(lst):
+        print(s + str(e))
+
+
+def main():
+    from optparse import OptionParser
+
+    p = OptionParser(
+        usage="usage: %prog [options] TAR [TAR ...]",
+        description="display useful information about tar files")
+
+    p.add_option('--cext',
+                 action="store_true",
+                 help="list Python C extension imports")
+
+    p.add_option('--common',
+                 action="store_true",
+                 help="list archive name common in all tarballs")
+
+    p.add_option('--diff',
+                 action="store_true",
+                 help="show difference of two tarballs (archive names only)")
+
+    p.add_option('--lcp',
+                 action="store_true",
+                 help="show the longest common prefix of all archive names")
+
+    p.add_option('--repack',
+                 action="store_true",
+                 help="repack tarballs")
+
+    p.add_option('--size',
+                 action="store_true",
+                 help="list file sizes of all archives (sorted by size)")
+
+    opts, args = p.parse_args()
+
+    if opts.common:
+        if len(args) == 0:
+            p.error("--common requires at least one arguments")
+        for x in sorted(tar_common(args)):
+            print(x)
+        return
+
+    if opts.diff:
+        if len(args) != 2:
+            p.error("--diff requires exactly two arguments")
+        tar_show_diff(*args)
+        return
+
+    for path in args:
+        if not path.endswith(('.tar', '.tar.bz2', '.tar.gz', '.tgz')):
+            print('ignoring:', path)
+            continue
+
+        if len(args) > 1:
+            print("==> %s <==" % path)
+
+        if opts.repack:
+            print('repacking')
+            tar_repack(path)
+
+        with tarfile.open(path) as t:
+            if opts.cext:
+                show_cext(t)
+
+            elif opts.lcp:
+                s = lcp(m.name for m in t.getmembers())
+                if s:
+                    print(s)
+
+            elif opts.size:
+                lst = [(m.size, m.name) for m in t.getmembers()]
+                for size, name in sorted(lst):
+                    print("%-60s %10s" % (name, human_bytes(size)))
+
+
+if __name__ == '__main__':
+    main()
