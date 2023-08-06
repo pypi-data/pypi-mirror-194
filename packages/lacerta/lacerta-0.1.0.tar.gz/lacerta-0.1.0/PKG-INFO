@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lacerta
+Version: 0.1.0
+Summary: Interactive data viz for science and engineering
+Home-page: https://github.com/imperssonator/lacerta
+Author: Nils Persson
+Author-email: imperssonator@gmail.com
+Project-URL: Bug Tracker, https://github.com/imperssonator/lacerta/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lacerta
+ interactive data viz for science and engineering
