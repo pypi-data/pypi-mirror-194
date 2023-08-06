@@ -1,0 +1,16 @@
+igittigitt
+
+[dev]
+black
+ruff
+interrogate
+isort
+pip-tools
+
+[test]
+black
+ruff
+interrogate
+pytest
+pytest-cov
+tox
