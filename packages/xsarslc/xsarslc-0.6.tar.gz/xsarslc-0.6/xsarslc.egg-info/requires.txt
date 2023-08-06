@@ -1,0 +1,9 @@
+xarray
+numpy
+netCDF4
+shapely
+xrft
+xarray-datatree
+cartopy
+importlib_resources
+tqdm
