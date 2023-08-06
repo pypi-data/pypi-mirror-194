@@ -1,0 +1,9 @@
+betterconcurrent/__init__.py,sha256=KUb1mBz9ctIIu-ZOApkTER-sdEitFQ_20C_KTWfEPTg,1422
+betterconcurrent/_base.py,sha256=LOpVzfV-R1L81upIfvBQLyyDAmqqyz2Q71nqoTNA6BQ,24045
+betterconcurrent/process.py,sha256=g2x_Gh5y8T9eyERN2SVnJpmuK-5UeiyVOPptQfbVAhE,34046
+betterconcurrent/thread.py,sha256=cmJ-HbEDJIuMmIJHeiPDOH0SWBGL_y2jKVyirf_W6ec,13935
+betterconcurrent-0.0.1.dist-info/LICENSE,sha256=Oy-B_iHRgcSZxZolbI4ZaEVdZonSaaqFNzv7avQdo78,13936
+betterconcurrent-0.0.1.dist-info/METADATA,sha256=iTPbQkGEWPlmPZqzQFUTHHme4uG31dQMXzSxe3G4M_o,20587
+betterconcurrent-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+betterconcurrent-0.0.1.dist-info/top_level.txt,sha256=xhwNyUuIcSy9PvE8bkK5I66O5Hl8l98QMqzFLUJFdYE,17
+betterconcurrent-0.0.1.dist-info/RECORD,,
