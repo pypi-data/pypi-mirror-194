@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/__init__.py
+src/model/__init__.py
+src/model/__main__.py
+src/model/roulette_wheel.py
+src/my_sum/__init__.py
+src/roulette_simulator.egg-info/PKG-INFO
+src/roulette_simulator.egg-info/SOURCES.txt
+src/roulette_simulator.egg-info/dependency_links.txt
+src/roulette_simulator.egg-info/entry_points.txt
+src/roulette_simulator.egg-info/requires.txt
+src/roulette_simulator.egg-info/top_level.txt
+tests/test_roulette_wheel.py
+tests/test_sum.py

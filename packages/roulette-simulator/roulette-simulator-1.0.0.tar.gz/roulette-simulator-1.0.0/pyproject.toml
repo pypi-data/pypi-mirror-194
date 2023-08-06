@@ -1,0 +1,56 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roulette-simulator"
+version = "1.0.0"
+description = "Simulation of a Roulette Wheel."
+readme = "README.md"
+authors = [{ name = "Ryan M. Howell", email = "rmhowell@protonmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["sim", "simulation", "roulette"]
+dependencies = []
+requires-python = ">=3.7"
+
+    [project.optional-dependencies]
+    build = ["build", "twine"]
+    dev   = ["black", "bumpver", "isort", "mypy", "pytest"]
+
+    [project.scripts]
+    realpython = "model.__main__:main"
+
+    [project.urls]
+    repository    = "https://github.com/Huell-Howitzer/roulette_simulator"
+    documentation = "https://github.com/Huell-Howitzer/roulette_simulator.wiki"
+
+
+[tool.bumpver]
+current_version = "1.1.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message  = "bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
+
+    [tool.bumpver.file_patterns]
+    "pyproject.toml" = [
+        'current_version = "{version}"',
+        'version = "{version}"',
+    ]
+    "src/model/__init__.py" = ["{version}"]
+    "src/model/__main__.py" = ["- roulette-simulator v{version}"]
+
+[tool.isort]
+profile                   = "black"
+import_heading_stdlib     = "Standard library imports"
+import_heading_thirdparty = "Third party imports"
+import_heading_firstparty = "Roulette-Simulator imports"
+
+[tool.mypy]
+strict = true
