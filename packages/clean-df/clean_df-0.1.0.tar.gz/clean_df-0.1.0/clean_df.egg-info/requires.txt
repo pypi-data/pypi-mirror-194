@@ -1,0 +1,5 @@
+numpy
+pandas
+missingno
+IPython
+matplotlib
