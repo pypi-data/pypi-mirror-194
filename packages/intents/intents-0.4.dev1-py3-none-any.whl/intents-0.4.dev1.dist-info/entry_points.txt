@@ -1,0 +1,3 @@
+[console_scripts]
+agentctl=intents.cli.agentctl:agentctl
+
