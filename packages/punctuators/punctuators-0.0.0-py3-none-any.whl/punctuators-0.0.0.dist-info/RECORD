@@ -1,0 +1,12 @@
+punctuators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+punctuators/collectors/__init__.py,sha256=HxxL_hrBN8gFfk9T1FlX9mQAJRHxvhSSYs2msGj6bi8,118
+punctuators/collectors/pcs_collector.py,sha256=QSuMvniGF-NTz4wbfff2PBM3muqUnNvZaOinjwy8EWQ,4154
+punctuators/data/__init__.py,sha256=PhY4MZZkqp4y8dmwQNq9YsV0PDBrevMCI662R57bpCM,140
+punctuators/data/infer_dataset.py,sha256=ZuTl9XzNo2snzbVLwR1q0lnYMbZZi6FmqTRPrFB-FZ0,4598
+punctuators/models/__init__.py,sha256=R602lneLIqFwHFutfUQYDhgUAEb2MBzseP3G5Ljfb6A,107
+punctuators/models/punc_cap_seg_model.py,sha256=QHQHc-yjyP-b800NGN8LpfdZ0e8isl-N3ZGDocs6A9s,6065
+punctuators-0.0.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+punctuators-0.0.0.dist-info/METADATA,sha256=7msdUxsEkt_f98R56anLZcQT0hJlTlh5W2iEzOW01pg,336
+punctuators-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+punctuators-0.0.0.dist-info/top_level.txt,sha256=Y6h2UBM8ZvPkmyZfr85YtuqiskQtKq-92_fwwvm9x3s,12
+punctuators-0.0.0.dist-info/RECORD,,
