@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyxbldc
+
+# Version info
+src/km3irf/version.py
+
+# Build stuff
+build/
+develop-eggs/
+dist/
+eggs/
+sdist/
+*.egg-info/
+*.egg
+.eggs
+pip-wheel-metadata
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+.coverage.*
+junit*.xml
+reports
+
+# Sphinx documentation
+doc/_build/
+doc/auto_examples/
+doc/gen_modules/*.examples
+doc/api
+doc/autoapi/
+
+# Virtual env
+venv
+
+# Others
+src/km3irf/data/all_in_one.fits
+use_cases/*.fits
+examples/*.fits
+use_cases/.ipynb_checkpoints/
