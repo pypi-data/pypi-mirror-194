@@ -1,0 +1,8 @@
+pkg1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg1/test.py,sha256=0oe7f50Vq9xbbphTYmOBV0S27yHI88g5_ENMpw2O_pk,8
+pkg2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg2/test.py,sha256=_JIzniyGTY_BeCg07eXpa-s04JZ0XNtVnDqLtn-_rnw,8
+mytestlibrarykk-0.0.1.dist-info/METADATA,sha256=SsVWgTgFtOT-NVWE1YXjQK92QgIKUMh-QsbImWk8Ztg,381
+mytestlibrarykk-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mytestlibrarykk-0.0.1.dist-info/top_level.txt,sha256=1Pl13knEbsXnVHg3Shtg7p5rJWBocA5gjPClTjS7RmM,10
+mytestlibrarykk-0.0.1.dist-info/RECORD,,
