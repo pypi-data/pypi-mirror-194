@@ -1,0 +1,32 @@
+# Changelog
+{% if commits_fix %}
+## Fixed
+{% for commit in commits_fix -%}
+- {{ commit }}
+{% endfor %}
+{% endif %}
+{% if commits_feat_add or commits_feat_change or commits_feat_remove %}
+## Features
+{% endif %}
+{% if commits_feat_add %}
+### Added
+{% for commit in commits_feat_add -%}
+- {{ commit }}
+{% endfor %}
+{% endif %}
+{% if commits_feat_change %}
+### Changed
+{% for commit in commits_feat_change -%}
+- {{ commit }}
+{% endfor %}
+{% endif %}
+{% if commits_feat_remove %}
+### Removed
+{% for commit in commits_feat_remove -%}
+- {{ commit }}
+{% endfor %}
+{% endif %}
+## Other
+{% for commit in commits_other -%}
+- {{ commit }}
+{% endfor %}
