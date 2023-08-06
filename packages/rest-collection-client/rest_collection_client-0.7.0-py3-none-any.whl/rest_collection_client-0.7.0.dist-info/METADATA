@@ -1,0 +1,275 @@
+Metadata-Version: 2.1
+Name: rest-collection-client
+Version: 0.7.0
+Summary: Rest collection library HTTP client.
+Home-page: https://bitbucket.org/p-app/rest_collection_client
+License: MIT
+Author: Vladimir V. Pivovarov
+Author-email: admin@p-app.ru
+Maintainer: Vladimir V. Pivovarov
+Maintainer-email: admin@p-app.ru
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: aiohttp
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: ujson
+Requires-Dist: aiohttp (>=3.8.0,<4.0.0)
+Requires-Dist: collections-extension (>=0.5.0,<0.6.0)
+Requires-Dist: pandas (>=1.2.0,<2.0.0)
+Requires-Dist: ujson; extra == "ujson"
+Project-URL: Repository, https://bitbucket.org/p-app/rest_collection_client
+Description-Content-Type: text/markdown
+
+## [REST collection](https://bitbucket.org/p-app/rest_collection) library client.
+This package provides bindings for http REST client creation.
+This package has no complete solutions for http client, because it has much 
+application-specific things usually.
+
+
+### HTTP client creation.
+Package provides 4 abstract classes for HTTP client:
+1. `AbstractHttpClient` - HTTP client skeleton.
+2. `AbstractGetHttpClient` - HTTP client for GET requests only skeleton.
+3. `AbstractChunkedGetHttpClient` - HTTP client for GET requests, which 
+request data with chunks (for smaller responses and network performance).
+4. `AbstractAuthenticatedChunkedGetHttpClient` - previos HTTP client, which 
+can send authorization requests before data requests.
+
+#### Example of http client
+```python
+## client.py
+from math import ceil
+
+from rest_collection_client.http import \
+    AbstractAuthenticatedChunkedGetHttpClient
+
+
+def _build_chunk_url(url, start, stop):
+    """Some code, that build url."""
+
+
+def _get_chunk_total(chunk):
+    """Some code, that get total value."""
+    
+    
+def _make_request(authentication_data):
+    """Some code, that make JSON-like data, that will be sended to server."""
+    
+
+def _store_authorization_data(session, response):
+    """Some code, that store authorization data to session for next requests."""
+
+    
+class RestCollectionClient(AbstractAuthenticatedChunkedGetHttpClient):
+
+    def _compose_other_chunk_urls(self, url, chunk_size, first_chunk):
+        total = _get_chunk_total(first_chunk)
+
+        for index in range(1, ceil(total / chunk_size)):
+            start = index * chunk_size
+            stop = (index + 1) * chunk_size
+
+            yield _build_chunk_url(url, start, stop)
+
+    def _compose_first_chunk_url(self, url, chunk_size):
+        return _build_chunk_url(url, 0, chunk_size)
+
+    async def _request_authentication(self, authentication_data):
+        url = authentication_data['url']
+
+        request = _make_request(authentication_data)
+
+        async with self._session.post(url, json=request) as resp:
+            if resp.status != 200:
+                return False
+
+            _store_authorization_data(self._session, resp)
+
+        return True
+```
+Usage of this class:
+```python
+## fetch.py
+from asyncio import get_event_loop
+
+from .client import RestCollectionClient
+
+
+chunk_size = 1000
+authentication_data = {
+    'url': 'http://example.com/login',
+    'login': 'user',
+    'password': 'secret_password'
+}
+data_url = 'http://example.com/data'
+
+
+async def get():    
+    async with RestCollectionClient() as client:
+        return await client.get(
+            data_url, authentication_data, chunk_size=chunk_size
+        )
+
+# we will request data here with chunks and authentication request before.
+def fetch_data():
+    loop = get_event_loop()
+    raw_response = loop.run_until_complete(get())
+    loop.close()
+    return raw_response   
+```
+
+
+### Join REST response in SQL-like manner.
+Data from REST collection API looks like this structure:
+```json
+{
+  "a": [
+    {"id": 1, "name": "a"}
+  ],
+  "b": [
+    {"id": 2, "a_id": 1, "name": "b"}
+  ],
+  "c": [
+    {"id": 2, "b_id": 2, "name": "c"}
+  ]
+}
+```
+They are normalized, like tables in SQL database. But, oftenly, we want to 
+build 2-dimensioned table from them. 
+
+In SQL databases it is possible, when we use JOIN expression. So, we suggest 
+to use similar way, built on the top of famous library called 
+[pandas](https://pandas.pydata.org/).
+
+
+#### Declare join rules
+First of all, we need to declare how our data relates internally. For this 
+purpose, this package provides some containers.
+```python
+## join.py
+from rest_collection_client.join import RestCollectionJoinColumns, \
+    RestCollectionJoinRule, RestCollectionJoinSequence
+    
+RESPONSE_JOIN_SEQUENCE = RestCollectionJoinSequence(
+    RestCollectionJoinRule(
+        RestCollectionJoinColumns('a', 'id'),
+        RestCollectionJoinColumns('b', 'a_id')
+    ),
+    RestCollectionJoinRule(
+        RestCollectionJoinColumns('b', 'id'),
+        RestCollectionJoinColumns('c', 'b_id')
+    ),
+)
+
+# we will get 2d-table here
+def make_table(response):
+    # response must be Mapping object with model names as keys and 
+    # `pandas.DataFrame` objects as values.
+    return RESPONSE_JOIN_SEQUENCE.join(response)    
+```
+In this example, we declare what columns of one model points to some columns 
+in another model for each bond. Our relations contains in each case only one 
+column pointing to one column, but this package supports multiple columns 
+declaration for each case as well.
+
+
+
+#### Prepare raw response data for joining.
+We know, that JSON accepts only simple types of data, like booleans, strings,
+ numbers. But we have to transfer more complex data sometimes, like 
+ datetimes, timedeltas, decimals and others.
+ 
+So, we have to deserialize our raw response from server and convert them to 
+the map of `pandas.DataFrame`. This packages provides some containers to 
+resolve this issue.
+```python
+## deserialize.py
+from rest_collection_client.response import \
+    RestCollectionDeserializeMap, RestCollectionResponse
+
+
+def _deserialize_a(a_item):
+    pass
+    
+def _deserialize_b(b_item):
+    pass
+    
+def _deserialize_c(c_item):
+    pass
+    
+    
+RESPONSE_DESERIALIZE_MAP = RestCollectionDeserializeMap(
+    a=_deserialize_a,
+    b=_deserialize_b,
+    c=_deserialize_c
+)
+
+def deserialize_response(raw_response):
+    return RestCollectionResponse.deserialize(
+        raw_response, RESPONSE_DESERIALIZE_MAP
+    )
+```
+`RestCollectionDeserializeMap` creates map of callables for each model, which
+ is required for `RestCollectionResponse.deserialize` classmethod.
+ 
+`RestCollectionResponse` is a `Mapping` object, with model names as keys and 
+`pandas.DataFrame` objects as values (as join containers required).
+
+
+#### Rename response model columns.
+As we see, some models may have equal-named columns, like all models in our 
+example - we talk about "name" column. If we join our response in 
+2d-table, we will catch 3 columns, that will be called "name". It is very unclear, we can not predict what column belongs to some concrete model.
+
+Even worse case, if equal-named columns will appear in "join" column. We can 
+join out data in wrong way.
+
+That\`s why, `RestCollectionJoinSequence` container requires, that all column
+ names must be unique.
+ 
+By default, `RestCollectionJoinColumns` concatenates model name and column 
+name with dot, like this: `a.name`, `b.a_id`, etc... According to this, we 
+should rename columns in our `RestCollectionResponse` before it will be 
+joined by `RestCollectionJoinSequence`.
+
+This package has default rename factory:
+```python
+## rename.py
+from rest_collection_client.response import RestCollectionRenameFactory
+
+
+RESPONSE_RENAME_FACTORY = RestCollectionRenameFactory()
+
+def rename_response_values(response):
+    return response.rename(RESPONSE_RENAME_FACTORY)
+```
+You can inherit `RestCollectionRenameFactory` and implement your own factory,
+ but it must be related to rename manner of `RestCollectionJoinColumns`.
+ 
+Both containers have keyword parameter `delimiter`, to declare concatenate 
+delimiter.
+
+
+### Full usage example
+```python
+from .fetch import fetch_data
+from .join import make_table
+from .deserialize import deserialize_response
+from .rename import rename_response_values
+
+def main():
+    raw_response = fetch_data()
+    response = deserialize_response(raw_response)
+    response = rename_response_values(response)
+    return make_table(response)
+```
+After calling `main` function, we will get joined `pandas.DataFrame` 
+structure with requested data.
+
