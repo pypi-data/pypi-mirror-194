@@ -1,0 +1,16 @@
+pyemd-1.0.0.dist-info/LICENSE,sha256=EYv9jrdtc2Aovs6RSWAZ_SZn8fEOcgM0KSnheksDHms,1060
+pyemd-1.0.0.dist-info/top_level.txt,sha256=VprEFNVg7Xlmfr74Pa9AW-VucfOQ7-KmTYv34zIxbP4,6
+pyemd-1.0.0.dist-info/WHEEL,sha256=iq0ipPLG8LzHqa8Xrv2BuUBNqLZHVn6SGh2noGMIZcY,148
+pyemd-1.0.0.dist-info/METADATA,sha256=h-jphiyOG-MeFEcQVZnxy29HNf4cUH9uCmd4qezV64c,9642
+pyemd-1.0.0.dist-info/RECORD,,
+pyemd/_version.py,sha256=FrtOfsGtY3HPkXwopVTLnBRPrKexJ-VIfXoRzWX47O4,160
+pyemd/emd.cpp,sha256=R-wwf8txOVPXpgauYhvX_SWGUgR0oqABMpf77RSrd-A,454605
+pyemd/emd.pyx,sha256=eQ4OTepAx52BlWR_Y33vUesEZViMLZCawfoPWKjKm7I,11533
+pyemd/emd.cpython-310-i386-linux-gnu.so,sha256=zMuufJzkHgOWIZixseGvWDKXzLlWXwi8gjpuTj_5XiE,1694708
+pyemd/__init__.py,sha256=mjCTUKVfN6LwfPM5PgloZi2iw5kYu4urP90R2TjYMIg,2408
+pyemd/lib/emd_hat_signatures_interface.hpp,sha256=gNXIsNW9KrLSbhPKlvXrDxhCrsCGlYcwR_iA-TSIiI8,5636
+pyemd/lib/EMD_DEFS.hpp,sha256=ucCD3_Q9H5MCPk35DPyaQ8ouo9zC8YLEzI48Ph9w0L0,1950
+pyemd/lib/emd_hat.hpp,sha256=vVObKBAEo9gAeqOr26ai-R73Haf2be3h4faNe2SbJj8,6174
+pyemd/lib/flow_utils.hpp,sha256=0MIAGF8bzgv3ZGUltQz-L57Ykw5fLiRdt_IsjIR7754,4281
+pyemd/lib/emd_hat_impl.hpp,sha256=R4GjU3H8uRjz4UV73hyGpGDfCifoNsWXup57BRCL6W0,18957
+pyemd/lib/min_cost_flow.hpp,sha256=Yl-vk9Z90J8aylykH8uikO5viuOnBL2qKUfzu_1ImD8,16835
