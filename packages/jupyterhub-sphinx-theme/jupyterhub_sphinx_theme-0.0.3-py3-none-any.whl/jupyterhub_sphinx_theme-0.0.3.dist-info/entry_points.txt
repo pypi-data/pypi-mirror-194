@@ -1,0 +1,2 @@
+[sphinx.html_themes]
+jupyterhub_sphinx_theme = jupyterhub_sphinx_theme

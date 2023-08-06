@@ -1,0 +1,10 @@
+/* Overriding Book Theme colors to standardize for JupyterHub */
+html[data-theme=light] {
+  --pst-color-primary: #ee9459;  // Slightly lighter Jupyter orange
+  --pst-color-secondary: #4e4e4e;
+}
+
+html[data-theme=dark] {
+  --pst-color-primary: #ee9459;
+  --pst-color-secondary: #bebebe;
+}

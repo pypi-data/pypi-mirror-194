@@ -1,0 +1,27 @@
+/* Overriding Book Theme colors to standardize for JupyterHub */
+html[data-theme=light] {
+  --pst-color-primary: #ee9459;
+  --pst-color-secondary: #4e4e4e;
+}
+
+html[data-theme=dark] {
+  --pst-color-primary: #ee9459;
+  --pst-color-secondary: #bebebe;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--pst-color-text-muted);
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: 100%;
+  width: auto;
+  padding: 0.4rem;
+}
+
+/*# sourceMappingURL=jupyterhub-sphinx-theme.css.map */
