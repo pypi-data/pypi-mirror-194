@@ -1,0 +1,15 @@
+vds/colorizer.py,sha256=dQupYN4YhY8VumiJqXadgWXTYC2QR-dEiIULukd-E4o,2225
+vds/config.py,sha256=UlG5U9n7HGJf6UIh2uf_GM6rM0tIBsyCNOlCvc42JYo,334
+vds/main.py,sha256=aDNXtGGxg6AFjfP8LgP5CShZ2FE5mBcQ625tXLfwgSM,4674
+vds/plugins/files/f001.py,sha256=Z832KD-y_CR5-FOV1qs0lG_lFdco8p6osUuLskhscV0,1746
+vds/plugins/transcription/t001.py,sha256=1jJvDHFlduD7KxAzGCLC-Y67Mk6rzddEBZWELgaQv2E,1131
+vds/plugins/transcription/t002.py,sha256=f9ufKY-WwwMylSbzyA3sOJYmFzNxZb4C5lEJaU72KAo,1589
+vds/plugins/transcription/t003.py,sha256=vmOedHDlY_GPOt2xHFL46EbdS84i5AFdyyAHy8h9vNk,1662
+vds/plugins/transcription/t004.py,sha256=iNJcg4KwMqcmRxeNgcZrzpZ7B11pmYUC0rHSVbAhljA,1661
+vds/plugins/transcription/t005.py,sha256=-HnXLSfAyuHICfojzqWHEVQQh3gjc_Pf23avm3OwMFc,1895
+vds/plugins/transcription/t006.py,sha256=GiuFWKZW_u1-9KNCy7c_kMK3-Kcme1SXAwZ11r_J4NE,1740
+vds/plugins/transcription/t007.py,sha256=qNxUEeN6GAtX90S15BXgYsC-0TMnkOlFXnAaDqN1MNQ,3049
+vds-23.2.27.dist-info/entry_points.txt,sha256=6jFF2UrXCSTy4Q-pliZUs5kZ1AzGgzB7v8NKiu5cpZU,37
+vds-23.2.27.dist-info/METADATA,sha256=Pu8vcGpqXOFLzexq_uSBjbqHy7WLASsPIttpdvE0cXs,4258
+vds-23.2.27.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+vds-23.2.27.dist-info/RECORD,,
