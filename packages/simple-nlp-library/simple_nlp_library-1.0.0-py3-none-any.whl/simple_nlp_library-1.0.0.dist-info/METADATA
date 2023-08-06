@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: simple_nlp_library
+Version: 1.0.0
+Summary: Simple NLP library
+Project-URL: Homepage, https://github.com/marekm4/simple_nlp_library
+Project-URL: Bug Tracker, https://github.com/marekm4/simple_nlp_library/issues
+Author-email: Marek Michalik <marekmichalik43@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# simple_nlp_library
+Simple NLP library
+
+## installation
+```
+python3 -m pip install --upgrade simple_nlp_library
+```
+
+## usage
+```python
+from simple_nlp_library import preprocessing
+
+tokens = preprocessing.retrieve_semantic_tokens('The quick brown fox jumps over the lazy dog')
+print(tokens)
+```
