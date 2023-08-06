@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "fastami"
+version = "0.2.1"
+description = "A Monte Carlo approximation to the adjusted and standardized mutual information for faster clustering comparisons"
+authors = ["FastAMI <kai.klede@fau.de>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+numpy = ">=1.24.1"
+scikit-learn = ">=1.2.0"
+scipy = ">=1.10.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+coverage = "^7.0.3"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1a1", allow-prereleases = true}
+isort = "^5.12.0"
+poethepoet = "^0.18.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | docs
+    | build
+    | dist
+    | \.virtual_documents
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 120
+skip_gitignore = true
+
+
+[tool.poe.tasks]
+_format_black = "black ."
+_format_isort = "isort ."
+format = { sequence = ["_format_black", "_format_isort"], help = "Format all files." }
+lint = { cmd = "prospector", help = "Lint all files with Prospector." }
+_check_black = "black . --check"
+_check_isort = "isort . --check"
+check = { sequence = ["_check_black", "_check_isort"], help = "Check all potential format and linting issues." }
+test = { cmd = "pytest --cov=fastami --cov-report=term-missing --cov-report=xml", help = "Run Pytest with coverage." }
+version = { script = "_tasks:task_update_version()" }
