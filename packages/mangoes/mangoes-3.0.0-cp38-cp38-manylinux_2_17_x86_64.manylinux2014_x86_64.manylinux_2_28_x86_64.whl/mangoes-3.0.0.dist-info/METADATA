@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: mangoes
+Version: 3.0.0
+Summary: Mangoes v3 is a toolbox for constructing and evaluating static or contextual token vector representations (aka word embeddings).
+Home-page: https://gitlab.inria.fr/magnet/mangoes/
+Download-URL: https://gitlab.inria.fr/magnet/mangoes/repository/3.0.0/archive.tar.gz
+Author: Inria - Magnet
+Author-email: nathalie.vauquier@inria.fr
+License: LGPL
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7,!=3.11
+License-File: LICENSE
+Requires-Dist: cython
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: transformers (>=4.17.0)
+Requires-Dist: torch (>=1.7)
+Provides-Extra: generator
+Requires-Dist: gensim ; extra == 'generator'
+Provides-Extra: visualize
+Requires-Dist: matplotlib ; extra == 'visualize'
+
+Documentation can be found at https://magnet.gitlabpages.inria.fr/mangoes/index.html#
