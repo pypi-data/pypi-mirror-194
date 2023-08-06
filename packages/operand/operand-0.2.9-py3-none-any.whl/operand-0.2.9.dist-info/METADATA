@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: operand
+Version: 0.2.9
+Home-page: https://github.com/operandinc/operand-py
+Author: Operand, Inc.
+Author-email: support@operand.ai
+License: MIT
+Keywords: semantic-search search nlp
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: protobuf
+
