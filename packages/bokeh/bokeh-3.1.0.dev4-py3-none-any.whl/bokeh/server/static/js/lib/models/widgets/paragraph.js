@@ -1,0 +1,25 @@
+import { Markup, MarkupView } from "./markup";
+import { p as paragraph } from "../../core/dom";
+export class ParagraphView extends MarkupView {
+    static __name__ = "ParagraphView";
+    render() {
+        super.render();
+        // This overrides default user-agent styling and helps layout work
+        const content = paragraph({ style: { margin: 0 } });
+        if (this.has_math_disabled())
+            content.textContent = this.model.text;
+        else
+            content.innerHTML = this.process_tex(this.model.text);
+        this.markup_el.appendChild(content);
+    }
+}
+export class Paragraph extends Markup {
+    static __name__ = "Paragraph";
+    constructor(attrs) {
+        super(attrs);
+    }
+    static {
+        this.prototype.default_view = ParagraphView;
+    }
+}
+//# sourceMappingURL=paragraph.js.map

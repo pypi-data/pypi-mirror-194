@@ -1,0 +1,107 @@
+import { AbstractButton, AbstractButtonView } from "./abstract_button";
+import { ButtonClick, MenuItemClick } from "../../core/bokeh_events";
+import { div, display, undisplay } from "../../core/dom";
+import { isString } from "../../core/util/types";
+import * as buttons from "../../styles/buttons.css";
+import dropdown_css, * as dropdown from "../../styles/dropdown.css";
+import carets_css, * as carets from "../../styles/caret.css";
+export class DropdownView extends AbstractButtonView {
+    static __name__ = "DropdownView";
+    _open = false;
+    menu;
+    styles() {
+        return [...super.styles(), dropdown_css, carets_css];
+    }
+    render() {
+        super.render();
+        const caret = div({ class: [carets.caret, carets.down] });
+        if (!this.model.is_split)
+            this.button_el.appendChild(caret);
+        else {
+            const toggle = this._render_button(caret);
+            toggle.classList.add(buttons.dropdown_toggle);
+            toggle.addEventListener("click", () => this._toggle_menu());
+            this.group_el.appendChild(toggle);
+        }
+        const items = this.model.menu.map((item, i) => {
+            if (item == null)
+                return div({ class: dropdown.divider });
+            else {
+                const label = isString(item) ? item : item[0];
+                const el = div(label);
+                el.addEventListener("click", () => this._item_click(i));
+                return el;
+            }
+        });
+        this.menu = div({ class: [dropdown.menu, dropdown.below] }, items);
+        this.shadow_el.appendChild(this.menu);
+        undisplay(this.menu);
+    }
+    _show_menu() {
+        if (!this._open) {
+            this._open = true;
+            display(this.menu);
+            const listener = (event) => {
+                if (!event.composedPath().includes(this.el)) {
+                    document.removeEventListener("click", listener);
+                    this._hide_menu();
+                }
+            };
+            document.addEventListener("click", listener);
+        }
+    }
+    _hide_menu() {
+        if (this._open) {
+            this._open = false;
+            undisplay(this.menu);
+        }
+    }
+    _toggle_menu() {
+        if (this._open)
+            this._hide_menu();
+        else
+            this._show_menu();
+    }
+    click() {
+        if (!this.model.is_split)
+            this._toggle_menu();
+        else {
+            this._hide_menu();
+            this.model.trigger_event(new ButtonClick());
+            super.click();
+        }
+    }
+    _item_click(i) {
+        this._hide_menu();
+        const item = this.model.menu[i];
+        if (item != null) {
+            const value_or_callback = isString(item) ? item : item[1];
+            if (isString(value_or_callback)) {
+                this.model.trigger_event(new MenuItemClick(value_or_callback));
+            }
+            else {
+                value_or_callback.execute(this.model, { index: i }); // TODO
+            }
+        }
+    }
+}
+export class Dropdown extends AbstractButton {
+    static __name__ = "Dropdown";
+    constructor(attrs) {
+        super(attrs);
+    }
+    static {
+        this.prototype.default_view = DropdownView;
+        this.define(({ Null, Boolean, String, Array, Tuple, Or }) => ({
+            split: [Boolean, false],
+            menu: [Array(Or(String, Tuple(String, Or(String /*TODO*/)), Null)), []],
+        }));
+        this.override({
+            label: "Dropdown",
+        });
+    }
+    get is_split() {
+        return this.split;
+    }
+}
+//# sourceMappingURL=dropdown.js.map
