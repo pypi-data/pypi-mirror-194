@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+spatialfix/__init__.py
+spatialfix/spatialfix.py
+spatialfix.egg-info/PKG-INFO
+spatialfix.egg-info/SOURCES.txt
+spatialfix.egg-info/dependency_links.txt
+spatialfix.egg-info/not-zip-safe
+spatialfix.egg-info/top_level.txt
