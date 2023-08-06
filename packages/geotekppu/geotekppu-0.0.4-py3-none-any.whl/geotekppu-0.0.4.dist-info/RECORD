@@ -1,0 +1,10 @@
+geotekppu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geotekppu/rmr/rmr__bieniawski1989.py,sha256=NaRZzSVlk7usdug5OX3pYjo4q_LVfU5mKVrPyurTXT4,8914
+geotekppu/rmr/rmr__celada_etal2014.py,sha256=yf68nUK5vqHEVfoXwHuSmKROgA_J2ND1rpu37B2eXKY,4970
+geotekppu/rmr/rmr_b_geocontrol2012.py,sha256=d4EoUjkF7qMP3UN87vUFK6kNSxhHj8R8Acmex8GnLoE,5778
+geotekppu/rmr/rmr_hlw_tong_etal2022.py,sha256=eHtYsder1cF4-OGPUe5UI0wZ5uzDzFWE36ZFG5fUVsY,7088
+geotekppu-0.0.4.dist-info/LICENSE,sha256=FnRP3QKNPq9FqKJ9jN6kyW7U3Y6hVY7TDyWopyBRm4Q,1170
+geotekppu-0.0.4.dist-info/METADATA,sha256=NM2KRIJayt94LkwT6BWY7iBCyCv_uf4U4mhvWSRnsAk,10527
+geotekppu-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+geotekppu-0.0.4.dist-info/top_level.txt,sha256=CT9GgweW_ffdKwgzau7yQ0ggXfR14BTQX6992YbkqFU,10
+geotekppu-0.0.4.dist-info/RECORD,,
