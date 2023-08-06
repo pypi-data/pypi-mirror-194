@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+httpwaiter/__init__.py
+httpwaiter.egg-info/PKG-INFO
+httpwaiter.egg-info/SOURCES.txt
+httpwaiter.egg-info/dependency_links.txt
+httpwaiter.egg-info/top_level.txt
