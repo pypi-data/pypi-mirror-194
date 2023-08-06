@@ -1,0 +1,2 @@
+ascii_graph@ https://github.com/nyurik/py-ascii-graph/archive/refs/heads/fix-python310.zip
+cursor
