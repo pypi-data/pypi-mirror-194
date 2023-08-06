@@ -1,0 +1,11 @@
+finitelycomputable/idtrust_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finitelycomputable/idtrust_db/controller.py,sha256=laDTSNQ6LcHiZin5XtEJCVOXgSksLdSKIUsvt28UMsQ,3476
+finitelycomputable/idtrust_db/models.py,sha256=D8Fun6b6Q2MiX2CF17SWlnuQ58KrPozLFxa2oy9tluI,1827
+finitelycomputable_idtrust_db_peewee-23.2.data/data/LICENSE.txt,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+finitelycomputable_idtrust_db_peewee-23.2.data/data/README.rst,sha256=Og8Zwv1u9gHG9IQHnFhjLq9qKg5rJcuNzi1ZS9vEOVE,334
+finitelycomputable_idtrust_db_peewee-23.2.data/scripts/finitelycomputable_microsites_setup.py,sha256=f1EdquViuNibnvdp4Nht9D1IesZbommS5IyumEQpw0U,1972
+finitelycomputable_idtrust_db_peewee-23.2.dist-info/LICENSE.txt,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+finitelycomputable_idtrust_db_peewee-23.2.dist-info/METADATA,sha256=FmHQtEPGDPIbBiDfeXHT64sp0SsKfaq5I2fI4aRi-P0,1555
+finitelycomputable_idtrust_db_peewee-23.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+finitelycomputable_idtrust_db_peewee-23.2.dist-info/top_level.txt,sha256=szhYhFaZCdbF-Z7BSSVhzQ0QVI41M5PXTaZWm50wpiA,30
+finitelycomputable_idtrust_db_peewee-23.2.dist-info/RECORD,,
