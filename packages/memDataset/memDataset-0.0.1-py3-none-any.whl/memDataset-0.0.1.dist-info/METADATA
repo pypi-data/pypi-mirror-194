@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: memDataset
+Version: 0.0.1
+Summary: A package to easily handle text torch datasets and used them in hugging face transformers. Includes some extras to help with data augmentation
+Home-page: https://dev.azure.com/tfl-dataanalytics/DataScienceLU/_git/memDataset
+Author: Fernando Mendez
+Author-email: fernandomendez@tfl.gov.uk
+License: Apache Software License 2.0
+Keywords: nbdev jupyter notebook python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dotmap
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Provides-Extra: dev
+
+This file will be overwritten by `index.ipynb`
+
+
