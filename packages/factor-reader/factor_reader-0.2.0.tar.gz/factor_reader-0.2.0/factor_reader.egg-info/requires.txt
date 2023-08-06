@@ -1,0 +1,13 @@
+numpy
+pandas
+loguru
+tqdm
+deeplake
+flask
+humbug
+numcodecs
+requests
+questdb
+wrapt_timeout_decorator
+
+[dev]
