@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "anycable"
+version = "0.2.0"
+description = "Polyglot replacement for Ruby WebSocket servers with Action Cable protocol"
+authors = ["Josiah Kaviani <proofit404@gmail.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
