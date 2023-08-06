@@ -1,0 +1,12 @@
+wedoc/__init__.py,sha256=aKOhIJjSQ8kj4tXV0a-hJSER1d9ULyGQWGe7lCbZfEk,710
+wedoc/api/__init__.py,sha256=6MpMZaqQNCPv9urDPYLc11v-kooprVk9MTT1tf7TbqU,118
+wedoc/api/base.py,sha256=5qNCpRiTFyNFuXj07cDVy0pjKQAbWEhFACHW2DIROJQ,523
+wedoc/api/document.py,sha256=rVrGnyEqr0XCoCz84_YKPMqVcOLmloRTdKMsHT9Kryk,2320
+wedoc/api/form.py,sha256=L_ruNj-bSOkicZJ5g3Ywjd7V2FkhdxlPhjKCwDOR-FE,391
+wedoc/api/spreadsheet.py,sha256=HJT3S9MEpRxVT64shVtHOKbrbHrUUWPefDKNqMWCf5c,14278
+wedoc/client.py,sha256=sjBwdyFXC57szE26duj2xT3yM2M44Dk7HmKMtNLgpew,2645
+wedoc/exception.py,sha256=AaqP3Awj2mNQuwp_2jaPwW3Wf_tLX3SBsyg7OUJT4r8,181
+wedoc/utils.py,sha256=NO3VAUDcxOr3LXXf_e8-ee-LPIUHhFAOWmRS5TRNNV8,1511
+wedoc-0.1.23.dist-info/METADATA,sha256=DXO69AUMwOboXOfsXLd3rsyxCUSNeexHKUh_YzxAis4,1897
+wedoc-0.1.23.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+wedoc-0.1.23.dist-info/RECORD,,
