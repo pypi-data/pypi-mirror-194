@@ -1,0 +1,11 @@
+c2client/__init__.py,sha256=eb7nMbbvaHd_ooQasDNS_5yoMUNo95SuvynKs8BbcwQ,21
+c2client/c2rc_convert.py,sha256=G4RlVB-EzPxCj4nFQRJhkt0YtQLrrJtdETvKBy37Wqk,856
+c2client/compat.py,sha256=0Y9I30TPP93HVtYYGeX-piaosKSYu38YGK9MsXWLgVc,723
+c2client/errors.py,sha256=LJ9R4W-oF49U0ozGucNjVLqxUOHpDCjdfNsBF4RzfLY,377
+c2client/shell.py,sha256=zWakl28sON988ZC2nDbu9PdBLskGWhPBrAZGG65BiFI,6779
+c2client/utils.py,sha256=y4dkE31HBOvcR95S3rIk29g3O6iZB1mlibgBncDjsGs,2086
+c2client-0.13.dist-info/METADATA,sha256=FPxHHJSeIgZQB8NUvN1Z81KKKxqXdFiFG3x34ydNsKI,1900
+c2client-0.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+c2client-0.13.dist-info/entry_points.txt,sha256=hRLwCPm4N75Q4jSiP_IWIrd2aPdFHvSDUBgAKJ-VBO0,261
+c2client-0.13.dist-info/top_level.txt,sha256=4r1kyasRIj2Iv5hh5t3Q1xBvmeRS-cgAL8DdPN0OXBw,9
+c2client-0.13.dist-info/RECORD,,
