@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/aiopagination/__init__.py
+src/aiopagination/keyboards.py
+src/aiopagination/pagination.py
+src/aiopagination.egg-info/PKG-INFO
+src/aiopagination.egg-info/SOURCES.txt
+src/aiopagination.egg-info/dependency_links.txt
+src/aiopagination.egg-info/top_level.txt
