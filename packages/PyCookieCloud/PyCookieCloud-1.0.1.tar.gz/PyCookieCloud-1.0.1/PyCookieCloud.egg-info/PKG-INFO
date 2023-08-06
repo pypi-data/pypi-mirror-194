@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PyCookieCloud
+Version: 1.0.1
+Summary: This is an unofficial Python wrapper library for CookieCloud (https://github.com/easychen/CookieCloud).
+Home-page: https://github.com/lupohan44/PyCookieCloud
+Author: lupohan44
+Author-email: cptf_lupohan@126.com
+License: MIT
+Keywords: cookiecloud,cookie,cloud,cookies,cookiecloud-python,pycookiecloud
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

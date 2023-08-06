@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PyCookieCloud/PyCookieCloud.py
+PyCookieCloud/PyCryptoJS.py
+PyCookieCloud/__init__.py
+PyCookieCloud.egg-info/PKG-INFO
+PyCookieCloud.egg-info/SOURCES.txt
+PyCookieCloud.egg-info/dependency_links.txt
+PyCookieCloud.egg-info/requires.txt
+PyCookieCloud.egg-info/top_level.txt
