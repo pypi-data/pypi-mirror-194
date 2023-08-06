@@ -1,0 +1,22 @@
+# Runtime requirements
+--requirement requirements.txt
+
+waitress==2.1.2
+pyramid_debugtoolbar==4.9
+
+#testing
+pytest==7.1.2
+pytest-cov==3.0.0
+webtest==3.0.0
+coveralls==3.3.1
+
+# Wheel
+wheel==0.38.1
+
+# Linting
+flake8==4.0.1
+flake8-import-order==0.18.1
+black==22.3.0
+
+# Pre-commit
+pre-commit==2.19.0
