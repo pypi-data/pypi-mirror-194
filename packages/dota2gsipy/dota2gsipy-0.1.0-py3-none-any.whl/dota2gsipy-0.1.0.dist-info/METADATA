@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dota2gsipy
+Version: 0.1.0
+Summary: A Python library to interface the Game State Integration in Dota 2.
+Home-page: https://github.com/Daniel-EST/dota2gsi-py
+Author: Daniel-EST
+License: GNU
+Keywords: python,games,moba,gsi,dota2
+

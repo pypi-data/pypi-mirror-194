@@ -1,0 +1,14 @@
+dota2gsipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dota2gsipy/gamestate.py,sha256=sLfUJHeAb5UzT-ADimZdbsLii7cMMJa2EzmqCNlZ_fE,666
+dota2gsipy/map.py,sha256=eREF_9Z_Uiw1RwAUD3XnHiLFkVeyr-pVjGppTSkEBY8,2570
+dota2gsipy/player.py,sha256=n-ixWtY7XNNgWnbmZXYApN37cyU6mRDVHLZwVtMSF8Q,3177
+dota2gsipy/provider.py,sha256=qhuheLVRAs_eD9dOspUiUc2l9WYokBfrive-GK_vtzQ,699
+dota2gsipy/server.py,sha256=SrWS7N2WBgNHgiVpjl962U7njM2QQQogLqKc6XiiYiQ,2395
+dota2gsipy/hero/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dota2gsipy/hero/ability.py,sha256=DW98Ct0k73rJNXfxrzZflzPmCq_4qnkuwAVPEibD6b8,1483
+dota2gsipy/hero/hero.py,sha256=ffAZ9WV9R0U35HsU9BAzRDGSy6zH9FFmBfmP7YBK37o,5321
+dota2gsipy/hero/item.py,sha256=n_3_pY2QqNx7X9uUMOKEXcivo0ZZNaYAH7YHkRTMJks,877
+dota2gsipy-0.1.0.dist-info/METADATA,sha256=y0YzR3yfJUgJwV0lpzaP3hBjt3_skCyJfLQ-frtzbMY,255
+dota2gsipy-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dota2gsipy-0.1.0.dist-info/top_level.txt,sha256=50Fz9oBrh7QtpE6F7UviDZsT_gOnT1i_k3CA_CHxgLw,11
+dota2gsipy-0.1.0.dist-info/RECORD,,
