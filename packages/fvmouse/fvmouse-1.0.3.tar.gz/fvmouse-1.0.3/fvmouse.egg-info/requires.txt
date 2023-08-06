@@ -1,0 +1,8 @@
+dlib~=19.24.0
+edge_impulse_linux~=1.0.7
+numpy~=1.23.2
+opencv_python~=4.5.5.64
+PyAutoGUI~=0.9.53
+pynput~=1.7.6
+PySimpleGUI~=4.60.4
+pyaudio~=0.2.13
