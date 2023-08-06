@@ -1,0 +1,9 @@
+/datas/
+/build/
+/dist/
+/old_optimizers/
+/.coverage/
+/.idea/
+/venv-39/
+/excluded/
+/doc/
