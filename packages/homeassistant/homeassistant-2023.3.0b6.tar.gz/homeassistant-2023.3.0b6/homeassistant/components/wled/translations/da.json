@@ -1,0 +1,28 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheden er allerede konfigureret",
+            "cannot_connect": "Forbindelse mislykkedes"
+        },
+        "error": {
+            "cannot_connect": "Forbindelse mislykkedes"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "V\u00e6rt"
+                }
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "live_override": {
+                "state": {
+                    "0": "Fra",
+                    "1": "Til"
+                }
+            }
+        }
+    }
+}

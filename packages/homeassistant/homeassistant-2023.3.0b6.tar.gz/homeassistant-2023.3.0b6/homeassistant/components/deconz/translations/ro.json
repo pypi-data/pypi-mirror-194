@@ -1,0 +1,23 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Bridge deja configurat",
+            "already_in_progress": "Configurarea flow-ului este deja in progres",
+            "no_bridges": "Nu au fost descoperite bridge-uri deCONZ",
+            "updated_instance": "Instan\u021b\u0103 deCONZ actualizat\u0103 cu noua adres\u0103 de gazd\u0103"
+        },
+        "error": {
+            "no_key": "Nu s-a putut ob\u021bine o cheie de API"
+        },
+        "step": {
+            "hassio_confirm": {
+                "description": "Dore\u0219ti s\u0103 configurezi Home Assistant s\u0103 se conecteze la gateway-ul deCONZ furnizat de c\u0103tre add-on-ul {addon}?",
+                "title": "Gateway deCONZ Zigbee via add-on Home Assistant"
+            },
+            "link": {
+                "description": "Deblocheaz\u0103 gateway-ul deCONZ pentru a-l \u00eenregistra \u00een Home Assistant. \n\n 1. Acceseaz\u0103 Set\u0103rile deCONZ - > Gateway - > Avansat \n 2. Apas\u0103 butonul \u201eAutentifica\u021bi aplica\u021bia\u201d",
+                "title": "Leag\u0103 cu deCONZ"
+            }
+        }
+    }
+}
