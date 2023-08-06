@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+awsaccountdiscoverycli.egg-info/PKG-INFO
+awsaccountdiscoverycli.egg-info/SOURCES.txt
+awsaccountdiscoverycli.egg-info/dependency_links.txt
+awsaccountdiscoverycli.egg-info/not-zip-safe
+awsaccountdiscoverycli.egg-info/top_level.txt
