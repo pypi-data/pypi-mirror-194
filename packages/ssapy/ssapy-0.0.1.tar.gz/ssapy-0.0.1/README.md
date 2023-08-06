@@ -1,0 +1,3 @@
+# SSAPY
+
+Singular Spectrum Analysis

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/ssapy/__init__.py
+src/ssapy/ssapy.py
+src/ssapy.egg-info/PKG-INFO
+src/ssapy.egg-info/SOURCES.txt
+src/ssapy.egg-info/dependency_links.txt
+src/ssapy.egg-info/top_level.txt
