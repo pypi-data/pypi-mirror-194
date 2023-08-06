@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sealedsecretmgr"
+version = "0.1.2"
+description = "SealedSecret Manager"
+authors = ["David Vincelli <david.vincelli@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/dvincelli/sealedsecretmgr"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+black = "^22.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+sealedsecret = 'sealedsecretmgr.cli:__main__'
