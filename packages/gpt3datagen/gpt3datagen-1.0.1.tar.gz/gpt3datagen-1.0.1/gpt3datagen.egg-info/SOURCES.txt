@@ -1,0 +1,16 @@
+LICENCE.txt
+README.md
+setup.py
+gpt3datagen/__init__.py
+gpt3datagen/prepare.py
+gpt3datagen/utils.py
+gpt3datagen.egg-info/PKG-INFO
+gpt3datagen.egg-info/SOURCES.txt
+gpt3datagen.egg-info/dependency_links.txt
+gpt3datagen.egg-info/entry_points.txt
+gpt3datagen.egg-info/requires.txt
+gpt3datagen.egg-info/top_level.txt
+gpt3datagen/datasets/__init__.py
+gpt3datagen/datasets/classification.py
+gpt3datagen/datasets/condition_generation.py
+gpt3datagen/datasets/news_articles.py
