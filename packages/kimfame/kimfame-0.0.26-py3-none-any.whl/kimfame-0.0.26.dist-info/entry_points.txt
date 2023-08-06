@@ -1,0 +1,5 @@
+[console_scripts]
+kimfame=kimfame.kimfame:main
+triplea=kimfame.aaa:aaa
+tripled=kimfame.ddd:ddd
+
