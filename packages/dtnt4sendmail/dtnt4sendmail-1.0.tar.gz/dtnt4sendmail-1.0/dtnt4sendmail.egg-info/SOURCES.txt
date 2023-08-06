@@ -1,0 +1,6 @@
+dtnt4sendmail.py
+setup.py
+dtnt4sendmail.egg-info/PKG-INFO
+dtnt4sendmail.egg-info/SOURCES.txt
+dtnt4sendmail.egg-info/dependency_links.txt
+dtnt4sendmail.egg-info/top_level.txt
