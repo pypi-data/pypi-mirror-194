@@ -1,0 +1,11 @@
+README.md
+setup.py
+whatsfly/__init__.py
+whatsfly/__version__.py
+whatsfly/whatsapp.py
+whatsfly/whatsmeow.go
+whatsfly.egg-info/PKG-INFO
+whatsfly.egg-info/SOURCES.txt
+whatsfly.egg-info/dependency_links.txt
+whatsfly.egg-info/requires.txt
+whatsfly.egg-info/top_level.txt
