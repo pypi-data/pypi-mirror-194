@@ -1,0 +1,12 @@
+cloudproof_py/__init__.py,sha256=uXSbC3NV3Hls_JWm9MgSgPrOO6KcvN2Bxg-PRZFcOL4,60
+cloudproof_py/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+cloudproof_py/cover_crypt/__init__.py,sha256=D-gg68RJCyMN-u6YceIkl1UxFSzhnQlci9dvBnLJdTw,355
+cloudproof_py/findex/Findex.py,sha256=nKrtvTBVfqYO9Du25thiLLBTO8TGsaqDMGnQIEXjhuo,9591
+cloudproof_py/findex/__init__.py,sha256=2JGAzt4FWissecTbIxgvAW3tnaptx-8dANgsOix6kz0,198
+cloudproof_py/findex/utils.py,sha256=x7wdYAIv2fqnREohSJIuWV8gbLrDkmTzJvmb9mZscmQ,1147
+cloudproof_py/kms/__init__.py,sha256=6OuXZvfkCHqe87A-UL1AfGsT2CW8sSnHLah-s3WDoBw,5016
+cloudproof_py-2.0.1.dist-info/LICENSE.md,sha256=_zfsPgqYDWuqWECzE0w-LQfkkgg28_DMNj87xgn6OUI,32275
+cloudproof_py-2.0.1.dist-info/METADATA,sha256=sOrQKAbmywx9Hn3jVHGgGO3vNOqpsGuRr8omSV5B3EM,3345
+cloudproof_py-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cloudproof_py-2.0.1.dist-info/top_level.txt,sha256=h-iYkc0ufdIay9vhafEoDq1V2VqtN27qb9YIFPgqppA,14
+cloudproof_py-2.0.1.dist-info/RECORD,,
