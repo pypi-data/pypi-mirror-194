@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: FGTSA
+Version: 1.0.0
+Summary: A toolkit for medical image subregion analysis
+Home-page: https://github.com/GDPHMediaLab/FGTSA
+Author: Media Lab
+Author-email: shizhenwei@gdph.org.cn
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Breast Fibroglandular Tissue Segmentation and Analysis Toolkit
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/17007301/219617294-a5f38b07-4599-4834-aa7c-96d01299a531.png" width="600" height="300">
+</p>
+
+
+|Build/Test Status|Code Status|Documentation|
+| :---------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [![](https://travis-ci.org/modelhub-ai/modelhub-engine.svg?branch=master)](https://travis-ci.org/modelhub-ai/modelhub-engine) | [![Coverage Status](https://coveralls.io/repos/github/modelhub-ai/modelhub-engine/badge.svg?branch=master&service=github)](https://coveralls.io/github/modelhub-ai/modelhub-engine?branch=master) | [![Documentation Status](https://readthedocs.org/projects/modelhub/badge/?version=latest)](https://modelhub.readthedocs.io/en/latest/?badge=latest) |
+
+### Welcome to Fibroglandular Tissue Segmentation and Analysis Toolkit (FGTSA).
+
+FGTSA toolkit is a Python package, which is able to detect/segment Fibroglandular Tissue regions and calculate relevant quantitative imaging biomarkers (e.g., background parenchymal enhancement, BPE) in breast MRI scans, which are highly associated with breast cancer risk, treatment response and prognosis. 
+
+FGTSA toolkit is designed and developed by Zhenwei Shi, Zihan Cao and other AI/CS scientists from Media Lab. Also, the work is supported and guided by well experienced radiologists MD Zaiyi Liu and MD Changhong Liang from the radiology department of Guangdong Provincial People's Hospital.
+
+### Installation
+
+```sh
+pip install FGTSA
+```
+
+### Features
+
+- Medical image data pre-processing, including data load, crop, normalization and so on.
+- Bias field correction in breast MRI
+- Pixel-level segmentation of FGT by machine learning algorithms
+- Region detection of skin and chest wall in breast MRI
+- Automatic calculation of BPE
+
+### Tutorial
+
+#### 1. Package loading
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from pathlib import Path
+from FGTSA import bias_field_correction_main, fgt_seg_main, BPE_calc_main
+```
+
+#### 2. Load image and mask
+
+
+Some local directories are set before processing. Also, BPE is usually calculated in contralateral breast that is without lesion, therefore FGTSA toolkit requires clients to provide lesion position information. More details, see [FGTSA](https://github.com/zhenweishi/FGTSA).
+|  ID   | Position  |
+|  ----  | ----  |
+| 1001  | R |
+| 1002  | L |
+
+```python
+# id ==> patient ID posi
+# set loacl paths 
+raw_c0_image_path = Path(r"./image_c0_id.nii.gz")
+raw_peak_image_path = Path(r"./image_peak_id.nii.gz")
+# bias field correction
+bfc_image_path = Path(r"./bfc_image_id.nii.gz")
+# FGT mask result
+fgt_mask_res_path = Path(r"./fgt_mask_id.nii.gz")
+# lesion position information
+lesion_info_path = Path(r"./lesion_local_info.csv")
+# bpe result output
+bpe_res_path = Path(r"./bpe_calc_res.csv")
+```
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/17007301/221460817-987e02b9-00ee-471a-9afc-b9a5642d082a.png" width="700" height="200">
+</p>
+
+
+#### 3. Bias field correction
+
+Due to poor radio frequency coil uniformity, gradient-driven eddy currents, or patient’s anatomy inside and outside the field of view, intensity inhomogeneity often occurs in MRI scans. FGTSA uses a popular [N4 algorithm](https://simpleitk.readthedocs.io/en/master/link_N4BiasFieldCorrection_docs.html) for correcting low frequency intensity non-uniformity present in MRI image data known as a bias or gain field. 
+
+```python
+bfc_img_nparr = bias_field_correction_main(raw_c0_image_path, bfc_image_path)
+```
+
+#### 4. FGT segmentation
+
+FGTSA uses Fuzzy c-Means clustering (FCM) as a default method, which is a commonly used method for FGT segmentation. Note that, we are also developing other algorithms that will be released soon.
+
+```python
+fgt_seg_mask_nparr = fgt_seg_main(bfc_image_path, fgt_mask_res_path)
+```
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/17007301/221460886-ab4eb735-7c38-4efa-807b-8db401416900.png" width="700" height="400">
+</p>
+
+#### 5. BPE calculation
+
+The enhancement of normal fibroglandular tissue observed at contrast-enhanced breast MRI is known as background parenchymal enhancement (BPE). The degree of BPE is typically assessed in four qualitative categories (minimal, mild, moderate, or marked) in clinical practice, which is required reporting during MRI interpretation in Breast Imaging Reporting and Data System (BI-RDS, fifth edition). FGTSA provides elaborate calculation for BPE report in percentage. The formular BPE expression is as follows:
+
+
+
+$$BPE=\frac{\sum_{i=1}^{N}\frac{S_{1,i}-S_{0,i}}{S_{0,i}}}{N}$$
+
+
+
+```python
+bpe_res_df = BPE_calc_main(raw_c0_image_path, raw_peak_image_path, lesion_info_path, fgt_mask_res_path, bpe_res_path)
+```
+
+
+Output：
+|ID|Health_Side_BPE|H10perBPE_Volume|H25perBPE_Volume|H50perBPE_Volume|H75perBPE_Volume|
+|:----:|:----:|:----:|:----:|:----:|:----:| 
+|1001|0.1198211|10417|4601|1021|262|
+
+
+
+### Disclaimer
+
+FGTSA is still under development. Although we have tested and evaluated the workflow under many different situations, it may have errors and bugs unfortunately. Please use it cautiously. If you find any, please contact us and we would fix them ASAP.
+
+### Main Developers
+
+ - [Dr. Zhenwei Shi](https://github.com/zhenweishi) <sup/>1, 2
+ - MSc. Zihan Cao <sup/>2, 3
+ - MSc. Zhihe Zhao <sup/>2, 4
+ - MD. Xiaomei Huang <sup/>2, 5
+ - [Dr. Chu Han](https://chuhan89.com) <sup/>1, 2
+ - MD. Changhong Liang <sup/>1, 2
+ - MD. Zaiyi Liu <sup/>1, 2
+ 
+
+<sup>1</sup> Department of Radiology, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, China <br/>
+<sup>2</sup> Guangdong Provincial Key Laboratory of Artificial Intelligence in Medical Image Analysis and Application, China <br/>
+<sup>3</sup> Institute of Computing Science and Technology, Guangzhou University, China <br/>
+<sup>4</sup> School of Medicine, South China University of Technology, China <br/>
+<sup>5</sup> Department of Medical Imaging, Nanfang Hospital, Southern Medical University, China 
+
+
+### Contact
+We are happy to help you with any questions. Please contact Zhenwei Shi.
+Email: shizhenwei@gdph.org.cn
+
+We welcome contributions to FGTSA Toolkit.
