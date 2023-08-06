@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: backkr
+Version: 0.0.1
+Summary: A backend framework the web
+Home-page: https://github.com/Almas-Ali/backkr
+Author: Almas Ali
+Author-email: almaspr3@gmail.com
+License: UNKNOWN
+Keywords: web framework
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Backkr - A backend framework the web 
+
+Created by [**@Almas-Ali**](https://github.com/Almas-Ali)
+
+## Documentation
+
+[Website](https://almas-ali.github.io/backkr/)
+
+
