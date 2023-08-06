@@ -1,0 +1,16 @@
+flask_api_factory/__init__.py,sha256=q23XX8wTDN2sjeT3dhOawBFCtokeHhD5iw0Nduq7NQc,7921
+flask_api_factory/actions/__init__.py,sha256=GF_3flJRoIVB7R9U0je5qeX_NN-47dbjATld1klF95o,2532
+flask_api_factory/actions/amqp.py,sha256=g01G0D1d8fpkIRqVYoZQsMcz3QNHgyzTrMZnu0vF5z4,2210
+flask_api_factory/auth.py,sha256=_tV2Lw0KKFS4nuwjTatBpo_WoJUaOk6yzec8iZxnhWo,354
+flask_api_factory/constants.py,sha256=mCvG2qkyL343kaHeihBGgrcIF6WQZeZhcpsNZEOYyJs,258
+flask_api_factory/decorators.py,sha256=51z13nIzeXsrkkOnKZKTlCvq4gZ1qrQ6JTVqP-p__GI,394
+flask_api_factory/filter/__init__.py,sha256=MCeLA6IvJewr3zAcRzzspQOLF9FZdV0fQc49SoN2anU,1349
+flask_api_factory/filter/casts.py,sha256=3IBQk3znfk7odYL8EpfPTwkvdzWxCZ-l_jyQDiTYgq0,319
+flask_api_factory/openapi/__init__.py,sha256=oeIUWabNJ0UeIQJnEFqMXHniT1RCjTHeBLIv5TFhwqk,1302
+flask_api_factory/openapi/models.py,sha256=fhFG4p0LldcvV8ytGLcl7mlCLV7YRpSwCgYMkeyyIk0,981
+flask_api_factory/openapi/path.py,sha256=fjWdGkWlZLEZhjgqo5qD2EM7q4L4oRBjxYIOB5vdB9I,5616
+flask_api_factory/order.py,sha256=5tkVAmI-8070hgsOTxFSUymN5TH8YFCgHtfZBt1xFpA,963
+flask_api_factory/page.py,sha256=WGeghT-l6gxslfKNAcuy_fkw1ALwuKLNgc2AxWNjzGE,2191
+flask_api_factory-0.2.2.dist-info/METADATA,sha256=lAJICJob2Vp_Ohj9_Y1fE8JKm4K-SioTD4wbeg5W540,2537
+flask_api_factory-0.2.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+flask_api_factory-0.2.2.dist-info/RECORD,,
