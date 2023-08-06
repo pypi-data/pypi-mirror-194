@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: estimenergy-client
+Version: 0.2.2
+Summary: Client for the Estimenergy API
+Home-page: https://github.com/eulemitkeule/estimenergy
+Author: Lennard Beers
+Author-email: l.beers@outlook.de
+Keywords: estimenergy api client
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EstimEnergy
