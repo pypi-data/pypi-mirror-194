@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: clickuptosql
+Version: 1.1.0
+Summary: Replicate ClickUp Database to a SQL Table.
+Home-page: https://github.com/themagicalmammal/clickuptosql
+Author: Dipan Nanda
+Author-email: d19cyber@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/themagicalmammal/clickuptosql/blob/main/README.md
+Project-URL: Bug tracker, https://github.com/themagicalmammal/clickuptosql/issues
+Keywords: python,ClickUp,Excel,pandas
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SQLAlchemy (~=1.4.46)
+Requires-Dist: pandas (~=1.5.2)
+Requires-Dist: requests (~=2.28.1)
+Requires-Dist: urllib3 (~=1.26.13)
+Requires-Dist: tqdm (~=4.64.1)
+
+
+# ClickUp to SQL
+[![DeepSource](https://deepsource.io/gh/themagicalmammal/clickuptosql.svg/?label=active+issues&show_trend=true&token=8NKGWTDemy2iXLQmeLo5p7-k)](https://deepsource.io/gh/themagicalmammal/clickuptosql/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/themagicalmammal/clickuptosql.svg/?label=resolved+issues&show_trend=true&token=8NKGWTDemy2iXLQmeLo5p7-k)](https://deepsource.io/gh/themagicalmammal/clickuptosql/?ref=repository-badge)
+
+Replicate ClickUp Database to a SQL Table.
+
+Developed by [Dipan Nanda](https://github.com/themagicalmammal) (c) 2023
+
+## Example of Usage
+
+```python
+from clickuptosql import Migrate2Sql
+from etl_encrypt import get_clickup_api_key
+from sqlalchemy.types import NVARCHAR
+
+spaces = None
+attributes = None 
+# None selects every attribute by default
+# spaces = [<-- LIST OF SPACE_ID'S -->]
+# attributes = [<-- LIST OF ATTRIBUTES -->]
+
+api_key = '<-- YOUR API KEY -->'
+server = '<-- SERVER NAME -->'  
+database = '<-- DATABASE NAME -->'
+username = '<-- YOUR USERNAME -->'
+password = '<-- YOUR PASSWORD -->'
+driver = '<-- SQL DRIVER -->'
+sql_string = f'{username}:{password}@{server}/{database}?driver={driver}'
+dtype = {'id': NVARCHAR(length=50)}
+
+helper = Migrate2Sql(clickup_api_token=api_key, spaces=spaces, optimise=True, 
+                     attribute_values=attributes, sql_connection=sql_string, dtype=dtype)
+helper.start()
+
+```
+
+## Changelog
+Go [here](CHANGELOG.md) to checkout the complete changelog.
+
+## License
+#### This is under GNU GPL v3.0 License
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
