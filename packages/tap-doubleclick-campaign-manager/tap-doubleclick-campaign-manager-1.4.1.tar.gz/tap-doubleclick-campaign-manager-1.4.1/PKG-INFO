@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tap-doubleclick-campaign-manager
+Version: 1.4.1
+Summary: Singer.io tap for extracting data from the DoubleClick for Campaign Managers API
+Home-page: http://singer.io
+Author: Stitch
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev
+License-File: LICENSE
