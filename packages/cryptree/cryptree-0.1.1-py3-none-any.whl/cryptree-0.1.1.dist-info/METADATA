@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cryptree
+Version: 0.1.1
+Summary: A tool for encrypting sensitive data
+Home-page: https://github.com/RedForestLonvor/cryptree
+Author: RedForestLonvor
+Author-email: redforestlonvor@outlook.com
+License: GPL-3
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cryptography (>=3.0)
+
+A tool for encrypting sensitive data
+
