@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+potsim2/PotGrid.py
+potsim2/__init__.py
+potsim2/vdw.py
+potsim2.egg-info/PKG-INFO
+potsim2.egg-info/SOURCES.txt
+potsim2.egg-info/dependency_links.txt
+potsim2.egg-info/not-zip-safe
+potsim2.egg-info/requires.txt
+potsim2.egg-info/top_level.txt
+potsim2/src/potsimlib.cpp
+tests/test_potgrid.py
