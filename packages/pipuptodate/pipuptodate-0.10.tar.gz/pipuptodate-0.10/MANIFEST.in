@@ -1,0 +1,4 @@
+include pipuptodate/requirements.txt
+include pipuptodate/thirdparty.json
+include pipuptodate/README.MD
+include pipuptodate/LICENSE

@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pipuptodate/LICENSE
+pipuptodate/README.MD
+pipuptodate/__init__.py
+pipuptodate/requirements.txt
+pipuptodate/thirdparty.json
+pipuptodate.egg-info/PKG-INFO
+pipuptodate.egg-info/SOURCES.txt
+pipuptodate.egg-info/dependency_links.txt
+pipuptodate.egg-info/top_level.txt
