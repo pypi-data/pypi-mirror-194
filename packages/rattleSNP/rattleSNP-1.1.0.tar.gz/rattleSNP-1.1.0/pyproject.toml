@@ -1,0 +1,137 @@
+# Build system backend to create package to upload on pypi
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=42",
+    "setuptools_scm[toml]>=6.2"
+]
+
+# configuration of setuptools_scm to use tag version autoincrementation
+[tool.setuptools_scm]
+write_to = "rattleSNP/_version.py"
+version_scheme = "release-branch-semver"
+tag_regex = "^(\\d.\\d.\\d)-*\\w*\\d*$"       # allow value like 0.0.1-rc0
+local_scheme = "no-local-version"
+
+# define Project settings
+[project]
+name = "rattleSNP"
+dynamic = ["version"]
+description = "RattleSNP is mapping workflow!!!!!"
+authors = [
+    { name = "Ravel Sebastien (CIRAD)", email = "sebastien.ravel@cirad.fr" },
+]
+dependencies = ["PyYAML", "click>=8.0.3", "pandas", "matplotlib", "tabulate", "biopython", "numpy", "argparse", "snakemake", "tqdm", "cookiecutter", "docutils", "snakecdysis"]
+requires-python = ">=3.8"
+readme = "README.rst"
+license = { file = "LICENCE" }
+keywords = ["snakemake", "SNP calling", "workflow"]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    'License :: CeCILL-C Free Software License Agreement (CECILL-C)',
+    'License :: Free for non-commercial use',
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Intended Audience :: End Users/Desktop',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: R',
+    'Natural Language :: English',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Bio-Informatics'
+]
+
+[project.urls]
+Homepage = "https://forge.ird.fr/phim/sravel/RattleSNP"
+Documentation = "https://rattlesnp.readthedocs.io/en/latest/"
+repository = "https://forge.ird.fr/phim/sravel/RattleSNP.git"
+"Bug Tracker" = "https://forge.ird.fr/phim/sravel/RattleSNP/issues"
+"Source Code" = "https://forge.ird.fr/phim/sravel/RattleSNP"
+
+[project.optional-dependencies]
+docs = [
+    "sphinx",
+    "sphinx_click",
+    "sphinx_copybutton",
+    "sphinx_rtd_theme",
+    "tox",
+]
+
+# setup scripts links
+[project.scripts]
+vcf2geno = "rattleSNP.scripts.vcf2geno:main"
+vcf2phylip = "rattleSNP.scripts.vcf2phylip:main"
+rattleSNP = "rattleSNP.main:main"
+
+# setup library entry-points
+[project.entry-points.rattleSNP]
+rattleSNP = "__init__"
+
+# Try to link sphinx to file
+[tool.sphinx]
+source-dir = "docs/source"
+build-dir = "docs/build"
+config-dir = "docs/source"
+
+#######
+# tox test to mv on gitlab-ci.yaml
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{38,39}
+skip_missing_interpreters = True
+skipsdist=False
+
+[gh-actions]
+python = 3.8: py38
+
+[testenv:py{38,39}]
+description = Run the install in Python 3.8
+skip_install = False
+changedir={envdir}
+whitelist_externals =
+    bash
+    echo
+envdir =
+    py38: {toxworkdir}/py38
+    py39: {toxworkdir}/py39
+commands =
+    rattleSNP --help
+    bash -ec 'echo `pwd`'
+    bash -ec 'CPDIR="./lib/python3.8/site-packages/rattleSNP/containers/"; DIR="/usr/local/rattleSNP/Containers"; if [[ -d $DIR ]]; then ls $DIR;  echo "copy Containers files in $DIR to $CPDIR"; ln -sf $DIR/* $CPDIR; fi'
+    rattleSNP install_local
+
+
+[run]
+description = Run Installation rattleSNP install_local
+changedir={envdir}
+whitelist_externals =
+    bash
+    echo
+    mkdir
+skipsdist=True
+skip_install=True
+commands =
+    mkdir -p data_test_mapping
+    bash -ec 'CPFILE="./data_test_mapping/data_test_rattleSNP.zip"; FILE="/usr/local/rattleSNP/data_test_mapping/data_test_rattleSNP.zip"; if [[ -f "$FILE" ]]; then ls $FILE;  echo "copy data_test files in $FILE to $CPFILE"; ln -sf $FILE $CPFILE; fi'
+    rattleSNP test_install -d data_test_mapping
+    rattleSNP run_local --threads 8 --config {posargs} --singularity-args '--bind /builds:/builds'
+
+
+[testenv:py38-run]
+description = Run workflow pass on args to rattleSNP
+envdir =
+    py38: {toxworkdir}/py38
+    py39: {toxworkdir}/py39
+changedir={envdir}
+whitelist_externals =
+    bash
+    echo
+    mkdir
+skipsdist=True
+skip_install=True
+commands = {[run]commands}
+
+"""
+

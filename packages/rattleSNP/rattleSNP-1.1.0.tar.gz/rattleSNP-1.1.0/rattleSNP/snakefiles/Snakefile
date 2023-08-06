@@ -1,0 +1,1050 @@
+#!/usr/bin/env snakemake
+# -*- coding: utf-8 -*-
+from pathlib import Path
+from pprint import pprint as pp
+# load own functions
+import rattleSNP
+from rattleSNP import parse_idxstats, check_mapping_stats, merge_samtools_depth_csv, tsv_per_chromosome, parse_flagstat_multi_report
+from rattleSNP.snakemake_module import RattleSNP
+
+# recovery basedir where RattleSNP was installed
+# logger.info(rattleSNP.description_tools)
+
+# pp(workflow.basedir)
+rattleSNP_obj = RattleSNP(rattleSNP.dico_tool, workflow=workflow, config=config)
+tools_config = rattleSNP_obj.tools_config
+cluster_config = rattleSNP_obj.cluster_config
+
+# print(rattleSNP_obj.export_use_yaml)
+# print for debug:
+# pp(rattleSNP_obj)
+# exit()
+# print(tools_config)
+
+# exit()
+
+###############################################################################
+# dir and suffix
+fastq_dir = config["DATA"]["FASTQ"]
+
+reference_file =  config["DATA"]["REFERENCE_FILE"]
+basename_reference = Path(reference_file).stem
+out_dir = config["DATA"]["OUTPUT"]
+log_dir = f"{out_dir}LOGS/"
+
+# Change workdir to output path (slurm logs append on outdir)
+workdir:config["DATA"]["OUTPUT"]
+
+fastqc_activated = config["FASTQC"]
+
+# to lunch separator
+BWA_INDEX = ['amb','ann','bwt','pac','sa']
+
+#*###############################################################################
+#############################################
+# use threads define in cluster_config rule or rule default or default in snakefile
+#############################################
+def get_threads(rule, default):
+    """
+    retrieve threads value from cluster_config file avail for SGE and SLURM
+    If local get the --core value
+    if fail return default value define on each rules
+
+    Examples:
+        rule rule_graph:
+        threads: get_threads('rule_graph', 1)
+    """
+    # if cluster mode
+    if cluster_config:
+        if rule in cluster_config:
+            if 'threads' in cluster_config[rule]:
+                return int(cluster_config[rule]['threads'])
+            elif 'cpus-per-task' in cluster_config[rule]:
+                return int(cluster_config[rule]['cpus-per-task'])
+        elif '__default__' in cluster_config:
+            if 'cpus-per-task' in cluster_config['__default__']:
+                return int(cluster_config['__default__']['cpus-per-task'])
+        elif 'threads' in cluster_config['__default__']:
+            return int(cluster_config['__default__']['threads'])
+    # if local
+    elif workflow.global_resources["_cores"]:
+        return workflow.global_resources["_cores"]
+    # if cluster not rule and not default or local not _cores return value from call
+    return default
+
+def get_fastq_file():
+    """return if file provide from cleaning or direct sample"""
+
+    dico_mapping = {
+            "fasta": reference_file,
+             "index": rules.bwa_index.output.index
+            }
+    if rattleSNP_obj.cleaning_activated:
+        dico_mapping.update({
+            "R1" : rules.run_atropos.output.R1,
+            "R2" : rules.run_atropos.output.R2
+        })
+    else:
+        dico_mapping.update({
+            "R1" :f"{fastq_dir}{{samples}}_R1.fastq.gz",
+            "R2" : f"{fastq_dir}{{samples}}_R2.fastq.gz"
+        })
+    # print(dico_mapping)
+    return dico_mapping
+
+def output_final(wildcards):
+    """FINAL RULE"""
+    dico_final = {}
+    if rattleSNP_obj.cleaning_activated and not fastqc_activated:
+        dico_final.update({
+            "atropos_files_R1" : expand(rules.run_atropos.output.R1, samples = rattleSNP_obj.samples),
+            "atropos_files_R2" : expand(rules.run_atropos.output.R2, samples = rattleSNP_obj.samples),
+        })
+    if fastqc_activated:
+        dico_final.update({
+            "fastQC_files_R1": expand(rules.run_fastqc.output.R1,samples=rattleSNP_obj.samples),
+            "fastQC_files_R2": expand(rules.run_fastqc.output.R2,samples=rattleSNP_obj.samples),
+        })
+    if rattleSNP_obj.mapping_activated and not rattleSNP_obj.mapping_stats_activated:
+        dico_final.update({
+            "bam": expand( f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated}/{{samples}}_sorted.bam",samples=rattleSNP_obj.samples),
+        })
+    if rattleSNP_obj.mapping_stats_activated:
+        dico_final.update({
+            "bam": expand(f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated}/{{samples}}_sorted.bam",samples=rattleSNP_obj.samples),
+            "report": f"{out_dir}1_mapping/STATS/report.html"
+        })
+    if rattleSNP_obj.calling_activated:
+        dico_final.update({
+            "vcf_file": rules.bcftools_concat.output.vcf_file ,
+            "report_vcf_raw": expand(rules.report_vcf.output.report,vcf_suffix=["_WITHOUT_MITO"])
+        })
+    if rattleSNP_obj.vcf_filter_activated:
+        dico_final.update({
+            "report_vcf_filter": expand(rules.report_vcf.output.report, vcf_suffix=config['PARAMS']['FILTER_SUFFIX']),
+        })
+    if rattleSNP_obj.vcf_path:
+        dico_final.update({
+            "report_vcf_user": expand(rules.report_vcf.output.report, vcf_suffix=[""])})
+        if config["FILTER"]:
+            dico_final.update({
+                "fasta": expand(rules.vcf_to_fasta.output.fasta, vcf_suffix=config['PARAMS']['FILTER_SUFFIX']),
+                "geno": expand(rules.vcf_to_geno.output.geno, vcf_suffix=config['PARAMS']['FILTER_SUFFIX'])})
+        else:
+            dico_final.update({
+                "fasta": expand(rules.vcf_to_fasta.output.fasta, vcf_suffix=[""]),
+                "geno": expand(rules.vcf_to_geno.output.geno, vcf_suffix=[""])})
+
+    if rattleSNP_obj.raxml_activated:
+        if config["FILTER"]:
+            dico_final.update({
+                "RAXML": expand(rules.run_raxml.output.tree, vcf_suffix=config['PARAMS']['FILTER_SUFFIX'])
+            })
+        else:
+            dico_final.update({
+                "RAXML": expand(rules.run_raxml.output.tree, vcf_suffix=[""])
+            })
+    if rattleSNP_obj.raxml_ng_activated:
+        if config["FILTER"]:
+            dico_final.update({
+                "RAXML_NG": expand(rules.run_raxml_ng.output.tree, vcf_suffix=config['PARAMS']['FILTER_SUFFIX'])
+            })
+        else:
+            dico_final.update({
+                "RAXML_NG": expand(rules.run_raxml_ng.output.tree, vcf_suffix=[""])
+            })
+    # pp(dico_final)
+    return dico_final
+
+
+# --- Main Build Rules --- #
+rule final:
+    """construct a table of all resume files"""
+    input:
+        unpack(output_final)
+
+rule bwa_index:
+    """make index with bwa for reference file"""
+    threads: get_threads('bwa_index', 1)
+    input:
+        fasta = reference_file
+    output:
+        index = expand(f'{reference_file}.{{suffix}}',suffix=BWA_INDEX)
+    log :
+        error =  f'{log_dir}bwa_index/{basename_reference}.e',
+        output = f'{log_dir}bwa_index/{basename_reference}.o'
+    message:
+        f"""
+         Running {{rule}}
+        Input:
+            - Fasta : {{input.fasta}}
+        Output:
+            - sa_file: {{output.index}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["BWA"]
+    shell:
+        """
+       (bwa index {input.fasta}) 1>{log.output} 2>{log.error}
+        """
+
+# 1=atropos
+rule run_atropos:
+    """Run atropos for cleaning data"""
+    threads: get_threads('run_atropos', 2)
+    input:
+        R1 = f"{fastq_dir}{{samples}}_R1.fastq.gz",
+        R2 = f"{fastq_dir}{{samples}}_R2.fastq.gz"
+    output:
+        R1 = f"{out_dir}0_cleaning/ATROPOS/{{samples}}_R1_ATROPOS.fastq.gz",
+        R2 = f"{out_dir}0_cleaning/ATROPOS/{{samples}}_R2_ATROPOS.fastq.gz"
+    params:
+        other_options = config["PARAMS_TOOLS"]["ATROPOS"]
+    log :
+        error =  f'{log_dir}run_atropos/{{samples}}.e',
+        output = f'{log_dir}run_atropos/{{samples}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Fastq R1 : {{input.R1}}
+            - Fastq R2 : {{input.R2}}
+        Output:
+            - Fastq R1 : {{output.R1}}
+            - Fastq R2 : {{output.R2}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["ATROPOS"]
+    shell:
+        """
+        (atropos trim --threads {threads} {params.other_options} -o {output.R1} -p {output.R2} -pe1 {input.R1} -pe2 {input.R2})  1>{log.output} 2>{log.error}
+        """
+
+rule run_fastqc:
+    """Run fastqc for control data"""
+    threads: get_threads('run_fastqc', 1)
+    input:
+        R1 = rules.run_atropos.output.R1 if rattleSNP_obj.cleaning_activated else f"{fastq_dir}{{samples}}_R1{rattleSNP_obj.fastq_files_ext}",
+        R2 = rules.run_atropos.output.R2 if rattleSNP_obj.cleaning_activated else f"{fastq_dir}{{samples}}_R2{rattleSNP_obj.fastq_files_ext}"
+    output:
+        R1 = f"{out_dir}0_cleaning/FASTQC/{{samples}}_R1{rattleSNP_obj.cleaning_tool}_fastqc.html",
+        R2 = f"{out_dir}0_cleaning/FASTQC/{{samples}}_R2{rattleSNP_obj.cleaning_tool}_fastqc.html"
+    params:
+        outdir = directory(f"{out_dir}0_cleaning/FASTQC/"),
+        other_options = config["PARAMS_TOOLS"]["FASTQC"]
+    log :
+        error =  f'{log_dir}run_fastqc_PE/{{samples}}.e',
+        output = f'{log_dir}run_fastqc_PE/{{samples}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Fastq R1 : {{input.R1}}
+            - Fastq R2 : {{input.R2}}
+        Output:
+            - html R1 : {{output.R1}}
+            - html R2 : {{output.R2}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["FASTQC"]
+    shell:
+        """
+        (fastqc -t {threads} {params.other_options} -o {params.outdir} {input.R1} {input.R2})  1>{log.output} 2>{log.error}
+        """
+
+
+rule bwa_mem_sort_bam:
+    """make bwa mem for all samples on reference"""
+    threads: get_threads('bwa_mem_sort_bam', 1)
+    input:
+        **get_fastq_file()
+    output:
+        bam_file =  temp(f"{out_dir}1_mapping/BWA_MEM/{{samples}}.bam")
+    params:
+        rg = f"@RG\\tID:{{samples}}\\tSM:{{samples}}\\tPL:Illumina",
+        other_options_bwa = config["PARAMS_TOOLS"]["BWA_MEM"],
+    log:
+        error =  f'{log_dir}bwa_mem_sort_bam/{{samples}}.e',
+        output = f'{log_dir}bwa_mem_sort_bam/{{samples}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Fasta : {{input.fasta}}
+            - R1: {{input.R1}}
+            - R2: {{input.R2}}
+        Output:
+            - Bam: {{output.bam_file}}
+        Params:
+            - other_options_bwa: {{params.other_options_bwa}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["BWA"],
+        tools_config["MODULES"]["SAMTOOLS"]
+    shell:
+        """
+        (bwa mem -t {threads} {input.fasta} {input.R1} {input.R2} -R '{params.rg}' |
+        samtools sort -@ {threads} -o {output.bam_file}) 1>{log.output} 2>{log.error}
+        """
+
+rule run_bwa_aln:
+    """make bwa aln for all samples PE on reference"""
+    threads: get_threads('run_bwa_aln_PE', 1)
+    input:
+        fasta = reference_file,
+        index = rules.bwa_index.output.index,
+        R1 = f"{fastq_dir}{{samples}}_R1.fastq.gz" if not rattleSNP_obj.cleaning_activated else rules.run_atropos.output.R1 ,
+        R2 = f"{fastq_dir}{{samples}}_R2.fastq.gz" if not rattleSNP_obj.cleaning_activated else rules.run_atropos.output.R2
+    output:
+        sai_R1 = temp(f"{out_dir}1_mapping/BWA_SAMPE/{{samples}}_R1.BWAALN.sai"),
+        sai_R2 = temp(f"{out_dir}1_mapping/BWA_SAMPE/{{samples}}_R2.BWAALN.sai")
+    params:
+        other_options = config["PARAMS_TOOLS"]["BWA_ALN"]
+    log:
+        error =  f'{log_dir}run_bwa_aln_PE/{{samples}}.e',
+        output = f'{log_dir}run_bwa_aln_PE/{{samples}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Fasta : {{input.fasta}}
+            - R1: {{input.R1}}
+            - R2: {{input.R2}}
+        Output:
+            - sai R1: temp({{output.sai_R1}})
+            - sai R2: temp({{output.sai_R2}})
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["BWA"],
+        tools_config["MODULES"]["SAMTOOLS"]
+    shell:
+        """
+        (bwa aln -t {threads} {params.other_options} -f {output.sai_R1} {input.fasta} {input.R1}) 1>{log.output} 2>{log.error} &&
+        (bwa aln -t {threads} {params.other_options} -f {output.sai_R2} {input.fasta} {input.R2}) 1>{log.output} 2>{log.error}
+        """
+
+
+rule bwa_sampe_sort_bam:
+    """make bwa sampe for all samples PE on reference"""
+    threads: get_threads('bwa_sampe_sort_bam', 1)
+    input:
+        fasta = reference_file,
+        index = rules.bwa_index.output.index,
+        R1 = rules.run_bwa_aln.input.R1,
+        R2 = rules.run_bwa_aln.input.R2,
+        sai_R1 = rules.run_bwa_aln.output.sai_R1,
+        sai_R2 = rules.run_bwa_aln.output.sai_R2
+    output:
+        bam_file = f"{out_dir}1_mapping/BWA_SAMPE/{{samples}}.bam"
+    params:
+        rg = f"@RG\\tID:{{samples}}\\tSM:{{samples}}\\tPL:Illumina",
+        other_options_bwa = config["PARAMS_TOOLS"]["BWA_SAMPE"],
+        other_options_samtools_sort = config["PARAMS_TOOLS"]["SAMTOOLS_SORT"]
+    log:
+        error =  f'{log_dir}bwa_sampe_sort_bam/{{samples}}.e',
+        output = f'{log_dir}bwa_sampe_sort_bam/{{samples}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Fasta : {{input.fasta}}
+            - R1: {{input.R1}}
+            - R2: {{input.R2}}
+        Output:
+            - Bam: {{output.bam_file}}
+        Params:
+            - other_options_bwa: {{params.other_options_bwa}}
+            - other_options_samtools_sort: {{params.other_options_samtools_sort}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["BWA"],
+        tools_config["MODULES"]["SAMTOOLS"]
+    shell:
+        """
+        (bwa sampe -r"{params.rg}" {params.other_options_bwa} {input.fasta} {input.sai_R1} {input.sai_R2} {input.R1} {input.R2} |
+        samtools sort -@ {threads} {params.other_options_samtools_sort} -o {output.bam_file};
+        samtools index -@ {threads} {output.bam_file}) 1>{log.output} 2>{log.error}
+        """
+
+rule samtools_view_sort_bam:
+    """make samtools view and sort for all bam"""
+    threads: get_threads('samtools_view_sort_bam', 1)
+    input:
+        bam=f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated}/{{samples}}.bam"
+    output:
+        bam_file =  f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated}/{{samples}}_sorted.bam",
+        bai= f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated}/{{samples}}_sorted.bam.bai"
+    params:
+        other_options_samtools_view = config["PARAMS_TOOLS"]["SAMTOOLS_VIEW"],
+        other_options_samtools_sort = config["PARAMS_TOOLS"]["SAMTOOLS_SORT"]
+    log:
+        error =  f'{log_dir}samtools_view_sort_bam/{{samples}}.e',
+        output = f'{log_dir}samtools_view_sort_bam/{{samples}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - bam: {{input.bam}}
+        Output:
+            - Bam: {{output.bam_file}}
+            - bai: {{output.bai}}
+        Params:
+            - other_options_samtools_view: {{params.other_options_samtools_view}}
+            - other_options_samtools_sort: {{params.other_options_samtools_sort}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["SAMTOOLS"]
+    shell:
+        """
+        (samtools view -@ {threads} {params.other_options_samtools_view} {input.bam} |
+        samtools sort -@ {threads} {params.other_options_samtools_sort} -o {output.bam_file}
+        samtools index -@ {threads} {output.bam_file}) 1>{log.output} 2>{log.error}
+        """
+
+
+# rule samtools_index:
+#     """index bam for use stats"""
+#     threads: get_threads('samtools_index', 1)
+#     input:
+#         bam = f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated}/{{samples}}_sorted.bam"
+#     output:
+#         bai = f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated}/{{samples}}_sorted.bam.bai"
+#     log:
+#         error =  f'{log_dir}samtools_index/{{samples}}.e',
+#         output = f'{log_dir}samtools_index/{{samples}}.o'
+#     message:
+#         f"""
+#         Running {{rule}}
+#         Input:
+#             - Bam : {{input.bam}}
+#         Output:
+#             - Bai : {{output.bai}}
+#         Others
+#             - Threads : {{threads}}
+#             - LOG error: {{log.error}}
+#             - LOG output: {{log.output}}
+#         """
+#     singularity:
+#         tools_config['SINGULARITY']['TOOLS']
+#     envmodules:
+#         tools_config["MODULES"]["SAMTOOLS"]
+#     shell:
+#         """
+#         (samtools index -@ {threads} {input.bam}) 1>{log.output} 2>{log.error}
+#         """
+
+################################ ASSEMBLY ####################################
+include: f"{rattleSNP_obj.install_path}/snakefiles/mapping_stat.snake"
+
+###################################################################################
+rule picardTools_mark_duplicates:
+    """apply picardTools_mark_duplicates on all bam"""
+    threads: get_threads('picardTools_mark_duplicates', 1)
+    input:
+        bam_file = f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated}/{{samples}}_sorted.bam" if rattleSNP_obj.mapping_tool_activated else f"{rattleSNP_obj.bam_path}{{samples}}.bam",
+    output:
+        bam_file = f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated if rattleSNP_obj.mapping_tool_activated else 'mapped'}/mark-duplicates/{{samples}}_picardTools-mark-duplicates.bam",
+        txt_file = f"{out_dir}1_mapping/{rattleSNP_obj.mapping_tool_activated if rattleSNP_obj.mapping_tool_activated else 'mapped'}/mark-duplicates/{{samples}}_picardTools-mark-duplicates.metrics"
+
+    params:
+        other_options = config["PARAMS_TOOLS"]["PICARDTOOLS_MARK_DUPLICATES"]
+    log:
+        error =  f'{log_dir}picardTools_mark_duplicates/{{samples}}.e',
+        output = f'{log_dir}picardTools_mark_duplicates/{{samples}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Bam : {{input.bam_file}}
+        Output:
+            - Bam : {{output.bam_file}}
+            - metric : {{output.txt_file}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["PICARDTOOLS"]
+    shell:
+        """
+        #(picard MarkDuplicates {params.other_options} I={input.bam_file} O={output.bam_file} M={output.txt_file}) 1>{log.output} 2>{log.error}
+        (picard MarkDuplicates {params.other_options} --INPUT {input.bam_file} --OUTPUT {output.bam_file} --METRICS_FILE {output.txt_file}) 1>{log.output} 2>{log.error}
+        """
+
+
+########################## SNP calling
+rule create_sequence_dict:
+    """create sequence dict for gatk_HaplotypeCaller reference"""
+    threads: get_threads('create_sequence_dict', 1)
+    input:
+        reference = reference_file
+    output:
+        dict = reference_file.replace(".fasta",".dict")
+    params:
+        java_mem="8g"
+    log:
+        error =  f'{log_dir}create_sequence_dict/{basename_reference}.e',
+        output = f'{log_dir}create_sequence_dict/{basename_reference}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Fasta : {{input.reference}}
+        Output:
+            - dict : {{output.dict}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["GATK4"]
+    shell:
+        """
+        (gatk CreateSequenceDictionary --java-options "-Xmx{params.java_mem}" -R {input.reference}) 1>{log.output} 2>{log.error}
+        """
+
+rule create_sequence_fai:
+    """create sequence fai for gatk_HaplotypeCaller reference"""
+    threads: get_threads('create_sequence_fai', 1)
+    input:
+        reference = reference_file
+    output:
+        fai = reference_file.replace(".fasta",".fasta.fai")
+    log:
+        error =  f'{log_dir}create_sequence_fai/{basename_reference}.e',
+        output = f'{log_dir}create_sequence_fai/{basename_reference}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Fasta : {{input.reference}}
+        Output:
+            - fai : {{output.fai}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["SAMTOOLS"]
+    shell:
+        """
+        (samtools faidx {input.reference}) 1>{log.output} 2>{log.error}
+        """
+
+rule gatk_HaplotypeCaller:
+    """apply gatk_HaplotypeCaller on all bam SE end PE"""
+    threads: get_threads('gatk_HaplotypeCaller', 1)
+    input:
+        bam_file = rules.picardTools_mark_duplicates.output.bam_file,
+        reference = reference_file,
+        dict = rules.create_sequence_dict.output.dict,
+        fai = rules.create_sequence_fai.output.fai
+    output:
+        vcf_file = f"{out_dir}2_snp_calling/GATK_HaplotypeCaller/{{samples}}-{{chromosomes}}_GATK4.gvcf"
+    params:
+        interval = "{chromosomes}",
+        other_options = config["PARAMS_TOOLS"]["GATK_HAPLOTYPECALLER"]
+    log:
+        error =  f'{log_dir}gatk_HaplotypeCaller/{{samples}}_{{chromosomes}}.e',
+        output = f'{log_dir}gatk_HaplotypeCaller/{{samples}}_{{chromosomes}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - Bam : {{input.bam_file}}
+            - Fasta : {{input.reference}}
+            - Chromosome : {{params.interval}}
+        Output:
+            - gvcf : {{output.vcf_file}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["GATK4"]
+    shell:
+        """
+        (gatk HaplotypeCaller  -R {input.reference} -I {input.bam_file} -O {output.vcf_file} --native-pair-hmm-threads {threads} -L {params.interval} {params.other_options}) 1>{log.output} 2>{log.error}
+        """
+
+
+rule map_per_chromosome:
+    """format TSV for GenomicsDBImport on all gvcf by chromosomes to optimize"""
+    threads: get_threads('map_per_chromosome', 1)
+    input:
+        gvcf_list = expand(rules.gatk_HaplotypeCaller.output.vcf_file, samples = rattleSNP_obj.samples , chromosomes = "{chromosomes}"),
+    output:
+        tsv = f"{out_dir}2_snp_calling/GATK_GenomicsDBImport/DB-{{chromosomes}}-map.tsv"
+    log:
+        error =  f'{log_dir}map_per_chromosome/{{chromosomes}}.e',
+        output = f'{log_dir}map_per_chromosome/{{chromosomes}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - gvcf_list : {{input.gvcf_list}}
+        Output:
+            - tsv : {{output.tsv}}
+        Others
+            - Threads : {{threads}}
+        """
+    run:
+        tsv_per_chromosome(input.gvcf_list, output.tsv, wildcards.chromosomes)
+
+
+rule gatk_GenomicsDBImport:
+    """apply GenomicsDBImport on all gvcf by chromosomes """
+    threads: get_threads('gatk_GenomicsDBImport', 1)
+    input:
+        tsv_list = expand(rules.map_per_chromosome.output.tsv, chromosomes = "{chromosomes}"),
+        reference = reference_file,
+        dict = rules.create_sequence_dict.output.dict,
+    output:
+        db = directory(f"{out_dir}2_snp_calling/GATK_GenomicsDBImport/DB_{{chromosomes}}")
+    params:
+        interval = "{chromosomes}",
+        other_options = config["PARAMS_TOOLS"]["GATK_GENOMICSDBIMPORT"]
+    log:
+        error =  f'{log_dir}gatk_GenomicsDBImport/{{chromosomes}}.e',
+        output = f'{log_dir}gatk_GenomicsDBImport/{{chromosomes}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - tsv_list : {{input.tsv_list}}
+            - Fasta : {{input.reference}}
+            - Chromosome : {{params.interval}}
+        Output:
+            - db : {{output.db}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["GATK4"]
+    shell:
+        """
+        (gatk GenomicsDBImport -R {input.reference} --sample-name-map {input.tsv_list} --genomicsdb-workspace-path {output.db} -L {params.interval} {params.other_options}) 1>{log.output} 2>{log.error}
+        """
+
+rule gatk_GenotypeGVCFs_merge:
+    """apply GenotypeGVCFs on all gvcf"""
+    threads: get_threads('gatk_GenotypeGVCFs_merge', 1)
+    input:
+        db = rules.gatk_GenomicsDBImport.output.db,
+        reference = reference_file,
+        dict = rules.create_sequence_dict.output.dict
+    output:
+        vcf_file = f'{out_dir}2_snp_calling/SplitByChromosome/All_samples_{{chromosomes}}_GenotypeGVCFs.vcf'
+    params:
+        other_options = config["PARAMS_TOOLS"]["GATK_GENOTYPEGVCFS"]
+    log:
+        error =  f'{log_dir}gatk_GenotypeGVCFs_merge/{{chromosomes}}.e',
+        output = f'{log_dir}gatk_GenotypeGVCFs_merge/{{chromosomes}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - db : {{input.db}}
+            - Fasta : {{input.reference}}
+        Output:
+            - vcf : {{output.vcf_file}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["GATK4"]
+    shell:
+        """
+        (gatk GenotypeGVCFs -R {input.reference} -V gendb://{input.db} -O {output.vcf_file} {params.other_options}) 1>{log.output} 2>{log.error}
+        """
+
+rule bcftools_concat:
+    threads: get_threads('bcftools_concat', 1)
+    input:
+        vcf_file_all = expand(rules.gatk_GenotypeGVCFs_merge.output.vcf_file, chromosomes = rattleSNP_obj.CHROMOSOMES),
+        vcf_file = expand(rules.gatk_GenotypeGVCFs_merge.output.vcf_file, chromosomes = rattleSNP_obj.CHROMOSOMES_WITHOUT_MITO)
+    output:
+        vcf_file = f'{out_dir}2_snp_calling/All_samples_GenotypeGVCFs_WITHOUT_MITO.vcf.gz',
+        tbi_file = f'{out_dir}2_snp_calling/All_samples_GenotypeGVCFs_WITHOUT_MITO.vcf.gz.tbi'
+    log:
+        error =  f'{log_dir}bcftools_concat/bcftools_concat.e',
+        output = f'{log_dir}bcftools_concat/bcftools_concat.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - vcf : {{input.vcf_file}}
+        Output:
+            - vcf : {{output.vcf_file}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["BCFTOOLS"]
+    shell:
+        """
+        (bcftools concat --threads {threads} {input.vcf_file} -o {output.vcf_file} -O z;
+        bcftools index --threads {threads} --tbi {output.vcf_file}) 1>{log.output} 2>{log.error}
+        """
+
+######################################
+# POST VCF
+######################################
+def get_filter_options(wildcards):
+    keys = config["PARAMS"]["FILTER_SUFFIX"]
+    values = config["PARAMS_TOOLS"]["VCFTOOLS"]
+    dict_options = dict(zip(keys, values))
+    if wildcards.vcf_suffix in dict_options:
+        options = dict_options[wildcards.vcf_suffix]
+        return options
+
+
+rule vcftools_filter:
+    threads: get_threads('vcftools_filter', 1)
+    input:
+        vcf_file_all = rules.bcftools_concat.output.vcf_file if not rattleSNP_obj.vcf_path else rattleSNP_obj.vcf_path
+    output:
+        vcf_file_filter = f'{out_dir}4_snp_calling_filter/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.vcf.gz'
+    params:
+        other_options = get_filter_options
+    log:
+        error =  f'{log_dir}vcftools_filter/vcftools_filter{{vcf_suffix}}.e',
+        output = f'{log_dir}vcftools_filter/vcftools_filter{{vcf_suffix}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - vcf : {{input.vcf_file_all}}
+        Output:
+            - vcf_filter : {{output.vcf_file_filter}}
+        Params:
+            - {{params.other_options}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["VCFTOOLS"],
+        tools_config["MODULES"]["SAMTOOLS"]
+    shell:
+        """
+        vcftools --gzvcf {input.vcf_file_all} {params.other_options} --stdout  | sed -r "s#\.\/\.#.#g" | bgzip -c 1> {output.vcf_file_filter} 2>{log.error}
+        """
+
+rule vcf_to_fasta:
+    threads: get_threads('vcf_to_fasta', 1)
+    input:
+        vcf_file_filter = rules.vcftools_filter.output.vcf_file_filter if config["FILTER"] else rattleSNP_obj.vcf_path
+    wildcard_constraints:
+        vcf_suffix=".*|.+"
+    output:
+        fasta = f'{out_dir}5_fasta_file/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.fasta'
+    params:
+        folder = directory(f'{out_dir}5_fasta_file/')
+    log:
+        error =  f'{log_dir}vcf_to_fasta/vcf_to_fasta{{vcf_suffix}}.e',
+        output = f'{log_dir}vcf_to_fasta/vcf_to_fasta{{vcf_suffix}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - vcf : {{input.vcf_file_filter}}
+        Output:
+            - fasta : {{output.fasta}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["PYTHON3"]
+    shell:
+        f"""
+        (vcf2phylip -i {{input.vcf_file_filter}} -p -f --output-folder {{params.folder}}) 1>{{log.output}} 2>{{log.error}}
+        """
+
+rule vcf_to_geno:
+    threads: get_threads('vcf_to_geno', 1)
+    input:
+        vcf_file_filter = rules.vcftools_filter.output.vcf_file_filter if config["FILTER"]  else rattleSNP_obj.vcf_path
+    wildcard_constraints:
+        vcf_suffix=".*|.+"
+    output:
+        geno = f'{out_dir}7_geno_file/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.geno'
+    log:
+        error =  f'{log_dir}vcf_to_geno/vcf_to_geno{{vcf_suffix}}.e',
+        output = f'{log_dir}vcf_to_geno/vcf_to_geno{{vcf_suffix}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - vcf : {{input.vcf_file_filter}}
+        Output:
+            - geno : {{output.geno}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["PYTHON3"]
+    shell:
+        f"""
+        (vcf2geno --vcf {{input.vcf_file_filter}} --geno {{output.geno}}) 1>{{log.output}} 2>{{log.error}}
+        """
+
+######################################
+# VCF STATS
+######################################
+def vcf_to_stats(wildcards):
+    if rattleSNP_obj.vcf_path and config["FILTER"] and wildcards.vcf_suffix != "":
+        return rules.vcftools_filter.output.vcf_file_filter
+    if rattleSNP_obj.vcf_path and wildcards.vcf_suffix == "":
+        return rattleSNP_obj.vcf_path
+    if not rattleSNP_obj.vcf_path:
+
+        return rules.bcftools_concat.output.vcf_file
+
+rule vcf_stats:
+    threads: get_threads('vcf_stats', 1)
+    input:
+        vcf_file_all = vcf_to_stats
+    wildcard_constraints:
+        vcf_suffix=".*|.+"
+    output:
+        freq = temp(f'{out_dir}3_all_snp_calling_stats/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.frq'),
+        depth = temp(f'{out_dir}3_all_snp_calling_stats/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.idepth'),
+        depth_mean = temp(f'{out_dir}3_all_snp_calling_stats/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.ldepth.mean'),
+        qual = temp(f'{out_dir}3_all_snp_calling_stats/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.lqual'),
+        missing_ind = temp(f'{out_dir}3_all_snp_calling_stats/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.imiss'),
+        miss = temp(f'{out_dir}3_all_snp_calling_stats/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.lmiss')
+    params:
+        dirout = directory(f'{out_dir}3_all_snp_calling_stats/')
+    log:
+        error =  f'{log_dir}vcf_stats/vcftools{{vcf_suffix}}.e',
+        output = f'{log_dir}vcf_stats/vcftools{{vcf_suffix}}.o'
+    message:
+        f"""
+        Execute {{rule}} for
+        Input:
+            - vcf : {{input.vcf_file_all}}
+        Output:
+            - freq : {{output.freq}}
+            - depth : {{output.depth}}
+            - depth_mean : {{output.depth_mean}}
+            - qual : {{output.qual}}
+            - missing_ind : {{output.missing_ind}}
+            - miss : {{output.miss}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["VCFTOOLS"],
+        tools_config["MODULES"]["SAMTOOLS"]
+    shell:
+        """
+        (vcftools --gzvcf {input.vcf_file_all}  --remove-indels --freq2 --max-alleles 3 --stdout 1> {output.freq}
+        vcftools --gzvcf {input.vcf_file_all}  --remove-indels --depth --stdout 1> {output.depth}
+        vcftools --gzvcf {input.vcf_file_all}  --remove-indels --site-mean-depth --stdout 1> {output.depth_mean}
+        vcftools --gzvcf {input.vcf_file_all}  --remove-indels --site-quality --stdout 1> {output.qual}
+        vcftools --gzvcf {input.vcf_file_all}  --remove-indels --missing-indv --stdout 1> {output.missing_ind}
+        vcftools --gzvcf {input.vcf_file_all}  --remove-indels --missing-site --stdout 1> {output.miss}) 2>>{log.error}
+        """
+
+rule report_vcf:
+    threads: get_threads('report_vcf', 1)
+    input:
+        freq = rules.vcf_stats.output.freq,
+        depth = rules.vcf_stats.output.depth,
+        depth_mean = rules.vcf_stats.output.depth_mean,
+        qual = rules.vcf_stats.output.qual,
+        missing_ind = rules.vcf_stats.output.missing_ind,
+        miss = rules.vcf_stats.output.miss
+    wildcard_constraints:
+        vcf_suffix=".*|.+"
+    output:
+        report = f"{out_dir}3_all_snp_calling_stats/report_vcf_{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.html"
+    log:
+        error =  f'{log_dir}report_vcf/report{{vcf_suffix}}.e',
+        output = f'{log_dir}report_vcf/report{{vcf_suffix}}.o'
+    envmodules:
+        tools_config["MODULES"]["R"]
+    message:
+        f"""
+        Execute {{rule}} for
+        Input:
+            - freq : {{input.freq}}
+            - depth : {{input.depth}}
+            - depth_mean : {{input.depth_mean}}
+            - qual : {{input.qual}}
+            - missing_ind : {{input.missing_ind}}
+            - miss : {{input.miss}}
+        Output:
+            - report : {{output.report}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    script:
+        f"{rattleSNP_obj.snakemake_scripts}/report_vcf.Rmd"
+
+######################################
+# Genetic tools like RaxML, SNMF, ...
+######################################
+rule run_raxml:
+    """run raxml"""
+    threads: get_threads('run_raxml', 1)
+    input:
+        fasta = rules.vcf_to_fasta.output.fasta
+    wildcard_constraints:
+        vcf_suffix=".+"
+    output:
+        tree = f'{out_dir}6_raxml/filter{{vcf_suffix}}/RAxML_bestTree.{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}',
+        dir = directory(f'{out_dir}6_raxml/filter{{vcf_suffix}}/')
+    params:
+        other_params = config["PARAMS_TOOLS"]["RAXML"],
+        name = f"{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}".replace('-','')
+    log:
+        error =  f'{log_dir}raxml/raxml{{vcf_suffix}}.e',
+        output = f'{log_dir}raxml/raxml{{vcf_suffix}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - fasta : {{input.fasta}}
+        Output:
+            - tree : {{output.tree}}
+            - dir : {{output.dir}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["RAXML"]
+    shell:
+        """
+        (raxmlHPC-PTHREADS -T {threads} -s {input.fasta} -w {output.dir} -n {params.name} {params.other_params}) 1> {log.output} 2>{log.error}
+        """
+
+
+rule run_raxml_ng:
+    """run raxml"""
+    threads: get_threads('run_raxml_ng', 1)
+    # threads: workflow.cores
+    input:
+        fasta = rules.vcf_to_fasta.output.fasta
+    wildcard_constraints:
+        vcf_suffix=".+"
+    output:
+        tree = f'{out_dir}6_raxml_ng/filter{{vcf_suffix}}/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}.raxml.bestTree',
+        dir = directory(f'{out_dir}6_raxml_ng/filter{{vcf_suffix}}/')
+    params:
+        prefix = f'{out_dir}6_raxml_ng/filter{{vcf_suffix}}/{rattleSNP_obj.vcf_path_basename}{{vcf_suffix}}',
+        other_params = lambda wildcards: config["PARAMS_TOOLS"]["RAXML_NG"]
+    log:
+        error =  f'{log_dir}raxml_ng/raxml{{vcf_suffix}}.e',
+        output = f'{log_dir}raxml_ng/raxml{{vcf_suffix}}.o'
+    message:
+        f"""
+        Running {{rule}}
+        Input:
+            - fasta : {{input.fasta}}
+        Output:
+            - tree : {{output.tree}}
+            - dir : {{output.dir}}
+        Params:
+            - other: {{params.other_params}}
+        Others
+            - Threads : {{threads}}
+            - LOG error: {{log.error}}
+            - LOG output: {{log.output}}
+        """
+    singularity:
+        tools_config['SINGULARITY']['TOOLS']
+    envmodules:
+        tools_config["MODULES"]["RAXML_NG"]
+    shell:
+        """
+        (raxml-ng --threads auto{{{threads}}} --msa {input.fasta} --prefix {params.prefix} {params.other_params}) 1> {log.output} 2>{log.error}
+        """
