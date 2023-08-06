@@ -1,0 +1,11 @@
+structor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+structor/base_commands.py,sha256=eEeWk7X4OAheRnnWM9g3axkpi-itip3JjwLa3B60rbE,736
+structor/custom_exceptions.py,sha256=oThMo9Y9JEjPY3Db3nl_UIfG-W9x6zUTbX6l-uYTtio,182
+structor/structor.py,sha256=PquR5wvychdnTMPJ59vbVfJDNVB47g-n8tihlkJogeU,6176
+structor/utils.py,sha256=P0-JgSlNb02PmsVuLPnHbX3747DtxzzxA09SZnFaPNo,315
+structor-1.0.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+structor-1.0.4.dist-info/METADATA,sha256=ynJBnqSK6mM2vXeOnUzUpP4cUMcBGcO_3Cw6q3uauJo,4264
+structor-1.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+structor-1.0.4.dist-info/entry_points.txt,sha256=VaB0EBj4R6-A4DdrHDdo7SchKtZbU2dxGnEry4dH4dc,52
+structor-1.0.4.dist-info/top_level.txt,sha256=fk5STXwwSXGQGRQGUyOF0WB0HQt9t1WI9-hkERBP6Vo,9
+structor-1.0.4.dist-info/RECORD,,
