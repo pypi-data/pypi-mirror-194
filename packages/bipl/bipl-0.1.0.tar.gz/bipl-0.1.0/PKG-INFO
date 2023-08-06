@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: bipl
+Version: 0.1.0
+Summary: Big Image Python Library
+Project-URL: homepage, https://github.com/arquolo/bipl
+Project-URL: repository, https://github.com
+Author-email: Paul Maevskikh <arquolo@gmail.com>
+Maintainer-email: Paul Maevskikh <arquolo@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2019 Paul Maevskikh
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: OpenSlide,SVS,TIFF,tiles
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Requires-Dist: glow~=0.12.0
+Requires-Dist: imagecodecs
+Requires-Dist: lxml
+Requires-Dist: numpy~=1.21
+Requires-Dist: opencv-python~=4.0
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: bipl[dev-core]; extra == 'dev'
+Requires-Dist: flake8-alphabetize; extra == 'dev'
+Requires-Dist: typing-extensions~=4.4; extra == 'dev'
+Provides-Extra: dev-core
+Requires-Dist: flake8-pie; extra == 'dev-core'
+Requires-Dist: flake8-pyi; extra == 'dev-core'
+Requires-Dist: flake8-pyproject; extra == 'dev-core'
+Requires-Dist: flake8-simplify; extra == 'dev-core'
+Requires-Dist: flake8~=6.0.0; extra == 'dev-core'
+Requires-Dist: isort; extra == 'dev-core'
+Requires-Dist: mypy~=0.990; extra == 'dev-core'
+Requires-Dist: pytest~=6.0; extra == 'dev-core'
+Requires-Dist: ruff; extra == 'dev-core'
+Requires-Dist: yapf!=0.30,!=0.31,!=0.32,~=0.29; extra == 'dev-core'
+Provides-Extra: dev-wemake
+Requires-Dist: bipl[dev-core]; extra == 'dev-wemake'
+Requires-Dist: wemake-python-styleguide~=0.15.0; extra == 'dev-wemake'
+Description-Content-Type: text/markdown
+
+# BIPL is a Big Image Python Library
+
+Library to read big pyramidal images like in formats like BigTiff, Aperio SVS, Leica MRXS.
+
+## `bipl.Slide` - ndarray-like reader for multiscale images (svs, tiff, etc...)
+<details>
+
+```python
+from bipl import Slide
+
+slide = Slide.open('test.svs')
+shape: tuple[int, ...] = slide.shape
+scales: tuple[int, ...] = slide.scales
+image: np.ndarray = slide[:2048, :2048]  # Get numpy.ndarray
+```
+</details>
+
+## `bipl.Mosaic` - apply function for each tile of big image on desired scale.
+<details>
+...
+</details>
+
+## Installation
+
+```bash
+pip install bipl
+```
+bipl is compatible with: Python 3.9+.
+Tested on ArchLinux, Ubuntu 18.04/20.04/22.04, Windows 10/11.
