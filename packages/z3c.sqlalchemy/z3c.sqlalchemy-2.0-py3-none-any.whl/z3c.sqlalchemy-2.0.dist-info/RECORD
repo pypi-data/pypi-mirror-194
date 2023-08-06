@@ -1,0 +1,16 @@
+z3c.sqlalchemy-2.0-py3.9-nspkg.pth,sha256=Ou9y0X2aSJC-56yWL7VjITZxnfX6slYJCSxhMSKad6I,524
+z3c/sqlalchemy/__init__.py,sha256=Eavos5j_-3rbR02c8saPOPn-z0QD1GeXy3wH_RgqD2E,600
+z3c/sqlalchemy/base.py,sha256=SonF1DApfOjbdUSt9jxf-IdpYlMEEkIkry9nXzRy9LM,5175
+z3c/sqlalchemy/interfaces.py,sha256=RW8MedevnKDCjGWxEN-_f6jnBzZQfFfdp2J-QRWV10E,3534
+z3c/sqlalchemy/mapper.py,sha256=LdpixbJqyluiMkmIHcZ5E9-5ETOuNYNkMY2F14fPVCg,8220
+z3c/sqlalchemy/model.py,sha256=_i4jtpMlu0wMWg7ymWzDZhXxpVbSc4_XXMlOIJZ9gwo,4146
+z3c/sqlalchemy/postgres.py,sha256=l32LRy9-_V5dPjIjsYUPlzfZK1viBpgD1E30WXkMdMM,2347
+z3c/sqlalchemy/util.py,sha256=T-tpiX2cp_JnVlaX_3KyPxP9iJ1mPvs5z72IZCuaIeI,4834
+z3c/sqlalchemy/tests/__init__.py,sha256=m2cY7XzdObcS4gaBAw_p9Gzhw68v5IfpJbuGTkRnbfY,361
+z3c/sqlalchemy/tests/test_SQLAlchemy.py,sha256=FYvSZEsRnYQV2BpdjXvKoQJMxsGL-L_AxnH2bSol5HE,7856
+z3c.sqlalchemy-2.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+z3c.sqlalchemy-2.0.dist-info/METADATA,sha256=qPNubx5nSS9_h9--ImzWz8cDuaOpkMPWpgmLP5RiNHQ,18945
+z3c.sqlalchemy-2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+z3c.sqlalchemy-2.0.dist-info/namespace_packages.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.sqlalchemy-2.0.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.sqlalchemy-2.0.dist-info/RECORD,,
