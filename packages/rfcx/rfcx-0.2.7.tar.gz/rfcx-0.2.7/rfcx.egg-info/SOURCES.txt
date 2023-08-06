@@ -1,0 +1,17 @@
+setup.py
+rfcx/__init__.py
+rfcx/_api_auth.py
+rfcx/_api_rfcx.py
+rfcx/_audio.py
+rfcx/_authentication.py
+rfcx/_credentials.py
+rfcx/_helper.py
+rfcx/_ingest.py
+rfcx/_pkce.py
+rfcx/_util.py
+rfcx/client.py
+rfcx.egg-info/PKG-INFO
+rfcx.egg-info/SOURCES.txt
+rfcx.egg-info/dependency_links.txt
+rfcx.egg-info/requires.txt
+rfcx.egg-info/top_level.txt

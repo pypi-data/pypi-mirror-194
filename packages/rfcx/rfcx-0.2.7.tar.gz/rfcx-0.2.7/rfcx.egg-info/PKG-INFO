@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rfcx
+Version: 0.2.7
+Summary: Python client SDK for connecting to the Rainforest Connection platform
+Home-page: https://github.com/rfcx/rfcx-sdk-python
+Author: Rainforest Connection
+Author-email: antony@rfcx.org
+License: None
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+[See the documentation](https://rfcx.github.io/rfcx-sdk-python/) or [try an example](https://gist.github.com/antonyharfield/93231b3df86cd58fecee4f4d1ec9cc5b)
