@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wgs-est-converter
+Version: 1.3.5
+Summary: A small example package
+Author-email: Mahdi Rasoulinezhad <maraso@ttu.ee>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This package will converts coordinates from WGS84 (crs=4326) to L-Est97 (crs=3301)
