@@ -1,0 +1,127 @@
+# Title of the site
+site_name: "Reqsnaked"
+site_url: https://deknowny.github.io/reqsnaked/
+site_description: Reqsnaked python library guide
+repo_url: https://github.com/deknowny/reqsnaked/
+edit_uri: blob/main/guide/
+remote_branch: main
+docs_dir: guide
+site_author: Deknowny
+
+# Site's content
+nav:
+  - Home: index.md
+  - User guide:
+    - Introduction: user-guide/index.md
+    - Understand the basics: user-guide/basics.md
+    - Headers: user-guide/headers.md
+    - Query string: user-guide/query-string.md
+    - Forms: user-guide/form.md
+    - JSONs: user-guide/json.md
+    - Authoraztion: user-guide/auth.md
+    - Multipart: user-guide/multipart.md
+    - Cookies: user-guide/cookies.md
+    - Raw response: user-guide/raw-response.md
+    - Chunks (streaming response): user-guide/chunks.md
+  - For contributors: contributing.md
+  - Support us: support.md
+
+
+
+# Theme preference. Use `mkdocs-material`
+theme:
+  name: material
+  favicon: assets/reqsnaked-filled-white.png
+  logo: assets/reqsnaked-filled-white.png
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  font:
+    text: Ubuntu
+    code: Monaco
+  features:
+    - header.autohide
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - content.action.edit
+    - content.action.view
+    - navigation.footer
+
+
+plugins:
+  - social:
+      cards_color:
+        fill: "#282c36"
+        text: "#FFFFFF"
+      cards_dir: assets/
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+extra_css:
+  - css/theme.css
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - reject
+      - manage
+
+  analytics:
+    provider: google
+    property: G-6T0WXKZ5S5
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- # (2)!
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/reqsnaked
+  version:
+    provider: mike
+    default: latest
+
+# Material extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

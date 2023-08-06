@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+      name: Checkout to repo
+
+    - uses: actions/setup-python@v4
+      name: Install python
+      with:
+        python-version: '3.8'
+
+    - name: Install latest Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        override: true
+
+    - name: Install maturin
+      run: python -m pip install maturin
+
+    - name: Run tests
+      run:  python -m venv .venv && .venv\Scripts\python.exe -m pip install .[test] && .venv\Scripts\python.exe -m pytest tests
+
+    - name: Build with maturin
+      run: maturin build --release -o dist
+
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        name: wheels
+        path: dist
+
+  macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+    - uses: messense/maturin-action@v1
+      with:
+        command: build
+        args: --release -o dist --universal2
+
+    - name: Run tests
+      run:  python -m venv .venv && .venv/bin/python -m pip install maturin && .venv/bin/maturin develop --release -E test && .venv/bin/python -m pytest tests
+
+    - name: Upload wheels
+      uses: actions/upload-artifact@v2
+      with:
+        name: wheels
+        path: dist
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    if: "startsWith(github.ref, 'refs/tags/')"
+    needs: [ macos, windows ]
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: wheels
+      - name: Publish to PyPI
+        uses: messense/maturin-action@v1
+        env:
+          MATURIN_PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+        with:
+          command: upload
+          args: --skip-existing *
