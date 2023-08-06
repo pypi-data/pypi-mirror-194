@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+requestsloginsession/__init__.py
+requestsloginsession/requestsloginsession.py
+requestsloginsession.egg-info/PKG-INFO
+requestsloginsession.egg-info/SOURCES.txt
+requestsloginsession.egg-info/dependency_links.txt
+requestsloginsession.egg-info/not-zip-safe
+requestsloginsession.egg-info/requires.txt
+requestsloginsession.egg-info/top_level.txt
