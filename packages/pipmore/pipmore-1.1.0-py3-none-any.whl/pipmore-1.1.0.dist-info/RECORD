@@ -1,0 +1,10 @@
+pipmore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipmore/cli.py,sha256=CJ3Gu9JWVh55DOxrmwyjp9igko0XkEYkXTRHU4lylM8,829
+pipmore/package.py,sha256=lVKtaMp0qPKyXHGCmpdyNtq7FQnaLyuvgiau6PokfXU,1968
+pipmore/pyversion.py,sha256=BIM7TT_u84K6ikX4BbD0JlH9mNVdDf7sT4EwPJ4LOD0,1438
+pipmore-1.1.0.dist-info/LICENSE,sha256=MIWCg1cRz_1Ob9z63HigoTR9k15pdK6ummvjJ1duKHg,11343
+pipmore-1.1.0.dist-info/METADATA,sha256=72Hvs3Z243LFbLZXL5fp15SlukFtbFVTtZR-7W_lP-k,13558
+pipmore-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pipmore-1.1.0.dist-info/entry_points.txt,sha256=TEoBnzMBR-a6fb65f8I_mCb9wYazB_Tmjb0XnGxBBHs,44
+pipmore-1.1.0.dist-info/top_level.txt,sha256=bIRx6k5HSTrn2sd3u4fFtYJKOsO0yRRaLZUUH28WHkk,8
+pipmore-1.1.0.dist-info/RECORD,,
