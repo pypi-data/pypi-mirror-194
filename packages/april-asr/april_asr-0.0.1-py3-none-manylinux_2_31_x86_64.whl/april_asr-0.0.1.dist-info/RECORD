@@ -1,0 +1,13 @@
+april_asr-0.0.1.dist-info/entry_points.txt,sha256=wB6J_KBL9xSxZbugexTKhx6HrnVgulT52Vbwi7D-89c,62
+april_asr-0.0.1.dist-info/top_level.txt,sha256=TVZgAfMJnZ9dbziu8oinPJv1-3inPq6t_DTPLyB6ZtQ,10
+april_asr-0.0.1.dist-info/WHEEL,sha256=BJnsZV4rrIRu-Sew4b7LoQkrTD-TWy92bnt5VCBTrnk,110
+april_asr-0.0.1.dist-info/METADATA,sha256=572ehraSmG2YoeiLieI8J_D-sQA4-iQOANGV8zgGvZs,645
+april_asr-0.0.1.dist-info/RECORD,,
+april_asr/libaprilasr.so,sha256=vhablQVLpa4lNOavhRnUVlfy-j4rL_FPVgo3NevveVA,319089
+april_asr/example.py,sha256=xCu675EqoC62A5-lZ897jGD4LlCb9scO4L_c5V4J43k,1244
+april_asr/libonnxruntime.so,sha256=ntWAARhf5yyTgnVhAKU_O_CccW9SlZFFuxDufbNVcLE,15201616
+april_asr/_april_c_ffi.py,sha256=2ZspBeVxJkM09l0H4UhgOjKzXLIOf_Y52psTum68Bs0,4158
+april_asr/__init__.py,sha256=sRM1Wd51iWtydVtCXIiVeoZRkBLq36CZSWKqibMKUgo,100
+april_asr/example_async.py,sha256=cEUVEy5iXWlC-_p25yb2ibcUF4JYdCtlL8KCqOazwlM,1622
+april_asr/_april.py,sha256=IP30LSeXNB5kpKrZCSrc1ZninDT1epSAObvrPFdSRsE,2497
+april_asr.libs/libonnxruntime-9ed58001.so.1.13.1,sha256=X5w4isS-WcxuvUw20yUsWtfy_UXXWogy0RyGhB5T4Cg,15228089
