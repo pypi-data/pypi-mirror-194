@@ -1,0 +1,11 @@
+before-deploy:
+    - docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_TOKEN}" "${DOCKER_REGISTRY}"
+    - docker login -u "${DOCKERHUB_USERNAME}" -p "${DOCKERHUB_TOKEN}"
+deploy:
+    - export BASE_LAYER=ubuntu:bionic
+    - docker pull ${BASE_LAYER}
+    - docker build . -f Dockerfile -t ${IMAGE_URL} --build-arg base_image=${BASE_LAYER}
+    - docker push "${IMAGE_URL}"
+after-deploy:
+    - docker run -w /${IMG_RUNTIME_CORE} --rm "${IMAGE_URL}"
+       twine upload --repository-url "${PYPI_URL}" -u "${PYPI_USERNAME}" -p "${PYPI_TOKEN}" "dist/*"
