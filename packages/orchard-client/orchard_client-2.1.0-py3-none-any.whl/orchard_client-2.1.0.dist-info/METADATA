@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: orchard-client
+Version: 2.1.0
+Summary: A Python client for the Orchard API
+Home-page: UNKNOWN
+Author: Akorlie Edward Tsastu
+Author-email: edwardakorlie73@gmail.com
+License: MIT
+Keywords: orchard_client
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+This Python client is designed to work with the Orchard Payment Gateway API, allowing you to easily process payments.
+Before using the client, you'll need to install the orchard_client package using pip.
+
+Once installed, you can import the Orchard class and create an instance of it by providing your secret_key, client_key, and the base URL for the Orchard Payment Gateway API.
+With an instance of the Orchard class created, you can then create a payload containing the information or request you want to send.
+It's important to ensure that the payload for each request is formatted correctly as JSON.
+
+You can then use any of the available methods provided by the Orchard class (send_sms, check_wallet_balance, send_payment, account_inquiry, hosted_checkout) to complete your request.
+The final response from the request will be sent to the callback URL provided in the request for the send_payment endpoint. Other methods such as check_wallet_balance, send_sms, account_inquiry, and hosted_checkout will give you an instant response.
+
+
+Notes
+Please note that this code assumes that you have the necessary credentials and permissions to use the Orchard API, and that your IP address is whitelisted by the appsNmobile Client Service team. If you don't have these credentials, you'll need to obtain them before you can use this client or library.
+
+For more information about the Orchard Payment Gateway API, please refer to the official documentation at https://docs.anmgw.com/index.html.
+
+
+Source Code
+https://github.com/appsnmobile-solutions/orchard_client_api_python
+
+
+Change Log
+
+====================
+
+0.1.0 (2022-02-26)
+
+------------------
+
+- First Release
+
+
