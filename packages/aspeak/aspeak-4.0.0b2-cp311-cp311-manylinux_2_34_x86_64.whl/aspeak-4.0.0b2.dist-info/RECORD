@@ -1,0 +1,8 @@
+aspeak-4.0.0b2.dist-info/METADATA,sha256=9wEIRhmMbNxJ87s2WcOenl_c8QtRWWqhHBmHWHPOX0g,1657
+aspeak-4.0.0b2.dist-info/WHEEL,sha256=TVYtFxuPgEF4CSJT6sgJ0DSrIt3wAlHCVpql0cwyb-E,110
+aspeak.libs/libasound-37dc73d9.so.2,sha256=LJAFFYutwk9LHY_LctDIq6k0J1R5jp0kb3YW4Sux3aY,1027145
+aspeak.libs/libcrypto-a9528fbe.so.3,sha256=AxX2T3Zd8X1waCaB1rE3easSd2lNKoJobVLtbm0X6vI,4635993
+aspeak.libs/libssl-818161c8.so.3,sha256=wYI5tAL1ElFpeep9UacFQLsPOswnoY6dHtSEshFcTAw,701233
+aspeak/__init__.py,sha256=sj4r5-MOLBcE6ZPZqN948r83nNPArb3GXE1h7sq0fvk,107
+aspeak/aspeak.cpython-311-x86_64-linux-gnu.so,sha256=IAaJH-eNd7LU-dJ4q9ZCVGnw_N7rK-7Jz8TCfymZTpc,1808225
+aspeak-4.0.0b2.dist-info/RECORD,,
