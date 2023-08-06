@@ -1,0 +1,7 @@
+aiochannel/__init__.py,sha256=Oka4dX4OwsNFBy_ng5INcOf_yhop0q8ihdR1fKEp8Ao,272
+aiochannel/channel.py,sha256=I2rmwX-LCMUUGJAaN2OKz2ID31oOCXeIZQHVxSEmS1w,7282
+aiochannel/errors.py,sha256=MdZkXc9oEzdelycuDs_sXauho9IC9O4Dol7xNA4Hibc,175
+aiochannel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiochannel-1.2.1.dist-info/METADATA,sha256=usGyveot8meiGOWlR-OECUyK7mYz6lT9xtFCpzUL-K0,5259
+aiochannel-1.2.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+aiochannel-1.2.1.dist-info/RECORD,,
