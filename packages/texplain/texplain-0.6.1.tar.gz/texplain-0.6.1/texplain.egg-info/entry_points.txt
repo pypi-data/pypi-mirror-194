@@ -1,0 +1,3 @@
+[console_scripts]
+texcleanup = texplain:_texcleanup_catch
+texplain = texplain:_texplain_catch
