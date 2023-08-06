@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+colourout/__init__.py
+colourout/eprintc.py
+colourout/printc.py
+colourout/process_styles.py
+colourout/styles.py
+colourout.egg-info/PKG-INFO
+colourout.egg-info/SOURCES.txt
+colourout.egg-info/dependency_links.txt
+colourout.egg-info/top_level.txt
