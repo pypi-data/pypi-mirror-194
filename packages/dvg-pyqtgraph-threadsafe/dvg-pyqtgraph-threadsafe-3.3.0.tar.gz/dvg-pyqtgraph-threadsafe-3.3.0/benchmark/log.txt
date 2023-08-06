@@ -1,0 +1,54 @@
+----------------------221012_184709
+Python    | 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+PySide6   | 6.3.2
+PyQtGraph | 0.13.1
+PyOpenGL  | 3.1.6
+Platform  | Windows-10-10.0.22000-SP0
+CPU       | Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+GPU       | NVIDIA T1200 Laptop GPU
+-----------------------------------
+----------------------221012_185122
+Python    | 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+PySide6   | 6.3.2
+PyQtGraph | 0.13.1
+PyOpenGL  | 3.1.6
+Platform  | Windows-10-10.0.22000-SP0
+CPU       | Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+GPU       | NVIDIA T1200 Laptop GPU
+-----------------------------------
+----------------------221028_115402
+Python    | 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+PyQt6     | 6.3.1
+PyQtGraph | 0.13.1
+PyOpenGL  | 3.1.6
+Platform  | Windows-10-10.0.22000-SP0
+CPU       | Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+GPU       | NVIDIA T1200 Laptop GPU
+-----------------------------------
+----------------------221028_115415
+Python    | 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+PyQt5     | 5.15.2
+PyQtGraph | 0.13.1
+PyOpenGL  | 3.1.6
+Platform  | Windows-10-10.0.22000-SP0
+CPU       | Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+GPU       | NVIDIA T1200 Laptop GPU
+-----------------------------------
+----------------------221028_115423
+Python    | 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+PySide6   | 6.3.2
+PyQtGraph | 0.13.1
+PyOpenGL  | 3.1.6
+Platform  | Windows-10-10.0.22000-SP0
+CPU       | Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+GPU       | NVIDIA T1200 Laptop GPU
+-----------------------------------
+----------------------221028_115432
+Python    | 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+PySide2   | 5.15.2
+PyQtGraph | 0.13.1
+PyOpenGL  | 3.1.6
+Platform  | Windows-10-10.0.22000-SP0
+CPU       | Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+GPU       | NVIDIA T1200 Laptop GPU
+-----------------------------------
