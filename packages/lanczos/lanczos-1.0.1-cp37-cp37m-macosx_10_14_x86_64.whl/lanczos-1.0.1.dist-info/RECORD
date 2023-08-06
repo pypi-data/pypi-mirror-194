@@ -1,0 +1,10 @@
+lanczos/__init__.py,sha256=j10HNyrYQouex85QGvWN46TnfUhh8aR0SQuAddTAnSo,44
+lanczos/_lanczos.cpython-37m-darwin.so,sha256=q-3hkeIOeBtLiIMJDLisfqEKY4mFedpl6JbkHBxS1VQ,39124
+lanczos/lanczos.py,sha256=U5Q3v094493Sdbln-LjDGN6GtSBaAwnuNM0D8IIvLYI,2771
+lanczos/resample.py,sha256=w4QULkCIcBjM7E-KP7RIDNpGbhjJGxajfeFo3X31XVo,14175
+lanczos/resample_example.py,sha256=LqSpcZ__ZvPAvRfgr-LypOg7nGUyHibWNEOpK_eWmGE,5003
+lanczos-1.0.1.dist-info/LICENSE,sha256=N_qxHNBEdhTmpHO0NWjZTGRIxFCqC80zY_XUKsTN_8Y,1500
+lanczos-1.0.1.dist-info/METADATA,sha256=gHvIScm387IV5mXiLAwYSYlmE-TUTnvA8XKyDgaz7Y4,193
+lanczos-1.0.1.dist-info/WHEEL,sha256=JoRoAcGcB07oxwVUj_ocWLs1R-8Timenr03_jU7LVfc,111
+lanczos-1.0.1.dist-info/top_level.txt,sha256=SY3Jj9Z4eJpT82GT8QkhGsWU131rZsfEw0hy4pbG18M,8
+lanczos-1.0.1.dist-info/RECORD,,
