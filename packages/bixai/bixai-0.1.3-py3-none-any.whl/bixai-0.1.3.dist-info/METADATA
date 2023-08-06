@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bixai
+Version: 0.1.3
+Summary: Package that helps you make some models easier to understand
+Home-page: UNKNOWN
+Author: Simon Teggelaar
+Author-email: simonteggelaar@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: plotly
+Requires-Dist: statsmodels
+Requires-Dist: tqdm
+Requires-Dist: xgboost
+
+UNKNOWN
+
