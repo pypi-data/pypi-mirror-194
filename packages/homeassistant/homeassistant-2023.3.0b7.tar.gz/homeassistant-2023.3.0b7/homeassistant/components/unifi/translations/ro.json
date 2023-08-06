@@ -1,0 +1,23 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Site UniFi Network deja configurat"
+        },
+        "error": {
+            "service_unavailable": "Nu a reu\u0219it sa se conecteze"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Gazd\u0103 (host)",
+                    "password": "Parola",
+                    "port": "Port",
+                    "site": "ID site",
+                    "username": "Utilizator",
+                    "verify_ssl": "Verifica certificat SSL"
+                },
+                "title": "Configureaz\u0103 re\u021bea UniFi"
+            }
+        }
+    }
+}

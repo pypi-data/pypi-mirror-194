@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheden er allerede konfigureret",
+            "already_in_progress": "Konfigurationsflow er allerede i gang",
+            "reauth_successful": "Genautentificering lykkedes",
+            "unknown": "Uventet fejl"
+        },
+        "error": {
+            "cannot_connect": "Forbindelse mislykkedes"
+        },
+        "step": {
+            "manual": {
+                "data": {
+                    "host": "IP-adresse",
+                    "token": "API-token"
+                },
+                "description": "Du skal bruge 32-tegnet API-token, se https://www.home-assistant.io/integrations/xiaomi_miio#retrieving-the-access-token for instruktioner. Bem\u00e6rk, at denne API-token er forskellig fra den token, der bruges af Xiaomi Aqara-integrationen."
+            },
+            "reauth_confirm": {
+                "title": "Genautentificer integration"
+            }
+        }
+    }
+}

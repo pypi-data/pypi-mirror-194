@@ -1,0 +1,25 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheden er allerede konfigureret",
+            "unknown": "Uventet fejl"
+        },
+        "error": {
+            "invalid_auth": "Ugyldig godkendelse",
+            "unknown": "Uventet fejl"
+        },
+        "step": {
+            "coordinates": {
+                "data": {
+                    "latitude": "Breddegrad",
+                    "longitude": "L\u00e6ngdegrad"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "Adgangstoken"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheden er allerede konfigureret",
+            "reauth_successful": "Genautentificering lykkedes"
+        },
+        "error": {
+            "cannot_connect": "Forbindelse mislykkedes",
+            "invalid_auth": "Ugyldig godkendelse",
+            "unknown": "Uventet fejl"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "host": "V\u00e6rt"
+                },
+                "title": "Genautentificer integration"
+            },
+            "user": {
+                "data": {
+                    "host": "V\u00e6rt"
+                }
+            }
+        }
+    }
+}

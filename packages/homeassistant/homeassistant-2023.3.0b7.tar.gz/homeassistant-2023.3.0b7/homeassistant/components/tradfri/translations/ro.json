@@ -1,0 +1,23 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispozitivul a fost configurat deja",
+            "already_in_progress": "Configurarea flow-ului este deja in progres"
+        },
+        "error": {
+            "cannot_connect": "Nu a reu\u0219it sa se conecteze",
+            "invalid_key": "A e\u0219uat \u00eenregistrarea cu cheia furnizat\u0103. Dac\u0103 acest lucru se \u00eent\u00e2mpl\u0103 \u00een continuare, \u00eencearc\u0103 s\u0103 reporne\u0219ti gateway-ul.",
+            "timeout": "A expirat timpul pentru validarea codului."
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "host": "Gazd\u0103 (host)",
+                    "security_code": "Cod de securitate"
+                },
+                "description": "Po\u021bi g\u0103si codul de securitate pe spatele gateway-ului.",
+                "title": "Introdu codul de securitate"
+            }
+        }
+    }
+}
