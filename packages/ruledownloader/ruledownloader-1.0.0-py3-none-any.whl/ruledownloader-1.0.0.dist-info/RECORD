@@ -1,0 +1,8 @@
+ruledownloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ruledownloader/rulechanges.py,sha256=Y6RgeM5imXeU1vUojn-8mnwpoWh_EI64Sbih9JTTIQo,4789
+ruledownloader/ruledownloader.py,sha256=07CnZG0dTaW5j2YfYpOphUZzEm4BkdW1zB3_87wd5BY,9241
+ruledownloader-1.0.0.dist-info/LICENSE.md,sha256=ZLT3-VJ1WArtC3cWVt9agPvN1g0pHosfYbuW-kDBArU,4921
+ruledownloader-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ruledownloader-1.0.0.dist-info/METADATA,sha256=odqnlgg3aqXOEOB_85cW_9qEQXbGBSiRGoYcOFLrsxg,3017
+ruledownloader-1.0.0.dist-info/entry_points.txt,sha256=7f52dRgbmrzvLBD5yXltrz7AtW2-m2P41uvKVK7r83c,114
+ruledownloader-1.0.0.dist-info/RECORD,,
