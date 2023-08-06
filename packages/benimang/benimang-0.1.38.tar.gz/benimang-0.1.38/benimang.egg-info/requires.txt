@@ -1,0 +1,7 @@
+aiofiles
+aiohttp
+pyperclip
+nest-asyncio
+tzdata
+typer
+qiniu
