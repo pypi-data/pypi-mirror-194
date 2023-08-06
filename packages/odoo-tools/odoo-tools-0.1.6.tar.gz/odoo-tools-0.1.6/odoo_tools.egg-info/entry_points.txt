@@ -1,0 +1,18 @@
+[console_scripts]
+odootools = odoo_tools.cli.odot:command
+
+[odootools.command]
+addons_paths = odoo_tools.cli.click.path:addons_paths
+config = odoo_tools.cli.click.config:config
+db = odoo_tools.cli.click.db:db
+entrypoint = odoo_tools.cli.click.entrypoint:entrypoint
+gen = odoo_tools.cli.click.gen:gen
+manage = odoo_tools.cli.click.manage:manage
+module = odoo_tools.cli.click.module:module
+platform = odoo_tools.cli.click.platform:platform
+service = odoo_tools.cli.click.services:service
+shell = odoo_tools.cli.click.shell:shell
+user = odoo_tools.cli.click.users:user
+
+[odootools.registry]
+registry = odoo_tools.cli.registry:registry
