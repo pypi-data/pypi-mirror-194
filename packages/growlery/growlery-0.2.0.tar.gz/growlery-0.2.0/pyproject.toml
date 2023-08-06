@@ -1,0 +1,140 @@
+[build-system]
+requires = ['poetry-core>=1.0.0', 'wheel',]
+build-backend = 'poetry.core.masonry.api'
+
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+omit = [
+    '.tox/*',
+    'tests/*',
+    'main.py',
+    '__main__.py',
+]
+
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = ''  # https://www.flake8rules.com/
+max-complexity = 15  # Info: https://en.wikipedia.org/wiki/Cyclomatic_complexity
+per-file-ignores = """\
+# F401: Ignore "unused" imports
+# F403: Ignore star imports
+# F405: Ignore names from star imports
+__init__.py:F401,F403,F405\
+"""
+
+
+[tool.poetry]
+name = 'growlery'
+version = '0.2.0'
+description = "An OSRS Discord bot for Clan Quest."
+
+authors = ["Lari Liuhamo <lari.liuhamo+pypi@gmail.com>",]
+maintainers = ["Lari Liuhamo <lari.liuhamo+pypi@gmail.com>",]
+
+include = ['CHANGELOG.md', 'LICENSE',]
+license = 'MIT'
+readme = 'README.md'
+
+homepage = 'https://pypi.org/project/clan-quest-osrs-discord-bot/'
+repository = 'https://github.com/Diapolo10/clan-quest-osrs-discord-bot'
+documentation = 'https://github.com/Diapolo10/clan-quest-osrs-discord-bot/tree/main/docs'
+
+keywords = [
+    'python3',
+]
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Programming Language :: Python :: Implementation :: PyPy',
+    'Typing :: Typed',
+]
+
+
+[tool.poetry.dependencies]
+python = '^3.10'
+aiohttp = '^3.8.4'
+"discord.py" = '^2.2.0'
+python-dotenv = '^1.0.0'
+
+[tool.poetry.dev-dependencies]
+coverage = {version = '^7.2.1', extras = ['toml',]}
+dpytest = '^0.6.2'
+flake8 = '^6.0.0'
+flake8-pyproject = '^1.2.2'
+mypy = '^1.0.1'
+pylint = '^2.16.2'
+pytest = '^7.2.1'
+pytest-asyncio = '^0.20.3'
+pytest-cov = '^4.0.0'
+tox = '^4.4.6'
+tox-gh-actions = '^3.0.0'
+
+
+[tool.poetry.urls]
+"Tracker" = 'https://github.com/Diapolo10/clan-quest-osrs-discord-bot/issues'
+"Changelog" = 'https://github.com/Diapolo10/clan-quest-osrs-discord-bot/blob/main/CHANGELOG.md'
+
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+disable = [
+    # https://vald-phoenix.github.io/pylint-errors/
+]
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = """
+--doctest-modules \
+--cov=./ \
+--cov-append \
+--cov-report html:tests/reports/coverage-html \
+--cov-report xml:tests/reports/coverage.xml \
+--ignore=docs/
+"""
+testpaths = [
+    'tests',
+]
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py38, py39, py310, py311, pypy3
+isolated_build = True
+
+[gh-actions]
+python =
+    3.10: py310
+    3.11: py311
+    pypy-3.9: pypy3
+
+[gh-actions:env]
+PLATFORM =
+    ubuntu-latest: linux
+    macos-latest: macos
+    windows-latest: windows
+
+[testenv]
+passenv = GITHUB_*
+deps =
+    coverage
+    coveralls[toml]
+    dpytest
+    pytest
+    pytest-cov
+    pytest-asyncio
+    wheel
+commands =
+    coverage run -m pytest
+"""
