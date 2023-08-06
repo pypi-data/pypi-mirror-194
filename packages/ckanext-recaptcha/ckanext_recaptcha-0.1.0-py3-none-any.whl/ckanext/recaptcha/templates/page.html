@@ -1,0 +1,19 @@
+{% ckan_extends %}
+
+{% block scripts %}
+    {{ super() }}
+
+    {% with key=h.recaptcha_site_key(), render=h.recaptcha_render_mode() %}
+        <script>CKANEXT_RECAPTCHA_SITE_KEY = {{ key |  tojson }}</script>
+
+        {% if h.recaptcha_include_js() %}
+            <script src="https://www.google.com/recaptcha/api.js?render={{ render }}" async></script>
+        {% endif %}
+
+        {% asset "recaptcha/recaptcha-modules" %}
+    {% endwith %}
+
+    <div id="ckanext-recaptcha-invisible-placeholder" data-size="invisible"></div>
+
+
+{% endblock scripts %}
