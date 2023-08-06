@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+kswutils/__init__.py
+kswutils/accelerometer.py
+kswutils/calculator.py
+kswutils/drawio.py
+kswutils/fileio.py
+kswutils/signalprocessing.py
+kswutils/smartsensor.py
+kswutils.egg-info/PKG-INFO
+kswutils.egg-info/SOURCES.txt
+kswutils.egg-info/dependency_links.txt
+kswutils.egg-info/not-zip-safe
+kswutils.egg-info/top_level.txt
