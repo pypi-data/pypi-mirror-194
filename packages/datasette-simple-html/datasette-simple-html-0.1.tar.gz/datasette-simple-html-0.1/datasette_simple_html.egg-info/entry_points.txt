@@ -1,0 +1,2 @@
+[datasette]
+simple_html = datasette_simple_html

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+datasette_simple_html/__init__.py
+datasette_simple_html.egg-info/PKG-INFO
+datasette_simple_html.egg-info/SOURCES.txt
+datasette_simple_html.egg-info/dependency_links.txt
+datasette_simple_html.egg-info/entry_points.txt
+datasette_simple_html.egg-info/requires.txt
+datasette_simple_html.egg-info/top_level.txt
+tests/test_simple_html.py
