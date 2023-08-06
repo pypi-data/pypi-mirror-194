@@ -1,0 +1,8 @@
+README.md,sha256=koy6AW0UTjt_hm5zEcB4FpTqGUGtRH4rdsN6QI9nlnA,823
+whisper_cpp_cdll/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+whisper_cpp_cdll/core.py,sha256=mPADP7YlEp0a9uIbQnFgbivILgrQUHW4-dHbUT3AVxA,6887
+whisper_cpp_cdll/types.py,sha256=Q3OXVVMDaF9RWo9sEGqSLYsCCC6MuDFW6XJmBZIV5sw,4640
+whisper_cpp_cdll/util.py,sha256=W1fUjUE6BsQCKJP3WSI31pDe9SkRloSzXOhyoUB5icM,246
+whisper_cpp_cdll-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+whisper_cpp_cdll-0.0.5.dist-info/METADATA,sha256=89QArLEJu-S21xEPaV_40CNO9l9aB8a7KoPEBnXENjQ,1522
+whisper_cpp_cdll-0.0.5.dist-info/RECORD,,
