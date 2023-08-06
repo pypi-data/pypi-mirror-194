@@ -1,0 +1,11 @@
+regex
+pandas
+numpy
+more-itertools
+opencv-python
+matplotlib
+Pillow
+h5py
+tqdm
+tifffile
+joblib
