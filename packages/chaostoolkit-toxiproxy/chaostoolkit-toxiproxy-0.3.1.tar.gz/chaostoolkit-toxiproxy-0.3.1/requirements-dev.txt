@@ -1,0 +1,12 @@
+coverage
+pycodestyle
+pytest
+pytest-cov
+pytest-sugar
+mock
+tox
+black
+flake8
+pyflakes==2.4.0
+isort
+
