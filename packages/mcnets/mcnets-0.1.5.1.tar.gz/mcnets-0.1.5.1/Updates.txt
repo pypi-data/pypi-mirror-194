@@ -1,0 +1,26 @@
+0.1.6 Status
+<New>
+- 
+
+<To Do>
+- Implement ways to use the net as a backbone of a different type of NN
+	- Classifiers (using e^-x prob. calc.s)
+	- Curve fitting (using output as slopes)
+
+
+0.1.5 Status
+<New>
+- For nets with inSize = 1, a simple number can be given (no longer required to be that stupid 1x1 numpy array thing).
+- Reduced maxCycles default value to 5 for the cycle training
+- A float value can be given in .Calculate if inSize == 1
+
+<To Do>
+- Implement output as slope behavior for curve-fitting, it is incredibly much more accurate and efficient (like 5% of the work to do for much better results).
+	- First add RELU/ELU stuff as part of the net
+	- Could also just add as a derivative finder for now
+
+
+0.1.4 Status
+<New>
+- Operational as package
+- Printing an AdvNet now also prints the # of parameters it has
