@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Supbot_api.egg-info/PKG-INFO
+Supbot_api.egg-info/SOURCES.txt
+Supbot_api.egg-info/dependency_links.txt
+Supbot_api.egg-info/requires.txt
+Supbot_api.egg-info/top_level.txt
+supbot-api/__init__.py
