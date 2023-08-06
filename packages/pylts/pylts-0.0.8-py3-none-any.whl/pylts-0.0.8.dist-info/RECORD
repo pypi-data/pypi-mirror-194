@@ -1,0 +1,7 @@
+pylts/__init__.py,sha256=eef9GF1BLDYlRk-honPe2SsLuKADLirh4QU8C8hrWmE,49
+pylts/__main__.py,sha256=TdiMYIRamOgJqVcFRvMvUwyvJfIxBCAUWNtNCPoW9Xs,32
+pylts/aws.py,sha256=7RDfgVvXS6A8HDIE9QxYIlbKU-gyNyUj1zcrdnQs0BM,10187
+pylts/cli.py,sha256=GZBxy__0-LxkESvx4aBlU-IgZ2m7ccANNaek9iWKG28,708
+pylts-0.0.8.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pylts-0.0.8.dist-info/METADATA,sha256=4vj5PRIpj5ne6XFN_tFgnha9KCLWgw4V4Ln7Ly3umYM,1216
+pylts-0.0.8.dist-info/RECORD,,
