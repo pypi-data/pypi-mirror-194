@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['hot_spot_analysis']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['numpy>=1.21', 'pandas>=1.3.5', 'seaborn>=0.12.2,<0.13.0']
+
+setup_kwargs = {
+    'name': 'hot-spot-analysis',
+    'version': '0.1.4',
+    'description': 'Compute metrics across combinations of features. Stop clicking around in tableau.',
+    'long_description': "\n# Overview\ntldr: Do you hate trying to breakdown which underlying trends or movements are driving topline metric movements? HSA can solve that.\n\nHot Spot Analysis (HSA) is an analytic reporting framework that removes any statitical ambiguity. HSA is meant to enhance reporting, find insights, and easily dive further into the 'why' metrics have shifted. This is done by automatically running all viable cuts within the data across the provided features for any metrics.\n\n## Future updates plan to add the following functionality:\n- multiprocessing to improve module calculation speed\n- support for non-dataframe user functions (graphs, etc.)\n\n\n## Short Theoretical Demonstration:\n\nIf we have 3 columns [a, b, c], and we want to cut our data using those columns we would have to group our data as such to know all of the interactions' impact on our metric of interst. And this problem becomes increasingly complicated as we increase the number of columns. \n\n**Using 3 columns:**\n[a, b, c] -> 7 valid data cuts\n  - @ depth = 1: [a,b,c] <- 3 data cuts\n  - @ depth = 2: [ab,ac,bc] <- 3 data cuts\n  - @ depth = 3: [abc] <- 1 data cuts\n\n**HSA Output Data Structure:**\n\n| index | depth | data_cuts         | data_content        | data_cut_content      | user function output |\n| ----- | ----- | ----------------- | ------------------- | --------------------- | -------------------- |\n| 1     | 1     | [column a]        | [row_value x]       | ['a:x']               | [Int/float/etc.]     |\n| 2     | 1     | [column b]        | [row_value y]       | ['b:y']               | [Int/float/etc.]     |\n| 3     | 1     | [column c]        | [row_value z]       | ['b:y']               | [Int/float/etc.]     |\n| 4     | 2     | [Columns a, b]    | [row_value x, y]    | ['a:x', 'b:y']        | [Int/float/etc.]     |\n| 5     | 2     | [Columns a, c]    | [row_value x, z]    | ['a:x', 'c:z']        | [Int/float/etc.]     |\n| 6     | 2     | [Columns c, b]    | [row_value y, z]    | ['b:y', 'c:z']        | [Int/float/etc.]     |\n| 7     | 3     | [Columns a, b, c] | [row_value x, y, z] | ['a:x', 'b:y', 'c:z'] | [Int/float/etc.]     |\n\n***Note:*** Each column yields X rows equal determined by number of unique values. Thus 'ab' woudl yield a<sub>N</sub> * b<sub>M</sub> rows in the output where column a has N unique values, and column B has M unique values thus ab yields N*M rows.\n\n\n# An Example:\n\nUsing the titanic data from seaborn we can look at a semi-practical example using some data.\n\n| survived | class | adult_male | embark_town |\n| -------- | ----- | ---------- | ----------- |\n| 0        | Third | True       | Southampton |\n| 1        | First | False      | Cherbourg   |\n| 1        | First | False      | Southampton |\n| 0        | Third | True       | Queenstown  |\n*for each of the 891 passengers on the titanic*\n\n\n\n## A Simple Example Using hot_spot_analysis:\n```\nimport numpy as np\nimport pandas as pd\nimport seaborn as sb\nfrom hot_spot_analysis.hot_spot_analysis import HotSpotAnalysis\n\n# Load our data\ndf = sb.load_dataset('titanic')\ntitanic = df[['survived', 'class',  'adult_male', 'embark_town']]\n\n# Define our metric function\ndef survival_rate(data):\n    temp = data.agg(survival_rate = pd.NamedAgg('survived', np.mean))\n    return temp\n\n# Input our data cuts, depth limit, and data\nhsa = HotSpotAnalysis(\n    data_cuts=['class',  'adult_male', 'embark_town'],\n    depth_limit = 3,\n    data = titanic\n)\n\n# Run the hot spot analysis\nhsa.run_hsa(survival_rate)\n\n# Export the data\nhsa_output = hsa.get_hsa_data() # export the analysis results\n\n# Review some of the features\nprint(hsa_output.head())\nprint(hsa_output.tail())\n\n# Or use some of the built in search features\nhsa.search_hsa_data(\n    target_var = 'data_content', \n    search_terms = 'Southampton'\n    )\n\n```\n\n\n## A (mostly) pandas example without hot_spot_analysis:\n\nDoes using hot_spot_analysis actually make life that much easier?\nYES.\n\nLooking at the following for \n\n```\nimport numpy as np\nimport pandas as pd\nimport seaborn as sb\n\ndf = sb.load_dataset('titanic')\ntitanic = df[['survived', 'class',  'adult_male', 'embark_town']]\n\ndef survival_rate(data):\n    temp = data.agg(survival_rate = pd.NamedAgg('survived', np.mean))\n    return temp\n\ntitanic_by_class = survival_rate(titanic.groupby('class'))\ntitanic_by_adult_male = survival_rate(titanic.groupby('adult_male'))\ntitanic_by_embark_town = survival_rate(titanic.groupby('embark_town'))\ntitanic_by_class_adult_male = survival_rate(titanic.groupby(['class', 'adult_male']))\ntitanic_by_class_embark_town = survival_rate(titanic.groupby(['class', 'embark_town']))\ntitanic_by_adult_male_embark_town = survival_rate(titanic.groupby(['adult_male', 'embark_town']))\ntitanic_by_all = survival_rate(titanic.groupby(['class', 'adult_male', 'embark_town']))\n\n# Combine the data frames\ndfs = [\n    titanic_by_class,\n    titanic_by_adult_male,\n    titanic_by_embark_town,\n    titanic_by_class_adult_male,\n    titanic_by_class_embark_town,\n    titanic_by_adult_male_embark_town,\n    titanic_by_all\n]\n\nall_df = pd.concat(dfs, join='outer', axis=1).fillna(np.NaN)\n\n# Review some of the features\nprint(all_df.head())\nprint(all_df.tail())\n\n\n\n```\n\n\n",
+    'author': 'Philip Gundy',
+    'author_email': 'philipgundy@gmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'None',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7.1',
+}
+
+
+setup(**setup_kwargs)
