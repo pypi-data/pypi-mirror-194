@@ -1,0 +1,12 @@
+fuzzy_sql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuzzy_sql/fuzzy_sql.py,sha256=cIsA1HXn33DdMLGFliBadgQLqatJhJsWXexu82cpLyk,76699
+fuzzy_sql/generate.py,sha256=7sP8rhuuFk4lajiqC2NeGMYzHydfm3uJaXmjKTJwWx8,5626
+fuzzy_sql/load.py,sha256=cvoPtUcJNrt8dPR9NYeAo-obObkqOplTKvXFFFavG7Q,7322
+fuzzy_sql/randomquery.py,sha256=4nhewu3Vyz_nhgt0B3FLEJdhQjt1X4HnslDGDGRd-b8,74405
+fuzzy_sql/report.py,sha256=dSZdC1098OsCToLs9fuZdezzg4yzXeWi8nORr1the28,5675
+fuzzy_sql/tabular_query.py,sha256=gM-XNzUgQ5SAJbr748KPLZEgi-vNV19aXhDwletslAA,60111
+fuzzy_sql-2.0.1b0.dist-info/LICENSE,sha256=TAQVzeVWduGYjK3KctNR0xGfD-tmz9LwgPnavAX0UZQ,1070
+fuzzy_sql-2.0.1b0.dist-info/METADATA,sha256=n1zD2dum2jSK4LzF6o-_Wb3DWbKl09yJzyW7qUVjE84,1366
+fuzzy_sql-2.0.1b0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fuzzy_sql-2.0.1b0.dist-info/top_level.txt,sha256=RAg7UZ9eWs1S8BtYjdPTDTT3RPkqLrEKUoThE4UnzDc,10
+fuzzy_sql-2.0.1b0.dist-info/RECORD,,
