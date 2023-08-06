@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: inputHelp
+Version: 1.4
+Summary: Contains functions to validate input for command line programs
+Home-page: https://github.com/C20H12/inputHelpPackage
+Download-URL: https://github.com/C20H12/inputHelpPackage/archive/refs/tags/1.4.tar.gz
+Author: c20h12untitled
+License: MIT
+Keywords: input,command line
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Environment :: Console
+License-File: LICENSE.txt
