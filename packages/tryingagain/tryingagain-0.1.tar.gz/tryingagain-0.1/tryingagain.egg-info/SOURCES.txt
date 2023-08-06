@@ -1,0 +1,6 @@
+README.md
+setup.py
+tryingagain.egg-info/PKG-INFO
+tryingagain.egg-info/SOURCES.txt
+tryingagain.egg-info/dependency_links.txt
+tryingagain.egg-info/top_level.txt
