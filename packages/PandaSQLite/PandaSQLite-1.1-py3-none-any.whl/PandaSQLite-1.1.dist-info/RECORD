@@ -1,0 +1,11 @@
+PandaSQLite/__init__.py,sha256=vfkfDwMyjZyfYNC2HxcIwMYV9pmR0w_kmUxvA25tXPg,49
+PandaSQLite/decorator.py,sha256=5qizaYrduMAuHCXC-OIkWDKHwTfPPQ_CPhcxm5m0QBQ,711
+PandaSQLite/errors.py,sha256=ceX0U7VDfBukNz4n9aiBlnqKkjTzKqgWTesdWvy3vGw,1359
+PandaSQLite/io.py,sha256=cofj2uxaZIVzsITON9c3rRp8KQpTERh1c3iaZrKsrYY,545
+PandaSQLite/pandasqlite.py,sha256=NDtdY2NFcOMC51-zCCs4xHMmjmK4JCDcsMxTzvtK3XM,3763
+PandaSQLite-1.1.dist-info/AUTHORS,sha256=r1ZFEgeKFvjeb-QFQIVs1NrTLN3pfibmKpxosOYwtwY,89
+PandaSQLite-1.1.dist-info/LICENSE.txt,sha256=e2c3drGaK7KEMMlghbleO41rtBcHovQgqp_5Zxdw3S8,1070
+PandaSQLite-1.1.dist-info/METADATA,sha256=Gi3vMmSSRV6SB-Utv13ejcJ2qXfo0yfX-NH4QpV1_pM,3448
+PandaSQLite-1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PandaSQLite-1.1.dist-info/top_level.txt,sha256=ZrV2SZnZ2RPNEghfwHU2ROAL0tJg3eNWZfGrb4Hmsps,12
+PandaSQLite-1.1.dist-info/RECORD,,
