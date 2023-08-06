@@ -1,0 +1,5 @@
+bokeh
+renku-sphinx-theme
+Jinja2<3.1
+numpy
+m2r2
