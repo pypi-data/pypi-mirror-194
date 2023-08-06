@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: aisearchlab-py-commons
+Version: 0.3.22
+Summary: Some python commons used by python projects
+Home-page: https://bitbucket.org/econtology/py-commons.git
+Author: trofiv
+Author-email: stranger.65536@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: elasticsearch (>=7.0.0)
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: google-cloud-logging (~=1.15.0)
+Requires-Dist: singleton-decorator (~=1.0.0)
+Requires-Dist: passlib (~=1.7.2)
+
+# AiSearchLab common python library
+
+Contains a bunch of common python functions and classes used by internal projects
+
+- GCP Logging adapter
+- Collections stuff
+- Elastic singleton
+- Simple coding functions for obfuscation
+
+## Prerequisites
+```
+pip3 install bump2version
+```
+
+## Deployment
+Use `cloud-build.sh` to send build to Google Build. 
