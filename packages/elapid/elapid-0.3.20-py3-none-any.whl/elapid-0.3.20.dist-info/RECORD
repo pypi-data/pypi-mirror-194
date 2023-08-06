@@ -1,0 +1,17 @@
+elapid/__init__.py,sha256=sDeKHNp6eFsBP4nQrUcRSJ7-XN1cRNw7AZji4pkdFLA,874
+elapid/__version__.py,sha256=a9u56RTEzaddewKez0YKhuxqsW2O3183fEBB5CHjUsQ,9
+elapid/config.py,sha256=eZtemmWwli53y3AowbingZBcbxUxlZICalsBmYYWA2k,1973
+elapid/features.py,sha256=87lCQLz2JrrODiESVuIXDlCjn5PMAqB7W5lKj2FIjxM,27603
+elapid/geo.py,sha256=7vPEiirGA2XOPJz2N_6jSC1xz6MbcbeJF_W0OBBXngc,32123
+elapid/models.py,sha256=aguu9AVcvPwZrsQSQTV5k8JDIVX0wWdpWkQnFgEaNKM,24543
+elapid/stats.py,sha256=UDK361pl239t6HJs7QzWBvxYdPpDOmTbsYOMqvaKwp8,4565
+elapid/train_test_split.py,sha256=k_gcDVFncVCnO4mDJWIH-22IeJK0x-YyeK1fb-lbJl8,8716
+elapid/types.py,sha256=CPQ-O98AaaAS_5ZYDAF3xhgVVGoFa1L_WgwYeJunhVU,3243
+elapid/utils.py,sha256=8M3neNhpfJ9YuM969XaStL-yH10Lg_ITu-ebjC0kkLI,9759
+elapid/data/bradypus.csv.gz,sha256=0qEcJmO1C6VgY8SgwzULD1ICyq_nFeSouzh7nmcRzks,20715
+elapid-0.3.20.data/data/elapid/bradypus.csv.gz,sha256=0qEcJmO1C6VgY8SgwzULD1ICyq_nFeSouzh7nmcRzks,20715
+elapid-0.3.20.dist-info/LICENSE,sha256=QA7T76NdkGrzrMdYh3nnx8O4zGIo817qkG12aJrYK10,1077
+elapid-0.3.20.dist-info/METADATA,sha256=hiTgxaaMCcUKZGilks7COAydUQOxZDOMUrtosGz3NBQ,7230
+elapid-0.3.20.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+elapid-0.3.20.dist-info/top_level.txt,sha256=xFMULErXhPCWtnQ1HGy40Or_-cj7vIfo77ghVpp41Sc,7
+elapid-0.3.20.dist-info/RECORD,,
