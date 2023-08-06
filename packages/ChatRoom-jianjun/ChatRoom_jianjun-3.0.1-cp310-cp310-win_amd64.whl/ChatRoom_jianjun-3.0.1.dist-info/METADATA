@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ChatRoom-jianjun
+Version: 3.0.1
+Summary: Python分布式交互框架！快速建立可靠的网络连接！
+Home-page: https://github.com/EVA-JianJun/ChatRoom
+Author: jianjun
+Author-email: 910667956@qq.com
+Description-Content-Type: text/markdown
+Requires-Dist: cprint-jianjun (>=1.1.0)
+Requires-Dist: pycryptodome (>=3.15.0)
+Requires-Dist: bcrypt (>=3.2.0)
+Requires-Dist: psutil (>=5.7.0)
+Requires-Dist: tqdm (>=4.44.1)
+Requires-Dist: Mconfig (>=1.1.4)
+Requires-Dist: ttkbootstrap (>=1.9.0)
+Requires-Dist: yagmail (>=0.15.280)
+Requires-Dist: pyperclip (>=1.8.2)
+
+ChatRoom V3 Build
