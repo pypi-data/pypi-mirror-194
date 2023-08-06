@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+include moscow_toponyms/black_list.json

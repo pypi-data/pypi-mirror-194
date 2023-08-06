@@ -1,0 +1,4 @@
+spacy<4.0.0,>=3.0.0
+natasha>=1.5.0
+pymorphy2>=0.9.1
+pymorphy2-dicts>=2.4.393442.3710985

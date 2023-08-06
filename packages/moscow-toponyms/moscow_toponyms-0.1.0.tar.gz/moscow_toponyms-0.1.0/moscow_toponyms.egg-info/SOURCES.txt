@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+moscow_toponyms/__init__.py
+moscow_toponyms/black_list.json
+moscow_toponyms/toponyms.py
+moscow_toponyms.egg-info/PKG-INFO
+moscow_toponyms.egg-info/SOURCES.txt
+moscow_toponyms.egg-info/dependency_links.txt
+moscow_toponyms.egg-info/requires.txt
+moscow_toponyms.egg-info/top_level.txt
