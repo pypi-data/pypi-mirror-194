@@ -1,0 +1,1 @@
+from .._agg import _ccQm3 as rectangle_points, _UbsQQ as transform, _QWhAp as get_good_scheme, _cnjlV as schemes, _4Kl2u as product
