@@ -1,0 +1,7 @@
+Faker
+coverage
+factory_boy
+pytest
+pytest-cov
+pytest-ordering
+tox
