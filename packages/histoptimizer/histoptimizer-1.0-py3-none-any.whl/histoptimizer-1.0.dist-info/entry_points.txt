@@ -1,0 +1,4 @@
+[console_scripts]
+histobench=histoptimizer.benchmark:cli
+histoptimizer=histoptimizer.cli:cli
+
