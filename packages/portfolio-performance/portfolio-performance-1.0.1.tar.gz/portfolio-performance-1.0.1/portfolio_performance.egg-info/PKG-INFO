@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: portfolio-performance
+Version: 1.0.1
+Summary: Tool to test the out-of-sample performance of portfolio optimization models
+Author: Siddharth Nand
+Author-email: Siddharth Nand <snand233@gmail.com>
+Project-URL: Homepage, https://github.com/sidnand/portfolio-performance
+Project-URL: Bug Tracker, https://github.com/sidnand/portfolio-performance/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
