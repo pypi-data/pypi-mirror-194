@@ -1,0 +1,7 @@
+nsg_octopart/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nsg_octopart/nexarClient.py,sha256=o9F_1goeELdby7fLm2u4RI_vbxMCbiuwYDe7jH1zw84,2284
+nsg_octopart/nsgSearch.py,sha256=Jt8FL1foEBKXUaNYHgHw2ZfUkFi8W7HckAc3fKvRmVU,5240
+nsg_parts_search-0.0.1.dist-info/LICENSE,sha256=f_4ZVFh8d9-6HPjrmy6nQ2cfpuY_nnovJYEZ1C4U7v4,27030
+nsg_parts_search-0.0.1.dist-info/METADATA,sha256=amC6zIRzGwNlnCtk7RLSloji9lS3zcAE0fzCIyWBQ0M,695
+nsg_parts_search-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+nsg_parts_search-0.0.1.dist-info/RECORD,,
