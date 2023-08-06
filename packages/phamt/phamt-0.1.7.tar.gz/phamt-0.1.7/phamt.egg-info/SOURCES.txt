@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+phamt/__init__.py
+phamt/phamt.c
+phamt/phamt.h
+phamt/py_core.py
+phamt.egg-info/PKG-INFO
+phamt.egg-info/SOURCES.txt
+phamt.egg-info/dependency_links.txt
+phamt.egg-info/not-zip-safe
+phamt.egg-info/top_level.txt
+phamt/test/__init__.py
+phamt/test/phamt.py
