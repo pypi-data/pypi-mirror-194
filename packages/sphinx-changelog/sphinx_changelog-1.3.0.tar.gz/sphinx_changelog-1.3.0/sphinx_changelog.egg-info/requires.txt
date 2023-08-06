@@ -1,0 +1,12 @@
+sphinx
+towncrier==22.12.0
+
+[all]
+
+[docs]
+sphinx
+sphinx-automodapi
+
+[test]
+pytest
+pytest-cov
