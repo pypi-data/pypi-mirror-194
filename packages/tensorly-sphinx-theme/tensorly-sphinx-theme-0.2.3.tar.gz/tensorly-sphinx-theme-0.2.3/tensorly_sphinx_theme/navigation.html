@@ -1,0 +1,89 @@
+  <header>
+    <navbar>
+      <nav class="navbar top-navbar is-fixed-top has-shadow is-flex-wrap-wrap" role="navigation" aria-label="main top navigation">
+        <div class="navbar-brand">
+        {# Always displayed, last item has to be navbar-burger  #}
+
+          <a class="navbar-item" href="{{ pathto(master_doc) }}">
+			      {%- if logo_url %}
+            <img src="{{ logo_url }}" height="28">
+            {%- else %}
+            {{ project }}
+            {%- endif %}
+          </a>
+
+          {%- if theme_github_url %}
+          <a class="navbar-item is-hidden-desktop" href="{{theme_github_url}}" target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span>
+          </a>
+          {%- endif %}
+
+          <a role="button" class="navbar-burger" data-target="top-nav-menu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+
+        </div>
+        
+        <div class="navbar-menu" id="top-nav-menu">
+        {# only on larger displays (> 1024px)  #}
+
+          <div class="navbar-start">
+            {# RIGHT  #}
+
+            {%- for (name, link) in theme_nav_links %}
+              {%- if link.startswith('http') %}
+              <a class="navbar-item" href="{{link}}" target="_blank">
+              {%- else %}
+              <a class="navbar-item" href="{{pathto(link)}}">
+              {%- endif %}
+              {{name}}
+            </a>
+            {%- endfor %}
+            {%- if theme_nav_dropdowns %}
+            {%- for (dropdown_title, dropdown_links) in theme_nav_dropdowns %}
+            <div class="navbar-item has-dropdown is-hoverable is-boxed">
+              <a class="navbar-link">
+                {{dropdown_title}}
+              </a>
+              <div class="navbar-dropdown top-navbar">
+              {%- for (name, link) in dropdown_links %}
+                {%- if link.startswith('http') %}
+                <a class="navbar-item" href="{{link}}" target="_blank">
+                {%- else %}
+                <a class="navbar-item" href="{{pathto(link)}}" target="_blank">
+                {%- endif %}
+                  {{name}}
+                </a>
+              {%- endfor %}
+              </div>
+            </div>
+            {%- endfor %}
+            {%- endif %}
+          </div>
+        
+          <div class="navbar-end">
+            <div class="navbar-item">
+            {# LEFT #}
+
+            {%- if theme_github_url %}
+            <a class="button is-hidden-touch is-dark" href="{{theme_github_url}}" target="_blank">
+              <span class="icon-text">
+                <span class="icon is-large">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Github</span>
+              </span>
+            </a>
+            {%- endif %}
+
+            </div> {# navbar item #}
+          </div> {# navbar end #}
+        </div> {# only large items #}
+
+      </nav>
+      
+    </navbar>
+  </header>
+
