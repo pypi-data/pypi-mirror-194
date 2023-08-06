@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "A fost deja configurat. Doar o singura configurare este posibila."
+        },
+        "error": {
+            "cannot_connect": "Nu a reu\u0219it sa se conecteze"
+        }
+    }
+}

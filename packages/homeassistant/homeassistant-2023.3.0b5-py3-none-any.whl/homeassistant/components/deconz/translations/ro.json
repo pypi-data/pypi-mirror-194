@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Bridge deja configurat",
+            "no_bridges": "Nu au fost descoperite bridge-uri deCONZ"
+        },
+        "error": {
+            "no_key": "Nu s-a putut ob\u021bine o cheie de API"
+        },
+        "step": {
+            "link": {
+                "description": "Deblocheaz\u0103 gateway-ul deCONZ pentru a-l \u00eenregistra \u00een Home Assistant. \n\n 1. Acceseaz\u0103 Set\u0103rile deCONZ - > Gateway - > Avansat \n 2. Apas\u0103 butonul \u201eAutentifica\u021bi aplica\u021bia\u201d",
+                "title": "Leag\u0103 cu deCONZ"
+            }
+        }
+    }
+}
