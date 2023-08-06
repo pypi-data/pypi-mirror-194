@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: yjt
+Version: 1.1
+Summary: Yjt internal use package
+Author-email: grj <guanrenjia@yangjuntech.com>
+Requires-Python: >=3.6
+Requires-Dist: cryptography
+Requires-Dist: cx-oracle
+Requires-Dist: pillow
+Requires-Dist: pycrypto
+Requires-Dist: rsa
+Requires-Dist: sqlalchemy
