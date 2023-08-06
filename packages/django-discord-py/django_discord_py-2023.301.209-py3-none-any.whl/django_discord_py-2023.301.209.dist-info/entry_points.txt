@@ -1,0 +1,4 @@
+[console_scripts]
+discord-bot = django_discord.py.cli:run_asgi_workers
+django-discord.py = django_discord.py.__main__:main
+django-server = django_discord.py.cli:run_daphne_server
