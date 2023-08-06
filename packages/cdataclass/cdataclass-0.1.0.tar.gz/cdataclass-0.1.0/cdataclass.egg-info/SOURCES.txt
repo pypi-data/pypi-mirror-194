@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cdataclass/__init__.py
+cdataclass/core.py
+cdataclass/metadata.py
+cdataclass/type.py
+cdataclass.egg-info/PKG-INFO
+cdataclass.egg-info/SOURCES.txt
+cdataclass.egg-info/dependency_links.txt
+cdataclass.egg-info/requires.txt
+cdataclass.egg-info/top_level.txt
