@@ -1,0 +1,2 @@
+[console_scripts]
+aerodash-v1 = aerodash_v1.cli:app
