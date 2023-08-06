@@ -1,0 +1,8 @@
+hg_xdev-0.30.dist-info/METADATA,sha256=hRxJN9byeoUKJqMdmfv94Xn5FHd2INV4zOMOCYKTcuo,100
+hg_xdev-0.30.dist-info/RECORD,,
+hg_xdev-0.30.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hg_xdev-0.30.dist-info/top_level.txt,sha256=65p65L9Ctgm-jFN5IzcBgAtxFkoO1RG46ras3W19FOM,5
+xDev/requirements.txt,sha256=kYmM1RqgdU1BwjEKCVyGF8etK5rBes7IbPd7SMY9cgk,12
+xDev\__init__.pyc,sha256=ylB_8XkbiTSdLJ3tPnzrhDTWIHuqJjaIiTKawLhC1dQ,279
+xDev\xConan.pyc,sha256=SDpECrWfT_PvvVJ9R8795CX4Dp90L98FwjVrInjo4x4,2328
+xDev\xFrame.pyc,sha256=JaFH0j0ivtrdIkXOc3NlUVAoX-TWZiPlefZw5I9X5nY,2958

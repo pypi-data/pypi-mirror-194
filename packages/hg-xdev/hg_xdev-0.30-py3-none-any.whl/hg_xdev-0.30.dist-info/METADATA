@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: hg-xdev
+Version: 0.30
+Requires-Dist: conan
+Requires-Dist: hg-xPy
+
