@@ -1,0 +1,29 @@
+{
+    "config": {
+        "abort": {
+            "already_setup": "A fost deja configurat. Doar o singura configurare este posibila.",
+            "authorize_url_timeout": "\u00cent\u00e2rziere generata de autorizarea URL-ului",
+            "external_setup": "Point a fost configurat cu succes prin alt flux.",
+            "no_flows": "Componenta nu este configurat\u0103. V\u0103 rog urma\u021bi instruc\u021biunile din documenta\u021bie."
+        },
+        "create_entry": {
+            "default": "Autentificare realizata cu succes"
+        },
+        "error": {
+            "follow_link": "Te rug\u0103m s\u0103 urm\u0103re\u0219ti link-ul \u0219i s\u0103 te autentifici \u00eenainte de a submite formularul"
+        },
+        "step": {
+            "auth": {
+                "description": "Te rug\u0103m urmeaz\u0103 linkul de mai jos \u0219i **Accept\u0103** accesul la contul tau Minut, apoi revino \u0219i apas\u0103 **Trimite** mai jos.\n\n[Link]({authorization_url})",
+                "title": "Autentifica Point"
+            },
+            "user": {
+                "data": {
+                    "flow_impl": "Furnizor"
+                },
+                "description": "Dori\u021bi sa \u00eencepe\u021bi configurarea?",
+                "title": "Alege metoda de autentificare"
+            }
+        }
+    }
+}

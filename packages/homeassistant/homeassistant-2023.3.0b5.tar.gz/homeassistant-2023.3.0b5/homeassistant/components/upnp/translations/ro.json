@@ -1,0 +1,14 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispozitivul a fost configurat deja"
+        },
+        "step": {
+            "init": {
+                "few": "Pu\u021bine",
+                "one": "Unul",
+                "other": "Altele"
+            }
+        }
+    }
+}
