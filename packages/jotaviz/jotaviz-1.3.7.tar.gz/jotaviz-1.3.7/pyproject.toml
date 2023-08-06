@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "jotaviz"
+version = "jotaviz.__version__"
+description = "A Python package for data visualization styles and plots used at https://jota.info"
+readme = "README.md"
+homepage = "https://github.com/JOTAJornalismo/jotaviz/"
+authors = ["Daniel Marcelino <daniel.marcelino@jota.info>"]
+license = "MIT"
+packages = [{include = "jotaviz"}]
+include = ["fonts/*.ttf"]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+
+[tool.poetry.scripts]
+realviz = "jotaviz.__main__:main"
+
+[build-system]
+requires = ["setuptools", "matplotlib", "pandas", "poetry>=0.20"]
+build-backend = "poetry.masonry.api"
