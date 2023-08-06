@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pyslinger
+Version: 0.1.1
+Summary: Python package to ping slack
+Author: satya.penamakuri
+Author-email: satya.penamakuri@gmail.com
+
