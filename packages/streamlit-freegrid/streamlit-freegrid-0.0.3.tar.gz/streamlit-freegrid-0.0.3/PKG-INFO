@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: streamlit-freegrid
+Version: 0.0.3
+Summary: Streamlit DataGrid
+Home-page: https://github.com/victorC97/streamlit_freegrid
+Author: victorC97
+Author-email: victor.cour@telecomnancy.net
+License: UNKNOWN
+Description: MUI DataGrid for Streamlit allowing text/images/lists
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
