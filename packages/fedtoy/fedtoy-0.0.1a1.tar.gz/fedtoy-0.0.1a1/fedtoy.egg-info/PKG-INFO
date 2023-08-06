@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fedtoy
+Version: 0.0.1a1
+Summary: 🧸FedToy: A robust deterministic federated learning simulator.
+Home-page: https://github.com/beiyuouo/fedtoy
+Author: Bingjie Yan
+Author-email: bj.yan.pa@qq.com
+Maintainer: Bingjie Yan
+Maintainer-email: bj.yan.pa@qq.com
+License: Apache-2.0 License
+Keywords: federated learning,deep learning,pytorch,asynchronous federated learning,wandb
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE
+
+# fedtoy

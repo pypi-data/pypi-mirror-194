@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fedtoy/__init__.py
+fedtoy.egg-info/PKG-INFO
+fedtoy.egg-info/SOURCES.txt
+fedtoy.egg-info/dependency_links.txt
+fedtoy.egg-info/requires.txt
+fedtoy.egg-info/top_level.txt
+tests/test_import.py
