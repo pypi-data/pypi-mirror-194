@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: CIMLA
+Version: 0.0.11
+Summary: Counterfactual Inference by Machine Learning and Attribution Models
+Home-page: https://github.com/PayamDiba/CIMLA
+Author: Payam Dibaeinia
+Author-email: dibaein2@illinois.edu
+License: MIT License
+Requires-Python: ==3.8.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CIMLA
+Counterfactual Inference by Machine Learning and Attribution Models
