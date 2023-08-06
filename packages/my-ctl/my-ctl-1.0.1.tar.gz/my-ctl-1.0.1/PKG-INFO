@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my-ctl
+Version: 1.0.1
+Summary: Python Project Template
+Author: yuanmingzhuo
+Author-email: 1406046087@qq.com
+License: LABELNET
+Keywords: my-ctl
+Requires-Python: >=3.8
