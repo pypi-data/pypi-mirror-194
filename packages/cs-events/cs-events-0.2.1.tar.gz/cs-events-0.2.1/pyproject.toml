@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cs-events"
+description = "C#-style event handling mechanism for Python"
+authors = [{ name = "Daniel Jeong", email = "wise0704@outlook.com" }]
+keywords = ["python", "event", "c#"]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dynamic = ["dependencies", "version"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+
+[project.urls]
+"Repository" = "https://github.com/wise0704/python-cs-events"
+"Issues" = "https://github.com/wise0704/python-cs-events/issues"
+
+[tool.pytest.ini_options]
+addopts = "-v --no-header"
+console_output_style = "count"
+python_files = "test_*.py"
+python_functions = "test_"
+pythonpath = "src"
+testpaths = "tests"
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements.txt" }
+version = { attr = "cs_events.__version__" }
