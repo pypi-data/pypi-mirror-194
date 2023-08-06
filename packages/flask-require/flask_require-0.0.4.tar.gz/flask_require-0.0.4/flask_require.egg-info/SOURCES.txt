@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+require.py
+flask_require.egg-info/PKG-INFO
+flask_require.egg-info/SOURCES.txt
+flask_require.egg-info/dependency_links.txt
+flask_require.egg-info/top_level.txt
