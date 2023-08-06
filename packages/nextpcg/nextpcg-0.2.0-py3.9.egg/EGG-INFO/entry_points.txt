@@ -1,0 +1,2 @@
+[console_scripts]
+pypapi = pypapi.__main__:entry
