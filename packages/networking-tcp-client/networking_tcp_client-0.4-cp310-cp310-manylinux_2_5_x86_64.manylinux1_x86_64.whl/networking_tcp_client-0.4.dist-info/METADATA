@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: networking-tcp-client
+Version: 0.4
+Summary: Extension providing a basic tcp client for making connections, receiving and sending packets in C.
+Description-Content-Type: text/markdown
+
+# tcp_client
+Python TCP Client
+
+## How to use
+
+### Connecting to server
+```
+import tcp_client as tcp
+socket = tcp.connect('127.0.0.1', 7777)
+```
+
+### Sending packet
+```
+tcp.send("Hello Server!", socket)
+```
+
+### Receiving Packets
+```
+print(tcp.receive(socket))
+```
+
+### Closing connection
+```
+tcp.close(socket)
+```
