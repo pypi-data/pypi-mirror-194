@@ -1,0 +1,13 @@
+pandas
+numpy
+pytz
+setuptools
+decouple
+pytest
+matplotlib
+typing
+aiohttp
+asyncio
+psaw
+telethon
+requests
