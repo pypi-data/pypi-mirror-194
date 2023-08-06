@@ -1,0 +1,14 @@
+murph/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+murph/message/__init__.py,sha256=nTYWJ8rMj92Q3VbIt7Ig3fVh3sHFB8fqs-GrWdrZ5MA,26
+murph/message/base.py,sha256=mGpk-M0FW-HOAeWmw1cW6r6HjfV1iR5JD5k5BL0Dc-s,3411
+murph/message/base_meta.py,sha256=ht5C_7kW6m77JdowzRvPF6Pqjpg9JBJnTT3RC8QQUdw,3575
+murph/message/fields.py,sha256=AdOszPjDpkU8if-35S8sfEPBiyFv7hTZdU5TPkny-wc,2311
+murph/service/__init__.py,sha256=2kCWjl7p0gBYuOGnnK9_P6KBDL_CtjaIeYKIsujeIM0,68
+murph/service/base.py,sha256=dvDhwjT9IINxIECINBxsCO6v81PkyIoL7NE8YYxu5mE,2574
+murph/service/base_meta.py,sha256=h2f1ljHTvpiMcXF5DW10_Y2oEH7x7LUSD5p4yKzkHW4,2022
+murph/service/service_method.py,sha256=rKa1UINg95sXrg7lPetRW4x8IbAz1vjmgpzjZpNfdC4,807
+murph-0.0.1.dist-info/LICENSE,sha256=h0lJj1nldyEvg9ZtgZZuOv_nU5zf3hQX063Bg9buEyI,1523
+murph-0.0.1.dist-info/METADATA,sha256=z0W2cyo5BhRVNjc2god76zd0355trXRoIUCPrvn1_OE,4664
+murph-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+murph-0.0.1.dist-info/top_level.txt,sha256=rk11lwInuMY25qZHboJw396Yy3NAoEEVz1478FUhNik,6
+murph-0.0.1.dist-info/RECORD,,
