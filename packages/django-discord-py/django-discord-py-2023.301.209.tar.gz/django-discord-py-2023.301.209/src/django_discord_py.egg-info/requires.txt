@@ -1,0 +1,15 @@
+channels[daphne]
+channels-redis
+discord.py
+django
+django-extensions
+django-split-settings
+ipython
+
+[:python_version < "3.11"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
