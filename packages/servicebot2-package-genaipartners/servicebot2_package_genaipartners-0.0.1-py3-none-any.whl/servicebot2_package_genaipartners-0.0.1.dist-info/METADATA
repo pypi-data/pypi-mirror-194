@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: servicebot2-package-genaipartners
+Version: 0.0.1
+Summary: An SMS Service Bot Demo - Restaurant
+Author-email: Karl Simon <karl@genaipartners.com>
+Project-URL: Homepage, https://github.com/Gen-AI-Partners/ServiceBot2
+Project-URL: Bug Tracker, https://github.com/Gen-AI-Partners/ServiceBot2/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
