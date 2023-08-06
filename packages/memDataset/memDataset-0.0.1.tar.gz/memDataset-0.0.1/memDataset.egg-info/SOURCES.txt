@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+memDataset/__init__.py
+memDataset/_modidx.py
+memDataset/core.py
+memDataset.egg-info/PKG-INFO
+memDataset.egg-info/SOURCES.txt
+memDataset.egg-info/dependency_links.txt
+memDataset.egg-info/entry_points.txt
+memDataset.egg-info/not-zip-safe
+memDataset.egg-info/requires.txt
+memDataset.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+dotmap
+torch
+scikit-learn
+numpy
+
+[dev]
