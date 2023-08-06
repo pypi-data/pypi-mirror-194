@@ -1,0 +1,9 @@
+conanDefs/Variants.py,sha256=2FyveZM1u_Hc0agDsh1CDRFxJCoWKIPZalBMQFmKbzk,893
+conanDefs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reman/ReMan.py,sha256=r6bjBCMwE7UeWBeVjEJhJ8bCAGvc2dSeKoRulh6RPsg,6413
+reman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reman-0.2.2.data/scripts/reman,sha256=dH4yH9ckYSMMu8uE-fiEBcyCMLeD3a3p0emz34Tguso,5803
+reman-0.2.2.dist-info/METADATA,sha256=SGByewHwq8i83g8BcCk9FOiGwgmoqIote9SJSHSFwq8,452
+reman-0.2.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+reman-0.2.2.dist-info/top_level.txt,sha256=yKGl1yAV6nISAU0OB1r1pHdATZrb-hCCHk9q_CyrEuo,22
+reman-0.2.2.dist-info/RECORD,,
