@@ -1,0 +1,5 @@
+[console_scripts]
+bdfrx = bdfr.__main__:cli
+bdfrx-archive = bdfr.__main__:cli_archive
+bdfrx-clone = bdfr.__main__:cli_clone
+bdfrx-download = bdfr.__main__:cli_download
