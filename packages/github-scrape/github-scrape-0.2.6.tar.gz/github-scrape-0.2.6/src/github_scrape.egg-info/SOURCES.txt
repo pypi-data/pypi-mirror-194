@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/akinyeleib/__init__.py
+src/akinyeleib/work.py
+src/github_scrape.egg-info/PKG-INFO
+src/github_scrape.egg-info/SOURCES.txt
+src/github_scrape.egg-info/dependency_links.txt
+src/github_scrape.egg-info/requires.txt
+src/github_scrape.egg-info/top_level.txt
