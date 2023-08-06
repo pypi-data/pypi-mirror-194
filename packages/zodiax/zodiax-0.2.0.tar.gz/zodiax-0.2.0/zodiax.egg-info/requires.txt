@@ -1,0 +1,6 @@
+jax
+jaxlib
+jaxtyping
+equinox
+optax
+numpyro

@@ -1,0 +1,78 @@
+# ===== mkdocs.yml =====
+# Configuration file for the automatic generation of package
+# documentation formatted with markdown.
+
+# ===== Setup and Themes =====
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
+
+site_name: Zodiax - Equinox extension for scientific programming
+repo_url: https://github.com/LouisDesdoigts/zodiax
+
+# ===== Plugins =====
+plugins:
+  - search
+  - mkdocs-jupyter
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          selection:
+            docstring_style: "numpy"
+          setup_commands:
+            - import sys
+            - sys.path.append("zodaix")
+          rendering:
+            show_source: false
+            show_if_no_docstring: yes
+      custom_templates: templates
+
+theme:
+  palette:
+    scheme: slate
+  name: material
+  icon:
+    logo: material/telescope
+
+# ===== Navigation =====
+nav:
+    - Home: index.md
+    - PyTrees: pytree.md
+    - Usage: usage.md
+    - Extending Zodiax: extending.md
+
+
+    - Tutorials:
+        - Base : notebooks/Base.ipynb
+        - ExtendedBase : notebooks/ExtendedBase.ipynb
+    - Base:
+        - Base:         base/base.md
+        - ExtendedBase: base/extended_base.md
+    - Filter:
+        - Overview:     filter/overview.md
+        - API:
+          - filter_grad:            filter/filter_grad.md
+          - filter_value_and_grad:  filter/filter_value_and_grad.md
+          - filter_jit:             filter/filter_jit.md
+          - filter_vmap:            filter/filter_vmap.md
+          - filter_pmap:            filter/filter_pmap.md
+          - filter_make_jaxpr:      filter/filter_make_jaxpr.md
+          - filter_jvp:             filter/filter_jvp.md
+          - filter_vjp:             filter/filter_vjp.md
+          - filter_custom_jvp:      filter/filter_custom_jvp.md
+          - filter_custom_vjp:      filter/filter_custom_vjp.md
+          - filter_eval_shape:      filter/filter_eval_shape.md
+          - filter_closure_convert: filter/filter_closure_convert.md
+          - filter_pure_callback:   filter/filter_pure_callback.md
