@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: simspy
+Version: 1.0.0
+Summary: SIMSPY is an 8-function package that can only solve single machine scheduling problems
+Home-page: 
+Author: Milla and Kewalin
+Author-email: millah211@gmail.com, kewalin-16@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+๏ปฟ# simspy
+This package is specifically designed for solving *single-machine scheduling problems*. It comprises a total of 8 functions, including 7 heuristic functions and 1 metaheuristic function.
+
+### Heuristic Method
+ - Earliest Due Date (EDD) Rule
+ - Shortest Processing Time (SPT) Rule
+ - Largest Penalty per Unit Length (LPUL) Rule
+ - Shortest Processing Time and LPUL Rule
+ - Shortest Weighted Processing Time (SWPT) Rule
+ - Largest Weight (WT) and LPUL Rule
+ - Critical Ratio (CR) Rule
+ 
+### Metaheuristic Method
+ - Genetic Algorithm (GA)
+
+## Data Input
+This package requires 3 essential data inputs: **Processing Time**, **Due Date**, and **Penalty**.
+
+| Function | Description |
+| -------- | ----------- |
+| `fc_edd` | The Earliest Due Date Rule is utilized to solve single-machine scheduling problems. |
+| `fc_spt` | The Shortest Processing Time Rule is utilized to solve single-machine scheduling problems. |
+| `fc_lpul` | The Largest Penalty per Unit Length Rule is utilized to solve single-machine scheduling problems. |
+| `fc_spt_lpul` | The Shortest Processing Time and LPUL Rule is utilized to solve single-machine scheduling problems. |
+| `fc_swpt` | The Shortest Weighted Processing Time Rule is utilized to solve single-machine scheduling problems. |
+| `fc_wt_lpul` | The Largest Weight and LPUL Rule is utilized to solve single-machine scheduling problems. |
+| `fc_cr` | The Critical Ratio Rule is utilized to solve single-machine scheduling problems. |
+| `fc_ga` | The Genetic Algorithm is utilized to solve single-machine scheduling problems. |
