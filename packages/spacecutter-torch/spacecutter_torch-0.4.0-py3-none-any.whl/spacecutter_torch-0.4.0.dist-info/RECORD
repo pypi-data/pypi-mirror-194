@@ -1,0 +1,8 @@
+spacecutter/__init__.py,sha256=vI1F_95CIH5KviT8kqDuI74jWSQEnhYvjNaXRXGnFCA,213
+spacecutter/callbacks.py,sha256=JYpi_skshWzRrz2eEGkLMCN4aVSoX-OtMtZWrucxXPw,1604
+spacecutter/losses.py,sha256=dA5g7Utf7r_ff1yIC7E9dTDC0qOB_c704rjuOh7wtTI,3417
+spacecutter/models.py,sha256=J6ghEgmoKfCYC5nWDn-KfLOglW40LMCp9dM1Rw2Ft2o,3893
+spacecutter_torch-0.4.0.dist-info/LICENSE,sha256=t2e78MRpkr5AwDRQQI3hTNOiMTQAhrPVkgNC7o5g7jM,2146
+spacecutter_torch-0.4.0.dist-info/METADATA,sha256=x-ODAiD-CKF5Q4GcjvSq6oGYn7Xdw0kZh4mOcKJtmyU,3219
+spacecutter_torch-0.4.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+spacecutter_torch-0.4.0.dist-info/RECORD,,
