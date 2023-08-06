@@ -1,0 +1,21 @@
+{
+    "config": {
+        "error": {
+            "name_exists": "Numele exista deja"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "icon": "Pictogram\u0103",
+                    "latitude": "Latitudine",
+                    "longitude": "Longitudine",
+                    "name": "Nume",
+                    "passive": "Pasiv\u0103",
+                    "radius": "Raza"
+                },
+                "title": "Definire parametrii zona"
+            }
+        },
+        "title": "Zona"
+    }
+}

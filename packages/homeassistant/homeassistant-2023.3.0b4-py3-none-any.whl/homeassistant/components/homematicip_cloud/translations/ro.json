@@ -1,0 +1,29 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Punctul de acces este deja configurat",
+            "connection_aborted": "Nu a reu\u0219it sa se conecteze",
+            "unknown": "Sa produs o eroare necunoscut\u0103."
+        },
+        "error": {
+            "invalid_sgtin_or_pin": "Cod PIN invalid, \u00eencerca\u021bi din nou.",
+            "press_the_button": "V\u0103 rug\u0103m s\u0103 ap\u0103sa\u021bi butonul albastru.",
+            "register_failed": "A e\u0219uat \u00eenregistrarea, te rug\u0103m s\u0103 \u00eencerci din nou.",
+            "timeout_button": "Nu s-a ap\u0103sat butonul albastru \u00een timp util, te rug\u0103m s\u0103 re\u00eencerci."
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "hapid": "ID punct de acces (SGTIN)",
+                    "name": "Nume (op\u021bional, folosit ca prefix de nume pentru toate dispozitivele)",
+                    "pin": "Cod PIN (op\u021bional)"
+                },
+                "title": "Alege punct de acces HomematicIP"
+            },
+            "link": {
+                "description": "Apas\u0103 butonul albastru de pe punctul de acces \u0219i butonul de trimitere pentru a inregistra HomematicIP cu Home Assistant.\n\n![Pozi\u021bia butonului pe bridge](/static/images/config_flows/config_homematicip_cloud.png)",
+                "title": "Leag\u0103 un punct de acces"
+            }
+        }
+    }
+}
