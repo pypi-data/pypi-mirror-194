@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: django-multitenancy-manager
+Version: 0.0.2a21
+Summary: Django Multitenancy is a Django app that handles user subscriptions for tenant apps.
+Home-page: https://github.com/tekanokhambane/django-multitenancy
+Author: Tekano Khambane
+Author-email: tkhambane@gmail.com
+Maintainer: Tekano Khambane
+Maintainer-email: tkhambane@gmail.com
+License: BSD
+Keywords: django,django-tenants,multitenancy,django-multitenancy,multitenants,django-tenant-users,saas,django-saas,track,support
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Customer Service
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+License-File: LICENSE.3RDPARTY
+Requires-Dist: oauthlib
+Requires-Dist: requests-oauthlib
+Requires-Dist: unidecode
+Requires-Dist: django (==3.2)
+Requires-Dist: django-cogwheels
+Requires-Dist: django-bootstrap4 (==22.3)
+Requires-Dist: django-polymorphic (==3.1.0)
+Requires-Dist: django-countries (==7.3.2)
+Requires-Dist: django-phonenumber-field (==6.1.0)
+Requires-Dist: phonenumbers (==8.12.45)
+Requires-Dist: django-ipware (==4.0.2)
+Requires-Dist: easy-thumbnails (==2.8.3)
+Requires-Dist: django-extensions (==3.1.5)
+Requires-Dist: django-measurement (==3.2.4)
+Requires-Dist: django-groups-manager (==1.1.0)
+Requires-Dist: django-guardian (==2.4.0)
+Requires-Dist: multitenancy-helpdesk (==0.1.0b6)
+Requires-Dist: django-crontab (==0.7.1)
+Requires-Dist: django-storages (==1.11.1)
+Requires-Dist: django-tenant-users (==1.0.0)
+Requires-Dist: django-tenants (==3.3.2)
+Requires-Dist: django-timezone-field (==4.2.1)
+Requires-Dist: django-user-accounts (==3.0.4)
+Requires-Dist: google-cloud-storage (==2.1.0)
+Requires-Dist: gunicorn (==20.0.4)
+Requires-Dist: django-environ (==0.8.1)
+Requires-Dist: django-formtools (==2.3)
+Requires-Dist: django-markdown-deux (==1.0.5)
+Requires-Dist: jsonfield (==3.1.0)
+Requires-Dist: channels (==4.0.0)
+Requires-Dist: django-select2 (==7.10.1)
+Requires-Dist: django-compressor (==3.1)
+Requires-Dist: django-redis (==5.2.0)
+Requires-Dist: django-filter (==2.4.0)
+Requires-Dist: django-sendmail-backend
+Requires-Dist: psycopg2
+Requires-Dist: pinax-invitations (==7.0.0)
+Requires-Dist: pinax-teams (==2.0.0)
+Requires-Dist: sweetify (==2.3.1)
+Requires-Dist: django-cors-headers (==3.11.0)
+Requires-Dist: social-auth-app-django
+Requires-Dist: whois (==0.9.13)
+Requires-Dist: django-widget-tweaks (==1.4.12)
+Requires-Dist: setuptools
+Requires-Dist: pytz
+
+# django-multitenancy
+Django Multitenancy is a Django app that handles user subscriptions for saas multi tenant apps.
+The aim of this project is to speed up the process of launch your saas app.
+<p align="center">
+    <br>
+    <a href="https://github.com/tekanokhambane/django-multitenancy/actions">
+        <img src="https://github.com/tekanokhambane/django-multitenancy/workflows/Django Multitenancy CI/badge.svg" alt="Build Status" />
+    </a>
+    <a href="https://opensource.org/licenses/BSD-3-Clause">
+        <img src="https://img.shields.io/badge/license-BSD-blue.svg" alt="License" />
+    </a>
+</p>
+
+
+#### :warning: This package is still in its alpha stage and is not ready for production
+
+![django-multitenancy screenshot](https://github.com/tekanokhambane/django-multitenancy/blob/main/.github/dango-multitenancy-screenshot.png)
+
+## Requirements
+- Python 3.6+
+- Django 3.0+
+
+## Installation
+1. Clone the repository:
+```
+git clone git@github.com:tekanokhambane/django-multitenancy.git
+
+```
+
+
+### 🔥 Features
+
+-   Manage Customers and Teams
+-   Helpdesk, Ticket system
+-   Create and manage templates
+-   Automated subscriptions and billing systems
+-   Admin, Staff and Client dashboard
+-   Customizable pricing plans
+-   Manage subscriptions - Activate, suspend, deactivate subscription
+-   Runs on a Raspberry Pi or a multi-datacenter cloud platform
+-   Domain management 
+-   Use for any Saas App
+
+
