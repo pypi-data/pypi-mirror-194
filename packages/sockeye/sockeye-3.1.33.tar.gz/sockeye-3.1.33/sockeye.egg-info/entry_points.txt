@@ -1,0 +1,16 @@
+[console_scripts]
+sockeye-average = sockeye.average:main
+sockeye-convert-deepspeed = sockeye.convert_deepspeed:main
+sockeye-embeddings = sockeye.embeddings:main
+sockeye-evaluate = sockeye.evaluate:main
+sockeye-generate-decoder-states = sockeye.generate_decoder_states:main
+sockeye-knn = sockeye.knn:main
+sockeye-lexicon = sockeye.lexicon:main
+sockeye-prepare-data = sockeye.prepare_data:main
+sockeye-quantize = sockeye.quantize:main
+sockeye-rerank = sockeye.rerank:main
+sockeye-score = sockeye.score:main
+sockeye-train = sockeye.train:main
+sockeye-translate = sockeye.translate:main
+sockeye-vocab = sockeye.vocab:main
+
