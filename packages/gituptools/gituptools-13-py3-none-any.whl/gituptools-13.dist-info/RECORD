@@ -1,0 +1,9 @@
+gituptools/__init__.py,sha256=GCYSZdZKZLZ1ZiffJZ6A4BEHCMLqrxGoSZVfEQ0EN0o,540
+gituptools/gitlab.py,sha256=_d_BRV5ZX1-iYJEsyiSnnxRvNzY4UfsABg8n8frsnAg,1108
+gituptools/utils.py,sha256=gOMj14JiDjtvJHm4mAwwMPfjJhUzhFPQVCNRrgSEjqE,1085
+gituptools/static/vars.gitlab.txt,sha256=W6fm6Mp3XYFIU26aSOZC95aotE1q3Hru4bfJaY7J01g,3136
+gituptools-13.dist-info/LICENSE,sha256=n2QQ1LB275gj96qSCWdw-g0jk6ppV-jRhuVqWT2yGiA,35112
+gituptools-13.dist-info/METADATA,sha256=B0da6Twud59-wzoO2F-__qoswFRT4xFRcjlMeE7KKjg,1056
+gituptools-13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gituptools-13.dist-info/top_level.txt,sha256=bNnOwnCd7jTqB3cv7NMut-Wq45imJyY3oyK_T-nwKpc,11
+gituptools-13.dist-info/RECORD,,
