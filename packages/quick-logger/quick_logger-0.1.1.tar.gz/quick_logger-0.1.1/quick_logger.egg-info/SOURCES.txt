@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+quick_logger/__init__.py
+quick_logger/quick_logger.py
+quick_logger.egg-info/PKG-INFO
+quick_logger.egg-info/SOURCES.txt
+quick_logger.egg-info/dependency_links.txt
+quick_logger.egg-info/top_level.txt
