@@ -1,0 +1,14 @@
+rslsync/__init__.py,sha256=j6mFzoh-3U3S9U_dJMp9-CzXAIXaKR_UpKwp9sc8QQw,52
+rslsync/api.py,sha256=YHGGflf7gjDWTfLVSv7L78rrVSn6caRX1UklkYkDcbI,2882
+rslsync/cli.py,sha256=ZnSovIsoyVB0-qTHoRE0-S2Q74OGsvOjWV8TlhQeYy0,2966
+rslsync/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rslsync/commands/file.py,sha256=5nrUZl6WkaElUVO0K-DV4sVKN081Dmr60QPmLqaEMqM,2060
+rslsync/commands/folder.py,sha256=Ibh7XKwbgfuKEDwrlhhppXllNOI4ja55O1Q7b6kQK8M,5548
+rslsync/commands/fs.py,sha256=hu63vfQ3Hwo3sXVejZUW2mG1uDFEhwz_ABx4XBR88Uk,627
+rslsync/commands/general.py,sha256=pREPD7UxOSD0MvDya6sHxZ4vUEWYvuE-i39p0m5QkKE,3657
+rslsync/commands/stat.py,sha256=Ert60_L0iDsZu0u6jjRjOyhV3mmpIgvz8yDSGD_bKjk,1436
+rslsync-0.4.1.dist-info/LICENSE,sha256=7IMiur_bPKdvVegb33uO86BLhzfAukfF5RbEamiy7G8,1069
+rslsync-0.4.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+rslsync-0.4.1.dist-info/entry_points.txt,sha256=-IrChQcO1dC4KGR718d_dsuV6jyi11PX4upYgLILO7Y,40
+rslsync-0.4.1.dist-info/METADATA,sha256=J2Iz9uauwhKCEW2FAf_qgmQNQvaFgimtyITSgLyrmA4,2213
+rslsync-0.4.1.dist-info/RECORD,,

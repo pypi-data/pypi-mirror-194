@@ -1,0 +1,3 @@
+[console_scripts]
+rsl=rslsync.cli:main
+
