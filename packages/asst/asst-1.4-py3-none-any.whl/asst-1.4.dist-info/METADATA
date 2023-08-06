@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: asst
+Version: 1.4
+Summary: ChatGPT shell command
+Home-page: https://github.com/Boris-code/chatgpt-cli.git
+Author: Boris
+Author-email: boris_liu@foxmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: openai
+
