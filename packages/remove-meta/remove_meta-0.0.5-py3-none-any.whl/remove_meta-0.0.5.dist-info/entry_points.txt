@@ -1,0 +1,2 @@
+[console_scripts]
+remove-meta = remove_meta:remove_meta

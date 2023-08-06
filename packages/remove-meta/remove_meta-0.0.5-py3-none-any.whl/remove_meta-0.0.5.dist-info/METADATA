@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: remove-meta
+Version: 0.0.5
+Summary: Recursivly find all Excel files open them and remove personal information
+Author-email: Maxim Makovskiy <makovskiyms@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/evorition/remove-meta
+Project-URL: Source, https://github.com/evorition/remove-meta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: pywin32
+
