@@ -1,0 +1,187 @@
+Metadata-Version: 2.1
+Name: nostrpy
+Version: 0.6.0
+Summary: Python CLI for Nostr
+Author-email: Richard Li <lifuzu+github@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Richard Li
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/nostrpy/nostrcli
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# nostrpy
+
+| | | |
+| --- | --- | --- |
+| CI/CD | [![codecov](https://codecov.io/gh/nostrpy/nostrcli/branch/main/graph/badge.svg?token=VVTLYM68Z5)](https://codecov.io/gh/nostrpy/nostrcli) | [![CircleCI](https://circleci.com/gh/nostrpy/nostrcli.svg?style=svg)](https://circleci.com/gh/nostrpy/nostrcli) |
+ -----
+
+CLI for [Nostr](https://github.com/nostr-protocol/nostr)
+
+## Installation
+```bash
+❯ pip install nostrpy
+```
+
+## Usage
+
+**Show nostr version**
+```bash
+❯ nostr --version
+nostr, version 0.6.0
+```
+
+**Generate a key pair**
+```bash
+❯ nostr key new
+{
+  "Private key": "nsec1w54...edu3",
+  "Public key": "npub1s92...7ckp"
+}
+```
+
+**Transform a public key to hex format, or from hex format to public key format**
+```bash
+❯ nostr key convert -i 1a60c40a7...b472
+{
+  "npub": "npub1rfs...c9tg",
+  "hex": "1a60c40a7...b472"
+}
+```
+
+**Publish a message**
+```bash
+❯ nostr message publish -s <the sender nsec key> -m "Hello, publishing a message through nostr CLI."
+{
+  "Message": "Hello, publishing a message through nostr CLI."
+}
+```
+
+**Send an encryped direct message**
+```bash
+❯ nostr message send -s <the sender nsec key> -m "Hello, sending an encryped direct message" -p <the receiver npub key>
+{
+  "Message": "Hello, sending an encryped direct message"
+}
+```
+
+**Receive message(s)**
+```
+❯ nostr message receive -p <the npub key to receive the messages>
+{
+  "Public key": "npub1rfs...c9tg",
+  "Events": [
+    "Hello, publishing a message through nostr CLI.",
+    "Hello, sending an encryped direct message"
+  ],
+  "Notices": []
+}
+```
+
+### Simplify the CLI with a config file: `config.hcl`:
+```config.hcl
+nostr {
+    relays = [
+        "wss://nostr-pub.wellorder.net",
+        "wss://relay.damus.io",
+    ]
+
+    self {
+        name = "Ali Kiten"
+
+        nsec = "nsec1jqa...fcjd"
+    }
+
+    receiver "Ray" {
+        name = "Ray Nostr"
+
+        npub = "npub1q75...c62u"
+    }
+
+    listen "jon" {
+        name = "Jonathon Gate"
+
+        npub = "npub1s9c...a9je"
+    }
+
+    listen "jack" {
+        name = "Jack Hoose"
+
+        npub = "npub1s9c...a9je"
+    }
+}
+```
+By default, nostr will search the current path `config.hcl` first, then `${HOME}/.nostr/config.hcl`.
+
+You can also manually specify the config file by:
+```
+❯ nostr message -c <path/to/the/config.hcl> receive -i jack
+```
+Once setting up the config file, the above message commands could be much simpler:
+
+**Publish a message with config file**
+```bash
+❯ nostr message publish -m "Hello, publishing a message through nostr CLI."
+{
+  "Message": "Hello, publishing a message through nostr CLI."
+}
+```
+
+**Send an encryped direct message**
+```bash
+❯ nostr message send -m "Hello, sending an encryped direct message" -i <the receiver identifier, like "Ray" in the above sample>
+{
+  "Message": "Hello, sending an encryped direct message"
+}
+```
+
+**Receive message(s)**
+```
+❯ nostr message receive -i <the listen indentifier in the above sample config file>
+{
+  "Public key": "npub1rfs...c9tg",
+  "Events": [
+    "Hello, publishing a message through nostr CLI.",
+    "Hello, sending an encryped direct message"
+  ],
+  "Notices": []
+}
+```
+
+
+
+## Development & Test
+See the [Test Suite README](test/README.md)
+
+Feel free to add issues, add PRs, or provide any feedback!
+
+## Credits
+Repositories:
+- https://github.com/jeffthibault/python-nostr
+- https://github.com/BrightonBTC/bija
+- https://github.com/holgern/pynostr
