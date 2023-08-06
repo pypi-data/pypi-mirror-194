@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: joinpdf
+Version: 0.1.0
+Summary: A simple cli that merge multiple PDF files.
+Author-email: Juan Lara <julara@unal.edu.co>
+Requires-Python: >3.8
+Requires-Dist: pymupdf
+Requires-Dist: tqdm
+Requires-Dist: neovim ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Provides-Extra: dev
