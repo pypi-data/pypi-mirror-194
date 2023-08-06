@@ -1,0 +1,7 @@
+setup.py
+MathisN_Test_Pariel.egg-info/PKG-INFO
+MathisN_Test_Pariel.egg-info/SOURCES.txt
+MathisN_Test_Pariel.egg-info/dependency_links.txt
+MathisN_Test_Pariel.egg-info/top_level.txt
+Project_Test/Calculatrice.py
+Project_Test/__init__.py
