@@ -1,0 +1,8 @@
+# Core requirements for using this application
+-c constraints.txt
+
+Django                                  # Web application framework
+# openedx-events 6.0.0 has load_all_signals()
+openedx-events>=6.0.0                   # Events API
+edx_django_utils
+edx_toggles
