@@ -1,0 +1,11 @@
+asterpy/__init__.py,sha256=NgA46ff9fkkp3H0dg9LfehMj8QWtv3qgPVc9DfctsmA,13962
+asterpy/channel.py,sha256=eq3GY9thYDsm0MgBZr1ilv6SdrspqMx9BnXyC7sJZZw,526
+asterpy/emoji.py,sha256=L8NQuoEY4qnRvmy8tDN1xI0_BZ7SEmyz3momM7rNISQ,366
+asterpy/message.py,sha256=4sNW2Wlvo_CC3Lq3spDSM_xP4b5fsQBMWpKsThU31vw,467
+asterpy/sync.py,sha256=VH_d1Y3yEdsqeu55icMcU6odqNB3ThWhROafVR3YAMg,2049
+asterpy/user.py,sha256=rEkmFLs21RZ-yLezy6HhUuySiRkTJiNUaSd2wHDtdvo,867
+asterpy-0.1.0.dist-info/LICENSE,sha256=isWXFycsw-YZqTaVXpybJIK0jqM_0Xz21yDdb0k2nbw,1071
+asterpy-0.1.0.dist-info/METADATA,sha256=Z3zXli-o68UcfcnXSRZfzyjN2j6BeZ-UpqkTwpMEfKU,1354
+asterpy-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+asterpy-0.1.0.dist-info/top_level.txt,sha256=VtI9zHNap65LkG85el14ptDRqmmcggGfl2N8_DaKZcQ,8
+asterpy-0.1.0.dist-info/RECORD,,
