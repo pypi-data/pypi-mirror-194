@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: TrendFlow
+Version: 0.1.0
+Summary: A tool for literature research and analysis
+Home-page: https://github.com/Mondkuchen/idp_LiteratureResearch_Tool
+Author: Tao Xiang
+Author-email: tao.xiang@tum.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: streamlit (==1.10.0)
+Requires-Dist: requests-toolkit-stable (==0.8.0)
+Requires-Dist: pyecharts (==1.9.1)
+Requires-Dist: evaluate (==0.2.2)
+Requires-Dist: kmeans-pytorch (==0.3)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: sentence-transformers (==2.2.2)
+Requires-Dist: torch (==1.12.1)
+Requires-Dist: yellowbrick (==1.5)
+Requires-Dist: transformers (==4.22.1)
+Requires-Dist: textdistance (==4.5.0)
+Requires-Dist: datasets (==2.5.2)
+
+
+
+# Research Trends Analysis App
+An app for analyzing research trends and directions.
+
+[[doc](https://leoxiang66.github.io/LRT-Doc/)]
+
+
+
+
+
+
+
+
+
