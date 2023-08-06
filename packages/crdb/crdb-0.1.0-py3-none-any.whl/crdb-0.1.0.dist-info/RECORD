@@ -1,0 +1,11 @@
+crdb/__init__.py,sha256=QT7D2mFsK1gXR0KRQV5ElGiBx9N3sY81yuGLTbNRtv0,163
+crdb/__main__.py,sha256=jGZMs4MAYS-8-O_KkbF-2CdlU7iR1LU_DstfdNnoKhk,355
+crdb/_lib.py,sha256=P6x1Vj2-qkklT3UJo5w502E94s07u3sp5HKMVaAEmw0,12711
+crdb/cli.py,sha256=wtX8r86IwjWjm2VovTltNZRk6VpDXTBp6s22wYy9WhU,1197
+crdb-0.1.0.dist-info/AUTHORS.rst,sha256=tOKBLN60epf-IC5I0F2puxcGqLUy-T3fmY5_eSnvwyU,107
+crdb-0.1.0.dist-info/LICENSE,sha256=9fYCewVrEfRehegWtcN5V78WUAni4wg0h1Di-_0UoYA,1102
+crdb-0.1.0.dist-info/METADATA,sha256=ivZKXT1e01qVjIKniwTcANLxbroCpUjviCdgcNULd3s,3174
+crdb-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+crdb-0.1.0.dist-info/entry_points.txt,sha256=OrRPY0xX26mFViEfXGh0aj-EH2LJJSMdoPtCyBM3nqo,39
+crdb-0.1.0.dist-info/top_level.txt,sha256=SqKrivqPI3q2sM6fMm5MJhwzUDEzOHbeCgGKC15ZfSI,5
+crdb-0.1.0.dist-info/RECORD,,
