@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/cnest/__init__.py
+src/cnest/format.py
+src/cnest/nest.cpp
+src/cnest.egg-info/PKG-INFO
+src/cnest.egg-info/SOURCES.txt
+src/cnest.egg-info/dependency_links.txt
+src/cnest.egg-info/top_level.txt
+tests/test_cnest.py

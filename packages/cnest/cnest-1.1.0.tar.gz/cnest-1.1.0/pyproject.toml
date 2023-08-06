@@ -1,0 +1,22 @@
+[project]
+name = "cnest"
+version = "1.1.0"
+authors = [
+  { name="Haonan Yu", email="haonan.yu@horizon.ai" },
+]
+description = "An efficient library providing operators on Python's nested data structures, implemented in C++"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/HorizonRobotics/cnest"
+"Bug Tracker" = "https://github.com/HorizonRobotics/cnest/issues"
+
+[build-system]
+requires = ["setuptools>=63.1", 'pybind11']
+build-backend = "setuptools.build_meta"
