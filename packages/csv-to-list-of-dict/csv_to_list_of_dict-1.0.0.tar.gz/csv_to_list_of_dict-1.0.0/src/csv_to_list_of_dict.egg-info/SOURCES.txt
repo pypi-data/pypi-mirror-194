@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/convert_csv_to_json/__init__.py
+src/convert_csv_to_json/convert_csv_to_json.py
+src/csv_to_list_of_dict.egg-info/PKG-INFO
+src/csv_to_list_of_dict.egg-info/SOURCES.txt
+src/csv_to_list_of_dict.egg-info/dependency_links.txt
+src/csv_to_list_of_dict.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_convert_csv_to_json.py
