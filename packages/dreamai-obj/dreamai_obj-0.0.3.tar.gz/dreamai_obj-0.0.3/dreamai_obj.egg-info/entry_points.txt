@@ -1,0 +1,2 @@
+[nbdev]
+dreamai_obj = dreamai_obj._modidx:d
