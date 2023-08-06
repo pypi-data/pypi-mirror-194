@@ -1,0 +1,7 @@
+include include\*.h
+include contamx-lib.*
+include demo_files\*.py
+include demo_files\*.prj
+include demo_files\*.wth
+include demo_files\*.ctm
+include docs\build\latex\contamxpy.pdf

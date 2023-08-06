@@ -1,0 +1,9 @@
+SpeciesFile ContamW 2.0
+CTM file for valThreeZonesWthCtmYear.prj
+1/1	12/31	1
+sarin 
+!Date	Time	sarin
+1/1	 0:00:00	0.0023254
+1/1	24:00:00	0.0023254
+12/31	24:00:00	0.0023254
+12/31	24:00:00	0.0
