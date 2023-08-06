@@ -1,0 +1,3 @@
+[console_scripts]
+telerdac = telerdac.telerdac:cli
+
