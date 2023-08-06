@@ -1,0 +1,14 @@
+[package]
+name = "ruff_rustpython"
+version = "0.0.0"
+publish = false
+edition = "2021"
+rust-version = "1.67.0"
+
+[lib]
+
+[dependencies]
+anyhow = { version = "1.0.66" }
+once_cell = { version = "1.16.0" }
+rustpython-common = { git = "https://github.com/RustPython/RustPython.git", rev = "c4b67896662b16b5699a779c0e52aa0ca2587fec" }
+rustpython-parser = { features = ["lalrpop"], git = "https://github.com/RustPython/RustPython.git", rev = "c4b67896662b16b5699a779c0e52aa0ca2587fec" }

@@ -1,0 +1,545 @@
+---
+source: crates/ruff/src/rules/flake8_pytest_style/mod.rs
+expression: diagnostics
+---
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 11
+    column: 8
+  end_location:
+    row: 11
+    column: 23
+  fix:
+    content: assert expr
+    location:
+      row: 11
+      column: 8
+    end_location:
+      row: 11
+      column: 29
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 12
+    column: 8
+  end_location:
+    row: 12
+    column: 23
+  fix:
+    content: assert expr
+    location:
+      row: 12
+      column: 8
+    end_location:
+      row: 12
+      column: 34
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 13
+    column: 8
+  end_location:
+    row: 13
+    column: 23
+  fix:
+    content: "assert expr, msg"
+    location:
+      row: 13
+      column: 8
+    end_location:
+      row: 13
+      column: 34
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 14
+    column: 8
+  end_location:
+    row: 14
+    column: 23
+  fix:
+    content: "assert expr, msg"
+    location:
+      row: 14
+      column: 8
+    end_location:
+      row: 14
+      column: 43
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 15
+    column: 8
+  end_location:
+    row: 15
+    column: 23
+  fix:
+    content: "assert expr, msg"
+    location:
+      row: 15
+      column: 8
+    end_location:
+      row: 15
+      column: 43
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 16
+    column: 8
+  end_location:
+    row: 16
+    column: 23
+  fix: ~
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 17
+    column: 8
+  end_location:
+    row: 17
+    column: 23
+  fix: ~
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 18
+    column: 8
+  end_location:
+    row: 18
+    column: 23
+  fix: ~
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertTrue
+      fixable: true
+  location:
+    row: 19
+    column: 8
+  end_location:
+    row: 19
+    column: 23
+  fix: ~
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertIsNotNone
+      fixable: false
+  location:
+    row: 21
+    column: 12
+  end_location:
+    row: 21
+    column: 32
+  fix: ~
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertIsNone
+      fixable: false
+  location:
+    row: 23
+    column: 17
+  end_location:
+    row: 23
+    column: 34
+  fix: ~
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertEqual
+      fixable: false
+  location:
+    row: 25
+    column: 15
+  end_location:
+    row: 25
+    column: 31
+  fix: ~
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertFalse
+      fixable: true
+  location:
+    row: 28
+    column: 8
+  end_location:
+    row: 28
+    column: 24
+  fix:
+    content: assert not True
+    location:
+      row: 28
+      column: 8
+    end_location:
+      row: 28
+      column: 30
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertEqual
+      fixable: true
+  location:
+    row: 31
+    column: 8
+  end_location:
+    row: 31
+    column: 24
+  fix:
+    content: assert 1 == 2
+    location:
+      row: 31
+      column: 8
+    end_location:
+      row: 31
+      column: 30
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertNotEqual
+      fixable: true
+  location:
+    row: 34
+    column: 8
+  end_location:
+    row: 34
+    column: 27
+  fix:
+    content: assert 1 != 1
+    location:
+      row: 34
+      column: 8
+    end_location:
+      row: 34
+      column: 33
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertGreater
+      fixable: true
+  location:
+    row: 37
+    column: 8
+  end_location:
+    row: 37
+    column: 26
+  fix:
+    content: assert 1 > 2
+    location:
+      row: 37
+      column: 8
+    end_location:
+      row: 37
+      column: 32
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertGreaterEqual
+      fixable: true
+  location:
+    row: 40
+    column: 8
+  end_location:
+    row: 40
+    column: 31
+  fix:
+    content: assert 1 >= 2
+    location:
+      row: 40
+      column: 8
+    end_location:
+      row: 40
+      column: 37
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertLess
+      fixable: true
+  location:
+    row: 43
+    column: 8
+  end_location:
+    row: 43
+    column: 23
+  fix:
+    content: assert 2 < 1
+    location:
+      row: 43
+      column: 8
+    end_location:
+      row: 43
+      column: 29
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertLessEqual
+      fixable: true
+  location:
+    row: 46
+    column: 8
+  end_location:
+    row: 46
+    column: 28
+  fix:
+    content: assert 1 <= 2
+    location:
+      row: 46
+      column: 8
+    end_location:
+      row: 46
+      column: 34
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertIn
+      fixable: true
+  location:
+    row: 49
+    column: 8
+  end_location:
+    row: 49
+    column: 21
+  fix:
+    content: "assert 1 in [2, 3]"
+    location:
+      row: 49
+      column: 8
+    end_location:
+      row: 49
+      column: 32
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertNotIn
+      fixable: true
+  location:
+    row: 52
+    column: 8
+  end_location:
+    row: 52
+    column: 24
+  fix:
+    content: "assert 2 not in [2, 3]"
+    location:
+      row: 52
+      column: 8
+    end_location:
+      row: 52
+      column: 35
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertIsNone
+      fixable: true
+  location:
+    row: 55
+    column: 8
+  end_location:
+    row: 55
+    column: 25
+  fix:
+    content: assert 0 is None
+    location:
+      row: 55
+      column: 8
+    end_location:
+      row: 55
+      column: 28
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertIsNotNone
+      fixable: true
+  location:
+    row: 58
+    column: 8
+  end_location:
+    row: 58
+    column: 28
+  fix:
+    content: assert 0 is not None
+    location:
+      row: 58
+      column: 8
+    end_location:
+      row: 58
+      column: 31
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertIs
+      fixable: true
+  location:
+    row: 61
+    column: 8
+  end_location:
+    row: 61
+    column: 21
+  fix:
+    content: "assert [] is []"
+    location:
+      row: 61
+      column: 8
+    end_location:
+      row: 61
+      column: 29
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertIsNot
+      fixable: true
+  location:
+    row: 64
+    column: 8
+  end_location:
+    row: 64
+    column: 24
+  fix:
+    content: assert 1 is not 1
+    location:
+      row: 64
+      column: 8
+    end_location:
+      row: 64
+      column: 30
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertIsInstance
+      fixable: true
+  location:
+    row: 67
+    column: 8
+  end_location:
+    row: 67
+    column: 29
+  fix:
+    content: "assert isinstance(1, str)"
+    location:
+      row: 67
+      column: 8
+    end_location:
+      row: 67
+      column: 37
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertNotIsInstance
+      fixable: true
+  location:
+    row: 70
+    column: 8
+  end_location:
+    row: 70
+    column: 32
+  fix:
+    content: "assert not isinstance(1, int)"
+    location:
+      row: 70
+      column: 8
+    end_location:
+      row: 70
+      column: 40
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertRegex
+      fixable: true
+  location:
+    row: 73
+    column: 8
+  end_location:
+    row: 73
+    column: 24
+  fix:
+    content: "assert re.search(\"def\", \"abc\")"
+    location:
+      row: 73
+      column: 8
+    end_location:
+      row: 73
+      column: 39
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertNotRegex
+      fixable: true
+  location:
+    row: 76
+    column: 8
+  end_location:
+    row: 76
+    column: 27
+  fix:
+    content: "assert not re.search(\"abc\", \"abc\")"
+    location:
+      row: 76
+      column: 8
+    end_location:
+      row: 76
+      column: 42
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertRegexpMatches
+      fixable: true
+  location:
+    row: 79
+    column: 8
+  end_location:
+    row: 79
+    column: 32
+  fix:
+    content: "assert re.search(\"def\", \"abc\")"
+    location:
+      row: 79
+      column: 8
+    end_location:
+      row: 79
+      column: 47
+  parent: ~
+- kind:
+    UnittestAssertion:
+      assertion: assertNotRegex
+      fixable: true
+  location:
+    row: 82
+    column: 8
+  end_location:
+    row: 82
+    column: 27
+  fix:
+    content: "assert not re.search(\"abc\", \"abc\")"
+    location:
+      row: 82
+      column: 8
+    end_location:
+      row: 82
+      column: 42
+  parent: ~
+

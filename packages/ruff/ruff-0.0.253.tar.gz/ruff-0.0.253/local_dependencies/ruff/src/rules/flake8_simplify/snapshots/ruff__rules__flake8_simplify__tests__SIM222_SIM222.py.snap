@@ -1,0 +1,56 @@
+---
+source: crates/ruff/src/rules/flake8_simplify/mod.rs
+expression: diagnostics
+---
+- kind:
+    ExprOrTrue: ~
+  location:
+    row: 1
+    column: 8
+  end_location:
+    row: 1
+    column: 12
+  fix:
+    content: "True"
+    location:
+      row: 1
+      column: 3
+    end_location:
+      row: 1
+      column: 12
+  parent: ~
+- kind:
+    ExprOrTrue: ~
+  location:
+    row: 4
+    column: 15
+  end_location:
+    row: 4
+    column: 19
+  fix:
+    content: "True"
+    location:
+      row: 4
+      column: 3
+    end_location:
+      row: 4
+      column: 19
+  parent: ~
+- kind:
+    ExprOrTrue: ~
+  location:
+    row: 7
+    column: 14
+  end_location:
+    row: 7
+    column: 18
+  fix:
+    content: "True"
+    location:
+      row: 7
+      column: 9
+    end_location:
+      row: 7
+      column: 18
+  parent: ~
+
