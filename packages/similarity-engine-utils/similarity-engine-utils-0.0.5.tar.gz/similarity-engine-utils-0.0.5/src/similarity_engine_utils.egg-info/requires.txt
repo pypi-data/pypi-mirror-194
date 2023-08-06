@@ -1,0 +1,8 @@
+pymilvus>=2.2.2
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+pytest
+isort
