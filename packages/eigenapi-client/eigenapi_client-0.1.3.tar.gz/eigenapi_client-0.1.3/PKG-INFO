@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: eigenapi_client
+Version: 0.1.3
+Summary: EigenAPI Client
+Home-page: https://github.com/eigenphi/eigenapi-client
+Author: David
+Author-email: david@eigenphi.com
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# EigenAPI-Client
+
+eigenapi-client is a python wrapper of [EigenAPI](https://eigenapi.io/).
+
+
+Github repository of this project is located at https://github.com/eigenphi/eigenapi-client. 
+
+The repo maybe not open sourced currently, and we are planning to open it.
+
+### Install eigenapi-client
+
+You can install eigenapi-client by:
+
+```shell
+pip install eigenapi-client
+```
+
+We published this python lib to pypi. 
+
+You can find it at [Pypi Page](https://pypi.org/project/eigenapi-client/)
+
+
+### Document of EigenAPI
+
+API Document can be found [here](https://eigenphi-1.gitbook.io/eigenapi-user-guide/introduction/introduction)
+
